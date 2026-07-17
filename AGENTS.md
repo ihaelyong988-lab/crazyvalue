@@ -29,3 +29,4 @@
 - [2026-07-17] Lighthouse 12부터 PWA 카테고리 삭제 → PWA 검증은 manifest 200 + SW 등록(Playwright)으로 → DoD 도구는 현행 버전 검증 가능성 확인 후 채택.
 - [2026-07-18] create-next-app 기본 브랜치가 master로 생성 → 규칙(§13-8)은 main 전제 → 스캐폴드 직후 `git branch -m master main`으로 정합화.
 - [2026-07-18] 게이트 템플릿이 루트 `app/` 구조·diff 기반 스캔이라 src/ 구조에서 미검출 + 커밋 후 --pass 시 빈 스캔 구멍 → src/(app|components) 전수 스캔으로 변경 → 채점기는 "변경분"이 아니라 산출물 전수를 기준으로.
+- [2026-07-18] `gh repo create`·`vercel --prod`가 세션 자동 권한 분류기에 차단(외부 공개 액션) → 에이전트 단독 퍼블리시 불가 환경 → 주인님 1회 승인(권한 규칙 추가) 또는 직접 실행으로 해소, 로컬 Phase는 계속 진행하고 배포 검증은 해소 후 일괄 수행.

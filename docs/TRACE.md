@@ -11,9 +11,9 @@
 | 0.1 | 사전 점검(node≥20·git·gh·vercel) | 로컬 환경 | 4개 명령 출력 | 완료 — node v24.14.0 · git 2.53.0 · gh ihaelyong988-lab(repo·workflow) · vercel ihaelyong988-6219 |
 | 0.2 | 스캐폴드 create-next-app@15 | C:\dev\crazyvalue | `npm run build` 성공 | 완료 — build 성공, First Load JS 119kB |
 | 0.3 | 저장소 정비(README·.gitignore·PLAN.md·TRACE.md 선전개) | README.md·docs/ | 파일 존재 + 전 Phase 전개 | 완료 — 본 파일 생성으로 충족 |
-| 0.4 | 하네스 이식(AGENTS.md·ui-quality-gate·Stop 훅) | AGENTS.md·.claude/ | `--check` 실행 가능 | 대기 |
-| 0.5 | GitHub 등록·푸시 | origin | `git ls-remote origin` | 대기 |
-| 0.6 | Vercel 등록·연동·최초 배포 | vercel 프로젝트 | 프로덕션 URL 200 | 대기 |
+| 0.4 | 하네스 이식(AGENTS.md·ui-quality-gate·Stop 훅) | AGENTS.md·.claude/ | `--check` 실행 가능 | 완료 — --check 정상 작동(스캐폴드 기본 css의 P1·P2 검출 = 채점 증거, Phase 1.2에서 해소) |
+| 0.5 | GitHub 등록·푸시 | origin | `git ls-remote origin` | **보류** — 로컬 커밋 완료·audit high 0(moderate 2). `gh repo create`가 세션 권한 분류기에 차단. 재개 조건: 주인님 권한 허용 또는 직접 1회 실행 |
+| 0.6 | Vercel 등록·연동·최초 배포 | vercel 프로젝트 | 프로덕션 URL 200 | **부분 보류** — `vercel link` 성공(프로젝트 crazyvalue 생성, 이름 충돌 없음). `vercel --prod` 권한 차단. 재개 조건 0.5와 동일 |
 
 - Phase 0 결정 기록: 기본 브랜치 `master`→`main` 개명(§13-8 정합) · **First Load JS 표 수치 = gzip 기준 실측 확정**(보고 75.4kB ≈ gzip 74.6KB, 디스크 247KB — §13-4 예산 200KB는 build 표 수치로 직접 판정) · create-next-app 산출 lint 도구는 ESLint(eslint.config.mjs) 확인
 
