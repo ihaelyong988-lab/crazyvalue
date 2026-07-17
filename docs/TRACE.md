@@ -21,11 +21,11 @@
 
 | # | 작업 | 구현 위치 | 확인 방법 | 상태 |
 |---|---|---|---|---|
-| 1.1 | 디자인 기준파일(§6 오버라이드 고정) | design-system/MASTER.md | 파일 생성+§6 값 포함 | 대기 |
-| 1.2 | 색 토큰 CSS 변수·Pretendard 셀프호스팅·tabular-nums 유틸 | src/app/globals.css | 빌드 성공 | 대기 |
-| 1.3 | zod 데이터 계약(§5.3) | src/types/auction.ts | `npx tsc --noEmit` | 대기 |
-| 1.4 | 목데이터 생성기(시드 20260717, 120건, 용도 8종, 유찰 2~5, 저감 20/30 혼합, 17개 시도, 픽 포함) | scripts/gen-mock.ts → public/data/*.json | 생성 JSON zod 전건 통과 | 대기 |
-| 1.5 | 코어 유틸+단위테스트(필터 조합·금액 경계·할인율·픽 경계 0.5·D-day 자정·축약 1억 경계·재유찰/기일변경/소멸) | src/lib/{data,format,watchlist}.ts + tests/unit | `npm test` 전체 통과 | 대기 |
+| 1.1 | 디자인 기준파일(§6 오버라이드 고정) | design-system/MASTER.md | 파일 생성+§6 값 포함 | 완료 — ui-ux-pro-max --persist 실행, §6 확정 토큰 최상단 오버라이드 + 충돌 권고(틸 팔레트·Cinzel·CDN·펄스) 명시 무효화 |
+| 1.2 | 색 토큰 CSS 변수·Pretendard 셀프호스팅·tabular-nums 유틸 | src/app/globals.css·layout.tsx | 빌드 성공 | 완료 — npm i pretendard(§5.1 확정 스택), focus-visible·prefers-reduced-motion 포함, build 성공 |
+| 1.3 | zod 데이터 계약(§5.3) | src/types/auction.ts | `npx tsc --noEmit` | 완료 — typecheck 통과. §13-1 https URL 검증 + priceRatio·failCount 정합 refine 포함 |
+| 1.4 | 목데이터 생성기(시드 20260717, 120건, 용도 8종, 유찰 2~5, 저감 20/30 혼합, 17개 시도, 픽 포함) | scripts/gen-mock.ts → public/data/*.json | 생성 JSON zod 전건 통과 | 완료 — "총 120건 · 픽 105건 · 용도 8종 · 지역 17개 · 시드 20260717" + mock-contract.test 통과. photoUrl은 전건 null(플레이스홀더 분기 렌더, 실사진은 Phase 3) |
+| 1.5 | 코어 유틸+단위테스트(필터 조합·금액 경계·할인율·픽 경계 0.5·D-day 자정·축약 1억 경계·재유찰/기일변경/소멸) | src/lib/{data,format,watchlist}.ts + tests/unit ×4 | `npm test` 전체 통과 | 완료 — "Test Files 4 passed, Tests 37 passed" (지정 케이스 전부 포함) |
 
 ## Phase 2 — 코어 4화면 + 2시트
 

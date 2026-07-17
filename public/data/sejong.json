@@ -1,0 +1,87 @@
+[
+ {
+  "id": "sejong-2025타경84286-2",
+  "court": "대전지방법원 세종지원",
+  "caseNo": "2025타경84286",
+  "itemNo": "2",
+  "category": "상가",
+  "address": "세종 세종시 중앙로 968",
+  "region": "세종",
+  "district": "세종시",
+  "appraisalPrice": 465438000,
+  "minPrice": 159645000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-08-19",
+  "saleTime": "14:00",
+  "courtRoom": "경매법정 제3호",
+  "deposit": 31929000,
+  "areaBuilding": 182.2,
+  "areaLand": 349.3,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/",
+  "history": [
+   {
+    "date": "2026-04-01",
+    "minPrice": 465438000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-06",
+    "minPrice": 465438000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-10",
+    "minPrice": 325807000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-15",
+    "minPrice": 228065000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "재매각 사건. 입찰보증금은 최저매각가격의 20%"
+ },
+ {
+  "id": "sejong-2025타경56357-2",
+  "court": "대전지방법원 세종지원",
+  "caseNo": "2025타경56357",
+  "itemNo": "2",
+  "category": "토지",
+  "address": "세종 세종시 번영로 470",
+  "region": "세종",
+  "district": "세종시",
+  "appraisalPrice": 635318000,
+  "minPrice": 311306000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-23",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정 제2호",
+  "deposit": 31131000,
+  "areaBuilding": null,
+  "areaLand": 417.4,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/",
+  "history": [
+   {
+    "date": "2026-05-10",
+    "minPrice": 635318000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-14",
+    "minPrice": 635318000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-19",
+    "minPrice": 444723000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "대항력 있는 임차인 존재 가능 — 매각물건명세서 확인 요망"
+ }
+]

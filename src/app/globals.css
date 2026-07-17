@@ -1,26 +1,48 @@
 @import "tailwindcss";
 
+/* CrazyValue 토큰 — design-system/MASTER.md 최상단 오버라이드(기획안 §6) */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fafaf8; /* Paper — 순백 금지 */
+  --foreground: #1a2332; /* Ink */
+  --navy: #0f2a43;
+  --accent: #2456a6;
+  --line: #e7e8e3;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-paper: var(--background);
+  --color-ink: var(--foreground);
+  --color-navy: var(--navy);
+  --color-accent: var(--accent);
+  --color-line: var(--line);
+  --font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Malgun Gothic", sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* 접근성 — 게이트 P1: 포커스 가시성 */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* 접근성 — 게이트 P2: 모션 축소 존중 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
