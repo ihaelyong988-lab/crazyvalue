@@ -1,4 +1,5 @@
 import type { AuctionItem, Category } from "@/types/auction";
+import { dday, todaySeoul } from "@/lib/format";
 
 // 필터·정렬·픽 판정 — 전부 순수 함수. 화면 코드는 이 모듈만 사용한다.
 
@@ -21,10 +22,33 @@ export const SORT_OPTIONS: { key: SortKey; label: string }[] = [
 
 export interface Filters {
   regions: string[]; // 시·도 한글명, 빈 배열 = 전체
-  districts: string[]; // 시·군·구, 빈 배열 = 전체
+  districts: string[]; // 시·군·구 결합 키("시도:시군구", 구형은 시군구 단독), 빈 배열 = 전체
   priceBands: PriceBandKey[];
   categories: Category[];
   pickOnly?: boolean;
+}
+
+// 시·군·구 결합 키(감사 14) — 동명 시군구(대구 북구·광주 북구)를 시도로 구분한다.
+// 상태 배열·URL d 파라미터가 같은 인코딩을 공유한다. 시군구 이름에 구분자가 없음을 전제한다.
+export const DISTRICT_KEY_SEP = ":";
+
+/** (시도, 시군구) → 결합 키 "시도:시군구" */
+export function districtKey(region: string, district: string): string {
+  return `${region}${DISTRICT_KEY_SEP}${district}`;
+}
+
+/** 결합 키 분해. 구분자 없는 구형 값은 region: null로 이름만 반환한다(하위호환). */
+export function parseDistrictKey(value: string): { region: string | null; district: string } {
+  const idx = value.indexOf(DISTRICT_KEY_SEP);
+  return idx === -1
+    ? { region: null, district: value }
+    : { region: value.slice(0, idx), district: value.slice(idx + 1) };
+}
+
+/** 시군구 매칭 — 결합 키 일치 또는 구형 값(시도 없음)의 이름 일치(구 URL 하위호환). */
+function matchesDistricts(item: AuctionItem, districts: string[]): boolean {
+  const key = districtKey(item.region, item.district);
+  return districts.some((d) => d === key || d === item.district);
 }
 
 export const EMPTY_FILTERS: Filters = {
@@ -50,7 +74,7 @@ function inBand(minPrice: number, key: PriceBandKey): boolean {
 
 export function matchesFilters(item: AuctionItem, f: Filters): boolean {
   if (f.regions.length > 0 && !f.regions.includes(item.region)) return false;
-  if (f.districts.length > 0 && !f.districts.includes(item.district)) return false;
+  if (f.districts.length > 0 && !matchesDistricts(item, f.districts)) return false;
   if (f.priceBands.length > 0 && !f.priceBands.some((b) => inBand(item.minPrice, b))) return false;
   if (f.categories.length > 0 && !f.categories.includes(item.category)) return false;
   if (f.pickOnly && !isPick(item)) return false;
@@ -83,11 +107,22 @@ export function newThisWeek(items: AuctionItem[], crawledAt: string): AuctionIte
   return items.filter((i) => isNewThisWeek(i, crawledAt));
 }
 
-export function sortItems(items: AuctionItem[], sort: SortKey): AuctionItem[] {
+export function sortItems(
+  items: AuctionItem[],
+  sort: SortKey,
+  today: string = todaySeoul(),
+): AuctionItem[] {
   const arr = [...items];
   switch (sort) {
     case "date":
-      return arr.sort((a, b) => a.saleDate.localeCompare(b.saleDate));
+      // 기일 경과(dday<0) 물건은 입찰 불가 — 임박순에서 후순위로 보낸다(감사 12).
+      // 경과 여부 판정만 하고, 각 구간 내부는 기일 오름차순을 유지한다.
+      return arr.sort((a, b) => {
+        const pastA = dday(a.saleDate, today) < 0 ? 1 : 0;
+        const pastB = dday(b.saleDate, today) < 0 ? 1 : 0;
+        if (pastA !== pastB) return pastA - pastB;
+        return a.saleDate.localeCompare(b.saleDate);
+      });
     case "discount":
       return arr.sort((a, b) => a.priceRatio - b.priceRatio);
     case "price":

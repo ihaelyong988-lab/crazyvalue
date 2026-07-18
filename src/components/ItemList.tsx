@@ -12,26 +12,26 @@ export function ItemList({
   sort,
   onSortChange,
   onMore,
-  onRelaxPrice,
-  onRelaxRegion,
+  relaxActions,
 }: {
   items: AuctionItem[];
   shown: number;
   sort: SortKey;
   onSortChange: (s: SortKey) => void;
   onMore: () => void;
-  onRelaxPrice: () => void;
-  onRelaxRegion: () => void;
+  /** 빈 결과 완화 제안 — 실제 적용 중인 조건의 해제 동작만 담는다(감사 25·26: 무동작 버튼 금지). */
+  relaxActions: { label: string; onClick: () => void }[];
 }) {
   if (items.length === 0) {
     return (
       <EmptyState
         title="조건에 맞는 물건이 없습니다"
-        description="조건을 넓히면 인접한 물건을 볼 수 있습니다."
-        actions={[
-          { label: "금액 범위 넓히기", onClick: onRelaxPrice },
-          { label: "인근 지역 포함", onClick: onRelaxRegion },
-        ]}
+        description={
+          relaxActions.length > 0
+            ? "아래 버튼으로 조건을 해제하면 결과 범위가 넓어집니다."
+            : "데이터는 매주 일요일 갱신됩니다."
+        }
+        actions={relaxActions}
       />
     );
   }
@@ -44,10 +44,11 @@ export function ItemList({
         </p>
         <label className="flex items-center gap-1.5 text-[13px] text-ink/70">
           정렬
+          {/* 글꼴 16px(감사 7) — iOS는 포커스된 폼 컨트롤이 16px 미만이면 화면을 강제 확대한다. */}
           <select
             value={sort}
             onChange={(e) => onSortChange(e.target.value as SortKey)}
-            className="min-h-11 cursor-pointer rounded-lg border border-line bg-white px-2 text-ink"
+            className="min-h-11 cursor-pointer rounded-lg border border-line bg-white px-2 text-[16px] text-ink"
           >
             {SORT_OPTIONS.map((o) => (
               <option key={o.key} value={o.key}>

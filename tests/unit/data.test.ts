@@ -2,10 +2,13 @@ import { describe, expect, it } from "vitest";
 import {
   EMPTY_FILTERS,
   applyFilters,
+  districtKey,
   isNewThisWeek,
   isPick,
+  parseDistrictKey,
   sortItems,
 } from "@/lib/data";
+import { buildListQuery, parseListQuery } from "@/lib/query";
 import type { AuctionItem } from "@/types/auction";
 
 function mk(over: Partial<AuctionItem>): AuctionItem {
@@ -74,7 +77,7 @@ describe("applyFilters — 3축 조합·금액 경계", () => {
   it("지역+용도+금액 3축 동시", () => {
     const got = applyFilters(items, {
       regions: ["서울"],
-      districts: ["강남구"],
+      districts: [districtKey("서울", "강남구")],
       priceBands: ["b1"],
       categories: ["아파트"],
     });
@@ -97,7 +100,23 @@ describe("sortItems — 4종 정렬", () => {
     mk({ id: "c", saleDate: "2026-09-01", priceRatio: 0.5, minPrice: 50_000_000 }),
   ];
   it("기일 임박순(기본)", () => {
-    expect(sortItems(items, "date").map((i) => i.id)).toEqual(["b", "a", "c"]);
+    expect(sortItems(items, "date", "2026-07-01").map((i) => i.id)).toEqual(["b", "a", "c"]);
+  });
+  it("기일 임박순 — 기일 경과(dday<0)는 후순위, 각 구간 내부는 오름차순 유지", () => {
+    const mixed = [
+      mk({ id: "p1", saleDate: "2026-07-17" }), // 경과
+      mk({ id: "f1", saleDate: "2026-08-10" }),
+      mk({ id: "p2", saleDate: "2026-07-09" }), // 경과
+      mk({ id: "f2", saleDate: "2026-07-20" }),
+      mk({ id: "t0", saleDate: "2026-07-18" }), // D-day(오늘)는 경과 아님
+    ];
+    expect(sortItems(mixed, "date", "2026-07-18").map((i) => i.id)).toEqual([
+      "t0",
+      "f2",
+      "f1",
+      "p2",
+      "p1",
+    ]);
   });
   it("할인율 높은순 = priceRatio 낮은순", () => {
     expect(sortItems(items, "discount").map((i) => i.id)).toEqual(["b", "c", "a"]);
@@ -131,5 +150,47 @@ describe("isNewThisWeek — 이번 갱신에서 유찰 2회 도달", () => {
       ],
     });
     expect(isNewThisWeek(item, "2026-07-12T03:00:00+09:00")).toBe(false);
+  });
+});
+
+describe("시군구 결합 키 — 동명 시군구 구분(감사 14)", () => {
+  const items = [
+    mk({ id: "dg", region: "대구", district: "북구" }),
+    mk({ id: "gj", region: "광주", district: "북구" }),
+    mk({ id: "gn", region: "서울", district: "강남구" }),
+  ];
+  it("districtKey/parseDistrictKey 왕복", () => {
+    expect(districtKey("대구", "북구")).toBe("대구:북구");
+    expect(parseDistrictKey("대구:북구")).toEqual({ region: "대구", district: "북구" });
+    expect(parseDistrictKey("북구")).toEqual({ region: null, district: "북구" });
+  });
+  it("결합 키는 해당 시도의 동명 시군구만 선택한다", () => {
+    const got = applyFilters(items, {
+      ...EMPTY_FILTERS,
+      regions: ["대구", "광주"],
+      districts: [districtKey("대구", "북구")],
+    });
+    expect(got.map((i) => i.id)).toEqual(["dg"]);
+  });
+  it("구형 값(시도 없음)은 이름 일치 전체와 매칭한다(구 URL 하위호환)", () => {
+    const got = applyFilters(items, { ...EMPTY_FILTERS, districts: ["북구"] });
+    expect(got.map((i) => i.id)).toEqual(["dg", "gj"]);
+  });
+});
+
+describe("URL d 파라미터 — 결합 키 인코딩 왕복·하위호환(§13 규칙 11)", () => {
+  it("결합 키가 buildListQuery→parseListQuery로 손실 없이 왕복한다", () => {
+    const districts = [districtKey("대구", "북구"), districtKey("서울", "강남구")];
+    const query = buildListQuery({ districts });
+    const parsed = parseListQuery(new URLSearchParams(query));
+    expect(parsed.districts).toEqual(districts);
+  });
+  it("구형 시군구 단독 값은 그대로 통과한다", () => {
+    const parsed = parseListQuery(new URLSearchParams("d=북구,수원시 영통구"));
+    expect(parsed.districts).toEqual(["북구", "수원시 영통구"]);
+  });
+  it("시도 부분이 유효하지 않은 결합 키는 버린다(§13 규칙 1)", () => {
+    const parsed = parseListQuery(new URLSearchParams("d=몰라:북구,대구:북구,서울:"));
+    expect(parsed.districts).toEqual(["대구:북구"]);
   });
 });

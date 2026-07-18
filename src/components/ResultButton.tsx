@@ -3,6 +3,8 @@
 import Link from "next/link";
 
 // 결과 버튼(§4.3-① 5): 실시간 건수, 높이 52px, 하단 고정(탭 바 위).
+// 상시 마운트되는 컨테이너가 aria-live 영역(감사 백로그 5) — 필터 조작에 따른 건수 갱신과
+// 로딩 전환을 스크린리더에 공지한다. 분기 내부에 두면 요소 교체 시 공지가 유실된다.
 export function ResultButton({
   count,
   href,
@@ -13,12 +15,13 @@ export function ResultButton({
   loading?: boolean;
 }) {
   return (
-    <div className="fixed inset-x-0 bottom-14 z-30 mx-auto w-full max-w-md px-4 pb-3">
+    <div
+      aria-live="polite"
+      aria-atomic="true"
+      className="fixed inset-x-0 bottom-14 z-30 mx-auto w-full max-w-md px-4 pb-3"
+    >
       {loading ? (
-        <div
-          aria-live="polite"
-          className="flex h-[52px] w-full items-center justify-center rounded-xl bg-accent/70 font-semibold text-white"
-        >
+        <div className="flex h-[52px] w-full items-center justify-center rounded-xl bg-accent/70 font-semibold text-white">
           물건 확인 중
         </div>
       ) : (

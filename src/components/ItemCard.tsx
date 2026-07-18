@@ -27,7 +27,8 @@ export function ItemCard({ item, compact = false }: { item: AuctionItem; compact
             {item.region} {item.district}
           </p>
           <p className="mt-1 truncate tabular-nums">
-            <span className="text-[12px] text-ink/50 line-through">
+            {/* 감정가 취소선 — ink/70: 흰 카드 위 대비 4.5:1 확보(감사 8) */}
+            <span className="text-[12px] text-ink/70 line-through">
               {formatKrw(item.appraisalPrice)}
             </span>{" "}
             <span className="font-bold text-accent">{formatKrw(item.minPrice)}</span>{" "}

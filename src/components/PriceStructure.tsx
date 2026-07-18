@@ -40,7 +40,7 @@ export function PriceStructure({ item }: { item: AuctionItem }) {
       </div>
       <p className="mt-3 border-t border-line pt-3 text-[13px] tabular-nums text-ink/80">
         입찰보증금 {formatKrw(item.deposit)}
-        <span className="text-ink/60">
+        <span className="text-ink/70">
           {" "}
           — 최저가의 {resale ? "20%(재매각 사건)" : "10%"}. 재매각 사건은 비율이 다를 수
           있으니 공고 원문 기준으로 확인 필요.

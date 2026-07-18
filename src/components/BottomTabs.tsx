@@ -11,6 +11,7 @@ const TABS = [
 ] as const;
 
 // 하단 탭 3 — 한손 조작(§4.4-14). 활성 탭은 색+굵기+aria-current로 병행 전달.
+// 홈 흐름 경로(/ → /list → /item/…)는 홈 탭 활성으로 판정한다(감사 #16 현재 위치 신호).
 export function BottomTabs() {
   const pathname = usePathname();
   return (
@@ -20,7 +21,12 @@ export function BottomTabs() {
     >
       <ul className="flex">
         {TABS.map(({ href, label, icon: Icon }) => {
-          const active = href === "/" ? pathname === "/" : pathname.startsWith(href);
+          const active =
+            href === "/"
+              ? pathname === "/" ||
+                pathname.startsWith("/list") ||
+                pathname.startsWith("/item")
+              : pathname.startsWith(href);
           return (
             <li key={href} className="flex-1">
               <Link

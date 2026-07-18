@@ -1,6 +1,7 @@
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import { expect, test, type Page } from "@playwright/test";
+import { formatKrw } from "../../src/lib/format";
 
 // E2E 스모크 8종(기획안 §8 Phase 2.7). 시드 고정 목데이터(public/data/seoul.json)를
 // node:fs로 읽어 실제 id·금액·기일을 기대값으로 쓴다. 각 테스트는 독립 컨텍스트다.
@@ -8,6 +9,9 @@ import { expect, test, type Page } from "@playwright/test";
 interface FixtureItem {
   id: string;
   address: string;
+  category: string;
+  region: string;
+  district: string;
   minPrice: number;
   saleDate: string;
   failCount: number;
@@ -146,8 +150,23 @@ test("관심함 재유찰 배지", async ({ page }) => {
   );
 
   await page.goto("/watch");
-  await expect(cardById(page, first.id)).toBeVisible();
-  await expect(page.getByText("재유찰", { exact: true })).toBeVisible();
+  // 변화 카드는 오버레이 링크가 추가돼 같은 href의 a가 2개다(내부 ItemCard 링크는 inert — 감사 #11)
+  const links = cardById(page, first.id);
+  await expect(links).toHaveCount(2);
+  await expect(links.first()).toBeVisible();
+
+  // 배지는 이전→현재 최저가를 병기한다(감사 #17). 정확 일치 → 더 긴 오버레이 sr-only 텍스트는 제외.
+  const badge = `재유찰 · ${formatKrw(first.minPrice + 10_000_000)}→${formatKrw(first.minPrice)}`;
+  await expect(page.getByText(badge, { exact: true })).toBeVisible();
+
+  // 접근 트리·탭 순서는 상태를 포함한 접근 이름의 오버레이 링크 1개가 대표한다(감사 #11)
+  await expect(
+    page.getByRole("link", {
+      name: new RegExp(
+        `^${badge} · ${first.category} · ${first.region} ${first.district} · 최저가 ${formatKrw(first.minPrice)} · 유찰 ${first.failCount}회 · (D-\\d+|D-day|기일 경과)$`,
+      ),
+    }),
+  ).toBeVisible();
 });
 
 test("공유 URL 복사", async ({ page }) => {

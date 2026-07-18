@@ -1,7 +1,14 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import { REGIONS } from "@/types/catalog";
+import { PRICE_BANDS } from "@/lib/data";
+import { getWatchState, setPrefs, type Prefs } from "@/lib/watchlist";
+import { FilterChip } from "@/components/FilterChip";
 import { LegalNotice } from "@/components/LegalNotice";
 import { PickBadge } from "@/components/PickBadge";
 
-// 용어·고지 시트(§4.1 시트 B) — 부록 B 원고. 용어 12개 + 미친가치 픽 기준 공개 + 법적 고지 전문.
+// 용어·고지 시트(§4.1 시트 B) — 부록 B 원고. 관심 조건 편집 + 용어 12개 + 픽 기준 공개 + 법적 고지 전문.
 const TERMS: { term: string; desc: string }[] = [
   { term: "유찰", desc: "매각기일에 입찰자가 없어 매각이 되지 않은 것. 다음 기일에 최저가가 내려간다" },
   { term: "감정가", desc: "법원이 감정평가로 정한 물건의 기준 가격. 첫 회차의 최저매각가격" },
@@ -17,9 +24,84 @@ const TERMS: { term: string; desc: string }[] = [
   { term: "배당요구종기", desc: "채권자가 배당을 요구할 수 있는 마감일" },
 ];
 
+// 관심 조건 편집(감사 #19) — 온보딩 이후 유일한 재설정 경로. watchlist의 setPrefs를
+// 재사용해 선택 즉시 저장한다. 저장값 로드는 하이드레이션 후 이펙트에서 수행(SSR 불일치 방지).
+function PrefsEditor() {
+  const [prefs, setLocal] = useState<Prefs>({ regions: [], priceBands: [] });
+  const [ready, setReady] = useState(false);
+  const [saved, setSaved] = useState(false);
+
+  useEffect(() => {
+    setLocal(getWatchState().prefs);
+    setReady(true);
+  }, []);
+
+  const save = (next: Prefs) => {
+    if (!ready) return; // 저장값 로드 전 토글이 기존 설정을 덮어쓰지 않게 막는다
+    setLocal(next);
+    setPrefs(next);
+    setSaved(true);
+  };
+
+  const toggleRegion = (name: string) =>
+    save({
+      ...prefs,
+      regions: prefs.regions.includes(name)
+        ? prefs.regions.filter((x) => x !== name)
+        : [...prefs.regions, name],
+    });
+
+  const toggleBand = (key: string) =>
+    save({
+      ...prefs,
+      priceBands: prefs.priceBands.includes(key)
+        ? prefs.priceBands.filter((x) => x !== key)
+        : [...prefs.priceBands, key],
+    });
+
+  return (
+    <section aria-label="관심 조건 설정" className="rounded-xl border border-line bg-white p-4">
+      <h2 className="font-bold">관심 조건 설정</h2>
+      <p className="mt-1 text-[13px] leading-relaxed text-ink/70">
+        홈 필터의 초기값으로 쓰입니다. 선택 즉시 이 기기에 저장됩니다.
+      </p>
+
+      <h3 className="mt-3 text-[13px] font-semibold text-ink/70">관심 지역</h3>
+      <div className="mt-2 grid grid-cols-4 gap-1.5">
+        {REGIONS.map((r) => (
+          <FilterChip
+            key={r.key}
+            label={r.name}
+            selected={prefs.regions.includes(r.name)}
+            onToggle={() => toggleRegion(r.name)}
+          />
+        ))}
+      </div>
+
+      <h3 className="mt-4 text-[13px] font-semibold text-ink/70">관심 금액대</h3>
+      <div className="mt-2 flex flex-wrap gap-1.5">
+        {PRICE_BANDS.map((b) => (
+          <FilterChip
+            key={b.key}
+            label={b.label}
+            selected={prefs.priceBands.includes(b.key)}
+            onToggle={() => toggleBand(b.key)}
+          />
+        ))}
+      </div>
+
+      <p role="status" className="mt-3 text-[13px] text-ink/70">
+        {saved ? "저장되었습니다. 홈 필터에 바로 반영됩니다." : ""}
+      </p>
+    </section>
+  );
+}
+
 export function GlossarySheet() {
   return (
     <div className="space-y-5 p-4">
+      <PrefsEditor />
+
       <section className="rounded-xl border border-line bg-white p-4">
         <h2 className="flex items-center gap-2 font-bold">
           <PickBadge /> 기준 공개

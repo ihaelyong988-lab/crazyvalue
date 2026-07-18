@@ -9,7 +9,7 @@ import { WatchToggle } from "@/components/WatchToggle";
 import { ShareButton } from "@/components/ShareButton";
 import { LegalNotice } from "@/components/LegalNotice";
 import { CategoryThumb } from "@/components/CategoryThumb";
-import { RecentTracker } from "./RecentTracker";
+import { BackButton, RecentTracker } from "./RecentTracker";
 
 // ③ 상세 — 서버에서 데이터 조회해 메타(OG)+초기 렌더(§5.2). 전 물건 정적 생성.
 export const dynamicParams = false;
@@ -46,10 +46,12 @@ export default async function ItemPage({ params }: { params: Promise<{ id: strin
     <div className="space-y-4 p-4">
       <RecentTracker id={item.id} />
 
+      <BackButton />
+
       <header className="flex gap-3">
         <CategoryThumb category={item.category} photoUrl={item.photoUrl} />
         <div className="min-w-0">
-          <p className="text-[13px] text-ink/60">
+          <p className="text-[13px] text-ink/70">
             {item.court} · {item.caseNo} ({item.itemNo})
           </p>
           <h1 className="mt-0.5 text-[17px] font-bold leading-snug">{item.address}</h1>
@@ -86,19 +88,19 @@ export default async function ItemPage({ params }: { params: Promise<{ id: strin
         <h2 className="text-[13px] font-semibold text-ink/70">기본 정보</h2>
         <dl className="mt-2 space-y-1.5 text-[14px]">
           <div className="flex justify-between gap-3">
-            <dt className="shrink-0 text-ink/60">용도</dt>
+            <dt className="shrink-0 text-ink/70">용도</dt>
             <dd className="text-right">{item.category}</dd>
           </div>
           <div className="flex justify-between gap-3">
-            <dt className="shrink-0 text-ink/60">건물면적</dt>
+            <dt className="shrink-0 text-ink/70">건물면적</dt>
             <dd className="text-right tabular-nums">{formatArea(item.areaBuilding)}</dd>
           </div>
           <div className="flex justify-between gap-3">
-            <dt className="shrink-0 text-ink/60">토지면적</dt>
+            <dt className="shrink-0 text-ink/70">토지면적</dt>
             <dd className="text-right tabular-nums">{formatArea(item.areaLand)}</dd>
           </div>
           <div className="flex justify-between gap-3">
-            <dt className="shrink-0 text-ink/60">소재지</dt>
+            <dt className="shrink-0 text-ink/70">소재지</dt>
             <dd className="text-right">{item.address}</dd>
           </div>
         </dl>
@@ -129,7 +131,7 @@ export default async function ItemPage({ params }: { params: Promise<{ id: strin
         </section>
       )}
 
-      <HistoryTimeline history={item.history} />
+      <HistoryTimeline history={item.history} saleDate={item.saleDate} minPrice={item.minPrice} />
 
       <a
         href={item.detailUrl}
@@ -140,7 +142,7 @@ export default async function ItemPage({ params }: { params: Promise<{ id: strin
         <ExternalLink size={17} aria-hidden /> 법원경매정보에서 원문 보기
       </a>
 
-      <div className="flex gap-2">
+      <div className="flex flex-wrap gap-2">
         <WatchToggle item={item} />
         <ShareButton title={`${item.region} ${item.district} ${item.category} — 미친가치`} />
       </div>
