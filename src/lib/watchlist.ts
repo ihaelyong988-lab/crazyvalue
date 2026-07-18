@@ -80,6 +80,13 @@ export function toggleWatch(item: AuctionItem, now: Date = new Date()): boolean 
   return true;
 }
 
+export function removeWatch(id: string): void {
+  const state = getWatchState();
+  if (!(id in state.items)) return;
+  delete state.items[id];
+  safeWrite(WATCH_KEY, state);
+}
+
 export function setPrefs(prefs: Prefs): void {
   const state = getWatchState();
   state.prefs = prefs;

@@ -29,6 +29,11 @@ body {
   line-height: 1.6;
 }
 
+/* 온보딩 완료자는 첫 페인트 전에 시트를 숨긴다(public/onboarding-flag.js가 플래그 설정) */
+html[data-cv-onboarded="1"] [data-cv-onboarding] {
+  display: none;
+}
+
 /* 접근성 — 게이트 P1: 포커스 가시성 */
 :focus-visible {
   outline: 2px solid var(--accent);

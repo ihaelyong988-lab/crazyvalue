@@ -33,75 +33,78 @@
 
 | # | 작업 | 구현 위치 | 확인 방법 | 상태 |
 |---|---|---|---|---|
-| 2.1 | 공통 셸(AppShell·DataDateBar·Skeleton·EmptyState·ErrorState·LegalNotice) | src/components | 전 라우트 렌더 | 대기 |
-| 2.2 | 홈(필터 3축+ResultButton+PickEntry+NewThisWeek+RecentViewed, §4.3-① 배치) | src/app/page.tsx | 3탭 내 리스트 도달 | 대기 |
-| 2.3 | 리스트(카드 7요소·10건 더보기·정렬 4종·빈 상태 완화) | src/app/list | §4.3-② 전 요소 | 대기 |
-| 2.4 | 상세(가격구조·타임라인·지도 딥링크·특이사항·원문·고지·관심·공유) | src/app/item/[id] | §4.3-③ 전 블록 | 대기 |
-| 2.5 | 관심함(D-day 정렬·상태 배지·상단 고정) | src/app/watch | §4.3-④ 전 요소 | 대기 |
-| 2.6 | 시트 2종(온보딩 1회·용어 12+픽 기준+고지) | OnboardingSheet·guide | 최초 1회 노출 로직 | 대기 |
-| 2.7 | E2E 스모크(온보딩→필터3탭→리스트→상세→관심등록→관심함 배지→공유 URL + 오류 상태 + /list 딥링크 복원) | tests/e2e/smoke.spec.ts | `npx playwright test` 통과 | 대기 |
+| 2.1 | 공통 셸(AppShell·DataDateBar·Skeleton·EmptyState·ErrorState·LegalNotice) | src/components | 전 라우트 렌더 | 완료 — build 128p 정적 생성·E2E 전 라우트 통과 |
+| 2.2 | 홈(필터 3축+ResultButton+PickEntry+NewThisWeek+RecentViewed, §4.3-① 배치) | src/app/page.tsx | 3탭 내 리스트 도달 | 완료 — E2E 시나리오1(3탭→리스트) 통과 |
+| 2.3 | 리스트(카드 7요소·10건 더보기·정렬 4종·빈 상태 완화) | src/app/list | §4.3-② 전 요소 | 완료 — E2E 1·7 통과(더보기·정렬·딥링크) |
+| 2.4 | 상세(가격구조·타임라인·지도 딥링크·특이사항·원문·고지·관심·공유) | src/app/item/[id] | §4.3-③ 전 블록 | 완료 — E2E 2·3·5 통과 |
+| 2.5 | 관심함(D-day 정렬·상태 배지·상단 고정) | src/app/watch | §4.3-④ 전 요소 | 완료 — E2E 3·4 통과(재유찰 배지 포함) |
+| 2.6 | 시트 2종(온보딩 1회·용어 12+픽 기준+고지) | OnboardingSheet·guide | 최초 1회 노출 로직 | 완료 — E2E 1·8 통과. 온보딩은 SSR 포함+재방문 무플래시 숨김(onboarding-flag.js) |
+| 2.7 | E2E 스모크(온보딩→필터3탭→리스트→상세→관심등록→관심함 배지→공유 URL + 오류 상태 + /list 딥링크 복원) | tests/e2e/smoke.spec.ts + playwright.config.ts | `npx playwright test` 통과 | 완료 — "8 passed" (오류 상태·딥링크 포함). 시나리오1은 목데이터 분포상 3필터 유지 시 11건 미만이라 지역 단독으로 더보기 검증(사양 단계는 전부 수행) |
+
+- Phase 2 마감 증거: lint 0/0 · typecheck 통과 · vitest 37/37 · build 성공(정적 128페이지) · ui-quality-gate BLOCK 0·WARN 0 → --pass 마커 · E2E 8/8 · First Load JS 전 라우트 124~130kB(gzip, 예산 200KB 내)
+- Phase 2 성능 결정 기록: zod 클라이언트 번들 제거(types/catalog.ts 분리, 라우트당 ≈70kB 절감) · DataDateBar를 meta 전용 경량 훅으로 분리(상세·안내에서 지역 17파일 로드 제거) · 온보딩 SSR 포함+페인트 전 플래그로 LCP 6.6s→1.8s
 
 ### 2.B §4.3 화면 사양 행 단위 대조
 
 | 화면 | 행 | 사양 요지 | 구현 위치 | 상태 |
 |---|---|---|---|---|
-| ①홈-1 | 기준일 바 | "데이터 기준 … · 다음 갱신 …" 상단 고정 | | 대기 |
-| ①홈-2 | 필터1 지역 | 시도 17 그리드→시군구 칩(다중, 기본 전체) | | 대기 |
-| ①홈-3 | 필터2 금액 | 구간 칩 5종 복수 선택 | | 대기 |
-| ①홈-4 | 필터3 용도 | 8분류 | | 대기 |
-| ①홈-5 | 결과 버튼 | "물건 N건 보기" 실시간 갱신·높이 52px 하단 고정 | | 대기 |
-| ①홈-6 | 미친가치 픽 진입 | "픽 N건 — 감정가 대비 50% 이하" → 픽 필터 리스트 | | 대기 |
-| ①홈-7 | 이번 주 신규 | 신규 유찰2 도달 수 + 대표 3건 가로 스크롤 | | 대기 |
-| ①홈-8 | 최근 본 물건 | 최근 5건 가로 스크롤(없으면 미노출) | | 대기 |
-| ①홈-9 | 온보딩 반영 | 설정 지역·금액 = 필터 초기값 | | 대기 |
-| ②리-1 | 10건+더보기 | 무한스크롤 금지, 명시적 더보기 | | 대기 |
-| ②리-2 | 카드 7요소 | 사진·용도·소재지·가격구조 한 줄·픽 배지·유찰 N회·D-day | | 대기 |
-| ②리-3 | 정렬 4종 | 기일 임박(기본)·할인율·최저가·신규 | | 대기 |
-| ②리-4 | 숫자 표기 | 한국식 축약+tabular-nums | | 대기 |
-| ②리-5 | 빈 상태 | 안내+완화 제안 버튼 2종 | | 대기 |
-| ③상-1 | 가격 구조 | 감정가→최저가 바+할인율+픽+보증금(10%, 재매각 상이 문구) | | 대기 |
-| ③상-2 | 기본 정보 | 법원·사건·물건번호·용도·면적(㎡+평)·전체 주소 | | 대기 |
-| ③상-3 | 기일 정보 | 매각기일 D-day·시각·법정 호수 | | 대기 |
-| ③상-4 | 유찰 타임라인 | 회차별 기일—최저가—결과 세로 타임라인(시그니처) | | 대기 |
-| ③상-5 | 지도 딥링크 | 네이버지도/카카오맵 앱 열기(SDK 미사용) | | 대기 |
-| ③상-6 | 특이사항 | 공고 비고 — 자연인 성명 마스킹 후 표기 | | 대기 |
-| ③상-7 | 원문 링크 | "법원경매정보에서 원문 보기" | | 대기 |
-| ③상-8 | 법적 고지 | 하단 고정 문구(참고용·원문 우선·확인 요청) | | 대기 |
-| ③상-9 | 액션 | 관심 토글·공유(Web Share+URL 복사)·터치 ≥44px | | 대기 |
-| ④관-1 | D-day 정렬 | 오름차순 | | 대기 |
-| ④관-2 | 상태 추적 | 재유찰·기일 변경·매각 종료 배지, 변화 상단 고정 | | 대기 |
-| ④관-3 | D-day 강조 | D-7 이하 Accent, 경과 처리 | | 대기 |
-| ④관-4 | 저장 | localStorage 무가입, 기기 변경 불가 고지 1줄 | | 대기 |
-| ④관-5 | 빈 상태 | 사용법 안내+"물건 찾으러 가기" | | 대기 |
+| ①홈-1 | 기준일 바 | "데이터 기준 … · 다음 갱신 …" 상단 고정 | components/DataDateBar.tsx (AppShell 헤더 고정) | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ①홈-2 | 필터1 지역 | 시도 17 그리드→시군구 칩(다중, 기본 전체) | components/RegionFilter.tsx | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ①홈-3 | 필터2 금액 | 구간 칩 5종 복수 선택 | components/PriceFilter.tsx + lib/data.ts PRICE_BANDS | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ①홈-4 | 필터3 용도 | 8분류 | components/CategoryFilter.tsx | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ①홈-5 | 결과 버튼 | "물건 N건 보기" 실시간 갱신·높이 52px 하단 고정 | components/ResultButton.tsx (h-[52px] fixed) | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ①홈-6 | 미친가치 픽 진입 | "픽 N건 — 감정가 대비 50% 이하" → 픽 필터 리스트 | components/PickEntry.tsx → /list?pick=1 | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ①홈-7 | 이번 주 신규 | 신규 유찰2 도달 수 + 대표 3건 가로 스크롤 | components/NewThisWeek.tsx + lib/data.ts isNewThisWeek | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ①홈-8 | 최근 본 물건 | 최근 5건 가로 스크롤(없으면 미노출) | components/RecentViewed.tsx + lib/watchlist.ts recent | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ①홈-9 | 온보딩 반영 | 설정 지역·금액 = 필터 초기값 | app/page.tsx applyPrefs | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ②리-1 | 10건+더보기 | 무한스크롤 금지, 명시적 더보기 | components/ItemList.tsx + query.ts n 파라미터 | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ②리-2 | 카드 7요소 | 사진·용도·소재지·가격구조 한 줄·픽 배지·유찰 N회·D-day | components/ItemCard.tsx (+CategoryThumb 플레이스홀더) | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ②리-3 | 정렬 4종 | 기일 임박(기본)·할인율·최저가·신규 | ItemList select + lib/data.ts sortItems | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ②리-4 | 숫자 표기 | 한국식 축약+tabular-nums | lib/format.ts formatKrw + tabular-nums 클래스 | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ②리-5 | 빈 상태 | 안내+완화 제안 버튼 2종 | ItemList → EmptyState("금액 범위 넓히기"/"인근 지역 포함") | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ③상-1 | 가격 구조 | 감정가→최저가 바+할인율+픽+보증금(10%, 재매각 상이 문구) | components/PriceStructure.tsx | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ③상-2 | 기본 정보 | 법원·사건·물건번호·용도·면적(㎡+평)·전체 주소 | app/item/[id]/page.tsx header+기본 정보 dl | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ③상-3 | 기일 정보 | 매각기일 D-day·시각·법정 호수 | app/item/[id]/page.tsx 기일 정보 섹션 | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ③상-4 | 유찰 타임라인 | 회차별 기일—최저가—결과 세로 타임라인(시그니처) | components/HistoryTimeline.tsx | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ③상-5 | 지도 딥링크 | 네이버지도/카카오맵 앱 열기(SDK 미사용) | item page 네이버/카카오 검색 딥링크 a 2개 | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ③상-6 | 특이사항 | 공고 비고 — 자연인 성명 마스킹 후 표기 | item page 특이사항 섹션(마스킹은 crawl 단계 §13-2, mock 성명 0) | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ③상-7 | 원문 링크 | "법원경매정보에서 원문 보기" | item page detailUrl 버튼(https zod 검증 통과값만) | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ③상-8 | 법적 고지 | 하단 고정 문구(참고용·원문 우선·확인 요청) | components/LegalNotice.tsx (상세 하단+안내) | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ③상-9 | 액션 | 관심 토글·공유(Web Share+URL 복사)·터치 ≥44px | WatchToggle.tsx+ShareButton.tsx (min-h-12=48px) | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ④관-1 | D-day 정렬 | 오름차순 | app/watch/page.tsx 정렬 로직 | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ④관-2 | 상태 추적 | 재유찰·기일 변경·매각 종료 배지, 변화 상단 고정 | lib/watchlist.ts diffWatch + WatchCard + watch 정렬 | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ④관-3 | D-day 강조 | D-7 이하 Accent, 경과 처리 | ItemCard(D≤7 accent) + WatchCard(기일 경과 배지) | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ④관-4 | 저장 | localStorage 무가입, 기기 변경 불가 고지 1줄 | watchlist.ts(crazyvalue.*.v1) + watch 상단 고지 | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ④관-5 | 빈 상태 | 사용법 안내+"물건 찾으러 가기" | watch EmptyState+홈 버튼 | 완료(E2E 8/8·게이트 0건·빌드 통과) |
 
 ### 2.C §4.4 UX 18항
 
 | # | 항목 | 구현 위치 | 상태 |
 |---|---|---|---|
-| 1 | 3축 탭 필터(타이핑 0) | | 대기 |
-| 2 | 가격 구조 한 줄+할인율 | | 대기 |
-| 3 | 매각기일 D-day | | 대기 |
-| 4 | 유찰 이력 타임라인 | | 대기 |
-| 5 | 관심함 상태 추적 배지 | | 대기 |
-| 6 | 온보딩 1회 관심조건 | | 대기 |
-| 7 | 무로그인·무가입 | | 대기 |
-| 8 | 데이터 기준일 상시 표기 | | 대기 |
-| 9 | 용어 도움말 시트(12개) | | 대기 |
-| 10 | 법적 고지·원문 링크 | | 대기 |
-| 11 | 빈 상태 완화 제안 | | 대기 |
-| 12 | 스켈레톤 로딩+오프라인 캐시 | | 대기 |
-| 13 | 한국식 금액 축약+tabular-nums | | 대기 |
-| 14 | 하단 탭·44px 터치 | | 대기 |
-| 15 | 물건 URL 공유 | | 대기 |
-| 16 | 미친가치 픽 배지·진입점 | | 대기 |
-| 17 | OG 공유 카드 | | 대기 |
-| 18 | 최근 본 물건 | | 대기 |
+| 1 | 3축 탭 필터(타이핑 0) | RegionFilter·PriceFilter·CategoryFilter + 홈 | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| 2 | 가격 구조 한 줄+할인율 | ItemCard 가격 행 + PriceStructure | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| 3 | 매각기일 D-day | format.ts dday/formatDday — 카드·상세·관심함 | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| 4 | 유찰 이력 타임라인 | HistoryTimeline.tsx | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| 5 | 관심함 상태 추적 배지 | diffWatch + WatchCard | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| 6 | 온보딩 1회 관심조건 | OnboardingSheet + prefs | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| 7 | 무로그인·무가입 | 계정 코드 0 — localStorage만 | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| 8 | 데이터 기준일 상시 표기 | DataDateBar(전 화면 헤더) | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| 9 | 용어 도움말 시트(12개) | GlossarySheet(부록 B 원고 12+픽) | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| 10 | 법적 고지·원문 링크 | LegalNotice + detailUrl 버튼 | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| 11 | 빈 상태 완화 제안 | ItemList 빈 상태 2버튼 | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| 12 | 스켈레톤 로딩+오프라인 캐시 | Skeleton.tsx(로딩) — 오프라인 캐시는 Phase 4.2 서비스워커 | 부분(캐시는 Phase 4) |
+| 13 | 한국식 금액 축약+tabular-nums | formatKrw + tabular-nums | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| 14 | 하단 탭·44px 터치 | BottomTabs(min-h-14) + 칩/버튼 min-h-11 이상 | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| 15 | 물건 URL 공유 | ShareButton(Web Share+복사) | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| 16 | 미친가치 픽 배지·진입점 | PickBadge + PickEntry + pick=1 쿼리 | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| 17 | OG 공유 카드 | Phase 4.4 예정(opengraph-image.tsx) | 대기(Phase 4) |
+| 18 | 최근 본 물건 | RecentViewed + RecentTracker | 완료(E2E 8/8·게이트 0건·빌드 통과) |
 
 ## Phase 3 — 수집기·실데이터 전환
 
 | # | 작업 | 구현 위치 | 확인 방법 | 상태 |
 |---|---|---|---|---|
-| 3.1 | 정찰 스파이크(robots·약관·API 관찰·전략 확정) | docs/CRAWLER.md | 전략 1개 확정 기록 | 대기 |
+| 3.1 | 정찰 스파이크(robots·약관·API 관찰·전략 확정) | docs/CRAWLER.md | 전략 1개 확정 기록 | 완료 — 정찰 에이전트(요청 7회): 전략 A 확정, POST searchControllerMain.on + flbdNcntMin=2 서버 필터, robots 404·출처표시 자유이용 확인. 잔여: enum 코드 실검색 1회 캡처 |
 | 3.2 | 수집기 구현(유찰≥2·간격≥1초·UA CrazyValueBot/0.1·재시도3·게이트·--region·--dry-run) | scripts/crawl.ts | dry-run 1개 지역 성공 | 대기 |
 | 3.3 | 실데이터 전환(전국 1회→검증→교체→재통과) + 성명 마스킹 30건 스팟 체크 | public/data | `npm test`·스모크 실데이터 통과 | 대기 |
 | 3.4 | 자동화 crawl.yml(cron 0 18 * * 6 UTC) | .github/workflows/crawl.yml | 파일 푸시 | 대기 |
@@ -132,8 +135,8 @@
 
 | 항목 | 기준 | 확인 방법 | 상태 |
 |---|---|---|---|
-| 성능 | LCP<2.5s·Lighthouse Performance ≥90 | Phase 2·4 Lighthouse | 대기 |
-| 접근성 | WCAG AA(대비 4.5:1·alert·focus-visible·44px·reduced-motion) | 게이트+Lighthouse A11y ≥90 | 대기 |
+| 성능 | LCP<2.5s·Lighthouse Performance ≥90 | Phase 2·4 Lighthouse | 부분 — LCP 1.8s·FCP 1.2s 통과(모바일 4x 스로틀 로컬 실측). **P 스코어 50 보류**: TBT 1,650ms(하이드레이션 3.1s 스크립트 평가+Style 1.8s — 실측 breakdown 확보). Phase 4.5·개선 라운드에서 재공략(서버 셸 분리·폰트 CSS 전략·onboarding-flag 재계산 455ms) |
+| 접근성 | WCAG AA(대비 4.5:1·alert·focus-visible·44px·reduced-motion) | 게이트+Lighthouse A11y ≥90 | 통과 — 게이트 0건 + Lighthouse A11y 96 |
 | 안정성 | 크롤 실패 시 직전 데이터 유지(빈 화면 금지) | 검증 게이트 무커밋 설계+오류 상태 E2E | 대기 |
 | 정확성 | 금액·기일 원문 그대로·저감률 임의 계산 금지·픽만 파생 | 코드 리뷰+단위 테스트 | 대기 |
 
@@ -144,7 +147,7 @@
 | 1 | 보안 | 시크릿 grep·dangerouslySetInnerHTML 0건(게이트 등록)·URL https zod·npm audit high 0 | 0.4 등록, 0.5/3.4/4/5 audit | 대기(게이트 등록은 0.4) |
 | 2 | 개인정보 | 스키마 화이트리스트·성명 마스킹 함수+30건 스팟 체크 | 1.3·3.2·3.3 | 대기 |
 | 3 | 접근성 | 게이트 차단룰+Lighthouse A11y ≥90 | 0.4·2·4 | 대기 |
-| 4 | 성능 예산 | First Load JS ≤200KB(gzip)·build 표 확인 | 2·4 DoD | **기준 확정** — build 표=gzip 실측 검증(0.2), 판정은 2·4 |
+| 4 | 성능 예산 | First Load JS ≤200KB(gzip)·build 표 확인 | 2·4 DoD | Phase 2 판정: **통과** — 전 라우트 124~130kB(zod 클라이언트 제거로 199→130). LCP 1.8s 통과. P 스코어 보류분은 §4.5 행 참조 |
 | 5 | SRE | ErrorState·try-parse 단일 유틸·오류 E2E | 2 | 대기 |
 | 6 | 데이터 | 검증 실패=무커밋·localStorage v1 버전 키·스키마 변경 시 재생성+test | 1·3 | 대기 |
 | 7 | QA | 단위+E2E 상시·버그 수정=재현 테스트 선행 | 1.5·2.7·전 Phase | 대기 |

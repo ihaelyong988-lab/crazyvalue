@@ -12,6 +12,7 @@
     "mock": "tsx scripts/gen-mock.ts"
   },
   "dependencies": {
+    "lucide-react": "^1.25.0",
     "next": "15.5.20",
     "pretendard": "^1.3.9",
     "react": "19.1.0",
@@ -20,6 +21,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@playwright/test": "^1.61.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

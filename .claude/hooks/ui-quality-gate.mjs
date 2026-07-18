@@ -56,6 +56,10 @@ function lint() {
   const push = (file, block, rule, fix) => out.push({ file, block, rule, fix });
   const read = (f) => { try { return readFileSync(join(root, f), 'utf8'); } catch { return ''; } };
 
+  // R1 보조 판정: 오류 표시를 공용 <ErrorState>에 위임한 파일은 컴포넌트가 alert 시맨틱을 보유하는지로 채점한다.
+  // (컴포넌트 루트에 role="alert"가 있으면 페이지에 재강제하지 않음 — 중첩 role="alert"는 중복 알림으로 접근성 저하.)
+  const errorStateAlert = /role=["']alert["']|aria-live=/.test(read('src/components/ErrorState.tsx'));
+
   const emoji = /\p{Extended_Pictographic}/u;
   const lowContrast = /text-(gray|zinc|neutral|slate|stone)-(300|400)(?![0-9])/;
   const gradient = /bg-gradient|linear-gradient|radial-gradient/;
@@ -66,9 +70,11 @@ function lint() {
 
   for (const f of uiFiles()) {
     const src = read(f); if (!src) continue;
-    const hasErrRender = /\{\s*err(or)?(Msg|Message)?\s*&&/.test(src) || /<ErrorState/.test(src);
+    const inlineErr = /\{\s*err(or)?(Msg|Message)?\s*&&/.test(src);
+    const usesErrorState = /<ErrorState/.test(src);
     const hasAlert = /role=["']alert["']/.test(src) || /aria-live=/.test(src);
-    if (hasErrRender && !hasAlert && !/components\/ErrorState/.test(f))
+    if (!/components\/ErrorState/.test(f) &&
+        ((inlineErr && !hasAlert) || (usesErrorState && !hasAlert && !errorStateAlert)))
       push(f, true, 'R1 에러 표시에 role="alert"/aria-live 누락', '오류 컨테이너에 role="alert" 추가');
     if (lowContrast.test(src))
       push(f, true, 'R2 저대비 본문색(300/400 계열, 4.5:1 미달)', 'text-*-600 이상 또는 Ink 토큰 사용');
