@@ -179,4 +179,4 @@
 | V-4 | 2문장 안내문 앱 전수 1문장 압축(2차 지시 "이런 문장은") — 관심함 고지·저장 상태·공유 폴백·404·온보딩 확인문 | src/app/watch/page.tsx·GlossarySheet·ShareButton·not-found·OnboardingSheet | UI 문구 「습니다.…습니다.」 병렬 0건 + 게이트 R12 warn 0 | 완료 |
 | V-5 | 규칙 영구화 — MASTER.md 세로 리듬 오버라이드·AGENTS.md(레포·기획)·게이트 R11/R12 warn·memory 2건 | design-system/MASTER.md 외 | 각 파일 diff | 완료 |
 | V-6 | 검증 — 게이트 0건→pass·typecheck 0·vitest 44/44·build 129p·커밋트리 E2E 8/8(27.2s) | 워크트리 cv-verify(HEAD+변경분, npm ci) | 출력 인용. 작업트리 E2E 1실패는 미커밋 InstallPrompt 소행 — §9 원장·별도 작업 칩 | 완료 |
-| V-7 | 배포 재확인 — push 후 프로덕션 두 화면 재실측 | crazyvalue.vercel.app | push 직후 본 라운드에서 실측 기입 | 진행 |
+| V-7 | 배포 재확인 — push 후 프로덕션 두 화면 재실측 | crazyvalue.vercel.app | 커밋 19bb055 push 후 ~15s 배포. 홈 1127px·픽 설명 21px 1줄, /guide 2144px·안내문 18px 1줄 — 커밋트리 로컬 실측과 동일치 | 완료 |
