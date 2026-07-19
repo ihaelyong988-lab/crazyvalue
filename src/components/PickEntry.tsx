@@ -17,7 +17,7 @@ export function PickEntry({ count }: { count: number }) {
           </span>
         </div>
         <p className="mt-1 text-[13px] text-ink/70">
-          현재 최저가가 감정가의 50% 이하인 물건 — 기준은 안내에 공개
+          현재 최저가가 감정가의 50% 이하인 물건
         </p>
       </div>
       <ChevronRight size={20} className="shrink-0 text-ink/40" aria-hidden />

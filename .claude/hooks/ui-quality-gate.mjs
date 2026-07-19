@@ -86,6 +86,10 @@ function lint() {
       push(f, true, 'R5 한글 문장 느낌표', '마침표로 교체');
     if (/w-[89] h-[89][^"']*cursor-pointer|cursor-pointer[^"']*w-[89] h-[89]/.test(src))
       push(f, false, 'R6 터치 타깃<44px 의심', 'min-w/h 44px 이상 또는 패딩 확대');
+    if (/space-y-[5-9]/.test(src))
+      push(f, false, 'R11 세로 리듬 초과 후보(space-y-5 이상)', '섹션 간 16px(space-y-4) 기준 검토 — MASTER.md 세로 리듬 오버라이드(2026-07-19)');
+    if (!/components\/LegalNotice/.test(f) && /습니다\.[^\n]*습니다\./.test(src))
+      push(f, false, 'R12 2문장 안내문 후보(습니다체 병렬)', '1문장 압축 — 예외는 ErrorState message+action 규격·법적 고지·읽기 본문뿐(MASTER.md 세로 리듬)');
   }
   for (const f of [...uiFiles(), ...styleFiles()]) {
     const src = read(f); if (!src) continue;

@@ -57,7 +57,7 @@ export function ShareButton({ title }: { title: string }) {
       </button>
       {fallbackUrl && (
         <p className="basis-full rounded-lg border border-line bg-paper p-3 text-[13px]">
-          자동 복사에 실패했습니다. 아래 주소를 선택해 직접 복사하세요.
+          자동 복사 실패, 아래 주소를 선택해 직접 복사하세요.
           <span className="mt-1 block select-all break-all text-ink/70">{fallbackUrl}</span>
         </p>
       )}

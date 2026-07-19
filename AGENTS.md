@@ -27,6 +27,7 @@
 - UI(.tsx) 변경 시: `node .claude/hooks/ui-quality-gate.mjs --check` → 위반 0건 → `--pass` (Stop 훅이 미검증 마감을 차단).
 - 커밋 규약: `feat:`/`fix:`/`chore:`/`data:` + Phase당 최소 1커밋. force-push·`--no-verify` 금지. 신규 의존성 = 커밋 메시지에 도입 사유 1줄.
 - main은 항상 배포 가능 상태. push = Vercel 자동 배포.
+- **세로 리듬(2026-07-19 주인님 확정)**: 모바일 화면 세로폭 낭비 금지 — 섹션 간 16px 기본(`space-y-4`), 설명문 1줄 `leading-snug`, **안내·상태 문구 1문장 압축(2문장 병렬 금지)**, 레이어 간 하단 패딩 중복 금지. 상세 기준·예외(ErrorState 규격·법적 고지·읽기 본문)는 `design-system/MASTER.md` 세로 리듬 오버라이드(게이트 R11·R12 warn 연동).
 
 ## 9. 오류 원장 (Error Ledger)
 > 형식: `- [날짜] 증상 → 원인 → 처방 1줄`
@@ -39,6 +40,9 @@
 - [2026-07-18] 내장 브라우저 팬에서 courtauction.go.kr(WebSquare SPA) 본문 렌더 실패(스크린샷 타임아웃·body 0바이트 지속) → 정부 SPA는 팬 환경과 비호환 가능 → 화면 XML 정적 파일 GET으로 enum·필드 기본값을 추출하는 우회를 기본 전략으로.
 - [2026-07-18] 게이트 R1이 ErrorState 위임 페이지 3곳을 오탐 → 파일 단위 grep이 컴포넌트 경계를 미인식 → 위임 시 공용 컴포넌트의 role="alert" 보유를 검증하는 판정으로 게이트를 수정(제품 코드 무변경·엄격성 유지 — ErrorState에서 alert 제거 시 다시 차단됨).
 - [2026-07-19] WatchCard 배지 E2E에서 getByText 부분 일치가 가시 배지+오버레이 sr-only 요약에 이중 매치(strict 위반) → 같은 문구가 배지·접근 이름에 중복 존재하는 구조 → 배지는 exact 전체 문자열, 접근 계약은 getByRole(link, name 정규식)으로 분리 단언(오버레이 카드형 UI 공통 처방).
+- [2026-07-19] 내장 브라우저 팬이 프로덕션 URL 로드 직후 resize·screenshot 30s 타임아웃 반복(렌더러 불응, 2026-07-18 courtauction 선례와 동류) → 팬 재현성 한계 → 실측·스크린샷·측정 자동화는 Playwright MCP를 기본 채널로(E2E와 동일 엔진).
+- [2026-07-19] 워크트리 검증에서 turbopack이 node_modules junction을 TurbopackInternalError("filesystem root 밖 심링크")로 거부 + 배경 체인이 `| tail` 뒤 exit 0으로 실패 은폐 → junction 의존성 공유 불가·pipefail 미설정이 원인 → 워크트리 검증은 `npm ci` 실설치, 배경 체인은 `set -o pipefail`, junction 제거는 rm -rf 금지(원본 삭제 위험 — `cmd rmdir`로 링크만 제거).
+- [2026-07-19] 작업 트리 E2E 1건 실패(홈 결과 버튼 클릭이 배너 닫기에 가로채임) → 원인은 세로 리듬 변경이 아니라 **미커밋 InstallPrompt 배너(z-30 하단 고정)가 ResultButton(z-30 bottom-14)과 겹침** — HEAD+변경분 워크트리(npm ci) E2E 8/8 통과로 어트리뷰션 증명 → 타 트랙 미커밋분이 섞인 작업 트리에서는 커밋 트리 기준 워크트리 검증으로 분리 판정, 하단 고정 요소 신설 시 기존 고정 CTA와 겹침·z-순서 검사 의무(InstallPrompt 수정은 별도 작업 칩 등록).
 
 ## 5. 방문자 감사 백로그 (2026-07-18 1차 — 순번 고정)
 > 근거: 방문자 Flow 병렬 감사 5영역(온보딩·필터/리스트·상세 액션·관심함 재방문·탭/백링크) 발견 32건 → 중복 통합·그룹 분할 후 30건. 순번은 이후 라운드에서 불변. 확정 사양(무가입·주1회 갱신·사진 플레이스홀더·목데이터)은 결함 아님. Lighthouse P점수(TBT) 개선은 기지(旣知) defer 항목.

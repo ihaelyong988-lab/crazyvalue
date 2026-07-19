@@ -62,12 +62,12 @@ function PrefsEditor() {
   return (
     <section aria-label="관심 조건 설정" className="rounded-xl border border-line bg-white p-4">
       <h2 className="font-bold">관심 조건 설정</h2>
-      <p className="mt-1 text-[13px] leading-relaxed text-ink/70">
-        홈 필터의 초기값으로 쓰입니다. 선택 즉시 이 기기에 저장됩니다.
+      <p className="mt-1 text-[13px] leading-snug text-ink/70">
+        홈 필터의 초기값 쓰임, 선택 즉시 이 기기에 저장.
       </p>
 
-      <h3 className="mt-3 text-[13px] font-semibold text-ink/70">관심 지역</h3>
-      <div className="mt-2 grid grid-cols-4 gap-1.5">
+      <h3 className="mt-2 text-[13px] font-semibold text-ink/70">관심 지역</h3>
+      <div className="mt-1.5 grid grid-cols-4 gap-1.5">
         {REGIONS.map((r) => (
           <FilterChip
             key={r.key}
@@ -78,8 +78,8 @@ function PrefsEditor() {
         ))}
       </div>
 
-      <h3 className="mt-4 text-[13px] font-semibold text-ink/70">관심 금액대</h3>
-      <div className="mt-2 flex flex-wrap gap-1.5">
+      <h3 className="mt-3 text-[13px] font-semibold text-ink/70">관심 금액대</h3>
+      <div className="mt-1.5 flex flex-wrap gap-1.5">
         {PRICE_BANDS.map((b) => (
           <FilterChip
             key={b.key}
@@ -90,8 +90,8 @@ function PrefsEditor() {
         ))}
       </div>
 
-      <p role="status" className="mt-3 text-[13px] text-ink/70">
-        {saved ? "저장되었습니다. 홈 필터에 바로 반영됩니다." : ""}
+      <p role="status" className="mt-2 text-[13px] text-ink/70">
+        {saved ? "저장됨, 홈 필터에 바로 반영." : ""}
       </p>
     </section>
   );
@@ -99,7 +99,7 @@ function PrefsEditor() {
 
 export function GlossarySheet() {
   return (
-    <div className="space-y-5 p-4">
+    <div className="space-y-4 p-4">
       <PrefsEditor />
 
       <section className="rounded-xl border border-line bg-white p-4">
@@ -115,7 +115,7 @@ export function GlossarySheet() {
 
       <section className="rounded-xl border border-line bg-white p-4">
         <h2 className="font-bold">경매 용어 풀이</h2>
-        <dl className="mt-3 space-y-3">
+        <dl className="mt-3 space-y-2">
           {TERMS.map((t) => (
             <div key={t.term}>
               <dt className="font-semibold text-[14px]">{t.term}</dt>

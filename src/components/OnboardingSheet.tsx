@@ -180,8 +180,8 @@ export function OnboardingSheet({ onDone }: { onDone: () => void }) {
             role="alert"
             className="mt-4 rounded-lg border border-line bg-white px-3 py-2 text-[13px] font-medium text-ink"
           >
-            선택한 관심 조건 <b className="tabular-nums">{picked}개</b>는 저장되지 않습니다.
-            한 번 더 누르면 저장 없이 시작합니다.
+            선택한 관심 조건 <b className="tabular-nums">{picked}개</b>는 저장되지 않습니다 —
+            한 번 더 누르면 저장 없이 시작.
           </p>
         )}
 

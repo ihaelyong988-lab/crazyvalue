@@ -124,7 +124,7 @@ export default function WatchPage() {
   return (
     <div className="space-y-3 p-4">
       <p className="text-[12px] text-ink/70">
-        관심함은 이 기기에만 저장됩니다. 기기를 바꾸면 이전되지 않습니다.
+        관심함은 이 기기에만 저장, 기기 변경 시 이전되지 않음.
       </p>
       <ul className="space-y-4">
         {rows.map((r) => (

@@ -12,8 +12,8 @@
 | 0.2 | 스캐폴드 create-next-app@15 | C:\dev\crazyvalue | `npm run build` 성공 | 완료 — build 성공, First Load JS 119kB |
 | 0.3 | 저장소 정비(README·.gitignore·PLAN.md·TRACE.md 선전개) | README.md·docs/ | 파일 존재 + 전 Phase 전개 | 완료 — 본 파일 생성으로 충족 |
 | 0.4 | 하네스 이식(AGENTS.md·ui-quality-gate·Stop 훅) | AGENTS.md·.claude/ | `--check` 실행 가능 | 완료 — --check 정상 작동(스캐폴드 기본 css의 P1·P2 검출 = 채점 증거, Phase 1.2에서 해소) |
-| 0.5 | GitHub 등록·푸시 | origin | `git ls-remote origin` | **보류** — 로컬 커밋 완료·audit high 0(moderate 2). `gh repo create`가 세션 권한 분류기에 차단. 재개 조건: 주인님 권한 허용 또는 직접 1회 실행 |
-| 0.6 | Vercel 등록·연동·최초 배포 | vercel 프로젝트 | 프로덕션 URL 200 | **부분 보류** — `vercel link` 성공(프로젝트 crazyvalue 생성, 이름 충돌 없음). `vercel --prod` 권한 차단. 재개 조건 0.5와 동일 |
+| 0.5 | GitHub 등록·푸시 | origin | `git ls-remote origin` | 완료(2026-07-19) — https://github.com/ihaelyong988-lab/crazyvalue 생성, main 6커밋 푸시·추적 설정("branch 'main' set up to track 'origin/main'") |
+| 0.6 | Vercel 등록·연동·최초 배포 | vercel 프로젝트 | 프로덕션 URL 200 | 완료(2026-07-19) — link+`vercel git connect`(push=자동 배포 확립)+프로덕션 배포. **https://crazyvalue.vercel.app HTTP 200·본문 워드마크 확인** |
 
 - Phase 0 결정 기록: 기본 브랜치 `master`→`main` 개명(§13-8 정합) · **First Load JS 표 수치 = gzip 기준 실측 확정**(보고 75.4kB ≈ gzip 74.6KB, 디스크 247KB — §13-4 예산 200KB는 build 표 수치로 직접 판정) · create-next-app 산출 lint 도구는 ESLint(eslint.config.mjs) 확인
 
@@ -168,3 +168,15 @@
 | 13 | UX 라이팅 | 단정형·금지어 grep·오류 문구 2문장 규격·용어집 대조 | 0.4·2 | 대기 |
 | 14 | 법무 | LegalNotice 상시·수집 근거 보존·투자 권유/수익 보장 금지 grep | 0.4·2·3.1 | 대기 |
 | 15 | 메인테이너 | README 3명령 실검증·문서 재개 순서 | 0.3·5.4 | 진행 중 — README 작성(0.3), 검증은 5.4 |
+
+## 세로 리듬 압축 라운드 (2026-07-19 — 주인님 캡쳐 마크업 2건 + 같은 날 2차 일반화 지시)
+
+| # | 작업 | 구현 위치 | 확인 방법 | 상태 |
+|---|---|---|---|---|
+| V-1 | 홈 픽 카드 X표시 삭제 — 꼬리 「— 기준은 안내에 공개」만(주인님 1회 확정, 부분구간 판례) | src/components/PickEntry.tsx | 설명 42px(2줄)→21px(1줄) 실측 | 완료(커밋트리 로컬 실측) |
+| V-2 | 홈 세로 리듬 — 섹션 20→16px·하단 중복 패딩 192→128px(AppShell pb-24와 중복 해소) | src/app/page.tsx | 375px 뷰포트 scrollHeight 1231→1127(−104px) | 완료 |
+| V-3 | 안내 문구 교체(필기 그대로 「홈 필터의 초기값 쓰임, 선택 즉시 이 기기에 저장.」)+리듬 압축 | src/components/GlossarySheet.tsx | scrollHeight 2244→2144(−100px)·안내문 42→18px 1줄 | 완료 |
+| V-4 | 2문장 안내문 앱 전수 1문장 압축(2차 지시 "이런 문장은") — 관심함 고지·저장 상태·공유 폴백·404·온보딩 확인문 | src/app/watch/page.tsx·GlossarySheet·ShareButton·not-found·OnboardingSheet | UI 문구 「습니다.…습니다.」 병렬 0건 + 게이트 R12 warn 0 | 완료 |
+| V-5 | 규칙 영구화 — MASTER.md 세로 리듬 오버라이드·AGENTS.md(레포·기획)·게이트 R11/R12 warn·memory 2건 | design-system/MASTER.md 외 | 각 파일 diff | 완료 |
+| V-6 | 검증 — 게이트 0건→pass·typecheck 0·vitest 44/44·build 129p·커밋트리 E2E 8/8(27.2s) | 워크트리 cv-verify(HEAD+변경분, npm ci) | 출력 인용. 작업트리 E2E 1실패는 미커밋 InstallPrompt 소행 — §9 원장·별도 작업 칩 | 완료 |
+| V-7 | 배포 재확인 — push 후 프로덕션 두 화면 재실측 | crazyvalue.vercel.app | push 직후 본 라운드에서 실측 기입 | 진행 |

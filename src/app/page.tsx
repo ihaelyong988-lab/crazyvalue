@@ -104,7 +104,7 @@ export default function HomePage() {
   // 필터 UI는 정적이므로 데이터와 무관하게 즉시 렌더한다(첫 페인트 = 필터 화면).
   // 데이터 의존 블록(픽·신규·최근·건수)만 로드 후 표시 — LCP 예산(§13 규칙 4) 준수 구조.
   return (
-    <div className="space-y-5 p-4 pb-24">
+    <div className="space-y-4 p-4 pb-8">
       <OnboardingSheet onDone={applyPrefs} />
 
       {status === "error" && (
