@@ -88,8 +88,24 @@ function lint() {
       push(f, false, 'R6 터치 타깃<44px 의심', 'min-w/h 44px 이상 또는 패딩 확대');
     if (/space-y-[5-9]/.test(src))
       push(f, false, 'R11 세로 리듬 초과 후보(space-y-5 이상)', '섹션 간 16px(space-y-4) 기준 검토 — MASTER.md 세로 리듬 오버라이드(2026-07-19)');
-    if (!/components\/LegalNotice/.test(f) && /습니다\.[^\n]*습니다\./.test(src))
-      push(f, false, 'R12 2문장 안내문 후보(습니다체 병렬)', '1문장 압축 — 예외는 ErrorState message+action 규격·법적 고지·읽기 본문뿐(MASTER.md 세로 리듬)');
+    // R12: 안내·상태 문구 1문장 압축(MASTER.md 세로 리듬). 문체를 가리지 않는다 —
+    // 이전 판정은 「습니다.…습니다.」 정규식이라 이 저장소 기본 문체인 단정형 2문장을 구조적으로 못 잡았다
+    // (감사 2차 49: 온보딩 시트 안내 3문단 전부 2문장 병렬인데 게이트 통과).
+    // 대상은 <p>의 사용자 노출 문구뿐이다: 용어 <dd>·데이터 안내 <li> 같은 읽기 본문은 애초에 스캔에서 빠지고,
+    // 법적 고지는 파일 예외, 그 밖의 읽기 본문은 data-reading 선언으로 예외를 명시한다(예외가 grep으로 세어진다).
+    if (!/components\/LegalNotice/.test(f))
+      for (const [, attrs, body] of src.matchAll(/<p\b([^>]*)>([\s\S]*?)<\/p>/g)) {
+        if (/\bdata-reading\b/.test(attrs)) continue;
+        const text = body
+          .replace(/\{\/\*[\s\S]*?\*\/\}/g, ' ') // JSX 주석
+          .replace(/\{[^{}]*(\{[^{}]*\}[^{}]*)*\}/g, '') // 보간식(값은 문구가 아니다)
+          .replace(/<[^>]*>/g, ' ') // 중첩 태그
+          .replace(/\s+/g, ' ');
+        if (!/[가-힣]/.test(text)) continue;
+        // 종결부호 2개 이상 = 2문장 병렬. 마침표 앞이 한글·닫는 괄호일 때만 센다(소수점·U.S. 오탐 방지).
+        if ((text.match(/[가-힣)\]][.?]/g) || []).length >= 2)
+          push(f, false, `R12 2문장 안내문(${text.trim().slice(0, 28)}…)`, '1문장 압축 — 읽기 본문이면 해당 <p>에 data-reading 선언(예외는 ErrorState message+action 규격·법적 고지·읽기 본문뿐, MASTER.md 세로 리듬)');
+      }
   }
   for (const f of [...uiFiles(), ...styleFiles()]) {
     const src = read(f); if (!src) continue;

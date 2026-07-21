@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 
 // PWA 설치 유도(기획안 §8 Phase 4.3) — Android/데스크톱은 beforeinstallprompt 배너, iOS Safari는 1회 안내.
 // 노출 제한: localStorage "crazyvalue.install.v1" = {"dismissedAt": ISO} — 한 번 닫으면 다시 노출하지 않는다.
@@ -8,6 +9,39 @@ import { useEffect, useRef, useState } from "react";
 // 이미 standalone(설치됨) 모드면 미노출. 통합 시 AppShell 등 상시 마운트 지점에 1곳만 배치한다.
 
 const INSTALL_KEY = "crazyvalue.install.v1";
+
+/** 배너 기본 오프셋 = 하단 탭 높이(3.5rem). 페이지 고정 CTA는 이 위로 더 올린다. */
+const TABS_PX = 56;
+
+/**
+ * 페이지가 렌더한 하단 고정 요소(홈 결과 버튼)의 높이를 실측한다(감사 2차 93 · 오류 원장 2026-07-19).
+ * 같은 하단 고정끼리 겹치면 배너가 주 CTA의 탭을 가로챈다. 소유가 다른 컴포넌트에 마커를 심지 않으려고
+ * main 안에서 화면 하단에 걸친 요소만 골라 position을 확인한다(스타일 조회는 후보에만 건다).
+ */
+function measureLift(): number {
+  const main = document.querySelector("main");
+  if (main === null) return 0;
+  const vh = window.innerHeight;
+  let lift = 0;
+  for (const el of main.querySelectorAll<HTMLElement>("*")) {
+    const rect = el.getBoundingClientRect();
+    if (rect.height === 0 || rect.bottom <= vh / 2 || rect.top >= vh) continue;
+    if (window.getComputedStyle(el).position !== "fixed") continue;
+    lift = Math.max(lift, vh - rect.top - TABS_PX);
+  }
+  return Math.max(0, Math.ceil(lift)); // 올림 — 소수점 잔차로 1px 겹치는 쪽으로 기울지 않게 한다
+}
+
+/**
+ * 열려 있는 모달 존재 여부(감사 2차 70).
+ * 배너는 effect로 늦게 마운트돼 온보딩 시트의 배경 inert 수집 시점에 없다 — 마운트 순서와 무관하게
+ * 배너 스스로 모달 열림을 구독해 자기 자신에 inert 속성을 건다.
+ */
+function modalOpen(): boolean {
+  return Array.from(
+    document.querySelectorAll<HTMLElement>('[role="dialog"][aria-modal="true"]'),
+  ).some((el) => el.getBoundingClientRect().height > 0);
+}
 
 interface BeforeInstallPromptEvent extends Event {
   prompt: () => Promise<void>;
@@ -52,7 +86,11 @@ function writeDismissed(): void {
 }
 
 export function InstallPrompt() {
+  const pathname = usePathname();
   const [mode, setMode] = useState<"android" | "ios" | null>(null);
+  const [lift, setLift] = useState(0);
+  const [blocked, setBlocked] = useState(false);
+  const boxRef = useRef<HTMLDivElement | null>(null);
   const promptRef = useRef<BeforeInstallPromptEvent | null>(null);
   const doneRef = useRef(false);
 
@@ -60,8 +98,15 @@ export function InstallPrompt() {
     if (isStandalone()) return;
     if (readDismissed() !== false) return; // 기해제(true)·저장소 실패(null) 모두 미노출
 
+    // 오프셋·inert는 노출 결정과 같은 시점에 계산한다 — 첫 프레임부터 제자리에 그린다.
+    const show = (next: "android" | "ios") => {
+      setLift(measureLift());
+      setBlocked(modalOpen());
+      setMode(next);
+    };
+
     if (isIos()) {
-      setMode("ios");
+      show("ios");
       return;
     }
 
@@ -69,11 +114,48 @@ export function InstallPrompt() {
       if (doneRef.current) return;
       e.preventDefault(); // 브라우저 기본 미니 배너 대신 앱 배너로 안내
       promptRef.current = e as BeforeInstallPromptEvent;
-      setMode("android");
+      show("android");
     };
     window.addEventListener("beforeinstallprompt", onBeforeInstallPrompt);
     return () => window.removeEventListener("beforeinstallprompt", onBeforeInstallPrompt);
   }, []);
+
+  // 화면 전환·회전으로 페이지 고정 CTA가 바뀌면 오프셋을 다시 잰다.
+  // 동시에 배너가 차지한 높이를 --cv-banner-h로 알린다 — 배너는 fixed라 레이아웃을 밀지 않아서,
+  // 이 값을 main 하단 여백에 더하지 않으면 스크롤 끝의 일반 콘텐츠(리스트 더보기 등)를 덮는다.
+  useEffect(() => {
+    if (mode === null) return;
+    const remeasure = () => {
+      setLift(measureLift());
+      const h = boxRef.current?.getBoundingClientRect().height ?? 0;
+      document.documentElement.style.setProperty("--cv-banner-h", `${Math.ceil(h)}px`);
+    };
+    remeasure();
+    window.addEventListener("resize", remeasure);
+    return () => {
+      window.removeEventListener("resize", remeasure);
+      document.documentElement.style.removeProperty("--cv-banner-h");
+    };
+  }, [mode, pathname]);
+
+  // 모달 열림 구독(감사 2차 70) — 시트가 배경을 수집한 뒤에 마운트돼도 배경 비활성 계약을 지킨다.
+  useEffect(() => {
+    if (mode === null) return;
+    let frame = 0;
+    const check = () => {
+      frame = 0;
+      setBlocked(modalOpen());
+    };
+    check();
+    const observer = new MutationObserver(() => {
+      if (frame === 0) frame = window.requestAnimationFrame(check);
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+    return () => {
+      observer.disconnect();
+      if (frame !== 0) window.cancelAnimationFrame(frame);
+    };
+  }, [mode]);
 
   if (mode === null) return null;
 
@@ -96,23 +178,33 @@ export function InstallPrompt() {
   };
 
   return (
+    // z는 페이지 고정 CTA(z-30)보다 아래로 둔다 — 실측 오프셋이 0으로 떨어져도 주 CTA의 탭을 가로채지 않는다.
     <div
       role="region"
       aria-label="홈 화면 설치 안내"
-      className="fixed inset-x-0 bottom-[calc(3.5rem+env(safe-area-inset-bottom))] z-30 mx-auto w-full max-w-md px-3 pb-2"
+      inert={blocked}
+      style={
+        lift > 0
+          ? { bottom: `calc(3.5rem + env(safe-area-inset-bottom) + ${lift}px)` }
+          : undefined
+      }
+      className="fixed inset-x-0 bottom-[calc(3.5rem+env(safe-area-inset-bottom))] z-20 mx-auto w-full max-w-md px-3 pb-2"
+      ref={boxRef}
     >
       <div className="rounded-xl border border-line bg-white p-4 shadow-[0_8px_24px_rgba(15,42,67,0.14)]">
         {mode === "android" ? (
           <>
             <p className="text-[14px] font-semibold">미친가치를 홈 화면에 설치</p>
-            <p className="mt-0.5 text-[13px] text-ink/70">앱처럼 전체 화면으로 바로 열립니다.</p>
+            <p className="mt-0.5 text-[13px] leading-snug text-ink/70">
+              앱처럼 전체 화면으로 열린다.
+            </p>
             <div className="mt-3 flex gap-2">
               <button
                 type="button"
                 onClick={install}
                 className="min-h-11 flex-1 cursor-pointer rounded-lg bg-accent px-4 text-[14px] font-semibold text-white transition-colors duration-200 hover:bg-accent/90"
               >
-                홈 화면에 설치
+                설치하기
               </button>
               <button
                 type="button"
@@ -125,8 +217,8 @@ export function InstallPrompt() {
           </>
         ) : (
           <>
-            <p className="text-[13px] leading-relaxed">
-              {"공유 버튼을 눌러 '홈 화면에 추가'를 선택하세요"}
+            <p className="text-[13px] leading-snug">
+              {"공유 버튼에서 '홈 화면에 추가'를 선택하라."}
             </p>
             <div className="mt-3 flex">
               <button

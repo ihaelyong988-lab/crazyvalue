@@ -7,6 +7,7 @@ import { PriceStructure } from "@/components/PriceStructure";
 import { HistoryTimeline } from "@/components/HistoryTimeline";
 import { WatchToggle } from "@/components/WatchToggle";
 import { ShareButton } from "@/components/ShareButton";
+import { CopyCaseNo } from "@/components/CopyCaseNo";
 import { LegalNotice } from "@/components/LegalNotice";
 import { CategoryThumb } from "@/components/CategoryThumb";
 import { BackButton, RecentTracker } from "./RecentTracker";
@@ -105,13 +106,16 @@ export default async function ItemPage({ params }: { params: Promise<{ id: strin
           </div>
         </dl>
         <div className="mt-3 flex gap-2 border-t border-line pt-3">
+          {/* 외부 링크는 새 창 고지를 접근 이름에만 병기한다 — 시각 텍스트를 늘리지 않아
+              세로폭을 먹지 않으면서 예고 없는 창 전환을 없앤다(감사 82). */}
           <a
             href={`https://map.naver.com/p/search/${mapQuery}`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex min-h-11 flex-1 cursor-pointer items-center justify-center gap-1 rounded-lg border border-line bg-paper text-[13px] font-medium transition-colors duration-200 hover:bg-line/50"
           >
-            <MapPin size={15} aria-hidden /> 네이버지도
+            <MapPin size={15} aria-hidden /> 네이버지도{" "}
+            <span className="sr-only">새 창 열림</span>
           </a>
           <a
             href={`https://map.kakao.com/link/search/${mapQuery}`}
@@ -119,7 +123,8 @@ export default async function ItemPage({ params }: { params: Promise<{ id: strin
             rel="noopener noreferrer"
             className="flex min-h-11 flex-1 cursor-pointer items-center justify-center gap-1 rounded-lg border border-line bg-paper text-[13px] font-medium transition-colors duration-200 hover:bg-line/50"
           >
-            <MapPin size={15} aria-hidden /> 카카오맵
+            <MapPin size={15} aria-hidden /> 카카오맵{" "}
+            <span className="sr-only">새 창 열림</span>
           </a>
         </div>
       </section>
@@ -131,16 +136,31 @@ export default async function ItemPage({ params }: { params: Promise<{ id: strin
         </section>
       )}
 
-      <HistoryTimeline history={item.history} saleDate={item.saleDate} minPrice={item.minPrice} />
+      <HistoryTimeline
+        history={item.history}
+        saleDate={item.saleDate}
+        minPrice={item.minPrice}
+        days={days}
+      />
 
-      <a
-        href={item.detailUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex min-h-12 w-full cursor-pointer items-center justify-center gap-1.5 rounded-xl border border-accent bg-white font-semibold text-accent transition-colors duration-200 hover:bg-paper"
-      >
-        <ExternalLink size={17} aria-hidden /> 법원경매정보에서 원문 보기
-      </a>
+      {/* 법원 원문 도달 3종(AGENTS §2-2 조문 6) — ①사건상세 화면 링크 ②사건번호 복사 ③찾는 방법 1줄.
+          사건 단위 딥링크가 구조적으로 불가하므로(docs/CRAWLER.md §4.1) 세 수단을 한 블록에 묶어
+          링크→복사→입력 동선이 끊기지 않게 한다(감사 45). */}
+      <section aria-label="법원 원문 확인" className="space-y-2">
+        <a
+          href={item.detailUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex min-h-12 w-full cursor-pointer items-center justify-center gap-1.5 rounded-xl border border-accent bg-white font-semibold text-accent transition-colors duration-200 hover:bg-paper"
+        >
+          <ExternalLink size={17} aria-hidden /> 법원경매정보에서 원문 보기{" "}
+          <span className="sr-only">새 창 열림</span>
+        </a>
+        <CopyCaseNo caseNo={item.caseNo} />
+        <p className="text-[13px] leading-snug text-ink/70">
+          원문 화면에서 법원 선택 후 사건번호를 붙여넣는다.
+        </p>
+      </section>
 
       <div className="flex flex-wrap gap-2">
         <WatchToggle item={item} />

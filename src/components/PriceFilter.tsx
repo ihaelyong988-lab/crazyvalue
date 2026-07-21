@@ -14,7 +14,8 @@ export function PriceFilter({
   return (
     <fieldset>
       <legend className="mb-2 text-[13px] font-semibold text-ink/70">
-        금액(최저가) <span className="font-normal text-ink/50">— 복수 선택</span>
+        {/* 보조 문구 ink/70 — Paper 위 대비 4.5:1 확보(감사 2차 71) */}
+        금액(최저가) <span className="font-normal text-ink/70">— 복수 선택</span>
       </legend>
       <div className="flex flex-wrap gap-1.5">
         {PRICE_BANDS.map((b) => (

@@ -3,9 +3,11 @@
  * @playwright/test의 chromium으로 HTML을 목표 크기 뷰포트 그대로 렌더해 스크린샷으로 저장한다.
  * 192는 512 디자인을 transform scale로 동일 비율 축소 렌더 — 이미지 리사이즈 라이브러리 미도입(§13 규칙 10).
  * 폰트는 pretendard 패키지의 정적 OTF를 data URI로 주입(브랜드 정합), 결손 시 시스템 맑은 고딕 폴백.
- * 산출: public/icons/icon-512.png · public/icons/icon-192.png · public/og-default.png
- * 실행: 저장소 루트에서 `npx tsx scripts/gen-icons.ts`
- * 종료: 3건 모두 기대 픽셀 크기와 일치해야 0 — 불일치·실패 시 1(§13 규칙 9: 요약 출력·침묵 실패 금지).
+ * 산출: public/icons/icon-512.png · public/icons/icon-192.png · public/icons/icon-maskable-512.png ·
+ *       public/icons/apple-touch-icon-180.png · public/og-default.png
+ * 실행: 저장소 루트에서 `npx tsx scripts/gen-icons.ts` (인자로 파일명을 주면 그 산출물만 다시 만든다 —
+ *       기존 아이콘을 덮어쓰지 않고 추가할 때 쓴다: `npx tsx scripts/gen-icons.ts icon-maskable-512`)
+ * 종료: 대상 전부가 기대 픽셀 크기와 일치해야 0 — 불일치·실패 시 1(§13 규칙 9: 요약 출력·침묵 실패 금지).
  */
 import { chromium, type Browser } from "@playwright/test";
 import { mkdirSync, readFileSync } from "node:fs";
@@ -43,6 +45,17 @@ function iconInner(viewport: number): string {
   return `<div style='width:512px;height:512px;transform:scale(${scale});transform-origin:0 0;background:${NAVY};display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:${FAMILY};'>
   <div style='color:#ffffff;font-size:100px;font-weight:700;line-height:1;letter-spacing:-2px;'>미친가치</div>
   <div style='margin-top:24px;color:rgba(255,255,255,0.72);font-size:33px;font-weight:500;line-height:1;letter-spacing:1px;'>CrazyValue</div>
+</div>`;
+}
+
+/**
+ * maskable 아이콘(512) — 런처가 바깥 20%를 잘라내므로 워드마크를 안전원(반지름 204.8px) 안에 넣는다.
+ * 본문 폭 약 298px(76px×4자 − 자간), 블록 높이 약 119px → 대각 반지름 약 161px로 여유가 있다.
+ */
+function maskableInner(): string {
+  return `<div style='width:512px;height:512px;background:${NAVY};display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:${FAMILY};'>
+  <div style='color:#ffffff;font-size:76px;font-weight:700;line-height:1;letter-spacing:-2px;'>미친가치</div>
+  <div style='margin-top:18px;color:rgba(255,255,255,0.72);font-size:25px;font-weight:500;line-height:1;letter-spacing:1px;'>CrazyValue</div>
 </div>`;
 }
 
@@ -89,7 +102,7 @@ async function main(): Promise<void> {
     fontFace("Pretendard-Bold.otf", 700),
   ].join("\n");
 
-  const jobs: Job[] = [
+  const all: Job[] = [
     {
       out: join(ROOT, "public", "icons", "icon-512.png"),
       width: 512,
@@ -102,6 +115,19 @@ async function main(): Promise<void> {
       height: 192,
       html: baseDoc(192, 192, fontCss, iconInner(192)),
     },
+    // 설치 아이콘 보강(감사 2차 66): 안드로이드 런처 마스크용 + iOS 홈 화면 추가용.
+    {
+      out: join(ROOT, "public", "icons", "icon-maskable-512.png"),
+      width: 512,
+      height: 512,
+      html: baseDoc(512, 512, fontCss, maskableInner()),
+    },
+    {
+      out: join(ROOT, "public", "icons", "apple-touch-icon-180.png"),
+      width: 180,
+      height: 180,
+      html: baseDoc(180, 180, fontCss, iconInner(180)),
+    },
     {
       out: join(ROOT, "public", "og-default.png"),
       width: 1200,
@@ -109,6 +135,16 @@ async function main(): Promise<void> {
       html: baseDoc(1200, 630, fontCss, ogInner()),
     },
   ];
+
+  // 인자가 있으면 그 파일명을 포함하는 산출물만 만든다 — 기존 아이콘을 덮어쓰지 않고 추가하는 경로.
+  const only = process.argv.slice(2);
+  const jobs =
+    only.length === 0 ? all : all.filter((j) => only.some((name) => j.out.includes(name)));
+  if (jobs.length === 0) {
+    console.error(`대상 없음 — 인자 ${JSON.stringify(only)}와 일치하는 산출물이 없다.`);
+    process.exitCode = 1;
+    return;
+  }
 
   const browser = await chromium.launch();
   try {

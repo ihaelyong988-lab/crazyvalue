@@ -4,19 +4,22 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "mock": "tsx scripts/gen-mock.ts"
+    "mock": "tsx scripts/gen-mock.ts",
+    "crawl": "tsx scripts/crawl.ts"
   },
   "dependencies": {
+    "@serwist/next": "^9.5.11",
     "lucide-react": "^1.25.0",
     "next": "15.5.20",
     "pretendard": "^1.3.9",
     "react": "19.1.0",
     "react-dom": "19.1.0",
+    "serwist": "^9.5.11",
     "zod": "^4.4.3"
   },
   "devDependencies": {

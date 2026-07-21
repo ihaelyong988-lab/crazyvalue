@@ -27,11 +27,18 @@ export function ItemCard({ item, compact = false }: { item: AuctionItem; compact
             {item.region} {item.district}
           </p>
           <p className="mt-1 truncate tabular-nums">
+            {/* 금액 두 개의 의미 라벨은 접근 이름에만 둔다(감사 2차 84) — 가시 텍스트를 늘리면
+                같은 문구가 화면·접근 이름에 이중 존재해 카드 UI 단언이 흔들린다(§9 원장 2026-07-19). */}
             {/* 감정가 취소선 — ink/70: 흰 카드 위 대비 4.5:1 확보(감사 8) */}
             <span className="text-[12px] text-ink/70 line-through">
+              {/* 라벨 끝은 &nbsp; — sr-only 상자의 끝 공백은 CSS 공백 처리에서 지워져 값과 붙어 읽힌다. */}
+              <span className="sr-only">감정가&nbsp;</span>
               {formatKrw(item.appraisalPrice)}
             </span>{" "}
-            <span className="font-bold text-accent">{formatKrw(item.minPrice)}</span>{" "}
+            <span className="font-bold text-accent">
+              <span className="sr-only">최저가&nbsp;</span>
+              {formatKrw(item.minPrice)}
+            </span>{" "}
             <span className="text-[12px] font-semibold text-accent">-{pct}%</span>
           </p>
           <p className="mt-1 flex items-center gap-2 text-[12px] tabular-nums text-ink/70">

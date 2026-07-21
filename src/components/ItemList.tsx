@@ -1,11 +1,19 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import type { AuctionItem } from "@/types/auction";
 import { SORT_OPTIONS, type SortKey } from "@/lib/data";
 import { ItemCard } from "@/components/ItemCard";
 import { EmptyState } from "@/components/EmptyState";
 
 // 리스트(§4.3-②): 10건 단위 + 명시적 더보기(무한 스크롤 금지), 정렬 4종, 빈 상태 완화 제안.
+
+// 더보기 직후 삽입분을 포인터 히트테스트에서 제외하는 시간(감사 2차 54). 새 카드가 버튼 위에 삽입되면
+// 버튼이 그만큼 아래로 밀려, 빠른 두 번째 탭이 그 자리에 새로 온 카드에 적중해 엉뚱한 상세로 이탈한다.
+// 삽입분만 잠깐 무반응으로 두면 셸로우 URL 갱신 구조(감사 29)·레이아웃·스크롤 위치를 그대로 두고
+// 오적중만 사라진다. 포인터 전용이라 포커스·키보드 조작에는 영향이 없다.
+const INSERT_GUARD_MS = 400;
+
 export function ItemList({
   items,
   shown,
@@ -22,6 +30,15 @@ export function ItemList({
   /** 빈 결과 완화 제안 — 실제 적용 중인 조건의 해제 동작만 담는다(감사 25·26: 무동작 버튼 금지). */
   relaxActions: { label: string; onClick: () => void }[];
 }) {
+  // 이번 더보기로 삽입된 카드의 시작 인덱스(= 더보기 직전 표시 건수). null이면 차단 없음.
+  const [guardFrom, setGuardFrom] = useState<number | null>(null);
+  // 차단 창은 삽입이 실제로 렌더된 시점부터 잰다 — shown이 아직 늘지 않았으면 시작하지 않는다.
+  useEffect(() => {
+    if (guardFrom === null || shown <= guardFrom) return;
+    const timer = setTimeout(() => setGuardFrom(null), INSERT_GUARD_MS);
+    return () => clearTimeout(timer);
+  }, [guardFrom, shown]);
+
   if (items.length === 0) {
     return (
       <EmptyState
@@ -59,8 +76,13 @@ export function ItemList({
         </label>
       </div>
       <ul className="space-y-3">
-        {visible.map((i) => (
-          <li key={i.id}>
+        {visible.map((i, idx) => (
+          <li
+            key={i.id}
+            className={
+              guardFrom !== null && idx >= guardFrom ? "pointer-events-none" : undefined
+            }
+          >
             <ItemCard item={i} />
           </li>
         ))}
@@ -68,10 +90,14 @@ export function ItemList({
       {shown < items.length && (
         <button
           type="button"
-          onClick={onMore}
+          onClick={() => {
+            setGuardFrom(shown);
+            onMore();
+          }}
           className="mt-4 min-h-12 w-full cursor-pointer rounded-xl border border-line bg-white font-semibold text-ink transition-colors duration-200 hover:bg-paper"
         >
-          더보기 <span className="tabular-nums text-ink/60">({shown}/{items.length})</span>
+          {/* 카운트 ink/70 — 흰 버튼 위 대비 4.5:1 확보(감사 2차 83) */}
+          더보기 <span className="tabular-nums text-ink/70">({shown}/{items.length})</span>
         </button>
       )}
     </div>

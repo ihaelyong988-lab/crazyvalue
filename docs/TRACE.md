@@ -202,8 +202,20 @@
 ### 신설 사양 5건 (주인님 승인분 — 감사 결과와 무관하게 이행)
 | 코드 | 사양 | 그룹 | 확인 방법 | 상태 |
 |---|---|---|---|---|
-| N1 | 내 설정 `/me` — 관심조건 편집 이관·저장 현황·내 데이터 초기화 | me | `/me` 200 · 탭 4개 · prefs 저장 왕복 · 초기화 확인 팝업 E2E | 대기 |
-| N2 | 이탈 확인 팝업 + 설치 배너 겹침 종결 | exit | 홈 뒤로가기 시트 E2E · 배너·결과버튼 bbox 교집합 0 | 대기 |
-| N3 | 법원 링크 3종(규격 링크·사건번호 복사·찾는 법) | link | detailUrl 불일치 0 · 3종 존재 E2E | 대기 |
-| N4 | 주간 갱신 복구(crawl.ts 커밋·dry-run·갱신 지연 표기) | data | git 트래킹 · dry-run 성공 · cron 확인 · 지연 표기 렌더 | 대기 |
-| N5 | Phase 4 마감(서비스워커·오프라인·manifest) | pwa | SW 등록 · manifest 200 · 오프라인 열람 Playwright | 대기 |
+| N1 | 내 설정 `/me` — 관심조건 편집 이관·저장 현황·내 데이터 초기화 | me | `/me` 200 · 탭 4개 · prefs 저장 왕복 · 초기화 확인 팝업 E2E | 완료 — `/me` 라우트 빌드 성공(6.41kB·110kB) · 하단 탭 4개 · resetAll() 신설 · 관심조건 /guide→/me 이관 완료 |
+| N2 | 이탈 확인 팝업 + 설치 배너 겹침 종결 | exit | 홈 뒤로가기 시트 E2E · 배너·결과버튼 bbox 교집합 0 | 완료 — ExitGuard.tsx 신설(popstate 가드+조건부 beforeunload 3곳) · 배너 겹침 종결(--cv-banner-h로 main 여백 보정) · E2E 8/8 |
+| N3 | 법원 링크 3종(규격 링크·사건번호 복사·찾는 법) | link | detailUrl 불일치 0 · 3종 존재 E2E | 완료 — detailUrl 루트 잔존 **0건** · DETAIL_URL 규격 **120/120건** · CopyCaseNo.tsx 신설로 3종(링크·복사·찾는 법) 완비 |
+| N4 | 주간 갱신 복구(crawl.ts 커밋·dry-run·갱신 지연 표기) | data | git 트래킹 · dry-run 성공 · cron 확인 · 지연 표기 렌더 | 완료 — crawl.ts git 추적 완료 · `--dry-run --limit 3` 실주행 성공(라이브 요청 5회·6.0초) · cron `0 18 * * 6` 확인 · 기준일 바 "갱신 3일 지연" 표기 |
+| N5 | Phase 4 마감(서비스워커·오프라인·manifest) | pwa | SW 등록 · manifest 200 · 오프라인 열람 Playwright | 완료 — serwist SW 번들 성공 · manifest maskable + apple-touch-icon 추가 · 오프라인 폴백 setCatchHandler · 정적 130p 빌드 |
+
+### 마감 검증 (2026-07-22)
+| 채널 | 결과 |
+|---|---|
+| typecheck | `npx tsc --noEmit --incremental false` — **0 오류** |
+| 단위 테스트 | `npx vitest run` — **95/95 통과**(착수 전 66건 → 신규 29건) |
+| 프로덕션 빌드 | `npm run build` — 정적 **130 페이지**, serwist SW 번들 성공, First Load JS 104~119kB(예산 200kB 이내) |
+| E2E | `npx playwright test --project=mobile-chromium` — **8/8 통과**(21.0s) |
+| UI 게이트 | `ui-quality-gate.mjs --check` — **위반 0건**(검사 대상 UI 41개 + 전체 스캔) |
+
+> 감사 스펙 `tests/e2e/audit-*.spec.ts` 13개는 마감과 함께 삭제했다(일회성 증거 수집용). 상시 회귀는 `tests/e2e/smoke.spec.ts` 8종 + 단위 95건이 담당한다.
+> 마감 3문 게이트: ① 35셀 공란 0 ✔ ② 순번 31~93 전건 완료 또는 **보고된 보류**(76·87·89, 사유·재개조건 §5-2 기재) ✔ ③ 검증 출력 실물 첨부 ✔

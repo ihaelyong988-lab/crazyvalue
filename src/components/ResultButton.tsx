@@ -21,7 +21,7 @@ export function ResultButton({
       className="fixed inset-x-0 bottom-14 z-30 mx-auto w-full max-w-md px-4 pb-3"
     >
       {loading ? (
-        <div className="flex h-[52px] w-full items-center justify-center rounded-xl bg-accent/70 font-semibold text-white">
+        <div className="flex h-[52px] w-full items-center justify-center rounded-xl bg-accent/90 font-semibold text-white">
           물건 확인 중
         </div>
       ) : (

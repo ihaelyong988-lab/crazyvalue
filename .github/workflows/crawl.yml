@@ -4,10 +4,20 @@ on:
   schedule:
     - cron: "0 18 * * 6"
   workflow_dispatch:
+
+# 동시 실행 가드(감사 42) — 수동 실행이 정기 실행과 겹치면 같은 파일을 두 job이 쓴다.
+# 진행 중 수집은 취소하지 않는다(중단은 곧 그 주 데이터 없음).
+concurrency:
+  group: weekly-crawl
+  cancel-in-progress: false
+
 jobs:
   crawl:
     runs-on: ubuntu-latest
-    permissions: { contents: write }
+    # 실측 기준 전국 유찰 2회 이상 약 1만 6천 건 × 요청 간격 1.1초 ≈ 5시간(POLITENESS.minIntervalMs).
+    # 러너 상한 6시간에 닿기 전에 끊어 실패로 표면화한다 — 무한 대기 job 방지.
+    timeout-minutes: 330
+    permissions: { contents: write, issues: write }
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -20,3 +30,17 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add public/data
           git diff --cached --quiet || { git commit -m "data: weekly update $(date -u +%F)"; git push; }
+      # 실패 표면화(감사 42) — 침묵 실패 금지(§13 규칙 9). 데이터는 직전 주 상태 그대로다.
+      - name: report failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          {
+            echo "weekly-crawl 실행이 실패했다. 데이터는 직전 주 파일이 유지된다(무커밋 계약)."
+            echo ""
+            echo "실행 로그: $RUN_URL"
+            echo "점검: 로그에서 중단 사유 확인 → 로컬 'npm run crawl -- --dry-run --limit 3' 재현 → 수정 후 workflow_dispatch 재실행."
+          } > crawl-failure.md
+          gh issue create --title "주간 수집 실패 $(date -u +%F)" --body-file crawl-failure.md

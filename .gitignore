@@ -48,3 +48,9 @@ next-env.d.ts
 # playwright
 test-results/
 playwright-report/
+
+# serwist (빌드 생성물 — swSrc src/app/sw.ts에서 생성)
+/public/sw.js
+/public/sw.js.map
+/public/swe-worker-*.js
+/public/swe-worker-*.js.map

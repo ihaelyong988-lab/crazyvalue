@@ -38,12 +38,13 @@ export function PriceStructure({ item }: { item: AuctionItem }) {
           {formatWon(item.minPrice)}
         </span>
       </div>
-      <p className="mt-3 border-t border-line pt-3 text-[13px] tabular-nums text-ink/80">
+      {/* 보증금 문구는 1문장·중복 0 — 재매각을 두 번 말하고 2문장으로 늘어지던 표기를 압축했다(감사 85).
+          비율은 앱이 파생한 값이라 공고 기준임을 1회만 병기한다(§2 임의 단정 금지). */}
+      <p className="mt-3 border-t border-line pt-3 text-[13px] leading-snug tabular-nums text-ink/80">
         입찰보증금 {formatKrw(item.deposit)}
         <span className="text-ink/70">
           {" "}
-          — 최저가의 {resale ? "20%(재매각 사건)" : "10%"}. 재매각 사건은 비율이 다를 수
-          있으니 공고 원문 기준으로 확인 필요.
+          — 최저가의 {resale ? "20%(재매각 사건)" : "10%"}, 비율은 공고 원문이 기준이다.
         </span>
       </p>
     </section>

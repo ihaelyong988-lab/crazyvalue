@@ -1,10 +1,14 @@
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import { describe, expect, it } from "vitest";
+import { REGIONS } from "@/types/catalog";
 import {
   EMPTY_FILTERS,
   applyFilters,
   districtKey,
   isNewThisWeek,
   isPick,
+  isValidAuctionItem,
   parseDistrictKey,
   sortItems,
 } from "@/lib/data";
@@ -131,15 +135,16 @@ describe("sortItems — 4종 정렬", () => {
 });
 
 describe("isNewThisWeek — 이번 갱신에서 유찰 2회 도달", () => {
-  it("2회째 유찰이 기준일 7일 이내면 신규", () => {
-    const item = mk({
-      history: [
-        { date: "2026-05-01", minPrice: 100_000_000, result: "신건" },
-        { date: "2026-06-05", minPrice: 100_000_000, result: "유찰" },
-        { date: "2026-07-10", minPrice: 70_000_000, result: "유찰" },
-      ],
-    });
-    expect(isNewThisWeek(item, "2026-07-12T03:00:00+09:00")).toBe(true);
+  const CRAWLED = "2026-07-12T03:00:00+09:00";
+  const freshItem = mk({
+    history: [
+      { date: "2026-05-01", minPrice: 100_000_000, result: "신건" },
+      { date: "2026-06-05", minPrice: 100_000_000, result: "유찰" },
+      { date: "2026-07-10", minPrice: 70_000_000, result: "유찰" },
+    ],
+  });
+  it("2회째 유찰이 7일 이내면 신규", () => {
+    expect(isNewThisWeek(freshItem, CRAWLED, "2026-07-13")).toBe(true);
   });
   it("2회째 유찰이 오래됐으면 신규 아님", () => {
     const item = mk({
@@ -149,7 +154,69 @@ describe("isNewThisWeek — 이번 갱신에서 유찰 2회 도달", () => {
         { date: "2026-05-10", minPrice: 70_000_000, result: "유찰" },
       ],
     });
-    expect(isNewThisWeek(item, "2026-07-12T03:00:00+09:00")).toBe(false);
+    expect(isNewThisWeek(item, CRAWLED, "2026-07-13")).toBe(false);
+  });
+  it("갱신이 밀린 주에 2주 전 물건을 '이번 주'로 단정하지 않는다(감사 40)", () => {
+    // 기준일 2026-07-12 데이터를 07-22에 보는 상황 — 12일 전 유찰을 이번 주로 표기하던 결함.
+    expect(isNewThisWeek(freshItem, CRAWLED, "2026-07-22")).toBe(false);
+    // 경계: 오늘−7일(07-17)까지가 창, 그 안이면 여전히 신규
+    expect(isNewThisWeek(freshItem, CRAWLED, "2026-07-17")).toBe(true);
+    expect(isNewThisWeek(freshItem, CRAWLED, "2026-07-18")).toBe(false);
+  });
+});
+
+describe("isValidAuctionItem — 손상 항목 폐기(감사 36)", () => {
+  it("계약을 지킨 항목은 통과", () => {
+    expect(isValidAuctionItem(mk({}))).toBe(true);
+  });
+  it("priceRatio가 금액과 어긋나면 폐기 — 거짓 할인율·픽 배지 차단", () => {
+    expect(isValidAuctionItem(mk({ priceRatio: 0.2 }))).toBe(false);
+    expect(isValidAuctionItem(mk({ minPrice: 49_400_000 }))).toBe(true); // 오차 0.005 이내는 통과
+    expect(isValidAuctionItem(mk({ priceRatio: 0 }))).toBe(false);
+    expect(isValidAuctionItem(mk({ priceRatio: 1.4 }))).toBe(false);
+  });
+  it("존재하지 않는 기일·형식 오류 날짜는 폐기", () => {
+    expect(isValidAuctionItem(mk({ saleDate: "2026-02-30" }))).toBe(false);
+    expect(isValidAuctionItem(mk({ saleDate: "2026/08/01" }))).toBe(false);
+  });
+  it("failCount와 history 유찰 수가 어긋나면 폐기", () => {
+    expect(isValidAuctionItem(mk({ failCount: 5 }))).toBe(false);
+    expect(isValidAuctionItem(mk({ failCount: 1 }))).toBe(false);
+  });
+  it("https 아닌 링크·알 수 없는 용도는 폐기", () => {
+    expect(isValidAuctionItem(mk({ detailUrl: "http://www.courtauction.go.kr/" }))).toBe(false);
+    expect(isValidAuctionItem(mk({ photoUrl: "javascript:alert(1)" }))).toBe(false);
+    expect(isValidAuctionItem({ ...mk({}), category: "빌라" })).toBe(false);
+  });
+  it("금액·필수 문자열 손상, 이력 손상은 폐기", () => {
+    expect(isValidAuctionItem({ ...mk({}), minPrice: "49000000" })).toBe(false);
+    expect(isValidAuctionItem({ ...mk({}), appraisalPrice: 0 })).toBe(false);
+    expect(isValidAuctionItem({ ...mk({}), address: "" })).toBe(false);
+    expect(isValidAuctionItem({ ...mk({}), history: [] })).toBe(false);
+    expect(isValidAuctionItem({ ...mk({}), history: [{ date: "2026-02-30", minPrice: 1, result: "유찰" }] })).toBe(
+      false,
+    );
+    expect(isValidAuctionItem({ ...mk({}), history: "없음" })).toBe(false);
+  });
+  it("객체가 아닌 값은 폐기", () => {
+    expect(isValidAuctionItem(null)).toBe(false);
+    expect(isValidAuctionItem("item")).toBe(false);
+    expect(isValidAuctionItem([])).toBe(false);
+  });
+  it("배포 중인 public/data 전건은 통과 — 가드가 계약보다 엄격하면 안 된다", () => {
+    // 거짓 "형식 오류 N건 제외" 고지를 막는 안전망. zod 계약 통과분(mock-contract.test.ts)과 판정이 일치해야 한다.
+    const dataDir = join(process.cwd(), "public", "data");
+    let total = 0;
+    for (const r of REGIONS) {
+      const raw = JSON.parse(readFileSync(join(dataDir, `${r.key}.json`), "utf8")) as unknown[];
+      for (const item of raw) {
+        expect(isValidAuctionItem(item), `${r.key}.json 항목 폐기됨: ${JSON.stringify(item).slice(0, 120)}`).toBe(
+          true,
+        );
+        total++;
+      }
+    }
+    expect(total).toBeGreaterThan(0);
   });
 });
 

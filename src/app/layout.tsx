@@ -4,9 +4,31 @@ import "./globals.css";
 import { AppShell } from "@/components/AppShell";
 
 export const metadata: Metadata = {
+  // metadataBase: OG·트위터 이미지 상대 경로의 절대화 기준(빌드 경고 해소).
+  metadataBase: new URL("https://crazyvalue.vercel.app"),
   title: "미친가치 CrazyValue",
   description:
     "유찰 2회 이상, 가치 대비 가격이 내려간 법원경매 물건 큐레이션. 데이터는 매주 일요일 갱신되며 법적 효력은 법원 공고 원문이 우선한다.",
+  // iOS 홈 화면 추가 아이콘(감사 2차 66) — 매니페스트 아이콘을 쓰지 않는 경로를 덮는다.
+  // 파비콘은 src/app/favicon.ico 파일 규약이 그대로 담당한다.
+  icons: {
+    apple: [{ url: "/icons/apple-touch-icon-180.png", sizes: "180x180", type: "image/png" }],
+  },
+  // openGraph.title/description은 두지 않는다 — 각 페이지의 title/description이
+  // og:title/og:description으로 자동 폴백되어 상세 generateMetadata와 충돌하지 않는다.
+  openGraph: {
+    type: "website",
+    siteName: "미친가치 CrazyValue",
+    locale: "ko_KR",
+    images: [
+      {
+        url: "/og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "미친가치 CrazyValue — 법원경매 초저가 큐레이션",
+      },
+    ],
+  },
 };
 
 export const viewport: Viewport = {

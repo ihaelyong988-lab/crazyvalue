@@ -13,6 +13,7 @@ import {
   type AuctionItem,
   type Meta,
 } from "../src/types/auction";
+import { DETAIL_URL } from "./crawl-config";
 
 const SEED = 20260717;
 function mulberry32(seed: number) {
@@ -135,7 +136,9 @@ function makeItem(globalIdx: number, p: (typeof PLAN)[number], regionName: strin
     areaBuilding: hasBuilding ? Number((30 + rng() * 220).toFixed(1)) : null,
     areaLand: category === "아파트" ? null : Number((40 + rng() * 900).toFixed(1)),
     photoUrl: null, // MVP 목데이터는 무사진 — 카드·상세는 용도별 플레이스홀더 분기 렌더
-    detailUrl: "https://www.courtauction.go.kr/",
+    // 원문 링크는 크롤러와 같은 상수를 쓴다 — 루트 하드코딩은 방문자를 사건상세가 아닌
+    // 법원 사이트 첫 화면에 떨궈 핵심목표(원문 도달)를 깬다(감사 90).
+    detailUrl: DETAIL_URL,
     history,
     specialNote: note,
   };

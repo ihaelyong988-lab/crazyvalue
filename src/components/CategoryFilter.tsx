@@ -14,7 +14,8 @@ export function CategoryFilter({
   return (
     <fieldset>
       <legend className="mb-2 text-[13px] font-semibold text-ink/70">
-        용도 <span className="font-normal text-ink/50">— 미선택 시 전체</span>
+        {/* 보조 문구 ink/70 — Paper 위 대비 4.5:1 확보(감사 2차 71) */}
+        용도 <span className="font-normal text-ink/70">— 미선택 시 전체</span>
       </legend>
       <div className="grid grid-cols-4 gap-1.5">
         {CATEGORIES.map((c) => (

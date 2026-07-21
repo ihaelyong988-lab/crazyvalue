@@ -6,6 +6,8 @@ import type { AuctionItem } from "@/types/auction";
 const WATCH_KEY = "crazyvalue.watchlist.v1";
 const RECENT_KEY = "crazyvalue.recent.v1";
 const DIFF_CACHE_KEY = "crazyvalue.watchdiff.session.v1";
+/** 홈 필터 세션 미러 키 — 관심조건 저장 시 무효화 대상(감사 2차 32). page.tsx와 공유한다. */
+export const HOME_FILTERS_KEY = "crazyvalue.home-filters.v1";
 
 export interface WatchSnapshot {
   minPrice: number;
@@ -47,14 +49,30 @@ const isOptionalString = (v: unknown): boolean => v === undefined || typeof v ==
 const isStringArray = (v: unknown): v is string[] =>
   Array.isArray(v) && v.every((x) => typeof x === "string");
 
+const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
+
+/**
+ * 스냅샷 기일은 YYYY-MM-DD 실재 날짜만 유효하다(감사 2차 35).
+ * typeof string만 보면 `"undefined"`·`"2026-02-30"` 같은 손상값이 그대로 렌더돼 화면에 `(undefined)`가 새어나간다.
+ * 표시·계산은 format.ts 단일 경유(§13 규칙 12)이며 여기서는 저장값의 형태만 판정한다.
+ */
+function isDateOnly(v: unknown): v is string {
+  if (typeof v !== "string" || !ISO_DATE.test(v)) return false;
+  const [y, m, d] = v.split("-").map(Number);
+  if (m < 1 || m > 12 || d < 1) return false;
+  return d <= new Date(Date.UTC(y, m, 0)).getUTCDate(); // 말일 초과(2026-02-30)는 폐기
+}
+
+const isFiniteNumber = (v: unknown): v is number => typeof v === "number" && Number.isFinite(v);
+
 function isWatchEntry(v: unknown): v is WatchEntry {
   if (!isPlainObject(v) || typeof v.addedAt !== "string") return false;
   const snap = v.snapshot;
   return (
     isPlainObject(snap) &&
-    typeof snap.minPrice === "number" &&
-    typeof snap.saleDate === "string" &&
-    typeof snap.failCount === "number" &&
+    isFiniteNumber(snap.minPrice) &&
+    isDateOnly(snap.saleDate) &&
+    isFiniteNumber(snap.failCount) &&
     isOptionalString(snap.address) &&
     isOptionalString(snap.category)
   );
@@ -114,13 +132,69 @@ function safeRead<T>(
   }
 }
 
-function safeWrite(key: string, value: unknown): void {
-  if (typeof window === "undefined") return;
+/**
+ * 저장 성공 여부를 반환한다(감사 2차 31) — 무가입 앱에서 localStorage는 유일한 사용자 상태이므로,
+ * 실패(용량 초과·프라이빗 모드)를 삼키면 화면만 성공으로 바뀌고 실제 저장은 0이 된다.
+ * 호출부는 반환값으로 실패를 사용자에게 알린다.
+ */
+function safeWrite(key: string, value: unknown): boolean {
+  if (typeof window === "undefined") return false;
   try {
     window.localStorage.setItem(key, JSON.stringify(value));
+    return true;
   } catch {
-    // 저장 실패(용량·프라이빗 모드)는 기능 저하로만 흡수한다.
+    return false;
   }
+}
+
+/**
+ * 홈 필터 세션 미러 무효화(감사 2차 32).
+ * 복원 순서가 URL → 세션 미러 → prefs라, 미러가 남으면 이후 저장한 관심조건이 그 탭에 영구 미반영된다.
+ * 관심조건 저장은 "이 조건으로 본다"는 명시적 의사이므로 미러를 버려 다음 복원이 prefs를 쓰게 한다.
+ */
+export function clearHomeFilterMirror(): void {
+  if (typeof window === "undefined") return;
+  try {
+    window.sessionStorage.removeItem(HOME_FILTERS_KEY);
+  } catch {
+    // 세션 접근 불가(프라이빗 모드)면 미러 자체가 없다 — 복원은 prefs 경로로 간다.
+  }
+}
+
+/**
+ * 타 탭의 관심함·관심조건 변경 구독(감사 2차 33). 반환값은 구독 해제 함수다.
+ * storage 이벤트는 저장한 탭이 아닌 다른 탭에서만 발생하므로, 이 통지가 곧 "내 화면이 옛 상태"라는 신호다.
+ */
+export function subscribeWatchState(onChange: () => void): () => void {
+  if (typeof window === "undefined") return () => {};
+  const handler = (e: StorageEvent) => {
+    if (e.key !== null && e.key !== WATCH_KEY) return; // key === null = 타 탭의 storage.clear()
+    onChange();
+  };
+  window.addEventListener("storage", handler);
+  return () => window.removeEventListener("storage", handler);
+}
+
+const sameList = (a: string[], b: string[]): boolean =>
+  a.length === b.length && a.every((x) => b.includes(x));
+
+const samePrefs = (a: Prefs, b: Prefs): boolean =>
+  sameList(a.regions, b.regions) && sameList(a.priceBands, b.priceBands);
+
+/**
+ * 타 탭의 **관심조건** 변경만 구독한다(감사 2차 33).
+ * current()는 이 화면이 지금 들고 있는 조건이다 — 관심함 항목만 바뀐 통지나 이미 같은 값인 통지를
+ * 걸러야 화면이 근거 없이 되돌아가거나 거짓 안내를 띄우지 않는다.
+ */
+export function subscribePrefs(
+  current: () => Prefs,
+  onChange: (prefs: Prefs) => void,
+): () => void {
+  return subscribeWatchState(() => {
+    const next = getWatchState().prefs;
+    if (samePrefs(current(), next)) return;
+    onChange(next);
+  });
 }
 
 export function getWatchState(): WatchState {
@@ -131,51 +205,62 @@ export function isWatched(id: string): boolean {
   return id in getWatchState().items;
 }
 
-export function toggleWatch(item: AuctionItem, now: Date = new Date()): boolean {
+export interface WatchWriteResult {
+  /** 저장 반영 후의 관심 등록 상태 — 저장 실패 시에는 직전 상태 그대로다. */
+  watched: boolean;
+  /** 저장 성공 여부. false면 이번 변경이 이 기기에 남지 않는다. */
+  saved: boolean;
+}
+
+export function toggleWatch(item: AuctionItem, now: Date = new Date()): WatchWriteResult {
   const state = getWatchState();
-  if (state.items[item.id]) {
+  const removing = item.id in state.items;
+  if (removing) {
     delete state.items[item.id];
-    safeWrite(WATCH_KEY, state);
-    dropDiffCache(item.id);
-    return false;
+  } else {
+    state.items[item.id] = {
+      addedAt: now.toISOString(),
+      snapshot: {
+        minPrice: item.minPrice,
+        saleDate: item.saleDate,
+        failCount: item.failCount,
+        address: item.address,
+        category: item.category,
+      },
+    };
   }
-  state.items[item.id] = {
-    addedAt: now.toISOString(),
-    snapshot: {
-      minPrice: item.minPrice,
-      saleDate: item.saleDate,
-      failCount: item.failCount,
-      address: item.address,
-      category: item.category,
-    },
-  };
-  safeWrite(WATCH_KEY, state);
-  return true;
+  // 저장 실패면 저장소는 직전 상태 그대로다 — 화면도 직전 상태를 유지해야 사실과 일치한다(감사 2차 31).
+  if (!safeWrite(WATCH_KEY, state)) return { watched: removing, saved: false };
+  if (removing) dropDiffCache(item.id);
+  return { watched: !removing, saved: true };
 }
 
-export function removeWatch(id: string): void {
+export function removeWatch(id: string): boolean {
   const state = getWatchState();
-  if (!(id in state.items)) return;
+  if (!(id in state.items)) return true; // 이미 없음 = 저장할 변경 없음
   delete state.items[id];
-  safeWrite(WATCH_KEY, state);
-  dropDiffCache(id);
+  const saved = safeWrite(WATCH_KEY, state);
+  if (saved) dropDiffCache(id);
+  return saved;
 }
 
-export function setPrefs(prefs: Prefs): void {
+/** 관심조건 저장. 온보딩 완료 플래그는 세우지 않는다(감사 2차 34 — 기록은 온보딩 시트만). */
+export function setPrefs(prefs: Prefs): boolean {
   const state = getWatchState();
-  state.prefs = prefs;
-  state.onboarded = true;
-  safeWrite(WATCH_KEY, state);
+  state.prefs = { regions: [...prefs.regions], priceBands: [...prefs.priceBands] };
+  const saved = safeWrite(WATCH_KEY, state);
+  if (saved) clearHomeFilterMirror();
+  return saved;
 }
 
 export function isOnboarded(): boolean {
   return getWatchState().onboarded === true;
 }
 
-export function markOnboarded(): void {
+export function markOnboarded(): boolean {
   const state = getWatchState();
   state.onboarded = true;
-  safeWrite(WATCH_KEY, state);
+  return safeWrite(WATCH_KEY, state);
 }
 
 // ---- 상태 변화 판정(원안 "추적기능", §5.5) ----
@@ -190,10 +275,10 @@ export function diffWatch(snapshot: WatchSnapshot, current: AuctionItem | undefi
 }
 
 /** 변화 배지 표시 후 스냅샷을 현재 데이터로 갱신한다(다음 주 비교 기준). 식별 정보도 최신화한다. */
-export function refreshSnapshot(id: string, current: AuctionItem): void {
+export function refreshSnapshot(id: string, current: AuctionItem): boolean {
   const state = getWatchState();
   const entry = state.items[id];
-  if (!entry) return;
+  if (!entry) return false;
   entry.snapshot = {
     ...entry.snapshot,
     minPrice: current.minPrice,
@@ -202,7 +287,7 @@ export function refreshSnapshot(id: string, current: AuctionItem): void {
     address: current.address,
     category: current.category,
   };
-  safeWrite(WATCH_KEY, state);
+  return safeWrite(WATCH_KEY, state);
 }
 
 // ---- 변화 배지 세션 캐시(§4.3-④ 보완) ----
@@ -264,8 +349,47 @@ export function getRecentIds(): string[] {
   return safeRead<RecentState>(RECENT_KEY, () => ({ ids: [] }), sanitizeRecent).ids.slice(0, 5);
 }
 
-export function pushRecent(id: string): void {
+export function pushRecent(id: string): boolean {
   const ids = getRecentIds().filter((x) => x !== id);
   ids.unshift(id);
-  safeWrite(RECENT_KEY, { ids: ids.slice(0, 5) });
+  return safeWrite(RECENT_KEY, { ids: ids.slice(0, 5) });
+}
+
+// ---- 내 데이터 초기화(감사 2차 53) ----
+// 무가입 앱에서 로그아웃에 대응하는 유일한 수단 — 이 기기에 남은 상태를 전부 지운다.
+// 키를 열거해 지운다: 개별 키를 나열하면 이후 추가된 `crazyvalue.*` 키가 조용히 살아남는다.
+
+const CV_PREFIX = "crazyvalue.";
+
+function clearNamespace(storage: Storage): void {
+  const keys: string[] = [];
+  for (let i = 0; i < storage.length; i += 1) {
+    const key = storage.key(i);
+    if (key !== null && key.startsWith(CV_PREFIX)) keys.push(key);
+  }
+  for (const key of keys) storage.removeItem(key);
+}
+
+/**
+ * 관심함·최근 본 물건·관심조건·온보딩 기록을 이 기기에서 제거한다(감사 2차 53).
+ * 되돌릴 수 없으므로 호출부는 확인을 경유한다. 반환값 false = localStorage 값이 그대로 남았다.
+ */
+export function resetAll(): boolean {
+  if (typeof window === "undefined") return false;
+  let cleared = true;
+  try {
+    clearNamespace(window.localStorage);
+  } catch {
+    cleared = false;
+  }
+  try {
+    clearNamespace(window.sessionStorage); // 홈 필터 미러·변화 배지 캐시·앱 내 이동 플래그
+  } catch {
+    // 세션 저장소는 탭 수명뿐 — 접근 실패해도 영구 저장값은 이미 지워졌다.
+  }
+  // 페인트 전 온보딩 은닉 플래그(public/onboarding-flag.js)도 같은 사실의 미러다.
+  // 남겨 두면 초기화 뒤 온보딩 시트가 CSS로 숨은 채 배경만 비활성화된다.
+  if (typeof document !== "undefined")
+    document.documentElement.removeAttribute("data-cv-onboarded");
+  return cleared;
 }
