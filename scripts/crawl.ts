@@ -671,9 +671,28 @@ async function main(): Promise<void> {
   }
   if (opts.limit !== null) picked = picked.slice(0, opts.limit);
 
-  // 3) 물건별 상세(기일 이력) — 실패한 물건은 역산 폴백
+  // 3) 물건별 상세(기일 이력) — 요청하지 않았거나 실패한 물건은 역산 폴백(buildBackcalcHistory)
+  //
+  // 상세 요청 한정(2026-07-22 실측 근거): 전건 상세는 17,000회 × 1.1초 ≈ 5.2시간으로 Actions job
+  // 상한 6시간에 여유가 15% 미만이었다(재시도 몇 회로 주간 갱신이 통째로 실패할 위험).
+  // 매각기일 창 축소는 무효였다 — 21일 창 17,000건 ≈ 42일 창 16,302건으로, 기일이 근시일에 집중돼
+  // 창을 절반으로 줄여도 대상이 줄지 않는다(0일 창 934건으로 서버 필터 자체는 정상 작동 확인).
+  // 그래서 상세는 **픽 후보(최저가 ≤ 감정가 50%)에만** 요청한다. 픽 판정에 필요한 감정가·최저가는
+  // 목록 응답(gamevalAmt·minmaePrice)에 이미 있어 추가 요청이 들지 않는다. 판정 불가(값 결측)는
+  // 요청하는 쪽으로 기운다 — 픽을 놓치는 것이 앱의 큐레이션 정체성에 더 큰 손해다.
+  const needsDetail = (row: RawRow): boolean => {
+    const appraisal = num(row, "gamevalAmt");
+    const minPrice = num(row, "minmaePrice");
+    if (!(appraisal > 0 && minPrice > 0)) return true; // 값 결측 = 판정 불가 → 요청
+    return minPrice / appraisal <= 0.5;
+  };
+  const detailTargets = picked.filter(needsDetail).length;
+  console.log(
+    `상세 요청 대상 — ${detailTargets}/${picked.length}건(픽 후보 한정) · ` +
+      `예상 소요 ${((detailTargets * POLITENESS.minIntervalMs) / 3.6e6).toFixed(1)}시간`,
+  );
   const details: (DetailResult | null)[] = [];
-  for (const row of picked) details.push(await fetchDetail(row, searchInfo));
+  for (const row of picked) details.push(needsDetail(row) ? await fetchDetail(row, searchInfo) : null);
   const failedCode = calibrateFailedCode(details, todayYmd);
 
   if (opts.dryRun && picked.length > 0) {
