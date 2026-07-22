@@ -69,11 +69,12 @@ export function RegionFilter({
 
   return (
     <fieldset>
-      <legend className="mb-2 text-[13px] font-semibold text-ink/70">
+      <legend className="mb-2 text-[13px] font-semibold leading-snug text-ink/70">
         {/* 보조 문구 ink/70 — Paper 위 대비 4.5:1 확보(감사 2차 71, 1차 9·10과 동일 처방) */}
         지역 <span className="font-normal text-ink/70">— 미선택 시 전체</span>
       </legend>
-      <div className="grid grid-cols-4 gap-1.5">
+      {/* 5열: 17개 시·도를 5행→4행으로 줄여 첫 화면 세로폭 회수(2026-07-22, MASTER 세로 리듬). */}
+      <div className="grid grid-cols-5 gap-1.5">
         {REGIONS.map((r) => (
           <FilterChip
             key={r.key}

@@ -191,44 +191,37 @@ export function InstallPrompt() {
       className="fixed inset-x-0 bottom-[calc(3.5rem+env(safe-area-inset-bottom))] z-20 mx-auto w-full max-w-md px-3 pb-2"
       ref={boxRef}
     >
-      <div className="rounded-xl border border-line bg-white p-4 shadow-[0_8px_24px_rgba(15,42,67,0.14)]">
+      <div className="flex items-center gap-2 rounded-xl border border-line bg-white p-3 shadow-[0_8px_24px_rgba(15,42,67,0.14)]">
         {mode === "android" ? (
           <>
-            <p className="text-[14px] font-semibold">미친가치를 홈 화면에 설치</p>
-            <p className="mt-0.5 text-[13px] leading-snug text-ink/70">
-              앱처럼 전체 화면으로 열린다.
-            </p>
-            <div className="mt-3 flex gap-2">
-              <button
-                type="button"
-                onClick={install}
-                className="min-h-11 flex-1 cursor-pointer rounded-lg bg-accent px-4 text-[14px] font-semibold text-white transition-colors duration-200 hover:bg-accent/90"
-              >
-                설치하기
-              </button>
-              <button
-                type="button"
-                onClick={dismiss}
-                className="min-h-11 shrink-0 cursor-pointer rounded-lg border border-line px-4 text-[13px] font-medium text-ink/70 transition-colors duration-200 hover:bg-paper"
-              >
-                닫기
-              </button>
-            </div>
+            <p className="flex-1 text-[14px] font-semibold leading-snug">미친가치를 홈 화면에 설치</p>
+            <button
+              type="button"
+              onClick={install}
+              className="min-h-11 shrink-0 cursor-pointer rounded-lg bg-accent px-4 text-[14px] font-semibold text-white transition-colors duration-200 hover:bg-accent/90"
+            >
+              설치하기
+            </button>
+            <button
+              type="button"
+              onClick={dismiss}
+              className="min-h-11 shrink-0 cursor-pointer rounded-lg border border-line px-4 text-[13px] font-medium text-ink/70 transition-colors duration-200 hover:bg-paper"
+            >
+              닫기
+            </button>
           </>
         ) : (
           <>
-            <p className="text-[13px] leading-snug">
+            <p className="flex-1 text-[13px] leading-snug">
               {"공유 버튼에서 '홈 화면에 추가'를 선택하라."}
             </p>
-            <div className="mt-3 flex">
-              <button
-                type="button"
-                onClick={dismiss}
-                className="min-h-11 flex-1 cursor-pointer rounded-lg border border-line text-[13px] font-medium text-ink/70 transition-colors duration-200 hover:bg-paper"
-              >
-                닫기
-              </button>
-            </div>
+            <button
+              type="button"
+              onClick={dismiss}
+              className="min-h-11 shrink-0 cursor-pointer rounded-lg border border-line px-4 text-[13px] font-medium text-ink/70 transition-colors duration-200 hover:bg-paper"
+            >
+              닫기
+            </button>
           </>
         )}
       </div>

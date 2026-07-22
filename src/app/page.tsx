@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Category } from "@/types/auction";
-import { applyFilters, isPick, newThisWeek, type Filters, type PriceBandKey } from "@/lib/data";
+import { applyFilters, newThisWeek, type Filters, type PriceBandKey } from "@/lib/data";
 import {
   buildListQuery,
   parseListQuery,
@@ -20,7 +20,6 @@ import { RegionFilter } from "@/components/RegionFilter";
 import { PriceFilter } from "@/components/PriceFilter";
 import { CategoryFilter } from "@/components/CategoryFilter";
 import { ResultButton } from "@/components/ResultButton";
-import { PickEntry } from "@/components/PickEntry";
 import { NewThisWeek } from "@/components/NewThisWeek";
 import { RecentViewed } from "@/components/RecentViewed";
 import { OnboardingSheet } from "@/components/OnboardingSheet";
@@ -47,7 +46,10 @@ function filtersFromQuery(query: string): Filters {
   return { regions, districts, priceBands, categories };
 }
 
-// ① 홈(검색) — 배치 순서 고정(§4.3-①): 필터 3축 → 결과 버튼(고정) → 픽 진입 → 이번 주 신규 → 최근 본 물건.
+// ① 홈(검색) — 배치 순서(§4.3-①): 필터 3축 → 결과 버튼(고정) → 이번 주 신규 → 최근 본 물건.
+// 픽 진입 카드(감정가 50% 이하) 제거: 데이터셋 전체가 이미 유찰 2회 이상이라, 첫 화면 기준을
+// "유찰 2회 이상으로 값이 내려간 물건" 하나로 통일한다(2026-07-22 주인님 지시). 감정가 50% 기준은
+// 리스트 카드 픽 배지·/list?pick·안내(/guide)에만 부가정보로 남긴다.
 export default function HomePage() {
   const { status, items, meta, retry } = useAuctionData();
   const [filters, setFilters] = useState<Filters>({
@@ -124,7 +126,6 @@ export default function HomePage() {
   };
 
   const count = useMemo(() => applyFilters(items, filters).length, [items, filters]);
-  const pickCount = useMemo(() => items.filter(isPick).length, [items]);
   const fresh = useMemo(
     () => (meta ? newThisWeek(items, meta.crawledAt) : []),
     [items, meta],
@@ -168,7 +169,6 @@ export default function HomePage() {
       {status === "loading" && <ListSkeleton rows={2} />}
       {status === "ready" && (
         <>
-          <PickEntry count={pickCount} />
           <NewThisWeek items={fresh} />
           <RecentViewed items={items} />
         </>

@@ -13,7 +13,7 @@ export function PriceFilter({
 }) {
   return (
     <fieldset>
-      <legend className="mb-2 text-[13px] font-semibold text-ink/70">
+      <legend className="mb-2 text-[13px] font-semibold leading-snug text-ink/70">
         {/* 보조 문구 ink/70 — Paper 위 대비 4.5:1 확보(감사 2차 71) */}
         금액(최저가) <span className="font-normal text-ink/70">— 복수 선택</span>
       </legend>

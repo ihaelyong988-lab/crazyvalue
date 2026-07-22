@@ -5,9 +5,8 @@ import { REGIONS } from "@/types/catalog";
 import { PRICE_BANDS } from "@/lib/data";
 import { getWatchState, isOnboarded, markOnboarded, setPrefs } from "@/lib/watchlist";
 import { FilterChip } from "@/components/FilterChip";
-import { PickBadge } from "@/components/PickBadge";
 
-// 온보딩(최초 1회, §4.1 시트 A): 브랜드 설명 1장 + 관심 지역·금액 설정(건너뛰기 가능).
+// 온보딩(최초 1회, §4.1 시트 A): 관심 지역·금액 설정(건너뛰기 가능).
 // SSR에 포함해 첫 방문 LCP를 앞당긴다. 완료자는 onboarding-flag.js + CSS가 페인트 전에 숨기고,
 // 하이드레이션 후 여기서 실제로 내린다(깜빡임 0).
 // 다이얼로그 접근성(감사 #4·#24): 열림 동안 포커스 이동 + Tab 순환 트랩 +
@@ -92,7 +91,7 @@ export function OnboardingSheet({ onDone }: { onDone: () => void }) {
 
     const prevFocus =
       document.activeElement instanceof HTMLElement ? document.activeElement : null;
-    // 초기 포커스는 제목(감사 2차 79) — 첫 지역 칩에 두면 브랜드·픽 기준 설명 3문단을 낭독 없이 건너뛴다.
+    // 초기 포커스는 제목(감사 2차 79) — 다이얼로그 관례상 제목에 둔다.
     titleRef.current?.focus();
 
     // 배경 inert: 다이얼로그 조상 경로의 형제 요소만 비활성화한다(다이얼로그 자신은 유지).
@@ -155,7 +154,6 @@ export function OnboardingSheet({ onDone }: { onDone: () => void }) {
       role="dialog"
       aria-modal="true"
       aria-labelledby="cv-onboarding-title"
-      aria-describedby="cv-onboarding-desc"
       data-cv-onboarding
       className="fixed inset-0 z-50 flex items-end justify-center bg-navy/60"
     >
@@ -170,22 +168,8 @@ export function OnboardingSheet({ onDone }: { onDone: () => void }) {
         </h2>
 
         {/* 스크롤 본문 — min-h-0이 있어야 flex 자식이 푸터를 밀어내지 않고 자기 안에서 스크롤한다. */}
-        <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-5 pt-2 pb-4">
-          {/* 설명 3문단 = 다이얼로그 description(감사 2차 79). 각 문단 1문장 압축(감사 2차 49). */}
-          <div id="cv-onboarding-desc">
-            <p className="text-[14px] leading-relaxed text-ink/85">
-              전국 법원경매에서 <b>2회 이상 유찰돼</b> 가격만 내려간 물건을 모아 보여준다.
-            </p>
-            <p className="mt-2 flex flex-wrap items-center gap-1.5 text-[14px] text-ink/85">
-              <PickBadge />
-              <span>= 현재 최저가가 감정가의 50% 이하인 물건.</span>
-            </p>
-            <p className="mt-2 text-[13px] leading-snug text-ink/70">
-              무료·무가입, 데이터는 매주 일요일 03:00 갱신.
-            </p>
-          </div>
-
-          <h3 className="mt-5 text-[13px] font-semibold text-ink/70">관심 지역 (선택)</h3>
+        <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-5 pt-4 pb-4">
+          <h3 className="text-[13px] font-semibold text-ink/70">관심 지역 (선택)</h3>
           <div className="mt-2 grid grid-cols-4 gap-1.5">
             {REGIONS.map((r) => (
               <FilterChip

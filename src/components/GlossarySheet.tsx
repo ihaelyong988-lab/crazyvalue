@@ -44,7 +44,7 @@ export function GlossarySheet() {
           {TERMS.map((t) => (
             <div key={t.term}>
               <dt className="font-semibold text-[14px]">{t.term}</dt>
-              <dd className="mt-0.5 text-[13px] leading-relaxed text-ink/75">{t.desc}</dd>
+              <dd className="mt-0.5 text-[13px] leading-snug text-ink/75">{t.desc}</dd>
             </div>
           ))}
         </dl>
@@ -52,7 +52,7 @@ export function GlossarySheet() {
 
       <section className="rounded-xl border border-line bg-white p-4">
         <h2 className="font-bold">데이터 안내</h2>
-        <ul className="mt-2 list-disc space-y-1 pl-5 text-[13px] leading-relaxed text-ink/75">
+        <ul className="mt-2 list-disc space-y-1 pl-5 text-[13px] leading-snug text-ink/75">
           <li>수집 대상: 법원경매정보의 전국 진행 물건 중 유찰 2회 이상</li>
           <li>갱신: 매주 일요일 03:00. 모든 화면에 데이터 기준일을 표기한다</li>
           <li>저감률은 법원별로 20% 또는 30%로 다르며, 본 앱은 임의 계산하지 않는다</li>

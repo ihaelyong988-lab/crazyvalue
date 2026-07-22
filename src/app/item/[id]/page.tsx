@@ -132,7 +132,7 @@ export default async function ItemPage({ params }: { params: Promise<{ id: strin
       {item.specialNote && (
         <section aria-label="특이사항" className="rounded-xl border border-line bg-white p-4">
           <h2 className="text-[13px] font-semibold text-ink/70">특이사항(공고 비고)</h2>
-          <p className="mt-1 text-[14px] leading-relaxed">{item.specialNote}</p>
+          <p className="mt-1 text-[14px] leading-snug">{item.specialNote}</p>
         </section>
       )}
 
