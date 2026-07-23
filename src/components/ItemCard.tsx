@@ -9,10 +9,13 @@ import { CategoryThumb } from "@/components/CategoryThumb";
 export function ItemCard({ item, compact = false }: { item: AuctionItem; compact?: boolean }) {
   const days = dday(item.saleDate);
   const pct = discountPct(item.priceRatio);
+  // relative 필수(§9 2026-07-23): 내부 sr-only는 position:absolute라, 기준 블록이 없으면
+  // 가로 캐러셀(RecentViewed·NewThisWeek, overflow-x-auto) 밖으로 탈출해 문서 scrollWidth를
+  // 늘린다 → 모바일 레이아웃 뷰포트가 넓어져 하단 고정 CTA·탭바가 밀려 잘린다.
   return (
     <Link
       href={`/item/${item.id}`}
-      className={`block ${compact ? "w-56 shrink-0" : ""} cursor-pointer rounded-xl border border-line bg-white p-4 transition-colors duration-200 hover:bg-paper`}
+      className={`relative block ${compact ? "w-56 shrink-0" : ""} cursor-pointer rounded-xl border border-line bg-white p-4 transition-colors duration-200 hover:bg-paper`}
     >
       <div className="flex gap-3">
         <CategoryThumb category={item.category} photoUrl={item.photoUrl} />
