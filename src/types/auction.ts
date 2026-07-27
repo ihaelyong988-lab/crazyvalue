@@ -73,5 +73,35 @@ export const MetaSchema = z.object({
   totalCount: z.number().int().nonnegative(),
   countsByRegion: z.record(z.string(), z.number().int().nonnegative()),
   nextUpdateAt: z.string(),
+  // 아래 운영 필드는 전부 optional이다 — 기존 public/data/meta.json에 없고 src/lib/use-meta.ts의
+  // isMeta()가 위 4필드만 검사하므로 추가 필드는 앱 동작에 무영향이다.
+  // 의미를 한 필드에 겹치지 않는다: "후보가 예산보다 많다"(truncated)와 "차단·마감으로 끊겼다"(aborted)는
+  // 다른 사건이고, 전자는 설계상 상시 참이라 한 필드로 묶으면 차단 재발을 구별하지 못한다.
+  /** 이번 실행이 갱신한 범위 — null이면 전국, 값이 있으면 그 지역만(--region). 나머지 지역 수치는 직전 파일 기준이다. */
+  scope: z.string().nullable().optional(),
+  /** 상세 단계가 차단·마감·예산 소진으로 조기 종료됐는지. 물건 데이터 자체는 전건 계약 통과분이다. */
+  aborted: z.boolean().optional(),
+  abortReason: z.string().nullable().optional(),
+  /** 조기 종료 시점의 누적 라이브 요청 수 — 차단 임계는 사후 재현이 불가능한 1회성 관측치다. */
+  abortedAtRequest: z.number().int().nonnegative().nullable().optional(),
+  /** 이번 실행의 총 라이브 요청 수(세션+목록+상세, 재시도 포함). */
+  totalRequests: z.number().int().nonnegative().optional(),
+  /** 예산 절단으로 상세를 포기한 픽 후보 수(매각기일 먼 순). */
+  truncated: z.number().int().nonnegative().optional(),
+  /** 상세 취득 커버리지 — 기일 이력 정밀도 지표(미취득분은 역산 폴백으로 채운다). */
+  detailCoverage: z
+    .object({
+      candidates: z.number().int().nonnegative(),
+      requested: z.number().int().nonnegative(),
+      succeeded: z.number().int().nonnegative(),
+    })
+    .optional(),
+  /** 기일 이력 출처 집계 — 산출물만 보고 실취득/역산 비율을 판정한다. */
+  historySource: z
+    .object({
+      real: z.number().int().nonnegative(),
+      backcalc: z.number().int().nonnegative(),
+    })
+    .optional(),
 });
 export type Meta = z.infer<typeof MetaSchema>;

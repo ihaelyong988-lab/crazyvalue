@@ -5,12 +5,14 @@
  *   1) GET /pgj/index.on 으로 JSESSIONID 세션 취득
  *   2) POST searchControllerMain.on — flbdNcntMin=2·전국(cortOfcCd 공백)·매각기일 창 오늘+42일, pageSize 40 페이지네이션
  *   3) 물건별 POST selectAuctnCsSrchRslt.on — 기일 이력(gdsDspslDxdyLst)·매수보증금비율(prchDposRate) 취득.
- *      실패 시 그 물건만 유찰횟수·저감율 역산 폴백(buildBackcalcHistory 주석 참조)
+ *      요청은 BUDGET(총 요청 상한·상세 마감) 안에서만 하고, 초과분·조기 종료분은
+ *      그 물건만 유찰횟수·저감율 역산 폴백(buildBackcalcHistory 주석 참조)
  *   4) 검증 게이트(전건 zod·건수>0·id 중복 0) 통과 시에만 public/data/{region}.json 17개 + meta.json 기록.
  *      실패 시 기존 파일 무변경 exit 1 — 앱은 직전 데이터로 동작한다(PLAN §5.4)
  *
  * 예절(CRAWLER.md §4): 요청 간격 ≥1.1초 · UA CrazyValueBot/0.1 · 재시도 3회 지수 백오프 ·
- *   HTTP 550/errors 봉투·로봇탐지(ipcheck=false)는 즉시 중단.
+ *   HTTP 550/errors 봉투·로봇탐지(ipcheck=false)는 즉시 중단 — 단 상세 단계에서는 조기 종료로 강등한다.
+ *   429(레이트리밋)는 일반 재시도에 태우지 않는다 — Retry-After를 존중해 1회만 길게 쉬고 반복되면 중단한다.
  *
  * 실행: npm run crawl [-- --region <key>] [--dry-run] [--limit <n>]
  *   --region  해당 시·도만 산출(요청은 전국 조회 동일 — 소재지 검색 모드는 미실측이라 서버측 지역 필터를
@@ -31,10 +33,12 @@ import {
 } from "../src/types/auction";
 import {
   BASE_URL,
+  BUDGET,
   CATEGORY_RULES,
   COURT_BY_CODE,
   DETAIL_URL,
   DXDY,
+  DXDY_CALIBRATION,
   ENDPOINTS,
   LAND_EXACT,
   POLITENESS,
@@ -63,19 +67,19 @@ function parseArgs(argv: string[]): CliOptions {
     else if (arg === "--region") {
       const v = argv[++i];
       if (!v || !REGIONS.some((r) => r.key === v)) {
-        console.error(`--region 값이 올바르지 않습니다. 사용 가능: ${REGIONS.map((r) => r.key).join(", ")}`);
+        console.error(`--region 값이 올바르지 않다. 사용 가능: ${REGIONS.map((r) => r.key).join(", ")}`);
         process.exit(1);
       }
       opts.region = v;
     } else if (arg === "--limit") {
       const v = Number(argv[++i]);
       if (!Number.isInteger(v) || v <= 0) {
-        console.error("--limit 값은 1 이상의 정수여야 합니다.");
+        console.error("--limit 값은 1 이상의 정수여야 한다.");
         process.exit(1);
       }
       opts.limit = v;
     } else {
-      console.error(`알 수 없는 옵션입니다: ${arg}`);
+      console.error(`알 수 없는 옵션이다: ${arg}`);
       process.exit(1);
     }
   }
@@ -200,6 +204,11 @@ function cookieHeader(): string {
 let lastRequestAt = 0;
 let liveRequestCount = 0;
 
+/** 프로세스 시작 시각 — 최상위 실패 로그도 경과·요청 수를 남기기 위해 모듈 수준에 둔다(AGENTS.md §9). */
+const startedAt = Date.now();
+
+const elapsedSec = (from: number): string => ((Date.now() - from) / 1000).toFixed(1);
+
 async function politeDelay(): Promise<void> {
   const wait = lastRequestAt + POLITENESS.minIntervalMs - Date.now();
   if (wait > 0) await new Promise((r) => setTimeout(r, wait));
@@ -212,12 +221,24 @@ interface PoliteInit {
 }
 
 /**
+ * Retry-After(초 단위) → 대기 ms. 헤더가 없거나 HTTP-date 형식이면 기본 대기값을 쓴다.
+ * 서버가 요구한 값이 기본값보다 짧아도 기본값 아래로는 내려가지 않는다(요청량 억제가 목적).
+ */
+function rateLimitWaitMs(header: string | null): number {
+  const seconds = header ? Number(header.trim()) : NaN;
+  const fromHeader = Number.isFinite(seconds) && seconds > 0 ? seconds * 1000 : 0;
+  return Math.min(Math.max(fromHeader, POLITENESS.rateLimitWaitMs), POLITENESS.rateLimitMaxWaitMs);
+}
+
+/**
  * 예절 규칙이 적용된 단일 요청. 네트워크 오류·타임아웃·5xx(550 제외)는
  * POLITENESS.backoffsMs 지수 백오프로 최대 3회 재시도한다.
  * HTTP 550 또는 body에 errors 봉투가 오면 사이트의 거절 신호로 보고 즉시 전체 중단한다.
+ * HTTP 429는 5xx와 분리한다 — 레이트리밋에 재시도를 얹으면 요청량이 늘어 차단을 앞당긴다.
  */
 async function request(path: string, init: PoliteInit): Promise<{ status: number; text: string }> {
   let attempt = 0;
+  let rateLimitHits = 0;
   for (;;) {
     await politeDelay();
     lastRequestAt = Date.now();
@@ -240,7 +261,19 @@ async function request(path: string, init: PoliteInit): Promise<{ status: number
       if (res.status === 550) {
         throw new CrawlAbortError(`HTTP 550 거절 응답 — 즉시 중단: ${text.slice(0, 200)}`);
       }
-      if (res.status >= 500 || res.status === 429) {
+      if (res.status === 429) {
+        // 재시도 3회를 얹으면 요청 1건이 최대 4건이 된다 — 서버가 감속을 요구한 구간에서 요청량을
+        // 4배로 올리는 동작이라 차단을 완화하지 않고 가속한다. 길게 1회만 쉬고 반복되면 중단한다.
+        if (rateLimitHits >= POLITENESS.rateLimitRetries) {
+          throw new CrawlAbortError(`HTTP 429 레이트리밋 반복 — 즉시 중단: ${path}`);
+        }
+        rateLimitHits++;
+        const wait = rateLimitWaitMs(res.headers.get("retry-after"));
+        console.error(`[레이트리밋 429] ${path} — ${wait}ms 대기 후 1회만 재시도한다.`);
+        await new Promise((r) => setTimeout(r, wait));
+        continue;
+      }
+      if (res.status >= 500) {
         throw new Error(`HTTP ${res.status}`);
       }
       if (res.status >= 400) {
@@ -462,15 +495,21 @@ function calibrateFailedCode(details: (DetailResult | null)[], todayYmd: string)
       freq.set(code, (freq.get(code) ?? 0) + 1);
     }
   }
-  let best = DXDY.RSLT_FAILED_DEFAULT as string;
-  let bestCount = 0;
-  for (const [code, count] of freq) {
-    if (count > bestCount) {
-      best = code;
-      bestCount = count;
-    }
-  }
-  return best;
+  // 표본·마진 가드(DXDY_CALIBRATION) — 관측 1회짜리 코드가 기본값을 이기면 유찰/변경 라벨이
+  // 통째로 뒤집힌 채 검증 게이트를 통과한다(zod는 fails==failCount만 본다).
+  const ranked = [...freq.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+  const samples = ranked.reduce((sum, [, count]) => sum + count, 0);
+  const [topCode, topCount] = ranked[0] ?? ["", 0];
+  const runnerUpCount = ranked[1]?.[1] ?? 0;
+  const dominant = topCount >= runnerUpCount * DXDY_CALIBRATION.dominanceRatio;
+  const adopt = samples >= DXDY_CALIBRATION.minSamples && topCode !== "" && dominant;
+  const code = adopt ? topCode : (DXDY.RSLT_FAILED_DEFAULT as string);
+  console.log(
+    `유찰 결과코드 보정 — 채택 ${code}(${adopt ? "관측 최빈" : "기본값"}) · ` +
+      `표본 ${samples}건(하한 ${DXDY_CALIBRATION.minSamples}) · ` +
+      `최빈 ${topCode || "-"} ${topCount}건 · 2위 ${ranked[1]?.[0] ?? "-"} ${runnerUpCount}건`,
+  );
+  return code;
 }
 
 /**
@@ -561,7 +600,12 @@ function mapRow(row: RawRow, detail: DetailResult | null, todayYmd: string, fail
   }
   // 서버측 flbdNcntMin=2 필터의 안전망 재검(CRAWLER.md §2.6 폴백)
   if (!Number.isInteger(failCount) || failCount < 2) return { item: null, skipReason: "유찰 2회 미만", historySource: null };
-  if (minPrice > appraisal) return { item: null, skipReason: "최저가>감정가(계약 밖 표본)", historySource: null };
+  // 유찰 2회 이상인데 최저가가 감정가 이상인 물건은 제품 정의상 존재할 수 없다 —
+  // 실제로는 다음 회차 가격(notifyMinmaePrice1·상세 기일가) 결측으로 목록가(minmaePrice, 실측상 직전
+  // 회차 가격)가 채택된 표본이다. 그대로 두면 priceRatio가 1.0으로 굳고 buildBackcalcHistory의
+  // 저감률이 0이 돼 "유찰 2회인데 회차 가격이 그대로"인 이력이 검증 게이트를 통과한다
+  // (zod superRefine은 저장값끼리의 정합만 보므로 원리적으로 검출하지 못한다).
+  if (minPrice >= appraisal) return { item: null, skipReason: "최저가≥감정가(유찰 2회 계약 밖)", historySource: null };
   if (!saleDate) return { item: null, skipReason: "매각기일 결측", historySource: null };
   // 검색 창(bidBgngYmd~) 서버 필터의 안전망 — 창 회귀 시 기일 경과 물건 유입을 차단한다.
   if (saleYmdRaw < todayYmd) return { item: null, skipReason: "기일 경과", historySource: null };
@@ -626,7 +670,7 @@ function mapRow(row: RawRow, detail: DetailResult | null, todayYmd: string, fail
 
 async function main(): Promise<void> {
   const opts = parseArgs(process.argv.slice(2));
-  const t0 = Date.now();
+  const t0 = startedAt;
   const todayYmd = ymdKst(0);
 
   console.log(
@@ -638,7 +682,7 @@ async function main(): Promise<void> {
   // 1) 세션 취득 — JSESSIONID 쿠키(CRAWLER.md §2.2)
   await request(ENDPOINTS.session, { method: "GET" });
   if (!cookieJar.has("JSESSIONID")) {
-    console.error("세션 쿠키(JSESSIONID) 미취득 — 중단합니다.");
+    console.error("세션 쿠키(JSESSIONID) 미취득 — 중단한다.");
     process.exit(1);
   }
 
@@ -650,6 +694,15 @@ async function main(): Promise<void> {
   // 폭주 방지 상한 — 실측(2026-07-19) 전국 유찰 2회 이상은 약 1만 9천 건(488페이지)이므로 여유 있게 둔다.
   const HARD_PAGE_CAP = 600;
   for (;;) {
+    // 예산은 계획치가 아니라 런타임 상한이다 — request()는 재시도마다 liveRequestCount를 올리므로
+    // 착수 전 1회 계산만으로는 상한이 지켜지지 않는다. 목록 단계 소진은 조기 종료로 강등하지 않는다:
+    // 부분 목록은 지역별 건수를 거짓으로 만들기 때문이다(아래 상세 루프 주석과 대칭).
+    if (liveRequestCount >= BUDGET.maxRequests) {
+      throw new Error(
+        `목록 단계에서 요청 예산(${BUDGET.maxRequests}회) 소진 — ` +
+          `${pageNo}페이지 · 라이브 요청 ${liveRequestCount}회 · 경과 ${elapsedSec(t0)}초에서 중단한다.`,
+      );
+    }
     const page = await fetchSearchPage(searchInfo, pageNo, totalCnt);
     totalCnt = page.totalCnt;
     rows.push(...page.rows);
@@ -657,10 +710,12 @@ async function main(): Promise<void> {
     const exhausted = page.rows.length < SEARCH.pageSize || rows.length >= totalCnt;
     if (opts.dryRun || collectedEnough || exhausted) break;
     if (pageNo >= HARD_PAGE_CAP) {
-      console.error(`페이지 상한(${HARD_PAGE_CAP}) 도달 — 서버 총 ${totalCnt}건 중 ${rows.length}건에서 절단합니다.`);
+      console.error(`페이지 상한(${HARD_PAGE_CAP}) 도달 — 서버 총 ${totalCnt}건 중 ${rows.length}건에서 절단한다.`);
       break;
     }
     pageNo++;
+    // 목록 단계에서 차단당해도 차단 시점을 페이지 단위로 특정할 수 있게 남긴다(AGENTS.md §9).
+    if (pageNo % 100 === 0) console.log(`목록 진행 — ${pageNo}페이지 · 라이브 요청 ${liveRequestCount}회`);
   }
   console.log(`목록 조회 — 서버 총 ${totalCnt}건 중 ${rows.length}건 수신(${pageNo}페이지)`);
 
@@ -678,21 +733,89 @@ async function main(): Promise<void> {
   // 매각기일 창 축소는 무효였다 — 21일 창 17,000건 ≈ 42일 창 16,302건으로, 기일이 근시일에 집중돼
   // 창을 절반으로 줄여도 대상이 줄지 않는다(0일 창 934건으로 서버 필터 자체는 정상 작동 확인).
   // 그래서 상세는 **픽 후보(최저가 ≤ 감정가 50%)에만** 요청한다. 픽 판정에 필요한 감정가·최저가는
-  // 목록 응답(gamevalAmt·minmaePrice)에 이미 있어 추가 요청이 들지 않는다. 판정 불가(값 결측)는
+  // 목록 응답에 이미 있어 추가 요청이 들지 않는다. 판정 불가(값 결측)는
   // 요청하는 쪽으로 기운다 — 픽을 놓치는 것이 앱의 큐레이션 정체성에 더 큰 손해다.
+  //
+  // 가격 필드는 mapRow의 후보 순서와 **같은 것**을 써야 한다(2026-07-27). minmaePrice는 실측상
+  // 직전 회차 가격이라(mapRow 주석의 194,000,000 대 155,200,000 표본) 그것으로 판정하면 비율이
+  // 한 회차분 과대평가돼 실제 픽이 상세 후보에서 탈락한다. 상세 의존 후보(기일 이력가·상세 공고가)는
+  // 아직 없으므로 목록에서 얻는 notifyMinmaePrice1을 우선하고 minmaePrice로만 폴백한다.
   const needsDetail = (row: RawRow): boolean => {
     const appraisal = num(row, "gamevalAmt");
-    const minPrice = num(row, "minmaePrice");
-    if (!(appraisal > 0 && minPrice > 0)) return true; // 값 결측 = 판정 불가 → 요청
+    const minPrice = [num(row, "notifyMinmaePrice1"), num(row, "minmaePrice")].find(
+      (v) => Number.isInteger(v) && v > 0,
+    );
+    if (!(appraisal > 0 && minPrice !== undefined)) return true; // 값 결측 = 판정 불가 → 요청
     return minPrice / appraisal <= 0.5;
   };
-  const detailTargets = picked.filter(needsDetail).length;
-  console.log(
-    `상세 요청 대상 — ${detailTargets}/${picked.length}건(픽 후보 한정) · ` +
-      `예상 소요 ${((detailTargets * POLITENESS.minIntervalMs) / 3.6e6).toFixed(1)}시간`,
+  // 상세 대상은 picked를 재정렬하지 않고 **인덱스 집합**으로 보관한다 —
+  // details[i]는 picked[i]에 1:1 대응하고 mapRow(row, details[i], …)가 그 대응에 의존한다.
+  // 기일 임박순 정렬은 "예산이 후보보다 적을 때 무엇을 버릴지"를 정하는 데만 쓴다.
+  const deadline = t0 + BUDGET.deadlineMinutes * 60_000;
+  const candidateIdx = picked.map((_, i) => i).filter((i) => needsDetail(picked[i]));
+  const detailBudget = Math.max(0, BUDGET.maxRequests - liveRequestCount);
+  // 예산이 후보보다 적을 때 무엇을 버릴지 — 매각기일이 먼 물건부터 버린다(임박한 기일이 사용자 가치가 크다).
+  const ordered = [...candidateIdx].sort(
+    (a, b) => str(picked[a], "maeGiil").localeCompare(str(picked[b], "maeGiil")) || a - b,
   );
-  const details: (DetailResult | null)[] = [];
-  for (const row of picked) details.push(needsDetail(row) ? await fetchDetail(row, searchInfo) : null);
+  const targetIdx = new Set(ordered.slice(0, detailBudget));
+  console.log(
+    `상세 요청 대상 — 후보 ${candidateIdx.length}/${picked.length}건(픽 후보 한정) · ` +
+      `선정 ${targetIdx.size}건 · 절단 ${candidateIdx.length - targetIdx.size}건(매각기일 먼 순) · ` +
+      `예산 잔여 ${detailBudget}회(총 상한 ${BUDGET.maxRequests}회) · ` +
+      `예상 소요 ${((targetIdx.size * POLITENESS.minIntervalMs) / 60_000).toFixed(0)}분`,
+  );
+
+  // 차단·마감을 전체 실패가 아니라 **조기 종료**로 강등한다(AGENTS.md §9 2026-07-27 원장).
+  // 목록 수집이 끝난 뒤의 차단은 데이터 결손이 아니라 기일 이력의 정밀도 차이다 —
+  // 미취득분은 buildBackcalcHistory 역산 폴백이 채우고 검증 게이트(zod 전건)는 그대로 통과한다.
+  // 반면 목록 수집 중의 차단은 전체 실패로 둔다(위 페이지네이션 루프 무변경) —
+  // 부분 목록은 지역별 건수를 거짓으로 만든다.
+  const details: (DetailResult | null)[] = new Array(picked.length).fill(null);
+  let aborted = false;
+  let abortReason = "";
+  let abortedAtRequest: number | null = null;
+  let requested = 0;
+  let succeeded = 0;
+  for (let i = 0; i < picked.length; i++) {
+    if (!targetIdx.has(i)) continue;
+    // 예산 러닝 체크 — detailBudget는 착수 전 1회 계산치이고, request()는 재시도마다
+    // liveRequestCount를 올린다. 이 검사가 없으면 5xx·429 구간에서 실제 요청이 상한의 몇 배가 된다.
+    if (liveRequestCount >= BUDGET.maxRequests) {
+      aborted = true;
+      abortReason = `요청 예산(${BUDGET.maxRequests}회) 소진`;
+      abortedAtRequest = liveRequestCount;
+      break;
+    }
+    if (Date.now() >= deadline) {
+      aborted = true;
+      abortReason = `상세 마감(${BUDGET.deadlineMinutes}분) 도달`;
+      abortedAtRequest = liveRequestCount;
+      break;
+    }
+    requested++;
+    try {
+      const d = await fetchDetail(picked[i], searchInfo);
+      details[i] = d;
+      if (d) succeeded++;
+    } catch (err) {
+      if (err instanceof CrawlAbortError) {
+        aborted = true;
+        abortReason = err.message;
+        abortedAtRequest = liveRequestCount;
+        break;
+      }
+      throw err;
+    }
+  }
+  if (aborted) {
+    // 차단 시점의 누적 요청 수는 사후 재현이 불가능한 1회성 관측치다(AGENTS.md §9 2026-07-27).
+    console.error(
+      `상세 조기 종료 — ${abortReason} · 요청 ${requested}/${targetIdx.size}건 · ` +
+        `라이브 요청 ${abortedAtRequest ?? liveRequestCount}회 · 경과 ${elapsedSec(t0)}초 · 나머지는 역산 폴백으로 채운다.`,
+    );
+  }
+  const truncated = candidateIdx.length - targetIdx.size;
   const failedCode = calibrateFailedCode(details, todayYmd);
 
   if (opts.dryRun && picked.length > 0) {
@@ -749,7 +872,7 @@ async function main(): Promise<void> {
     ids.add(item.id);
   }
   if (errors > 0 || items.length === 0) {
-    console.error(`검증 게이트 실패 — 오류 ${errors}건 · 수집 ${items.length}건. 기존 파일을 변경하지 않습니다.`);
+    console.error(`검증 게이트 실패 — 오류 ${errors}건 · 수집 ${items.length}건. 기존 파일을 변경하지 않는다.`);
     process.exit(1);
   }
 
@@ -798,22 +921,43 @@ async function main(): Promise<void> {
   for (const r of targets) {
     writeFileSync(join(outDir, `${r.key}.json`), JSON.stringify(byRegion.get(r.key) ?? [], null, 1));
   }
+  // 운영 신호는 의미 단위로 분리해 기록한다. 직전 설계의 partial(=조기 종료 or 예산 절단)은
+  // 후보가 예산보다 많은 상시 상태에서도 참이라 "차단이 재발했다"를 구별하지 못했다.
   const meta: Meta = {
     crawledAt: isoKstNow(),
     totalCount: Object.values(countsByRegion).reduce((a, b) => a + b, 0),
     countsByRegion,
     nextUpdateAt: nextSundayThreeAmKst(),
+    scope: opts.region ?? null,
+    aborted,
+    abortReason: aborted ? abortReason : null,
+    abortedAtRequest,
+    totalRequests: liveRequestCount,
+    truncated,
+    detailCoverage: { candidates: candidateIdx.length, requested, succeeded },
+    historySource: { real: realCount, backcalc: backcalcCount },
   };
   writeFileSync(join(outDir, "meta.json"), JSON.stringify(meta, null, 1));
 
-  console.log(`수집 완료 — 총 ${items.length}건 · 픽 ${picks}건 · 지역 ${byRegion.size}개 · 소요 ${elapsed}초`);
+  // 요청 수는 실행 모드와 무관하게 항상 남긴다 — 차단 임계는 사후 재현이 불가능한 1회성 관측치다
+  // (AGENTS.md §9 2026-07-27 원장: 앞선 실패의 요청 수를 경과시간÷1.2초로 역산해야 했다).
+  console.log(
+    `수집 완료 — 총 ${items.length}건 · 픽 ${picks}건 · 지역 ${byRegion.size}개 · 소요 ${elapsed}초 · ` +
+      `라이브 요청 ${liveRequestCount}회 · 상세 ${succeeded}/${candidateIdx.length}건(절단 ${truncated}건) · ` +
+      `조기 종료 ${aborted ? abortReason : "없음"}`,
+  );
 }
 
 // 직접 실행 시에만 수집을 시작한다 — maskNames() 등을 import하는 쪽에 부작용이 없도록.
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   main().catch((err: unknown) => {
     // 어떤 실패에서도 산출 파일은 건드리지 않은 상태다(쓰기는 게이트 통과 후 마지막 단계).
-    console.error(`수집 중단 — ${err instanceof Error ? err.message : String(err)}`);
+    // 요청 수·경과는 실패 경로에서도 남긴다 — 목록 단계 차단은 여기로 떨어지고,
+    // 차단 임계는 사후 재현이 불가능한 1회성 관측치다(AGENTS.md §9 2026-07-27).
+    console.error(
+      `수집 중단 — ${err instanceof Error ? err.message : String(err)} · ` +
+        `라이브 요청 ${liveRequestCount}회 · 경과 ${elapsedSec(startedAt)}초`,
+    );
     process.exit(1);
   });
 }
