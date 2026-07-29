@@ -284,9 +284,9 @@ meta.json { crawledAt, totalCount, countsByRegion, nextUpdateAt }
 | 대상 | 법원경매정보(공식) 전국 진행 물건 중 **유찰 2회 이상** |
 | 전략 결정 | Phase 3 착수 시 **정찰 스파이크(최대 반나절)** 로 확정: A) 사이트 내부 JSON API 직접 호출 → B) 서버렌더 HTML+cheerio → C) Playwright 헤드리스. A부터 시도, 성공 기준은 "전국 1회 수집 완주" |
 | 예절 규칙 | 요청 간격 ≥1초, User-Agent `CrazyValueBot/0.1 (+저장소 URL)`, 재시도 3회(지수 백오프), 심야(03시 KST) 실행 |
-| 검증 게이트 | zod 통과 + 건수 > 0 + 필수 필드 결측 0 + id 중복 0. 하나라도 실패 시 **기존 데이터 유지하고 커밋하지 않음** |
+| 검증 게이트 | 항목 단위 zod·중복 검사로 이상은 **개별 드롭+카운트 로깅**, 유효 부분집합을 배포. **유효 0건일 때만** 기존 데이터 유지·무커밋 (2026-07-30 전환 — 전량 기각은 서버 재서빙 중복에서 확보분까지 폐기함) |
 | 스케줄 | `.github/workflows/crawl.yml` — cron `0 18 * * 6`(UTC 토 18:00 = **KST 일 03:00**, 원안 시각 준수) + `workflow_dispatch`(수동 실행). 비밀키 불요 — 기본 `GITHUB_TOKEN`(contents: write)만 사용 |
-| 산출 | data JSON 갱신 커밋 → push → Vercel 자동 재배포 |
+| 산출 | 유효·중복제거 후 **매각기일 임박순 최대 1,000건**(`OUTPUT_CAP`, 2026-07-30 주인님 확정, /guide 공개) → data JSON 갱신 커밋 → push → Vercel 자동 재배포 |
 | 법적·윤리 | 공공 공고 정보의 재구성이며 출처(법원경매정보)와 원문 링크를 모든 물건에 표기. robots.txt·이용약관을 스파이크 단계에서 확인하고 위배 시 수집 방식 재설계(§10 리스크 R1) |
 
 ### 5.5 관심함·개인화 저장 설계
