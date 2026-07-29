@@ -52,6 +52,19 @@ export const POLITENESS = {
 } as const;
 
 /**
+ * 세션 부트스트랩(GET /pgj/index.on) 전용 재시도 백오프 — 일반 요청 백오프(POLITENESS.backoffsMs)는 불변.
+ * 07-29 런이 세션 GET의 TypeError: fetch failed 재시도 3회(1s/2s/4s) 소진으로 49초 만에 전체 중단됐다.
+ * transport 일시 장애로 즉사하던 경로에 약 65초(5+15+45)의 흡수 폭을 부여한다.
+ */
+export const SESSION_BACKOFFS = [5000, 15000, 45000] as const;
+
+/**
+ * 산출물 상한 — 유효·중복제거 후 매각기일 임박순(saleDate 오름차순, 동일일 id 순) 상위 N건만 산출한다.
+ * 상한 적용 전 유효 건수는 meta.cappedFrom으로 기록한다(crawl-lib capBySaleDate).
+ */
+export const OUTPUT_CAP = 1000;
+
+/**
  * 요청 예산 — 1회 실행이 넘지 않는 상한(AGENTS.md §9 2026-07-27 원장).
  *
  * 실측 근거: 2026-07-25 18:53Z 주간 수집이 43분47초·약 2,160요청 지점에서

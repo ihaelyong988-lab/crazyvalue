@@ -41,13 +41,24 @@ import {
   DXDY_CALIBRATION,
   ENDPOINTS,
   LAND_EXACT,
+  OUTPUT_CAP,
   POLITENESS,
   REGION_KEY_BY_SD_CD,
   REGION_KEY_BY_SIDO_PREFIX,
   SEARCH,
   SEARCH_INFO_KEYS,
+  SESSION_BACKOFFS,
   USER_AGENT,
 } from "./crawl-config";
+import {
+  STALL_PAGE_LIMIT,
+  acceptPage,
+  buildSummaryLine,
+  capBySaleDate,
+  createListAccumulator,
+  gateItems,
+  isStalled,
+} from "./crawl-lib";
 
 // ---------------------------------------------------------------------------
 // CLI 옵션
@@ -232,11 +243,16 @@ function rateLimitWaitMs(header: string | null): number {
 
 /**
  * 예절 규칙이 적용된 단일 요청. 네트워크 오류·타임아웃·5xx(550 제외)는
- * POLITENESS.backoffsMs 지수 백오프로 최대 3회 재시도한다.
+ * backoffsMs(기본 POLITENESS.backoffsMs) 지수 백오프로 backoffsMs.length회까지 재시도한다.
+ * 세션 부트스트랩 GET만 전용 백오프(SESSION_BACKOFFS, 약 65초 흡수)를 넘긴다 — 일반 요청 백오프는 불변.
  * HTTP 550 또는 body에 errors 봉투가 오면 사이트의 거절 신호로 보고 즉시 전체 중단한다.
  * HTTP 429는 5xx와 분리한다 — 레이트리밋에 재시도를 얹으면 요청량이 늘어 차단을 앞당긴다.
  */
-async function request(path: string, init: PoliteInit): Promise<{ status: number; text: string }> {
+async function request(
+  path: string,
+  init: PoliteInit,
+  backoffsMs: readonly number[] = POLITENESS.backoffsMs,
+): Promise<{ status: number; text: string }> {
   let attempt = 0;
   let rateLimitHits = 0;
   for (;;) {
@@ -282,11 +298,11 @@ async function request(path: string, init: PoliteInit): Promise<{ status: number
       return { status: res.status, text };
     } catch (err) {
       if (err instanceof CrawlAbortError) throw err;
-      if (attempt >= POLITENESS.retries) {
-        throw new Error(`요청 실패(재시도 ${POLITENESS.retries}회 소진) ${path}: ${String(err)}`);
+      if (attempt >= backoffsMs.length) {
+        throw new Error(`요청 실패(재시도 ${backoffsMs.length}회 소진) ${path}: ${String(err)}`);
       }
-      const backoff = POLITENESS.backoffsMs[Math.min(attempt, POLITENESS.backoffsMs.length - 1)];
-      console.error(`[재시도 ${attempt + 1}/${POLITENESS.retries}] ${path} — ${String(err)} · ${backoff}ms 대기`);
+      const backoff = backoffsMs[Math.min(attempt, backoffsMs.length - 1)];
+      console.error(`[재시도 ${attempt + 1}/${backoffsMs.length}] ${path} — ${String(err)} · ${backoff}ms 대기`);
       await new Promise((r) => setTimeout(r, backoff));
       attempt++;
     }
@@ -680,15 +696,20 @@ async function main(): Promise<void> {
   );
 
   // 1) 세션 취득 — JSESSIONID 쿠키(CRAWLER.md §2.2)
-  await request(ENDPOINTS.session, { method: "GET" });
+  // 세션 GET에 한해 전용 백오프(SESSION_BACKOFFS: 5s/15s/45s ≈ 65초 흡수)를 쓴다 —
+  // 07-29 런이 transport 일시 장애(TypeError: fetch failed) 재시도 3회(1s/2s/4s) 소진으로 49초 만에 즉사했다.
+  await request(ENDPOINTS.session, { method: "GET" }, SESSION_BACKOFFS);
   if (!cookieJar.has("JSESSIONID")) {
     console.error("세션 쿠키(JSESSIONID) 미취득 — 중단한다.");
     process.exit(1);
   }
 
-  // 2) 목록 페이지네이션
+  // 2) 목록 페이지네이션 — 수신 시점 dedupe(crawl-lib seenRowKeys).
+  // 서버가 야간 배치 중 같은 행을 재서빙해도(07-28 실측: 같은 id 최대 154회) 첫 등장만 축적한다.
+  // 종결 판정의 누적 행수(acc.rows.length)는 자연히 고유 건수다 — 재서빙 구간에서 고유 건수가
+  // totalCnt에 영원히 못 미치면 아래 정체 종결(stallPages)이 목록을 정상 종결한다.
   const searchInfo = buildSearchInfo();
-  const rows: RawRow[] = [];
+  const acc = createListAccumulator();
   let totalCnt = 0;
   let pageNo = 1;
   // 폭주 방지 상한 — 실측(2026-07-19) 전국 유찰 2회 이상은 약 1만 9천 건(488페이지)이므로 여유 있게 둔다.
@@ -705,19 +726,29 @@ async function main(): Promise<void> {
     }
     const page = await fetchSearchPage(searchInfo, pageNo, totalCnt);
     totalCnt = page.totalCnt;
-    rows.push(...page.rows);
-    const collectedEnough = opts.limit !== null && rows.length >= opts.limit;
-    const exhausted = page.rows.length < SEARCH.pageSize || rows.length >= totalCnt;
+    acceptPage(acc, page.rows);
+    const collectedEnough = opts.limit !== null && acc.rows.length >= opts.limit;
+    const exhausted = page.rows.length < SEARCH.pageSize || acc.rows.length >= totalCnt;
     if (opts.dryRun || collectedEnough || exhausted) break;
+    // 정체 종결 — 연속 STALL_PAGE_LIMIT페이지 신규 고유 0건이면 서버 꼬리 반복으로 보고 정상 종결한다.
+    // 오류·경고가 아니라 정보 로그다(수집된 고유 목록은 그대로 유효하다).
+    if (isStalled(acc)) {
+      console.log(
+        `목록 정체 종결 — 연속 ${STALL_PAGE_LIMIT}페이지 신규 고유 0건(stallPages) · ` +
+          `고유 ${acc.rows.length}건 · 서버 총 ${totalCnt}건 · ${pageNo}페이지`,
+      );
+      break;
+    }
     if (pageNo >= HARD_PAGE_CAP) {
-      console.error(`페이지 상한(${HARD_PAGE_CAP}) 도달 — 서버 총 ${totalCnt}건 중 ${rows.length}건에서 절단한다.`);
+      console.error(`페이지 상한(${HARD_PAGE_CAP}) 도달 — 서버 총 ${totalCnt}건 중 고유 ${acc.rows.length}건에서 절단한다.`);
       break;
     }
     pageNo++;
     // 목록 단계에서 차단당해도 차단 시점을 페이지 단위로 특정할 수 있게 남긴다(AGENTS.md §9).
     if (pageNo % 100 === 0) console.log(`목록 진행 — ${pageNo}페이지 · 라이브 요청 ${liveRequestCount}회`);
   }
-  console.log(`목록 조회 — 서버 총 ${totalCnt}건 중 ${rows.length}건 수신(${pageNo}페이지)`);
+  const rows = acc.rows;
+  console.log(`목록 조회 — 서버 총 ${totalCnt}건 중 수신 ${acc.received}건 · 고유 ${rows.length}건(${pageNo}페이지)`);
 
   let picked = rows;
   if (opts.region) {
@@ -856,29 +887,42 @@ async function main(): Promise<void> {
   }
   console.log(`기일 이력 — 실취득 ${realCount}건 · 역산 폴백 ${backcalcCount}건 (유찰 결과코드 보정값 ${failedCode})`);
 
-  // 5) 검증 게이트 — 전건 zod + 건수>0 + id 중복 0. 실패 시 기존 파일 무변경 exit 1(PLAN §5.4)
-  const ids = new Set<string>();
-  let errors = 0;
-  for (const item of items) {
+  // 5) 검증 게이트(강등 설계) — "오류 0건이어야 배포"가 아니라 "유효 부분집합은 항상 배포".
+  // ① zod 실패 → 개별 드롭+invalidDropped++ ② 중복 id → 개별 드롭+dupDropped++(첫 등장 유지).
+  // 전량 기각(기존 파일 무변경 exit 1)은 유효 0건일 때만 — 07-28 런은 고유 약 9,400건을 확보하고도
+  // 중복 7,044건 때문에 전량 폐기됐다(오류 1건 전량 기각 게이트의 실패 선례).
+  const gate = gateItems(items, (item) => {
     const parsed = AuctionItemSchema.safeParse(item);
     if (!parsed.success) {
-      errors++;
-      console.error(`[검증 실패] ${item.id}: ${parsed.error.issues.map((i) => i.message).join("; ")}`);
+      console.error(`[무효 드롭] ${item.id}: ${parsed.error.issues.map((i) => i.message).join("; ")}`);
+      return false;
     }
-    if (ids.has(item.id)) {
-      errors++;
-      console.error(`[중복 id] ${item.id}`);
-    }
-    ids.add(item.id);
-  }
-  if (errors > 0 || items.length === 0) {
-    console.error(`검증 게이트 실패 — 오류 ${errors}건 · 수집 ${items.length}건. 기존 파일을 변경하지 않는다.`);
+    return true;
+  });
+  if (gate.valid.length === 0) {
+    console.error(
+      `검증 게이트 기각 — 유효 0건(무효드롭 ${gate.invalidDropped}건 · 중복드롭 ${gate.dupDropped}건). ` +
+        `기존 파일을 변경하지 않는다.`,
+    );
     process.exit(1);
   }
 
-  const picks = items.filter((i) => i.priceRatio <= 0.5).length;
+  // 산출물 상한 — 유효·중복제거 후 매각기일 임박순(동일일은 id 순) 상위 OUTPUT_CAP건만 산출한다.
+  const { capped: outItems, cappedFrom } = capBySaleDate(gate.valid, OUTPUT_CAP);
+  // 중복 드롭 합계 = 목록 수신 시점 dedupe(acc.received − 고유) + 게이트 중복 id.
+  const dedupDropped = acc.received - rows.length + gate.dupDropped;
+  const summaryLine = buildSummaryLine({
+    received: acc.received,
+    unique: rows.length,
+    dupDropped: dedupDropped,
+    invalidDropped: gate.invalidDropped,
+    cappedFrom,
+    output: outItems.length,
+  });
+
+  const picks = outItems.filter((i) => i.priceRatio <= 0.5).length;
   const byRegion = new Map<string, AuctionItem[]>();
-  for (const item of items) {
+  for (const item of outItems) {
     const key = REGIONS.find((r) => r.name === item.region)?.key as string;
     if (!byRegion.has(key)) byRegion.set(key, []);
     (byRegion.get(key) as AuctionItem[]).push(item);
@@ -889,13 +933,14 @@ async function main(): Promise<void> {
   const elapsed = ((Date.now() - t0) / 1000).toFixed(1);
 
   if (opts.dryRun) {
-    for (const item of items) {
+    for (const item of outItems) {
       console.log(
         `  ${item.id} · ${item.category} · ${item.region} ${item.district} · 감정 ${item.appraisalPrice.toLocaleString("ko-KR")}원 · ` +
           `최저 ${item.minPrice.toLocaleString("ko-KR")}원(${(item.priceRatio * 100).toFixed(1)}%) · 유찰 ${item.failCount}회 · 기일 ${item.saleDate} ${item.saleTime}`,
       );
     }
-    console.log(`dry-run 완료(쓰기 없음) — 총 ${items.length}건 · 픽 ${picks}건 · 지역 ${byRegion.size}개 · 소요 ${elapsed}초`);
+    console.log(summaryLine);
+    console.log(`dry-run 완료(쓰기 없음) — 총 ${outItems.length}건 · 픽 ${picks}건 · 지역 ${byRegion.size}개 · 소요 ${elapsed}초`);
     console.log(`라이브 요청 ${liveRequestCount}회`);
     return;
   }
@@ -923,7 +968,9 @@ async function main(): Promise<void> {
   }
   // 운영 신호는 의미 단위로 분리해 기록한다. 직전 설계의 partial(=조기 종료 or 예산 절단)은
   // 후보가 예산보다 많은 상시 상태에서도 참이라 "차단이 재발했다"를 구별하지 못했다.
-  const meta: Meta = {
+  // dedupDropped·invalidDropped·cappedFrom·outputCap은 이번 설계(강등 게이트·산출 상한)의 운영 신호다 —
+  // src/의 MetaSchema는 비-strict z.object(미지 키 통과)·use-meta.ts isMeta는 4필드만 검사하므로 하위호환이다.
+  const meta: Meta & { dedupDropped: number; invalidDropped: number; cappedFrom: number; outputCap: number } = {
     crawledAt: isoKstNow(),
     totalCount: Object.values(countsByRegion).reduce((a, b) => a + b, 0),
     countsByRegion,
@@ -936,13 +983,18 @@ async function main(): Promise<void> {
     truncated,
     detailCoverage: { candidates: candidateIdx.length, requested, succeeded },
     historySource: { real: realCount, backcalc: backcalcCount },
+    dedupDropped,
+    invalidDropped: gate.invalidDropped,
+    cappedFrom,
+    outputCap: OUTPUT_CAP,
   };
   writeFileSync(join(outDir, "meta.json"), JSON.stringify(meta, null, 1));
 
   // 요청 수는 실행 모드와 무관하게 항상 남긴다 — 차단 임계는 사후 재현이 불가능한 1회성 관측치다
   // (AGENTS.md §9 2026-07-27 원장: 앞선 실패의 요청 수를 경과시간÷1.2초로 역산해야 했다).
+  console.log(summaryLine);
   console.log(
-    `수집 완료 — 총 ${items.length}건 · 픽 ${picks}건 · 지역 ${byRegion.size}개 · 소요 ${elapsed}초 · ` +
+    `수집 완료 — 총 ${outItems.length}건 · 픽 ${picks}건 · 지역 ${byRegion.size}개 · 소요 ${elapsed}초 · ` +
       `라이브 요청 ${liveRequestCount}회 · 상세 ${succeeded}/${candidateIdx.length}건(절단 ${truncated}건) · ` +
       `조기 종료 ${aborted ? abortReason : "없음"}`,
   );
