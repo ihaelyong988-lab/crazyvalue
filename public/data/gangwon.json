@@ -1,312 +1,2807 @@
 [
  {
-  "id": "gangwon-2025타경63703-1",
-  "court": "춘천지방법원",
-  "caseNo": "2025타경63703",
-  "itemNo": "1",
-  "category": "단독다가구",
-  "address": "강원 원주시 산업로 145",
-  "region": "강원",
-  "district": "원주시",
-  "appraisalPrice": 556172000,
-  "minPrice": 93476000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-08-07",
-  "saleTime": "14:00",
-  "courtRoom": "경매법정 제3호",
-  "deposit": 9348000,
-  "areaBuilding": 223.9,
-  "areaLand": 605.8,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
-  "history": [
-   {
-    "date": "2026-01-09",
-    "minPrice": 556172000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-02-13",
-    "minPrice": 556172000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-20",
-    "minPrice": 389320000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-24",
-    "minPrice": 272524000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-29",
-    "minPrice": 190767000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-03",
-    "minPrice": 133537000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-18",
-    "minPrice": 93476000,
-    "result": "변경"
-   }
-  ],
-  "specialNote": null
- },
- {
-  "id": "gangwon-2025타경80171-3",
-  "court": "춘천지방법원",
-  "caseNo": "2025타경80171",
-  "itemNo": "3",
-  "category": "오피스텔",
-  "address": "강원 춘천시 평화로 976",
-  "region": "강원",
-  "district": "춘천시",
-  "appraisalPrice": 287539000,
-  "minPrice": 69038000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-08-18",
-  "saleTime": "14:00",
-  "courtRoom": "경매법정 제2호",
-  "deposit": 6904000,
-  "areaBuilding": 207.1,
-  "areaLand": 289.3,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
-  "history": [
-   {
-    "date": "2026-02-24",
-    "minPrice": 287539000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-31",
-    "minPrice": 287539000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-05",
-    "minPrice": 201277000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-09",
-    "minPrice": 140894000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-14",
-    "minPrice": 98626000,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": null
- },
- {
-  "id": "gangwon-2025타경54508-2",
-  "court": "춘천지방법원",
-  "caseNo": "2025타경54508",
-  "itemNo": "2",
-  "category": "상가",
-  "address": "강원 강릉시 중앙로 845",
-  "region": "강원",
-  "district": "강릉시",
-  "appraisalPrice": 201849000,
-  "minPrice": 69234000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-07-18",
-  "saleTime": "14:00",
-  "courtRoom": "경매법정 제3호",
-  "deposit": 6923000,
-  "areaBuilding": 66.9,
-  "areaLand": 306.9,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
-  "history": [
-   {
-    "date": "2026-02-28",
-    "minPrice": 201849000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-04",
-    "minPrice": 201849000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-09",
-    "minPrice": 141294000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-13",
-    "minPrice": 98906000,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": null
- },
- {
-  "id": "gangwon-2025타경76752-1",
-  "court": "춘천지방법원",
-  "caseNo": "2025타경76752",
+  "id": "gangwon-2024타경2373-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2024타경2373",
   "itemNo": "1",
   "category": "토지",
-  "address": "강원 원주시 번영로 126",
+  "address": "강원특별자치도 원주시 봉산동 779-12",
   "region": "강원",
   "district": "원주시",
-  "appraisalPrice": 921341000,
-  "minPrice": 154850000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-07-30",
-  "saleTime": "14:00",
-  "courtRoom": "경매법정 제2호",
-  "deposit": 15485000,
-  "areaBuilding": null,
-  "areaLand": 532.2,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
-  "history": [
-   {
-    "date": "2026-01-01",
-    "minPrice": 921341000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-02-05",
-    "minPrice": 921341000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-12",
-    "minPrice": 644939000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-16",
-    "minPrice": 451457000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-21",
-    "minPrice": 316020000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-25",
-    "minPrice": 221214000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-10",
-    "minPrice": 154850000,
-    "result": "변경"
-   }
-  ],
-  "specialNote": null
- },
- {
-  "id": "gangwon-2025타경24649-1",
-  "court": "춘천지방법원",
-  "caseNo": "2025타경24649",
-  "itemNo": "1",
-  "category": "공장창고",
-  "address": "강원 강릉시 산업로 878",
-  "region": "강원",
-  "district": "강릉시",
-  "appraisalPrice": 1035045000,
-  "minPrice": 248514000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-08-06",
-  "saleTime": "10:00",
-  "courtRoom": "경매법정 제2호",
-  "deposit": 24851000,
-  "areaBuilding": 231.4,
-  "areaLand": 438,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
-  "history": [
-   {
-    "date": "2026-02-12",
-    "minPrice": 1035045000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-19",
-    "minPrice": 1035045000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-23",
-    "minPrice": 724532000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-28",
-    "minPrice": 507172000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-02",
-    "minPrice": 355020000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-17",
-    "minPrice": 248514000,
-    "result": "변경"
-   }
-  ],
-  "specialNote": null
- },
- {
-  "id": "gangwon-2025타경64647-1",
-  "court": "춘천지방법원",
-  "caseNo": "2025타경64647",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "강원 춘천시 평화로 225",
-  "region": "강원",
-  "district": "춘천시",
-  "appraisalPrice": 41817000,
-  "minPrice": 20490000,
+  "appraisalPrice": 352260000,
+  "minPrice": 172607000,
   "priceRatio": 0.49,
   "failCount": 2,
-  "saleDate": "2026-08-23",
+  "saleDate": "2026-08-03",
   "saleTime": "10:00",
-  "courtRoom": "경매법정 제3호",
-  "deposit": 2049000,
-  "areaBuilding": 205.1,
-  "areaLand": 550.5,
+  "courtRoom": "경매101호법정",
+  "deposit": 17260700,
+  "areaBuilding": null,
+  "areaLand": 927,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
   "history": [
    {
-    "date": "2026-05-10",
-    "minPrice": 41817000,
+    "date": "2026-04-20",
+    "minPrice": 352260000,
     "result": "신건"
    },
    {
-    "date": "2026-06-14",
-    "minPrice": 41817000,
+    "date": "2026-05-25",
+    "minPrice": 352260000,
     "result": "유찰"
    },
    {
-    "date": "2026-07-19",
-    "minPrice": 29272000,
+    "date": "2026-06-29",
+    "minPrice": 246581714,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 을구 지상권등기(2014.9.29.등기)에 대해 지상권자 판부농업협동조합으로부터 지상권등기 말소동의서 제출됨(2024. 8. 13.제출) - 지상에 매각에서 제외된 제시외 건물 소재하며, 감정평가액(최저매각가격)은 제시외 건물로 인하여 제한받는 정도를 감안한 가격임 - 최저매각가격 오류 기재로 인해 246,582,000에서 352,260,000원으로 정정함(2026.6.1.정정 변경)"
+ },
+ {
+  "id": "gangwon-2024타경2373-2",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2024타경2373",
+  "itemNo": "2",
+  "category": "토지",
+  "address": "강원특별자치도 원주시 봉산동 779-28",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 300200000,
+  "minPrice": 147098000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 14709800,
+  "areaBuilding": null,
+  "areaLand": 664,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 300200000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 210140000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 을구 지상권등기(2014.9.29.등기)에 대해 지상권자 판부농업협동조합으로부터 지상권등기 말소동의서 제출됨(2024. 8. 13.제출) - 지상에 매각에서 제외된 제시외 건물 소재하며, 감정평가액(최저매각가격)은 제시외 건물로 인하여 제한받는 정도를 감안한 가격임"
+ },
+ {
+  "id": "gangwon-2024타경2373-3",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2024타경2373",
+  "itemNo": "3",
+  "category": "토지",
+  "address": "강원특별자치도 원주시 봉산동 779-29",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 391924000,
+  "minPrice": 192043000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 19204300,
+  "areaBuilding": null,
+  "areaLand": 896,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 391924000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 274347000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 일괄매각 - 목록3,4,8. 각 을구 지상권등기(2014.9.29.등기)에 대해 지상권자 판부농업협동조합으로부터 지상권등기 말소동의서 제출됨(2024. 8. 13.제출) - 목록3. 지상에 매각에서 제외된 제시외 건물 소재하며, 감정평가액(최저매각가격)은 제시외 건물로 인하여 제한받는 정도를 감안한 가격임 - 목록3,4. 공부상 임야이나 현황은 건부지 및 주거나지"
+ },
+ {
+  "id": "gangwon-2024타경2373-4",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2024타경2373",
+  "itemNo": "4",
+  "category": "토지",
+  "address": "강원특별자치도 원주시 봉산동 779-31",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 89856000,
+  "minPrice": 44029000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 4402900,
+  "areaBuilding": null,
+  "areaLand": 768,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 89856000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 62899000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 을구 지상권등기(2014.9.29.등기)에 대해 지상권자 판부농업협동조합으로부터 지상권등기 말소동의서 제출됨(2024. 8. 13.제출)"
+ },
+ {
+  "id": "gangwon-2024타경2373-5",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2024타경2373",
+  "itemNo": "5",
+  "category": "토지",
+  "address": "강원특별자치도 원주시 봉산동 779-32",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 91168000,
+  "minPrice": 44673000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 4467300,
+  "areaBuilding": null,
+  "areaLand": 518,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 91168000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 63818000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 을구 지상권등기(2014.9.29.등기)에 대해 지상권자 판부농업협동조합으로부터 지상권등기 말소동의서 제출됨(2024. 8. 13.제출)"
+ },
+ {
+  "id": "gangwon-2024타경2803-1",
+  "court": "춘천지방법원",
+  "caseNo": "2024타경2803",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "강원특별자치도 홍천군 북방면 장항리 212",
+  "region": "강원",
+  "district": "홍천군",
+  "appraisalPrice": 2024057190,
+  "minPrice": 1416840000,
+  "priceRatio": 0.7,
+  "failCount": 3,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(102호법정)",
+  "deposit": 141684000,
+  "areaBuilding": 578,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-03-16",
+    "minPrice": 2024057190,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 2024057190,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-25",
+    "minPrice": 1797168465,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-29",
+    "minPrice": 1595713059,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-일괄매각. 제시외 건물 및 물건 포함 -목록1, 3~5 지상 수목, 석축 등은 토지에 포함하여 평가함 -본건 토지와 건물, 수영장 및 폭포설비 등에 설치된 조명설비는 각 항목에 포함하여 평가함 -목록6 의뢰목록상 '주택'이나 현황 '숙박시설'등임, 부속건물 의뢰목록상 '일발철골구조 콘크리트지붕'이나 현황 '일반철골구조 및 경량철골구조 철근콘크리트지붕 및 판넬지붕'임 -목록9,10 공부상 지목 '전'이나 현황 '도로'등임 -목록9,10 농지취득자격증명 필요(미제출시 보증금 몰수, 증명원 제출기간내 발급위해 미리 신청 요-문의:북방면사무소)"
+ },
+ {
+  "id": "gangwon-2024타경346-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2024타경346",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 원주시 부론면 노림리 11-4",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 1152778000,
+  "minPrice": 564862000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 56486200,
+  "areaBuilding": null,
+  "areaLand": 128,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-03-10",
+    "minPrice": 1152778000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 806945000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 일괄매각 - 목록1~4, 6~19. 각 농지취득자격증명 필요(미제출시 보증금 몰수, 입찰기일 전 농지취득자격증명 신청이 가능하므로 해당 관서에 미리 발급 문의 바람) - 목록1,2,3,5,6,12,13,14,15,19. 현황은 도로 - 목록4. 등기부상 면적은 62㎡이나 토지대장상 69㎡로 상이함 - 목록10. 분묘 소재(분묘기지권 성립여지 있음)하며, 감정평가액(최저매각가격)은 감안한 가격임 - 목록16,17,18. 현황은 묵전"
+ },
+ {
+  "id": "gangwon-2024타경401024-4",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2024타경401024",
+  "itemNo": "4",
+  "category": "토지",
+  "address": "강원특별자치도 횡성군 횡성읍 갈풍리 167",
+  "region": "강원",
+  "district": "횡성군",
+  "appraisalPrice": 3377850,
+  "minPrice": 137000,
+  "priceRatio": 0.0406,
+  "failCount": 9,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 13700,
+  "areaBuilding": null,
+  "areaLand": 344,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-04-07",
+    "minPrice": 3378000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-06-09",
+    "minPrice": 2365000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-07-14",
+    "minPrice": 1656000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-08-18",
+    "minPrice": 1159000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-09-15",
+    "minPrice": 811000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-22",
+    "minPrice": 568000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-02",
+    "minPrice": 398000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 279000,
+    "result": "변경"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 279000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 195000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 일괄매각 - 공유자우선매수권 행사 1회로 제한 - 목록7,9. 각 농지취득자격증명 필요(미제출시 보증금 몰수, 입찰기일 전 농지취득자격증명 신청이 가능하므로 해당 관서에 미리 발급 문의) - 목록7. 공부상 전이나 현황은 휴경지 및 일부 도수로 부지"
+ },
+ {
+  "id": "gangwon-2024타경401024-6",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2024타경401024",
+  "itemNo": "6",
+  "category": "토지",
+  "address": "강원특별자치도 횡성군 횡성읍 갈풍리 199",
+  "region": "강원",
+  "district": "횡성군",
+  "appraisalPrice": 23279500,
+  "minPrice": 2739000,
+  "priceRatio": 0.1177,
+  "failCount": 8,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 547800,
+  "areaBuilding": null,
+  "areaLand": 562,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-04-07",
+    "minPrice": 23280000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-06-09",
+    "minPrice": 16296000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-07-14",
+    "minPrice": 11407000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-08-18",
+    "minPrice": 7985000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-09-15",
+    "minPrice": 5590000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-22",
+    "minPrice": 7985000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-02",
+    "minPrice": 5590000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 3913000,
+    "result": "변경"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 3913000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 일괄매각 - 공유자우선매수권 행사 1회로 제한 - 목록13. 현황은 전 - 목록14. 농지취득자격증명 필요(미제출시 보증금 몰수, 입찰기일 전 농지취득자격증명 신청이 가능하므로 해당 관서에 미리 발급 문의) - 특별매각조건 매수신청보증금 최저매각가격의 20%"
+ },
+ {
+  "id": "gangwon-2024타경406524-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2024타경406524",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 원주시 소초면 수암리 산219-3",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 11796000,
+  "minPrice": 1982000,
+  "priceRatio": 0.168,
+  "failCount": 5,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 198200,
+  "areaBuilding": null,
+  "areaLand": 983,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-10-27",
+    "minPrice": 11796000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-11-24",
+    "minPrice": 8257000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-22",
+    "minPrice": 5780000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 4046000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 2832000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 분묘소재 가능성 있음(소재시 분묘기지권 성립여지 있음)"
+ },
+ {
+  "id": "gangwon-2024타경406944-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2024타경406944",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 원주시 행구동 1207-54",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 50086000,
+  "minPrice": 5893000,
+  "priceRatio": 0.1177,
+  "failCount": 6,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 589300,
+  "areaBuilding": null,
+  "areaLand": 634,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-12-22",
+    "minPrice": 50086000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-02",
+    "minPrice": 35060000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 24542000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 17179000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 12025000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 8418000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 분묘소재 가능성 있음(소재시 분묘기지권 성립여지 있음)"
+ },
+ {
+  "id": "gangwon-2024타경56183-1",
+  "court": "춘천지방법원",
+  "caseNo": "2024타경56183",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "강원특별자치도 홍천군 홍천읍 장전평로 65 2층205호 (비발디힐)",
+  "region": "강원",
+  "district": "홍천군",
+  "appraisalPrice": 99000000,
+  "minPrice": 2797000,
+  "priceRatio": 0.0283,
+  "failCount": 10,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(102호법정)",
+  "deposit": 279700,
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-08-04",
+    "minPrice": 99000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-09-08",
+    "minPrice": 69300000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-10-20",
+    "minPrice": 48510000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-11-24",
+    "minPrice": 33957000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-05",
+    "minPrice": 23770000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-09",
+    "minPrice": 16639000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-16",
+    "minPrice": 11647000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 8153000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 5707000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 3995000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-을구 16번 주택임차권(2024. 6. 5. 접수)은 임대차보증금 전액이 변제되지 않으면 말소 불가. 신청채권자는 대항력있는 임차권자로 배당받지 못한 잔액을 매수인이 인수함."
+ },
+ {
+  "id": "gangwon-2025타경1018-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경1018",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 횡성군 안흥면 상안리 450",
+  "region": "강원",
+  "district": "횡성군",
+  "appraisalPrice": 200756000,
+  "minPrice": 98370000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 9837000,
+  "areaBuilding": null,
+  "areaLand": 6476,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 200756000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 140529000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 농지취득자격증명 필요(미제출시 보증금 몰수, 입찰기일 전 농지취득자격증명 신청이 가능하므로 해당 관서에 미리 발급 문의) - 공부상 전이나 현황은 휴경지, 일부는 소하천일 가능성 있음 - 인접한 토지에 구거 소재하며 포락여부는 확인 요함"
+ },
+ {
+  "id": "gangwon-2025타경1124-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경1124",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 원주시 태장동 654",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 326536000,
+  "minPrice": 160003000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 16000300,
+  "areaBuilding": null,
+  "areaLand": 833,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 326536000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 228575000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 농지취득자격증명 불필요(태장1동장 사실조회회신) - 공부상 전이나 현황은 휴경지"
+ },
+ {
+  "id": "gangwon-2025타경1261-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경1261",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 횡성군 강림면 월현리 1458-3",
+  "region": "강원",
+  "district": "횡성군",
+  "appraisalPrice": 27071000,
+  "minPrice": 13265000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 1326500,
+  "areaBuilding": null,
+  "areaLand": 1177,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 27071000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 18950000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 농지취득자격증명 필요(미제출시 보증금 몰수, 입찰기일 전 농지취득자격증명 신청이 가능하므로 해당 관서에 미리 발급 문의) - 공부상 전이나 현황은 휴경지"
+ },
+ {
+  "id": "gangwon-2025타경1261-2",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경1261",
+  "itemNo": "2",
+  "category": "토지",
+  "address": "강원특별자치도 횡성군 강림면 월현리 1465-1",
+  "region": "강원",
+  "district": "횡성군",
+  "appraisalPrice": 842701000,
+  "minPrice": 412924000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 41292400,
+  "areaBuilding": null,
+  "areaLand": 708,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 842701000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 589891000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 일괄매각 - 목록2,5,6,8,9 각 농지취득자격증명 필요(미제출시 보증금 몰수, 입찰기일 전 농지취득자격증명 신청이 가능하므로 해당 관서에 미리 발급 문의) - 목록5. 현황 일부 휴경지 및 도로이며, 지상에 매각에서 제외된 비닐하우스 3동 소재 - 목록6. 현황 도로이며 경계부분에 매각에서 제외된 상수도시설 소재 - 목록7. 지상에 매각에서 제외된 브럭조 창고 1동이 소재(법정지상권 성립여부 불분명)하며, 감정평가액(최저매각가격)은 제시외 건물로 인하여 제한받는 정도를 감안한 가격임 - 목록8. 현황 일부 휴경지(시멘트 포장)이며, 지상에 매각에서 제외된 컨테이너 1동 소재 - 목록9. 현황은 휴경지"
+ },
+ {
+  "id": "gangwon-2025타경1292-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경1292",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 원주시 행구동 산177-16",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 293664000,
+  "minPrice": 143896000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 14389600,
+  "areaBuilding": null,
+  "areaLand": 256,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-04-20",
+    "minPrice": 293664000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-25",
+    "minPrice": 293664000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-29",
+    "minPrice": 205565257,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 일괄매각 - 공부상 임야이나 현황은 택지화 되어있는 잡종지이며, 일단지 형태로 복토되어 있음 - 목록2 지상에 매각에서 제외된 컨테이너 1동 소재"
+ },
+ {
+  "id": "gangwon-2025타경1322-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경1322",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 원주시 소초면 흥양리 1242-6",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 105062000,
+  "minPrice": 51480000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 5148000,
+  "areaBuilding": null,
+  "areaLand": 262,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 105062000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 73543000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 농지취득자격증명 필요(미제출시 보증금 몰수) 전용허가가 이루어져 있으므로 미리 소초면 행정복지센터에 발급 문의 바람 - 공부상 답이나 현황은 토목공사 중인 잡종지로 허가 유무 등 관련 사항은 확인 요함"
+ },
+ {
+  "id": "gangwon-2025타경1425-1",
+  "court": "춘천지방법원",
+  "caseNo": "2025타경1425",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 춘천시 퇴계동 산1-21",
+  "region": "강원",
+  "district": "춘천시",
+  "appraisalPrice": 3689625500,
+  "minPrice": 1265542000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(102호법정)",
+  "deposit": 126554200,
+  "areaBuilding": null,
+  "areaLand": 2576,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-11-24",
+    "minPrice": 3689625500,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-05",
+    "minPrice": 2582738000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-09",
+    "minPrice": 1807917000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-일괄매각 -목록7 '건축허가'를 득한 것으로 조사됨. 지상 이동식 컨테이너 매각 제외 -목록3 공부상 '임야'이나 현황 '토지임야 및 구거', 목록6 공부상 '임야'이나 현황 '임야 및 선하지', 목록7 공부상 '임야'이나 현황 현황 '개발중인 토지(토지임야) 및 선하지', 목록11 공부상 '임야'이나 현황 '토지임야 및 일부 도로'임 -분묘 소재 여부는 별도 확인 바람(분묘소재시 분묘기지권 성립여지 있음)"
+ },
+ {
+  "id": "gangwon-2025타경1548-1",
+  "court": "춘천지방법원",
+  "caseNo": "2025타경1548",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 인제군 남면 어론리 547",
+  "region": "강원",
+  "district": "인제군",
+  "appraisalPrice": 32870130,
+  "minPrice": 3867000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(102호법정)",
+  "deposit": 386700,
+  "areaBuilding": null,
+  "areaLand": 777,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-01-05",
+    "minPrice": 32870130,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-09",
+    "minPrice": 23009000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-16",
+    "minPrice": 16106000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 11274000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 7892000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 5524000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-일괄매각 -목록3 옆지번과 경계지점에 있는 철파이프하우스시설 매각 제외 -목록1 공부상 '답'이나 현황 '전'임 -공유자 우선매수권 행사는 1회에 한함 -농지취득자격증명 필요(미제출시 보증금 몰수), 증명원 제출기간내 발급위해 미리 신청 요-문의:남면사무소"
+ },
+ {
+  "id": "gangwon-2025타경20392-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경20392",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 원주시 지정면 월송리 453",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 19185000,
+  "minPrice": 2258000,
+  "priceRatio": 0.1177,
+  "failCount": 6,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 225800,
+  "areaBuilding": null,
+  "areaLand": 1279,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-11-24",
+    "minPrice": 19185000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-22",
+    "minPrice": 13430000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-02",
+    "minPrice": 9401000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 6581000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 4607000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 3225000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 농지취득자격증명 필요(미제출시 보증금 몰수), 원상회복명령 가능성 있음(지정면장 사실조회회신) - 공유자우선매수권 행사 1회로 제한 - 공부상 답이나 현황은 휴경지"
+ },
+ {
+  "id": "gangwon-2025타경20457-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경20457",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 횡성군 우천면 법주리 367",
+  "region": "강원",
+  "district": "횡성군",
+  "appraisalPrice": 185871000,
+  "minPrice": 44628000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 4462800,
+  "areaBuilding": null,
+  "areaLand": 3507,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-03-23",
+    "minPrice": 185871000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 130110000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 91077000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 63754000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 농지취득자격증명 필요(미제출시 보증금 몰수, 입찰기일 전 농지취득자격증명 신청이 가능하므로 해당 관서에 미리 발급 문의) - 지상에 매각에서 제외된 관정 소재(타인 소유)하며 사용 권한 등은 별도 확인 요함"
+ },
+ {
+  "id": "gangwon-2025타경20468-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경20468",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 원주시 봉산동 422-19",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 31374000,
+  "minPrice": 3691000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 369100,
+  "areaBuilding": null,
+  "areaLand": 497,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-12-22",
+    "minPrice": 31374000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-02",
+    "minPrice": 21962000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 15373000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 10761000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 7533000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 5273000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 공유자우선매수권 행사 1회로 제한 - 분묘소재여부는 별도 확인 요망(분묘소재시 분묘기지권 성립여지 있음)"
+ },
+ {
+  "id": "gangwon-2025타경20468-2",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경20468",
+  "itemNo": "2",
+  "category": "토지",
+  "address": "강원특별자치도 원주시 지정면 신평리 327-28",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 35216000,
+  "minPrice": 4143000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 414300,
+  "areaBuilding": null,
+  "areaLand": 1107,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-12-22",
+    "minPrice": 35216000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-02",
+    "minPrice": 24651000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 17256000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 12079000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 8455000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 5919000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 공유자우선매수권 행사 1회로 제한 - 분묘소재여부는 별도 확인 요망(분묘소재시 분묘기지권 성립여지 있음)"
+ },
+ {
+  "id": "gangwon-2025타경20494-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경20494",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 횡성군 우천면 하궁리 산142",
+  "region": "강원",
+  "district": "횡성군",
+  "appraisalPrice": 382651350,
+  "minPrice": 45018000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 4501800,
+  "areaBuilding": null,
+  "areaLand": 11340,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-12-22",
+    "minPrice": 382651400,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-02",
+    "minPrice": 267856000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 187499000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 131249000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 91874000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 64312000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 일괄매각 - 공유자우선매수권 행사 1회로 제한 - 분묘 수기 소재(분묘기지권 성립여지 있음)하며, 감정평가액(최저매각가격)은 분묘소재로 인하여 제한받는 정도를 감안한 가격임"
+ },
+ {
+  "id": "gangwon-2025타경20519-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경20519",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 원주시 문막읍 비두리 1547",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 67988000,
+  "minPrice": 11427000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 1142700,
+  "areaBuilding": null,
+  "areaLand": 1478,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-02-02",
+    "minPrice": 67988000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 47592000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 33314000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 23320000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 16324000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 농지취득자격증명 필요(미제출시 보증금 몰수, 입찰기일 전 농지취득자격증명 신청이 가능하므로 해당 관서에 미리 발급 문의) - 지상에 매각에서 제외된 파이프조 비닐 및 차광막지붕 단층 구조물 2동 소재 - 분묘 수기 소재(분묘기지권 성립여지 있음)하며, 감정평가액(최저매각가격)은 분묘소재로 인하여 제한받는 정도를 감안한 가격임"
+ },
+ {
+  "id": "gangwon-2025타경20522-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경20522",
+  "itemNo": "1",
+  "category": "단독다가구",
+  "address": "강원특별자치도 원주시 지정면 신평리 905",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 934755440,
+  "minPrice": 224435000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 22443500,
+  "areaBuilding": 1124,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-03-23",
+    "minPrice": 934755440,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 654329000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 458030000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 320621000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 일괄매각. 제시외 건물 포함 - 목록1. 농지취득자격증명 필요(미제출시 보증금 몰수, 입찰기일 전 농지취득자격증명 신청이 가능하므로 해당 관서에 미리 발급 문의) - 목록1. 공부상 전이나 현황 일부 도로 및 휴경지, 지상에 매각에서 제외된 비닐하우스 1동 소재 - 목록2. 지상 경계부분에 매각에서 제외되는 관정이 소재한다고 보고 되었으나 정확한 확인은 측량을 필요로 함"
+ },
+ {
+  "id": "gangwon-2025타경20539-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경20539",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 원주시 흥업면 대안리 산321-2",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 412672590,
+  "minPrice": 69358000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 6935800,
+  "areaBuilding": null,
+  "areaLand": 87756,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-02-02",
+    "minPrice": 412672590,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 288871000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 202210000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 141547000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 99083000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 공유자우선매수권 행사 1회로 제한 - 지상에 분묘 1기 소재(분묘기지권 성립여지 있음)하며, 감정평가액(최저매각가격)은 분묘소재로 인하여 제한받는 정도를 감안한 가격임"
+ },
+ {
+  "id": "gangwon-2025타경20599-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경20599",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "강원특별자치도 횡성군 횡성읍 반곡리 458-1",
+  "region": "강원",
+  "district": "횡성군",
+  "appraisalPrice": 3537009000,
+  "minPrice": 1733134000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 173313400,
+  "areaBuilding": 4516,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-03-23",
+    "minPrice": 3537009000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 2475906000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 일괄매각 - 목록1~4. 각 농지취득자격증명 필요(미제출시 보증금 몰수)하고, 전용허가가 이루어져 있으므로 미리 횡성읍 행정복지센터에 발급 문의 바람 - 토지 지상에 소재하는 수목,담장,석축,옹벽,바닥포장,오수정화조,배수로 및 관정 등은 토지가격에 포함하여 평가 - 목록1,3. 지상에 매각에서 제외된 컨테이너 3동 소재 - 유치권신고인 유광준로부터 공사대금채권 금 540,000,000원을 위하여 유치권 신고(2025.7.18.자)가 있으나 그 성립여부는 불분명함 - 유치권신고인 (주)에스에스전력으로부터 공사대금채권 금 368,400,000원을 위하여 유치권 신고(2025.7.30.자)가 있으나 그 성립여부는 불분명함 - 목록5~13. 건물은 건축물사용승인이 안된 미준공 상태이므로 별도 확인 요함"
+ },
+ {
+  "id": "gangwon-2025타경20620-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경20620",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 원주시 부론면 흥호리 산85",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 602475000,
+  "minPrice": 206649000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 20664900,
+  "areaBuilding": null,
+  "areaLand": 40165,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-04-20",
+    "minPrice": 602475000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 421733000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 295213000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 공부상 임야이나 현황 일부 도로 - 분묘소재 가능성 있음(소재시 분묘기지권 성립여지 있음) - 경계부분에 비닐하우스 등 구조물이 소재한다고 보고 되었으나 정확한 확인은 측량을 필요로 함"
+ },
+ {
+  "id": "gangwon-2025타경20637-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경20637",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "강원특별자치도 원주시 반곡동 1886-3 골든스퀘어2차 1층107호",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 1175000000,
+  "minPrice": 403025000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 40302500,
+  "areaBuilding": 129.36,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-04-20",
+    "minPrice": 1175000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 822500000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 575750000,
     "result": "유찰"
    }
   ],
   "specialNote": null
+ },
+ {
+  "id": "gangwon-2025타경20659-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경20659",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "강원특별자치도 원주시 소초면 흥양리 54",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 934600200,
+  "minPrice": 320568000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 32056800,
+  "areaBuilding": 1359,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-04-20",
+    "minPrice": 934600200,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 654220000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 457954000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 일괄매각. 제시외 건물 포함 - 목록2. 건물1층 등기부상 단독주택이나 대장상 근린생활시설로 등재되어 있음 - 목록2. 제시외 2-3 창고 철골조(3층)는 외관상 출입로가 확인되지 아니하므로 별도 확인요함"
+ },
+ {
+  "id": "gangwon-2025타경20668-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경20668",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 원주시 문막읍 포진리 산12",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 756560160,
+  "minPrice": 370714000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 37071400,
+  "areaBuilding": null,
+  "areaLand": 29256,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 756560160,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 529592000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 분묘 1기 소재(분묘기지권 성립여지 있음)하며 감정평가액(최저매각가격)은 분묘소재로 인하여 제한받는 정도를 감안한 가격임 - 추가 분묘소재 가능성 있음(소재시 분묘기지권 성립여지 있음)"
+ },
+ {
+  "id": "gangwon-2025타경20676-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경20676",
+  "itemNo": "1",
+  "category": "아파트",
+  "address": "강원특별자치도 원주시 관설동 1713-2 원주단관8차청솔아파트 801동 4층410호",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 109000000,
+  "minPrice": 37387000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 3738700,
+  "areaBuilding": 59.85,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-04-20",
+    "minPrice": 109000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 76300000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 53410000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "gangwon-2025타경20687-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경20687",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "강원특별자치도 원주시 중앙동 144 중앙 메디컬센터 1층105호",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 264000000,
+  "minPrice": 90552000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 9055200,
+  "areaBuilding": 47.94,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-04-20",
+    "minPrice": 264000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 184800000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 129360000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "gangwon-2025타경20687-2",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경20687",
+  "itemNo": "2",
+  "category": "오피스텔",
+  "address": "강원특별자치도 원주시 중앙동 144 중앙 메디컬센터 1층106호",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 294000000,
+  "minPrice": 100842000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 10084200,
+  "areaBuilding": 53.46,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-04-20",
+    "minPrice": 294000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 205800000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 144060000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "gangwon-2025타경20690-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경20690",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "강원특별자치도 원주시 단구동 1567",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 4778696650,
+  "minPrice": 2341562000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 234156200,
+  "areaBuilding": 1078.3,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 4778696650,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 3345088000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 일괄매각"
+ },
+ {
+  "id": "gangwon-2025타경20704-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경20704",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "강원특별자치도 원주시 반곡동 1897-4 코아루시티 7층706호",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 77000000,
+  "minPrice": 37730000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 3773000,
+  "areaBuilding": 22.481,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 77000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 53900000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 용도: 오피스텔 - 특별매각조건(전세사기피해자의 우선매수권 행사 1회로 제한)"
+ },
+ {
+  "id": "gangwon-2025타경20707-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경20707",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 횡성군 횡성읍 추동리 291-3",
+  "region": "강원",
+  "district": "횡성군",
+  "appraisalPrice": 68770000,
+  "minPrice": 33697000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 3369700,
+  "areaBuilding": null,
+  "areaLand": 598,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 68770000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 48139000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 지상에 매각에서 제외된 목조 스레트지붕 단독주택 및 부속건축물 2동이 소재(법정지상권 성립여부 불분명)하며, 감정평가액(최저매각가격)은 제시외 건물로 인하여 제한받는 정도를 감안한 가격임"
+ },
+ {
+  "id": "gangwon-2025타경20715-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경20715",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 원주시 소초면 흥양리 844",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 670923000,
+  "minPrice": 328752000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 32875200,
+  "areaBuilding": null,
+  "areaLand": 1359,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 670923000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 469646000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 일괄매각 - 목록1. 농지취득자격증명 필요(미제출시 보증금 몰수, 입찰기일 전 농지취득자격증명 신청이 가능하므로 해당 관서에 미리 발급 문의) - 목록1,2. 현황은 토목공사 중인 잡종지이며 2필지를 일단으로 건축신고(2021-신속허가과-신축신고-102)가 되어있음 - 경계부분에 매각에서 제외되는 관정(흥양리 837번지) 소재"
+ },
+ {
+  "id": "gangwon-2025타경20725-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경20725",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 횡성군 강림면 강림리 1700",
+  "region": "강원",
+  "district": "횡성군",
+  "appraisalPrice": 440748000,
+  "minPrice": 215967000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 21596700,
+  "areaBuilding": null,
+  "areaLand": 6678,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 440748000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 308524000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 공부상 전이나 현황은 일부 도로 - 농지취득자격증명 필요(미제출시 보증금 몰수, 입찰기일 전 농지취득자격증명 신청이 가능하므로 해당 관서에 미리 발급 문의)"
+ },
+ {
+  "id": "gangwon-2025타경20963-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경20963",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "사용본거지 : 원주시 흥업면 남원로 52 207동 503호(원주흥업엘에이치천년나무2)",
+  "region": "강원",
+  "district": "흥업면",
+  "appraisalPrice": 16000000,
+  "minPrice": 3842000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 384200,
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-03-23",
+    "minPrice": 16000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 11200000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 7840000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 5488000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "gangwon-2025타경2466-1",
+  "court": "춘천지방법원",
+  "caseNo": "2025타경2466",
+  "itemNo": "1",
+  "category": "단독다가구",
+  "address": "강원특별자치도 춘천시 남산면 수동리 562-12",
+  "region": "강원",
+  "district": "춘천시",
+  "appraisalPrice": 216162400,
+  "minPrice": 105920000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(102호법정)",
+  "deposit": 10592000,
+  "areaBuilding": 1130,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 216162400,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 151314000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-일괄매각. 제시외 건물 포함 -목록1 별첨 공유지분 확인서(②, 왼쪽 상단)와 같이 김연숙 지분의 위치 특정이 가능한 바, 이를 고려하여 감정평가 하였으니 별도 확인 바람(구분소유관계로 보임) -목록1 지상 '수목 및 담장 등'은 토지에 포함하여 평가함"
+ },
+ {
+  "id": "gangwon-2025타경2572-1",
+  "court": "춘천지방법원",
+  "caseNo": "2025타경2572",
+  "itemNo": "1",
+  "category": "단독다가구",
+  "address": "강원특별자치도 홍천군 서면 개야리 2-2",
+  "region": "강원",
+  "district": "홍천군",
+  "appraisalPrice": 804144900,
+  "minPrice": 394031000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(102호법정)",
+  "deposit": 39403100,
+  "areaBuilding": 771,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 804144900,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 562901000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-일괄매각. 제시외 건물 및 물건 포함 -본건 토지에 이동 및 철거가 가능한 천막구조물 매각 제외 -관정은 인근필지 경계지상에 소재하는 것으로 목측되며, 소유권 및 이용상황(공동, 단독이용 등) 재확인 바람 -목록3,4 건물에 시설되어 있는 데크(목록3 데크 위 차양 포함), 계단 및 저가치 종부합물은 건물에 포함하여 평가함 -제시외건물 ㅁ~ㅅ(목조 및 경량철골조 데크)은 목측상 인접토지를 점유사용중인 것으로 판단되니 별도 확인 바람 -목록3 공부상 '경량철골조지붕'이나 현황 '경량철골조지붕 위 슁글지붕'임 -목록4 공부상 1층 면적이 '107.77㎡ '이나 개략적인 실측면적은 '104.49㎡'임"
+ },
+ {
+  "id": "gangwon-2025타경343-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경343",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "강원특별자치도 원주시 반곡동 1900-3 1층109호",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 363000000,
+  "minPrice": 124509000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 12450900,
+  "areaBuilding": 36,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-04-20",
+    "minPrice": 363000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 254100000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 177870000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "gangwon-2025타경343-2",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경343",
+  "itemNo": "2",
+  "category": "토지",
+  "address": "강원특별자치도 원주시 소초면 흥양리 1085",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 440478000,
+  "minPrice": 151085000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 15108500,
+  "areaBuilding": null,
+  "areaLand": 341,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-04-20",
+    "minPrice": 440478000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 308335000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 215835000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 일괄매각. 제시외 건물 포함 - 목록2~4. 각 농지취득자격증명 필요(미제출시 보증금 몰수), 목록2번은 일부 전용허가가 이루어져 있으므로 미리 소초면 행정복지센터에 발급 문의 바람 - 목록3. 지상에 매각에서 제외되는 관정 소재 - 목록4. 공부상 전이나 현황은 도로 - 목록5. 건물은 건축물사용승인이 안된 미준공 상태이므 로 별도 확인 요함."
+ },
+ {
+  "id": "gangwon-2025타경50502-1",
+  "court": "춘천지방법원",
+  "caseNo": "2025타경50502",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 춘천시 서면 덕두원리 산80-5",
+  "region": "강원",
+  "district": "춘천시",
+  "appraisalPrice": 502567600,
+  "minPrice": 84467000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(102호법정)",
+  "deposit": 8446700,
+  "areaBuilding": null,
+  "areaLand": 73907,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-01-05",
+    "minPrice": 502567600,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-09",
+    "minPrice": 502567600,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-16",
+    "minPrice": 351797706,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 246258664,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-25",
+    "minPrice": 172381254,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-29",
+    "minPrice": 120667010,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-분묘 소재 여부는 별도 확인 바람(분묘소재시 분묘기지권 성립여지 있음) -매수신청보증액은 최저매각가격의 2할임"
+ },
+ {
+  "id": "gangwon-2025타경50562-1",
+  "court": "춘천지방법원",
+  "caseNo": "2025타경50562",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 홍천군 화촌면 군업리 446-12",
+  "region": "강원",
+  "district": "홍천군",
+  "appraisalPrice": 348411000,
+  "minPrice": 83654000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(102호법정)",
+  "deposit": 8365400,
+  "areaBuilding": null,
+  "areaLand": 1661,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-10-20",
+    "minPrice": 348411000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-11-24",
+    "minPrice": 243888000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 170722000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 119505000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-일괄매각 -목록1 공부상 '답'이나 현황 '전 및 일부 토목공사가 진행된 토지'임 -목록2 공부상 '전'이나 현황 '일부 구거'임 -목록1 전봇대가 소재함 -농지취득자격증명 필요(미제출시 보증금 몰수), 농지전용허가 있음(전용목적: 주거시설, 허가자:김성철), 증명원 제출기간내 발급위해 미리 신청 요-문의:화촌면사무소"
+ },
+ {
+  "id": "gangwon-2025타경50661-1",
+  "court": "춘천지방법원",
+  "caseNo": "2025타경50661",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 춘천시 남산면 창촌리 산156-6",
+  "region": "강원",
+  "district": "춘천시",
+  "appraisalPrice": 8250000,
+  "minPrice": 971000,
+  "priceRatio": 0.1177,
+  "failCount": 6,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(102호법정)",
+  "deposit": 97100,
+  "areaBuilding": null,
+  "areaLand": 832,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-11-24",
+    "minPrice": 8250000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-05",
+    "minPrice": 5775000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-09",
+    "minPrice": 4043000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-16",
+    "minPrice": 2830000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 1981000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 1387000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-지적도상 맹지임 -분묘 소재 여부는 별도 확인 바람(분묘소재시 분묘기지권 성립여지 있음) -공유자 우선매수권 행사는 1회에 한함"
+ },
+ {
+  "id": "gangwon-2025타경50717-1",
+  "court": "춘천지방법원",
+  "caseNo": "2025타경50717",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 홍천군 영귀미면 후동리 139-1",
+  "region": "강원",
+  "district": "홍천군",
+  "appraisalPrice": 27762000,
+  "minPrice": 3266000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(102호법정)",
+  "deposit": 326600,
+  "areaBuilding": null,
+  "areaLand": 105,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-11-24",
+    "minPrice": 27762000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-05",
+    "minPrice": 19433000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-09",
+    "minPrice": 13603000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-16",
+    "minPrice": 9522000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 6665000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 4666000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-일괄매각 -지적상 맹지임 -지상 분묘 3기 소재함, 추가 분묘는 별도 확인 바람 -경계 지상 제시외 수목 수주 매각 제외 -농지취득자격증명 필요(미제출시 보증금 몰수), 증명원 제출기간내 발급위해 미리 신청 요-문의:영귀미면사무소"
+ },
+ {
+  "id": "gangwon-2025타경50783-1",
+  "court": "춘천지방법원",
+  "caseNo": "2025타경50783",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 홍천군 서석면 풍암리 152-2",
+  "region": "강원",
+  "district": "홍천군",
+  "appraisalPrice": 655283700,
+  "minPrice": 321089000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(102호법정)",
+  "deposit": 32108900,
+  "areaBuilding": null,
+  "areaLand": 747,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 655283700,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 458699000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-일괄매각 -목록2,4 기간이 정해진 토석채취허가(허가 제2024-2192호)가 존재하는 것으로 조사된 바, 별도 확인 바람 -목록1 공부상 '전'이나 현황 '일부 도로', 목록2 공부상 '목장용지'이나 현황 '일부 도로', 목록4 공부상 '임야'이나 현황 '일부 도로'임 -일부 토지는 임목이 울폐된 임야로서 분묘 소재 여부는 별도 확인 바람(분묘소재시 분묘기지권 성립여지 있음) -목록3 지상 소유자 미상의 판매용 수목 수백주 매각 제외 -목록1,3 농지취득자격증명 필요(미제출시 보증금 몰수), 증명원 제출기간내 발급위해 미리 신청 요-문의:서석면사무소"
+ },
+ {
+  "id": "gangwon-2025타경50819-1",
+  "court": "춘천지방법원",
+  "caseNo": "2025타경50819",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 화천군 화천읍 동촌리 2992",
+  "region": "강원",
+  "district": "화천군",
+  "appraisalPrice": 15712560,
+  "minPrice": 7699000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(102호법정)",
+  "deposit": 769900,
+  "areaBuilding": null,
+  "areaLand": 1774,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 15712560,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 10999000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-일괄매각 -지적도상 맹지임 -분묘 소재 여부는 별도 확인 바람(분묘소재시 분묘기지권 성립여지 있음)"
+ },
+ {
+  "id": "gangwon-2025타경50866-1",
+  "court": "춘천지방법원",
+  "caseNo": "2025타경50866",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 화천군 화천읍 아리 114",
+  "region": "강원",
+  "district": "화천군",
+  "appraisalPrice": 200746400,
+  "minPrice": 98365000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(102호법정)",
+  "deposit": 9836500,
+  "areaBuilding": null,
+  "areaLand": 4797,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 200746400,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 140522000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-일괄매각 -목록1,2 공부상 '전'이나 현황 '일부 도로', 목록3 공부상 '전'이나 현황 '하천 및 제방'임 -분묘 소재 여부는 별도 확인 바람(분묘소재시 분묘기지권 성립여지 있음) -목록2 지상 드릅나무(약 10,000주) 및 벌통은 점유자 나경미 소유임(현황조사보고서 기재) -농지취득자격증명 불필요(화천읍 사실조회회신서 기재)"
+ },
+ {
+  "id": "gangwon-2025타경50874-1",
+  "court": "춘천지방법원",
+  "caseNo": "2025타경50874",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 홍천군 남면 화전리 347",
+  "region": "강원",
+  "district": "홍천군",
+  "appraisalPrice": 478472200,
+  "minPrice": 80417000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(102호법정)",
+  "deposit": 8041700,
+  "areaBuilding": null,
+  "areaLand": 1874,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-02-09",
+    "minPrice": 478472200,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-16",
+    "minPrice": 334931000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 234452000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 164116000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 114881000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-일괄매각 -지적도 및 임야도상 맹지임 -목록2 제시외건물, 저온저장고 각 매각 제외 -목록2,3 분묘 소재 여부는 별도 확인 바람(분묘소재시 분묘기지권 성립여지 있음) -목록2,3 공부상 '임야'이나 현황 '일부 구거'임 -목록1 농지취득자격증명 필요(미제출시 보증금 몰수), 증명원 제출기간내 발급위해 미리 신청 요-문의:남면사무소"
+ },
+ {
+  "id": "gangwon-2025타경50878-1",
+  "court": "춘천지방법원",
+  "caseNo": "2025타경50878",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 춘천시 남산면 방곡리 산20",
+  "region": "강원",
+  "district": "춘천시",
+  "appraisalPrice": 52896000,
+  "minPrice": 8890000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(102호법정)",
+  "deposit": 889000,
+  "areaBuilding": null,
+  "areaLand": 3306,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-02-09",
+    "minPrice": 52896000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-16",
+    "minPrice": 37027000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 25919000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 18143000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 12700000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-지상 분묘 3기 소재함(추가 분묘소재 여부 별도 확인 바람) -임야도상 맹지임 -공부상 '임야'이나 현황 '일부 묘지 등'으로 이용중임"
+ },
+ {
+  "id": "gangwon-2025타경50894-1",
+  "court": "춘천지방법원",
+  "caseNo": "2025타경50894",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 춘천시 신동 902-28",
+  "region": "강원",
+  "district": "춘천시",
+  "appraisalPrice": 11253000,
+  "minPrice": 2702000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(102호법정)",
+  "deposit": 270200,
+  "areaBuilding": null,
+  "areaLand": 99,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-03-16",
+    "minPrice": 11253000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 7877000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 5514000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 3860000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-지적도상 맹지임 -공부상 '전'이나 현황 '주거나지 상태'임 -공유자 우선매수권 행사는 1회에 한함 -농지취득자격증명 불필요(도시지역 내 주거지역)"
+ },
+ {
+  "id": "gangwon-2025타경50913-1",
+  "court": "춘천지방법원",
+  "caseNo": "2025타경50913",
+  "itemNo": "1",
+  "category": "단독다가구",
+  "address": "강원특별자치도 인제군 기린면 북리 1243-4",
+  "region": "강원",
+  "district": "인제군",
+  "appraisalPrice": 129031200,
+  "minPrice": 63225000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(102호법정)",
+  "deposit": 6322500,
+  "areaBuilding": 140,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 129031200,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 90322000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-일괄매각. 제시외 건물 및 물건(관정) 포함 -목록2 지상 철거 및 이동이 용이한 창고용 컨테이너박스 등 매각 제외 -목록1 공부상 '대'이나 현황 '도로 등'으로 이용중임"
+ },
+ {
+  "id": "gangwon-2025타경50930-1",
+  "court": "춘천지방법원",
+  "caseNo": "2025타경50930",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 홍천군 서면 반곡리 산97",
+  "region": "강원",
+  "district": "홍천군",
+  "appraisalPrice": 316182000,
+  "minPrice": 154929000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(102호법정)",
+  "deposit": 15492900,
+  "areaBuilding": null,
+  "areaLand": 2511,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 316182000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 221327000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-일괄매각 -목록6,7,12,14 공부상 '임야'이나 현황 '도로'임 -본건 토지는 과거 산지전용허가를 득하였으나, 현재 허가가 실효된 상태로 조사되니 별도 확인 바람 -목록1 동측 경계 일부에 분묘 수기가 소재함, 목록9 경계에 분묘 수기가 소재하나 지적경계가 불분명하여 본건 포함여부 별도 확인 바람(나머지 토지에 대하여 육안으로 식별되지 않은 분묘가 소재할 수 있음)"
+ },
+ {
+  "id": "gangwon-2025타경50934-1",
+  "court": "춘천지방법원",
+  "caseNo": "2025타경50934",
+  "itemNo": "1",
+  "category": "단독다가구",
+  "address": "강원특별자치도 춘천시 남산면 수동리 562-12",
+  "region": "강원",
+  "district": "춘천시",
+  "appraisalPrice": 417669620,
+  "minPrice": 204658000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(102호법정)",
+  "deposit": 20465800,
+  "areaBuilding": 1130,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 417669620,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 292369000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-일괄매각. 제시외 건물 포함 -목록1 별첨 공유지분 확인서(①,③,④, 오른쪽 상단 및 아래쪽)와 같이 주식회사미라토 지분의 위치 특정이 가능한 바, 이를 고려하여 감정평가 하였으니 별도 확인 바람(구분소유관계로 보임) -목록1 지상 '수목 및 담장 등'은 토지에 포함하여 평가함"
+ },
+ {
+  "id": "gangwon-2025타경50944-1",
+  "court": "춘천지방법원",
+  "caseNo": "2025타경50944",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 홍천군 북방면 노일리 819-7",
+  "region": "강원",
+  "district": "홍천군",
+  "appraisalPrice": 33090000,
+  "minPrice": 16214000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(102호법정)",
+  "deposit": 1621400,
+  "areaBuilding": null,
+  "areaLand": 1103,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 33090000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 23163000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-맹지임 -분묘 소재 여부는 별도 확인 바람(분묘소재시 분묘기지권 성립여지 있음)"
+ },
+ {
+  "id": "gangwon-2025타경50954-1",
+  "court": "춘천지방법원",
+  "caseNo": "2025타경50954",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 홍천군 영귀미면 속초리 274-2",
+  "region": "강원",
+  "district": "홍천군",
+  "appraisalPrice": 98406000,
+  "minPrice": 48219000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(102호법정)",
+  "deposit": 4821900,
+  "areaBuilding": null,
+  "areaLand": 1562,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 98406000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 68884000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-지적도상 맹지임 -농지취득자격증명 필요(미제출시 보증금 몰수), 증명원 제출기간내 발급위해 미리 신청 요-문의:영귀미면사무소"
+ },
+ {
+  "id": "gangwon-2025타경50966-1",
+  "court": "춘천지방법원",
+  "caseNo": "2025타경50966",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 인제군 인제읍 가아리 578-3",
+  "region": "강원",
+  "district": "인제군",
+  "appraisalPrice": 208460000,
+  "minPrice": 102145000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(102호법정)",
+  "deposit": 10214500,
+  "areaBuilding": null,
+  "areaLand": 130,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 208460000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 145922000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-일괄매각. 제시외 건물(목록3 농막-철거불가) 및 물건(관정) 포함 -목록2 지상 비닐하우스 매각 제외 -목록3 지상의 유실수 등은 이를 토지에 포함하여 평가함 -목록4 경계상의 이동이 용이한 이동식주택등은 매각 제외(법정지상권 성립여부 불분명) -목록2 공부상 '주유소용지', 목록3 공부상 '임야', 목록4 공부상 '답'이나 각 현황 '전'으로 이용중임 -목록1,4 농지취득자격증명 필요(미제출시 보증금 몰수), 증명원 제출기간내 발급위해 미리 신청 요~문의:인제읍사무소"
+ },
+ {
+  "id": "gangwon-2025타경5490-1",
+  "court": "청주지방법원 제천지원",
+  "caseNo": "2025타경5490",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "사용본거지 : 강원 정선군 사북읍 직전로 631",
+  "region": "강원",
+  "district": "정선군",
+  "appraisalPrice": 125000000,
+  "minPrice": 51200000,
+  "priceRatio": 0.4096,
+  "failCount": 4,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정",
+  "deposit": 5120000,
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-02-23",
+    "minPrice": 125000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-30",
+    "minPrice": 100000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-11",
+    "minPrice": 80000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-22",
+    "minPrice": 64000000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "주행거리 계기판상 660,696km, 자동차등록원부 상 검사유효기간 도래."
+ },
+ {
+  "id": "gangwon-2025타경619-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경619",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "강원특별자치도 원주시 명륜동 113-1",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 693353700,
+  "minPrice": 339744000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 33974400,
+  "areaBuilding": 170,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 693353700,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 485348000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 일괄매각. 제시외 건물 포함 - 목록2. 공부상 도로이나 현황은 대지"
+ },
+ {
+  "id": "gangwon-2025타경947-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경947",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 횡성군 둔내면 두원리 931-1",
+  "region": "강원",
+  "district": "횡성군",
+  "appraisalPrice": 189385000,
+  "minPrice": 92799000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 9279900,
+  "areaBuilding": null,
+  "areaLand": 210,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 189385000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 132570000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 일괄매각 - 목록1. 농지취득자격증명 필요(미제출시 보증금 몰수, 입찰기일 전 농지취득자격증명 신청이 가능하므로 해당 관서에 미리 발급 문의) - 목록1. 공부상 전이나 현황은 휴경지"
+ },
+ {
+  "id": "gangwon-2025타경985-1",
+  "court": "춘천지방법원 원주지원",
+  "caseNo": "2025타경985",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 원주시 반곡동 116",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 394002000,
+  "minPrice": 193061000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 19306100,
+  "areaBuilding": null,
+  "areaLand": 3339,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-06-01",
+    "minPrice": 394002000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 275801000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 공부상 답이나 현황은 휴경지 - 농지취득자격증명 필요(미제출시 보증금 몰수, 입찰기일 전 농지취득자격증명 신청이 가능하므로 해당 관서에 미리 발급 문의) - 분묘소재여부는 별도 확인 요망(분묘소재시 분묘기지권 성립여지 있음)"
  }
 ]
