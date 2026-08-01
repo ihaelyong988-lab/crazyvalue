@@ -16,7 +16,8 @@ export default function GuidePage() {
           여기는 건수 상한·정렬 기준만 더한다(1정보 1표시). 파일 소유권이 src/app/guide/** 한정이라
           GlossarySheet(픽 기준 공개 섹션) 내부가 아닌 페이지 말미에 둔다. */}
       <p className="px-4 text-[13px] leading-snug text-ink/75">
-        갱신마다 매각기일이 가까운 순으로 최대 1,000건을 제공한다.
+        갱신마다 다음 갱신일까지의 매각기일에 나누어 최대 1,000건을 제공하며, 같은 기일에서는 감정가
+        대비 최저가가 낮은 물건이 먼저 들어간다.
       </p>
     </>
   );
