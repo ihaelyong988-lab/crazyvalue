@@ -27,6 +27,15 @@ const MARKER = join(STATE, "data-value-pass");
 const shiftDays = (dateOnly, days) =>
   new Date(Date.parse(`${dateOnly}T00:00:00Z`) + days * 86_400_000).toISOString().slice(0, 10);
 
+/**
+ * 토·일 — 법원 매각기일은 평일에만 잡힌다(2026-08-02 실측: 산출 5일이 전부 월~금).
+ * 갱신 직전일이 주말이면 그날 물건이 없는 것이 정상이므로 커버리지 기준일에서 제외한다.
+ */
+const isWeekend = (dateOnly) => {
+  const dow = new Date(Date.parse(`${dateOnly}T00:00:00Z`)).getUTCDay();
+  return dow === 0 || dow === 6;
+};
+
 /** ISO 시각 → Asia/Seoul 날짜. 파싱 불가면 null(추정 표기 금지). */
 const dateOf = (iso) => {
   const t = Date.parse(iso);
@@ -61,7 +70,8 @@ function grade({ meta, items }) {
   const violations = [];
   const live = items.filter((i) => typeof i.saleDate === "string" && i.saleDate >= base);
   const dates = [...new Set(live.map((i) => i.saleDate))].sort();
-  const lastUseful = shiftDays(nextUpdate, -1);
+  let lastUseful = shiftDays(nextUpdate, -1);
+  while (isWeekend(lastUseful)) lastUseful = shiftDays(lastUseful, -1);
 
   // R1 기일 커버리지 — 산출물이 하루로 수렴하면 그 다음 날부터 전 물건이 기일 경과가 된다.
   if (dates.length < 2) {
