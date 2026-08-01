@@ -17,10 +17,29 @@ interface FixtureItem {
   failCount: number;
 }
 
-const seoulItems = JSON.parse(
-  readFileSync(path.resolve(__dirname, "..", "..", "public", "data", "seoul.json"), "utf-8"),
+// 지역별 산출 건수는 갱신마다 바뀐다 — 특정 지역 고정 참조는 그 지역이 0건이 되는 주에 통째로 깨진다
+// (2026-08-02: 서울 0건으로 이 파일이 로드 단계에서 실패했다). meta에서 결정적으로 고른다.
+const DATA_DIR = path.resolve(__dirname, "..", "..", "public", "data");
+const counts = (
+  JSON.parse(readFileSync(path.join(DATA_DIR, "meta.json"), "utf-8")) as {
+    countsByRegion: Record<string, number>;
+  }
+).countsByRegion;
+/** 리스트 1페이지 노출 수(ItemList 페이지 크기) */
+const PAGE_SIZE = 10;
+// 더보기 검증 전제(1페이지 초과)를 만족하는 시도 중 사전순 첫 번째 — 실행마다 같은 지역을 고른다.
+const fixtureKey = Object.keys(counts)
+  .filter((k) => counts[k] > PAGE_SIZE)
+  .sort()[0];
+if (!fixtureKey) {
+  throw new Error(`E2E 픽스처: ${PAGE_SIZE}건 초과 시도가 없다 — 산출물을 먼저 확인하라`);
+}
+const fixtureItems = JSON.parse(
+  readFileSync(path.join(DATA_DIR, `${fixtureKey}.json`), "utf-8"),
 ) as FixtureItem[];
-const first = seoulItems[0];
+const first = fixtureItems[0];
+/** 한글 시도명 — 필터 칩 이름·URL r 파라미터·카드 텍스트 대조에 함께 쓴다 */
+const fixtureRegion = first.region;
 const firstItemPath = `/item/${encodeURIComponent(first.id)}`;
 
 const WATCH_KEY = "crazyvalue.watchlist.v1";
@@ -44,8 +63,8 @@ async function suppressOnboarding(page: Page) {
 }
 
 test("온보딩→필터 3탭→리스트 도달", async ({ page }) => {
-  // 더보기 검증 전제: r=서울 단독 결과가 10건을 넘어야 한다(시드 데이터 14건).
-  expect(seoulItems.length).toBeGreaterThan(10);
+  // 더보기 검증 전제: 픽스처 시도 단독 결과가 1페이지를 넘어야 한다(픽스처 선정 조건과 동일).
+  expect(fixtureItems.length).toBeGreaterThan(PAGE_SIZE);
 
   await page.goto("/");
 
@@ -56,11 +75,11 @@ test("온보딩→필터 3탭→리스트 도달", async ({ page }) => {
   await expect(dialog).toBeHidden();
 
   // 필터 3탭: 지역 → 금액 → 용도. 칩 상태는 aria-pressed로 판정한다.
-  const seoulChip = page.getByRole("button", { name: "서울", exact: true });
+  const regionChip = page.getByRole("button", { name: fixtureRegion, exact: true });
   const priceChip = page.getByRole("button", { name: "1~3억", exact: true });
   const categoryChip = page.getByRole("button", { name: "상가", exact: true });
-  await seoulChip.click();
-  await expect(seoulChip).toHaveAttribute("aria-pressed", "true");
+  await regionChip.click();
+  await expect(regionChip).toHaveAttribute("aria-pressed", "true");
   await priceChip.click();
   await expect(priceChip).toHaveAttribute("aria-pressed", "true");
   await categoryChip.click();
@@ -69,29 +88,29 @@ test("온보딩→필터 3탭→리스트 도달", async ({ page }) => {
   // 3축이 모두 결과 링크 쿼리(r·b·c)로 연결되는지 href로 검증
   const resultLink = page.getByRole("link", { name: /물건.*건 보기/ });
   const href = decodeURIComponent((await resultLink.getAttribute("href")) ?? "");
-  expect(href).toContain("r=서울");
+  expect(href).toContain(`r=${fixtureRegion}`);
   expect(href).toContain("b=b3");
   expect(href).toContain("c=상가");
 
-  // 시드 데이터에서 서울×금액×용도 3중 교집합은 최대 2건 — "더보기"(11건 이상 필요)가 뜰 수 없다.
-  // 3축 반영은 위 href로 검증했으므로 금액·용도 칩을 해제하고 r=서울(전 14건)로 더보기를 검증한다.
+  // 3중 교집합은 지역·주차에 따라 1페이지 미만일 수 있어 "더보기"가 뜬다고 보장할 수 없다.
+  // 3축 반영은 위 href로 검증했으므로 금액·용도를 해제하고 시도 단독 결과로 더보기를 검증한다.
   await priceChip.click();
   await categoryChip.click();
   await expect(priceChip).toHaveAttribute("aria-pressed", "false");
   await expect(categoryChip).toHaveAttribute("aria-pressed", "false");
-  await expect(resultLink).toHaveText(new RegExp(`물건\\s*${seoulItems.length}\\s*건 보기`));
+  await expect(resultLink).toHaveText(new RegExp(`물건\\s*${fixtureItems.length}\\s*건 보기`));
 
   await resultLink.click();
   await expect(page).toHaveURL(/\/list\?/);
-  expect(new URL(page.url()).searchParams.get("r")).toBe("서울");
+  expect(new URL(page.url()).searchParams.get("r")).toBe(fixtureRegion);
 
-  // 첫 페이지는 10건 이하 노출 → 더보기 탭 → 카드 수 증가
+  // 첫 페이지는 1페이지분 노출 → 더보기 탭 → 다음 페이지분만큼 증가(전량 노출이 아니다)
   const cards = itemCards(page);
-  await expect(cards).toHaveCount(10);
+  await expect(cards).toHaveCount(PAGE_SIZE);
   const more = page.getByRole("button", { name: /더보기/ });
-  await expect(more).toContainText(`(10/${seoulItems.length})`);
+  await expect(more).toContainText(`(${PAGE_SIZE}/${fixtureItems.length})`);
   await more.click();
-  await expect(cards).toHaveCount(seoulItems.length);
+  await expect(cards).toHaveCount(Math.min(PAGE_SIZE * 2, fixtureItems.length));
 });
 
 test("상세: 가격·이력·원문·고지", async ({ page }) => {
@@ -199,18 +218,19 @@ test("오류 상태 렌더", async ({ page }) => {
 });
 
 test("딥링크 복원(§13-11)", async ({ page }) => {
-  const cheapest = [...seoulItems].sort((a, b) => a.minPrice - b.minPrice)[0];
+  const cheapest = [...fixtureItems].sort((a, b) => a.minPrice - b.minPrice)[0];
+  const shown = Math.min(20, fixtureItems.length); // n=20 요청분과 실제 보유분 중 작은 쪽
   const assertRestored = async () => {
     await expect(page.getByLabel("정렬")).toHaveValue("price");
     const cards = itemCards(page);
-    await expect(cards).toHaveCount(seoulItems.length); // n=20 ≥ 서울 전체 14건 → 전량 노출
-    await expect(cards.filter({ hasText: "서울" })).toHaveCount(seoulItems.length);
+    await expect(cards).toHaveCount(shown);
+    await expect(cards.filter({ hasText: fixtureRegion })).toHaveCount(shown);
     // "최저가 낮은순" 정렬이 실제 적용됐는지 첫 카드로 확인
     const firstHref = decodeURIComponent((await cards.first().getAttribute("href")) ?? "");
     expect(firstHref).toBe(`/item/${cheapest.id}`);
   };
 
-  await page.goto("/list?r=서울&sort=price&n=20");
+  await page.goto(`/list?r=${encodeURIComponent(fixtureRegion)}&sort=price&n=20`);
   await assertRestored();
 
   // 새로고침 후에도 URL 쿼리에서 동일 상태 복원

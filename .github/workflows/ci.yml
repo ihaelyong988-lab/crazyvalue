@@ -1,0 +1,29 @@
+# 푸시 검증 — 로컬에서만 도는 검증은 결국 돌지 않는다.
+# 2026-08-02: E2E 3개 파일이 목데이터 시절 고정 픽스처(seoul.json[0]·고정 id·"토지×~5천만=0건")
+# 때문에 실데이터에서 깨져 있었는데, 자동 실행 경로가 없어 아무도 몰랐다.
+# 산출물 가치 채점은 여기서 중복하지 않는다 — 주간 갱신 시점의 사실이므로 weekly-crawl이 판정한다.
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20, cache: npm }
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      # E2E는 프로덕션 빌드에서 돈다(playwright.config webServer) — dev에는 서비스워커가 없다.
+      - run: npx playwright install --with-deps chromium
+      - run: npx playwright test

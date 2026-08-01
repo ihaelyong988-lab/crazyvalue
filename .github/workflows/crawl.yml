@@ -98,6 +98,34 @@ jobs:
             echo "점검: 차단 시점 요청 수를 crawl-config BUDGET.maxRequests와 대조 → 상한 재조정."
           } > crawl-abort.md
           gh issue create --title "주간 수집 조기 종료 $(date -u +%F)" --body-file crawl-abort.md --assignee ihaelyong988-lab
+      # 산출물 가치 채점 — "런이 성공했는가"와 "방문자에게 쓸모가 있는가"는 다른 질문이다.
+      # 2026-08-02: 산출 1,000건이 전부 하루짜리 기일이고 시도 5곳이 0건이고 이번 주 신규가
+      # 0건인데도 크롤·게이트·커밋·배포가 전부 성공이었다 — 성공 신호가 실패를 덮었다.
+      # 배포는 막지 않고(강등 철학: 유효 부분집합 상시 배포) 미달 사실만 표면화한다.
+      - name: report data value
+        if: success() && steps.gate.outputs.run == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          if node .claude/hooks/data-value-gate.mjs --check > data-value.txt 2>&1; then
+            cat data-value.txt
+            exit 0
+          fi
+          cat data-value.txt
+          {
+            echo "주간 산출물이 방문자 가치 기준에 미달했다. 데이터는 커밋·배포됐다(부분 배포 계약)."
+            echo ""
+            echo '```'
+            cat data-value.txt
+            echo '```'
+            echo ""
+            echo "실행 로그: $RUN_URL"
+            echo ""
+            echo "판정 기준 시각은 meta.crawledAt이라 나중에 로컬에서 같은 결과를 재현할 수 있다 —"
+            echo "\`node .claude/hooks/data-value-gate.mjs --check\`"
+          } > data-value.md
+          gh issue create --title "산출물 가치 미달 $(date -u +%F)" --body-file data-value.md --assignee ihaelyong988-lab
       # 실패 표면화(감사 42) — 침묵 실패 금지(§13 규칙 9). 데이터는 직전 주 상태 그대로다.
       # 건너뛴 슬롯은 실패가 아니므로 이슈를 만들지 않는다.
       # 조건이 `== 'true'`가 아니라 `!= 'false'`인 이유: 게이트 스텝 자신이 실패하면 outputs.run이

@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { pickRegion } from "./fixture";
 
 // 가로 오버플로 회귀 가드(2026-07-23 · §9 원장).
 // 증상: 최근 본 물건 카드가 있는 홈에서 문서 scrollWidth가 뷰포트를 넘어(631 vs 397)
@@ -7,22 +8,16 @@ import { expect, test } from "@playwright/test";
 //       가로 캐러셀(overflow-x-auto) 밖으로 탈출 → 문서를 가로로 늘림.
 // 이 테스트는 "최근 본 물건이 있는 상태"를 반드시 포함한다 — 빈 상태만 보면 증상이 숨는다.
 test("홈: 최근 본 물건 있을 때 가로 오버플로 0 · 하단 고정요소 정위치", async ({ page }) => {
-  await page.addInitScript(() => {
+  // 최근 본 물건 id는 산출물에서 결정적으로 뽑는다 — 고정 id는 그 지역이 0건인 주에 섹션이
+  // 아예 안 떠서 회귀 가드가 조용히 무력화된다(2026-08-02: 서울 0건으로 여기서 실패했다).
+  const recentIds = pickRegion(2).items.slice(0, 3).map((i) => i.id);
+  await page.addInitScript((ids: string[]) => {
     localStorage.setItem(
       "crazyvalue.watchlist.v1",
       JSON.stringify({ items: {}, prefs: { regions: [], priceBands: [] }, onboarded: true }),
     );
-    localStorage.setItem(
-      "crazyvalue.recent.v1",
-      JSON.stringify({
-        ids: [
-          "seoul-2025타경36267-2",
-          "seoul-2025타경53446-2",
-          "seoul-2025타경11700-3",
-        ],
-      }),
-    );
-  });
+    localStorage.setItem("crazyvalue.recent.v1", JSON.stringify({ ids }));
+  }, recentIds);
   await page.setViewportSize({ width: 412, height: 915 });
   await page.goto("/");
 
