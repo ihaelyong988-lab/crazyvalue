@@ -35,9 +35,12 @@ export function DataDateBar() {
           배지는 기준일을 수식할 뿐 같은 값을 다시 쓰지 않는다(1정보 1표시). */}
       <p>
         {fresh && stamp && (
-          <span className="mr-1.5 rounded bg-white px-1.5 py-0.5 font-semibold text-navy">
-            새로 갱신
-          </span>
+          <>
+            <span className="mr-1.5 rounded bg-white px-1.5 py-0.5 font-semibold text-navy">
+              새로 갱신
+            </span>
+            {/* 낭독 시 "새로 갱신데이터 기준"으로 붙지 않게 텍스트 노드로 띄운다(시각 간격은 mr-1.5). */}{" "}
+          </>
         )}
         {status}
       </p>
