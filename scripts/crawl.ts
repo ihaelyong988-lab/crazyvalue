@@ -54,7 +54,7 @@ import {
   STALL_PAGE_LIMIT,
   acceptPage,
   buildSummaryLine,
-  capBySaleDate,
+  capAcrossSaleDates,
   createListAccumulator,
   gateItems,
   isStalled,
@@ -907,8 +907,14 @@ async function main(): Promise<void> {
     process.exit(1);
   }
 
-  // 산출물 상한 — 유효·중복제거 후 매각기일 임박순(동일일은 id 순) 상위 OUTPUT_CAP건만 산출한다.
-  const { capped: outItems, cappedFrom } = capBySaleDate(gate.valid, OUTPUT_CAP);
+  // 산출물 상한 — 다음 갱신일까지의 매각기일에 배분해 OUTPUT_CAP건을 산출한다.
+  // 임박순 단순 절단은 상한을 첫 기일에서 소진해 갱신 주기의 나머지 날을 빈 채로 남긴다(crawl-lib 주석).
+  const nextUpdateAt = nextSundayThreeAmKst();
+  const {
+    capped: outItems,
+    cappedFrom,
+    dateSpread,
+  } = capAcrossSaleDates(gate.valid, OUTPUT_CAP, nextUpdateAt.slice(0, 10));
   // 중복 드롭 합계 = 목록 수신 시점 dedupe(acc.received − 고유) + 게이트 중복 id.
   const dedupDropped = acc.received - rows.length + gate.dupDropped;
   const summaryLine = buildSummaryLine({
@@ -940,7 +946,9 @@ async function main(): Promise<void> {
       );
     }
     console.log(summaryLine);
-    console.log(`dry-run 완료(쓰기 없음) — 총 ${outItems.length}건 · 픽 ${picks}건 · 지역 ${byRegion.size}개 · 소요 ${elapsed}초`);
+    console.log(
+      `dry-run 완료(쓰기 없음) — 총 ${outItems.length}건 · 픽 ${picks}건 · 지역 ${byRegion.size}개 · 기일 ${dateSpread}일 · 소요 ${elapsed}초`,
+    );
     console.log(`라이브 요청 ${liveRequestCount}회`);
     return;
   }
@@ -970,11 +978,17 @@ async function main(): Promise<void> {
   // 후보가 예산보다 많은 상시 상태에서도 참이라 "차단이 재발했다"를 구별하지 못했다.
   // dedupDropped·invalidDropped·cappedFrom·outputCap은 이번 설계(강등 게이트·산출 상한)의 운영 신호다 —
   // src/의 MetaSchema는 비-strict z.object(미지 키 통과)·use-meta.ts isMeta는 4필드만 검사하므로 하위호환이다.
-  const meta: Meta & { dedupDropped: number; invalidDropped: number; cappedFrom: number; outputCap: number } = {
+  const meta: Meta & {
+    dedupDropped: number;
+    invalidDropped: number;
+    cappedFrom: number;
+    outputCap: number;
+    outputDateSpread: number;
+  } = {
     crawledAt: isoKstNow(),
     totalCount: Object.values(countsByRegion).reduce((a, b) => a + b, 0),
     countsByRegion,
-    nextUpdateAt: nextSundayThreeAmKst(),
+    nextUpdateAt,
     scope: opts.region ?? null,
     aborted,
     abortReason: aborted ? abortReason : null,
@@ -987,6 +1001,8 @@ async function main(): Promise<void> {
     invalidDropped: gate.invalidDropped,
     cappedFrom,
     outputCap: OUTPUT_CAP,
+    // 산출물이 덮는 매각기일 수 — 1이면 갱신 주기의 나머지 날이 전부 기일 경과다(2026-08-02 결함의 관측 신호).
+    outputDateSpread: dateSpread,
   };
   writeFileSync(join(outDir, "meta.json"), JSON.stringify(meta, null, 1));
 
@@ -994,7 +1010,7 @@ async function main(): Promise<void> {
   // (AGENTS.md §9 2026-07-27 원장: 앞선 실패의 요청 수를 경과시간÷1.2초로 역산해야 했다).
   console.log(summaryLine);
   console.log(
-    `수집 완료 — 총 ${outItems.length}건 · 픽 ${picks}건 · 지역 ${byRegion.size}개 · 소요 ${elapsed}초 · ` +
+    `수집 완료 — 총 ${outItems.length}건 · 픽 ${picks}건 · 지역 ${byRegion.size}개 · 기일 ${dateSpread}일 · 소요 ${elapsed}초 · ` +
       `라이브 요청 ${liveRequestCount}회 · 상세 ${succeeded}/${candidateIdx.length}건(절단 ${truncated}건) · ` +
       `조기 종료 ${aborted ? abortReason : "없음"}`,
   );

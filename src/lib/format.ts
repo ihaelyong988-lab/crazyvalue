@@ -120,6 +120,22 @@ export function updateDelay(
   return { overdue: true, days: Math.floor(elapsed / 86_400_000) };
 }
 
+/**
+ * 갱신 직후 여부 — 수집일이 오늘 기준 freshDays일 이내면 true.
+ * 갱신은 됐는데 화면이 지난주와 구분되지 않으면 방문자는 갱신을 인식하지 못한다(2026-08-02 주인님 지시).
+ * 파싱 불가면 null — 기준일 바와 같은 규약으로 갱신 여부를 단정하지 않는다.
+ */
+export function isFreshUpdate(
+  crawledAt: string,
+  freshDays = 3,
+  now: Date = new Date(),
+): boolean | null {
+  const at = seoulDateTime(crawledAt)?.date;
+  const from = shiftDays(todaySeoul(now), -freshDays);
+  if (!at || from === null) return null;
+  return at >= from;
+}
+
 /** 면적: ㎡ + 평 병기. null이면 "-" */
 export function formatArea(m2: number | null): string {
   if (m2 === null) return "-";

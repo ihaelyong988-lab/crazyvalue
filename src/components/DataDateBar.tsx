@@ -1,6 +1,6 @@
 "use client";
 
-import { formatDateKr, seoulDateTime, updateDelay } from "@/lib/format";
+import { formatDateKr, isFreshUpdate, seoulDateTime, updateDelay } from "@/lib/format";
 import { useMeta } from "@/lib/use-meta";
 
 // 기준일 바 — 주 1회 갱신의 신뢰 장치. 모든 화면 상단 상시 표기(§4.4-8).
@@ -13,6 +13,7 @@ export function DataDateBar() {
   const delay = meta ? updateDelay(meta.nextUpdateAt) : null;
   const nextDate = meta ? (seoulDateTime(meta.nextUpdateAt)?.date ?? null) : null;
   const pendingDate = pending ? (seoulDateTime(pending.crawledAt)?.date ?? null) : null;
+  const fresh = meta ? isFreshUpdate(meta.crawledAt) : null;
 
   // 수집 시각은 crawledAt 실값을 쓴다 — 리터럴 03:00 하드코딩은 지연·수동 실행 주에 거짓이 된다(감사 38).
   // 예정일이 지났으면 예정일 대신 지연 일수를 말한다(감사 92) — 같은 줄에 둘 다 두지 않는다(1정보 1표시).
@@ -30,7 +31,16 @@ export function DataDateBar() {
 
   return (
     <div className="bg-navy px-4 pb-2 text-[12px] leading-snug tabular-nums text-white/80">
-      <p>{status}</p>
+      {/* 갱신 직후에는 기준일을 말하는 것만으로 부족하다 — 방문자가 "이번에 새로 들어왔다"를 인식해야 한다.
+          배지는 기준일을 수식할 뿐 같은 값을 다시 쓰지 않는다(1정보 1표시). */}
+      <p>
+        {fresh && stamp && (
+          <span className="mr-1.5 rounded bg-white px-1.5 py-0.5 font-semibold text-navy">
+            새로 갱신
+          </span>
+        )}
+        {status}
+      </p>
       {/* 세션 중 발생하는 알림 자리 — 비어 있어도 유지해야 삽입 시점에 낭독된다. */}
       <div role="status">
         {dropped > 0 && <p className="mt-0.5">형식 오류 {dropped}건 제외</p>}

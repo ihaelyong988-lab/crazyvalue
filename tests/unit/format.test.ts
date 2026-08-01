@@ -8,6 +8,7 @@ import {
   formatKrw,
   isValidDateOnly,
   parseDateOnly,
+  isFreshUpdate,
   seoulDateTime,
   shiftDays,
   todaySeoul,
@@ -120,6 +121,20 @@ describe("updateDelay — 갱신 지연 판정(감사 92)", () => {
   });
   it("파싱 불가면 null — 지연 여부를 단정하지 않는다", () => {
     expect(updateDelay("미정", new Date("2026-07-22T09:00:00+09:00"))).toBeNull();
+  });
+});
+
+describe("isFreshUpdate — 갱신 직후 판정(2026-08-02 지시: 갱신을 방문자가 인식해야 한다)", () => {
+  const crawled = "2026-08-02T04:46:57+09:00";
+  it("기본 3일 창 안이면 갱신 직후", () => {
+    expect(isFreshUpdate(crawled, 3, new Date("2026-08-02T09:00:00+09:00"))).toBe(true);
+    expect(isFreshUpdate(crawled, 3, new Date("2026-08-05T23:00:00+09:00"))).toBe(true);
+  });
+  it("창을 벗어나면 갱신 직후가 아니다", () => {
+    expect(isFreshUpdate(crawled, 3, new Date("2026-08-06T00:10:00+09:00"))).toBe(false);
+  });
+  it("파싱 불가면 null — 갱신 여부를 단정하지 않는다", () => {
+    expect(isFreshUpdate("미정", 3, new Date("2026-08-02T09:00:00+09:00"))).toBeNull();
   });
 });
 

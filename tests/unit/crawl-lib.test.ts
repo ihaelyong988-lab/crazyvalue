@@ -3,7 +3,7 @@ import {
   STALL_PAGE_LIMIT,
   acceptPage,
   buildSummaryLine,
-  capBySaleDate,
+  capAcrossSaleDates,
   createListAccumulator,
   deriveRowKey,
   gateItems,
@@ -119,43 +119,78 @@ describe("gateItems — 강등 게이트: 개별 드롭+카운트, 유효 부분
   });
 });
 
-describe("capBySaleDate — 산출물 상한: 매각기일 임박순 상위 OUTPUT_CAP건", () => {
-  it("1,001건 입력 → 임박순 1,000건 선별·cappedFrom=1001", () => {
-    expect(OUTPUT_CAP).toBe(1000);
-    // saleDate를 역순으로 만들어 정렬이 실제로 작동하는지 본다(입력 순서 의존 금지).
-    const items = Array.from({ length: OUTPUT_CAP + 1 }, (_, i) => ({
-      id: `id-${String(i).padStart(4, "0")}`,
-      saleDate: `2026-${pad2(12 - (i % 5))}-${pad2(1 + (i % 28))}`,
+describe("capAcrossSaleDates — 산출물 상한: 갱신 주기 내 매각기일 배분", () => {
+  // 기일 하나에 n건을 만든다. priceRatio는 i가 커질수록 비싸다(선별 순서 검증용).
+  const cell = (saleDate: string, n: number) =>
+    Array.from({ length: n }, (_, i) => ({
+      id: `${saleDate}-${String(i).padStart(4, "0")}`,
+      saleDate,
+      priceRatio: i / 10_000,
     }));
-    const { capped, cappedFrom } = capBySaleDate(items, OUTPUT_CAP);
-    expect(cappedFrom).toBe(OUTPUT_CAP + 1);
-    expect(capped).toHaveLength(OUTPUT_CAP);
-    // 임박순(오름차순) 정렬 검증 + 잘려나간 1건은 가장 먼 기일이어야 한다
-    const sortedAll = [...items].sort((a, b) => a.saleDate.localeCompare(b.saleDate) || a.id.localeCompare(b.id));
-    expect(capped).toEqual(sortedAll.slice(0, OUTPUT_CAP));
-    for (let i = 1; i < capped.length; i++) {
-      expect(capped[i - 1].saleDate <= capped[i].saleDate).toBe(true);
-    }
-  });
-  it("동일 매각기일은 id 순 안정 정렬", () => {
-    const { capped } = capBySaleDate(
-      [
-        { id: "b", saleDate: "2026-08-01" },
-        { id: "a", saleDate: "2026-08-01" },
-        { id: "c", saleDate: "2026-07-01" },
-      ],
-      2,
-    );
-    expect(capped.map((i) => i.id)).toEqual(["c", "a"]);
-  });
-  it("상한 이하 입력은 그대로(정렬만) 통과·입력 배열 불변", () => {
+
+  it("회귀(2026-08-02 P0): 첫 기일에 상한 이상 물량이 있어도 하루로 수렴하지 않는다", () => {
+    expect(OUTPUT_CAP).toBe(1000);
+    // 실측 재현 — 08-03 하루가 상한을 넘고, 직전 설계(임박순 절단)는 여기서 1,000건을 소진했다.
     const items = [
-      { id: "b", saleDate: "2026-09-01" },
-      { id: "a", saleDate: "2026-08-01" },
+      ...cell("2026-08-03", 1200),
+      ...cell("2026-08-04", 800),
+      ...cell("2026-08-05", 800),
+      ...cell("2026-08-06", 800),
+      ...cell("2026-08-07", 800),
     ];
-    const { capped, cappedFrom } = capBySaleDate(items, OUTPUT_CAP);
+    const { capped, cappedFrom, dateSpread } = capAcrossSaleDates(items, OUTPUT_CAP, "2026-08-09");
+    expect(cappedFrom).toBe(4400);
+    expect(capped).toHaveLength(OUTPUT_CAP);
+    expect(dateSpread).toBe(5); // 하루가 아니라 갱신 주기 안 5개 기일 전부
+    const per = countByDate(capped);
+    expect(per["2026-08-03"]).toBe(200);
+    expect(per["2026-08-07"]).toBe(200);
+  });
+
+  it("얕은 기일이 남긴 몫은 다른 기일이 흡수한다(물채우기)", () => {
+    const items = [...cell("2026-08-03", 10), ...cell("2026-08-04", 2000)];
+    const { capped } = capAcrossSaleDates(items, OUTPUT_CAP, "2026-08-09");
+    const per = countByDate(capped);
+    expect(per["2026-08-03"]).toBe(10); // 공급 전량
+    expect(per["2026-08-04"]).toBe(990); // 균등 쿼터 500 + 재분배 490
+    expect(capped).toHaveLength(OUTPUT_CAP);
+  });
+
+  it("갱신 주기 밖 기일은 창 안을 다 채운 뒤에만 임박순으로 채운다", () => {
+    const items = [
+      ...cell("2026-08-03", 300), // 창 안 전량으로도 상한에 못 미친다
+      ...cell("2026-08-10", 5000),
+      ...cell("2026-08-17", 5000),
+    ];
+    const { capped, dateSpread } = capAcrossSaleDates(items, OUTPUT_CAP, "2026-08-09");
+    const per = countByDate(capped);
+    expect(per["2026-08-03"]).toBe(300);
+    expect(per["2026-08-10"]).toBe(700); // 가까운 창 밖 기일부터
+    expect(per["2026-08-17"]).toBeUndefined();
+    expect(dateSpread).toBe(2);
+  });
+
+  it("기일 내 선별은 priceRatio 오름차순(저가 우선)·동일 비율 id 순", () => {
+    const items = [
+      { id: "b", saleDate: "2026-08-03", priceRatio: 0.4 },
+      { id: "a", saleDate: "2026-08-03", priceRatio: 0.4 },
+      { id: "c", saleDate: "2026-08-03", priceRatio: 0.2 },
+      { id: "d", saleDate: "2026-08-03", priceRatio: 0.9 },
+    ];
+    const { capped } = capAcrossSaleDates(items, 3, "2026-08-09");
+    expect(capped.map((i) => i.id)).toEqual(["a", "b", "c"]); // 산출 정렬은 기일·id 순
+    expect(capped.some((i) => i.id === "d")).toBe(false); // 가장 비싼 1건이 탈락
+  });
+
+  it("상한 이하 입력은 전량 통과(기일 오름차순)·입력 배열 불변", () => {
+    const items = [
+      { id: "b", saleDate: "2026-09-01", priceRatio: 0.3 },
+      { id: "a", saleDate: "2026-08-01", priceRatio: 0.5 },
+    ];
+    const { capped, cappedFrom, dateSpread } = capAcrossSaleDates(items, OUTPUT_CAP, "2026-08-09");
     expect(capped.map((i) => i.id)).toEqual(["a", "b"]);
     expect(cappedFrom).toBe(2);
+    expect(dateSpread).toBe(2);
     expect(items.map((i) => i.id)).toEqual(["b", "a"]); // 원본 불변
   });
 });
@@ -168,6 +203,8 @@ describe("buildSummaryLine — 수집 요약 1줄 형식 고정", () => {
   });
 });
 
-function pad2(n: number): string {
-  return String(n).padStart(2, "0");
+function countByDate(items: { saleDate: string }[]): Record<string, number> {
+  const per: Record<string, number> = {};
+  for (const i of items) per[i.saleDate] = (per[i.saleDate] ?? 0) + 1;
+  return per;
 }

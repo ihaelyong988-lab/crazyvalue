@@ -109,17 +109,69 @@ export function gateItems<T extends { id: string }>(
 }
 
 /**
- * 산출물 상한 — 매각기일 임박순(saleDate 오름차순, 동일일은 id 순 안정 정렬) 상위 cap건만 선별한다.
- * cappedFrom = 상한 적용 전 유효 건수(meta 기록용). 입력 배열은 변형하지 않는다.
+ * 산출물 상한 — 갱신 주기 내내 유효 물건이 남도록 매각기일별로 배분해 cap건을 선별한다.
+ *
+ * 단순 임박순 절단(직전 설계)은 갱신 주기와 무관하게 첫 기일에서 상한을 소진한다. 2026-08-02 실측:
+ * 유효 9,359건 → 산출 1,000건이 전부 08-03 하루였고, 다음 갱신(08-09)까지 5일간 전 물건이
+ * 기일 경과로 표시됐다. 상한이 하루 물량보다 작으면 "임박순 상위 N건"은 곧 "첫날 N건"이다.
+ *
+ * - windowEnd: 다음 갱신 날짜(YYYY-MM-DD, 미포함). 이 날짜 이전 기일이 배분 1순위다.
+ * - 배분은 물채우기(water-filling) — 얕은 기일이 남긴 몫은 다음 회차에서 다른 기일에 재분배된다.
+ * - 기일 내 선별은 priceRatio 오름차순(저가 우선 = 앱 정체성) · 동일 비율은 id 순으로 결정적이다.
+ * - 반환 배열은 기존 산출 계약대로 saleDate 오름차순·동일일 id 순이다. 입력 배열은 변형하지 않는다.
  */
-export function capBySaleDate<T extends { id: string; saleDate: string }>(
+export function capAcrossSaleDates<T extends { id: string; saleDate: string; priceRatio: number }>(
   items: readonly T[],
   cap: number,
-): { capped: T[]; cappedFrom: number } {
-  const sorted = [...items].sort(
-    (a, b) => a.saleDate.localeCompare(b.saleDate) || a.id.localeCompare(b.id),
-  );
-  return { capped: sorted.slice(0, cap), cappedFrom: items.length };
+  windowEnd: string,
+): { capped: T[]; cappedFrom: number; dateSpread: number } {
+  const byDate = new Map<string, T[]>();
+  for (const item of items) {
+    const list = byDate.get(item.saleDate);
+    if (list) list.push(item);
+    else byDate.set(item.saleDate, [item]);
+  }
+  for (const list of byDate.values()) {
+    list.sort((a, b) => a.priceRatio - b.priceRatio || a.id.localeCompare(b.id));
+  }
+  const dates = [...byDate.keys()].sort();
+  const inWindow = dates.filter((d) => d < windowEnd);
+  const beyond = dates.filter((d) => d >= windowEnd);
+  const supply = (d: string): number => (byDate.get(d) as T[]).length;
+
+  const quota = new Map<string, number>();
+  let remaining = Math.max(0, cap);
+  // 1순위: 갱신 주기 안의 기일에 균등 배분. share≥1이라 매 회차 remaining이 최소 1 줄어 종료가 보장된다.
+  while (remaining > 0) {
+    const open = inWindow.filter((d) => (quota.get(d) ?? 0) < supply(d));
+    if (open.length === 0) break;
+    const share = Math.max(1, Math.floor(remaining / open.length));
+    for (const d of open) {
+      if (remaining === 0) break;
+      const add = Math.min(share, supply(d) - (quota.get(d) ?? 0), remaining);
+      quota.set(d, (quota.get(d) ?? 0) + add);
+      remaining -= add;
+    }
+  }
+  // 2순위: 창 안을 다 채우고도 남으면 그 이후 기일을 임박순으로 채운다(앞으로의 기일 예고).
+  for (const d of beyond) {
+    if (remaining === 0) break;
+    const add = Math.min(supply(d), remaining);
+    quota.set(d, add);
+    remaining -= add;
+  }
+
+  const capped: T[] = [];
+  for (const d of dates) {
+    const take = quota.get(d) ?? 0;
+    if (take > 0) capped.push(...(byDate.get(d) as T[]).slice(0, take));
+  }
+  capped.sort((a, b) => a.saleDate.localeCompare(b.saleDate) || a.id.localeCompare(b.id));
+  return {
+    capped,
+    cappedFrom: items.length,
+    dateSpread: new Set(capped.map((i) => i.saleDate)).size,
+  };
 }
 
 export interface CollectSummary {
