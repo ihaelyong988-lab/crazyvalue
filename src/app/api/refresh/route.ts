@@ -32,10 +32,16 @@ async function fetchRuns(): Promise<RunSummary[]> {
   });
   if (!res.ok) throw new Error(`GitHub ${res.status}`);
   const json = (await res.json()) as {
-    workflow_runs?: Array<{ status: string; created_at: string; html_url: string }>;
+    workflow_runs?: Array<{
+      status: string;
+      conclusion: string | null;
+      created_at: string;
+      html_url: string;
+    }>;
   };
   return (json.workflow_runs ?? []).map((r) => ({
     status: r.status,
+    conclusion: r.conclusion,
     createdAt: r.created_at,
     htmlUrl: r.html_url,
   }));
@@ -84,7 +90,13 @@ export async function POST() {
   }
   // dispatch는 202만 주고 런 식별자를 주지 않는다. 목록에 잡히기까지 수 초 걸리므로 화면이 폴링해 잇는다.
   return NextResponse.json(
-    { state: "running", lastRunAt: new Date().toISOString(), cooldownUntil: null, runUrl: null },
+    {
+      state: "running",
+      lastRunAt: new Date().toISOString(),
+      cooldownUntil: null,
+      runUrl: null,
+      lastConclusion: null,
+    },
     { status: 202 },
   );
 }

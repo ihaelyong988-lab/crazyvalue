@@ -11,6 +11,8 @@ export type RefreshState = "idle" | "running" | "cooldown" | "unconfigured";
 export interface RunSummary {
   /** queued · in_progress · completed */
   status: string;
+  /** success · failure · cancelled … 진행 중이면 null */
+  conclusion?: string | null;
   /** ISO 시각 */
   createdAt: string;
   htmlUrl: string;
@@ -22,6 +24,11 @@ export interface RefreshStatus {
   lastRunAt: string | null;
   cooldownUntil: string | null;
   runUrl: string | null;
+  /**
+   * 직전 완료 런의 결과. 실패를 말하지 않으면 방문자는 "눌렀는데 아무 일도 없었다"로 읽는다 —
+   * 폴링은 running에서 idle로 조용히 되돌아갈 뿐이다(2026-08-02 실측: 세션 거부로 런이 죽었다).
+   */
+  lastConclusion: string | null;
 }
 
 /**
@@ -39,6 +46,7 @@ export function deriveStatus(runs: RunSummary[], now: Date, configured: boolean)
       lastRunAt: active.createdAt,
       cooldownUntil: null,
       runUrl: active.htmlUrl,
+      lastConclusion: null,
     };
   }
   const latest = [...runs]
@@ -47,6 +55,7 @@ export function deriveStatus(runs: RunSummary[], now: Date, configured: boolean)
   const base = {
     lastRunAt: latest?.createdAt ?? null,
     runUrl: latest?.htmlUrl ?? null,
+    lastConclusion: latest?.conclusion ?? null,
   };
   if (latest) {
     const until = Date.parse(latest.createdAt) + COOLDOWN_HOURS * 3_600_000;

@@ -3,8 +3,14 @@ import { COOLDOWN_HOURS, deriveStatus, remainingText, type RunSummary } from "@/
 
 // 리프레쉬 상태 판정 — 화면과 API가 같은 규칙을 쓴다. now를 주입해 시각 의존을 없앤다.
 
-const run = (status: string, createdAt: string, id = "1"): RunSummary => ({
+const run = (
+  status: string,
+  createdAt: string,
+  id = "1",
+  conclusion: string | null = "success",
+): RunSummary => ({
   status,
+  conclusion: status === "completed" ? conclusion : null,
   createdAt,
   htmlUrl: `https://github.com/o/r/actions/runs/${id}`,
 });
@@ -73,6 +79,30 @@ describe("deriveStatus — 진행 중 > 쿨다운 > 미설정 > 실행 가능", 
     );
     expect(s.state).toBe("cooldown");
     expect(s.runUrl).toContain("/runs/good");
+  });
+});
+
+describe("lastConclusion — 조용한 실패 금지(2026-08-02 세션 거부로 런이 죽은 사례)", () => {
+  const now = new Date("2026-08-02T12:00:00Z");
+
+  it("직전 완료 런의 결론을 그대로 싣는다 — 화면이 실패를 말할 근거다", () => {
+    const s = deriveStatus([run("completed", "2026-08-02T09:00:00Z", "1", "failure")], now, true);
+    expect(s.lastConclusion).toBe("failure");
+    expect(s.state).toBe("cooldown"); // 실패해도 재실행 간격은 지킨다(차단이 원인일 수 있다)
+  });
+
+  it("성공이면 success", () => {
+    expect(deriveStatus([run("completed", "2026-08-02T05:00:00Z")], now, true).lastConclusion).toBe(
+      "success",
+    );
+  });
+
+  it("진행 중에는 결론이 없다 — 아직 판정할 수 없는 것을 단정하지 않는다", () => {
+    expect(deriveStatus([run("in_progress", "2026-08-02T11:59:00Z")], now, true).lastConclusion).toBeNull();
+  });
+
+  it("런 이력이 없으면 null", () => {
+    expect(deriveStatus([], now, true).lastConclusion).toBeNull();
   });
 });
 

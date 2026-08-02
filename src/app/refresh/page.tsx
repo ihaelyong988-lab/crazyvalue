@@ -69,6 +69,8 @@ export default function RefreshPage() {
   const waitText = status ? remainingText(status.cooldownUntil, now) : null;
   const running = status?.state === "running";
   const canStart = status?.state === "idle" && !busy;
+  // success 외의 결론(failure·cancelled·timed_out)은 모두 "완료되지 못함"으로 본다.
+  const failedLast = Boolean(status?.lastConclusion && status.lastConclusion !== "success");
 
   return (
     <div className="space-y-4 px-4 py-4">
@@ -96,6 +98,13 @@ export default function RefreshPage() {
           {phase === "ready" && status?.state === "unconfigured" && "실행 권한이 아직 설정되지 않았다."}
           {phase === "ready" && status?.state === "idle" && "지금 실행할 수 있다."}
         </p>
+        {/* 직전 실행이 죽었으면 그 사실을 말한다 — 폴링은 running에서 idle로 조용히 되돌아갈 뿐이라
+            방문자에게는 "눌렀는데 아무 일도 없었다"로 남는다(§13 규칙 5 조용한 실패 금지). */}
+        {phase === "ready" && !running && failedLast && (
+          <p role="status" className="mt-2 text-ink">
+            직전 수집이 완료되지 못해 데이터는 이전 기준일 그대로다.
+          </p>
+        )}
         {notice && (
           <p role="status" className="mt-2 font-semibold text-ink">
             {notice}

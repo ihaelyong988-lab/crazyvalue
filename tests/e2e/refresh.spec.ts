@@ -96,6 +96,22 @@ test("진행 중 — 남은 소요를 말하고 중복 실행을 막는다", asy
   await expect(page.getByRole("button", { name: "수집 중" })).toBeDisabled();
 });
 
+test("직전 실행 실패 — 조용히 넘어가지 않는다", async ({ page }) => {
+  await suppressOnboarding(page);
+  // 실측 사례: 세션 GET 거부로 런이 죽었고, 폴링은 running에서 idle로 돌아갈 뿐이었다.
+  await mockRefresh(page, {
+    state: "idle",
+    lastRunAt: "2026-08-02T00:10:00Z",
+    cooldownUntil: null,
+    runUrl: "https://github.com/o/r/actions/runs/3",
+    lastConclusion: "failure",
+  });
+  await page.goto("/refresh");
+
+  await expect(page.getByText(/직전 수집이 완료되지 못해/)).toBeVisible();
+  await expect(page.getByRole("button", { name: "지금 다시 수집" })).toBeEnabled();
+});
+
 test("권한 미설정 — 할 수 없는 이유를 숨기지 않는다", async ({ page }) => {
   await suppressOnboarding(page);
   await mockRefresh(page, {
