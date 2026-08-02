@@ -55,16 +55,21 @@ export function deriveStatus(runs: RunSummary[], now: Date, configured: boolean)
       lastConclusion: null,
     };
   }
-  const latest = [...runs]
+  const sorted = [...runs]
     .filter((r) => Number.isFinite(Date.parse(r.createdAt)))
-    .sort((a, b) => Date.parse(b.createdAt) - Date.parse(a.createdAt))[0];
+    .sort((a, b) => Date.parse(b.createdAt) - Date.parse(a.createdAt));
+  const latest = sorted[0];
   const base = {
     lastRunAt: latest?.createdAt ?? null,
     runUrl: latest?.htmlUrl ?? null,
     lastConclusion: latest?.conclusion ?? null,
   };
-  if (latest) {
-    const until = Date.parse(latest.createdAt) + COOLDOWN_HOURS * 3_600_000;
+  // 쿨다운 기준은 "성공한" 실행이다 — 세션 단계에서 죽은 런은 요청을 4회밖에 하지 않아
+  // 사이트에 부담을 주지 않았는데, 그것 때문에 한 시간을 잠그면 방문자만 손해다.
+  // (로봇탐지로 중간에 끊긴 런은 부분 산출·커밋 후 exit 0이라 success로 잡히고, 그 경우는 잠긴다.)
+  const lastSuccess = sorted.find((r) => r.conclusion === "success");
+  if (lastSuccess) {
+    const until = Date.parse(lastSuccess.createdAt) + COOLDOWN_HOURS * 3_600_000;
     if (until > now.getTime()) {
       return { ...base, state: "cooldown", cooldownUntil: new Date(until).toISOString() };
     }

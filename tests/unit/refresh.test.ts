@@ -97,7 +97,22 @@ describe("lastConclusion — 조용한 실패 금지(2026-08-02 세션 거부로
   it("직전 완료 런의 결론을 그대로 싣는다 — 화면이 실패를 말할 근거다", () => {
     const s = deriveStatus([run("completed", DURING_COOLDOWN, "1", "failure")], now, true);
     expect(s.lastConclusion).toBe("failure");
-    expect(s.state).toBe("cooldown"); // 실패해도 재실행 간격은 지킨다(차단이 원인일 수 있다)
+    // 실패 런은 쿨다운을 걸지 않는다 — 세션 단계에서 죽으면 요청을 4회밖에 하지 않았다.
+    expect(s.state).toBe("idle");
+  });
+
+  it("쿨다운은 성공 런 기준 — 그 뒤의 실패가 잠금을 풀지 않는다", () => {
+    const s = deriveStatus(
+      [
+        run("completed", iso(60_000), "fail", "failure"),
+        run("completed", DURING_COOLDOWN, "ok", "success"),
+      ],
+      now,
+      true,
+    );
+    expect(s.state).toBe("cooldown");
+    expect(s.lastConclusion).toBe("failure"); // 화면은 직전 실패를 말하고
+    expect(s.runUrl).toContain("/runs/fail"); // 링크도 그 런을 가리킨다
   });
 
   it("성공이면 success", () => {

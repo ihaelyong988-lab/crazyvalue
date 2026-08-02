@@ -53,10 +53,13 @@ export const POLITENESS = {
 
 /**
  * 세션 부트스트랩(GET /pgj/index.on) 전용 재시도 백오프 — 일반 요청 백오프(POLITENESS.backoffsMs)는 불변.
- * 07-29 런이 세션 GET의 TypeError: fetch failed 재시도 3회(1s/2s/4s) 소진으로 49초 만에 전체 중단됐다.
- * transport 일시 장애로 즉사하던 경로에 약 65초(5+15+45)의 흡수 폭을 부여한다.
+ *
+ * 이 경로의 `TypeError: fetch failed`(HTTP 오류가 아니라 연결 자체 실패)는 누적 4회 관측됐고,
+ * 실행 간격과 상관이 약하다 — 2026-08-02 실측: 13분 간격 뒤에는 성공했고 1시간 21분 간격 뒤에는 실패했다.
+ * 즉 "너무 자주 눌러서"가 아니라 간헐적 거부이며, 흡수 폭이 현상보다 짧은 것이 문제였다(직전 65초).
+ * 총 3.7분(10+30+60+120)으로 늘려 일시적 거부를 넘긴다 — 경량 수집 5분과 합쳐도 10분 목표 안이다.
  */
-export const SESSION_BACKOFFS = [5000, 15000, 45000] as const;
+export const SESSION_BACKOFFS = [10000, 30000, 60000, 120000] as const;
 
 /**
  * 산출물 상한 — 유효·중복제거 후 매각기일 임박순(saleDate 오름차순, 동일일 id 순) 상위 N건만 산출한다.
