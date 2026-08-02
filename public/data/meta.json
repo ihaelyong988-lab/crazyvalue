@@ -1,5 +1,5 @@
 {
- "crawledAt": "2026-08-02T08:32:43+09:00",
+ "crawledAt": "2026-08-02T09:28:40+09:00",
  "totalCount": 1000,
  "countsByRegion": {
   "seoul": 89,
@@ -22,23 +22,23 @@
  },
  "nextUpdateAt": "2026-08-09T03:00:00+09:00",
  "scope": null,
- "aborted": true,
- "abortReason": "로봇탐지(ipcheck=false) — 즉시 중단",
- "abortedAtRequest": 1030,
- "totalRequests": 1030,
- "truncated": 6664,
+ "aborted": false,
+ "abortReason": null,
+ "abortedAtRequest": null,
+ "totalRequests": 162,
+ "truncated": 2948,
  "detailCoverage": {
-  "candidates": 7736,
-  "requested": 602,
-  "succeeded": 601
+  "candidates": 2948,
+  "requested": 0,
+  "succeeded": 0
  },
  "historySource": {
-  "real": 596,
-  "backcalc": 8877
+  "real": 0,
+  "backcalc": 3742
  },
- "dedupDropped": 7346,
+ "dedupDropped": 2561,
  "invalidDropped": 0,
- "cappedFrom": 9407,
+ "cappedFrom": 3737,
  "outputCap": 1000,
  "outputDateSpread": 5
 }

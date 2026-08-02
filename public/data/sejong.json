@@ -22,28 +22,33 @@
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
   "history": [
    {
-    "date": "2025-12-15",
+    "date": "2026-01-05",
+    "minPrice": 3738000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-09",
     "minPrice": 3738000,
     "result": "유찰"
    },
    {
-    "date": "2026-01-19",
-    "minPrice": 2616000,
+    "date": "2026-03-16",
+    "minPrice": 2615562,
     "result": "유찰"
    },
    {
-    "date": "2026-02-23",
-    "minPrice": 1831000,
+    "date": "2026-04-20",
+    "minPrice": 1830166,
     "result": "유찰"
    },
    {
-    "date": "2026-04-06",
-    "minPrice": 1281000,
+    "date": "2026-05-25",
+    "minPrice": 1280608,
     "result": "유찰"
    },
    {
-    "date": "2026-05-11",
-    "minPrice": 896000,
+    "date": "2026-06-29",
+    "minPrice": 896070,
     "result": "유찰"
    }
   ],
