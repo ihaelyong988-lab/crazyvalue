@@ -1,7 +1,9 @@
 import { defineConfig, devices } from "@playwright/test";
 
 // Playwright E2E 스모크 설정(기획안 §8 Phase 2.7).
-// 실행 전제: `npm run build` 선행 — webServer는 프로덕션 서버(next start)를 띄우거나 재사용한다.
+// webServer가 직접 빌드한다 — `npm run start`만 띄우면 옛 .next를 서빙해 새 라우트가 404가 되고,
+// 원인이 코드로 보인다(2026-08-02: 리프레쉬 5건이 전부 그렇게 실패했다).
+// 서버가 이미 떠 있으면 재사용하므로, 라우트를 추가한 뒤에는 서버를 내리고 다시 돌려야 한다.
 export default defineConfig({
   testDir: "./tests/e2e",
   fullyParallel: true,
@@ -20,9 +22,10 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: "npm run start",
+    command: "npm run build && npm run start",
     url: "http://localhost:3000",
     reuseExistingServer: true,
-    timeout: 120_000,
+    // 빌드가 포함된 시간이다 — /item/[id] 정적 생성이 1,000건이라 기동만 잡은 120초로는 모자란다.
+    timeout: 420_000,
   },
 });

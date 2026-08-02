@@ -24,6 +24,9 @@ jobs:
       - run: npm ci
       - run: npm run typecheck
       - run: npm test
-      # E2E는 프로덕션 빌드에서 돈다(playwright.config webServer) — dev에는 서비스워커가 없다.
+      # E2E는 프로덕션 빌드에서 돈다 — dev에는 서비스워커가 없다.
+      # 빌드를 여기서 먼저 한다: webServer가 옛 산출물을 서빙하면 새 라우트가 404가 되고
+      # 실패 원인이 코드처럼 보인다(2026-08-02 선례).
+      - run: npm run build
       - run: npx playwright install --with-deps chromium
       - run: npx playwright test

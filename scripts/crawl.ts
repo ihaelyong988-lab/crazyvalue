@@ -68,14 +68,32 @@ interface CliOptions {
   region: string | null;
   dryRun: boolean;
   limit: number | null;
+  /** 매각기일 창(일). null이면 SEARCH.windowDays(42일) — 주간 전량 수집 기본값. */
+  windowDays: number | null;
+  /** 상세 요청을 건너뛴다(기일 이력 전량 역산). 리프레쉬 경량 모드의 실효 레버다. */
+  noDetail: boolean;
 }
 
 function parseArgs(argv: string[]): CliOptions {
-  const opts: CliOptions = { region: null, dryRun: false, limit: null };
+  const opts: CliOptions = {
+    region: null,
+    dryRun: false,
+    limit: null,
+    windowDays: null,
+    noDetail: false,
+  };
   for (let i = 0; i < argv.length; i++) {
     const arg = argv[i];
     if (arg === "--dry-run") opts.dryRun = true;
-    else if (arg === "--region") {
+    else if (arg === "--no-detail") opts.noDetail = true;
+    else if (arg === "--window") {
+      const v = Number(argv[++i]);
+      if (!Number.isInteger(v) || v < 0) {
+        console.error("--window 값은 0 이상의 정수여야 한다.");
+        process.exit(1);
+      }
+      opts.windowDays = v;
+    } else if (arg === "--region") {
       const v = argv[++i];
       if (!v || !REGIONS.some((r) => r.key === v)) {
         console.error(`--region 값이 올바르지 않다. 사용 가능: ${REGIONS.map((r) => r.key).join(", ")}`);
@@ -419,7 +437,7 @@ function firstArea(raw: string): number | null {
 // 검색(목록) 수집
 // ---------------------------------------------------------------------------
 
-function buildSearchInfo(): Record<string, string> {
+function buildSearchInfo(windowDays: number = SEARCH.windowDays): Record<string, string> {
   // 브라우저는 dataMap의 키 전부를 직렬화하므로 동일하게 전체 키를 빈 문자열로 채운다(crawl-config 주석).
   const info: Record<string, string> = {};
   for (const key of SEARCH_INFO_KEYS) info[key] = "";
@@ -430,7 +448,7 @@ function buildSearchInfo(): Record<string, string> {
   info.cortOfcCd = ""; // 공백 = 전국(CRAWLER.md §2.6 1안)
   info.flbdNcntMin = SEARCH.flbdNcntMin;
   info.bidBgngYmd = ymdKst(0);
-  info.bidEndYmd = ymdKst(SEARCH.windowDays);
+  info.bidEndYmd = ymdKst(windowDays);
   info.pgmId = SEARCH.pgmId;
   info.statNum = "1"; // CRAWLER.md §2.3 실측 예시 값
   info.notifyLoc = "off";
@@ -688,11 +706,12 @@ async function main(): Promise<void> {
   const opts = parseArgs(process.argv.slice(2));
   const t0 = startedAt;
   const todayYmd = ymdKst(0);
+  const windowDays = opts.windowDays ?? SEARCH.windowDays;
 
   console.log(
-    `수집 시작 — 대상 전국 유찰 2회 이상 · 매각기일 창 ${ymdKst(0)}~${ymdKst(SEARCH.windowDays)}` +
+    `수집 시작 — 대상 전국 유찰 2회 이상 · 매각기일 창 ${ymdKst(0)}~${ymdKst(windowDays)}(${windowDays}일)` +
       `${opts.region ? ` · 지역 ${opts.region}` : ""}${opts.dryRun ? " · dry-run(쓰기 없음·1페이지)" : ""}` +
-      `${opts.limit ? ` · limit ${opts.limit}` : ""}`,
+      `${opts.limit ? ` · limit ${opts.limit}` : ""}${opts.noDetail ? " · 상세 생략(이력 역산)" : ""}`,
   );
 
   // 1) 세션 취득 — JSESSIONID 쿠키(CRAWLER.md §2.2)
@@ -708,7 +727,7 @@ async function main(): Promise<void> {
   // 서버가 야간 배치 중 같은 행을 재서빙해도(07-28 실측: 같은 id 최대 154회) 첫 등장만 축적한다.
   // 종결 판정의 누적 행수(acc.rows.length)는 자연히 고유 건수다 — 재서빙 구간에서 고유 건수가
   // totalCnt에 영원히 못 미치면 아래 정체 종결(stallPages)이 목록을 정상 종결한다.
-  const searchInfo = buildSearchInfo();
+  const searchInfo = buildSearchInfo(windowDays);
   const acc = createListAccumulator();
   let totalCnt = 0;
   let pageNo = 1;
@@ -784,7 +803,8 @@ async function main(): Promise<void> {
   // 기일 임박순 정렬은 "예산이 후보보다 적을 때 무엇을 버릴지"를 정하는 데만 쓴다.
   const deadline = t0 + BUDGET.deadlineMinutes * 60_000;
   const candidateIdx = picked.map((_, i) => i).filter((i) => needsDetail(picked[i]));
-  const detailBudget = Math.max(0, BUDGET.maxRequests - liveRequestCount);
+  // 리프레쉬 경량 모드는 상세를 통째로 건너뛴다 — 상세 1건 = 요청 1회라 10분 목표에서 가장 비싼 항목이다.
+  const detailBudget = opts.noDetail ? 0 : Math.max(0, BUDGET.maxRequests - liveRequestCount);
   // 예산이 후보보다 적을 때 무엇을 버릴지 — 매각기일이 먼 물건부터 버린다(임박한 기일이 사용자 가치가 크다).
   const ordered = [...candidateIdx].sort(
     (a, b) => str(picked[a], "maeGiil").localeCompare(str(picked[b], "maeGiil")) || a - b,

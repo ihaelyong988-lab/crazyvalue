@@ -3,13 +3,14 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, Star, Info, Settings } from "lucide-react";
+import { Home, RefreshCw, Star, Info, Settings } from "lucide-react";
 import { readDiffCache } from "@/lib/watchlist";
 
-// 탭 4개(감사 2차 51) — "내 설정"이 없어 관심조건 편집 화면에 도달할 단서가 앱 어디에도 없었다.
-// 375px 기준 탭 폭 93px·높이 56px로 4개에서도 터치 타깃 44px 플로어를 유지한다.
+// 탭 5개 — 홈 옆 "리프레쉬"는 주간 갱신을 기다리지 않고 지금 시점으로 다시 수집한다(2026-08-02 지시).
+// 375px 기준 탭 폭 75px·높이 56px로 5개에서도 터치 타깃 44px 플로어를 유지한다(4개일 때는 93px였다).
 const TABS = [
   { href: "/", label: "홈", icon: Home },
+  { href: "/refresh", label: "리프레쉬", icon: RefreshCw },
   { href: "/watch", label: "관심함", icon: Star },
   { href: "/guide", label: "안내", icon: Info },
   { href: "/me", label: "내 설정", icon: Settings },
