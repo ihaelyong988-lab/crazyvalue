@@ -67,7 +67,7 @@ jobs:
           fi
       - uses: actions/setup-node@v4
         if: steps.gate.outputs.run == 'true'
-        with: { node-version: 20, cache: npm }
+        with: { node-version: 24, cache: npm }
       - run: npm ci
         if: steps.gate.outputs.run == 'true'
       # quick = 리프레쉬 경량 모드. 매각기일 창 7일 + 상세 생략으로 요청을 1,030회 → 162회로 줄인다.
