@@ -74,16 +74,36 @@ jobs:
       # 실측(2026-08-02): 182초 · 조기 종료 없이 완주 · 산출 1,000건/기일 5일/지역 17개로 전량 모드와 동품질.
       # 전량 모드가 매번 로봇탐지에 걸리는 것과 달리 요청 수가 임계(실측 1,030~2,160)를 크게 밑돈다.
       # 기일 이력은 전량 역산이 된다 — 주간 full 실행이 실취득분을 채운다.
+      # 자동 재시도 — 세션 취득이 간헐적으로 실패한다(2026-08-03 실측: 같은 러너에서 10:06·10:22 크롤은
+      # 세션을 못 얻었는데 10:33 진단은 DNS·TCP·TLS·curl·Node fetch 전부 200이었다. IP 차단이 아니라
+      # 사이트/경로의 일시적 불안정이다). 프로세스 내 백오프(3.7분)를 넘겨도 죽는 경우가 있으므로
+      # 워크플로 레벨에서 한 번 더 살린다 — 사람이 다시 누르지 않아도 스스로 복구되어야 한다.
+      # 부분 산출(조기 종료)은 exit 0이라 재시도 대상이 아니다. 커밋 없는 완전 실패만 다시 돈다.
       - name: crawl                 # 검증 게이트 실패 시 여기서 중단 → 커밋 없음
         if: steps.gate.outputs.run == 'true'
         env:
           MODE: ${{ github.event.inputs.mode || 'full' }}
         run: |
-          if [ "$MODE" = "quick" ]; then
-            npm run crawl -- --window 7 --no-detail
-          else
-            npm run crawl
-          fi
+          run_crawl() {
+            if [ "$MODE" = "quick" ]; then
+              npm run crawl -- --window 7 --no-detail
+            else
+              npm run crawl
+            fi
+          }
+          # quick은 방문자가 기다리는 경로라 2회까지(최대 약 12분), full은 야간 배치라 3회까지.
+          [ "$MODE" = "quick" ] && MAX=2 || MAX=3
+          for attempt in $(seq 1 "$MAX"); do
+            if run_crawl; then
+              exit 0
+            fi
+            if [ "$attempt" -lt "$MAX" ]; then
+              echo "수집 ${attempt}회차 실패 — 180초 뒤 재시도한다(총 ${MAX}회)."
+              sleep 180
+            fi
+          done
+          echo "수집이 ${MAX}회 모두 실패했다."
+          exit 1
       - name: commit data
         if: steps.gate.outputs.run == 'true'
         run: |
