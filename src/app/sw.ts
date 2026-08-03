@@ -1,5 +1,5 @@
 import type { PrecacheEntry, SerwistGlobalConfig } from "serwist";
-import { ExpirationPlugin, Serwist, StaleWhileRevalidate } from "serwist";
+import { ExpirationPlugin, NetworkFirst, Serwist, StaleWhileRevalidate } from "serwist";
 import { defaultCache } from "@serwist/next/worker";
 
 // 서비스워커(기획안 §8 Phase 4.2) — 프리캐시(빌드 산출물·public 정적 자원) + 런타임 캐시.
@@ -56,7 +56,19 @@ const serwist = new Serwist({
   navigationPreload: true,
   runtimeCaching: [
     {
-      // 지역 데이터 17개 + meta.json. 등록 순서가 매칭 우선순위 — defaultCache의
+      // meta.json은 "데이터 기준일"을 말하는 신뢰 장치다 — SWR로 두면 갱신 직후에도 첫 요청이
+      // 옛 날짜를 돌려줘, 리프레쉬를 눌러 수집이 끝났는데도 화면은 그대로다(2026-08-02 주인님 지적:
+      // 휴대폰처럼 앱을 띄워두는 환경에서 특히 오래 남는다). 수백 바이트라 매번 받아도 부담이 없고,
+      // 오프라인·응답 지연 시에는 캐시로 떨어져 직전 기준일을 계속 보여준다.
+      // 지역 데이터보다 먼저 등록해야 아래 SWR 규칙에 먹히지 않는다(등록 순서 = 매칭 우선순위).
+      matcher: ({ sameOrigin, url: { pathname } }) => sameOrigin && pathname === "/data/meta.json",
+      handler: new NetworkFirst({
+        cacheName: "auction-data",
+        networkTimeoutSeconds: 3,
+      }),
+    },
+    {
+      // 지역 데이터 17개. 등록 순서가 매칭 우선순위 — defaultCache의
       // json 일반 규칙(NetworkFirst, static-data-assets)보다 먼저 두어야 SWR이 적용된다.
       // 함수 matcher로 /_next/data/ 등 다른 json 경로는 제외한다.
       matcher: ({ sameOrigin, url: { pathname } }) =>

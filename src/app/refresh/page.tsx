@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { formatDateKr, seoulDateTime } from "@/lib/format";
 import { remainingText, type RefreshStatus } from "@/lib/refresh";
 import { useMeta } from "@/lib/use-meta";
@@ -43,6 +43,25 @@ export default function RefreshPage() {
     const id = setInterval(() => void load(), POLL_MS);
     return () => clearInterval(id);
   }, [status?.state, load]);
+
+  // 수집이 끝나면 데이터 캐시를 비우고 화면을 다시 읽는다.
+  // 서비스워커가 직전 물건 목록을 들고 있으면 수집이 끝나도 화면은 옛 데이터 그대로다 —
+  // 방문자에게는 "눌렀는데 아무것도 안 바뀌었다"로 남는다(2026-08-02 주인님 지적).
+  const wasRunning = useRef(false);
+  useEffect(() => {
+    if (status?.state === "running") {
+      wasRunning.current = true;
+      return;
+    }
+    if (!wasRunning.current || status?.lastConclusion !== "success") return;
+    wasRunning.current = false;
+    void (async () => {
+      if (typeof caches !== "undefined") {
+        await caches.delete("auction-data").catch(() => undefined);
+      }
+      window.location.reload();
+    })();
+  }, [status?.state, status?.lastConclusion]);
 
   const start = async () => {
     setBusy(true);
