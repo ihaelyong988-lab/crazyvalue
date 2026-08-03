@@ -1,5 +1,5 @@
 {
- "crawledAt": "2026-08-02T17:35:22+09:00",
+ "crawledAt": "2026-08-03T19:58:42+09:00",
  "totalCount": 1000,
  "countsByRegion": {
   "seoul": 89,
@@ -25,20 +25,20 @@
  "aborted": false,
  "abortReason": null,
  "abortedAtRequest": null,
- "totalRequests": 162,
- "truncated": 2948,
+ "totalRequests": 231,
+ "truncated": 3930,
  "detailCoverage": {
-  "candidates": 2948,
+  "candidates": 3930,
   "requested": 0,
   "succeeded": 0
  },
  "historySource": {
   "real": 0,
-  "backcalc": 3742
+  "backcalc": 4912
  },
- "dedupDropped": 2561,
+ "dedupDropped": 4085,
  "invalidDropped": 0,
- "cappedFrom": 3737,
+ "cappedFrom": 4904,
  "outputCap": 1000,
  "outputDateSpread": 5
 }
