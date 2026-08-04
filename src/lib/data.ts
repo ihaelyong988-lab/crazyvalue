@@ -1,6 +1,6 @@
 import type { AuctionItem, Category } from "@/types/auction";
 import { CATEGORIES } from "@/types/catalog";
-import { dday, isValidDateOnly, seoulDateTime, shiftDays, todaySeoul } from "@/lib/format";
+import { dday, isValidDateOnly, todaySeoul } from "@/lib/format";
 
 // 필터·정렬·픽·손상 판정 — 전부 순수 함수. 화면 코드는 이 모듈만 사용한다.
 // CATEGORIES는 catalog에서 가져온다 — types/auction 경유는 zod를 클라이언트 번들에 끌어온다(§13 규칙 4).
@@ -152,33 +152,6 @@ export function applyFilters(items: AuctionItem[], f: Filters): AuctionItem[] {
 function latestFailDate(item: AuctionItem): string {
   const fails = item.history.filter((h) => h.result === "유찰").map((h) => h.date);
   return fails.length ? fails.sort().at(-1)! : "0000-00-00";
-}
-
-/**
- * 이번 주 신규: 유찰 2회째 도달이 **오늘 기준** 7일 창 안인 물건.
- * 판정창을 crawledAt에 걸면 갱신이 밀린 주에 13~16일 전 물건이 "이번 주"로 단정된다(감사 40) —
- * 하한은 오늘−7일, 상한은 crawledAt(수집 시점 이후 사실은 아직 없다). 지연 주에는 결과가 비고 섹션이 사라진다.
- */
-export function isNewThisWeek(
-  item: AuctionItem,
-  crawledAt: string,
-  today: string = todaySeoul(),
-): boolean {
-  const fails = item.history.filter((h) => h.result === "유찰").map((h) => h.date).sort();
-  if (fails.length < 2) return false;
-  const crawlDate = seoulDateTime(crawledAt)?.date;
-  const from = shiftDays(today, -7);
-  if (!crawlDate || from === null) return false;
-  const secondFail = fails[1];
-  return secondFail >= from && secondFail <= crawlDate;
-}
-
-export function newThisWeek(
-  items: AuctionItem[],
-  crawledAt: string,
-  today: string = todaySeoul(),
-): AuctionItem[] {
-  return items.filter((i) => isNewThisWeek(i, crawledAt, today));
 }
 
 export function sortItems(

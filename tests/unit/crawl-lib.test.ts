@@ -4,6 +4,7 @@ import {
   acceptPage,
   buildSummaryLine,
   capAcrossSaleDates,
+  countNewIds,
   createListAccumulator,
   deriveRowKey,
   gateItems,
@@ -119,7 +120,9 @@ describe("gateItems — 강등 게이트: 개별 드롭+카운트, 유효 부분
   });
 });
 
-describe("capAcrossSaleDates — 산출물 상한: 갱신 주기 내 매각기일 배분", () => {
+describe("capAcrossSaleDates — 산출물 상한: 배분 창 안의 매각기일 배분", () => {
+  // windowEnd는 호출부가 정한다 — 수집일 + OUTPUT_WINDOW_DAYS(7). 아래 창 끝 2026-08-09는
+  // 수집일 08-02 기준값이다. 창을 갱신 주기로 잡으면 매일 갱신에서 하루로 붕괴한다(crawl-config 주석).
   // 기일 하나에 n건을 만든다. priceRatio는 i가 커질수록 비싸다(선별 순서 검증용).
   const cell = (saleDate: string, n: number) =>
     Array.from({ length: n }, (_, i) => ({
@@ -141,7 +144,7 @@ describe("capAcrossSaleDates — 산출물 상한: 갱신 주기 내 매각기�
     const { capped, cappedFrom, dateSpread } = capAcrossSaleDates(items, OUTPUT_CAP, "2026-08-09");
     expect(cappedFrom).toBe(4400);
     expect(capped).toHaveLength(OUTPUT_CAP);
-    expect(dateSpread).toBe(5); // 하루가 아니라 갱신 주기 안 5개 기일 전부
+    expect(dateSpread).toBe(5); // 하루가 아니라 배분 창 안 5개 기일 전부
     const per = countByDate(capped);
     expect(per["2026-08-03"]).toBe(200);
     expect(per["2026-08-07"]).toBe(200);
@@ -156,7 +159,7 @@ describe("capAcrossSaleDates — 산출물 상한: 갱신 주기 내 매각기�
     expect(capped).toHaveLength(OUTPUT_CAP);
   });
 
-  it("갱신 주기 밖 기일은 창 안을 다 채운 뒤에만 임박순으로 채운다", () => {
+  it("배분 창 밖 기일은 창 안을 다 채운 뒤에만 임박순으로 채운다", () => {
     const items = [
       ...cell("2026-08-03", 300), // 창 안 전량으로도 상한에 못 미친다
       ...cell("2026-08-10", 5000),
@@ -192,6 +195,29 @@ describe("capAcrossSaleDates — 산출물 상한: 갱신 주기 내 매각기�
     expect(cappedFrom).toBe(2);
     expect(dateSpread).toBe(2);
     expect(items.map((i) => i.id)).toEqual(["b", "a"]); // 원본 불변
+  });
+});
+
+describe("countNewIds — 직전 산출물 대비 신규 유입 건수(기준일 바 '신규 N건')", () => {
+  const ids = (...values: string[]) => new Set(values);
+
+  it("직전에 없던 id만 센다 — 일부 겹침", () => {
+    expect(countNewIds(ids("a", "b", "c"), ids("b", "c", "d", "e"))).toBe(2);
+  });
+  it("겹치는 id가 하나도 없으면 이번 산출 전량이 신규", () => {
+    expect(countNewIds(ids("a", "b"), ids("c", "d", "e"))).toBe(3);
+  });
+  it("전부 직전에 있던 id면 0 — 이탈분(직전에만 있는 id)은 세지 않는다", () => {
+    // 신규는 "새로 유입"만 말한다. 목록에서 빠진 물건까지 세면 변동 건수가 되어 의미가 뒤섞인다.
+    expect(countNewIds(ids("a", "b", "c"), ids("a", "b"))).toBe(0);
+  });
+  it("직전 집합이 비어 있으면 전량 신규", () => {
+    // 비교 대상 자체가 없는 상태(첫 실행·파일 결측)는 여기서 0이 아니라 null로 처리된다 —
+    // 그 판정은 호출부(crawl.ts readPreviousIds)에 있고, 이 함수는 주어진 두 집합만 본다.
+    expect(countNewIds(ids(), ids("a", "b"))).toBe(2);
+  });
+  it("이번 산출이 비면 0", () => {
+    expect(countNewIds(ids("a", "b"), ids())).toBe(0);
   });
 });
 

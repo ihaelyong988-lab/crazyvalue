@@ -6,7 +6,6 @@ import {
   EMPTY_FILTERS,
   applyFilters,
   districtKey,
-  isNewThisWeek,
   isPick,
   isValidAuctionItem,
   parseDistrictKey,
@@ -134,36 +133,9 @@ describe("sortItems — 4종 정렬", () => {
   });
 });
 
-describe("isNewThisWeek — 이번 갱신에서 유찰 2회 도달", () => {
-  const CRAWLED = "2026-07-12T03:00:00+09:00";
-  const freshItem = mk({
-    history: [
-      { date: "2026-05-01", minPrice: 100_000_000, result: "신건" },
-      { date: "2026-06-05", minPrice: 100_000_000, result: "유찰" },
-      { date: "2026-07-10", minPrice: 70_000_000, result: "유찰" },
-    ],
-  });
-  it("2회째 유찰이 7일 이내면 신규", () => {
-    expect(isNewThisWeek(freshItem, CRAWLED, "2026-07-13")).toBe(true);
-  });
-  it("2회째 유찰이 오래됐으면 신규 아님", () => {
-    const item = mk({
-      history: [
-        { date: "2026-03-01", minPrice: 100_000_000, result: "신건" },
-        { date: "2026-04-05", minPrice: 100_000_000, result: "유찰" },
-        { date: "2026-05-10", minPrice: 70_000_000, result: "유찰" },
-      ],
-    });
-    expect(isNewThisWeek(item, CRAWLED, "2026-07-13")).toBe(false);
-  });
-  it("갱신이 밀린 주에 2주 전 물건을 '이번 주'로 단정하지 않는다(감사 40)", () => {
-    // 기준일 2026-07-12 데이터를 07-22에 보는 상황 — 12일 전 유찰을 이번 주로 표기하던 결함.
-    expect(isNewThisWeek(freshItem, CRAWLED, "2026-07-22")).toBe(false);
-    // 경계: 오늘−7일(07-17)까지가 창, 그 안이면 여전히 신규
-    expect(isNewThisWeek(freshItem, CRAWLED, "2026-07-17")).toBe(true);
-    expect(isNewThisWeek(freshItem, CRAWLED, "2026-07-18")).toBe(false);
-  });
-});
+// isNewThisWeek(이력 기반 "이번 주 신규") 테스트는 함수와 함께 삭제됐다 — 매일 갱신에서는 주 단위
+// 판정창이 성립하지 않고, 신규 여부는 이력 역산이 아니라 직전 산출물과의 id 대조로 센다
+// (scripts/crawl-lib.ts countNewIds · tests/unit/crawl-lib.test.ts).
 
 describe("isValidAuctionItem — 손상 항목 폐기(감사 36)", () => {
   it("계약을 지킨 항목은 통과", () => {

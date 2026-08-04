@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { Home, RefreshCw, Star, Info, Settings } from "lucide-react";
 import { readDiffCache } from "@/lib/watchlist";
 
-// 탭 5개 — 홈 옆 "리프레쉬"는 주간 갱신을 기다리지 않고 지금 시점으로 다시 수집한다(2026-08-02 지시).
+// 탭 5개 — 홈 옆 "리프레쉬"는 다음 새벽 갱신을 기다리지 않고 지금 시점으로 다시 수집한다(2026-08-02 지시).
 // 375px 기준 탭 폭 75px·높이 56px로 5개에서도 터치 타깃 44px 플로어를 유지한다(4개일 때는 93px였다).
 const TABS = [
   { href: "/", label: "홈", icon: Home },

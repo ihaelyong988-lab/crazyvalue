@@ -6,13 +6,12 @@ import {
   formatDateKr,
   formatDday,
   formatKrw,
+  formatMonthDayKr,
   isValidDateOnly,
   parseDateOnly,
-  isFreshUpdate,
   seoulDateTime,
   shiftDays,
   todaySeoul,
-  updateDelay,
 } from "@/lib/format";
 
 describe("formatKrw — 한국식 축약(만 단위 미만 내림)", () => {
@@ -110,38 +109,18 @@ describe("seoulDateTime — 수집 시각 실값 표기(감사 38)", () => {
   });
 });
 
-describe("updateDelay — 갱신 지연 판정(감사 92)", () => {
-  const due = "2026-07-19T03:00:00+09:00";
-  it("예정 시각이 지났으면 지연 일수(내림)를 준다", () => {
-    expect(updateDelay(due, new Date("2026-07-22T09:00:00+09:00"))).toEqual({ overdue: true, days: 3 });
-    expect(updateDelay(due, new Date("2026-07-19T10:00:00+09:00"))).toEqual({ overdue: true, days: 0 });
-  });
-  it("예정 시각 이전이면 지연 아님", () => {
-    expect(updateDelay(due, new Date("2026-07-19T02:59:00+09:00"))).toEqual({ overdue: false, days: 0 });
-  });
-  it("파싱 불가면 null — 지연 여부를 단정하지 않는다", () => {
-    expect(updateDelay("미정", new Date("2026-07-22T09:00:00+09:00"))).toBeNull();
-  });
-});
-
-describe("isFreshUpdate — 갱신 직후 판정(2026-08-02 지시: 갱신을 방문자가 인식해야 한다)", () => {
-  const crawled = "2026-08-02T04:46:57+09:00";
-  it("기본 3일 창 안이면 갱신 직후", () => {
-    expect(isFreshUpdate(crawled, 3, new Date("2026-08-02T09:00:00+09:00"))).toBe(true);
-    expect(isFreshUpdate(crawled, 3, new Date("2026-08-05T23:00:00+09:00"))).toBe(true);
-  });
-  it("창을 벗어나면 갱신 직후가 아니다", () => {
-    expect(isFreshUpdate(crawled, 3, new Date("2026-08-06T00:10:00+09:00"))).toBe(false);
-  });
-  it("파싱 불가면 null — 갱신 여부를 단정하지 않는다", () => {
-    expect(isFreshUpdate("미정", 3, new Date("2026-08-02T09:00:00+09:00"))).toBeNull();
-  });
-});
-
 describe("표기 유틸", () => {
   it("formatDateKr 요일", () => {
     expect(formatDateKr("2026-07-12")).toBe("2026-07-12(일)");
     expect(formatDateKr("2026-07-18")).toBe("2026-07-18(토)");
+  });
+  it("formatMonthDayKr — 기준일 바용 짧은 표기(연도 생략, 요일 동일)", () => {
+    expect(formatMonthDayKr("2026-08-03")).toBe("08-03(월)");
+    expect(formatMonthDayKr("2026-07-12")).toBe("07-12(일)");
+  });
+  it("formatMonthDayKr 무효 날짜는 formatDateKr과 같은 규약으로 원값 그대로", () => {
+    expect(formatMonthDayKr("2026-02-30")).toBe("2026-02-30");
+    expect(formatMonthDayKr("")).toBe("");
   });
   it("formatArea ㎡+평 병기, null은 -", () => {
     expect(formatArea(84.9)).toBe("84.9㎡ (25.7평)");

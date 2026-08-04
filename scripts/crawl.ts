@@ -42,6 +42,7 @@ import {
   ENDPOINTS,
   LAND_EXACT,
   OUTPUT_CAP,
+  OUTPUT_WINDOW_DAYS,
   POLITENESS,
   REGION_KEY_BY_SD_CD,
   REGION_KEY_BY_SIDO_PREFIX,
@@ -55,6 +56,7 @@ import {
   acceptPage,
   buildSummaryLine,
   capAcrossSaleDates,
+  countNewIds,
   createListAccumulator,
   gateItems,
   isStalled,
@@ -134,6 +136,12 @@ function ymdKst(offsetDays: number): string {
   return `${d.getUTCFullYear()}${pad2(d.getUTCMonth() + 1)}${pad2(d.getUTCDate())}`;
 }
 
+/** KST 기준 오늘+offsetDays 를 YYYY-MM-DD 로 — saleDate(날짜 전용)와 직접 비교하는 경계값용 */
+function isoDayKst(offsetDays: number): string {
+  const ymd = ymdKst(offsetDays);
+  return `${ymd.slice(0, 4)}-${ymd.slice(4, 6)}-${ymd.slice(6)}`;
+}
+
 /** KST 현재를 +09:00 오프셋 포함 ISO 문자열로 */
 function isoKstNow(): string {
   const d = kstNow();
@@ -143,12 +151,15 @@ function isoKstNow(): string {
   );
 }
 
-/** 다음 일요일 03:00 KST(주간 cron `0 18 * * 6` UTC의 다음 실행 시각) */
-function nextSundayThreeAmKst(): string {
+/**
+ * 다음 03:00 KST — 매일 갱신 cron의 다음 실행 시각.
+ * 정기 슬롯은 03:00 직후에 돌므로 결과가 "내일 03:00"이고, 그보다 이른 시각의 실행(리프레쉬 등)은
+ * 당일 03:00이 된다 — 요일이 아니라 실제 다음 슬롯을 가리킨다.
+ */
+function nextThreeAmKst(): string {
   const now = kstNow();
   const candidate = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 3, 0, 0));
-  candidate.setUTCDate(candidate.getUTCDate() + ((7 - candidate.getUTCDay()) % 7));
-  if (candidate.getTime() <= now.getTime()) candidate.setUTCDate(candidate.getUTCDate() + 7);
+  if (candidate.getTime() <= now.getTime()) candidate.setUTCDate(candidate.getUTCDate() + 1);
   return (
     `${candidate.getUTCFullYear()}-${pad2(candidate.getUTCMonth() + 1)}-${pad2(candidate.getUTCDate())}` +
     `T03:00:00+09:00`
@@ -699,6 +710,35 @@ function mapRow(row: RawRow, detail: DetailResult | null, todayYmd: string, fail
 }
 
 // ---------------------------------------------------------------------------
+// 직전 산출물 대조 — 신규 건수(meta.newCount)
+// ---------------------------------------------------------------------------
+
+/**
+ * 직전 산출물의 id 집합 — 신규 건수의 비교 기준. 지역 파일 17개를 **전부** 읽어야 성립한다.
+ * 하나라도 없거나 파싱에 실패하면 null이다 — 기준이 빠진 지역의 물건이 통째로 신규로 계상돼
+ * 수치가 부풀기 때문이다(첫 실행도 같은 이유로 null: "새로 유입"을 말할 근거가 없다).
+ * 지역 파일을 덮어쓰기 전에 호출해야 한다.
+ */
+function readPreviousIds(outDir: string): Set<string> | null {
+  const ids = new Set<string>();
+  for (const r of REGIONS) {
+    const file = join(outDir, `${r.key}.json`);
+    if (!existsSync(file)) return null;
+    try {
+      const parsed = JSON.parse(readFileSync(file, "utf8")) as unknown;
+      if (!Array.isArray(parsed)) return null;
+      for (const row of parsed) {
+        const id = (row as { id?: unknown }).id;
+        if (typeof id === "string") ids.add(id);
+      }
+    } catch {
+      return null;
+    }
+  }
+  return ids;
+}
+
+// ---------------------------------------------------------------------------
 // 메인
 // ---------------------------------------------------------------------------
 
@@ -927,14 +967,16 @@ async function main(): Promise<void> {
     process.exit(1);
   }
 
-  // 산출물 상한 — 다음 갱신일까지의 매각기일에 배분해 OUTPUT_CAP건을 산출한다.
-  // 임박순 단순 절단은 상한을 첫 기일에서 소진해 갱신 주기의 나머지 날을 빈 채로 남긴다(crawl-lib 주석).
-  const nextUpdateAt = nextSundayThreeAmKst();
+  // 산출물 상한 — 수집일부터 OUTPUT_WINDOW_DAYS일의 매각기일에 배분해 OUTPUT_CAP건을 산출한다.
+  // 임박순 단순 절단은 상한을 첫 기일에서 소진해 창의 나머지 날을 빈 채로 남긴다(crawl-lib 주석).
+  // 창 경계는 미포함이라 오늘~오늘+6일 7일치다. 갱신 주기(nextUpdateAt)를 경계로 쓰지 않는 이유는
+  // crawl-config OUTPUT_WINDOW_DAYS 주석 참조 — 매일 갱신에서는 창이 하루로 붕괴한다.
+  const outputWindowEnd = isoDayKst(OUTPUT_WINDOW_DAYS);
   const {
     capped: outItems,
     cappedFrom,
     dateSpread,
-  } = capAcrossSaleDates(gate.valid, OUTPUT_CAP, nextUpdateAt.slice(0, 10));
+  } = capAcrossSaleDates(gate.valid, OUTPUT_CAP, outputWindowEnd);
   // 중복 드롭 합계 = 목록 수신 시점 dedupe(acc.received − 고유) + 게이트 중복 id.
   const dedupDropped = acc.received - rows.length + gate.dupDropped;
   const summaryLine = buildSummaryLine({
@@ -976,6 +1018,13 @@ async function main(): Promise<void> {
   // 6) 산출 — --region이면 해당 지역 파일과 meta만, 아니면 17개 전 파일 + meta
   const outDir = join(process.cwd(), "public", "data");
   mkdirSync(outDir, { recursive: true });
+
+  // 신규 건수 — 직전 산출물에 없던 물건 수. 지역 파일을 덮어쓰기 **전에** 읽어야 비교가 성립한다.
+  // 부분 수집(--region)은 비교하지 않는다 — 이번 산출에 없는 나머지 지역이 전부 이탈로 보여
+  // 신규만 남은 수치가 되기 때문이다(직전 기준이 불완전할 때와 같은 왜곡).
+  const previousIds = opts.region === null ? readPreviousIds(outDir) : null;
+  const newCount = previousIds === null ? null : countNewIds(previousIds, new Set(outItems.map((i) => i.id)));
+
   const targets = opts.region ? REGIONS.filter((r) => r.key === opts.region) : REGIONS;
   const countsByRegion: Record<string, number> = {};
   for (const r of REGIONS) {
@@ -1008,7 +1057,9 @@ async function main(): Promise<void> {
     crawledAt: isoKstNow(),
     totalCount: Object.values(countsByRegion).reduce((a, b) => a + b, 0),
     countsByRegion,
-    nextUpdateAt,
+    // 화면은 더 이상 다음 갱신 시각을 쓰지 않지만 기록 필드로 남긴다(운영 판정에서 슬롯 간격을 읽는다).
+    nextUpdateAt: nextThreeAmKst(),
+    newCount,
     scope: opts.region ?? null,
     aborted,
     abortReason: aborted ? abortReason : null,
@@ -1030,7 +1081,8 @@ async function main(): Promise<void> {
   // (AGENTS.md §9 2026-07-27 원장: 앞선 실패의 요청 수를 경과시간÷1.2초로 역산해야 했다).
   console.log(summaryLine);
   console.log(
-    `수집 완료 — 총 ${outItems.length}건 · 픽 ${picks}건 · 지역 ${byRegion.size}개 · 기일 ${dateSpread}일 · 소요 ${elapsed}초 · ` +
+    `수집 완료 — 총 ${outItems.length}건 · 픽 ${picks}건 · 신규 ${newCount ?? "미비교"}건 · ` +
+      `지역 ${byRegion.size}개 · 기일 ${dateSpread}일 · 소요 ${elapsed}초 · ` +
       `라이브 요청 ${liveRequestCount}회 · 상세 ${succeeded}/${candidateIdx.length}건(절단 ${truncated}건) · ` +
       `조기 종료 ${aborted ? abortReason : "없음"}`,
   );

@@ -10,7 +10,7 @@ export function ItemCard({ item, compact = false }: { item: AuctionItem; compact
   const days = dday(item.saleDate);
   const pct = discountPct(item.priceRatio);
   // relative 필수(§9 2026-07-23): 내부 sr-only는 position:absolute라, 기준 블록이 없으면
-  // 가로 캐러셀(RecentViewed·NewThisWeek, overflow-x-auto) 밖으로 탈출해 문서 scrollWidth를
+  // 가로 캐러셀(RecentViewed, overflow-x-auto) 밖으로 탈출해 문서 scrollWidth를
   // 늘린다 → 모바일 레이아웃 뷰포트가 넓어져 하단 고정 CTA·탭바가 밀려 잘린다.
   return (
     <Link

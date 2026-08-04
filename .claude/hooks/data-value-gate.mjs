@@ -7,8 +7,8 @@
  * 전부 통과·배포·성공 보고로 끝났다. 검증이 파이프라인 안쪽에서 멈추고 방문자 화면까지 오지 않으면
  * 같은 구멍이 반복된다 — 리마인더가 아니라 채점기가 필요하다(AGENTS.md §3·하네스 Loop 규칙).
  *
- * 판정 기준 시각은 실행 시각이 아니라 meta.crawledAt이다. "갱신 시점에 이 산출물이 다음 갱신까지
- * 버틸 수 있었는가"를 묻는 것이라 며칠 뒤 돌려도 같은 결과가 나온다(결정적 채점).
+ * 판정 기준 시각은 실행 시각이 아니라 meta.crawledAt이다. "갱신 시점에 이 산출물이 배분 창
+ * (OUTPUT_WINDOW_DAYS)을 덮었는가"를 묻는 것이라 며칠 뒤 돌려도 같은 결과가 나온다(결정적 채점).
  *
  * 사용: node .claude/hooks/data-value-gate.mjs [--check|--pass]
  *   --check(기본) 채점 후 위반이 있으면 exit 1
@@ -22,6 +22,13 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const DATA = join(ROOT, "public", "data");
 const STATE = join(ROOT, ".claude", "hooks", ".state");
 const MARKER = join(STATE, "data-value-pass");
+
+/**
+ * 산출물이 덮는 매각기일 창(수집일 포함 일수). scripts/crawl-config.ts OUTPUT_WINDOW_DAYS와
+ * 같은 값 — 한쪽만 바꾸면 채점이 거짓이 된다(창은 8일인데 게이트는 7일치만 요구하는 식).
+ * .mjs에서 .ts를 import할 수 없어 복제한다.
+ */
+const OUTPUT_WINDOW_DAYS = 7;
 
 /** date-only 기준 n일 이동. 기일 연산은 UTC 자정 고정으로만 한다(§13 규칙 12와 동일 규약). */
 const shiftDays = (dateOnly, days) =>
@@ -55,22 +62,18 @@ function load() {
 
 function grade({ meta, items }) {
   const base = dateOf(meta.crawledAt);
-  const nextUpdate = dateOf(meta.nextUpdateAt);
-  if (!base || !nextUpdate) {
+  if (!base) {
     return {
       base: null,
-      violations: [
-        {
-          rule: "R0",
-          msg: `meta 시각을 읽을 수 없다 — crawledAt=${meta.crawledAt} nextUpdateAt=${meta.nextUpdateAt}`,
-        },
-      ],
+      violations: [{ rule: "R0", msg: `meta 시각을 읽을 수 없다 — crawledAt=${meta.crawledAt}` }],
     };
   }
   const violations = [];
   const live = items.filter((i) => typeof i.saleDate === "string" && i.saleDate >= base);
   const dates = [...new Set(live.map((i) => i.saleDate))].sort();
-  let lastUseful = shiftDays(nextUpdate, -1);
+  // 배분 창의 마지막 날. 갱신이 매일이 된 뒤로 "다음 갱신 직전일"은 항상 내일이라 아무것도 묻지
+  // 않는 기준이 됐다 — 물어야 하는 것은 산출물이 배분 창 7일을 실제로 덮었는가다.
+  let lastUseful = shiftDays(base, OUTPUT_WINDOW_DAYS - 1);
   while (isWeekend(lastUseful)) lastUseful = shiftDays(lastUseful, -1);
 
   // R1 기일 커버리지 — 산출물이 하루로 수렴하면 그 다음 날부터 전 물건이 기일 경과가 된다.
@@ -80,12 +83,12 @@ function grade({ meta, items }) {
       msg: `미경과 매각기일이 ${dates.length}일뿐이다(${dates.join(", ") || "없음"}) — 갱신 주기 내내 물건이 남아야 한다`,
     });
   }
-  // R2 갱신 주기 생존 — 다음 갱신 직전일까지 입찰 가능한 물건이 남아야 한다.
+  // R2 배분 창 생존 — 창 마지막 날까지 입찰 가능한 물건이 남아야 한다.
   const maxDate = dates.at(-1) ?? null;
   if (!maxDate || maxDate < lastUseful) {
     violations.push({
       rule: "R2",
-      msg: `최종 매각기일 ${maxDate ?? "없음"} < 다음 갱신 직전일 ${lastUseful} — 그 사이 방문자에게는 전 물건이 기일 경과다`,
+      msg: `최종 매각기일 ${maxDate ?? "없음"} < 배분 창 ${OUTPUT_WINDOW_DAYS}일 마지막 날 ${lastUseful} — 그 사이 방문자에게는 전 물건이 기일 경과다`,
     });
   }
   // R3 지역 커버리지 — 절반 넘는 시도가 0건이면 지역 필터가 대부분 빈 결과가 된다.
@@ -95,22 +98,18 @@ function grade({ meta, items }) {
   if (zero.length > 8) {
     violations.push({ rule: "R3", msg: `0건 시도 ${zero.length}개(${zero.join(", ")})` });
   }
-  // R4 갱신 체감 — "이번 주 신규"가 0이면 홈에서 섹션이 통째로 사라져 갱신이 화면에 드러나지 않는다.
-  // 앱(data.ts isNewThisWeek)과 같은 규칙을 게이트가 독립 재구현해 대조한다(적대적 채점).
-  const from = shiftDays(base, -7);
-  const fresh = items.filter((i) => {
-    const fails = (i.history ?? [])
-      .filter((h) => h.result === "유찰")
-      .map((h) => h.date)
-      .sort();
-    return fails.length >= 2 && fails[1] >= from && fails[1] <= base;
-  });
-  if (fresh.length === 0) {
-    violations.push({
-      rule: "R4",
-      msg: `이번 주 신규 0건(판정창 ${from}~${base}) — 홈 신규 섹션이 사라져 방문자가 갱신을 인식하지 못한다`,
-    });
-  }
+  // R4(갱신 체감)는 폐기했다 — 번호는 재사용하지 않는다(순번 불변). 남는 규칙은 R1·R2·R3·R5다.
+  //
+  // newCount===0을 위반으로 본 판정은 구조적으로 매주 2일 오발화한다. 배분 창은 하루씩 굴러가는데
+  // 토·일·월의 창은 평일 집합이 완전히 같아(08-08 창[08-08,08-14] · 08-09 창[08-09,08-15] ·
+  // 08-10 창[08-10,08-16]이 모두 평일 08-10~08-14) 새 기일을 하나도 물어오지 못한다. 반대로 평일의
+  // "신규 200건"도 새 물건이 아니라 창이 하루 굴러 들어온 기일 한 칸이다 — newCount가 재는 값에는
+  // 창 회전량이 섞여 있어 "새로 유입된 물건"의 척도가 아니다.
+  //
+  // 갱신 인식은 이제 데이터가 아니라 화면 구조가 보장한다: 기준일 바가 배지를 상시 노출하고 실수집
+  // 시각을 표기하므로 데이터 채점으로 막을 대상이 아니다. 커버리지는 R1·R2가 이미 지킨다.
+  // newCount는 채점하지 않고 요약에 관측값으로만 싣는다.
+  const newCount = meta.newCount ?? null;
   // R5 관측 신호 정합 — meta의 기일수가 실제와 어긋나면 이후 운영 판정이 전부 거짓 위에 선다.
   const spread = new Set(items.map((i) => i.saleDate)).size;
   if (meta.outputDateSpread !== undefined && meta.outputDateSpread !== spread) {
@@ -119,7 +118,7 @@ function grade({ meta, items }) {
       msg: `meta.outputDateSpread=${meta.outputDateSpread} ≠ 실제 기일수 ${spread}`,
     });
   }
-  return { base, violations, stats: { total: items.length, dates: dates.length, fresh: fresh.length, zero: zero.length } };
+  return { base, violations, stats: { total: items.length, dates: dates.length, newCount, zero: zero.length } };
 }
 
 const mode = process.argv[2] ?? "--check";
@@ -127,8 +126,9 @@ const loaded = load();
 const { base, violations, stats } = grade(loaded);
 console.log(
   `산출물 가치 게이트 — 기준 ${base ?? "미확인"} · 총 ${stats?.total ?? 0}건 · ` +
-    `미경과 기일 ${stats?.dates ?? 0}일 · 이번 주 신규 ${stats?.fresh ?? 0}건 · 0건 시도 ${stats?.zero ?? 0}개 · ` +
-    `위반 ${violations.length}건`,
+    `미경과 기일 ${stats?.dates ?? 0}일 · ` +
+    `직전 대비 신규 ${typeof stats?.newCount === "number" ? `${stats.newCount}건` : "미비교"} · ` +
+    `0건 시도 ${stats?.zero ?? 0}개 · 위반 ${violations.length}건`,
 );
 for (const v of violations) console.log(`  [${v.rule}] ${v.msg}`);
 

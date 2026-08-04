@@ -26,6 +26,8 @@ function publish(patch: Partial<MetaState>): void {
   for (const notify of listeners) notify(state);
 }
 
+// 필수 4필드만 검사한다 — newCount를 비롯한 optional 필드는 옛 meta.json(서비스워커 캐시)에 없고,
+// 여기에 더하면 재방문자의 기준일 바가 통째로 미확인으로 떨어진다. 소비처는 값 부재를 표시로 흡수한다.
 function isMeta(v: unknown): v is Meta {
   const m = v as Meta;
   return (
@@ -68,7 +70,7 @@ export async function readMeta(force = false): Promise<Meta> {
   return inflight;
 }
 
-// 재검증 간격 하한 — 데이터는 주 1회 갱신이므로 앱 전환마다 요청할 이유가 없다.
+// 재검증 간격 하한 — 갱신은 새벽 1회뿐이라 앱 전환마다 meta를 다시 받을 이유가 없다.
 const REVALIDATE_MIN_MS = 5 * 60_000;
 let lastRevalidatedAt = 0;
 

@@ -73,6 +73,12 @@ export const MetaSchema = z.object({
   totalCount: z.number().int().nonnegative(),
   countsByRegion: z.record(z.string(), z.number().int().nonnegative()),
   nextUpdateAt: z.string(),
+  /**
+   * 직전 산출물에 없던 물건 수. 비교 대상이 없거나 부분 수집이면 null(=건수를 감춘다).
+   * optional인 이유는 아래 운영 필드와 같다 — 배포된 meta.json에 이 필드가 없고, 서비스워커 캐시로
+   * 옛 meta를 읽는 재방문자가 있어 필수로 두면 그 방문자의 화면이 깨진다.
+   */
+  newCount: z.number().int().nonnegative().nullable().optional(),
   // 아래 운영 필드는 전부 optional이다 — 기존 public/data/meta.json에 없고 src/lib/use-meta.ts의
   // isMeta()가 위 4필드만 검사하므로 추가 필드는 앱 동작에 무영향이다.
   // 의미를 한 필드에 겹치지 않는다: "후보가 예산보다 많다"(truncated)와 "차단·마감으로 끊겼다"(aborted)는

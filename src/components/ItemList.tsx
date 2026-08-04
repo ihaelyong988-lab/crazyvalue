@@ -46,7 +46,7 @@ export function ItemList({
         description={
           relaxActions.length > 0
             ? "아래 버튼으로 조건을 해제하면 결과 범위가 넓어집니다."
-            : "데이터는 매주 일요일 갱신됩니다."
+            : "데이터는 매일 03:00 갱신됩니다."
         }
         actions={relaxActions}
       />

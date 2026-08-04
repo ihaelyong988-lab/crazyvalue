@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://crazyvalue.vercel.app"),
   title: "미친가치 CrazyValue",
   description:
-    "유찰 2회 이상, 가치 대비 가격이 내려간 법원경매 물건 큐레이션. 데이터는 매주 일요일 갱신되며 법적 효력은 법원 공고 원문이 우선한다.",
+    "유찰 2회 이상, 가치 대비 가격이 내려간 법원경매 물건 큐레이션. 데이터는 매일 03:00 갱신되며 법적 효력은 법원 공고 원문이 우선한다.",
   // iOS 홈 화면 추가 아이콘(감사 2차 66) — 매니페스트 아이콘을 쓰지 않는 경로를 덮는다.
   // 파비콘은 src/app/favicon.ico 파일 규약이 그대로 담당한다.
   icons: {

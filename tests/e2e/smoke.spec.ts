@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 import path from "node:path";
-import { expect, test, type Page } from "@playwright/test";
+import { expect, test, type Locator, type Page } from "@playwright/test";
 import { formatKrw } from "../../src/lib/format";
 
 // E2E 스모크 8종(기획안 §8 Phase 2.7). 시드 고정 목데이터(public/data/seoul.json)를
@@ -205,6 +205,48 @@ test("공유 URL 복사", async ({ page }) => {
   const copied = await page.evaluate(() => navigator.clipboard.readText());
   expect(copied).toContain("/item/");
 });
+
+// 기준일 바는 AppShell 헤더에 있어 모든 화면 상단에 상시 뜬다(§4.4-8) — 가드도 화면 단위여야 한다.
+// 홈에만 걸었던 앞선 가드는 /guide 본문에 남아 있던 "다음 갱신일까지의 매각기일"을 통과시켰다.
+// 화면을 배열로 두어 화면이 늘어도 같은 단언이 따라간다. ready는 그 화면이 실제로 렌더됐다는 표식이다 —
+// 없으면 404·옛 번들을 서빙해도 부정 단언이 조용히 통과한다(§9 원장 2026-08-02).
+const BAR_SCREENS: { name: string; path: string; ready: (page: Page) => Locator }[] = [
+  {
+    name: "홈",
+    path: "/",
+    ready: (page) => page.getByRole("heading", { level: 1, name: /유찰 2회 이상/ }),
+  },
+  { name: "리스트", path: "/list", ready: (page) => page.getByLabel("정렬") },
+  {
+    name: "안내",
+    path: "/guide",
+    ready: (page) => page.getByRole("heading", { name: /기준 공개/ }),
+  },
+];
+
+for (const screen of BAR_SCREENS) {
+  test(`기준일 바 — ${screen.name}: 새로 갱신 배지 상시 · 수집 시각만 표기`, async ({ page }) => {
+    await suppressOnboarding(page);
+    await page.goto(screen.path);
+    await expect(screen.ready(page)).toBeVisible();
+
+    // 배지는 조건부가 아니다 — 매일 03:00 갱신이라 "갱신 직후인가"를 따로 판정하지 않는다.
+    const bar = page.getByRole("banner").locator("p").first();
+    await expect(bar.getByText("새로 갱신", { exact: true })).toBeVisible();
+
+    // 수집 날짜·시각은 갱신마다 바뀌므로 값을 고정하지 않고 표기 형식으로 단언한다(고정 픽스처 금지).
+    // 신규 건수는 직전 산출물과 비교할 수 있을 때만 붙는다 — 비교 대상이 없거나 0이면 감추므로 선택 항이되,
+    // 붙는다면 1 이상이다("신규 0건"이 새면 여기서 걸린다).
+    await expect(bar).toHaveText(
+      /^새로 갱신 \d{2}-\d{2}\([일월화수목금토]\) \d{2}:\d{2}( · 신규 [1-9][\d,]*건)?$/,
+    );
+
+    // 회귀 가드(2026-08-05 지시 2): 바에는 수집 날짜·시각·신규 건수만 두고,
+    // 화면 어디에도 "다음 갱신" 예고·지연 문구를 남기지 않는다.
+    await expect(page.getByText(/다음 갱신/)).toHaveCount(0);
+    await expect(page.getByText(/데이터 기준:/)).toHaveCount(0);
+  });
+}
 
 test("오류 상태 렌더", async ({ page }) => {
   await suppressOnboarding(page);

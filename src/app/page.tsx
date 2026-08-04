@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Category } from "@/types/auction";
-import { applyFilters, newThisWeek, type Filters, type PriceBandKey } from "@/lib/data";
+import { applyFilters, type Filters, type PriceBandKey } from "@/lib/data";
 import {
   buildListQuery,
   parseListQuery,
@@ -20,7 +20,6 @@ import { RegionFilter } from "@/components/RegionFilter";
 import { PriceFilter } from "@/components/PriceFilter";
 import { CategoryFilter } from "@/components/CategoryFilter";
 import { ResultButton } from "@/components/ResultButton";
-import { NewThisWeek } from "@/components/NewThisWeek";
 import { RecentViewed } from "@/components/RecentViewed";
 import { OnboardingSheet } from "@/components/OnboardingSheet";
 import { ListSkeleton } from "@/components/Skeleton";
@@ -46,12 +45,14 @@ function filtersFromQuery(query: string): Filters {
   return { regions, districts, priceBands, categories };
 }
 
-// ① 홈(검색) — 배치 순서(§4.3-①): 필터 3축 → 결과 버튼(고정) → 이번 주 신규 → 최근 본 물건.
+// ① 홈(검색) — 배치 순서(§4.3-①): 필터 3축 → 결과 버튼(고정) → 최근 본 물건.
+// "이번 주 신규" 섹션 제거: 갱신이 매일이라 주 단위 판정창이 성립하지 않고, 신규 건수는 기준일 바가
+// meta.newCount로 한 번만 말한다(1정보 1표시). 홈에서 같은 사실을 섹션으로 다시 세지 않는다.
 // 픽 진입 카드(감정가 50% 이하) 제거: 데이터셋 전체가 이미 유찰 2회 이상이라, 첫 화면 기준을
 // "유찰 2회 이상으로 값이 내려간 물건" 하나로 통일한다(2026-07-22 주인님 지시). 감정가 50% 기준은
 // 리스트 카드 픽 배지·/list?pick·안내(/guide)에만 부가정보로 남긴다.
 export default function HomePage() {
-  const { status, items, meta, retry } = useAuctionData();
+  const { status, items, retry } = useAuctionData();
   const [filters, setFilters] = useState<Filters>({
     regions: [],
     districts: [],
@@ -126,13 +127,9 @@ export default function HomePage() {
   };
 
   const count = useMemo(() => applyFilters(items, filters).length, [items, filters]);
-  const fresh = useMemo(
-    () => (meta ? newThisWeek(items, meta.crawledAt) : []),
-    [items, meta],
-  );
 
   // 필터 UI는 정적이므로 데이터와 무관하게 즉시 렌더한다(첫 페인트 = 필터 화면).
-  // 데이터 의존 블록(픽·신규·최근·건수)만 로드 후 표시 — LCP 예산(§13 규칙 4) 준수 구조.
+  // 데이터 의존 블록(최근 본 물건·건수)만 로드 후 표시 — LCP 예산(§13 규칙 4) 준수 구조.
   return (
     <div className="space-y-4 p-4 pb-8">
       <OnboardingSheet onDone={applyPrefs} />
@@ -167,12 +164,7 @@ export default function HomePage() {
       />
 
       {status === "loading" && <ListSkeleton rows={2} />}
-      {status === "ready" && (
-        <>
-          <NewThisWeek items={fresh} />
-          <RecentViewed items={items} />
-        </>
-      )}
+      {status === "ready" && <RecentViewed items={items} />}
 
       {status !== "error" && (
         <ResultButton

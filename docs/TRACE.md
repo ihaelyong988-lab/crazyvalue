@@ -48,13 +48,13 @@
 
 | 화면 | 행 | 사양 요지 | 구현 위치 | 상태 |
 |---|---|---|---|---|
-| ①홈-1 | 기준일 바 | "데이터 기준 … · 다음 갱신 …" 상단 고정 | components/DataDateBar.tsx (AppShell 헤더 고정) | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ①홈-1 | 기준일 바 | `[새로 갱신] 08-03(월) 19:58 · 신규 42건` 상단 고정(2026-08-05 규격 변경) | components/DataDateBar.tsx (AppShell 헤더 고정) + lib/format.ts formatMonthDayKr | 완료(E2E 8/8·게이트 0건·빌드 통과) → 규격 변경분은 아래 "매일 갱신 전환" 절 |
 | ①홈-2 | 필터1 지역 | 시도 17 그리드→시군구 칩(다중, 기본 전체) | components/RegionFilter.tsx | 완료(E2E 8/8·게이트 0건·빌드 통과) |
 | ①홈-3 | 필터2 금액 | 구간 칩 5종 복수 선택 | components/PriceFilter.tsx + lib/data.ts PRICE_BANDS | 완료(E2E 8/8·게이트 0건·빌드 통과) |
 | ①홈-4 | 필터3 용도 | 8분류 | components/CategoryFilter.tsx | 완료(E2E 8/8·게이트 0건·빌드 통과) |
 | ①홈-5 | 결과 버튼 | "물건 N건 보기" 실시간 갱신·높이 52px 하단 고정 | components/ResultButton.tsx (h-[52px] fixed) | 완료(E2E 8/8·게이트 0건·빌드 통과) |
-| ①홈-6 | 미친가치 픽 진입 | "픽 N건 — 감정가 대비 50% 이하" → 픽 필터 리스트 | components/PickEntry.tsx → /list?pick=1 | 완료(E2E 8/8·게이트 0건·빌드 통과) |
-| ①홈-7 | 이번 주 신규 | 신규 유찰2 도달 수 + 대표 3건 가로 스크롤 | components/NewThisWeek.tsx + lib/data.ts isNewThisWeek | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| ①홈-6 | 미친가치 픽 진입 | "픽 N건 — 감정가 대비 50% 이하" → 픽 필터 리스트 | components/PickEntry.tsx → /list?pick=1 | 완료 후 **사양 철회(2026-07-22 주인님 지시)** — 홈에서 제거, 픽 기준은 리스트 배지·/list?pick·/guide에 존치. PickEntry.tsx는 import 0의 잔여 파일 |
+| ①홈-7 | 이번 주 신규 | 신규 유찰2 도달 수 + 대표 3건 가로 스크롤 | components/NewThisWeek.tsx + lib/data.ts isNewThisWeek | 완료 후 **사양 철회(2026-08-05 주인님 확정)** — 컴포넌트·판정 함수 삭제, 신규 건수는 기준일 바가 표기 |
 | ①홈-8 | 최근 본 물건 | 최근 5건 가로 스크롤(없으면 미노출) | components/RecentViewed.tsx + lib/watchlist.ts recent | 완료(E2E 8/8·게이트 0건·빌드 통과) |
 | ①홈-9 | 온보딩 반영 | 설정 지역·금액 = 필터 초기값 | app/page.tsx applyPrefs | 완료(E2E 8/8·게이트 0건·빌드 통과) |
 | ②리-1 | 10건+더보기 | 무한스크롤 금지, 명시적 더보기 | components/ItemList.tsx + query.ts n 파라미터 | 완료(E2E 8/8·게이트 0건·빌드 통과) |
@@ -249,3 +249,16 @@
 | 실전 검증(당일 dispatch, 런 30481066785) | 수신 15,323 · 고유 8,741(중복드롭 6,614 = 43% 재서빙 실증) · 유효 8,438 → 상한 1,000건. 로봇탐지(요청 1,123회)는 조기 종료로 강등, 커밋 3fd4d74 완료 · 실취득 상세 737건 · 안내 이슈 #4 |
 | 배포 확인 | 프로덕션 meta crawledAt 2026-07-30T04:36 KST · totalCount 1000 실측 — 목데이터 120건 → 실데이터 전환. 17개 지역 파일 건수-meta 일치 · priceRatio (0,1] · detailUrl · saleDate 형식 이상 0건 · 매각기일 07-30~08-03 임박순 절단 |
 | 후속 발견·조치 | 대기열 캐치업이 이벤트 시점 SHA 체크아웃으로 옛 meta를 읽고 이중 실행(오탐 이슈 #5) → 게이트 직전 `git pull` 1줄. 세션 GET transport 거부 2회째 관측 — 파괴 없음, 일일 캐치업 자가 복구 |
+
+## 매일 갱신 전환 (2026-08-05 주인님 확정)
+
+> 갱신 주기를 주 1회 → 매일 03:00 KST로 올리고 홈 기준일 바 표기를 확정했다. 전환에서 밟은 함정과 처방은 AGENTS.md §9 [2026-08-05] 원장 2행.
+
+| 확정 사양 | 반영 위치 |
+|---|---|
+| 매일 03:00 KST 갱신 — KST 월~토 quick(경량) · 일 full(전량). 슬롯은 실행 여부가 아니라 모드를 가른다 | `.github/workflows/crawl.yml` — 데이터 나이(`STALE_DAYS`) 조건 삭제, 게이트가 `mode` 출력을 내고 crawl·commit 스텝이 그 값을 쓴다 |
+| 산출물 배분 창을 갱신 주기에서 떼어내 7일로 고정 | `scripts/crawl-config.ts` `OUTPUT_WINDOW_DAYS` · `scripts/crawl.ts` 창 끝 = 수집일+7일(`isoDayKst`) · `.claude/hooks/data-value-gate.mjs` R2가 같은 상수로 채점 |
+| 홈 기준일 바 = `[새로 갱신] 08-03(월) 19:58 · 신규 42건`("데이터 기준:" 라벨·다음 갱신·지연 문구 제거) | `src/components/DataDateBar.tsx` · `src/lib/format.ts` `formatMonthDayKr` 신설, `updateDelay`·`isFreshUpdate` 삭제 |
+| 신규 건수 = 직전 산출물에 없던 물건 수, 비교 불가면 감춘다 | `scripts/crawl-lib.ts` `countNewIds` · `scripts/crawl.ts` `readPreviousIds`(지역 파일 덮어쓰기 전 읽기, 부분 수집은 비교 안 함) → `meta.newCount` · `src/types/auction.ts` optional·nullable |
+| "이번 주 신규" 철회 | `src/components/NewThisWeek.tsx` 삭제 · `src/lib/data.ts` `isNewThisWeek`·`newThisWeek` 삭제 · 게이트 R4 **삭제**(newCount는 채점하지 않고 요약 관측값으로만 표기 — 창 회전만으로 0이 되는 요일이 주 2일 구조적으로 발생한다) |
+| 자동 알림 이슈 중복 억제 | `.github/workflows/crawl.yml` — 같은 접두의 열린 알림이 있으면 새로 만들지 않는다. 조회는 봇 라벨 `auto-alert`로 한정(사람이 연 이슈·옛 이슈가 알림을 삼키는 침묵 실패 차단). 닫는 자동화는 두지 않는다 |

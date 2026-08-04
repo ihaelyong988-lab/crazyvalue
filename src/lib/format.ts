@@ -43,7 +43,10 @@ export function isValidDateOnly(value: unknown): value is string {
   return typeof value === "string" && parseDateOnly(value) !== null;
 }
 
-/** date-only 기준 n일 이동한 날짜 문자열. 무효 입력은 null(직접 Date 연산 금지 — §13 규칙 12). */
+/**
+ * date-only 기준 n일 이동한 날짜 문자열. 무효 입력은 null(직접 Date 연산 금지 — §13 규칙 12).
+ * 현재 화면 소비처는 없고 단위 테스트만 쓴다 — 날짜 규약을 지키는 범용 유틸이라 존치한다(삭제 시 테스트 파손).
+ */
 export function shiftDays(dateOnly: string, days: number): string | null {
   const ms = parseDateOnly(dateOnly);
   if (ms === null) return null;
@@ -95,6 +98,16 @@ export function formatDateKr(dateOnly: string): string {
 }
 
 /**
+ * 짧은 날짜 표기: 2026-08-03 → "08-03(월)". 기준일 바처럼 한 줄에 시각·건수까지 함께 놓는 자리에 쓴다.
+ * 매일 갱신이라 수집일은 항상 최근이며 연도는 구별에 기여하지 않는다. 무효 날짜는 formatDateKr과 같은 규약으로 원값 그대로.
+ */
+export function formatMonthDayKr(dateOnly: string): string {
+  const ms = parseDateOnly(dateOnly);
+  if (ms === null) return dateOnly;
+  return `${dateOnly.slice(5)}(${DOW_KR[new Date(ms).getUTCDay()]})`;
+}
+
+/**
  * ISO 시각 → Asia/Seoul 날짜·시각("2026-07-12", "03:00"). 파싱 불가면 null.
  * 기준일 바가 수집 시각을 리터럴 03:00이 아니라 실제 값으로 표기하는 근거다(감사 38).
  */
@@ -103,37 +116,6 @@ export function seoulDateTime(iso: string): { date: string; time: string } | nul
   if (!Number.isFinite(t)) return null;
   const at = new Date(t);
   return { date: todaySeoul(at), time: SEOUL_HM.format(at) };
-}
-
-/**
- * 예정 갱신 시각 대비 지연. overdue=false면 지연 아님, days는 지난 만 일수(내림).
- * 파싱 불가면 null — 지연 여부를 단정하지 않는다(감사 92).
- */
-export function updateDelay(
-  nextUpdateAt: string,
-  now: Date = new Date(),
-): { overdue: boolean; days: number } | null {
-  const due = Date.parse(nextUpdateAt);
-  if (!Number.isFinite(due)) return null;
-  const elapsed = now.getTime() - due;
-  if (elapsed <= 0) return { overdue: false, days: 0 };
-  return { overdue: true, days: Math.floor(elapsed / 86_400_000) };
-}
-
-/**
- * 갱신 직후 여부 — 수집일이 오늘 기준 freshDays일 이내면 true.
- * 갱신은 됐는데 화면이 지난주와 구분되지 않으면 방문자는 갱신을 인식하지 못한다(2026-08-02 주인님 지시).
- * 파싱 불가면 null — 기준일 바와 같은 규약으로 갱신 여부를 단정하지 않는다.
- */
-export function isFreshUpdate(
-  crawledAt: string,
-  freshDays = 3,
-  now: Date = new Date(),
-): boolean | null {
-  const at = seoulDateTime(crawledAt)?.date;
-  const from = shiftDays(todaySeoul(now), -freshDays);
-  if (!at || from === null) return null;
-  return at >= from;
 }
 
 /** 면적: ㎡ + 평 병기. null이면 "-" */

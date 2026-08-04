@@ -115,7 +115,9 @@ export function gateItems<T extends { id: string }>(
  * 유효 9,359건 → 산출 1,000건이 전부 08-03 하루였고, 다음 갱신(08-09)까지 5일간 전 물건이
  * 기일 경과로 표시됐다. 상한이 하루 물량보다 작으면 "임박순 상위 N건"은 곧 "첫날 N건"이다.
  *
- * - windowEnd: 다음 갱신 날짜(YYYY-MM-DD, 미포함). 이 날짜 이전 기일이 배분 1순위다.
+ * - windowEnd: 배분 창의 끝 날짜(YYYY-MM-DD, **미포함**). 이 날짜 이전 기일이 배분 1순위다.
+ *   창은 갱신 주기가 아니라 상수(crawl-config OUTPUT_WINDOW_DAYS)로 정한다 — 갱신 주기를 쓰면
+ *   매일 갱신에서 창이 하루로 붕괴해 위 결함이 그대로 재현된다.
  * - 배분은 물채우기(water-filling) — 얕은 기일이 남긴 몫은 다음 회차에서 다른 기일에 재분배된다.
  * - 기일 내 선별은 priceRatio 오름차순(저가 우선 = 앱 정체성) · 동일 비율은 id 순으로 결정적이다.
  * - 반환 배열은 기존 산출 계약대로 saleDate 오름차순·동일일 id 순이다. 입력 배열은 변형하지 않는다.
@@ -172,6 +174,18 @@ export function capAcrossSaleDates<T extends { id: string; saleDate: string; pri
     cappedFrom: items.length,
     dateSpread: new Set(capped.map((i) => i.saleDate)).size,
   };
+}
+
+/**
+ * 신규 건수 — 이번 산출 id 중 직전 산출물에 없던 것의 수(새로 유입된 물건).
+ * 비교 기준이 없을 때(첫 실행·부분 수집) 무엇을 기록할지는 호출부가 정한다 — 이 함수는 두 집합만 본다.
+ */
+export function countNewIds(previousIds: ReadonlySet<string>, currentIds: ReadonlySet<string>): number {
+  let count = 0;
+  for (const id of currentIds) {
+    if (!previousIds.has(id)) count++;
+  }
+  return count;
 }
 
 export interface CollectSummary {

@@ -266,7 +266,7 @@ export function markOnboarded(): boolean {
 // ---- 상태 변화 판정(원안 "추적기능", §5.5) ----
 export type WatchDiff = "재유찰" | "기일 변경" | "매각 종료" | null;
 
-/** 주간 갱신 데이터와 스냅샷 비교. current 부재 = 목록 소멸(매각 종료 등). */
+/** 갱신된 산출물과 스냅샷 비교. current 부재 = 목록 소멸(매각 종료 등). */
 export function diffWatch(snapshot: WatchSnapshot, current: AuctionItem | undefined): WatchDiff {
   if (!current) return "매각 종료";
   if (current.minPrice < snapshot.minPrice) return "재유찰";
@@ -274,7 +274,7 @@ export function diffWatch(snapshot: WatchSnapshot, current: AuctionItem | undefi
   return null;
 }
 
-/** 변화 배지 표시 후 스냅샷을 현재 데이터로 갱신한다(다음 주 비교 기준). 식별 정보도 최신화한다. */
+/** 변화 배지 표시 후 스냅샷을 현재 데이터로 갱신한다(다음 갱신분 비교 기준). 식별 정보도 최신화한다. */
 export function refreshSnapshot(id: string, current: AuctionItem): boolean {
   const state = getWatchState();
   const entry = state.items[id];
@@ -291,7 +291,7 @@ export function refreshSnapshot(id: string, current: AuctionItem): boolean {
 }
 
 // ---- 변화 배지 세션 캐시(§4.3-④ 보완) ----
-// 스냅샷은 판정 직후 갱신되므로(다음 주 비교 기준) 판정 결과·이전 값을 sessionStorage에 보존해
+// 스냅샷은 판정 직후 갱신되므로(다음 갱신분 비교 기준) 판정 결과·이전 값을 sessionStorage에 보존해
 // 같은 방문(뒤로가기·재진입) 동안 배지·상단 고정·이전→현재 표기를 재현한다. 탭 종료 시 소멸.
 
 export interface CachedDiff {

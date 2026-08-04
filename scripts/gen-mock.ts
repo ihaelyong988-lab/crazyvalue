@@ -33,6 +33,9 @@ const pick = <T,>(arr: readonly T[]): T => arr[Math.floor(rng() * arr.length)];
 const CRAWLED_AT = "2026-07-12T03:00:00+09:00";
 const NEXT_UPDATE_AT = "2026-07-19T03:00:00+09:00";
 const BASE_DATE = "2026-07-12";
+// 목데이터에는 직전 산출물이 없어 대조로 셀 수 없다 — 신규 건수 표기 경로를 목 화면에서도 렌더하도록
+// 고정 양수를 넣는다(실데이터는 크롤러가 직전 파일과 id를 대조해 계산한다).
+const NEW_COUNT = 18;
 
 const addDays = (dateOnly: string, days: number): string =>
   new Date(Date.parse(dateOnly + "T00:00:00Z") + days * 86_400_000).toISOString().slice(0, 10);
@@ -186,6 +189,7 @@ function main() {
     totalCount: all.length,
     countsByRegion,
     nextUpdateAt: NEXT_UPDATE_AT,
+    newCount: NEW_COUNT,
   };
   writeFileSync(join(outDir, "meta.json"), JSON.stringify(meta, null, 1));
 

@@ -1,13 +1,11 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { formatDateKr, seoulDateTime } from "@/lib/format";
 import { remainingText, type RefreshStatus } from "@/lib/refresh";
-import { useMeta } from "@/lib/use-meta";
 import { ErrorState } from "@/components/ErrorState";
 
 // 리프레쉬 — 탭한 시점부터 다시 수집해 데이터를 갱신한다(주인님 지시 2026-08-02).
-// 주간 자동 갱신은 그대로 유지되고, 이 화면은 그 사이에 한 번 더 당겨오는 수단이다.
+// 자동 갱신(매일 03:00)은 그대로 유지되고, 이 화면은 그 사이에 한 번 더 당겨오는 수단이다.
 // 수집은 외부 사이트를 도는 작업이라 즉시 끝나지 않는다 — 상태를 숨기지 않고 그대로 말한다.
 
 /** 진행 중일 때 상태를 다시 묻는 간격. 수집이 분 단위라 초 단위 폴링은 낭비다. */
@@ -16,7 +14,6 @@ const POLL_MS = 20_000;
 type Phase = "loading" | "ready" | "failed";
 
 export default function RefreshPage() {
-  const { meta } = useMeta();
   const [status, setStatus] = useState<RefreshStatus | null>(null);
   const [phase, setPhase] = useState<Phase>("loading");
   const [notice, setNotice] = useState<string | null>(null);
@@ -71,7 +68,7 @@ export default function RefreshPage() {
       const body = (await res.json()) as RefreshStatus & { error?: string };
       if (res.ok || res.status === 202) {
         setStatus(body);
-        setNotice("수집을 시작했다. 완료되면 화면의 데이터 기준이 바뀐다.");
+        setNotice("수집을 시작했다. 완료되면 화면 상단의 수집 시각이 바뀐다.");
       } else {
         setStatus((prev) => (body.state ? body : prev));
         setNotice(body.error ?? "지금은 실행할 수 없다.");
@@ -83,7 +80,6 @@ export default function RefreshPage() {
     }
   };
 
-  const stamp = meta ? seoulDateTime(meta.crawledAt) : null;
   const now = new Date();
   const waitText = status ? remainingText(status.cooldownUntil, now) : null;
   const running = status?.state === "running";
@@ -100,15 +96,10 @@ export default function RefreshPage() {
         </p>
       </header>
 
+      {/* 현재 수집 시각은 다시 적지 않는다 — 화면 상단 기준일 바가 그 값을 말하는 유일한 자리다(1정보 1표시). */}
       <section className="rounded-lg border border-ink/15 p-4 text-[13px] leading-snug text-ink/80">
-        <p>
-          현재 데이터 기준{" "}
-          <span className="font-semibold tabular-nums text-ink">
-            {stamp ? `${formatDateKr(stamp.date)} ${stamp.time}` : "확인 중"}
-          </span>
-        </p>
         {/* 상태 변화는 낭독돼야 한다 — 버튼을 눌러도 화면이 그대로면 실패로 읽힌다. */}
-        <p role="status" className="mt-2">
+        <p role="status">
           {phase === "loading" && "수집 상태를 확인하는 중"}
           {phase === "ready" && running && "수집이 진행 중이다. 완료까지 10분 안팎 걸린다."}
           {phase === "ready" && status?.state === "cooldown" && waitText && (
@@ -121,7 +112,7 @@ export default function RefreshPage() {
             방문자에게는 "눌렀는데 아무 일도 없었다"로 남는다(§13 규칙 5 조용한 실패 금지). */}
         {phase === "ready" && !running && failedLast && (
           <p role="status" className="mt-2 text-ink">
-            직전 수집이 완료되지 못해 데이터는 이전 기준일 그대로다.
+            직전 수집이 완료되지 못해 데이터는 직전 수집분 그대로다.
           </p>
         )}
         {notice && (
@@ -153,7 +144,7 @@ export default function RefreshPage() {
       )}
 
       <p className="text-[13px] leading-snug text-ink/75">
-        주간 자동 갱신(일요일 03:00)은 이 기능과 무관하게 그대로 유지된다.
+        자동 갱신(매일 03:00)은 이 기능과 무관하게 그대로 유지된다.
       </p>
     </div>
   );

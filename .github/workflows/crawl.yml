@@ -1,25 +1,26 @@
-# 주간 수집 — 기획안 §8 Phase 3.4 전문.
-# 슬롯 2개(정기 + 자동 캐치업)로 운용한다. **사람이 개입하는 경로는 두지 않는다.**
+# 정기 수집 — 기획안 §8 Phase 3.4 전문. **매일 03:00 KST**에 갱신한다(2026-08-05 주인님 확정).
+# 슬롯 2개는 "정기 + 조건부 캐치업"이 아니라 **모드 분기**다 — 요일이 실행 여부가 아니라 모드를 가른다.
+# 사람이 개입하는 경로는 두지 않는다.
+# name(weekly-crawl)은 유지한다 — 워크플로 이름을 바꾸면 등록된 스케줄과 런 이력이 끊긴다.
 name: weekly-crawl
 on:
   schedule:
-    # 정기 — UTC 토 18:00 = KST 일 03:00(원안 시각). 게이트를 무조건 통과한다.
+    # full — UTC 토 18:00 = KST 일 03:00(원안 시각). 상세까지 전량 수집한다.
+    # 요청 수가 로봇탐지 임계(실측 1,030~2,160)에 닿아 매번 조기 종료하므로 주 1회로만 돌린다.
     - cron: "0 18 * * 6"
-    # 자동 캐치업 — UTC 일~금 18:00 = KST 월~토 03:00.
-    # 데이터가 STALE_DAYS 이상 낡았을 때만 실행한다. GitHub이 정기 슬롯을 드롭했거나
-    # 수집이 실패한 주에는 다음 날 03:00부터 매일 스스로 재시도해 갱신을 복구한다.
-    # 성공하면 데이터 나이가 0이 되어 다음 정기 슬롯까지 이 슬롯은 조용히 건너뛴다.
+    # quick — UTC 일~금 18:00 = KST 월~토 03:00. 매각기일 창 7일 + 상세 생략.
+    # 실측 3분·요청 162~231회로 임계의 1/5 이하라 매일 돌려도 차단에 닿지 않는다.
     - cron: "0 18 * * 0-5"
   workflow_dispatch:
     inputs:
       mode:
-        description: "full=주간 전량(약 60분) · quick=리프레쉬 경량(실측 3분)"
+        description: "full=전량(약 60분) · quick=경량(실측 3분)"
         type: choice
         options: [full, quick]
         default: full
 
 # 동시 실행 가드(감사 42) — 수동 실행이 정기 실행과 겹치면 같은 파일을 두 job이 쓴다.
-# 진행 중 수집은 취소하지 않는다(중단은 곧 그 주 데이터 없음).
+# 진행 중 수집은 취소하지 않는다(중단은 곧 그날 데이터 없음).
 concurrency:
   group: weekly-crawl
   cancel-in-progress: false
@@ -31,49 +32,52 @@ jobs:
     # 따라서 330분은 근거가 없다. 상한을 실제 계약(약 90분) 바로 위로 낮춰 무한 대기 job을 빨리 표면화한다.
     timeout-minutes: 120
     permissions: { contents: write, issues: write }
+    env:
+      # 자동 알림 이슈에만 붙는 라벨. 중복 억제 조회를 이 라벨로 한정한다.
+      # 라벨 없이 제목 접두만으로 억제하면 사람이 연 이슈와 옛 이슈가 억제 계산에 섞여
+      # 알림 채널이 통째로 침묵한다 — 2026-08-05 실측: 열린 11건이 3개 접두를 모두 점유해
+      # 억제만 넣은 상태에서는 이후 어떤 실패도 이슈를 만들지 못했다(침묵 실패 금지 §13-9 정면 위반).
+      ALERT_LABEL: auto-alert
     steps:
-      # 게이트가 meta.json을 읽어야 하므로 체크아웃을 먼저 한다(건너뛰는 날도 수 초로 끝난다).
       - uses: actions/checkout@v4
-      # 실행 여부는 날짜 리터럴이 아니라 **데이터 나이**로 판정한다.
-      # 하드코딩한 1회성 날짜는 그 한 번을 놓치면 영구히 복구되지 않아 사람 손을 요구한다
-      # (GitHub은 고부하 시 스케줄 이벤트를 지연이 아니라 드롭한다 — 흔적조차 남지 않는다).
-      # 나이 기준이면 정기 슬롯이 드롭되거나 수집이 실패해도 다음 날 캐치업이 스스로 이어받는다.
-      # 판정 불가(meta 결측·파싱 실패)는 실행하는 쪽으로 기운다 — 침묵 스킵이 최악이다.
+      # 슬롯 판정은 이제 실행 여부가 아니라 **모드**만 가른다.
+      # 데이터 나이(STALE_DAYS) 조건을 제거했다 — 조건부 캐치업은 정기 슬롯이 성공한 주에
+      # 나머지 6일을 통째로 건너뛰어 실질 주 1회였고, 매일 갱신과 양립하지 않는다.
+      # run 출력은 유지한다: 뒤 스텝들의 조건이 여기에 걸려 있고, 실패 알림의 fail-safe 조건
+      # (`!= 'false'`)도 이 출력을 읽는다.
       - name: 실행 슬롯 판정
         id: gate
         env:
-          # 정기 성공 후 6일째(KST 토 03:00)에 캐치업이 오발화하지 않도록 7일로 둔다.
-          STALE_DAYS: "7"
           SCHEDULE: ${{ github.event.schedule }}
+          DISPATCH_MODE: ${{ github.event.inputs.mode }}
         run: |
           KST_TODAY=$(TZ=Asia/Seoul date +%F)
           # checkout은 이벤트 생성 시점 SHA로 고정된다 — concurrency 대기열을 거친 런은
-          # 직전 런의 데이터 커밋을 못 보고 옛 meta로 이중 실행한다(실측 2026-07-30, 오탐 이슈 #5).
-          # 판정 전 최신 main으로 정렬한다. 실패해도 판정은 계속한다(실행 쪽으로 기우는 기존 원칙).
+          # 직전 런의 데이터 커밋을 못 본 낡은 워킹트리로 시작한다(실측 2026-07-30, 오탐 이슈 #5).
+          # 대기열을 거친 런의 워킹트리는 항상 낡았다고 가정하고 최신 main으로 정렬한다.
+          # 실패해도 계속한다(실행 쪽으로 기우는 기존 원칙).
           git pull --ff-only origin main || true
-          CRAWLED=$(jq -r '.crawledAt // empty' public/data/meta.json 2>/dev/null || true)
-          CRAWLED_TS=0
-          if [ -n "$CRAWLED" ]; then
-            CRAWLED_TS=$(date -u -d "$CRAWLED" +%s 2>/dev/null || echo 0)
-          fi
-          AGE_DAYS=$(( ( $(date -u +%s) - CRAWLED_TS ) / 86400 ))
-          echo "KST $KST_TODAY · 슬롯 '${SCHEDULE:-workflow_dispatch}' · 데이터 기준 ${CRAWLED:-없음} · 나이 ${AGE_DAYS}일(하한 ${STALE_DAYS}일)"
-          if [ "$SCHEDULE" = "0 18 * * 0-5" ] && [ "$AGE_DAYS" -lt "$STALE_DAYS" ]; then
-            echo "run=false" >> "$GITHUB_OUTPUT"
-            echo "캐치업 슬롯 — 데이터가 아직 낡지 않았다. 건너뛴다."
+          # 스케줄이 없으면 수동 실행이다 — 그때만 입력값을 쓴다.
+          if [ -z "$SCHEDULE" ]; then
+            MODE="${DISPATCH_MODE:-full}"
+          elif [ "$SCHEDULE" = "0 18 * * 6" ]; then
+            MODE=full
           else
-            echo "run=true" >> "$GITHUB_OUTPUT"
-            echo "실행한다."
+            MODE=quick
           fi
+          CRAWLED=$(jq -r '.crawledAt // empty' public/data/meta.json 2>/dev/null || true)
+          echo "KST $KST_TODAY · 슬롯 '${SCHEDULE:-workflow_dispatch}' · 모드 $MODE · 직전 수집 ${CRAWLED:-없음}"
+          echo "run=true" >> "$GITHUB_OUTPUT"
+          echo "mode=$MODE" >> "$GITHUB_OUTPUT"
       - uses: actions/setup-node@v4
         if: steps.gate.outputs.run == 'true'
         with: { node-version: 24, cache: npm }
       - run: npm ci
         if: steps.gate.outputs.run == 'true'
-      # quick = 리프레쉬 경량 모드. 매각기일 창 7일 + 상세 생략으로 요청을 1,030회 → 162회로 줄인다.
+      # quick = 경량 모드(평일 슬롯과 리프레쉬 공용). 매각기일 창 7일 + 상세 생략으로 요청을 1,030회 → 162회로 줄인다.
       # 실측(2026-08-02): 182초 · 조기 종료 없이 완주 · 산출 1,000건/기일 5일/지역 17개로 전량 모드와 동품질.
       # 전량 모드가 매번 로봇탐지에 걸리는 것과 달리 요청 수가 임계(실측 1,030~2,160)를 크게 밑돈다.
-      # 기일 이력은 전량 역산이 된다 — 주간 full 실행이 실취득분을 채운다.
+      # 기일 이력은 전량 역산이 된다 — 토요일 full 슬롯이 실취득분을 채운다.
       # 자동 재시도 — 세션 취득이 간헐적으로 실패한다(2026-08-03 실측: 같은 러너에서 10:06·10:22 크롤은
       # 세션을 못 얻었는데 10:33 진단은 DNS·TCP·TLS·curl·Node fetch 전부 200이었다. IP 차단이 아니라
       # 사이트/경로의 일시적 불안정이다). 프로세스 내 백오프(3.7분)를 넘겨도 죽는 경우가 있으므로
@@ -82,16 +86,19 @@ jobs:
       - name: crawl                 # 검증 게이트 실패 시 여기서 중단 → 커밋 없음
         if: steps.gate.outputs.run == 'true'
         env:
-          MODE: ${{ github.event.inputs.mode || 'full' }}
+          MODE: ${{ steps.gate.outputs.mode }}
         run: |
           run_crawl() {
+            # --window 7(수집 창)은 crawl-config OUTPUT_WINDOW_DAYS(배분 창)·data-value-gate.mjs
+            # (채점 창)와 같은 값이다. 수집 창이 배분 창보다 좁으면 최종 매각기일이 창 끝에 못 미쳐
+            # 게이트 R2가 위반으로 잡는다 — 세 값의 정합은 주석이 아니라 기계가 결박한다.
             if [ "$MODE" = "quick" ]; then
               npm run crawl -- --window 7 --no-detail
             else
               npm run crawl
             fi
           }
-          # quick은 방문자가 기다리는 경로라 2회까지(최대 약 12분), full은 야간 배치라 3회까지.
+          # quick은 리프레쉬(방문자 대기)와 공용이라 2회까지(최대 약 12분), full은 야간 배치라 3회까지.
           [ "$MODE" = "quick" ] && MAX=2 || MAX=3
           for attempt in $(seq 1 "$MAX"); do
             if run_crawl; then
@@ -106,13 +113,20 @@ jobs:
           exit 1
       - name: commit data
         if: steps.gate.outputs.run == 'true'
+        env:
+          MODE: ${{ steps.gate.outputs.mode }}
         run: |
           git config user.name "crazyvalue-bot"
           git config user.email "actions@users.noreply.github.com"
           git add public/data
-          git diff --cached --quiet || { git commit -m "data: weekly update $(date -u +%F)"; git push; }
+          git diff --cached --quiet || { git commit -m "data: daily update $(date -u +%F) ($MODE)"; git push; }
       # 조기 종료 표면화 — 차단·예산 소진·마감은 exit 0(부분 산출·커밋)이라 아래 report failure가
       # 발화하지 않는다. 그대로 두면 전량 역산 이력이 실취득과 같은 화면으로 게시되고 재발을 아무도 모른다.
+      # 이슈 3종(조기 종료·가치 미달·실패) 공통 규약 — 매일 실행이라 조건이 지속되는 동안 같은
+      # 이슈가 날마다 쌓여 다음 진짜 실패를 가린다. 그래서 각 스텝은 같은 제목 접두의 열린 이슈가
+      # 이미 있으면 새로 만들지 않는다. 닫는 자동화는 두지 않는다 — gh issue close는 되돌리기 어렵고
+      # 접두 매칭이라 사람이 같은 접두로 연 이슈까지 함께 닫는다. 조회가 실패하면 만드는 쪽으로
+      # 기운다(알림 경로의 fail-safe 방향 = 모르면 알린다, 원장 2026-07-27).
       - name: report abort
         if: success() && steps.gate.outputs.run == 'true'
         env:
@@ -120,13 +134,21 @@ jobs:
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
           jq -e '.aborted == true' public/data/meta.json > /dev/null 2>&1 || exit 0
+          PREFIX="주간 수집 조기 종료"
+          gh label create "$ALERT_LABEL" --color BFD4F2 --description "워크플로 자동 알림 — 중복 억제 대상" --force >/dev/null 2>&1 || true
+          OPEN=$(gh issue list --state open --label "$ALERT_LABEL" --limit 100 --json title 2>/dev/null \
+            | jq -r --arg p "$PREFIX" '[.[] | select(.title | startswith($p))] | length' || echo 0)
+          if [ "${OPEN:-0}" -gt 0 ]; then
+            echo "'$PREFIX' 열린 이슈 ${OPEN}건 — 새로 만들지 않는다."
+            exit 0
+          fi
           REASON=$(jq -r '.abortReason // "미상"' public/data/meta.json)
           AT=$(jq -r '.abortedAtRequest // 0' public/data/meta.json)
           TOTAL=$(jq -r '.totalRequests // 0' public/data/meta.json)
           REAL=$(jq -r '.historySource.real // 0' public/data/meta.json)
           BACK=$(jq -r '.historySource.backcalc // 0' public/data/meta.json)
           {
-            echo "주간 수집이 상세 단계에서 조기 종료했다. 물건 데이터는 커밋됐고 기일 이력 정밀도만 낮다."
+            echo "수집이 상세 단계에서 조기 종료했다. 물건 데이터는 커밋됐고 기일 이력 정밀도만 낮다."
             echo ""
             echo "- 사유: $REASON"
             echo "- 조기 종료 시점 요청 수: $AT (총 $TOTAL)"
@@ -135,7 +157,7 @@ jobs:
             echo ""
             echo "점검: 차단 시점 요청 수를 crawl-config BUDGET.maxRequests와 대조 → 상한 재조정."
           } > crawl-abort.md
-          gh issue create --title "주간 수집 조기 종료 $(date -u +%F)" --body-file crawl-abort.md --assignee ihaelyong988-lab
+          gh issue create --title "$PREFIX $(date -u +%F)" --body-file crawl-abort.md --assignee ihaelyong988-lab --label "$ALERT_LABEL"
       # 산출물 가치 채점 — "런이 성공했는가"와 "방문자에게 쓸모가 있는가"는 다른 질문이다.
       # 2026-08-02: 산출 1,000건이 전부 하루짜리 기일이고 시도 5곳이 0건이고 이번 주 신규가
       # 0건인데도 크롤·게이트·커밋·배포가 전부 성공이었다 — 성공 신호가 실패를 덮었다.
@@ -146,13 +168,22 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
+          PREFIX="산출물 가치 미달"
           if node .claude/hooks/data-value-gate.mjs --check > data-value.txt 2>&1; then
             cat data-value.txt
             exit 0
           fi
           cat data-value.txt
+          # 중복 억제(이슈 3종 공통 규약)
+          gh label create "$ALERT_LABEL" --color BFD4F2 --description "워크플로 자동 알림 — 중복 억제 대상" --force >/dev/null 2>&1 || true
+          OPEN=$(gh issue list --state open --label "$ALERT_LABEL" --limit 100 --json title 2>/dev/null \
+            | jq -r --arg p "$PREFIX" '[.[] | select(.title | startswith($p))] | length' || echo 0)
+          if [ "${OPEN:-0}" -gt 0 ]; then
+            echo "'$PREFIX' 열린 이슈 ${OPEN}건 — 새로 만들지 않는다."
+            exit 0
+          fi
           {
-            echo "주간 산출물이 방문자 가치 기준에 미달했다. 데이터는 커밋·배포됐다(부분 배포 계약)."
+            echo "산출물이 방문자 가치 기준에 미달했다. 데이터는 커밋·배포됐다(부분 배포 계약)."
             echo ""
             echo '```'
             cat data-value.txt
@@ -163,22 +194,30 @@ jobs:
             echo "판정 기준 시각은 meta.crawledAt이라 나중에 로컬에서 같은 결과를 재현할 수 있다 —"
             echo "\`node .claude/hooks/data-value-gate.mjs --check\`"
           } > data-value.md
-          gh issue create --title "산출물 가치 미달 $(date -u +%F)" --body-file data-value.md --assignee ihaelyong988-lab
-      # 실패 표면화(감사 42) — 침묵 실패 금지(§13 규칙 9). 데이터는 직전 주 상태 그대로다.
-      # 건너뛴 슬롯은 실패가 아니므로 이슈를 만들지 않는다.
+          gh issue create --title "$PREFIX $(date -u +%F)" --body-file data-value.md --assignee ihaelyong988-lab --label "$ALERT_LABEL"
+      # 실패 표면화(감사 42) — 침묵 실패 금지(§13 규칙 9). 데이터는 직전 파일 그대로다.
       # 조건이 `== 'true'`가 아니라 `!= 'false'`인 이유: 게이트 스텝 자신이 실패하면 outputs.run이
-      # 빈 문자열이 돼 `== 'true'`가 거짓이 되고, 유일한 실패 알림 채널이 침묵한다. 정상 스킵은
-      # run=false로 명시되므로 이 조건에서 계속 제외된다.
+      # 빈 문자열이 돼 `== 'true'`가 거짓이 되고, 유일한 실패 알림 채널이 침묵한다.
+      # 게이트가 run=false를 쓰는 경로는 지금 없지만 fail-safe 방향(모르면 알린다)을 유지한다.
       - name: report failure
         if: failure() && steps.gate.outputs.run != 'false'
         env:
           GH_TOKEN: ${{ github.token }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
+          PREFIX="주간 수집 실패"
+          # 중복 억제(이슈 3종 공통 규약)
+          gh label create "$ALERT_LABEL" --color BFD4F2 --description "워크플로 자동 알림 — 중복 억제 대상" --force >/dev/null 2>&1 || true
+          OPEN=$(gh issue list --state open --label "$ALERT_LABEL" --limit 100 --json title 2>/dev/null \
+            | jq -r --arg p "$PREFIX" '[.[] | select(.title | startswith($p))] | length' || echo 0)
+          if [ "${OPEN:-0}" -gt 0 ]; then
+            echo "'$PREFIX' 열린 이슈 ${OPEN}건 — 새로 만들지 않는다."
+            exit 0
+          fi
           {
-            echo "weekly-crawl 실행이 실패했다. 데이터는 직전 주 파일이 유지된다(무커밋 계약)."
+            echo "weekly-crawl 실행이 실패했다. 데이터는 직전 실행 파일이 유지된다(무커밋 계약)."
             echo ""
             echo "실행 로그: $RUN_URL"
             echo "점검: 로그에서 중단 사유 확인 → 로컬 'npm run crawl -- --dry-run --limit 3' 재현 → 수정 후 workflow_dispatch 재실행."
           } > crawl-failure.md
-          gh issue create --title "주간 수집 실패 $(date -u +%F)" --body-file crawl-failure.md --assignee ihaelyong988-lab
+          gh issue create --title "$PREFIX $(date -u +%F)" --body-file crawl-failure.md --assignee ihaelyong988-lab --label "$ALERT_LABEL"

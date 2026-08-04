@@ -8,8 +8,8 @@ export default function NotFound() {
       <p className="text-[12px] font-semibold tabular-nums text-ink/70">404</p>
       <h1 className="mt-1 font-bold text-ink">페이지를 찾을 수 없습니다</h1>
       <p className="mt-2 text-[13px] leading-snug text-ink/70">
-        주소가 바뀌었거나 없는 페이지 — 찾으시는 물건이라면 매각·취하 등으로 주간
-        갱신 목록에서 내려갔을 수 있습니다.
+        주소가 바뀌었거나 없는 페이지 — 찾으시는 물건이라면 매각·취하 등으로 갱신
+        목록에서 내려갔을 수 있습니다.
       </p>
       <div className="mt-4 flex flex-col gap-2">
         <Link
