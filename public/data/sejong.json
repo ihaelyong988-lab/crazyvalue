@@ -1,60 +1,5 @@
 [
  {
-  "id": "sejong-2024타경10303-4",
-  "court": "대전지방법원",
-  "caseNo": "2024타경10303",
-  "itemNo": "4",
-  "category": "토지",
-  "address": "세종특별자치시 전동면 송성리 181",
-  "region": "세종",
-  "district": "전동면",
-  "appraisalPrice": 3738000,
-  "minPrice": 627000,
-  "priceRatio": 0.1677,
-  "failCount": 5,
-  "saleDate": "2026-08-03",
-  "saleTime": "10:00",
-  "courtRoom": "본관제106호법정",
-  "deposit": 62700,
-  "areaBuilding": null,
-  "areaLand": 1246,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
-  "history": [
-   {
-    "date": "2026-01-05",
-    "minPrice": 3738000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-02-09",
-    "minPrice": 3738000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-16",
-    "minPrice": 2615562,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-20",
-    "minPrice": 1830166,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-25",
-    "minPrice": 1280608,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-29",
-    "minPrice": 896070,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "- 지분매각. 공유자의 우선매수신고는 1회에 한하여 행사할 수 있음(공유자가 우선매수권 신고 후 매각기일까지 매수보증금을 미납하여 실효되는 경우에는 그 공유자는 이후 매각기일부터는 우선매수권을 행사할 수 없음) - 농지취득자격증명 제출 필요(매각결정기일까지 미제출시 보증금은 반환하지 않음), 농지상황(농지의 임야화)에 따라 농지원상회복 이행계획이 필요할 수도 있음)"
- },
- {
   "id": "sejong-2024타경11191-1",
   "court": "대전지방법원",
   "caseNo": "2024타경11191",
@@ -788,56 +733,6 @@
    }
   ],
   "specialNote": null
- },
- {
-  "id": "sejong-2024타경104451-1",
-  "court": "대전지방법원",
-  "caseNo": "2024타경104451",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "세종특별자치시 전동면 미곡리 20",
-  "region": "세종",
-  "district": "전동면",
-  "appraisalPrice": 834616000,
-  "minPrice": 200390000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-08-06",
-  "saleTime": "10:00",
-  "courtRoom": "본관제106호법정",
-  "deposit": 20039000,
-  "areaBuilding": 456,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
-  "history": [
-   {
-    "date": "2026-02-12",
-    "minPrice": 834616000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-19",
-    "minPrice": 834616000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-23",
-    "minPrice": 584230251,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-28",
-    "minPrice": 408960512,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-02",
-    "minPrice": 286271893,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "- 일괄매각 - 농지취득자격증명 필요(제출하지 않는 경우 보증금 반환하지 않음) - 목록2 : 건축허가를 받은 후 토목공사 진행중인 상태임(2024.11.27.자 감정평가서 참조) - 목록2번 지상 제시외 건물(법당), 제시외 물건(돌탑 및 비석) 매각에서 각 제외함. 위 제시외 건물 등을 위한 법정지상권 성립여부는 불분명함"
  },
  {
   "id": "sejong-2025타경502261-1",
