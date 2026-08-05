@@ -92,12 +92,12 @@
 | 9 | 용어 도움말 시트(12개) | GlossarySheet(부록 B 원고 12+픽) | 완료(E2E 8/8·게이트 0건·빌드 통과) |
 | 10 | 법적 고지·원문 링크 | LegalNotice + detailUrl 버튼 | 완료(E2E 8/8·게이트 0건·빌드 통과) |
 | 11 | 빈 상태 완화 제안 | ItemList 빈 상태 2버튼 | 완료(E2E 8/8·게이트 0건·빌드 통과) |
-| 12 | 스켈레톤 로딩+오프라인 캐시 | Skeleton.tsx(로딩) — 오프라인 캐시는 Phase 4.2 서비스워커 | 부분(캐시는 Phase 4) |
+| 12 | 스켈레톤 로딩+오프라인 캐시 | Skeleton.tsx(로딩) + sw.ts 프리캐시·오프라인 폴백(Phase 4.2) | 완료(Phase 4.2 마감으로 캐시분 충족) |
 | 13 | 한국식 금액 축약+tabular-nums | formatKrw + tabular-nums | 완료(E2E 8/8·게이트 0건·빌드 통과) |
 | 14 | 하단 탭·44px 터치 | BottomTabs(min-h-14) + 칩/버튼 min-h-11 이상 | 완료(E2E 8/8·게이트 0건·빌드 통과) |
 | 15 | 물건 URL 공유 | ShareButton(Web Share+복사) | 완료(E2E 8/8·게이트 0건·빌드 통과) |
 | 16 | 미친가치 픽 배지·진입점 | PickBadge + PickEntry + pick=1 쿼리 | 완료(E2E 8/8·게이트 0건·빌드 통과) |
-| 17 | OG 공유 카드 | Phase 4.4 예정(opengraph-image.tsx) | 대기(Phase 4) |
+| 17 | OG 공유 카드 | app/item/[id]/opengraph-image.tsx(Phase 4.4) | 완료(빌드 통과 — 프로덕션 미리보기 실측은 5.2 잔여) |
 | 18 | 최근 본 물건 | RecentViewed + RecentTracker | 완료(E2E 8/8·게이트 0건·빌드 통과) |
 
 ## Phase 3 — 수집기·실데이터 전환
@@ -105,30 +105,30 @@
 | # | 작업 | 구현 위치 | 확인 방법 | 상태 |
 |---|---|---|---|---|
 | 3.1 | 정찰 스파이크(robots·약관·API 관찰·전략 확정) | docs/CRAWLER.md | 전략 1개 확정 기록 | 완료 — 정찰 에이전트(요청 7회): 전략 A 확정, POST searchControllerMain.on + flbdNcntMin=2 서버 필터, robots 404·출처표시 자유이용 확인. 잔여: enum 코드 실검색 1회 캡처 |
-| 3.2 | 수집기 구현(유찰≥2·간격≥1초·UA CrazyValueBot/0.1·재시도3·게이트·--region·--dry-run) | scripts/crawl.ts | dry-run 1개 지역 성공 | 대기 |
-| 3.3 | 실데이터 전환(전국 1회→검증→교체→재통과) + 성명 마스킹 30건 스팟 체크 | public/data | `npm test`·스모크 실데이터 통과 | 대기 |
-| 3.4 | 자동화 crawl.yml(cron 0 18 * * 6 UTC) | .github/workflows/crawl.yml | 파일 푸시 | 대기 |
-| 3.5 | 원격 검증(workflow_dispatch 1회) | GitHub Actions | 원격 성공+data 커밋 | 대기 |
+| 3.2 | 수집기 구현(유찰≥2·간격≥1초·UA CrazyValueBot/0.1·재시도3·게이트·--region·--dry-run) | scripts/crawl.ts | dry-run 1개 지역 성공 | 완료 — `--dry-run --limit 3` 실주행 성공(라이브 요청 5회·6.0초, N4 행). 이후 경량 모드용 `--window`·`--no-detail` 추가 |
+| 3.3 | 실데이터 전환(전국 1회→검증→교체→재통과) + 성명 마스킹 30건 스팟 체크 | public/data | `npm test`·스모크 실데이터 통과 | 완료 — 2026-07-30 실전 런으로 목데이터 120건 → 실데이터 1,000건 전환(아래 "수집 파이프라인 완결 수정" 절). 마스킹 스팟 체크: 산출물 specialNote 670건 전수 대조에서 자연인 성명 노출 0건(역할어 뒤 후보 19건은 전부 "미상"·"있음"·법인명) |
+| 3.4 | 자동화 crawl.yml(매일 03:00 KST — 일 full `0 18 * * 6` UTC · 월~토 quick `0 18 * * 0-5` UTC) | .github/workflows/crawl.yml | 파일 푸시 | 완료 — 주 1회 cron으로 신설 후 2026-08-05 모드 분기로 전환(아래 "매일 갱신 전환" 절). 슬롯은 실행 여부가 아니라 모드를 가른다 |
+| 3.5 | 원격 검증(workflow_dispatch 1회) | GitHub Actions | 원격 성공+data 커밋 | 완료 — 런 30481066785(2026-07-30 dispatch) 성공 · 데이터 커밋 3fd4d74 |
 
 ## Phase 4 — PWA·OG·품질 마감
 
 | # | 작업 | 구현 위치 | 확인 방법 | 상태 |
 |---|---|---|---|---|
-| 4.1 | manifest+아이콘 512/192 | src/app/manifest.ts·public/icons | 설치 프롬프트 노출 | 대기 |
-| 4.2 | 서비스워커(@serwist/next, 프리캐시+data SWR) | 서비스워커 설정 | 오프라인 재방문 렌더 | 대기 |
-| 4.3 | 설치 유도(Android 배너·iOS 1회 안내) | 컴포넌트 | 각 OS 문구 노출 | 대기 |
-| 4.4 | OG 공유 카드(next/og, 실패 시 og-default.png 폴백·비차단) | app/item/[id]/opengraph-image.tsx | 공유 미리보기 확인 | 대기 |
-| 4.5 | 접근성·성능 마감(대비·alert·focus-visible·44px·lazy·서브셋) | 전역 | 게이트 재통과 | 대기 |
+| 4.1 | manifest+아이콘 512/192 | src/app/manifest.ts·public/icons | 설치 프롬프트 노출 | 완료(N5) — manifest.ts + 아이콘 4종(192·512·maskable-512·apple-touch-icon-180) |
+| 4.2 | 서비스워커(@serwist/next, 프리캐시+data SWR) | 서비스워커 설정 | 오프라인 재방문 렌더 | 완료(N5) — src/app/sw.ts 번들 성공 · /data NetworkFirst(감사 43) · 오프라인 폴백 setCatchHandler |
+| 4.3 | 설치 유도(Android 배너·iOS 1회 안내) | 컴포넌트 | 각 OS 문구 노출 | 완료 — src/components/InstallPrompt.tsx(beforeinstallprompt 배너 + iOS Safari 1회 안내). 결과 버튼 겹침 종결은 N2 행 |
+| 4.4 | OG 공유 카드(next/og, 실패 시 og-default.png 폴백·비차단) | app/item/[id]/opengraph-image.tsx | 공유 미리보기 확인 | 완료 — 파일 존재·빌드 통과(프로덕션 미리보기 실측은 5.2 잔여) |
+| 4.5 | 접근성·성능 마감(대비·alert·focus-visible·44px·lazy·서브셋) | 전역 | 게이트 재통과 | 완료 — 2026-07-22 마감 검증: ui-quality-gate 위반 0건 · Lighthouse A11y 96 · First Load JS 104~119kB. 폰트 서브셋 축소는 §5-2 87번 보류 |
 
 ## Phase 5 — 프로덕션 검증·운영·릴리스
 
 | # | 작업 | 구현 위치 | 확인 방법 | 상태 |
 |---|---|---|---|---|
-| 5.1 | 배포 상태 확인(push=자동 배포) | Vercel | 최신 커밋=프로덕션 | 대기 |
-| 5.2 | 프로덕션 스모크(모바일 뷰포트 실URL) | tests/e2e | 전 시나리오 통과 | 대기 |
-| 5.3 | 분석(@vercel/analytics+§2.6 지표) | src/app/layout.tsx | 대시보드 수신 | 대기 |
-| 5.4 | 운영 문서 | docs/OPERATIONS.md | 문서 존재+퀵스타트 3명령 검증 | 대기 |
-| 5.5 | 릴리스 태그 v0.1.0 | git tag | 태그 원격 확인 | 대기 |
+| 5.1 | 배포 상태 확인(push=자동 배포) | Vercel | 최신 커밋=프로덕션 | 완료 — push=자동 배포 확립(0.6) · 2026-07-22 프로덕션 재대조 전 라우트 200 · 2026-07-30 데이터 커밋이 프로덕션 meta에 반영 확인 |
+| 5.2 | 프로덕션 스모크(모바일 뷰포트 실URL) | tests/e2e | 전 시나리오 통과 | 부분 — 2026-07-22 프로덕션 Playwright 3건 통과(라우트·법원 원문 3종·기준일 바·내 설정). 잔여: 검색→상세→관심→공유 전 시나리오와 OG 카드 미리보기는 프로덕션 URL 기준 미실행(스모크 8종은 로컬 빌드 기준) |
+| 5.3 | 분석(@vercel/analytics+§2.6 지표) | src/app/layout.tsx | 대시보드 수신 | 대기 — @vercel/analytics 의존성 미도입(package.json 확인) |
+| 5.4 | 운영 문서 | docs/OPERATIONS.md | 문서 존재+퀵스타트 3명령 검증 | 완료 — docs/OPERATIONS.md 생성(일일 갱신 확인·quick·full 모드 판별·실패 대응·가치 게이트 확인). 퀵스타트 3명령 실검증은 미실시(§13-15 잔여) |
+| 5.5 | 릴리스 태그 v0.1.0 | git tag | 태그 원격 확인 | 대기 — `git tag -l` 출력 없음 |
 | 5.6 | 완료 보고(URL·cron·Lighthouse·전수 재대조표·백로그) | 보고 | 재대조 공란 0 | 대기 |
 
 ## §4.5 비기능 기준
@@ -259,6 +259,6 @@
 | 매일 03:00 KST 갱신 — KST 월~토 quick(경량) · 일 full(전량). 슬롯은 실행 여부가 아니라 모드를 가른다 | `.github/workflows/crawl.yml` — 데이터 나이(`STALE_DAYS`) 조건 삭제, 게이트가 `mode` 출력을 내고 crawl·commit 스텝이 그 값을 쓴다 |
 | 산출물 배분 창을 갱신 주기에서 떼어내 7일로 고정 | `scripts/crawl-config.ts` `OUTPUT_WINDOW_DAYS` · `scripts/crawl.ts` 창 끝 = 수집일+7일(`isoDayKst`) · `.claude/hooks/data-value-gate.mjs` R2가 같은 상수로 채점 |
 | 홈 기준일 바 = `[새로 갱신] 08-03(월) 19:58 · 신규 42건`("데이터 기준:" 라벨·다음 갱신·지연 문구 제거) | `src/components/DataDateBar.tsx` · `src/lib/format.ts` `formatMonthDayKr` 신설, `updateDelay`·`isFreshUpdate` 삭제 |
-| 신규 건수 = 직전 산출물에 없던 물건 수, 비교 불가면 감춘다 | `scripts/crawl-lib.ts` `countNewIds` · `scripts/crawl.ts` `readPreviousIds`(지역 파일 덮어쓰기 전 읽기, 부분 수집은 비교 안 함) → `meta.newCount` · `src/types/auction.ts` optional·nullable |
+| 신규 건수 = 겹치는 매각기일 한정 신규 유입(2026-08-05 정정 — 창 회전분 제외), 비교 불가면 감춘다 | `scripts/crawl-lib.ts` `countNewOnSharedDates` · `scripts/crawl.ts` `readPreviousOutput`(지역 파일 덮어쓰기 전 id·saleDate 동시 읽기, 부분 수집은 비교 안 함) → `meta.newCount` · `src/types/auction.ts` optional·nullable |
 | "이번 주 신규" 철회 | `src/components/NewThisWeek.tsx` 삭제 · `src/lib/data.ts` `isNewThisWeek`·`newThisWeek` 삭제 · 게이트 R4 **삭제**(newCount는 채점하지 않고 요약 관측값으로만 표기 — 창 회전만으로 0이 되는 요일이 주 2일 구조적으로 발생한다) |
 | 자동 알림 이슈 중복 억제 | `.github/workflows/crawl.yml` — 같은 접두의 열린 알림이 있으면 새로 만들지 않는다. 조회는 봇 라벨 `auto-alert`로 한정(사람이 연 이슈·옛 이슈가 알림을 삼키는 침묵 실패 차단). 닫는 자동화는 두지 않는다 |
