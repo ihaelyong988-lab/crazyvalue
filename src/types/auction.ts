@@ -74,7 +74,10 @@ export const MetaSchema = z.object({
   countsByRegion: z.record(z.string(), z.number().int().nonnegative()),
   nextUpdateAt: z.string(),
   /**
-   * 직전 산출물에 없던 물건 수. 비교 대상이 없거나 부분 수집이면 null(=건수를 감춘다).
+   * 직전에도 수집 대상이던 매각기일에서 새로 등장한 물건 수. 산출물은 매각기일 배분 창으로 뽑히므로
+   * 직전 산출물과의 단순 id 차집합에는 창이 하루 굴러 들어온 기일 한 칸이 통째로 섞인다
+   * (계산 정의는 scripts/crawl-lib.ts countNewOnSharedDates).
+   * 비교 대상이 없거나(첫 실행·부분 수집) 겹치는 기일이 0이면 null(=건수를 감춘다).
    * optional인 이유는 아래 운영 필드와 같다 — 배포된 meta.json에 이 필드가 없고, 서비스워커 캐시로
    * 옛 meta를 읽는 재방문자가 있어 필수로 두면 그 방문자의 화면이 깨진다.
    */

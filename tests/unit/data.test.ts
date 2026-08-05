@@ -135,7 +135,7 @@ describe("sortItems — 4종 정렬", () => {
 
 // isNewThisWeek(이력 기반 "이번 주 신규") 테스트는 함수와 함께 삭제됐다 — 매일 갱신에서는 주 단위
 // 판정창이 성립하지 않고, 신규 여부는 이력 역산이 아니라 직전 산출물과의 id 대조로 센다
-// (scripts/crawl-lib.ts countNewIds · tests/unit/crawl-lib.test.ts).
+// (scripts/crawl-lib.ts countNewOnSharedDates · tests/unit/crawl-lib.test.ts).
 
 describe("isValidAuctionItem — 손상 항목 폐기(감사 36)", () => {
   it("계약을 지킨 항목은 통과", () => {

@@ -4,7 +4,7 @@ import {
   acceptPage,
   buildSummaryLine,
   capAcrossSaleDates,
-  countNewIds,
+  countNewOnSharedDates,
   createListAccumulator,
   deriveRowKey,
   gateItems,
@@ -198,26 +198,68 @@ describe("capAcrossSaleDates — 산출물 상한: 배분 창 안의 매각기�
   });
 });
 
-describe("countNewIds — 직전 산출물 대비 신규 유입 건수(기준일 바 '신규 N건')", () => {
-  const ids = (...values: string[]) => new Set(values);
+describe("countNewOnSharedDates — 겹치는 매각기일에서의 신규 유입(기준일 바 '신규 N건')", () => {
+  // 화면 라벨이 뜻하는 값은 "새로 올라온 물건"이다. 산출물은 배분 창으로 뽑히므로 단순 id 차집합에는
+  // 창이 하루 굴러 들어온 기일 한 칸이 통째로 섞인다(2026-08-05 실측 431건의 정체).
+  const prev = (items: { id: string; saleDate: string }[]) => ({
+    ids: new Set(items.map((i) => i.id)),
+    saleDates: new Set(items.map((i) => i.saleDate)),
+  });
+  /** 기일 하나에 id `${saleDate}-i` n건 */
+  const day = (saleDate: string, n: number, offset = 0) =>
+    Array.from({ length: n }, (_, i) => ({ id: `${saleDate}-${i + offset}`, saleDate }));
 
-  it("직전에 없던 id만 센다 — 일부 겹침", () => {
-    expect(countNewIds(ids("a", "b", "c"), ids("b", "c", "d", "e"))).toBe(2);
+  it("창이 하루 굴러도 새로 들어온 기일분은 신규가 아니다", () => {
+    // 직전 창 08-03~08-05 → 이번 창 08-04~08-06. 08-06 200건은 전부 "직전에 없던 id"지만
+    // 그 기일이 직전 수집 대상이 아니었을 뿐이므로 새 유입이 아니다.
+    const previous = prev([...day("2026-08-03", 200), ...day("2026-08-04", 200), ...day("2026-08-05", 200)]);
+    const current = [...day("2026-08-04", 200), ...day("2026-08-05", 200), ...day("2026-08-06", 200)];
+    expect(countNewOnSharedDates(previous, current)).toBe(0);
   });
-  it("겹치는 id가 하나도 없으면 이번 산출 전량이 신규", () => {
-    expect(countNewIds(ids("a", "b"), ids("c", "d", "e"))).toBe(3);
+
+  it("겹치는 기일에서 새 id가 등장하면 세어진다(창 회전분과 합산되지 않는다)", () => {
+    const previous = prev([...day("2026-08-04", 200), ...day("2026-08-05", 200)]);
+    const current = [
+      ...day("2026-08-04", 200),
+      ...day("2026-08-05", 200),
+      ...day("2026-08-05", 3, 1000), // 겹치는 기일의 신규 3건
+      ...day("2026-08-06", 200), // 새로 굴러 들어온 기일 — 제외
+    ];
+    expect(countNewOnSharedDates(previous, current)).toBe(3);
   });
-  it("전부 직전에 있던 id면 0 — 이탈분(직전에만 있는 id)은 세지 않는다", () => {
-    // 신규는 "새로 유입"만 말한다. 목록에서 빠진 물건까지 세면 변동 건수가 되어 의미가 뒤섞인다.
-    expect(countNewIds(ids("a", "b", "c"), ids("a", "b"))).toBe(0);
+
+  it("직전 기준이 비어 있으면 null — 0으로 단정하지 않는다", () => {
+    // 파일 결측·파싱 실패로 기준을 못 만든 경우는 호출부(crawl.ts readPreviousOutput)가 null을 주고,
+    // 기준이 비어 있는 경우는 여기서 null이 된다. 두 경로 모두 화면은 건수를 감춘다.
+    expect(countNewOnSharedDates(prev([]), day("2026-08-04", 10))).toBeNull();
   });
-  it("직전 집합이 비어 있으면 전량 신규", () => {
-    // 비교 대상 자체가 없는 상태(첫 실행·파일 결측)는 여기서 0이 아니라 null로 처리된다 —
-    // 그 판정은 호출부(crawl.ts readPreviousIds)에 있고, 이 함수는 주어진 두 집합만 본다.
-    expect(countNewIds(ids(), ids("a", "b"))).toBe(2);
+
+  it("겹치는 기일이 0이면 null — 이번 산출 전량을 신규로 부풀리지 않는다", () => {
+    const previous = prev(day("2026-08-04", 200));
+    expect(countNewOnSharedDates(previous, day("2026-09-01", 200))).toBeNull();
   });
-  it("이번 산출이 비면 0", () => {
-    expect(countNewIds(ids("a", "b"), ids())).toBe(0);
+
+  it("기일이 옮겨온 물건(연기·변경)은 신규가 아니다", () => {
+    // 직전 08-04에 있던 id가 이번엔 겹치는 기일 08-05에 있다. id는 직전 산출물 전량과 대조한다.
+    const previous = prev([
+      { id: "seoul-2025타경1-1", saleDate: "2026-08-04" },
+      { id: "seoul-2025타경2-1", saleDate: "2026-08-05" },
+    ]);
+    const current = [
+      { id: "seoul-2025타경1-1", saleDate: "2026-08-05" },
+      { id: "seoul-2025타경2-1", saleDate: "2026-08-05" },
+    ];
+    expect(countNewOnSharedDates(previous, current)).toBe(0);
+  });
+
+  it("이탈분(직전에만 있는 물건)은 세지 않는다", () => {
+    // 신규는 "새로 유입"만 말한다. 빠진 물건까지 세면 변동 건수가 되어 의미가 뒤섞인다.
+    const previous = prev(day("2026-08-04", 10));
+    expect(countNewOnSharedDates(previous, day("2026-08-04", 4))).toBe(0);
+  });
+
+  it("이번 산출이 비면 겹치는 기일도 없다 — null", () => {
+    expect(countNewOnSharedDates(prev(day("2026-08-04", 10)), [])).toBeNull();
   });
 });
 

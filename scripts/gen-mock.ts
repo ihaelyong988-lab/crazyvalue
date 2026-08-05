@@ -29,12 +29,14 @@ function mulberry32(seed: number) {
 const rng = mulberry32(SEED);
 const pick = <T,>(arr: readonly T[]): T => arr[Math.floor(rng() * arr.length)];
 
-// 데이터 기준: 직전 일요일 03:00 KST(2026-07-12) — 갱신 서사와 일치
+// 데이터 기준: 2026-07-12(일) 03:00 KST 슬롯. 갱신은 매일 03:00이고 일요일만 full 전량,
+// 월~토는 quick 경량이다 — 다음 갱신은 하루 뒤(월요일 quick)다.
 const CRAWLED_AT = "2026-07-12T03:00:00+09:00";
-const NEXT_UPDATE_AT = "2026-07-19T03:00:00+09:00";
+const NEXT_UPDATE_AT = "2026-07-13T03:00:00+09:00";
 const BASE_DATE = "2026-07-12";
 // 목데이터에는 직전 산출물이 없어 대조로 셀 수 없다 — 신규 건수 표기 경로를 목 화면에서도 렌더하도록
-// 고정 양수를 넣는다(실데이터는 크롤러가 직전 파일과 id를 대조해 계산한다).
+// 고정 양수를 넣는다(실데이터는 직전 산출물과 겹치는 매각기일에서 새로 등장한 id만 센다 —
+// scripts/crawl-lib.ts countNewOnSharedDates).
 const NEW_COUNT = 18;
 
 const addDays = (dateOnly: string, days: number): string =>

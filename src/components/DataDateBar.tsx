@@ -14,7 +14,9 @@ export function DataDateBar() {
   const newCount = meta?.newCount;
 
   // 수집 시각은 crawledAt 실값을 쓴다 — 리터럴 03:00 하드코딩은 지연·수동 실행 주에 거짓이 된다(감사 38).
-  // 신규 건수는 직전 산출물과의 비교값이라 비교 대상이 없으면 부재다 — 그때는 0건으로 단정하지 않고 감춘다.
+  // 신규 건수는 직전에도 수집 대상이던 매각기일에서 새로 등장한 물건 수다(집계 정의는 crawl-lib
+  // countNewOnSharedDates — 배분 창이 하루 굴러 들어온 기일은 제외한다). 셀 근거가 없으면 부재다 —
+  // 그때는 0건으로 단정하지 않고 감춘다.
   // 0건도 같이 감춘다: 표시할 값이 없는 것과 같고, "새로 갱신" 배지 옆의 "신규 0건"은 모순으로 읽힌다.
   const status = stamp
     ? `${formatMonthDayKr(stamp.date)} ${stamp.time}${newCount ? ` · 신규 ${newCount}건` : ""}`

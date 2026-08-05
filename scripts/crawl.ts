@@ -56,10 +56,11 @@ import {
   acceptPage,
   buildSummaryLine,
   capAcrossSaleDates,
-  countNewIds,
+  countNewOnSharedDates,
   createListAccumulator,
   gateItems,
   isStalled,
+  type PreviousOutput,
 } from "./crawl-lib";
 
 // ---------------------------------------------------------------------------
@@ -714,13 +715,16 @@ function mapRow(row: RawRow, detail: DetailResult | null, todayYmd: string, fail
 // ---------------------------------------------------------------------------
 
 /**
- * 직전 산출물의 id 집합 — 신규 건수의 비교 기준. 지역 파일 17개를 **전부** 읽어야 성립한다.
+ * 직전 산출물의 대조 기준 — id 전량과 매각기일 집합. 지역 파일 17개를 **전부** 읽어야 성립한다.
  * 하나라도 없거나 파싱에 실패하면 null이다 — 기준이 빠진 지역의 물건이 통째로 신규로 계상돼
  * 수치가 부풀기 때문이다(첫 실행도 같은 이유로 null: "새로 유입"을 말할 근거가 없다).
+ * 매각기일까지 읽는 이유는 crawl-lib countNewOnSharedDates 주석 참조 — 직전 창에 없던 기일은
+ * 신규 계산에서 통째로 빠진다.
  * 지역 파일을 덮어쓰기 전에 호출해야 한다.
  */
-function readPreviousIds(outDir: string): Set<string> | null {
+function readPreviousOutput(outDir: string): PreviousOutput | null {
   const ids = new Set<string>();
+  const saleDates = new Set<string>();
   for (const r of REGIONS) {
     const file = join(outDir, `${r.key}.json`);
     if (!existsSync(file)) return null;
@@ -728,14 +732,15 @@ function readPreviousIds(outDir: string): Set<string> | null {
       const parsed = JSON.parse(readFileSync(file, "utf8")) as unknown;
       if (!Array.isArray(parsed)) return null;
       for (const row of parsed) {
-        const id = (row as { id?: unknown }).id;
+        const { id, saleDate } = row as { id?: unknown; saleDate?: unknown };
         if (typeof id === "string") ids.add(id);
+        if (typeof saleDate === "string") saleDates.add(saleDate);
       }
     } catch {
       return null;
     }
   }
-  return ids;
+  return { ids, saleDates };
 }
 
 // ---------------------------------------------------------------------------
@@ -1019,11 +1024,12 @@ async function main(): Promise<void> {
   const outDir = join(process.cwd(), "public", "data");
   mkdirSync(outDir, { recursive: true });
 
-  // 신규 건수 — 직전 산출물에 없던 물건 수. 지역 파일을 덮어쓰기 **전에** 읽어야 비교가 성립한다.
+  // 신규 건수 — 직전에도 수집 대상이던 매각기일에서 새로 등장한 물건 수(crawl-lib 주석: 창 회전분 제외).
+  // 지역 파일을 덮어쓰기 **전에** 읽어야 비교가 성립한다.
   // 부분 수집(--region)은 비교하지 않는다 — 이번 산출에 없는 나머지 지역이 전부 이탈로 보여
   // 신규만 남은 수치가 되기 때문이다(직전 기준이 불완전할 때와 같은 왜곡).
-  const previousIds = opts.region === null ? readPreviousIds(outDir) : null;
-  const newCount = previousIds === null ? null : countNewIds(previousIds, new Set(outItems.map((i) => i.id)));
+  const previous = opts.region === null ? readPreviousOutput(outDir) : null;
+  const newCount = previous === null ? null : countNewOnSharedDates(previous, outItems);
 
   const targets = opts.region ? REGIONS.filter((r) => r.key === opts.region) : REGIONS;
   const countsByRegion: Record<string, number> = {};

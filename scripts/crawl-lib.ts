@@ -176,16 +176,39 @@ export function capAcrossSaleDates<T extends { id: string; saleDate: string; pri
   };
 }
 
+/** 직전 산출물의 대조 기준 — id 전량과 매각기일 집합. 지역 파일을 덮어쓰기 전에 만든다(crawl.ts). */
+export interface PreviousOutput {
+  ids: ReadonlySet<string>;
+  saleDates: ReadonlySet<string>;
+}
+
 /**
- * 신규 건수 — 이번 산출 id 중 직전 산출물에 없던 것의 수(새로 유입된 물건).
- * 비교 기준이 없을 때(첫 실행·부분 수집) 무엇을 기록할지는 호출부가 정한다 — 이 함수는 두 집합만 본다.
+ * 신규 건수 — 직전에도 수집 대상이던 매각기일에서 이번에 새로 등장한 물건 수.
+ *
+ * 단순 id 차집합은 이 값을 재지 못한다. 산출물은 매각기일 배분 창(OUTPUT_WINDOW_DAYS)으로 뽑는데
+ * 매일 갱신이면 창이 하루씩 굴러가고, 새로 들어온 기일 한 칸(실측 약 200건)은 통째로 "직전 산출물에
+ * 없던 id"가 된다. 2026-08-05 실측 431건 중 대부분이 새 물건이 아니라 이 창 회전량이었다
+ * (같은 이유로 데이터 가치 게이트 R4를 폐기했다 — AGENTS.md §9).
+ *
+ * 그래서 이번 산출 중 **직전 창에도 있던 기일**의 물건만 센다. 소속 판정은 직전 산출물의 id 전량으로
+ * 한다 — 기일이 옮겨온 물건(연기·변경)은 id가 이미 있으므로 새 유입이 아니다.
+ *
+ * 겹치는 기일이 하나도 없으면 척도가 성립하지 않아 null이다. 0으로 단정하면 "새로 들어온 물건이 없다"는
+ * 사실 주장이 되는데, 이 상태는 셀 수 없음이다. 직전 산출물 자체가 없을 때(첫 실행·부분 수집)의
+ * null 판정은 호출부에 있다 — 이 함수는 주어진 기준만 본다.
  */
-export function countNewIds(previousIds: ReadonlySet<string>, currentIds: ReadonlySet<string>): number {
-  let count = 0;
-  for (const id of currentIds) {
-    if (!previousIds.has(id)) count++;
+export function countNewOnSharedDates(
+  previous: PreviousOutput,
+  current: readonly { id: string; saleDate: string }[],
+): number | null {
+  let onSharedDates = 0;
+  let fresh = 0;
+  for (const item of current) {
+    if (!previous.saleDates.has(item.saleDate)) continue; // 이번에 굴러 들어온 기일 = 창 회전분
+    onSharedDates++;
+    if (!previous.ids.has(item.id)) fresh++;
   }
-  return count;
+  return onSharedDates === 0 ? null : fresh;
 }
 
 export interface CollectSummary {
