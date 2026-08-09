@@ -393,5 +393,45 @@
    }
   ],
   "specialNote": "재매각임. 매수신청보증금 최저매각가격의 20%"
+ },
+ {
+  "id": "busan-2026타경100558-1",
+  "court": "부산지방법원",
+  "caseNo": "2026타경100558",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "사용본거지 : 부산광역시 해운대구 삼어로133번나길 18 203동 1303호 (반여동, 해운대 센텀트루엘 2단지)",
+  "region": "부산",
+  "district": "해운대구",
+  "appraisalPrice": 21000000,
+  "minPrice": 10290000,
+  "priceRatio": 0.49,
+  "failCount": 2,
+  "saleDate": "2026-08-14",
+  "saleTime": "10:00",
+  "courtRoom": "신관지하2층입찰법정",
+  "deposit": 1029000,
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-05-01",
+    "minPrice": 21000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-05",
+    "minPrice": 21000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-10",
+    "minPrice": 14700000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
  }
 ]

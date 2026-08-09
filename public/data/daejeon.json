@@ -1,5 +1,50 @@
 [
  {
+  "id": "daejeon-2024타경125564-1",
+  "court": "대전지방법원",
+  "caseNo": "2024타경125564",
+  "itemNo": "1",
+  "category": "상가",
+  "address": "대전광역시 서구 계룡로 398 3층에이-301호 (갈마동,해상수산)",
+  "region": "대전",
+  "district": "서구",
+  "appraisalPrice": 6438000000,
+  "minPrice": 2208234000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-08-13",
+  "saleTime": "10:00",
+  "courtRoom": "본관제106호법정",
+  "deposit": 220823400,
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-03-26",
+    "minPrice": 6438000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-30",
+    "minPrice": 6438000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-04",
+    "minPrice": 4506600000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-09",
+    "minPrice": 3154620000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "의료시설(한방병원)로 이용중임. 특별매각조건 매수신청보증금 최저매각가격의 20%"
+ },
+ {
   "id": "daejeon-2025타경501780-1",
   "court": "대전지방법원",
   "caseNo": "2025타경501780",
