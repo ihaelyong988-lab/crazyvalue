@@ -89,6 +89,7 @@ jobs:
         if: steps.gate.outputs.run == 'true'
         env:
           MODE: ${{ steps.gate.outputs.mode }}
+          EVENT: ${{ github.event_name }}
         run: |
           run_crawl() {
             # --window 7(수집 창)은 crawl-config OUTPUT_WINDOW_DAYS(배분 창)·data-value-gate.mjs
@@ -100,18 +101,29 @@ jobs:
               npm run crawl
             fi
           }
-          # quick은 리프레쉬(방문자 대기)와 공용이라 2회까지(최대 약 12분), full은 야간 배치라 3회까지.
-          [ "$MODE" = "quick" ] && MAX=2 || MAX=3
-          for attempt in $(seq 1 "$MAX"); do
-            if run_crawl; then
-              exit 0
+          # 재시도 창은 횟수가 아니라 **경과 시간**으로 끊는다(2026-08-09). 모드별 소요가 10배
+          # 차이라(quick 실측 3분 · full 실측 52분) 횟수로 정하면 full이 job 상한 120분을 넘긴다.
+          #   정기 슬롯 — 방문자가 기다리지 않는다. 세션 거부는 간헐적이고 흡수 폭이 문제였다:
+          #     08-06·08-08·08-09 3연속 실패가 전부 10분 창 안에서 소진됐다. 창을 50분으로 넓힌다.
+          #     full은 1회에 52분이라 첫 시도 뒤 잔여가 없어 자연히 1~2회로 수렴한다(상한 안전).
+          #   리프레쉬(workflow_dispatch) — 방문자가 화면에서 기다린다. 창을 넓히면 "눌렀는데 안
+          #     끝난다"가 되므로 기존 10분을 유지한다.
+          if [ "$EVENT" = "schedule" ]; then BUDGET_SEC=3000; else BUDGET_SEC=600; fi
+          START=$(date +%s)
+          ATTEMPT=1
+          if run_crawl; then exit 0; fi
+          for WAIT in 300 600 900; do
+            ELAPSED=$(( $(date +%s) - START ))
+            if [ $((ELAPSED + WAIT)) -ge "$BUDGET_SEC" ]; then
+              echo "재시도 창(${BUDGET_SEC}초) 잔여 부족 — 경과 ${ELAPSED}초 · ${ATTEMPT}회 시도에서 멈춘다."
+              break
             fi
-            if [ "$attempt" -lt "$MAX" ]; then
-              echo "수집 ${attempt}회차 실패 — 180초 뒤 재시도한다(총 ${MAX}회)."
-              sleep 180
-            fi
+            ATTEMPT=$((ATTEMPT + 1))
+            echo "수집 실패 — ${WAIT}초 뒤 ${ATTEMPT}회차를 시도한다(경과 ${ELAPSED}초 / 창 ${BUDGET_SEC}초)."
+            sleep "$WAIT"
+            if run_crawl; then exit 0; fi
           done
-          echo "수집이 ${MAX}회 모두 실패했다."
+          echo "수집이 ${ATTEMPT}회 모두 실패했다."
           exit 1
       - name: commit data
         if: steps.gate.outputs.run == 'true'
@@ -128,13 +140,64 @@ jobs:
           # 게이트의 KST_TODAY를 재사용하지 않는 이유: 스텝마다 셸이 분리되고, 게이트 자신이
           # 죽은 경우 그 출력은 빈 문자열이라 report failure의 제목에서 날짜가 사라진다.
           git diff --cached --quiet || { git commit -m "data: daily update $(TZ=Asia/Seoul date +%F) ($MODE)"; git push; }
+      # 배포된 화면 검증(2026-08-09) — 커밋된 파일이 맞는 것과 방문자 화면이 맞는 것은 다른 질문이다.
+      # 이 워크플로는 그동안 jq로 파일만 채점하고 배포된 화면을 한 번도 보지 않았다. 그래서 런·게이트·
+      # 커밋·배포가 전부 초록인데 주인님 폰은 일주일 묵은 기준일을 띄우고 있었다.
+      # 게다가 봇이 GITHUB_TOKEN으로 올린 커밋은 워크플로를 발화시키지 않아(GitHub 사양) CI도 안 돈다 —
+      # 08-07 데이터가 E2E 1건을 이틀간 깨뜨린 채였다. 자동화가 만든 변경은 그 자동화가 검사한다.
+      # 기준일이 HTML에 구워지므로(src/lib/build-meta.ts) 이 한 스텝이 "배포 반영"과 "화면 정확"을
+      # 동시에 판정한다. 배포는 막지 않는다(강등 철학) — 미달 사실만 표면화한다.
+      - name: verify deployed screen
+        id: screen
+        if: success() && steps.gate.outputs.run == 'true'
+        continue-on-error: true
+        env:
+          # 리프레쉬는 방문자가 화면에서 기다린다 — 안내 문구가 "완료까지 10분 안팎"이라
+          # 창을 6분으로 줄여 총 소요를 그 약속 안에 둔다. 정기 슬롯은 기다리는 사람이 없다.
+          VERIFY_TIMEOUT_MS: ${{ github.event_name == 'schedule' && '720000' || '360000' }}
+        run: |
+          # pipefail 필수 — tee가 성공하면 파이프라인 전체가 exit 0이 되어 검증 실패가
+          # 통째로 삼켜진다(원장 2026-07-19 동일 함정). 그러면 아래 불일치 알림이 영영 안 뜬다.
+          set -o pipefail
+          npx tsx scripts/verify-deployed-date.ts 2>&1 | tee screen-verify.txt
+      - name: report screen mismatch
+        if: success() && steps.screen.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          PREFIX="배포 화면 기준일 불일치"
+          TITLE="$PREFIX $(TZ=Asia/Seoul date +%F)"
+          gh label create "$ALERT_LABEL" --color BFD4F2 --description "워크플로 자동 알림 — 중복 억제 대상" --force >/dev/null 2>&1 || true
+          OPEN=$(gh issue list --state open --label "$ALERT_LABEL" --limit 100 --json title 2>/dev/null \
+            | jq -r --arg t "$TITLE" '[.[] | select(.title == $t)] | length' || echo 0)
+          if [ "${OPEN:-0}" -gt 0 ]; then
+            echo "'$TITLE' 이미 열려 있다 — 새로 만들지 않는다."
+            exit 0
+          fi
+          {
+            echo "데이터는 커밋·배포됐는데 방문자 화면이 그 기준일을 말하지 않는다."
+            echo ""
+            echo '```'
+            cat screen-verify.txt 2>/dev/null || echo "(검증 출력 없음)"
+            echo '```'
+            echo ""
+            echo "실행 로그: $RUN_URL"
+            echo ""
+            echo "점검: Vercel 배포가 지연·실패했는가 → 기준일이 빌드 산출물이 아니라 런타임 fetch로"
+            echo "되돌아갔는가(AGENTS §9 2026-08-09) 순으로 본다. 로컬 재현은 \`npx tsx scripts/verify-deployed-date.ts\`."
+          } > screen-verify.md
+          gh issue create --title "$TITLE" --body-file screen-verify.md --assignee ihaelyong988-lab --label "$ALERT_LABEL"
       # 조기 종료 표면화 — 차단·예산 소진·마감은 exit 0(부분 산출·커밋)이라 아래 report failure가
       # 발화하지 않는다. 그대로 두면 전량 역산 이력이 실취득과 같은 화면으로 게시되고 재발을 아무도 모른다.
-      # 이슈 3종(조기 종료·가치 미달·실패) 공통 규약 — 매일 실행이라 조건이 지속되는 동안 같은
-      # 이슈가 날마다 쌓여 다음 진짜 실패를 가린다. 그래서 각 스텝은 같은 제목 접두의 열린 이슈가
-      # 이미 있으면 새로 만들지 않는다. 닫는 자동화는 두지 않는다 — gh issue close는 되돌리기 어렵고
-      # 접두 매칭이라 사람이 같은 접두로 연 이슈까지 함께 닫는다. 조회가 실패하면 만드는 쪽으로
-      # 기운다(알림 경로의 fail-safe 방향 = 모르면 알린다, 원장 2026-07-27).
+      # 이슈 4종(조기 종료·가치 미달·화면 불일치·실패) 공통 규약 — 억제 단위는 **접두가 아니라
+      # 그날 제목 전체**다(2026-08-09 정정). 접두 억제는 열린 이슈 하나가 이후 모든 알림을 영구히
+      # 삼킨다 — 실측: 08-06자 이슈 #17 하나 때문에 08-08·08-09 두 번의 실패가 이슈를 만들지 못했고
+      # 주인님은 이틀 동안 수집이 멈춘 사실을 모르셨다. 침묵 실패를 막으려고 넣은 억제가 정확히
+      # 침묵 실패를 만들었다(§13 규칙 9 정면 위반). 같은 날 같은 종류만 1건으로 묶는다 — 조건이
+      # 지속되면 날마다 1건씩 쌓이는데, 그 쌓임 자체가 "며칠째 실패 중"이라는 신호다.
+      # 닫는 자동화는 두지 않는다 — gh issue close는 되돌리기 어렵고 사람이 연 이슈까지 닫는다.
+      # 조회가 실패하면 만드는 쪽으로 기운다(알림 경로의 fail-safe = 모르면 알린다, 원장 2026-07-27).
       - name: report abort
         if: success() && steps.gate.outputs.run == 'true'
         env:
@@ -144,10 +207,11 @@ jobs:
           jq -e '.aborted == true' public/data/meta.json > /dev/null 2>&1 || exit 0
           PREFIX="주간 수집 조기 종료"
           gh label create "$ALERT_LABEL" --color BFD4F2 --description "워크플로 자동 알림 — 중복 억제 대상" --force >/dev/null 2>&1 || true
+          TITLE="$PREFIX $(TZ=Asia/Seoul date +%F)"
           OPEN=$(gh issue list --state open --label "$ALERT_LABEL" --limit 100 --json title 2>/dev/null \
-            | jq -r --arg p "$PREFIX" '[.[] | select(.title | startswith($p))] | length' || echo 0)
+            | jq -r --arg t "$TITLE" '[.[] | select(.title == $t)] | length' || echo 0)
           if [ "${OPEN:-0}" -gt 0 ]; then
-            echo "'$PREFIX' 열린 이슈 ${OPEN}건 — 새로 만들지 않는다."
+            echo "'$TITLE' 이미 열려 있다 — 새로 만들지 않는다."
             exit 0
           fi
           REASON=$(jq -r '.abortReason // "미상"' public/data/meta.json)
@@ -165,7 +229,7 @@ jobs:
             echo ""
             echo "점검: 차단 시점 요청 수를 crawl-config BUDGET.maxRequests와 대조 → 상한 재조정."
           } > crawl-abort.md
-          gh issue create --title "$PREFIX $(TZ=Asia/Seoul date +%F)" --body-file crawl-abort.md --assignee ihaelyong988-lab --label "$ALERT_LABEL"
+          gh issue create --title "$TITLE" --body-file crawl-abort.md --assignee ihaelyong988-lab --label "$ALERT_LABEL"
       # 산출물 가치 채점 — "런이 성공했는가"와 "방문자에게 쓸모가 있는가"는 다른 질문이다.
       # 2026-08-02: 산출 1,000건이 전부 하루짜리 기일이고 시도 5곳이 0건이고 이번 주 신규가
       # 0건인데도 크롤·게이트·커밋·배포가 전부 성공이었다 — 성공 신호가 실패를 덮었다.
@@ -184,10 +248,11 @@ jobs:
           cat data-value.txt
           # 중복 억제(이슈 3종 공통 규약)
           gh label create "$ALERT_LABEL" --color BFD4F2 --description "워크플로 자동 알림 — 중복 억제 대상" --force >/dev/null 2>&1 || true
+          TITLE="$PREFIX $(TZ=Asia/Seoul date +%F)"
           OPEN=$(gh issue list --state open --label "$ALERT_LABEL" --limit 100 --json title 2>/dev/null \
-            | jq -r --arg p "$PREFIX" '[.[] | select(.title | startswith($p))] | length' || echo 0)
+            | jq -r --arg t "$TITLE" '[.[] | select(.title == $t)] | length' || echo 0)
           if [ "${OPEN:-0}" -gt 0 ]; then
-            echo "'$PREFIX' 열린 이슈 ${OPEN}건 — 새로 만들지 않는다."
+            echo "'$TITLE' 이미 열려 있다 — 새로 만들지 않는다."
             exit 0
           fi
           {
@@ -202,7 +267,62 @@ jobs:
             echo "판정 기준 시각은 meta.crawledAt이라 나중에 로컬에서 같은 결과를 재현할 수 있다 —"
             echo "\`node .claude/hooks/data-value-gate.mjs --check\`"
           } > data-value.md
-          gh issue create --title "$PREFIX $(TZ=Asia/Seoul date +%F)" --body-file data-value.md --assignee ihaelyong988-lab --label "$ALERT_LABEL"
+          gh issue create --title "$TITLE" --body-file data-value.md --assignee ihaelyong988-lab --label "$ALERT_LABEL"
+      # 실패 원인 계측(2026-08-09) — 08-06·08-08·08-09 세 번의 실패가 전부 `TypeError: fetch failed`
+      # 인데 그 껍데기만 로그에 남고 진짜 이유는 기록되지 않아 세 번을 겪고도 원인을 특정하지 못했다.
+      # crawl.ts는 이제 err.cause를 편다(describeError). 여기서는 **실패한 그 순간·그 러너에서**
+      # 계층별로 찍는다 — 2026-08-03 진단은 실패와 다른 시각(27분 뒤)에 돌아 "전부 정상"이라는
+      # 무의미한 결과를 냈다. 계층이 갈리면 원인도 갈린다: 연결 시간초과 = 방화벽이 버림(해외/클라우드
+      # IP 차단 가설), 상대가 끊음·DNS 실패 = 사이트 쪽. IPv4/IPv6를 따로 찍는 이유도 같다.
+      - name: diagnose network
+        if: failure() && steps.gate.outputs.run != 'false'
+        continue-on-error: true
+        run: |
+          set +e
+          HOST=www.courtauction.go.kr
+          {
+            echo "시각: $(TZ=Asia/Seoul date '+%F %T KST')"
+            echo "러너 공인 IP: $(curl -4 -s --max-time 10 https://api.ipify.org || echo '조회 실패')"
+            echo ""
+            echo "[1] DNS"
+            getent ahosts "$HOST" 2>&1 | head -8 || echo "  실패"
+            echo ""
+            echo "[2] TCP 443"
+            timeout 12 bash -c "cat < /dev/null > /dev/tcp/$HOST/443" 2>&1 && echo "  연결 성공" || echo "  연결 실패(exit $?) — 방화벽이 버리면 여기서 시간초과한다"
+            echo ""
+            echo "[3] TLS"
+            timeout 15 openssl s_client -connect "$HOST:443" -servername "$HOST" </dev/null 2>&1 \
+              | grep -E "^(CONNECTED|depth=0|verify return|SSL handshake)" | head -6 || echo "  실패"
+            echo ""
+            echo "[4] HTTP curl — IPv4"
+            curl -4 -sS -o /dev/null --max-time 25 \
+              -w "  code=%{http_code} dns=%{time_namelookup}s connect=%{time_connect}s tls=%{time_appconnect}s total=%{time_total}s\n" \
+              "https://$HOST/pgj/index.on" 2>&1 || echo "  실패"
+            echo "[4] HTTP curl — IPv6"
+            curl -6 -sS -o /dev/null --max-time 25 \
+              -w "  code=%{http_code} total=%{time_total}s\n" \
+              "https://$HOST/pgj/index.on" 2>&1 || echo "  실패(IPv6 미지원 또는 차단)"
+            echo ""
+            echo "[5] Node fetch — 크롤러와 같은 경로. cause 사슬까지 편다."
+            node -e '
+              const flat = (e, d = 0) => {
+                if (d > 4 || !(e instanceof Error)) return String(e);
+                const bits = ["code", "errno", "syscall", "address", "port"]
+                  .filter((k) => e[k] !== undefined).map((k) => k + "=" + e[k]).join(" ");
+                const head = e.name + ": " + e.message + (bits ? " (" + bits + ")" : "");
+                const sub = Array.isArray(e.errors)
+                  ? e.errors.map((z) => flat(z, d + 1)).join(" | ")
+                  : e.cause !== undefined ? flat(e.cause, d + 1) : "";
+                return sub ? head + " <- " + sub : head;
+              };
+              fetch("https://www.courtauction.go.kr/pgj/index.on", {
+                headers: { "User-Agent": "CrazyValueBot/0.1" },
+                signal: AbortSignal.timeout(25000),
+              }).then((r) => console.log("  성공 status=" + r.status))
+                .catch((e) => console.log("  실패 " + flat(e)));
+            ' 2>&1 || echo "  node 실행 실패"
+          } > network-diag.txt 2>&1
+          cat network-diag.txt
       # 실패 표면화(감사 42) — 침묵 실패 금지(§13 규칙 9). 데이터는 직전 파일 그대로다.
       # 조건이 `== 'true'`가 아니라 `!= 'false'`인 이유: 게이트 스텝 자신이 실패하면 outputs.run이
       # 빈 문자열이 돼 `== 'true'`가 거짓이 되고, 유일한 실패 알림 채널이 침묵한다.
@@ -216,16 +336,27 @@ jobs:
           PREFIX="주간 수집 실패"
           # 중복 억제(이슈 3종 공통 규약)
           gh label create "$ALERT_LABEL" --color BFD4F2 --description "워크플로 자동 알림 — 중복 억제 대상" --force >/dev/null 2>&1 || true
+          TITLE="$PREFIX $(TZ=Asia/Seoul date +%F)"
           OPEN=$(gh issue list --state open --label "$ALERT_LABEL" --limit 100 --json title 2>/dev/null \
-            | jq -r --arg p "$PREFIX" '[.[] | select(.title | startswith($p))] | length' || echo 0)
+            | jq -r --arg t "$TITLE" '[.[] | select(.title == $t)] | length' || echo 0)
           if [ "${OPEN:-0}" -gt 0 ]; then
-            echo "'$PREFIX' 열린 이슈 ${OPEN}건 — 새로 만들지 않는다."
+            echo "'$TITLE' 이미 열려 있다 — 새로 만들지 않는다."
             exit 0
           fi
           {
             echo "weekly-crawl 실행이 실패했다. 데이터는 직전 실행 파일이 유지된다(무커밋 계약)."
             echo ""
+            echo "## 실패 순간의 네트워크 계층 진단"
+            echo ""
+            echo '```'
+            cat network-diag.txt 2>/dev/null || echo "(진단을 수집하지 못했다 — diagnose network 스텝 로그를 보라)"
+            echo '```'
+            echo ""
+            echo "읽는 법 — [2] TCP가 시간초과면 방화벽이 패킷을 버린 것이다(해외·클라우드 IP 차단 가설)."
+            echo "[1] DNS 실패나 [5]에서 상대가 끊었다면(ECONNRESET) 사이트 쪽 문제다."
+            echo "IPv4는 되는데 IPv6만 실패하면 계열 선택 문제이므로 IPv4 고정으로 해결된다."
+            echo ""
             echo "실행 로그: $RUN_URL"
-            echo "점검: 로그에서 중단 사유 확인 → 로컬 'npm run crawl -- --dry-run --limit 3' 재현 → 수정 후 workflow_dispatch 재실행."
+            echo "점검: 위 진단으로 계층을 가른 뒤 → 로컬 'npm run crawl -- --dry-run --limit 3' 재현."
           } > crawl-failure.md
-          gh issue create --title "$PREFIX $(TZ=Asia/Seoul date +%F)" --body-file crawl-failure.md --assignee ihaelyong988-lab --label "$ALERT_LABEL"
+          gh issue create --title "$TITLE" --body-file crawl-failure.md --assignee ihaelyong988-lab --label "$ALERT_LABEL"

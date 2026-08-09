@@ -58,6 +58,7 @@ import {
   capAcrossSaleDates,
   countNewOnSharedDates,
   createListAccumulator,
+  describeError,
   gateItems,
   isStalled,
   type PreviousOutput,
@@ -329,10 +330,12 @@ async function request(
     } catch (err) {
       if (err instanceof CrawlAbortError) throw err;
       if (attempt >= backoffsMs.length) {
-        throw new Error(`요청 실패(재시도 ${backoffsMs.length}회 소진) ${path}: ${String(err)}`);
+        throw new Error(`요청 실패(재시도 ${backoffsMs.length}회 소진) ${path}: ${describeError(err)}`);
       }
       const backoff = backoffsMs[Math.min(attempt, backoffsMs.length - 1)];
-      console.error(`[재시도 ${attempt + 1}/${backoffsMs.length}] ${path} — ${String(err)} · ${backoff}ms 대기`);
+      console.error(
+        `[재시도 ${attempt + 1}/${backoffsMs.length}] ${path} — ${describeError(err)} · ${backoff}ms 대기`,
+      );
       await new Promise((r) => setTimeout(r, backoff));
       attempt++;
     }

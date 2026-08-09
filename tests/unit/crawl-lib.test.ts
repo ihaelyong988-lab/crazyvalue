@@ -7,6 +7,7 @@ import {
   countNewOnSharedDates,
   createListAccumulator,
   deriveRowKey,
+  describeError,
   gateItems,
   isStalled,
   type RawRow,
@@ -276,3 +277,75 @@ function countByDate(items: { saleDate: string }[]): Record<string, number> {
   for (const i of items) per[i.saleDate] = (per[i.saleDate] ?? 0) + 1;
   return per;
 }
+
+// 수집 실패 원인 판독(2026-08-09) — 08-06·08-08·08-09 세 번의 실패가 전부 `TypeError: fetch failed`
+// 였는데 그 껍데기만 로그에 남아 원인을 특정하지 못했다. 이 함수가 틀리면 다음 실패 한 번을 통째로
+// 낭비하므로, "겉면이 아니라 cause의 code가 드러나는가"를 값으로 건다.
+describe("describeError — fetch 실패의 진짜 이유를 편다", () => {
+  it("Node fetch 실패에서 연결 시간초과 코드가 드러난다(방화벽 차단 판별의 근거)", () => {
+    const cause = Object.assign(new Error("connect ETIMEDOUT 1.2.3.4:443"), {
+      code: "ETIMEDOUT",
+      errno: -110,
+      syscall: "connect",
+      address: "1.2.3.4",
+      port: 443,
+    });
+    const out = describeError(Object.assign(new TypeError("fetch failed"), { cause }));
+    expect(out).toContain("TypeError: fetch failed");
+    expect(out).toContain("code=ETIMEDOUT");
+    expect(out).toContain("syscall=connect");
+    expect(out).toContain("address=1.2.3.4");
+    expect(out).toContain("port=443");
+  });
+
+  it("상대가 끊은 경우와 시간초과가 서로 다른 문자열로 갈린다", () => {
+    const reset = describeError(
+      Object.assign(new TypeError("fetch failed"), {
+        cause: Object.assign(new Error("read ECONNRESET"), { code: "ECONNRESET" }),
+      }),
+    );
+    expect(reset).toContain("code=ECONNRESET");
+    expect(reset).not.toContain("ETIMEDOUT");
+  });
+
+  it("IPv6/IPv4 이중 시도 실패(AggregateError)는 계열별로 전부 편다", () => {
+    const agg = Object.assign(new AggregateError([], "") as Error & { errors: unknown[] }, {
+      name: "AggregateError",
+      message: "",
+      errors: [
+        Object.assign(new Error("connect ENETUNREACH"), { code: "ENETUNREACH" }),
+        Object.assign(new Error("connect ETIMEDOUT"), { code: "ETIMEDOUT" }),
+      ],
+    });
+    const out = describeError(Object.assign(new TypeError("fetch failed"), { cause: agg }));
+    expect(out).toContain("code=ENETUNREACH");
+    expect(out).toContain("code=ETIMEDOUT");
+    expect(out).toContain(" | ");
+  });
+
+  it("DNS 실패는 DNS 코드로 드러난다", () => {
+    const out = describeError(
+      Object.assign(new TypeError("fetch failed"), {
+        cause: Object.assign(new Error("getaddrinfo EAI_AGAIN host"), {
+          code: "EAI_AGAIN",
+          syscall: "getaddrinfo",
+        }),
+      }),
+    );
+    expect(out).toContain("code=EAI_AGAIN");
+    expect(out).toContain("syscall=getaddrinfo");
+  });
+
+  it("cause가 없으면 겉면만, Error가 아니면 원값 그대로", () => {
+    expect(describeError(new Error("단순 실패"))).toBe("Error: 단순 실패");
+    expect(describeError("문자열 오류")).toBe("문자열 오류");
+  });
+
+  it("순환·과도한 중첩에서 무한히 파고들지 않는다", () => {
+    let deep: Error = new Error("바닥");
+    for (let i = 0; i < 10; i++) deep = Object.assign(new Error(`층${i}`), { cause: deep });
+    const out = describeError(deep);
+    expect(out).toContain("…");
+    expect(out.split("<-").length).toBeLessThanOrEqual(7);
+  });
+});

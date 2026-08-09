@@ -226,6 +226,48 @@ export interface CollectSummary {
   output: number;
 }
 
+/**
+ * 오류를 진단 가능한 문자열로 편다.
+ *
+ * Node의 fetch 실패는 겉면이 항상 `TypeError: fetch failed`이고, 진짜 이유(DNS 실패·연결
+ * 시간초과·상대가 끊음·인증서)는 `err.cause`에 들어 있다. `String(err)`만 찍으면 그 이유가
+ * 통째로 버려진다 — 2026-08-06·08-08·08-09 세 번의 동일 실패를 겪고도 원인을 특정하지 못한
+ * 이유가 이것이다(AGENTS §9). cause 사슬을 끝까지 따라가며 code·errno·syscall·address·port를
+ * 남긴다. undici는 IPv6/IPv4 이중 시도 실패를 AggregateError.errors에 담으므로 그것도 편다 —
+ * 계열별로 실패가 갈리면 "해외 IP 차단"과 "사이트 불안정"이 그 자리에서 구분된다.
+ *
+ * crawl.ts가 아니라 여기 있는 이유: crawl.ts는 import 즉시 main()이 도는 스크립트라 테스트에서
+ * 부를 수 없다. 원인 판별이 틀리면 다음 실패 한 번을 통째로 낭비하므로 단위 테스트를 건다.
+ */
+export function describeError(err: unknown, depth = 0): string {
+  if (depth > 4) return "…";
+  if (!(err instanceof Error)) return String(err);
+  const e = err as Error & {
+    code?: string;
+    errno?: number;
+    syscall?: string;
+    address?: string;
+    port?: number;
+    errors?: unknown[];
+  };
+  const bits = [
+    e.code !== undefined && `code=${e.code}`,
+    e.errno !== undefined && `errno=${e.errno}`,
+    e.syscall !== undefined && `syscall=${e.syscall}`,
+    e.address !== undefined && `address=${e.address}`,
+    e.port !== undefined && `port=${e.port}`,
+  ]
+    .filter(Boolean)
+    .join(" ");
+  const head = `${e.name}: ${e.message}${bits ? ` (${bits})` : ""}`;
+  const nested = Array.isArray(e.errors)
+    ? e.errors.map((x) => describeError(x, depth + 1)).join(" | ")
+    : e.cause !== undefined
+      ? describeError(e.cause, depth + 1)
+      : "";
+  return nested ? `${head} <- ${nested}` : head;
+}
+
 /** 수집 요약 1줄 — 마감 직전 로그. 형식 고정(기계 대조용). */
 export function buildSummaryLine(s: CollectSummary): string {
   return (
