@@ -1,45 +1,17 @@
-import { readFileSync } from "node:fs";
-import path from "node:path";
 import { expect, test, type Locator, type Page } from "@playwright/test";
 import { formatKrw } from "../../src/lib/format";
+import { pickAxes, pickRegion } from "./fixture";
 
-// E2E 스모크 8종(기획안 §8 Phase 2.7). 시드 고정 목데이터(public/data/seoul.json)를
-// node:fs로 읽어 실제 id·금액·기일을 기대값으로 쓴다. 각 테스트는 독립 컨텍스트다.
+// E2E 스모크 8종(기획안 §8 Phase 2.7). 산출물(public/data)에서 실제 id·금액·기일을 골라
+// 기대값으로 쓴다. 각 테스트는 독립 컨텍스트다.
 
-interface FixtureItem {
-  id: string;
-  address: string;
-  category: string;
-  region: string;
-  district: string;
-  minPrice: number;
-  saleDate: string;
-  failCount: number;
-}
-
-// 지역별 산출 건수는 갱신마다 바뀐다 — 특정 지역 고정 참조는 그 지역이 0건이 되는 주에 통째로 깨진다
-// (2026-08-02: 서울 0건으로 이 파일이 로드 단계에서 실패했다). meta에서 결정적으로 고른다.
-const DATA_DIR = path.resolve(__dirname, "..", "..", "public", "data");
-const counts = (
-  JSON.parse(readFileSync(path.join(DATA_DIR, "meta.json"), "utf-8")) as {
-    countsByRegion: Record<string, number>;
-  }
-).countsByRegion;
 /** 리스트 1페이지 노출 수(ItemList 페이지 크기) */
 const PAGE_SIZE = 10;
-// 더보기 검증 전제(1페이지 초과)를 만족하는 시도 중 사전순 첫 번째 — 실행마다 같은 지역을 고른다.
-const fixtureKey = Object.keys(counts)
-  .filter((k) => counts[k] > PAGE_SIZE)
-  .sort()[0];
-if (!fixtureKey) {
-  throw new Error(`E2E 픽스처: ${PAGE_SIZE}건 초과 시도가 없다 — 산출물을 먼저 확인하라`);
-}
-const fixtureItems = JSON.parse(
-  readFileSync(path.join(DATA_DIR, `${fixtureKey}.json`), "utf-8"),
-) as FixtureItem[];
+// 지역·금액·용도 세 축을 전부 산출물에서 고른다 — 어느 하나라도 고정하면 그 값이 0건이 되는 주에
+// 테스트가 통째로 깨진다(2026-08-02 서울 0건 · 2026-08-09 충북 상가 0건).
+const { name: fixtureRegion, items: fixtureItems } = pickRegion(PAGE_SIZE);
+const axes = pickAxes(fixtureItems);
 const first = fixtureItems[0];
-/** 한글 시도명 — 필터 칩 이름·URL r 파라미터·카드 텍스트 대조에 함께 쓴다 */
-const fixtureRegion = first.region;
 const firstItemPath = `/item/${encodeURIComponent(first.id)}`;
 
 const WATCH_KEY = "crazyvalue.watchlist.v1";
@@ -76,8 +48,8 @@ test("온보딩→필터 3탭→리스트 도달", async ({ page }) => {
 
   // 필터 3탭: 지역 → 금액 → 용도. 칩 상태는 aria-pressed로 판정한다.
   const regionChip = page.getByRole("button", { name: fixtureRegion, exact: true });
-  const priceChip = page.getByRole("button", { name: "1~3억", exact: true });
-  const categoryChip = page.getByRole("button", { name: "상가", exact: true });
+  const priceChip = page.getByRole("button", { name: axes.band, exact: true });
+  const categoryChip = page.getByRole("button", { name: axes.category, exact: true });
   await regionChip.click();
   await expect(regionChip).toHaveAttribute("aria-pressed", "true");
   await priceChip.click();
@@ -89,8 +61,8 @@ test("온보딩→필터 3탭→리스트 도달", async ({ page }) => {
   const resultLink = page.getByRole("link", { name: /물건.*건 보기/ });
   const href = decodeURIComponent((await resultLink.getAttribute("href")) ?? "");
   expect(href).toContain(`r=${fixtureRegion}`);
-  expect(href).toContain("b=b3");
-  expect(href).toContain("c=상가");
+  expect(href).toContain(`b=${axes.bandKey}`);
+  expect(href).toContain(`c=${axes.category}`);
 
   // 3중 교집합은 지역·주차에 따라 1페이지 미만일 수 있어 "더보기"가 뜬다고 보장할 수 없다.
   // 3축 반영은 위 href로 검증했으므로 금액·용도를 해제하고 시도 단독 결과로 더보기를 검증한다.
