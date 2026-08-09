@@ -98,4 +98,23 @@ serwist.setCatchHandler(async ({ request }) => {
   });
 });
 
+// 1회성 복구(2026-08-09) — 옛 규칙 시절 auction-data에 박힌 meta.json이 방문자 화면의 기준일을
+// 영구 고착시켰다. 이제 기준일은 HTML에 구워지므로 새 방문에는 재발하지 않지만, 이미 옛 값을 물고
+// 있는 브라우저는 그 항목이 남아 있는 한 다음 물건 로드에서도 옛 meta를 집는다. 한 번만 지운다.
+// 지역 데이터 17개는 건드리지 않는다 — 오프라인 직전 데이터 열람 계약(§1)을 깨지 않기 위해서다.
+// 마커는 별도 캐시에 둔다: auction-data 안에 두면 자기가 지운 뒤 다시 지운다.
+const PURGE_MARKER = "cv-stale-meta-purge-2026-08-09";
+
+self.addEventListener("activate", (event) => {
+  event.waitUntil(
+    (async () => {
+      const marker = await caches.open("cv-maintenance");
+      if (await marker.match(PURGE_MARKER)) return;
+      const data = await caches.open("auction-data");
+      await data.delete("/data/meta.json");
+      await marker.put(PURGE_MARKER, new Response("done"));
+    })(),
+  );
+});
+
 serwist.addEventListeners();
