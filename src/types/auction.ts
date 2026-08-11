@@ -112,5 +112,20 @@ export const MetaSchema = z.object({
       backcalc: z.number().int().nonnegative(),
     })
     .optional(),
+  /**
+   * 원천(목록 조회)이 배분 창 안에서 준 매각기일 중 가장 늦은 날. 상한 적용 **전** 값이다.
+   *
+   * 이 필드가 없으면 "원천에 그 기일이 없어서 산출에 없는 것"과 "우리가 상한으로 잘라서 없는 것"을
+   * 구분할 수단이 아예 없다. 2026-08-11에 그 구분이 필요해졌다 — 산출이 배분 창 마지막 날을 못 덮어
+   * 게이트 R2가 위반을 냈는데, 목록 조회는 서버 총 5,666건을 전량 수신하고 정상 종결했고 08-09 런과
+   * 08-11 런의 마지막 기일이 창 길이와 무관하게 똑같이 08-14였다(원천에 그 이후가 없었다는 뜻).
+   * 원천에 없는 기일을 요구하는 채점은 영원히 빨간불이고 그 알림이 진짜 신호를 가린다.
+   */
+  sourceLastSaleDate: z.string().nullable().optional(),
+  /**
+   * 상한 적용 **전** 배분 창 안 유효 물건의 지역별 건수. countsByRegion(상한 적용 후)과 대조하면
+   * 어떤 지역이 "원천에 없어서" 0건인지 "상한 배분에 지워져서" 0건인지 그 자리에서 갈린다.
+   */
+  candidatesByRegion: z.record(z.string(), z.number().int().nonnegative()).optional(),
 });
 export type Meta = z.infer<typeof MetaSchema>;

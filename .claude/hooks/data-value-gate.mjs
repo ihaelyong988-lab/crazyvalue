@@ -90,11 +90,31 @@ function grade({ meta, items }) {
     });
   }
   // R2 배분 창 생존 — 창 마지막 날까지 입찰 가능한 물건이 남아야 한다.
+  //
+  // 단, 요구 기준은 **원천이 실제로 준 것을 넘지 않는다**(2026-08-11 정정). 08-11 산출이 08-14까지밖에
+  // 못 덮어 위반이 났는데, 목록 조회는 서버 총 5,666건을 전량 수신하고 142페이지에서 정상 종결했고
+  // (조기 종결·정체 종결 없음) 08-09 런과 08-11 런의 마지막 기일이 창 길이(08-16 vs 08-18)와 무관하게
+  // 똑같이 08-14였다 — 원천에 그 이후 기일이 없었다는 뜻이다.
+  // 원천에 없는 기일을 요구하면 채점이 영원히 빨간불이고, 매일 쌓이는 그 알림이 진짜 신호를 가린다
+  // (원장 2026-08-05 R4 폐기와 같은 계열 — 만족 불가능한 조건은 게이트가 아니라 소음이다).
+  // 그래서 묻는 것을 바꾼다: **"창을 다 덮었는가"가 아니라 "원천이 준 것을 다 반영했는가".**
+  // 옛 산출물(필드 없음)은 옛 기준으로 채점한다 — 판정 불능을 통과로 떨어뜨리지 않는다(R0 철학과 동일).
+  // 다음 수집이 필드를 채우면 자동 해소된다.
+  const sourceLast = typeof meta.sourceLastSaleDate === "string" ? meta.sourceLastSaleDate : null;
+  const required = sourceLast !== null && sourceLast < lastUseful ? sourceLast : lastUseful;
   const maxDate = dates.at(-1) ?? null;
-  if (!maxDate || maxDate < lastUseful) {
+  if (!maxDate || maxDate < required) {
+    // 사유 판별은 요구 기준이 아니라 **원천 대비 실제 산출**로 한다. 둘을 묶으면 원천이 창을 꽉
+    // 채워준 날(sourceLast == lastUseful)에 우리가 자른 것을 "창이 모자랐다"로 잘못 말한다
+    // (2026-08-11 뮤테이션 시험에서 실제로 잡혔다 — 위반은 떴는데 원인을 거짓으로 알렸다).
+    const cutByCap = sourceLast !== null && maxDate !== null && maxDate < sourceLast;
     violations.push({
       rule: "R2",
-      msg: `최종 매각기일 ${maxDate ?? "없음"} < 배분 창 ${OUTPUT_WINDOW_DAYS}일 마지막 날 ${lastUseful} — 그 사이 방문자에게는 전 물건이 기일 경과다`,
+      msg: cutByCap
+        ? `최종 매각기일 ${maxDate} < 원천이 준 마지막 기일 ${sourceLast} — 상한 배분이 원천에 있는 기일을 잘랐다`
+        : `최종 매각기일 ${maxDate ?? "없음"} < 배분 창 ${OUTPUT_WINDOW_DAYS}일 마지막 날 ${lastUseful}` +
+          `${sourceLast === null ? " · 원천 최종 기일 미기록(옛 산출물) — 다음 수집에서 자동 해소된다" : ""}` +
+          ` — 그 사이 방문자에게는 전 물건이 기일 경과다`,
     });
   }
   // R3 지역 커버리지 — 절반 넘는 시도가 0건이면 지역 필터가 대부분 빈 결과가 된다.
@@ -104,6 +124,11 @@ function grade({ meta, items }) {
   if (zero.length > 8) {
     violations.push({ rule: "R3", msg: `0건 시도 ${zero.length}개(${zero.join(", ")})` });
   }
+  // 관측(위반 아님) — 원천에는 후보가 있었는데 상한 배분이 통째로 지운 시도.
+  // 0건 시도의 원인을 "원천에 없어서"와 "우리가 지워서"로 가른다. 후자만 우리 손으로 고칠 수 있는
+  // 손해다(그 시도 방문자는 빈 화면을 본다). 채점으로 올리는 것은 배분 규칙을 고친 뒤다 —
+  // 원인이 확정되기 전에 게이트부터 조이면 배포가 막히고 부분 배포 계약이 깨진다.
+  const zeroedByCap = zero.filter((k) => (meta.candidatesByRegion?.[k] ?? 0) > 0);
   // R4(갱신 체감)는 폐기했다 — 번호는 재사용하지 않는다(순번 불변). 남는 규칙은 R1·R2·R3·R5다.
   //
   // newCount===0을 위반으로 본 판정은 구조적으로 매주 2일 오발화한다. 배분 창은 하루씩 굴러가는데
@@ -126,7 +151,18 @@ function grade({ meta, items }) {
       msg: `meta.outputDateSpread=${meta.outputDateSpread} ≠ 실제 기일수 ${spread}`,
     });
   }
-  return { base, violations, stats: { total: items.length, dates: dates.length, newCount, zero: zero.length } };
+  return {
+    base,
+    violations,
+    stats: {
+      total: items.length,
+      dates: dates.length,
+      newCount,
+      zero: zero.length,
+      sourceLast,
+      zeroedByCap,
+    },
+  };
 }
 
 /** 채점 1회. 산출물을 읽지 못하는 것도 판정 불능이 아니라 위반이다(안전 기본값 = 차단). */
@@ -145,8 +181,12 @@ function run() {
 const summarize = ({ base, violations, stats }) =>
   `산출물 가치 게이트 — 기준 ${base ?? "미확인"} · 총 ${stats?.total ?? 0}건 · ` +
   `미경과 기일 ${stats?.dates ?? 0}일 · ` +
+  `원천 최종 기일 ${stats?.sourceLast ?? "미기록"} · ` +
   `직전 대비 신규 ${typeof stats?.newCount === "number" ? `${stats.newCount}건` : "미비교"} · ` +
-  `0건 시도 ${stats?.zero ?? 0}개 · 위반 ${violations.length}건`;
+  `0건 시도 ${stats?.zero ?? 0}개` +
+  // 0건 시도의 원인 분해 — 있을 때만 붙인다(없는 날 "0개"를 덧붙이면 같은 사실이 두 번 표시된다).
+  `${stats?.zeroedByCap?.length ? `(상한이 지운 것 ${stats.zeroedByCap.length}개: ${stats.zeroedByCap.join(", ")})` : ""} · ` +
+  `위반 ${violations.length}건`;
 
 const mode = process.argv[2] ?? "";
 

@@ -985,6 +985,28 @@ async function main(): Promise<void> {
     cappedFrom,
     dateSpread,
   } = capAcrossSaleDates(gate.valid, OUTPUT_CAP, outputWindowEnd);
+  // 원천이 무엇을 줬는지 상한 적용 **전** 값으로 기록한다(2026-08-11).
+  // 이 두 값이 없으면 "원천에 그 기일·그 지역이 없어서 산출에 없는 것"과 "우리가 상한으로 잘라서
+  // 없는 것"을 구분할 수단이 아예 없다. 08-11 산출이 배분 창 마지막 날을 못 덮어 게이트 R2가
+  // 위반을 냈는데, 목록 조회는 서버 총 5,666건을 전량 수신하고 정상 종결했고(142페이지·조기 종결
+  // 없음) 08-09 런과 08-11 런의 마지막 기일이 창 길이와 무관하게 똑같이 08-14였다 — 원천에 그
+  // 이후가 없었다. 원천에 없는 것을 요구하는 채점은 영원히 빨간불이고, 매일 쌓이는 그 알림이
+  // 진짜 신호를 가린다(원장 2026-08-05 R4 폐기와 같은 계열).
+  const windowStart = isoDayKst(0);
+  const inWindow = gate.valid.filter(
+    (i) => i.saleDate >= windowStart && i.saleDate < outputWindowEnd,
+  );
+  const sourceLastSaleDate = inWindow.reduce<string | null>(
+    (max, i) => (max === null || i.saleDate > max ? i.saleDate : max),
+    null,
+  );
+  const candidatesByRegion: Record<string, number> = {};
+  for (const r of REGIONS) candidatesByRegion[r.key] = 0;
+  for (const i of inWindow) {
+    const key = REGIONS.find((r) => r.name === i.region)?.key;
+    if (key !== undefined) candidatesByRegion[key] += 1;
+  }
+
   // 중복 드롭 합계 = 목록 수신 시점 dedupe(acc.received − 고유) + 게이트 중복 id.
   const dedupDropped = acc.received - rows.length + gate.dupDropped;
   const summaryLine = buildSummaryLine({
@@ -1083,6 +1105,9 @@ async function main(): Promise<void> {
     outputCap: OUTPUT_CAP,
     // 산출물이 덮는 매각기일 수 — 1이면 갱신 주기의 나머지 날이 전부 기일 경과다(2026-08-02 결함의 관측 신호).
     outputDateSpread: dateSpread,
+    // 상한 적용 전 원천 사실 — 게이트 R2가 "창을 덮었나"가 아니라 "원천이 준 것을 다 반영했나"를 묻는 근거.
+    sourceLastSaleDate,
+    candidatesByRegion,
   };
   writeFileSync(join(outDir, "meta.json"), JSON.stringify(meta, null, 1));
 
