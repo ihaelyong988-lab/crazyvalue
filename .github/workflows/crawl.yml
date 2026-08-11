@@ -30,6 +30,18 @@ concurrency:
 jobs:
   crawl:
     runs-on: ubuntu-latest
+    # 시도를 job으로 나눈다(2026-08-11) — **같은 job 안의 재시도는 IP 차단에 무력하다.**
+    # 법원 사이트가 러너의 패킷을 버리는데(진단 3회 확증: DNS 정상 · TCP 443 시간초과 ·
+    # UND_ERR_CONNECT_TIMEOUT) 러너 공인 IP는 job마다 고정이다. 실측: 한 job에서 10회 재시도가
+    # 전부 같은 IP로 죽었고(20:11, IP 20.118.214.18), 8분 뒤 **새 런**이 다른 IP를 받아 즉시 성공했다.
+    # matrix는 시도마다 새 러너 = 새 IP를 준다. max-parallel 1로 순차 실행해 사이트에 몰리지 않게 하고,
+    # fail-fast false로 앞 시도가 죽어도 뒤 시도가 돈다. 앞 시도가 성공했으면 뒤 시도는 슬롯 판정에서
+    # 즉시 건너뛴다(오늘치 데이터가 이미 올라와 있는지로 판정 — 중복 수집 없음).
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        attempt: [1, 2, 3]
     # 수집 상한은 크롤러 쪽 요청 예산(BUDGET.maxRequests=1500)과 상세 단계 마감(90분)이 건다.
     # 따라서 330분은 근거가 없다. 상한을 실제 계약(약 90분) 바로 위로 낮춰 무한 대기 job을 빨리 표면화한다.
     timeout-minutes: 120
@@ -52,6 +64,7 @@ jobs:
         env:
           SCHEDULE: ${{ github.event.schedule }}
           DISPATCH_MODE: ${{ github.event.inputs.mode }}
+          ATTEMPT: ${{ matrix.attempt }}
         run: |
           KST_TODAY=$(TZ=Asia/Seoul date +%F)
           # checkout은 이벤트 생성 시점 SHA로 고정된다 — concurrency 대기열을 거친 런은
@@ -68,7 +81,21 @@ jobs:
             MODE=quick
           fi
           CRAWLED=$(jq -r '.crawledAt // empty' public/data/meta.json 2>/dev/null || true)
-          echo "KST $KST_TODAY · 슬롯 '${SCHEDULE:-workflow_dispatch}' · 모드 $MODE · 직전 수집 ${CRAWLED:-없음}"
+          echo "KST $KST_TODAY · 슬롯 '${SCHEDULE:-workflow_dispatch}' · 모드 $MODE · ${ATTEMPT}회차 · 직전 수집 ${CRAWLED:-없음}"
+          # 2회차 이상은 조건부다 — 새 러너(=새 IP)를 받으려고 나눈 시도이지 매번 다시 긁으려는 게 아니다.
+          skip() {
+            echo "$1"
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "mode=$MODE" >> "$GITHUB_OUTPUT"
+            exit 0
+          }
+          if [ "$ATTEMPT" != "1" ]; then
+            # 리프레쉬(수동)는 방문자가 화면에서 기다린다 — 안내가 "완료까지 10분 안팎"이라
+            # 시도를 늘리면 그 약속이 깨진다. 새 러너 재시도는 정기 슬롯 전용이다.
+            [ -z "$SCHEDULE" ] && skip "수동 실행은 1회차로 끝낸다(방문자 대기 시간 보호) — ${ATTEMPT}회차를 건너뛴다."
+            # 앞 시도가 이미 오늘치를 올렸으면 끝난 일이다. 위 git pull로 최신 main을 본 상태다.
+            [ "${CRAWLED:0:10}" = "$KST_TODAY" ] && skip "앞 시도가 오늘치를 올렸다(${CRAWLED}) — ${ATTEMPT}회차를 건너뛴다."
+          fi
           echo "run=true" >> "$GITHUB_OUTPUT"
           echo "mode=$MODE" >> "$GITHUB_OUTPUT"
       - uses: actions/setup-node@v4
@@ -89,7 +116,6 @@ jobs:
         if: steps.gate.outputs.run == 'true'
         env:
           MODE: ${{ steps.gate.outputs.mode }}
-          EVENT: ${{ github.event_name }}
         run: |
           run_crawl() {
             # --window 7(수집 창)은 crawl-config OUTPUT_WINDOW_DAYS(배분 창)·data-value-gate.mjs
@@ -108,7 +134,11 @@ jobs:
           #     full은 1회에 52분이라 첫 시도 뒤 잔여가 없어 자연히 1~2회로 수렴한다(상한 안전).
           #   리프레쉬(workflow_dispatch) — 방문자가 화면에서 기다린다. 창을 넓히면 "눌렀는데 안
           #     끝난다"가 되므로 기존 10분을 유지한다.
-          if [ "$EVENT" = "schedule" ]; then BUDGET_SEC=3000; else BUDGET_SEC=600; fi
+          # 창을 짧게 끊는다(2026-08-11 정정) — 이 실패의 주범은 IP 차단이고 **같은 job 안에서는
+          # IP가 바뀌지 않으므로** 길게 버티는 것은 순수 낭비다(실측: 창을 50분으로 두고도 10회가
+          # 전부 같은 UND_ERR_CONNECT_TIMEOUT으로 죽었다). 짧게 끊고 다음 matrix 시도(=새 러너)로
+          # 넘기는 것이 실제 복구 경로다. 진짜 일시적 거부는 이 창 안에서 흡수된다.
+          BUDGET_SEC=600
           START=$(date +%s)
           ATTEMPT=1
           if run_crawl; then exit 0; fi
@@ -327,8 +357,12 @@ jobs:
       # 조건이 `== 'true'`가 아니라 `!= 'false'`인 이유: 게이트 스텝 자신이 실패하면 outputs.run이
       # 빈 문자열이 돼 `== 'true'`가 거짓이 되고, 유일한 실패 알림 채널이 침묵한다.
       # 게이트가 run=false를 쓰는 경로는 지금 없지만 fail-safe 방향(모르면 알린다)을 유지한다.
+      # 마지막 시도에서만 알린다(2026-08-11) — 1회차가 죽고 2회차가 살아난 날에도 알림이 뜨면
+      # "실패했다"는 신호가 실제로는 성공한 날에 붙어 신뢰를 잃는다. 앞 시도가 성공하면 뒤 시도는
+      # 슬롯 판정에서 run=false로 건너뛰므로 이 조건이 자연히 거짓이 된다. 3회차 job 자체가
+      # 게이트 전에 죽으면 run이 빈 문자열이라 `!= 'false'`가 참으로 남는다 — 모르면 알린다.
       - name: report failure
-        if: failure() && steps.gate.outputs.run != 'false'
+        if: failure() && steps.gate.outputs.run != 'false' && matrix.attempt == 3
         env:
           GH_TOKEN: ${{ github.token }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
