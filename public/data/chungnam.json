@@ -1,45 +1,5 @@
 [
  {
-  "id": "chungnam-2026타경100482-1",
-  "court": "부산지방법원",
-  "caseNo": "2026타경100482",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "사용본거지 : 충청남도 태안군 남면 마검포길 12-10",
-  "region": "충남",
-  "district": "태안군",
-  "appraisalPrice": 9200000,
-  "minPrice": 4508000,
-  "priceRatio": 0.49,
-  "failCount": 2,
-  "saleDate": "2026-08-14",
-  "saleTime": "10:00",
-  "courtRoom": "신관지하2층입찰법정",
-  "deposit": 450800,
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
-  "history": [
-   {
-    "date": "2026-05-01",
-    "minPrice": 9200000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-05",
-    "minPrice": 9200000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-10",
-    "minPrice": 6440000,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": null
- },
- {
   "id": "chungnam-2023타경1311-1",
   "court": "대전지방법원 공주지원",
   "caseNo": "2023타경1311",
@@ -1392,7 +1352,7 @@
     "result": "유찰"
    }
   ],
-  "specialNote": "- 일괄매각(제시외 건물 중 부합물ㄱ,ㄴ주방 및 ㅍ수목 포함- 제시외 나머지 시설 매각에서 제외) - 목록 1 평지의 토지로 숙박시설 건부지로 이용 - 목록 2 숙박시설로 이용중 - 목록 3 평지의 토지로 제시외건물 부지로 이용 - 목록 4 평지의 토지로 도로로 이용중 - 최저매각가격은 제시 외 건물 소재로 인하여 제한 받는 가격임"
+  "specialNote": "- 일괄매각(제시외 건물 중 부합물ㄱ,ㄴ주방 및 ㅍ수목 포함- 제시외 나머지 시설 매각에서 제외) - 목록 1 평지의 토지로 숙박시설 건부지로 이용 - 목록 2 숙박시설로 이용중 - 목록 3 평지의 토지로 제시외건물 부지로 이용 - 목록 4 평지의 토지로 도로로 이용중 - 최저매각가격은 제시 외 건물 소재로 인하여 제한 받는 가격임 - 최재호로부터 공사대금채권 46,000,000원 및 지연손해금에대한 유치권 신고서가 제출되었으나 그 성립 여부는 불분명함."
  },
  {
   "id": "chungnam-2024타경55721-1",
@@ -1900,6 +1860,51 @@
   "specialNote": "대항력있는 임차권자 있음. 배당에서 보증금이 전액 변제되지 않으면 잔액을 매수인이 인수함"
  },
  {
+  "id": "chungnam-2025타경20095-1",
+  "court": "대전지방법원 공주지원",
+  "caseNo": "2025타경20095",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "충청남도 공주시 유구읍 백교리 69-10",
+  "region": "충남",
+  "district": "공주시",
+  "appraisalPrice": 817405100,
+  "minPrice": 280369949,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-08-18",
+  "saleTime": "10:00",
+  "courtRoom": "205호경매법정",
+  "deposit": 28037000,
+  "areaBuilding": 468,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-03-31",
+    "minPrice": 817405100,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-05",
+    "minPrice": 817405100,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-09",
+    "minPrice": 572183570,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-14",
+    "minPrice": 400528499,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "일괄매각. 제시외 건물 및 관정 포함"
+ },
+ {
   "id": "chungnam-2025타경20118-1",
   "court": "대전지방법원 공주지원",
   "caseNo": "2025타경20118",
@@ -2000,6 +2005,96 @@
   "specialNote": "건물 외관상 \"나동\""
  },
  {
+  "id": "chungnam-2025타경20264-1",
+  "court": "대전지방법원 공주지원",
+  "caseNo": "2025타경20264",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "충청남도 공주시 계룡면 기산리 235-1",
+  "region": "충남",
+  "district": "공주시",
+  "appraisalPrice": 824534560,
+  "minPrice": 282815354,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-08-18",
+  "saleTime": "10:00",
+  "courtRoom": "205호경매법정",
+  "deposit": 28281600,
+  "areaBuilding": 393,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-03-31",
+    "minPrice": 824534560,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-05",
+    "minPrice": 824534560,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-09",
+    "minPrice": 577174192,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-14",
+    "minPrice": 404021934,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "일괄매각. 제시외 건물 매각 제외. 최저매각가격은 제시외 건물로 인하여 제한받는 가격임. 제시외 수목 및 관정 매각포함"
+ },
+ {
+  "id": "chungnam-2025타경20266-1",
+  "court": "대전지방법원 공주지원",
+  "caseNo": "2025타경20266",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청남도 공주시 반포면 학봉리 875",
+  "region": "충남",
+  "district": "공주시",
+  "appraisalPrice": 1053876000,
+  "minPrice": 361479000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-08-18",
+  "saleTime": "10:00",
+  "courtRoom": "205호경매법정",
+  "deposit": 36147900,
+  "areaBuilding": null,
+  "areaLand": 849.9,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-03-31",
+    "minPrice": 1053876000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-05",
+    "minPrice": 1053876000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-09",
+    "minPrice": 737712882,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-14",
+    "minPrice": 516398794,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
   "id": "chungnam-2025타경20272-1",
   "court": "대전지방법원 공주지원",
   "caseNo": "2025타경20272",
@@ -2098,6 +2193,51 @@
    }
   ],
   "specialNote": "공유자우**는 1회에 한함"
+ },
+ {
+  "id": "chungnam-2025타경20282-1",
+  "court": "대전지방법원 공주지원",
+  "caseNo": "2025타경20282",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청남도 공주시 유구읍 구계리 293",
+  "region": "충남",
+  "district": "공주시",
+  "appraisalPrice": 131440000,
+  "minPrice": 45083920,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-08-18",
+  "saleTime": "10:00",
+  "courtRoom": "205호경매법정",
+  "deposit": 4508400,
+  "areaBuilding": null,
+  "areaLand": 807,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-03-31",
+    "minPrice": 131440000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-05",
+    "minPrice": 131440000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-09",
+    "minPrice": 92008000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-14",
+    "minPrice": 64405600,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "일괄매각. 농지취득자격증명 필요(미제출시 보증금 몰수) 원상회복명령 발하여질 가능성 있음"
  },
  {
   "id": "chungnam-2025타경20361-1",
