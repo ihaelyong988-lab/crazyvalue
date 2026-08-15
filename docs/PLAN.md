@@ -373,7 +373,7 @@ C:\dev\crazyvalue\
 | GlossarySheet | 용어 12개 + 픽 기준 + 법적 고지 | — | 안내 |
 | Skeleton / EmptyState / ErrorState / LegalNotice | 로딩·빈 상태·오류 상태·고지 공통 | — | 공통 |
 
-인벤토리에서 빠진 홈 진입 카드 2종은 §4.3-① 철회 기록을 따른다. `NewThisWeek.tsx`는 삭제했고, `PickEntry.tsx`는 import 0의 잔여 파일이라 화면에 붙지 않는다(정리 대상).
+인벤토리에서 빠진 홈 진입 카드 2종은 §4.3-① 철회 기록을 따른다. `NewThisWeek.tsx`·`PickEntry.tsx` 모두 삭제 완료(2026-08-15 정리).
 
 ---
 
@@ -429,7 +429,7 @@ C:\dev\crazyvalue\
 | # | 작업 | 산출 | 확인 |
 |---|---|---|---|
 | 2.1 | 공통 셸 | AppShell(하단 탭 3)·DataDateBar·Skeleton·EmptyState·ErrorState·LegalNotice | 전 라우트 렌더 |
-| 2.2 | 홈 | 필터 3축 + ResultButton(실시간 건수) + PickEntry + NewThisWeek + RecentViewed — §4.3-① 배치 순서 | 3탭 내 리스트 도달 |
+| 2.2 | 홈 | 필터 3축 + ResultButton(실시간 건수) + RecentViewed — §4.3-① 배치 순서(PickEntry·NewThisWeek는 이후 사양 철회·삭제) | 3탭 내 리스트 도달 |
 | 2.3 | 리스트 | ItemCard(7요소+픽 배지)·10건 더보기·정렬 4종·빈 상태 완화 제안 | §4.3-② 전 요소 |
 | 2.4 | 상세 | PriceStructure·HistoryTimeline·지도 딥링크·특이사항·원문 링크·법적 고지·WatchToggle·ShareButton | §4.3-③ 전 블록 |
 | 2.5 | 관심함 | D-day 정렬·상태 배지(재유찰·기일변경·소멸)·상단 고정 | §4.3-④ 전 요소 |
