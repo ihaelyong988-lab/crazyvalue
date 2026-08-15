@@ -1,11 +1,11 @@
 import type { PrecacheEntry, SerwistGlobalConfig } from "serwist";
-import { ExpirationPlugin, NetworkFirst, Serwist, StaleWhileRevalidate } from "serwist";
+import { ExpirationPlugin, NetworkFirst, Serwist } from "serwist";
 import { defaultCache } from "@serwist/next/worker";
 
 // 서비스워커(기획안 §8 Phase 4.2) — 프리캐시(빌드 산출물·public 정적 자원) + 런타임 캐시.
-// /data/*.json은 StaleWhileRevalidate: 온라인이면 캐시 응답 후 백그라운드 재검증,
-// 오프라인이면 직전 데이터를 그대로 연다. next.config.ts의 globPublicPatterns가
-// data/**를 프리캐시에서 제외하므로 이 런타임 규칙이 항상 담당한다.
+// /data/*.json은 NetworkFirst: 온라인이면 항상 이번 산출물, 오프라인·응답 지연이면
+// 직전 데이터를 그대로 연다(§1 오프라인 열람 계약 유지). next.config.ts의
+// globPublicPatterns가 data/**를 프리캐시에서 제외하므로 이 런타임 규칙이 항상 담당한다.
 
 declare global {
   interface WorkerGlobalScope extends SerwistGlobalConfig {
@@ -68,13 +68,19 @@ const serwist = new Serwist({
       }),
     },
     {
-      // 지역 데이터 17개. 등록 순서가 매칭 우선순위 — defaultCache의
-      // json 일반 규칙(NetworkFirst, static-data-assets)보다 먼저 두어야 SWR이 적용된다.
+      // 지역 데이터 17개. 구 전략은 StaleWhileRevalidate였는데, 재방문 첫 화면이 어제 목록으로
+      // 그려져 매일 물갈이에서 빠진 물건을 탭하면 상세가 404였다(2026-08-16 실브라우저 재현:
+      // 목록의 RSC 프리페치 404 7건 + 상세 이동 HTTP 404 — 상세는 dynamicParams=false 정적
+      // 생성이라 이번 산출물에 없는 id는 페이지 자체가 없다). NetworkFirst면 온라인 재방문은
+      // 항상 이번 산출물이라 목록·상세가 같은 데이터를 본다. networkTimeoutSeconds가
+      // 오프라인·저속망에서 직전 데이터 폴백을 보장한다(§1 계약 — meta.json과 같은 구조).
+      // 등록 순서가 매칭 우선순위 — defaultCache의 json 일반 규칙보다 먼저 둔다.
       // 함수 matcher로 /_next/data/ 등 다른 json 경로는 제외한다.
       matcher: ({ sameOrigin, url: { pathname } }) =>
         sameOrigin && pathname.startsWith("/data/") && pathname.endsWith(".json"),
-      handler: new StaleWhileRevalidate({
+      handler: new NetworkFirst({
         cacheName: "auction-data",
+        networkTimeoutSeconds: 4,
         plugins: [
           new ExpirationPlugin({
             maxEntries: 24,
