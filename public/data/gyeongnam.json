@@ -1320,61 +1320,6 @@
   "specialNote": "지분매각(공유자 우선매수권 행사는 1회에 한함). 농지취득자격증명 필요(미제출 시 보증금 몰수). 지상에 식재되어 있는 활잡목 등은 토지가격에 포함하여 평가함. 소하천구역에 일부 저촉되는바 감정평가액은 이를 감안한 금액임. 공부상 지목은 '답'이나 현황 '전(휴경지)'로 이용 중이며, 맹지임."
  },
  {
-  "id": "gyeongnam-2024타경106101-1",
-  "court": "마산지원",
-  "caseNo": "2024타경106101",
-  "itemNo": "1",
-  "category": "단독다가구",
-  "address": "경상남도 창원시 마산합포구 해운동 18-63",
-  "region": "경남",
-  "district": "창원시 마산합포구",
-  "appraisalPrice": 74491380,
-  "minPrice": 12520000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-08-20",
-  "saleTime": "10:00",
-  "courtRoom": "마산지원제122호법정",
-  "deposit": 1252000,
-  "areaBuilding": 96.2,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
-  "history": [
-   {
-    "date": "2026-01-22",
-    "minPrice": 74491380,
-    "result": "신건"
-   },
-   {
-    "date": "2026-02-26",
-    "minPrice": 74491380,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-02",
-    "minPrice": 52144161,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-07",
-    "minPrice": 36501049,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-11",
-    "minPrice": 25550830,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-16",
-    "minPrice": 17885647,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "일괄매각. 목록1. 주거용 건부지로 이용 중임. 목록2. 주택으로 이용 중이며, 제시외 건물(감정평가서상 기호 ㄱ~ㄹ) 매각 포함. 감정평가서에 의하면 본건 건물(감정평가서상 기호 2, 2-1) 및 제시외 건물(감정평가서상 기호 ㄴ~ㄹ)의 일부가 인접 토지 지상에 소재하는 것으로 사료됨."
- },
- {
   "id": "gyeongnam-2024타경106255-1",
   "court": "마산지원",
   "caseNo": "2024타경106255",
@@ -3570,6 +3515,186 @@
   "specialNote": "-농지취득자격증명 필요함(미제출시 보증금 몰수). -농경지로 이용 중이며, 지적도상 맹지임. -토지 일부가 하천구역에 저촉되며, 감정평가액은 이를 감안한 금액임."
  },
  {
+  "id": "gyeongnam-2025타경20880-1",
+  "court": "마산지원",
+  "caseNo": "2025타경20880",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "경상남도 함안군 칠북면 봉촌리 산259-1",
+  "region": "경남",
+  "district": "함안군",
+  "appraisalPrice": 200088000,
+  "minPrice": 68630000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-08-20",
+  "saleTime": "10:00",
+  "courtRoom": "마산지원제122호법정",
+  "deposit": 6863000,
+  "areaBuilding": 5558,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-04-02",
+    "minPrice": 200088000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 200088000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 140061475,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 98042945,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-농지취득자격증명 필요함(미제출시 보증금 몰수). -묵전 상태이며, 지상에 소재하는 수목(기타 활잡목 등)을 포함하여 평가함. -지상에 분묘가 없는 것으로 조사되나, 육안으로 확인이 곤란한 분묘 등이 소재할 수 있음(분묘기지권 성립여부 불분명). -지적도상 맹지임."
+ },
+ {
+  "id": "gyeongnam-2025타경20895-1",
+  "court": "마산지원",
+  "caseNo": "2025타경20895",
+  "itemNo": "1",
+  "category": "상가",
+  "address": "경상남도 창원시 마산회원구 회원동 50-5 천지리치빌 지하층201호",
+  "region": "경남",
+  "district": "창원시 마산회원구",
+  "appraisalPrice": 3048000000,
+  "minPrice": 1045464000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-08-20",
+  "saleTime": "10:00",
+  "courtRoom": "마산지원제122호법정",
+  "deposit": 104546400,
+  "areaBuilding": 775.6579,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-04-02",
+    "minPrice": 3048000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 3048000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 2133600000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 1493520000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-일괄매각. -목록1.은 일반목욕장(여탕), 목록2.는 헬스클럽, 목록3.은 일반목욕장(남탕)으로 각 이용 중임."
+ },
+ {
+  "id": "gyeongnam-2025타경20929-1",
+  "court": "마산지원",
+  "caseNo": "2025타경20929",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상남도 함안군 칠북면 덕남리 산74",
+  "region": "경남",
+  "district": "함안군",
+  "appraisalPrice": 55341000,
+  "minPrice": 18982000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-08-20",
+  "saleTime": "10:00",
+  "courtRoom": "마산지원제122호법정",
+  "deposit": 1898200,
+  "areaBuilding": null,
+  "areaLand": 6149,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-04-02",
+    "minPrice": 55341000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 55341000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 38738725,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 27117125,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-묘지 및 조림 상태이며, 지적도상 맹지임. -지상에 분묘 7기가 소재(분묘기지권 성립여부 불분명)하며, 감정평가액은 이를 감안한 금액임. -함안군산림조합으로부터 감정평가서 내용과 같이 경제림조성 조림사업(여항지구)에 해당되며, 감정기준시점 기준 준공검사 완료되었는바, 입찰 시 참고바람(자세한 사항은 감정평가서 참조). -지상에 벌목 후 수종전환 방제 및 조림 사업 등으로 식재되어 있는 제시외 수목(편백나무 묘목 등)은 토지에 포함하여 평가함."
+ },
+ {
+  "id": "gyeongnam-2025타경20929-2",
+  "court": "마산지원",
+  "caseNo": "2025타경20929",
+  "itemNo": "2",
+  "category": "토지",
+  "address": "경상남도 함안군 칠북면 이령리 산120",
+  "region": "경남",
+  "district": "함안군",
+  "appraisalPrice": 73390000,
+  "minPrice": 25173000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-08-20",
+  "saleTime": "10:00",
+  "courtRoom": "마산지원제122호법정",
+  "deposit": 2517300,
+  "areaBuilding": null,
+  "areaLand": 7339,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-04-02",
+    "minPrice": 73390000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 73390000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 51373156,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 35961319,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-자연림 상태로 육안으로 확인되지 않는 분묘가 소재할 수 있음(분묘기지권 성립여부 불분명). -지상에 자생하는 자연생 수목 및 활잡목은 토지에 포함하여 평가함. -토지계획확인서상 일부가 하천구역에 저촉되나, 그 정도가 극히 미미하여 이에 구애됨 없이 평가함. -지적도상 맹지임."
+ },
+ {
   "id": "gyeongnam-2025타경229-2",
   "court": "마산지원",
   "caseNo": "2025타경229",
@@ -5078,56 +5203,6 @@
    }
   ],
   "specialNote": "1. 일괄매각. 제시외 구조물(1-1) 포함 2. 지분매각(공유자우** 행사는 1회로 제한(1회에 한하여 허용)) 3. 대항력 있는 임차인 있** 수 있음(배당에서 미변제된 잔액 포함) 4. 본건 목록2,3의 토지는 지적재조사사업 완료된 토지로서 이를 기준으로 감정평가 후 매각을 진행하고 있으니 경매응찰시 유의하사기 바랍니다(목록2토지 면적 '228㎡'에서 '143.1㎡'로, 목록3토지 면적'23㎡'에서 '30.5㎡'로 각 변경,감정평가서 참조)."
- },
- {
-  "id": "gyeongnam-2025타경10313-1",
-  "court": "거창지원",
-  "caseNo": "2025타경10313",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경상남도 거창군 가북면 용암리 507",
-  "region": "경남",
-  "district": "거창군",
-  "appraisalPrice": 109320000,
-  "minPrice": 26248000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-08-21",
-  "saleTime": "10:00",
-  "courtRoom": "제1호법정",
-  "deposit": 2624800,
-  "areaBuilding": null,
-  "areaLand": 2241,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
-  "history": [
-   {
-    "date": "2026-02-27",
-    "minPrice": 109320000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-03",
-    "minPrice": 109320000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-08",
-    "minPrice": 76524195,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-12",
-    "minPrice": 53567073,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-17",
-    "minPrice": 37497047,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "1. 일괄매각 2. 농지취득자격증명 제출요함, 미제출시 매수보증금 반환하지 않음."
  },
  {
   "id": "gyeongnam-2025타경226-1",
