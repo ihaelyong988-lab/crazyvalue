@@ -34,7 +34,7 @@
 | # | 작업 | 구현 위치 | 확인 방법 | 상태 |
 |---|---|---|---|---|
 | 2.1 | 공통 셸(AppShell·DataDateBar·Skeleton·EmptyState·ErrorState·LegalNotice) | src/components | 전 라우트 렌더 | 완료 — build 128p 정적 생성·E2E 전 라우트 통과 |
-| 2.2 | 홈(필터 3축+ResultButton+PickEntry+NewThisWeek+RecentViewed, §4.3-① 배치) | src/app/page.tsx | 3탭 내 리스트 도달 | 완료 — E2E 시나리오1(3탭→리스트) 통과 |
+| 2.2 | 홈(필터 3축+ResultButton+RecentViewed, §4.3-① 배치 — PickEntry·NewThisWeek는 이후 사양 철회·삭제) | src/app/page.tsx | 3탭 내 리스트 도달 | 완료 — E2E 시나리오1(3탭→리스트) 통과 |
 | 2.3 | 리스트(카드 7요소·10건 더보기·정렬 4종·빈 상태 완화) | src/app/list | §4.3-② 전 요소 | 완료 — E2E 1·7 통과(더보기·정렬·딥링크) |
 | 2.4 | 상세(가격구조·타임라인·지도 딥링크·특이사항·원문·고지·관심·공유) | src/app/item/[id] | §4.3-③ 전 블록 | 완료 — E2E 2·3·5 통과 |
 | 2.5 | 관심함(D-day 정렬·상태 배지·상단 고정) | src/app/watch | §4.3-④ 전 요소 | 완료 — E2E 3·4 통과(재유찰 배지 포함) |
@@ -53,7 +53,7 @@
 | ①홈-3 | 필터2 금액 | 구간 칩 5종 복수 선택 | components/PriceFilter.tsx + lib/data.ts PRICE_BANDS | 완료(E2E 8/8·게이트 0건·빌드 통과) |
 | ①홈-4 | 필터3 용도 | 8분류 | components/CategoryFilter.tsx | 완료(E2E 8/8·게이트 0건·빌드 통과) |
 | ①홈-5 | 결과 버튼 | "물건 N건 보기" 실시간 갱신·높이 52px 하단 고정 | components/ResultButton.tsx (h-[52px] fixed) | 완료(E2E 8/8·게이트 0건·빌드 통과) |
-| ①홈-6 | 미친가치 픽 진입 | "픽 N건 — 감정가 대비 50% 이하" → 픽 필터 리스트 | components/PickEntry.tsx → /list?pick=1 | 완료 후 **사양 철회(2026-07-22 주인님 지시)** — 홈에서 제거, 픽 기준은 리스트 배지·/list?pick·/guide에 존치. PickEntry.tsx는 import 0의 잔여 파일 |
+| ①홈-6 | 미친가치 픽 진입 | "픽 N건 — 감정가 대비 50% 이하" → 픽 필터 리스트 | components/PickEntry.tsx → /list?pick=1 | 완료 후 **사양 철회(2026-07-22 주인님 지시)** — 홈에서 제거, 픽 기준은 리스트 배지·/list?pick·/guide에 존치. PickEntry.tsx는 2026-08-15 정리에서 삭제 완료 |
 | ①홈-7 | 이번 주 신규 | 신규 유찰2 도달 수 + 대표 3건 가로 스크롤 | components/NewThisWeek.tsx + lib/data.ts isNewThisWeek | 완료 후 **사양 철회(2026-08-05 주인님 확정)** — 컴포넌트·판정 함수 삭제, 신규 건수는 기준일 바가 표기 |
 | ①홈-8 | 최근 본 물건 | 최근 5건 가로 스크롤(없으면 미노출) | components/RecentViewed.tsx + lib/watchlist.ts recent | 완료(E2E 8/8·게이트 0건·빌드 통과) |
 | ①홈-9 | 온보딩 반영 | 설정 지역·금액 = 필터 초기값 | app/page.tsx applyPrefs | 완료(E2E 8/8·게이트 0건·빌드 통과) |
@@ -96,7 +96,7 @@
 | 13 | 한국식 금액 축약+tabular-nums | formatKrw + tabular-nums | 완료(E2E 8/8·게이트 0건·빌드 통과) |
 | 14 | 하단 탭·44px 터치 | BottomTabs(min-h-14) + 칩/버튼 min-h-11 이상 | 완료(E2E 8/8·게이트 0건·빌드 통과) |
 | 15 | 물건 URL 공유 | ShareButton(Web Share+복사) | 완료(E2E 8/8·게이트 0건·빌드 통과) |
-| 16 | 미친가치 픽 배지·진입점 | PickBadge + PickEntry + pick=1 쿼리 | 완료(E2E 8/8·게이트 0건·빌드 통과) |
+| 16 | 미친가치 픽 배지·진입점 | PickBadge + pick=1 쿼리(PickEntry는 사양 철회로 삭제) | 완료(E2E 8/8·게이트 0건·빌드 통과) |
 | 17 | OG 공유 카드 | app/item/[id]/opengraph-image.tsx(Phase 4.4) | 완료(빌드 통과 — 프로덕션 미리보기 실측은 5.2 잔여) |
 | 18 | 최근 본 물건 | RecentViewed + RecentTracker | 완료(E2E 8/8·게이트 0건·빌드 통과) |
 
