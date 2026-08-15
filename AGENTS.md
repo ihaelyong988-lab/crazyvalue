@@ -69,6 +69,7 @@
 - **세로 리듬(2026-07-19 주인님 확정)**: 모바일 화면 세로폭 낭비 금지 — 섹션 간 16px 기본(`space-y-4`), 설명문 1줄 `leading-snug`, **안내·상태 문구 1문장 압축(2문장 병렬 금지)**, 레이어 간 하단 패딩 중복 금지. 상세 기준·예외(ErrorState 규격·법적 고지·읽기 본문)는 `design-system/MASTER.md` 세로 리듬 오버라이드(게이트 R11·R12 warn 연동).
 
 ## 9. 오류 원장 (Error Ledger)
+- **[2026-08-16] 재방문 목록→상세 404 (SW 캐시 전략).** 증상: 재방문자가 목록에서 물건을 탭하면 상세가 404(실브라우저 재현 — RSC 프리페치 404 7건, 상세 이동 HTTP 404). 원인: `/data/*.json`이 StaleWhileRevalidate라 재방문 첫 화면이 직전 산출물로 그려지는데, 상세는 `dynamicParams=false` 정적 생성이라 매일 물갈이에서 빠진 id는 페이지가 없다 — 목록과 상세가 서로 다른 날짜의 데이터를 봤다. 처방: NetworkFirst + `networkTimeoutSeconds: 4`(온라인 = 항상 이번 산출물, 오프라인·저속망 = 직전 데이터 폴백, §1 계약 유지). 회귀 고정: `tests/unit/sw-cache-policy.test.ts`. meta.json이 2026-08-09에 같은 원인으로 같은 처방을 받았는데 지역 데이터에 일반화하지 않은 것이 재발 경로였다.
 > 형식: `- [날짜] 증상 → 원인 → 처방 1줄`
 - [2026-07-17] 비율 필드명 `discountRate`가 표시 개념과 반전 → `priceRatio`로 개명 → 저장 필드는 저장값 의미로 명명.
 - [2026-07-17] Lighthouse 12부터 PWA 카테고리 삭제 → PWA 검증은 manifest 200 + SW 등록(Playwright)으로 → DoD 도구는 현행 버전 검증 가능성 확인 후 채택.
