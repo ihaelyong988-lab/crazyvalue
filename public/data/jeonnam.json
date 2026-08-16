@@ -1165,6 +1165,61 @@
   "specialNote": "농지취득자격증명 제출요(미제출시 매수신청보증금 몰수)"
  },
  {
+  "id": "jeonnam-2025타경532-1",
+  "court": "순천지원",
+  "caseNo": "2025타경532",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "전라남도 순천시 매곡동 210-10",
+  "region": "전남",
+  "district": "순천시",
+  "appraisalPrice": 201810620,
+  "minPrice": 57863000,
+  "priceRatio": 0.2867,
+  "failCount": 5,
+  "saleDate": "2026-08-18",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(108호법정)",
+  "deposit": 5786300,
+  "areaBuilding": 207,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-01-20",
+    "minPrice": 201810620,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-24",
+    "minPrice": 201810620,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-31",
+    "minPrice": 157193796,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-05",
+    "minPrice": 122440978,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-09",
+    "minPrice": 95371404,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-14",
+    "minPrice": 74286442,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "일괄매각(제시외 건물 및 수목 포함)"
+ },
+ {
   "id": "jeonnam-2025타경568-1",
   "court": "순천지원",
   "caseNo": "2025타경568",

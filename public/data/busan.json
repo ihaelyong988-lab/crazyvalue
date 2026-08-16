@@ -1012,17 +1012,22 @@
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
   "history": [
    {
-    "date": "2026-05-19",
+    "date": "2026-03-31",
+    "minPrice": 80000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-05",
     "minPrice": 80000000,
     "result": "유찰"
    },
    {
-    "date": "2026-06-16",
+    "date": "2026-06-09",
     "minPrice": 56000000,
     "result": "유찰"
    },
    {
-    "date": "2026-07-21",
+    "date": "2026-07-14",
     "minPrice": 39200000,
     "result": "유찰"
    }
@@ -3259,51 +3264,6 @@
    {
     "date": "2026-07-15",
     "minPrice": 65660000,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "다세대주택-도시형생활주택(원룸형주택)으로 이용중임."
- },
- {
-  "id": "busan-2025타경101684-4",
-  "court": "부산서부지원",
-  "caseNo": "2025타경101684",
-  "itemNo": "4",
-  "category": "다세대",
-  "address": "부산광역시 사상구 괘법동 379-21 정원빌 4층404호",
-  "region": "부산",
-  "district": "사상구",
-  "appraisalPrice": 233000000,
-  "minPrice": 79919000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-08-19",
-  "saleTime": "10:00",
-  "courtRoom": "101호경매법정",
-  "deposit": 7991900,
-  "areaBuilding": 29.57,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
-  "history": [
-   {
-    "date": "2026-04-01",
-    "minPrice": 233000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-06",
-    "minPrice": 233000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-10",
-    "minPrice": 163100000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-15",
-    "minPrice": 114170000,
     "result": "유찰"
    }
   ],
