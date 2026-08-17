@@ -445,48 +445,1158 @@
   "specialNote": "지분매각. 공유자의 우선매수신고는 1회에 한하여 행사할 수 있음 일괄매각. 제시외 건물 및 수목 포함(지분) 공부상 목록3-1 자연석 지붕 및 목록3-2,3 스레이트 지붕이나 현황 강판지붕임."
  },
  {
-  "id": "chungbuk-2025타경51918-1",
-  "court": "청주지방법원",
-  "caseNo": "2025타경51918",
+  "id": "chungbuk-2024타경1476-1",
+  "court": "청주지방법원 제천지원",
+  "caseNo": "2024타경1476",
   "itemNo": "1",
-  "category": "토지",
-  "address": "충청북도 괴산군 감물면 오성리 산35-8",
+  "category": "단독다가구",
+  "address": "충청북도 제천시 백운면 화당로 340",
   "region": "충북",
-  "district": "괴산군",
-  "appraisalPrice": 99440000,
-  "minPrice": 33767000,
-  "priceRatio": 0.3396,
-  "failCount": 3,
-  "saleDate": "2026-08-19",
+  "district": "제천시",
+  "appraisalPrice": 48698760,
+  "minPrice": 8170000,
+  "priceRatio": 0.1678,
+  "failCount": 8,
+  "saleDate": "2026-08-24",
   "saleTime": "10:00",
-  "courtRoom": "법정동121호(경매법정)",
-  "deposit": 3376700,
+  "courtRoom": "경매법정",
+  "deposit": 817000,
   "areaBuilding": null,
-  "areaLand": 9944,
+  "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
   "history": [
    {
-    "date": "2026-04-01",
-    "minPrice": 99440000,
+    "date": "2025-10-13",
+    "minPrice": 48698760,
     "result": "신건"
    },
    {
-    "date": "2026-05-06",
-    "minPrice": 99440000,
+    "date": "2025-11-17",
+    "minPrice": 48698760,
     "result": "유찰"
    },
    {
-    "date": "2026-06-10",
-    "minPrice": 69375305,
+    "date": "2025-12-22",
+    "minPrice": 38958831,
     "result": "유찰"
    },
    {
-    "date": "2026-07-15",
-    "minPrice": 48400371,
+    "date": "2026-01-26",
+    "minPrice": 31166924,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-02",
+    "minPrice": 24933426,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-06",
+    "minPrice": 19946651,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-11",
+    "minPrice": 15957248,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-15",
+    "minPrice": 12765741,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-20",
+    "minPrice": 10212546,
     "result": "유찰"
    }
   ],
-  "specialNote": "제시외 건물 매각제외. 지상 분묘에 대한 분묘기지권 성립여부 불분명. 매각에서 제외하는 지상 건물에 대한 법정지상권 성립여부 불분명. 최저매각가격은 분묘 소재로 인하여 제한받는 가격임"
+  "specialNote": "제시외 건물 포함. 단독주택 1층 52.08㎡는 건축물대장상 창고로 기재됨. 부속건물 건조실은 소재불명임. 제시외 건물 축사(1-1)는 창고로 이용 중. 태양광설비 주택에 포함하여 평가 건물만의 매각임."
+ },
+ {
+  "id": "chungbuk-2024타경32866-1",
+  "court": "청주지방법원 충주지원",
+  "caseNo": "2024타경32866",
+  "itemNo": "1",
+  "category": "상가",
+  "address": "충청북도 음성군 맹동면 대하4길 6-5 1층101호",
+  "region": "충북",
+  "district": "음성군",
+  "appraisalPrice": 692000000,
+  "minPrice": 116098000,
+  "priceRatio": 0.1678,
+  "failCount": 8,
+  "saleDate": "2026-08-24",
+  "saleTime": "10:00",
+  "courtRoom": "제3호법정",
+  "deposit": 11609800,
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-10-13",
+    "minPrice": 692000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-17",
+    "minPrice": 692000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-22",
+    "minPrice": 553599800,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-26",
+    "minPrice": 442879681,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-02",
+    "minPrice": 354303617,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-06",
+    "minPrice": 283442791,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-11",
+    "minPrice": 226754151,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-15",
+    "minPrice": 181403256,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-20",
+    "minPrice": 145122552,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "chungbuk-2024타경32866-2",
+  "court": "청주지방법원 충주지원",
+  "caseNo": "2024타경32866",
+  "itemNo": "2",
+  "category": "상가",
+  "address": "충청북도 음성군 맹동면 대하4길 6-5 1층102호",
+  "region": "충북",
+  "district": "음성군",
+  "appraisalPrice": 692000000,
+  "minPrice": 116098000,
+  "priceRatio": 0.1678,
+  "failCount": 8,
+  "saleDate": "2026-08-24",
+  "saleTime": "10:00",
+  "courtRoom": "제3호법정",
+  "deposit": 11609800,
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-10-13",
+    "minPrice": 692000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-17",
+    "minPrice": 692000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-22",
+    "minPrice": 553599800,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-26",
+    "minPrice": 442879681,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-02",
+    "minPrice": 354303617,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-06",
+    "minPrice": 283442791,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-11",
+    "minPrice": 226754151,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-15",
+    "minPrice": 181403256,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-20",
+    "minPrice": 145122552,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "chungbuk-2024타경32866-3",
+  "court": "청주지방법원 충주지원",
+  "caseNo": "2024타경32866",
+  "itemNo": "3",
+  "category": "상가",
+  "address": "충청북도 음성군 맹동면 대하4길 6-5 1층105호",
+  "region": "충북",
+  "district": "음성군",
+  "appraisalPrice": 502000000,
+  "minPrice": 84222000,
+  "priceRatio": 0.1678,
+  "failCount": 8,
+  "saleDate": "2026-08-24",
+  "saleTime": "10:00",
+  "courtRoom": "제3호법정",
+  "deposit": 8422200,
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-10-13",
+    "minPrice": 502000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-17",
+    "minPrice": 502000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-22",
+    "minPrice": 401600224,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-26",
+    "minPrice": 321280358,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-02",
+    "minPrice": 257024430,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-06",
+    "minPrice": 205619659,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-11",
+    "minPrice": 164495819,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-15",
+    "minPrice": 131596728,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-20",
+    "minPrice": 105277441,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "chungbuk-2024타경32866-4",
+  "court": "청주지방법원 충주지원",
+  "caseNo": "2024타경32866",
+  "itemNo": "4",
+  "category": "상가",
+  "address": "충청북도 음성군 맹동면 대하4길 6-5 3층306호",
+  "region": "충북",
+  "district": "음성군",
+  "appraisalPrice": 194000000,
+  "minPrice": 32548000,
+  "priceRatio": 0.1678,
+  "failCount": 8,
+  "saleDate": "2026-08-24",
+  "saleTime": "10:00",
+  "courtRoom": "제3호법정",
+  "deposit": 3254800,
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-10-13",
+    "minPrice": 194000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-17",
+    "minPrice": 194000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-22",
+    "minPrice": 155200120,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-26",
+    "minPrice": 124160192,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-02",
+    "minPrice": 99328230,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-06",
+    "minPrice": 79462645,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-11",
+    "minPrice": 63570165,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-15",
+    "minPrice": 50856171,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-20",
+    "minPrice": 40684969,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "chungbuk-2024타경32866-5",
+  "court": "청주지방법원 충주지원",
+  "caseNo": "2024타경32866",
+  "itemNo": "5",
+  "category": "상가",
+  "address": "충청북도 음성군 맹동면 대하4길 6-5 4층401호",
+  "region": "충북",
+  "district": "음성군",
+  "appraisalPrice": 666000000,
+  "minPrice": 111736000,
+  "priceRatio": 0.1678,
+  "failCount": 8,
+  "saleDate": "2026-08-24",
+  "saleTime": "10:00",
+  "courtRoom": "제3호법정",
+  "deposit": 11173600,
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-10-13",
+    "minPrice": 666000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-17",
+    "minPrice": 666000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-22",
+    "minPrice": 532799846,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-26",
+    "minPrice": 426239753,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-02",
+    "minPrice": 340991704,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-06",
+    "minPrice": 272793284,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-11",
+    "minPrice": 218234564,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-15",
+    "minPrice": 174587601,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-20",
+    "minPrice": 139670040,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "chungbuk-2024타경32866-6",
+  "court": "청주지방법원 충주지원",
+  "caseNo": "2024타경32866",
+  "itemNo": "6",
+  "category": "상가",
+  "address": "충청북도 음성군 맹동면 대하4길 6-5 4층404호",
+  "region": "충북",
+  "district": "음성군",
+  "appraisalPrice": 424000000,
+  "minPrice": 71135000,
+  "priceRatio": 0.1678,
+  "failCount": 8,
+  "saleDate": "2026-08-24",
+  "saleTime": "10:00",
+  "courtRoom": "제3호법정",
+  "deposit": 7113500,
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-10-13",
+    "minPrice": 424000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-17",
+    "minPrice": 424000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-22",
+    "minPrice": 339199764,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-26",
+    "minPrice": 271359622,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-02",
+    "minPrice": 217087547,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-06",
+    "minPrice": 173669917,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-11",
+    "minPrice": 138935837,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-15",
+    "minPrice": 111148592,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-20",
+    "minPrice": 88918812,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "chungbuk-2024타경32866-7",
+  "court": "청주지방법원 충주지원",
+  "caseNo": "2024타경32866",
+  "itemNo": "7",
+  "category": "상가",
+  "address": "충청북도 음성군 맹동면 대하4길 6-5 4층408호",
+  "region": "충북",
+  "district": "음성군",
+  "appraisalPrice": 292000000,
+  "minPrice": 48990000,
+  "priceRatio": 0.1678,
+  "failCount": 8,
+  "saleDate": "2026-08-24",
+  "saleTime": "10:00",
+  "courtRoom": "제3호법정",
+  "deposit": 4899000,
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-10-13",
+    "minPrice": 292000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-17",
+    "minPrice": 292000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-22",
+    "minPrice": 233600315,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-26",
+    "minPrice": 186880505,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-02",
+    "minPrice": 149504606,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-06",
+    "minPrice": 119603846,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-11",
+    "minPrice": 95683206,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-15",
+    "minPrice": 76546668,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-20",
+    "minPrice": 61237417,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "chungbuk-2024타경32866-8",
+  "court": "청주지방법원 충주지원",
+  "caseNo": "2024타경32866",
+  "itemNo": "8",
+  "category": "상가",
+  "address": "충청북도 음성군 맹동면 대하4길 6-5 5층501호",
+  "region": "충북",
+  "district": "음성군",
+  "appraisalPrice": 1970000000,
+  "minPrice": 330511000,
+  "priceRatio": 0.1678,
+  "failCount": 8,
+  "saleDate": "2026-08-24",
+  "saleTime": "10:00",
+  "courtRoom": "제3호법정",
+  "deposit": 33051100,
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-10-13",
+    "minPrice": 1970000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-17",
+    "minPrice": 1970000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-22",
+    "minPrice": 1575999907,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-26",
+    "minPrice": 1260799852,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-02",
+    "minPrice": 1008639822,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-06",
+    "minPrice": 806911811,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-11",
+    "minPrice": 645529411,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-15",
+    "minPrice": 516423498,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-20",
+    "minPrice": 413138774,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "chungbuk-2024타경32866-9",
+  "court": "청주지방법원 충주지원",
+  "caseNo": "2024타경32866",
+  "itemNo": "9",
+  "category": "상가",
+  "address": "충청북도 음성군 맹동면 대하4길 6-5 6층604호",
+  "region": "충북",
+  "district": "음성군",
+  "appraisalPrice": 424000000,
+  "minPrice": 71135000,
+  "priceRatio": 0.1678,
+  "failCount": 8,
+  "saleDate": "2026-08-24",
+  "saleTime": "10:00",
+  "courtRoom": "제3호법정",
+  "deposit": 7113500,
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-10-13",
+    "minPrice": 424000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-17",
+    "minPrice": 424000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-22",
+    "minPrice": 339199764,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-26",
+    "minPrice": 271359622,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-02",
+    "minPrice": 217087547,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-06",
+    "minPrice": 173669917,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-11",
+    "minPrice": 138935837,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-15",
+    "minPrice": 111148592,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-20",
+    "minPrice": 88918812,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "chungbuk-2024타경33814-1",
+  "court": "청주지방법원 충주지원",
+  "caseNo": "2024타경33814",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청북도 충주시 대소원면 문주리 725-6",
+  "region": "충북",
+  "district": "충주시",
+  "appraisalPrice": 146691000,
+  "minPrice": 24610000,
+  "priceRatio": 0.1678,
+  "failCount": 8,
+  "saleDate": "2026-08-24",
+  "saleTime": "10:00",
+  "courtRoom": "제3호법정",
+  "deposit": 2461000,
+  "areaBuilding": null,
+  "areaLand": 99,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-10-13",
+    "minPrice": 146691000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-17",
+    "minPrice": 146691000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-22",
+    "minPrice": 117352403,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-26",
+    "minPrice": 93881605,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-02",
+    "minPrice": 75105030,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-06",
+    "minPrice": 60083821,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-11",
+    "minPrice": 48066894,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-15",
+    "minPrice": 38453385,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-20",
+    "minPrice": 30762604,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 일괄매각 - 목록1 지상에 분묘가 소재하며 이에 대한 분묘기지권 성립여부는 불분명"
+ },
+ {
+  "id": "chungbuk-2024타경6730-1",
+  "court": "청주지방법원 제천지원",
+  "caseNo": "2024타경6730",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청북도 단양군 어상천면 율곡리 107",
+  "region": "충북",
+  "district": "단양군",
+  "appraisalPrice": 29097600,
+  "minPrice": 3125000,
+  "priceRatio": 0.1074,
+  "failCount": 10,
+  "saleDate": "2026-08-24",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정",
+  "deposit": 312500,
+  "areaBuilding": null,
+  "areaLand": 3464,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-08-04",
+    "minPrice": 29097600,
+    "result": "신건"
+   },
+   {
+    "date": "2025-09-08",
+    "minPrice": 29097600,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-10-13",
+    "minPrice": 23278578,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-11-17",
+    "minPrice": 18623261,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-22",
+    "minPrice": 14898928,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-26",
+    "minPrice": 11919398,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-02",
+    "minPrice": 9535722,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-06",
+    "minPrice": 7628741,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-11",
+    "minPrice": 6103124,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-15",
+    "minPrice": 4882603,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-20",
+    "minPrice": 3906166,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "농지취득자격증명서 필요(미제출시 매수보증금 몰수). 지목은 '전'이나 임야화된 묵전 상태임."
+ },
+ {
+  "id": "chungbuk-2024타경7351-1",
+  "court": "청주지방법원 제천지원",
+  "caseNo": "2024타경7351",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청북도 제천시 신월동 1115-15",
+  "region": "충북",
+  "district": "제천시",
+  "appraisalPrice": 52224000,
+  "minPrice": 5608000,
+  "priceRatio": 0.1074,
+  "failCount": 10,
+  "saleDate": "2026-08-24",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정",
+  "deposit": 560800,
+  "areaBuilding": null,
+  "areaLand": 588,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-08-04",
+    "minPrice": 52224000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-09-08",
+    "minPrice": 52224000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-10-13",
+    "minPrice": 41779566,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-11-17",
+    "minPrice": 33423945,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-22",
+    "minPrice": 26739390,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-26",
+    "minPrice": 21391699,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-02",
+    "minPrice": 17113509,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-06",
+    "minPrice": 13690927,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-11",
+    "minPrice": 10952837,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-15",
+    "minPrice": 8762347,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-20",
+    "minPrice": 7009939,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "일괄매각. 지적상 맹지이나 등산로가 개설되어 있음"
+ },
+ {
+  "id": "chungbuk-2024타경7474-1",
+  "court": "청주지방법원 제천지원",
+  "caseNo": "2024타경7474",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청북도 제천시 산곡동 47",
+  "region": "충북",
+  "district": "제천시",
+  "appraisalPrice": 91326000,
+  "minPrice": 9806000,
+  "priceRatio": 0.1074,
+  "failCount": 10,
+  "saleDate": "2026-08-24",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정",
+  "deposit": 980600,
+  "areaBuilding": null,
+  "areaLand": 2486,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-08-04",
+    "minPrice": 91326000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-09-08",
+    "minPrice": 91326000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-10-13",
+    "minPrice": 73060759,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-11-17",
+    "minPrice": 58448575,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-22",
+    "minPrice": 46758834,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-26",
+    "minPrice": 37407046,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-02",
+    "minPrice": 29925620,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-06",
+    "minPrice": 23940483,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-11",
+    "minPrice": 19152376,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-15",
+    "minPrice": 15321892,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-20",
+    "minPrice": 12257507,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "일괄매각 농지취득자격증명서 필요(미제출시 매수보증금 몰수) 목록1, 2 현황은 휴경지이며 맹지임"
+ },
+ {
+  "id": "chungbuk-2024타경7634-1",
+  "court": "청주지방법원 제천지원",
+  "caseNo": "2024타경7634",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청북도 제천시 흑석동 275-37",
+  "region": "충북",
+  "district": "제천시",
+  "appraisalPrice": 12540000,
+  "minPrice": 1683000,
+  "priceRatio": 0.1342,
+  "failCount": 9,
+  "saleDate": "2026-08-24",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정",
+  "deposit": 168300,
+  "areaBuilding": null,
+  "areaLand": 330,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-09-08",
+    "minPrice": 12540000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-10-13",
+    "minPrice": 12540000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-11-17",
+    "minPrice": 10031940,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-22",
+    "minPrice": 8025504,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-26",
+    "minPrice": 6420365,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-02",
+    "minPrice": 5136262,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-06",
+    "minPrice": 4108985,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-11",
+    "minPrice": 3287168,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-15",
+    "minPrice": 2629719,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-20",
+    "minPrice": 2103763,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "1. 맹지임. 2. 수목이 우거져 분묘 여부 확인 할 수 없음"
+ },
+ {
+  "id": "chungbuk-2025타경75-1",
+  "court": "청주지방법원 제천지원",
+  "caseNo": "2025타경75",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청북도 제천시 봉양읍 미당리 산66-1",
+  "region": "충북",
+  "district": "제천시",
+  "appraisalPrice": 985696000,
+  "minPrice": 165373000,
+  "priceRatio": 0.1678,
+  "failCount": 8,
+  "saleDate": "2026-08-24",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정",
+  "deposit": 16537300,
+  "areaBuilding": null,
+  "areaLand": 6686,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-10-13",
+    "minPrice": 985696000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-17",
+    "minPrice": 985696000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-22",
+    "minPrice": 788557189,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-26",
+    "minPrice": 630846063,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-02",
+    "minPrice": 504677099,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-06",
+    "minPrice": 403741879,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-11",
+    "minPrice": 322993662,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-15",
+    "minPrice": 258395057,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-20",
+    "minPrice": 206716148,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "1.일괄매각 2.목록1~4 주위 일대는 택지조성을 위한 부지조성 토목공사를 시행하여 일부는 주택 신축, 주거나지, 토목공사 중단된 상태임. 3.목록1은 지목이 임야로 택지개발로 형질변경, 토목공사 중단된 상태이며 지분매각임. 4.목록2,3,4는 지목 임야이나 현황은 택지조성을 위한 토목공사가 거의 완료단계에서 중단된 상태로 자세한 내용은 감정평가서 참조. 5.목록4지상에 소유자 미상의 조경수 식재하나 가식 상태여서 평가에서 제외하여 매각대상에서 제외. 6.목록1,2,3,4토지의 인접도로상태는 감정평가서 참조"
  }
 ]
