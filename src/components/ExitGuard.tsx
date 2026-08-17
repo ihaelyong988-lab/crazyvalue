@@ -114,14 +114,21 @@ export function ExitGuard() {
     // 기존 state를 반드시 보존한다 — 통째로 교체하면 Next app-router의 `__NA` 마커가 사라지고,
     // popstate에서 마커가 없으면 라우터가 window.location.reload()로 떨어져 뒤로가기가
     // SPA 복원이 아니라 문서 전체 재로드가 된다(감사 3차: 복원 275ms vs 정상 58ms · 페이지 상태 소멸).
+    // 쌓는 시점은 같은 마운트의 다른 이펙트가 끝난 뒤다 — 홈 복원(page.tsx commit)이 셸로우
+    // replaceState로 라우터 state를 새로 쓰므로, 그보다 먼저 push하면 우리가 보존한 마커가 곧바로
+    // 덮인다. 한 틱 미뤄 라우터가 마커를 붙인 state 위에 센티넬을 얹는다.
+    let sentinel: number | undefined;
     if (pathname === "/") {
-      const state = (window.history.state ?? {}) as Record<string, unknown>;
-      if (state.cvExitGuard !== true)
-        window.history.pushState({ ...state, cvExitGuard: true }, "", window.location.href);
-      armedRef.current = true;
+      sentinel = window.setTimeout(() => {
+        const state = (window.history.state ?? {}) as Record<string, unknown>;
+        if (state.cvExitGuard !== true)
+          window.history.pushState({ ...state, cvExitGuard: true }, "", window.location.href);
+        armedRef.current = true;
+      }, 0);
     }
     return () => {
       window.removeEventListener("beforeunload", onBeforeUnload);
+      if (sentinel !== undefined) window.clearTimeout(sentinel);
       armedRef.current = false;
     };
   }, [open, pathname]);

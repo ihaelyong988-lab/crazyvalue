@@ -83,7 +83,15 @@ export default function HomePage() {
     setFilters(next);
     writeHomeFilterMirror(next);
     stampHomeFilterMirror();
-    window.history.replaceState(null, "", window.location.pathname + buildListQuery(next));
+    // state를 null로 밀지 않는다 — Next app-router의 `__NA` 마커가 사라진 엔트리로 뒤로 가면
+    // 라우터가 SPA 복원 대신 window.location.reload()로 떨어진다(감사 3차 95).
+    // 리스트(list/page.tsx)는 반대다 — 거기는 useSearchParams가 원천이라 state를 새로 써야
+    // 라우터가 새 URL을 인식한다. 홈은 window.location.search를 직접 읽으므로 보존이 안전하다.
+    window.history.replaceState(
+      window.history.state,
+      "",
+      window.location.pathname + buildListQuery(next),
+    );
   };
 
   // 온보딩·관심조건 반영(§4.3-① 9): 설정한 지역·금액이 필터 초기값
