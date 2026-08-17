@@ -14,16 +14,40 @@ const INSTALL_KEY = "crazyvalue.install.v1";
 const TABS_PX = 56;
 
 /**
- * 페이지가 렌더한 하단 고정 요소(홈 결과 버튼)의 높이를 실측한다(감사 2차 93 · 오류 원장 2026-07-19).
+ * 페이지가 렌더한 하단 고정 요소(홈 결과 버튼)를 찾아 둔다(감사 2차 93 · 오류 원장 2026-07-19).
  * 같은 하단 고정끼리 겹치면 배너가 주 CTA의 탭을 가로챈다. 소유가 다른 컴포넌트에 마커를 심지 않으려고
- * main 안에서 화면 하단에 걸친 요소만 골라 position을 확인한다(스타일 조회는 후보에만 건다).
+ * main 전수를 훑어 position을 확인한다(스타일 조회는 후보에만 건다).
+ *
+ * 이 전수 스캔이 감사 103의 비용원이다(/list?n=500에서 13,047개 · 회당 66.8~107.3ms).
+ * 그래서 결과를 담아 두고 **경로 진입에 1회만** 부른다. 화면 크기 변화는 후보의 위치만 바꿀 뿐
+ * 후보의 정체를 바꾸지 않으므로, resize 경로는 liftOf로 담아 둔 후보만 다시 잰다.
+ *
+ * 담는 조건에서 "화면 하단에 걸렸는가"(bottom > vh/2)는 뺀다 — 화면 크기에 딸린 판정이라 잴 때마다
+ * 새로 해야 한다. 여기서는 화면 크기와 무관한 조건(높이 0 아님 · 뷰포트 안)만 건다.
  */
-function measureLift(): number {
+function scanBottomFixed(): HTMLElement[] {
   const main = document.querySelector("main");
-  if (main === null) return 0;
+  if (main === null) return [];
+  const vh = window.innerHeight;
+  const found: HTMLElement[] = [];
+  for (const el of main.querySelectorAll<HTMLElement>("*")) {
+    const rect = el.getBoundingClientRect();
+    if (rect.height === 0 || rect.top >= vh) continue;
+    if (window.getComputedStyle(el).position !== "fixed") continue;
+    found.push(el);
+  }
+  return found;
+}
+
+/**
+ * 담아 둔 후보만 다시 재 배너를 올릴 높이를 낸다 — 측정 횟수가 후보 수(보통 0~1)로 고정된다.
+ * 판정은 전수 스캔 시절과 같다: 화면 하단에 걸친 fixed 요소의 top까지 배너 bottom을 올린다.
+ * 후보가 떨어져 나가거나 fixed를 잃으면 그 자리에서 걸러진다(떨어져 나간 요소의 rect는 전부 0이다).
+ */
+function liftOf(candidates: readonly HTMLElement[]): number {
   const vh = window.innerHeight;
   let lift = 0;
-  for (const el of main.querySelectorAll<HTMLElement>("*")) {
+  for (const el of candidates) {
     const rect = el.getBoundingClientRect();
     if (rect.height === 0 || rect.bottom <= vh / 2 || rect.top >= vh) continue;
     if (window.getComputedStyle(el).position !== "fixed") continue;
@@ -93,6 +117,8 @@ export function InstallPrompt() {
   const boxRef = useRef<HTMLDivElement | null>(null);
   const promptRef = useRef<BeforeInstallPromptEvent | null>(null);
   const doneRef = useRef(false);
+  /** 이번 경로에서 찾아 둔 하단 고정 후보. null = 아직 안 찾음(다음 측정 이펙트가 찾는다). */
+  const fixedRef = useRef<HTMLElement[] | null>(null);
 
   useEffect(() => {
     if (isStandalone()) return;
@@ -100,7 +126,8 @@ export function InstallPrompt() {
 
     // 오프셋·inert는 노출 결정과 같은 시점에 계산한다 — 첫 프레임부터 제자리에 그린다.
     const show = (next: "android" | "ios") => {
-      setLift(measureLift());
+      fixedRef.current = scanBottomFixed();
+      setLift(liftOf(fixedRef.current));
       setBlocked(modalOpen());
       setMode(next);
     };
@@ -123,17 +150,31 @@ export function InstallPrompt() {
   // 화면 전환·회전으로 페이지 고정 CTA가 바뀌면 오프셋을 다시 잰다.
   // 동시에 배너가 차지한 높이를 --cv-banner-h로 알린다 — 배너는 fixed라 레이아웃을 밀지 않아서,
   // 이 값을 main 하단 여백에 더하지 않으면 스크롤 끝의 일반 콘텐츠(리스트 더보기 등)를 덮는다.
+  //
+  // 감사 103: resize에 직결하면 회전·주소창 접힘·키보드 한 번이 이 핸들러를 수십 번 때린다.
+  // ① 전수 스캔은 이펙트 진입(=경로 변경)에만 돌리고 ② resize는 rAF 1회로 묶어 버스트당 한 번만 잰다.
   useEffect(() => {
     if (mode === null) return;
-    const remeasure = () => {
-      setLift(measureLift());
+    let frame = 0;
+    const apply = () => {
+      frame = 0;
+      // 아직 안 찾았거나(경로 진입) 담아 둔 후보가 떨어져 나갔으면(에러→재시도로 CTA 재마운트)
+      // 그때만 다시 훑는다. 붙어 있는 한 화면 크기가 아무리 바뀌어도 스캔은 돌지 않는다.
+      const held = fixedRef.current;
+      if (held === null || held.some((el) => !el.isConnected)) fixedRef.current = scanBottomFixed();
+      setLift(liftOf(fixedRef.current ?? []));
       const h = boxRef.current?.getBoundingClientRect().height ?? 0;
       document.documentElement.style.setProperty("--cv-banner-h", `${Math.ceil(h)}px`);
     };
-    remeasure();
-    window.addEventListener("resize", remeasure);
+    apply();
+    const onResize = () => {
+      if (frame === 0) frame = window.requestAnimationFrame(apply);
+    };
+    window.addEventListener("resize", onResize);
     return () => {
-      window.removeEventListener("resize", remeasure);
+      window.removeEventListener("resize", onResize);
+      if (frame !== 0) window.cancelAnimationFrame(frame);
+      fixedRef.current = null; // 경로가 바뀐다 — 다음 진입은 새 DOM을 스캔한다
       document.documentElement.style.removeProperty("--cv-banner-h");
     };
   }, [mode, pathname]);

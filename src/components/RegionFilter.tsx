@@ -87,7 +87,7 @@ export function RegionFilter({
       {/* 시·군·구 칩 등장 공지(감사 6) — 상시 마운트된 status 영역의 텍스트 갱신으로 보조기술에 알린다. */}
       <p role="status" className="sr-only">
         {districtOptions.length > 0
-          ? `시·군·구 선택 항목 ${districtOptions.length}개가 표시되었습니다.`
+          ? `시·군·구 선택 항목 ${districtOptions.length}개가 표시됐다.`
           : ""}
       </p>
       {districtOptions.length > 0 && (

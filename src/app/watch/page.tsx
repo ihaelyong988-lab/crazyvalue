@@ -172,8 +172,8 @@ export default function WatchPage() {
     return (
       <div>
         <EmptyState
-          title="관심 물건이 아직 없습니다"
-          description="상세 화면에서 관심등록을 누르면 여기에서 기일과 재유찰을 추적합니다."
+          title="관심 물건이 아직 없다"
+          description="상세 화면에서 관심등록을 누르면 여기에서 기일과 재유찰을 추적한다."
         />
         <Link
           href="/"
@@ -200,7 +200,7 @@ export default function WatchPage() {
             </p>
           )}
           <p className="mt-2 text-[13px] text-ink/70">
-            이번 갱신 목록에서 빠진 물건입니다(매각·취하 등). 마지막 확인:
+            이번 갱신 목록에서 빠진 물건이다(매각·취하 등). 마지막 확인:
             최저가 <span className="tabular-nums">{formatKrw(r.snapshot.minPrice)}</span> ·
             기일 <span className="tabular-nums">{formatDateKr(r.snapshot.saleDate)}</span>
           </p>

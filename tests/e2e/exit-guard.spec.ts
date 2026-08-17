@@ -1,11 +1,15 @@
 import { expect, test, type Page } from "@playwright/test";
 import { pickRegion } from "./fixture";
 
-// 이탈 확인 시트(src/components/ExitGuard.tsx) 회귀 — 3차 감사 J7에서 실브라우저로 재현된 결함 3건을 고정한다.
+// 이탈 확인 시트(src/components/ExitGuard.tsx) 회귀 — 3차 감사 J7에서 실브라우저로 재현된 결함을 고정한다.
 //   ① 주 CTA 무동작: setOpen(false)가 무장 effect를 재실행해 센티넬 pushState가 router.push를 취소했다(J7-H·K).
 //   ② 뒤로가기 문서 재로드: 센티넬이 history.state를 통째로 교체해 Next의 복원 마커가 사라졌다(J7-F·M).
 //   ③ 시트가 열린 채 화면 전환: 배경 inert·스크롤 잠금이 남아 착지 화면이 잠겼다(J7-L).
+//   ⑥ 갱신에서 내려간 물건: 홈 "최근 본 물건"은 0건인데 시트만 1건이라며 가드했다(99).
+// 가드는 앱 진입 칸에서만 무장한다(97) — 무장은 산출물 조회 뒤의 effect라 센티넬 칸을 관측하고 시작한다.
 // 픽스처는 산출물에서 고른다(고정 id 금지 — 갱신마다 물건이 바뀐다, fixture.ts 규약).
+// 저장 실패 고지는 유닛(tests/unit/exit-guard.test.ts)이 지킨다 — 저장 대상이 무장 시점에 산출물에서
+// 확인된 물건이라, "목록에만 남은 id" 경로는 여기서 재현할 수 없다.
 
 const WATCH_KEY = "crazyvalue.watchlist.v1";
 const RECENT_KEY = "crazyvalue.recent.v1";
@@ -42,8 +46,18 @@ async function goHome(page: Page) {
   await expect(homeReady(page)).toBeVisible();
 }
 
+const onSentinel = (page: Page) =>
+  page.evaluate(() => ((history.state ?? {}) as { cvExitGuard?: boolean }).cvExitGuard === true);
+
+/** 센티넬 칸에 서 있고 무장까지 끝났음을 확인한다 — 무장은 산출물 조회 뒤에 온다. */
+async function armed(page: Page) {
+  await expect.poll(() => onSentinel(page)).toBe(true);
+  await page.waitForTimeout(500);
+}
+
 /** 홈에서 뒤로가기 1회 = 센티넬 소진 → 확인 시트. */
 async function openSheet(page: Page) {
+  await armed(page);
   await page.evaluate(() => history.back());
   await expect(sheet(page)).toBeVisible();
 }
@@ -99,22 +113,38 @@ test("② 뒤로가기 — 홈 복원이 SPA다(문서 재로드 0 · 페이지 
   expect(docs.length - docsBefore).toBe(0);
 });
 
-test("③ 시트 열림 중 뒤로 — 시트가 닫히고 착지 화면이 조작된다", async ({ page }) => {
+test("③ 시트 열림 중 화면 전환 — 시트가 닫히고 착지 화면이 조작된다", async ({ page }) => {
   await seed(page, [recentIds[0]]);
   await goHome(page);
+  await armed(page);
   await page.getByRole("link", { name: /물건.*건 보기/ }).click();
   await expect(listReady(page)).toBeVisible();
   await page.locator('a[href^="/item/"]').first().click();
   await expect(watchToggle(page)).toBeVisible();
   const detailPath = pathOf(page);
 
-  await page.getByRole("navigation", { name: "주 메뉴" }).getByRole("link", { name: "홈" }).click();
-  await expect(homeReady(page)).toBeVisible();
-  await openSheet(page);
-
-  await page.evaluate(() => history.back()); // 시트가 떠 있는 채로 한 번 더 뒤로
-  await expect.poll(() => pathOf(page)).toBe(detailPath);
+  // 앱 안으로 돌아가는 뒤로가기는 가로채지 않는다(97) — 리스트·홈까지 시트 없이 지난다.
+  await page.evaluate(() => history.back());
+  await expect(listReady(page)).toBeVisible();
   await expect(sheet(page)).toHaveCount(0);
+  await page.evaluate(() => history.back());
+  await expect(homeReady(page)).toBeVisible();
+  await expect(sheet(page)).toHaveCount(0);
+
+  await openSheet(page); // 센티넬 소진 = 여기서부터가 앱 밖이다
+
+  // 시트가 떠 있는 채로 앞으로 간다. 같은 화면(센티넬 칸)에서는 열려 있어야 하고,
+  await page.evaluate(() => history.forward());
+  await expect.poll(() => onSentinel(page)).toBe(true);
+  await expect(sheet(page)).toBeVisible();
+
+  // 화면이 바뀌면 닫혀야 한다 — 열린 채 넘어가면 배경 inert·스크롤 잠금이 착지 화면을 잠근다.
+  await page.evaluate(() => history.forward());
+  await expect(listReady(page)).toBeVisible();
+  await expect(sheet(page)).toHaveCount(0);
+
+  await page.evaluate(() => history.forward());
+  await expect.poll(() => pathOf(page)).toBe(detailPath);
 
   // 잠금 해제는 클릭으로 잰다 — inert·스크롤 잠금이 남으면 여기서 타임아웃한다(감사 3차 2500ms 실패).
   await watchToggle(page).click({ timeout: 5_000 });
@@ -128,6 +158,7 @@ test("③ 시트 열림 중 뒤로 — 시트가 닫히고 착지 화면이 조�
 test("④ 센티넬 — 홈 이력의 라우터 상태를 보존한 채 쌓는다", async ({ page }) => {
   await seed(page, [recentIds[0]]);
   await goHome(page);
+  await armed(page);
   const sentinelKeys = await page.evaluate(() => Object.keys((history.state ?? {}) as object));
   expect(sentinelKeys).toContain("cvExitGuard");
 
@@ -167,15 +198,13 @@ test("⑤ 무장 조건 — 관심함에 1건이라도 있으면 가드하지 �
   ).toBeUndefined();
 });
 
-test("⑥ 저장 실패 — 갱신에서 내려간 물건은 성공한 척하지 않는다", async ({ page }) => {
+test("⑥ 갱신에서 내려간 물건 — 홈 섹션과 가드가 같은 말을 한다", async ({ page }) => {
   await seed(page, [`${recentIds[0].split("-")[0]}-2024타경999999-9`]);
   await goHome(page);
-  await openSheet(page);
+  await page.waitForTimeout(500); // 무장은 산출물 조회 뒤의 effect다 — 부재 판정에는 관측 창이 필요하다
 
-  await page.getByRole("button", { name: "가장 최근 물건 저장" }).click();
-
-  // 저장 못 한 채 상세로 보내면 404다(감사 3차 J7-I) — 실패를 시트에서 알리고 화면을 지킨다.
-  await expect(page.getByRole("alert").filter({ hasText: "저장할 수 없다" })).toBeVisible();
-  await expect(sheet(page)).toBeVisible();
-  expect(pathOf(page)).toBe("/");
+  // 홈은 0건인데 시트만 1건이라며 가드하던 자리(99) — 이제 둘 다 "없음"이다.
+  await expect(page.getByRole("heading", { name: "최근 본 물건" })).toHaveCount(0);
+  expect(await onSentinel(page)).toBe(false);
+  await expect(sheet(page)).toHaveCount(0);
 });

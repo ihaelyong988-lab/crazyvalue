@@ -14,8 +14,8 @@ export default function ErrorPage({
   return (
     <div>
       <ErrorState
-        message="화면을 표시하지 못했습니다."
-        action="다시 시도를 누르시고, 문제가 반복되면 홈으로 이동하세요."
+        message="화면을 표시하지 못했다."
+        action="다시 시도를 누르고, 반복되면 홈으로 이동하라."
         onRetry={reset}
       />
       {/* 클라이언트 런타임이 예외 상태일 수 있어 Link(소프트 내비게이션) 대신

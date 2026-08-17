@@ -10,6 +10,7 @@
 import { execSync } from 'node:child_process';
 import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, statSync } from 'node:fs';
 import { join } from 'node:path';
+import { politeFormHits } from './lib/korean-style.mjs';
 
 const root = process.env.CLAUDE_PROJECT_DIR || process.cwd();
 const stateDir = join(root, '.claude', 'hooks', '.state');
@@ -106,6 +107,15 @@ function lint() {
         if ((text.match(/[가-힣)\]][.?]/g) || []).length >= 2)
           push(f, false, `R12 2문장 안내문(${text.trim().slice(0, 28)}…)`, '1문장 압축 — 읽기 본문이면 해당 <p>에 data-reading 선언(예외는 ErrorState message+action 규격·법적 고지·읽기 본문뿐, MASTER.md 세로 리듬)');
       }
+    // R13: 문체 — 사용자 노출 문구는 단정형이다(AGENTS §1 · 컨셉 DNA "단정형 명세체").
+    // 2차 감사 63번이 이 결함을 "단정형 통일 + 게이트 문체 룰 연동"으로 처방했는데, 위 R12가
+    // 문장 수 판정으로 바뀌면서 문체 룰이 함께 사라졌고(주석이 "문체를 가리지 않는다"고 명시했다)
+    // 3차 감사에서 6개 화면에 되살아났다 — 규칙만 있고 채점이 없으면 반복된다.
+    // 판정은 lib/korean-style.mjs 단일 구현이고 tests/unit/ui-style-tone.test.ts가 같은 함수를
+    // 채점한다. 예외는 법적 고지 1파일뿐 — 격식체가 관례인 고지문이고 R12도 같은 파일을 예외로 둔다.
+    if (!/components\/LegalNotice/.test(f))
+      for (const hit of politeFormHits(src))
+        push(f, true, `R13 습니다체·청유형 종결(${hit.ending} — ${hit.text.slice(0, 28)}…)`, '단정형으로 교체("…한다"·"…하라"·"…없다")');
   }
   for (const f of [...uiFiles(), ...styleFiles()]) {
     const src = read(f); if (!src) continue;
