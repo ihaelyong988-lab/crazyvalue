@@ -233,6 +233,17 @@ function PrefsEditor({ reloadKey }: { reloadKey: number }) {
 
 // ②③ 내 저장 현황 + 내 데이터 초기화(감사 2차 52·53).
 // 건수는 기존 저장소를 그대로 읽는다 — 자기인식 지표용 새 키를 만들지 않는다.
+
+/**
+ * 표시 건수의 유일한 출처(감사 3차) — 화면 건수는 언제나 저장값을 되읽어 만든다.
+ * 초기화 성공을 가정해 0건을 쓰면, 삭제가 막힌 기기에서 실패 알림과 "0건"이 한 화면에 함께 뜨고
+ * 관심함 탭에는 항목이 살아 있다. 관심조건 저장 실패 처리와 같은 규약이다.
+ */
+const countStored = (): { watch: number; recent: number } => ({
+  watch: Object.keys(getWatchState().items).length,
+  recent: getRecentIds().length,
+});
+
 function MyDataPanel({ onCleared }: { onCleared: () => void }) {
   const [counts, setCounts] = useState<{ watch: number; recent: number } | null>(null);
   const [confirming, setConfirming] = useState(false);
@@ -241,11 +252,7 @@ function MyDataPanel({ onCleared }: { onCleared: () => void }) {
   const dialogRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const read = () =>
-      setCounts({
-        watch: Object.keys(getWatchState().items).length,
-        recent: getRecentIds().length,
-      });
+    const read = () => setCounts(countStored());
     read();
     return subscribeWatchState(read); // 타 탭의 관심등록·해제도 이 화면에 반영한다(감사 2차 33)
   }, []);
@@ -257,7 +264,7 @@ function MyDataPanel({ onCleared }: { onCleared: () => void }) {
     setConfirming(false);
     setFailed(!ok);
     setCleared(ok);
-    setCounts({ watch: 0, recent: 0 });
+    setCounts(countStored()); // 성공이면 0건, 실패면 남아 있는 실제 건수 — 화면이 저장소를 앞지르지 않는다
     if (ok) onCleared();
   };
 

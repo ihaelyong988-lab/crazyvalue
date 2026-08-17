@@ -23,6 +23,14 @@ const CATEGORY_SET = new Set<string>(CATEGORIES);
 
 const REGION_NAMES = new Set(REGIONS.map((r) => r.name));
 
+/**
+ * 표시 건수 상한 — 한 화면에 그리는 카드 수의 성능 한계다(값을 올리지 않는다).
+ * 상한의 소유자는 이 상수 하나다: 쿼리 정제와 더보기 노출 조건이 같은 값을 읽는다(감사 3차).
+ * 정제만 500으로 깎고 버튼은 총 건수만 보던 동안, 500에 닿은 뒤의 더보기는 눌러도 아무 일이
+ * 일어나지 않아 앱이 멈춘 것으로 읽혔다.
+ */
+export const LIST_COUNT_MAX = 500;
+
 /** 다중값 파라미터 분해 — 빈 값과 중복 값을 버린다(첫 등장만 유지, 감사 2차 44). 4축이 이 함수를 공유한다. */
 const splitParam = (v: string | null): string[] =>
   v ? [...new Set(v.split(",").filter(Boolean))] : [];
@@ -54,7 +62,7 @@ export function parseListQuery(params: URLSearchParams): ListQuery {
     sort: (SORT_KEYS.has(params.get("sort") as SortKey)
       ? params.get("sort")
       : "date") as SortKey,
-    count: Number.isFinite(rawN) && rawN >= 10 ? Math.min(rawN, 500) : 10,
+    count: Number.isFinite(rawN) && rawN >= 10 ? Math.min(rawN, LIST_COUNT_MAX) : 10,
   };
 }
 

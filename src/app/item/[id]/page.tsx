@@ -145,7 +145,9 @@ export default async function ItemPage({ params }: { params: Promise<{ id: strin
 
       {/* 법원 원문 도달 3종(AGENTS §2-2 조문 6) — ①사건상세 화면 링크 ②사건번호 복사 ③찾는 방법 1줄.
           사건 단위 딥링크가 구조적으로 불가하므로(docs/CRAWLER.md §4.1) 세 수단을 한 블록에 묶어
-          링크→복사→입력 동선이 끊기지 않게 한다(감사 45). */}
+          링크→복사→입력 동선이 끊기지 않게 한다(감사 45).
+          안내가 지목하는 법원명을 문구에 박는다 — 헤더에만 있으면 복사 버튼이 보이는 위치에서 화면 밖이라
+          방문자가 법원명을 확인하러 위로 되돌아가야 한다(감사 3차 J4). 복사 문자열은 사건번호 단독 유지. */}
       <section aria-label="법원 원문 확인" className="space-y-2">
         <a
           href={item.detailUrl}
@@ -158,7 +160,7 @@ export default async function ItemPage({ params }: { params: Promise<{ id: strin
         </a>
         <CopyCaseNo caseNo={item.caseNo} />
         <p className="text-[13px] leading-snug text-ink/70">
-          원문 화면에서 법원 선택 후 사건번호를 붙여넣는다.
+          원문 화면에서 {item.court} 선택 후 사건번호를 붙여넣는다.
         </p>
       </section>
 

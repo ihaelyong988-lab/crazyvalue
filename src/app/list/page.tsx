@@ -11,6 +11,7 @@ import {
 } from "@/lib/data";
 import {
   buildListQuery,
+  LIST_COUNT_MAX,
   parseListQuery,
   writeHomeFilterMirror,
   type ListQuery,
@@ -150,7 +151,8 @@ function ListContent() {
         shown={query.count}
         sort={query.sort}
         onSortChange={(sort: SortKey) => update({ sort })}
-        onMore={() => update({ count: query.count + 10 })}
+        // 상한을 넘겨 쓰면 URL은 505를 주장하고 화면은 500을 그린다 — 쿼리가 화면의 원천이라 어긋나면 안 된다.
+        onMore={() => update({ count: Math.min(query.count + 10, LIST_COUNT_MAX) })}
         relaxActions={relaxActions}
       />
     </>

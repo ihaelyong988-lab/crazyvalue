@@ -1,13 +1,14 @@
 # 법원경매정보(courtauction.go.kr) 수집 전략 정찰 보고서
 
-> Phase 3.1 정찰 스파이크 결과(2026-07-18, 요청 7회 — 예절 한도 10회 이내). 목적: 주 1회(일요일 03:00 KST) 실행, "유찰 2회 이상" 물건만 수집하는 무료 정보 서비스(출처·원문 링크 표기)의 크롤러 설계 근거.
+> Phase 3.1 정찰 스파이크 결과(2026-07-18, 요청 7회 — 예절 한도 10회 이내). 목적: "유찰 2회 이상" 물건만 수집하는 무료 정보 서비스(출처·원문 링크 표기)의 크롤러 설계 근거.
+> 정찰 시점의 전제는 주 1회(일요일 03:00 KST) 실행이었다. **현행은 매일 갱신이고 일요일 슬롯은 실행 여부가 아니라 full·quick 모드를 가른다** — 슬롯·모드 표는 `docs/OPERATIONS.md` §2, 기계 원천은 `.github/workflows/crawl.yml`의 `on.schedule`.
 
 ## 1. 전략 판정
 
 **판정: A) 내부 JSON API 직접 호출**
 
 근거:
-- 사이트는 WebSquare 기반 SPA다(초기 HTML은 부트로더 셸 2.6KB뿐). HTML 파싱(B)은 렌더링된 DOM이 없어 불가에 가깝고, Playwright(C)는 매주 헤드리스 브라우저를 띄우는 비용·불안정성이 크다.
+- 사이트는 WebSquare 기반 SPA다(초기 HTML은 부트로더 셸 2.6KB뿐). HTML 파싱(B)은 렌더링된 DOM이 없어 불가에 가깝고, Playwright(C)는 정기 실행마다 헤드리스 브라우저를 띄우는 비용·불안정성이 크다.
 - 검색은 단일 POST 엔드포인트 `/pgj/pgjsearch/searchControllerMain.on` 로 JSON을 반환한다. 실측 결과 CAPTCHA·CSRF 토큰 없이 `JSESSIONID` 쿠키만으로 동작하며, 잘못된 파라미터에 깔끔한 JSON 에러를 돌려준다.
 - 결정적 이점: 서버가 **유찰횟수 필터(`flbdNcntMin`/`flbdNcntMax`)를 네이티브 지원**한다. `flbdNcntMin=2`로 "유찰 2회 이상"을 서버측에서 걸 수 있어, 전량 수집 없이 목표 물건만 최소 요청으로 받는다. 예절·효율·법적 리스크 모두에서 최선.
 
@@ -94,12 +95,14 @@ WebSquare submission은 `dma_pageInfo`, `dma_srchGdsDtlSrchInfo` 두 객체를 J
 
 ## 4. 리스크 목록 · 폴백
 
+> 크롤 예절(요청 간격·UA·재시도·백오프)의 **서술 단일 기준은 이 절**이고, **값의 원천은 `scripts/crawl-config.ts`의 `USER_AGENT` · `POLITENESS` · `SESSION_BACKOFFS` 상수**다. 이 문서는 숫자를 옮겨 적지 않고 상수명을 가리킨다 — 옮겨 적으면 상수가 바뀔 때 문서만 낡는다 — 직전 기재의 간격 값이 그렇게 낡았다.
+
 | 리스크 | 내용 | 폴백 |
 |---|---|---|
 | 구조 변경 | NELS 재배포 시 화면ID/필드명 변경 가능 | 필드 매핑 config 외부화(scripts/crawl-config), 실패 시 기존 데이터 유지+Actions 실패 표면화 |
 | enum 코드 미확정 | `cortAuctnSrchCondCd` 등 값 오류 시 550 JSON 에러 | 실검색 1회 네트워크 캡처로 고정, 550/`errors` 봉투 감시 |
-| 차단·레이트리밋 | 정부 WAF 스로틀 가능(CAPTCHA 미관측) | 일 03:00 실행, 요청 간 2~3초, 연락처 포함 UA `CrazyValueBot/0.1`, 429/550 시 지수백오프·중단 |
-| 세션 요구 | `JSESSIONID` 쿠키 필요 | 매 실행 `GET /pgj/index.on` 선행 취득·재사용 |
+| 차단·레이트리밋 | 정부 WAF 스로틀 가능(CAPTCHA 미관측) | 심야 정기 실행 · 요청 간격 `POLITENESS.minIntervalMs` · 연락처 포함 UA `USER_AGENT` · 5xx는 `POLITENESS.backoffsMs` 지수 백오프 · 429는 `POLITENESS.rateLimitWaitMs` 대기 후 `rateLimitRetries` 초과 시 중단 |
+| 세션 요구 | `JSESSIONID` 쿠키 필요 | 매 실행 `GET /pgj/index.on` 선행 취득·재사용, 간헐 거부는 `SESSION_BACKOFFS` 백오프로 흡수 |
 | 사진 핫링크 | Referer 제한 가능(미검증) | MVP는 photoUrl null(용도 플레이스홀더). 도입 시 프록시+캐시 검토 |
 | 원문 딥링크 한계 | 사건 단위 URL 파라미터 미지원(localStorage 전달) | 상세에 법원명·사건번호·물건번호 명시 + 경매사건검색 화면 링크 안내(§4.1) |
 

@@ -2,6 +2,7 @@ import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { districtKey, type Filters } from "@/lib/data";
 import {
   buildListQuery,
+  LIST_COUNT_MAX,
   parseListQuery,
   readHomeFilterMirror,
   writeHomeFilterMirror,
@@ -58,6 +59,19 @@ describe("parseListQuery — 정상 케이스 회귀", () => {
   it("알 수 없는 정렬·건수는 기본값으로 되돌린다", () => {
     const q = parse("sort=zzz&n=abc");
     expect([q.sort, q.count]).toEqual(["date", 10]);
+  });
+});
+
+// 표시 건수 상한(감사 3차) — 상한의 소유자는 LIST_COUNT_MAX 하나다. 화면(ItemList)의 더보기 노출
+// 조건도 같은 상수를 읽는다: 정제만 깎고 노출이 총 건수를 보면 눌러도 늘지 않는 버튼이 남는다.
+describe("parseListQuery — 표시 건수 상한", () => {
+  it("상한을 넘는 n은 상한으로 깎인다", () => {
+    expect(parse(`n=${LIST_COUNT_MAX + 10}`).count).toBe(LIST_COUNT_MAX);
+    expect(parse("n=99999").count).toBe(LIST_COUNT_MAX);
+  });
+  it("상한 이하 값은 그대로 통과한다", () => {
+    expect(parse(`n=${LIST_COUNT_MAX}`).count).toBe(LIST_COUNT_MAX);
+    expect(parse(`n=${LIST_COUNT_MAX - 10}`).count).toBe(LIST_COUNT_MAX - 10);
   });
 });
 

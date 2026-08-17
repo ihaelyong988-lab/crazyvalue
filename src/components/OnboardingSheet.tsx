@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { REGIONS } from "@/types/catalog";
 import { PRICE_BANDS } from "@/lib/data";
-import { getWatchState, isOnboarded, markOnboarded, setPrefs } from "@/lib/watchlist";
+import { getWatchState, isOnboarded, markOnboarded, setPrefs, type Prefs } from "@/lib/watchlist";
 import { FilterChip } from "@/components/FilterChip";
 
 // 온보딩(최초 1회, §4.1 시트 A): 관심 지역·금액 설정(건너뛰기 가능).
@@ -16,8 +16,38 @@ import { FilterChip } from "@/components/FilterChip";
 
 const FOCUSABLE = 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
 
+// 저장이 막힌 기기(용량 초과·프라이빗)에서 건너뛰기로 진행한 방문자 표시(감사 3차 J1).
+// 완료가 localStorage에 남지 않으므로 이 플래그가 없으면 SPA 이동·뒤로가기마다 온보딩이 처음부터 다시 뜬다.
+// 메모리에만 둔다 — 저장 실패를 저장 성공으로 위장하지 않고, 탭을 닫으면 사라진다.
+let skippedUnsaved = false;
+
+/** 이 세션에서 저장 없이 온보딩을 마쳤는가. 서버·하이드레이션 시점에는 항상 false다(마크업 불일치 0). */
+export function isSkippedUnsaved(): boolean {
+  return skippedUnsaved;
+}
+
+/** 종료 결과 — 시트 유지 · 정상 종료 · 기록 실패를 고지하고 종료. */
+export type OnboardingExit = "save-failed" | "closed" | "closed-unsaved";
+
+/**
+ * 온보딩 종료 판정(감사 3차 J1). `markOnboarded`의 실패를 삼키면 완료가 기록되지 않은 채 시트만 닫혀
+ * 재방문마다 온보딩이 처음부터 다시 뜬다 — 저장 경로와 건너뛰기 경로의 처방이 다르다.
+ * - 저장 경로: 조건 저장이든 완료 기록이든 실패하면 시트를 유지하고 알린다(재시도 수단이 화면에 남는다).
+ * - 건너뛰기 경로: 유일한 진행 수단이므로 닫되, 세션 플래그로 같은 세션 재노출만 막는다.
+ */
+export function resolveExit(save: boolean, prefs: Prefs): OnboardingExit {
+  if (save && !setPrefs(prefs)) return "save-failed";
+  if (markOnboarded()) return "closed";
+  if (save) return "save-failed";
+  skippedUnsaved = true;
+  return "closed-unsaved";
+}
+
 export function OnboardingSheet({ onDone }: { onDone: () => void }) {
-  const [open, setOpen] = useState(true);
+  // 세션 플래그는 하이드레이션 시점에 항상 false라 서버 마크업과 어긋나지 않는다.
+  // 저장소 조회(isOnboarded)는 여기서 하지 않는다 — 완료자 깜빡임 처리는 아래 효과가 맡는다.
+  const [open, setOpen] = useState(() => !isSkippedUnsaved());
+  const [unsaved, setUnsaved] = useState(false);
   const [regions, setRegions] = useState<string[]>([]);
   const [bands, setBands] = useState<string[]>([]);
   const [confirmSkip, setConfirmSkip] = useState(false);
@@ -27,7 +57,7 @@ export function OnboardingSheet({ onDone }: { onDone: () => void }) {
   const skipRef = useRef<() => void>(() => {});
 
   useEffect(() => {
-    if (isOnboarded()) {
+    if (isSkippedUnsaved() || isOnboarded()) {
       setOpen(false);
       return;
     }
@@ -42,12 +72,13 @@ export function OnboardingSheet({ onDone }: { onDone: () => void }) {
   // 내 설정에서 칩을 한 번 누른 방문자에게 브랜드 소개가 영구 미노출되는 결합을 끊는다.
   // 저장 실패 시(감사 2차 31)에는 시트를 닫지 않고 실패를 알린다 — 건너뛰기가 진행 수단이다.
   const close = (save: boolean) => {
-    if (save && !setPrefs({ regions, priceBands: bands })) {
+    const exit = resolveExit(save, { regions, priceBands: bands });
+    if (exit === "save-failed") {
       setConfirmSkip(false);
       setSaveFailed(true);
       return;
     }
-    markOnboarded();
+    setUnsaved(exit === "closed-unsaved");
     setOpen(false);
     onDone();
   };
@@ -146,7 +177,18 @@ export function OnboardingSheet({ onDone }: { onDone: () => void }) {
     };
   }, [open]);
 
-  if (!open) return null;
+  // 건너뛰기로 닫혔지만 완료를 기록하지 못한 경우에만 사실을 1문장으로 남긴다(감사 3차 J1).
+  // 시트를 다시 세우지는 않는다 — 진행을 막지 않으면서 재노출의 이유를 미리 알린다.
+  if (!open) {
+    return unsaved ? (
+      <p
+        role="alert"
+        className="rounded-xl border border-line bg-white px-4 py-3 text-[13px] font-medium leading-snug text-ink"
+      >
+        이 기기에 저장하지 못해 다음 방문에 관심조건 설정이 다시 열린다.
+      </p>
+    ) : null;
+  }
 
   return (
     <div
