@@ -10,8 +10,11 @@ import {
   writeHomeFilterMirror,
 } from "@/lib/query";
 import {
+  chooseHomeRestore,
   clearHomeFilterMirror,
   getWatchState,
+  readHomeFilterMirrorAt,
+  stampHomeFilterMirror,
   subscribePrefs,
   type Prefs,
 } from "@/lib/watchlist";
@@ -31,11 +34,19 @@ import { ErrorState } from "@/components/ErrorState";
 const FILTER_PARAM_KEYS = ["r", "d", "b", "c"] as const;
 
 /**
- * 이 문서에서 홈을 이미 한 번 복원했는지 — 직접 진입(새 문서)과 뒤로가기 복귀(같은 문서 재마운트)를 가른다.
- * 뒤로가기로 돌아온 홈의 URL은 떠날 때의 스냅샷이라 그 뒤 리스트에서 해제한 조건을 모른다(감사 2차 55).
- * 미러는 홈·리스트가 함께 갱신하므로 복귀 시점의 최신값이다 — 재마운트 복원에서만 미러를 URL보다 앞세운다.
+ * 이 문서에서 홈을 이미 한 번 복원했는지 — 직접 진입(새 문서)과 뒤로가기·탭 복귀(같은 문서 재마운트)를 가른다.
+ * 재마운트 홈의 URL은 떠날 때의 스냅샷이라 그 뒤 리스트에서 해제한 조건도, /me에서 저장한 조건도 모른다.
+ * 이 값이 복원 우선순위(chooseHomeRestore)의 첫 입력이다.
  */
 let restoredInThisDocument = false;
+
+/** 빈 필터는 호출마다 새 객체다 — 공유 상수를 넘기면 호출부 변이가 초기값을 오염시킨다. */
+const emptyFilters = (): Filters => ({
+  regions: [],
+  districts: [],
+  priceBands: [],
+  categories: [],
+});
 
 /** 쿼리 문자열 → 홈 필터 4축. 알 수 없는 값 폐기는 parseListQuery가 담당한다. */
 function filtersFromQuery(query: string): Filters {
@@ -53,54 +64,60 @@ function filtersFromQuery(query: string): Filters {
 // 리스트 카드 픽 배지·/list?pick·안내(/guide)에만 부가정보로 남긴다.
 export default function HomePage() {
   const { status, items, retry } = useAuctionData();
-  const [filters, setFilters] = useState<Filters>({
-    regions: [],
-    districts: [],
-    priceBands: [],
-    categories: [],
-  });
+  const [filters, setFilters] = useState<Filters>(emptyFilters);
 
   // 필터 출처 추적(감사 2차 33): 관심조건에서 온 필터만 타 탭의 조건 변경을 따라간다.
   // 이번 세션에 사용자가 직접 만진 필터는 타 탭 저장으로 덮지 않는다.
   const fromPrefs = useRef(false);
   const seenPrefs = useRef<Prefs>({ regions: [], priceBands: [] });
+  // 지금 화면에 걸린 필터의 거울 — 이펙트·구독 콜백 클로저는 첫 렌더의 state에 묶인다.
+  const shown = useRef<Filters>(emptyFilters());
 
-  // 온보딩 반영(§4.3-① 9): 설정한 지역·금액이 필터 초기값
+  /**
+   * 필터 반영 1경로: 화면·세션 미러(기록 시각 포함)·홈 URL을 한 번에 맞춘다.
+   * 셋 중 하나만 갱신하면 다음 진입이 서로 다른 조건을 주장한다 — 미러 되쓰기가 옛 조건을 부활시킨
+   * 것이 감사 3차 32의 원인이다. 미러에는 반드시 기록 시각을 함께 남긴다.
+   */
+  const commit = (next: Filters) => {
+    shown.current = next;
+    setFilters(next);
+    writeHomeFilterMirror(next);
+    stampHomeFilterMirror();
+    window.history.replaceState(null, "", window.location.pathname + buildListQuery(next));
+  };
+
+  // 온보딩·관심조건 반영(§4.3-① 9): 설정한 지역·금액이 필터 초기값
   const applyPrefs = () => {
     const { prefs } = getWatchState();
     fromPrefs.current = true;
     seenPrefs.current = prefs;
-    setFilters((f) => ({
-      ...f,
+    commit({
+      ...shown.current,
       regions: prefs.regions,
       priceBands: prefs.priceBands.filter((b): b is PriceBandKey =>
         ["b1", "b2", "b3", "b4", "b5"].includes(b),
       ),
-    }));
+    });
   };
 
-  // 복원(마운트 1회): URL 쿼리 → 세션 미러 → 온보딩 prefs 순.
-  // URL 복원은 미러에, 미러 복원은 URL에 각각 되미러링해 두 저장소를 항상 일치시킨다.
-  // 단, 같은 문서에서의 재마운트(뒤로가기 복귀)는 미러를 앞세운다 — 그 사이 리스트에서 바뀐 조건이
-  // 히스토리 URL에는 없기 때문이다(감사 2차 55). 새 문서의 직접 진입·공유 링크는 URL이 계속 원천이다.
+  // 복원(마운트 1회): URL → 관심조건(미러보다 최신이면) → 미러 → 관심조건.
+  // 순위 판정은 watchlist.chooseHomeRestore가 단독으로 진다(저장값의 나이를 아는 곳이 한 곳이어야 한다).
+  // 어느 원천을 택하든 commit으로 세 저장소를 일치시킨다 — 옛 URL을 미러로 되쓰는 경로를 남기지 않는다.
   useEffect(() => {
-    const mirror = readHomeFilterMirror();
     const remounted = restoredInThisDocument;
     restoredInThisDocument = true;
+    const mirror = readHomeFilterMirror();
     const params = new URLSearchParams(window.location.search);
-    if (!(remounted && mirror !== null) && FILTER_PARAM_KEYS.some((k) => params.has(k))) {
-      const restored = filtersFromQuery(window.location.search);
-      setFilters(restored);
-      writeHomeFilterMirror(restored);
-      return;
-    }
-    if (mirror !== null) {
-      const restored = filtersFromQuery(mirror);
-      setFilters(restored);
-      window.history.replaceState(null, "", window.location.pathname + buildListQuery(restored));
-      return;
-    }
-    applyPrefs();
+    const source = chooseHomeRestore({
+      remounted,
+      hasUrlFilters: FILTER_PARAM_KEYS.some((k) => params.has(k)),
+      hasMirror: mirror !== null,
+      mirrorAt: readHomeFilterMirrorAt(),
+      prefsSavedAt: getWatchState().prefs.savedAt ?? 0,
+    });
+    if (source === "url") commit(filtersFromQuery(window.location.search));
+    else if (source === "mirror" && mirror !== null) commit(filtersFromQuery(mirror));
+    else applyPrefs();
   }, []);
 
   // 타 탭 관심조건 변경 반영(감사 2차 33): 이 화면 필터가 관심조건에서 왔으면 새 조건을 그대로 따르고,
@@ -118,12 +135,9 @@ export default function HomePage() {
     [],
   );
 
-  // 칩 토글 시 세션 미러·홈 URL 쿼리를 동시 갱신(셸로우 replaceState — 서버 왕복 없음).
   const updateFilters = (next: Filters) => {
     fromPrefs.current = false; // 사용자가 만진 필터 — 이후 타 탭 조건 변경에 덮이지 않는다
-    setFilters(next);
-    writeHomeFilterMirror(next);
-    window.history.replaceState(null, "", window.location.pathname + buildListQuery(next));
+    commit(next);
   };
 
   const count = useMemo(() => applyFilters(items, filters).length, [items, filters]);

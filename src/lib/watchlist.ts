@@ -8,6 +8,8 @@ const RECENT_KEY = "crazyvalue.recent.v1";
 const DIFF_CACHE_KEY = "crazyvalue.watchdiff.session.v1";
 /** 홈 필터 세션 미러 키 — 관심조건 저장 시 무효화 대상(감사 2차 32). page.tsx와 공유한다. */
 export const HOME_FILTERS_KEY = "crazyvalue.home-filters.v1";
+/** 미러 기록 시각 키 — 미러와 관심조건 중 어느 쪽이 최신인지 재는 눈금(감사 3차 32). 미러와 함께 쓰고 함께 버린다. */
+const HOME_FILTERS_AT_KEY = "crazyvalue.home-filters-at.v1";
 
 export interface WatchSnapshot {
   minPrice: number;
@@ -24,6 +26,11 @@ export interface WatchEntry {
 export interface Prefs {
   regions: string[];
   priceBands: string[];
+  /**
+   * 마지막 저장 시각(epoch ms) — 홈 복원이 미러와 나이를 겨루는 값이다(감사 3차 32).
+   * 구버전 저장값에는 없다. 없으면 "가장 오래됨"으로 취급해 종전 복원 순서를 그대로 쓴다(하위호환).
+   */
+  savedAt?: number;
 }
 export interface WatchState {
   items: Record<string, WatchEntry>;
@@ -96,6 +103,10 @@ function sanitizeWatch(
   const prefs = parsed.prefs;
   if (isPlainObject(prefs) && isStringArray(prefs.regions) && isStringArray(prefs.priceBands)) {
     value.prefs = { regions: prefs.regions, priceBands: prefs.priceBands };
+    // savedAt은 복원 우선순위를 가르는 값이라 손상값(문자열·NaN·음수)을 통과시키면 조건이 영구 미반영된다.
+    // 유효하지 않으면 필드를 두지 않는다 = 구버전 저장값과 같은 취급(가장 오래됨).
+    if (isFiniteNumber(prefs.savedAt) && prefs.savedAt > 0) value.prefs.savedAt = prefs.savedAt;
+    else if (prefs.savedAt !== undefined) repaired = true;
   } else {
     repaired = true;
   }
@@ -156,9 +167,68 @@ export function clearHomeFilterMirror(): void {
   if (typeof window === "undefined") return;
   try {
     window.sessionStorage.removeItem(HOME_FILTERS_KEY);
+    window.sessionStorage.removeItem(HOME_FILTERS_AT_KEY); // 값과 기록 시각은 같은 사실의 두 조각이다
   } catch {
     // 세션 접근 불가(프라이빗 모드)면 미러 자체가 없다 — 복원은 prefs 경로로 간다.
   }
+}
+
+/** 홈이 미러를 쓴 시각을 함께 남긴다 — 이 눈금이 없으면 관심조건과 미러의 나이를 겨룰 수 없다(감사 3차 32). */
+export function stampHomeFilterMirror(at: number = Date.now()): void {
+  if (typeof window === "undefined") return;
+  try {
+    window.sessionStorage.setItem(HOME_FILTERS_AT_KEY, String(at));
+  } catch {
+    // 기록 실패 = 시각 미상. readHomeFilterMirrorAt이 null을 돌려 미러를 최신으로 본다(종전 동작).
+  }
+}
+
+/**
+ * 미러 기록 시각. null = 시각 미상 — 리스트 화면이 쓴 미러이거나 기록에 실패한 경우다.
+ * 미상이면 호출부는 미러를 최신으로 본다: 리스트에서 방금 바꾼 조건을 옛 관심조건으로 덮지 않기 위함이다.
+ */
+export function readHomeFilterMirrorAt(): number | null {
+  if (typeof window === "undefined") return null;
+  try {
+    const raw = window.sessionStorage.getItem(HOME_FILTERS_AT_KEY);
+    if (raw === null) return null;
+    const at = Number(raw);
+    return Number.isFinite(at) && at > 0 ? at : null;
+  } catch {
+    return null;
+  }
+}
+
+/** 홈 필터 복원 원천 — 주소창(방문 의도) · 세션 미러(보던 조건) · 관심조건(저장한 조건). */
+export type HomeRestoreSource = "url" | "mirror" | "prefs";
+
+export interface HomeRestoreInput {
+  /** 같은 문서에서의 재마운트(뒤로가기·하단탭 이동)인가. 새 문서면 URL이 곧 방문 의도다. */
+  remounted: boolean;
+  /** 주소창에 필터 4축(r·d·b·c) 중 하나라도 있는가. */
+  hasUrlFilters: boolean;
+  /** 세션 미러 존재 여부. */
+  hasMirror: boolean;
+  /** 미러 기록 시각. null = 시각 미상 = 최신으로 본다. */
+  mirrorAt: number | null;
+  /** 관심조건 저장 시각. 0 = 저장 이력 없음(구버전 저장값 포함). */
+  prefsSavedAt: number;
+}
+
+/**
+ * 홈 복원 우선순위: URL → 관심조건(미러보다 최신이면) → 미러 → 관심조건(감사 3차 32).
+ *
+ * 가운데 티어가 없으면 /me에서 바꾼 조건이 홈에 영영 도달하지 못한다 — 재마운트 홈의 URL은 떠날 때의
+ * 스냅샷이라 그 뒤 저장한 조건을 모르는데, 그 스냅샷이 미러로 되쓰이면 이후 모든 진입이 옛 조건으로 열린다.
+ * 새 문서의 URL(공유 링크·직접 진입)만 관심조건보다 앞선다.
+ */
+export function chooseHomeRestore(input: HomeRestoreInput): HomeRestoreSource {
+  if (input.hasUrlFilters && !input.remounted) return "url";
+  const mirrorAt = !input.hasMirror ? 0 : (input.mirrorAt ?? Number.MAX_SAFE_INTEGER);
+  if (input.prefsSavedAt > mirrorAt) return "prefs";
+  if (input.hasMirror) return "mirror";
+  if (input.hasUrlFilters) return "url"; // 미러도 새 조건도 없다 = 히스토리 스냅샷이 최선이다
+  return "prefs";
 }
 
 /**
@@ -244,10 +314,14 @@ export function removeWatch(id: string): boolean {
   return saved;
 }
 
-/** 관심조건 저장. 온보딩 완료 플래그는 세우지 않는다(감사 2차 34 — 기록은 온보딩 시트만). */
-export function setPrefs(prefs: Prefs): boolean {
+/**
+ * 관심조건 저장. 온보딩 완료 플래그는 세우지 않는다(감사 2차 34 — 기록은 온보딩 시트만).
+ * 저장 시각을 함께 남긴다(감사 3차 32): 미러 무효화가 실패하거나 옛 URL이 미러로 되살아나도,
+ * 홈은 이 시각으로 "관심조건이 더 최신"임을 알아 새 조건을 연다.
+ */
+export function setPrefs(prefs: Prefs, now: number = Date.now()): boolean {
   const state = getWatchState();
-  state.prefs = { regions: [...prefs.regions], priceBands: [...prefs.priceBands] };
+  state.prefs = { regions: [...prefs.regions], priceBands: [...prefs.priceBands], savedAt: now };
   const saved = safeWrite(WATCH_KEY, state);
   if (saved) clearHomeFilterMirror();
   return saved;
@@ -361,11 +435,18 @@ export function pushRecent(id: string): boolean {
 
 const CV_PREFIX = "crazyvalue.";
 
+/**
+ * 접두 전량 삭제에서 빼는 키(감사 3차) — 확인 문구가 예고한 것만 지운다는 계약이다.
+ * install: 설치 배너 "다시 보지 않겠다"는 의사는 관심함·최근 본 물건·관심조건 어디에도 속하지 않는다.
+ * 지우면 한 번 닫은 배너가 예고 없이 되살아난다.
+ */
+const KEEP_KEYS = new Set(["crazyvalue.install.v1"]);
+
 function clearNamespace(storage: Storage): void {
   const keys: string[] = [];
   for (let i = 0; i < storage.length; i += 1) {
     const key = storage.key(i);
-    if (key !== null && key.startsWith(CV_PREFIX)) keys.push(key);
+    if (key !== null && key.startsWith(CV_PREFIX) && !KEEP_KEYS.has(key)) keys.push(key);
   }
   for (const key of keys) storage.removeItem(key);
 }

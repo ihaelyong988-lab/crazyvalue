@@ -3,7 +3,10 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { X } from "lucide-react";
-import { getRecentIds, getWatchState } from "@/lib/watchlist";
+import type { AuctionItem } from "@/types/auction";
+import { REGIONS } from "@/types/catalog";
+import { isValidAuctionItem } from "@/lib/data";
+import { getRecentIds, getWatchState, isWatched, toggleWatch } from "@/lib/watchlist";
 
 // 이탈 확인(감사 2차 69 · 신설 사양 N2) — 앱 전체에 이탈·종료 확인 수단이 없어,
 // 관심함에 아무것도 저장하지 않은 방문자는 떠나는 순간 탐색 결과를 잃는다.
@@ -11,6 +14,8 @@ import { getRecentIds, getWatchState } from "@/lib/watchlist";
 //   ① 홈 뒤로가기: 홈에서 센티넬 이력 1개를 쌓아 두고, 뒤로가기가 그것을 소진하면 확인 시트를 연다.
 //   ② 탭 닫기: 같은 조건에서만 beforeunload를 1개 등록한다(브라우저 표준상 문구 지정 불가).
 // "그대로 나가기"를 고르면 가드를 끄고 실제로 뒤로 보낸다 — 영구 가로채기는 금지다.
+// "가장 최근 물건 저장"은 그 물건을 실제로 관심등록한 뒤 상세로 보낸다 — 라벨이 약속한 저장을
+// 화면 이동으로 대신하면 저장 0건이 된다(감사 3차 J7-H: 저장도 이동도 일어나지 않았다).
 // AppShell에 1곳만 마운트한다.
 
 const NAV_KEY = "crazyvalue.nav.v1";
@@ -45,13 +50,36 @@ function readLoss(): { at: boolean; recent: string[] } {
   return { at, recent };
 }
 
+/**
+ * 최근 본 물건 id로 산출물에서 그 물건을 찾는다 — 관심함 저장에는 스냅샷(최저가·기일·유찰 수)이 필요하다.
+ * id 접두가 지역 키("{regionKey}-…")라 파일 1개만 읽는다(data-server.findItem과 같은 규약).
+ * 갱신에서 내려간 id는 null이다 — 호출부가 실패를 표면화한다(성공한 척 금지, §13 규칙 5).
+ */
+async function findItemById(id: string): Promise<AuctionItem | null> {
+  const prefix = id.split("-")[0];
+  if (!REGIONS.some((r) => r.key === prefix)) return null;
+  try {
+    const res = await fetch(`/data/${prefix}.json`);
+    if (!res.ok) return null;
+    const raw: unknown = await res.json();
+    if (!Array.isArray(raw)) return null;
+    for (const entry of raw) if (isValidAuctionItem(entry) && entry.id === id) return entry;
+    return null;
+  } catch {
+    return null;
+  }
+}
+
 export function ExitGuard() {
   const pathname = usePathname();
   const router = useRouter();
   const [open, setOpen] = useState(false);
   const [recent, setRecent] = useState<string[]>([]);
+  const [saving, setSaving] = useState(false);
+  const [saveError, setSaveError] = useState<string | null>(null);
   const armedRef = useRef(false);
   const bypassRef = useRef(false);
+  const leavingRef = useRef(false);
   const pathRef = useRef(pathname);
   const navPathRef = useRef<string | null>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
@@ -59,6 +87,7 @@ export function ExitGuard() {
   // 앱 내 내비게이션 플래그(감사 2차 67) — 최초 진입은 이동이 아니다.
   useEffect(() => {
     pathRef.current = pathname;
+    leavingRef.current = false; // 이동이 끝났다 — 다음 손실 시나리오에서는 다시 무장한다
     if (navPathRef.current === null || navPathRef.current === pathname) {
       navPathRef.current = pathname;
       return;
@@ -67,9 +96,9 @@ export function ExitGuard() {
     markAppNavigated();
   }, [pathname]);
 
-  // 가드 무장 — 손실 시나리오에서만, 시트가 닫혀 있고 이탈 확정 전일 때만 건다.
+  // 가드 무장 — 손실 시나리오에서만, 시트가 닫혀 있고 이탈·이동 확정 전일 때만 건다.
   useEffect(() => {
-    if (open || bypassRef.current) return;
+    if (open || bypassRef.current || leavingRef.current) return;
     const { at, recent: ids } = readLoss();
     if (!at) return;
     setRecent(ids);
@@ -82,10 +111,13 @@ export function ExitGuard() {
     window.addEventListener("beforeunload", onBeforeUnload);
 
     // 센티넬은 홈에서만 쌓는다. 이미 센티넬 위에 서 있으면 다시 쌓지 않는다(이력 누적 방지).
+    // 기존 state를 반드시 보존한다 — 통째로 교체하면 Next app-router의 `__NA` 마커가 사라지고,
+    // popstate에서 마커가 없으면 라우터가 window.location.reload()로 떨어져 뒤로가기가
+    // SPA 복원이 아니라 문서 전체 재로드가 된다(감사 3차: 복원 275ms vs 정상 58ms · 페이지 상태 소멸).
     if (pathname === "/") {
-      const state = window.history.state as { cvExitGuard?: boolean } | null;
-      if (state?.cvExitGuard !== true)
-        window.history.pushState({ cvExitGuard: true }, "", window.location.href);
+      const state = (window.history.state ?? {}) as Record<string, unknown>;
+      if (state.cvExitGuard !== true)
+        window.history.pushState({ ...state, cvExitGuard: true }, "", window.location.href);
       armedRef.current = true;
     }
     return () => {
@@ -107,13 +139,37 @@ export function ExitGuard() {
     return () => window.removeEventListener("popstate", onPopState);
   }, []);
 
+  // 시트는 홈의 이탈 확인 수단이다 — 열린 채 화면이 바뀌면 배경 inert·스크롤 잠금이 착지 화면을 잠근다
+  // (감사 3차 J7-L: 상세에 착지하고도 관심등록·하단 탭이 눌리지 않았다). 화면이 바뀌면 닫는다.
+  useEffect(() => {
+    if (open && pathname !== "/") setOpen(false);
+  }, [open, pathname]);
+
   const stay = useCallback(() => setOpen(false), []);
 
-  // 저장 동선: 가장 최근에 본 물건의 상세로 보낸다 — 관심등록 버튼이 그 화면에 있다.
-  const save = () => {
+  // 저장 동선: 가장 최근에 본 물건을 실제로 관심등록한 뒤 그 상세로 보낸다.
+  // 이동 확정 전에 leavingRef를 세운다 — 세우지 않으면 setOpen(false)가 무장 effect를 재실행하고,
+  // 그 센티넬 pushState가 진행 중이던 router.push를 취소해 버튼이 무동작이 된다(감사 3차 J7-K A/B).
+  const save = async () => {
     const id = recent[0];
+    if (id === undefined || saving) return;
+    setSaving(true);
+    setSaveError(null);
+    const item = await findItemById(id);
+    if (item === null) {
+      setSaving(false);
+      setSaveError("이 물건은 갱신에서 내려가 관심함에 저장할 수 없다.");
+      return;
+    }
+    if (!isWatched(id) && !toggleWatch(item).saved) {
+      setSaving(false);
+      setSaveError("이 기기에 저장하지 못했다 — 저장 공간을 확보한 뒤 다시 누르라.");
+      return;
+    }
+    leavingRef.current = true;
+    router.push(`/item/${id}`);
     setOpen(false);
-    if (id !== undefined) router.push(`/item/${id}`);
+    setSaving(false);
   };
 
   // 이탈 확정: 가드를 끄고 실제로 뒤로 보낸다(확인 뒤에는 다시 가로채지 않는다).
@@ -237,11 +293,20 @@ export function ExitGuard() {
           <button
             type="button"
             onClick={save}
-            className="min-h-12 flex-1 cursor-pointer rounded-xl bg-accent font-semibold text-white transition-colors duration-200 hover:bg-accent/90"
+            disabled={saving}
+            className="min-h-12 flex-1 cursor-pointer rounded-xl bg-accent font-semibold text-white transition-colors duration-200 hover:bg-accent/90 disabled:cursor-default disabled:bg-accent/70"
           >
-            관심함에 저장
+            {saving ? "저장 중" : "가장 최근 물건 저장"}
           </button>
         </div>
+        {saveError !== null && (
+          <p
+            role="alert"
+            className="mt-3 rounded-lg border border-line bg-white px-3 py-2 text-[13px] leading-snug"
+          >
+            {saveError}
+          </p>
+        )}
       </div>
     </div>
   );

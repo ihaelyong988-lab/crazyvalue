@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import type { AuctionItem } from "@/types/auction";
 import { SORT_OPTIONS, type SortKey } from "@/lib/data";
+import { LIST_COUNT_MAX } from "@/lib/query";
 import { ItemCard } from "@/components/ItemCard";
 import { EmptyState } from "@/components/EmptyState";
 
@@ -32,27 +33,33 @@ export function ItemList({
 }) {
   // 이번 더보기로 삽입된 카드의 시작 인덱스(= 더보기 직전 표시 건수). null이면 차단 없음.
   const [guardFrom, setGuardFrom] = useState<number | null>(null);
-  // 차단 창은 삽입이 실제로 렌더된 시점부터 잰다 — shown이 아직 늘지 않았으면 시작하지 않는다.
+  // 차단 창은 삽입이 실제로 렌더된 시점부터 잰다 — shown이 늘면 deps가 바뀌어 타이머를 다시 건다.
+  // 삽입이 끝내 오지 않아도(표시 건수 되감기 등) 같은 타이머가 반드시 해제한다 —
+  // 조건부 시작(`shown <= guardFrom`이면 미시작)은 차단 상태를 영구 잔존시켰다(감사 3차).
   useEffect(() => {
-    if (guardFrom === null || shown <= guardFrom) return;
+    if (guardFrom === null) return;
     const timer = setTimeout(() => setGuardFrom(null), INSERT_GUARD_MS);
     return () => clearTimeout(timer);
   }, [guardFrom, shown]);
 
+  // 빈 상태 문구는 단정형이다(앱 기준 문체). 완화 수단이 없으면 설명을 두지 않는다 —
+  // 갱신 주기를 적으면 슬롯이 바뀔 때 앱이 거짓을 말하고, 제목을 되풀이하면 같은 정보가 두 번 뜬다.
   if (items.length === 0) {
     return (
       <EmptyState
-        title="조건에 맞는 물건이 없습니다"
+        title="조건에 맞는 물건이 없다"
         description={
           relaxActions.length > 0
-            ? "아래 버튼으로 조건을 해제하면 결과 범위가 넓어집니다."
-            : "데이터는 매일 03:00 갱신됩니다."
+            ? "아래 버튼으로 조건을 해제하면 결과 범위가 넓어진다."
+            : undefined
         }
         actions={relaxActions}
       />
     );
   }
   const visible = items.slice(0, shown);
+  // 상한은 query.ts가 소유한다 — 노출 조건이 정제 값과 어긋나면 눌러도 늘지 않는 버튼이 남는다.
+  const atMax = shown >= LIST_COUNT_MAX;
   return (
     <div className="p-4">
       <div className="mb-3 flex items-center justify-between">
@@ -87,19 +94,26 @@ export function ItemList({
           </li>
         ))}
       </ul>
-      {shown < items.length && (
-        <button
-          type="button"
-          onClick={() => {
-            setGuardFrom(shown);
-            onMore();
-          }}
-          className="mt-4 min-h-12 w-full cursor-pointer rounded-xl border border-line bg-white font-semibold text-ink transition-colors duration-200 hover:bg-paper"
-        >
-          {/* 카운트 ink/70 — 흰 버튼 위 대비 4.5:1 확보(감사 2차 83) */}
-          더보기 <span className="tabular-nums text-ink/70">({shown}/{items.length})</span>
-        </button>
-      )}
+      {shown < items.length &&
+        (atMax ? (
+          // 상한에서는 버튼 대신 다음 수단을 준다. role="status"라 버튼이 사라진 자리의 변화가 공지된다.
+          <p role="status" className="mt-4 text-[13px] leading-snug text-ink/70">
+            표시는 <span className="tabular-nums">{LIST_COUNT_MAX.toLocaleString("ko-KR")}</span>
+            건까지다 — 필터를 좁히거나 정렬을 바꿔 나머지를 확인하라.
+          </p>
+        ) : (
+          <button
+            type="button"
+            onClick={() => {
+              setGuardFrom(shown);
+              onMore();
+            }}
+            className="mt-4 min-h-12 w-full cursor-pointer rounded-xl border border-line bg-white font-semibold text-ink transition-colors duration-200 hover:bg-paper"
+          >
+            {/* 카운트 ink/70 — 흰 버튼 위 대비 4.5:1 확보(감사 2차 83) */}
+            더보기 <span className="tabular-nums text-ink/70">({shown}/{items.length})</span>
+          </button>
+        ))}
     </div>
   );
 }
