@@ -54,3 +54,6 @@ playwright-report/
 /public/sw.js.map
 /public/swe-worker-*.js
 /public/swe-worker-*.js.map
+
+# 게이트 통과 마커 — 로컬 세션 상태다. 추적하면 체크아웃 시각이 마커가 되어 미검증 마감을 통과시킨다.
+/.claude/hooks/.state/

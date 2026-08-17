@@ -137,8 +137,8 @@
 |---|---|---|---|
 | 성능 | LCP<2.5s·Lighthouse Performance ≥90 | Phase 2·4 Lighthouse | 부분 — LCP 1.8s·FCP 1.2s 통과(모바일 4x 스로틀 로컬 실측). **P 스코어 50 보류**: TBT 1,650ms(하이드레이션 3.1s 스크립트 평가+Style 1.8s — 실측 breakdown 확보). Phase 4.5·개선 라운드에서 재공략(서버 셸 분리·폰트 CSS 전략·onboarding-flag 재계산 455ms) |
 | 접근성 | WCAG AA(대비 4.5:1·alert·focus-visible·44px·reduced-motion) | 게이트+Lighthouse A11y ≥90 | 통과 — 게이트 0건 + Lighthouse A11y 96 |
-| 안정성 | 크롤 실패 시 직전 데이터 유지(빈 화면 금지) | 검증 게이트 무커밋 설계+오류 상태 E2E | 대기 |
-| 정확성 | 금액·기일 원문 그대로·저감률 임의 계산 금지·픽만 파생 | 코드 리뷰+단위 테스트 | 대기 |
+| 안정성 | 크롤 실패 시 직전 데이터 유지(빈 화면 금지) | 검증 게이트 무커밋 설계+오류 상태 E2E | 완료 — `scripts/crawl.ts:970` 전량 기각은 **유효 0건일 때만**(그 외는 유효 부분집합 배포) · `.github/workflows/crawl.yml` commit 스텝 `git diff --cached --quiet \|\|` (변경 없으면 무커밋 = 직전 데이터 유지) · 오류 상태 E2E `tests/e2e/smoke.spec.ts` "오류 상태 렌더"(meta.json abort → `role="alert"` + "다시 시도" 버튼) · `src/app/error.tsx`·`not-found.tsx` 존재 |
+| 정확성 | 금액·기일 원문 그대로·저감률 임의 계산 금지·픽만 파생 | 코드 리뷰+단위 테스트 | 완료 — `src/lib/data.ts:125` `isPick`이 유일한 파생(`priceRatio <= 0.5`) · 같은 파일 `:109`가 `minPrice/appraisalPrice`와 저장 `priceRatio`의 불일치(>0.005)를 걸러낸다 · `src/lib` 전체에 저감률(20/30%) 연산 **0건** grep 확인 · 기일 계산은 `src/lib/format.ts` `dday()`가 `todaySeoul()` 기준 date-only 단일 경유 · 회귀는 `tests/unit/data.test.ts`·`format.test.ts` |
 
 ## 방문자 감사·수정 라운드 1차 (2026-07-18~19 — 주인님 지시)
 
@@ -151,23 +151,27 @@
 
 - 주요 구조 변화: 홈 필터 세션+URL 미러 복원(#3) · 온보딩 다이얼로그 접근성 완비(#4·23·24·28 — 동기 스크립트로 플래시 구조 제거) · error.tsx/not-found.tsx 신설(#2·13) · 시군구 시도 결합 키(#14) · 리스트 필터 요약 칩+셸로우 URL(#15·29) · 관심함 배지 세션 캐시+이전→현재 병기(#17·21·22) · 관심조건 편집(/guide, #19) · 대비 AA 전면 상향(#8·9·10)
 
+## PLAN §13 개발 필수 규칙 15 — 강제 장치 대조
+
+> 상태는 2026-08-17에 저장소 실제로 재판정했다. 선전개 시점의 `대기`가 그대로 남아 이 문서 앞절의 완료 증거와 어긋나 있었다 — 증거가 확인된 것만 완료로 올리고, 확인되지 않거나 반증된 것은 `대기`·`부분`으로 남긴다.
+
 | # | 관점 | 강제 장치 | 적용 Phase | 상태 |
 |---|---|---|---|---|
-| 1 | 보안 | 시크릿 grep·dangerouslySetInnerHTML 0건(게이트 등록)·URL https zod·npm audit high 0 | 0.4 등록, 0.5/3.4/4/5 audit | 대기(게이트 등록은 0.4) |
-| 2 | 개인정보 | 스키마 화이트리스트·성명 마스킹 함수+30건 스팟 체크 | 1.3·3.2·3.3 | 대기 |
-| 3 | 접근성 | 게이트 차단룰+Lighthouse A11y ≥90 | 0.4·2·4 | 대기 |
+| 1 | 보안 | 시크릿 grep·dangerouslySetInnerHTML 0건(게이트 등록)·URL https zod·npm audit high 0 | 0.4 등록, 0.5/3.4/4/5 audit | **부분** — 게이트 등록 완료(`.claude/hooks/ui-quality-gate.mjs` R9 시크릿 패턴·R8 `dangerouslySetInnerHTML`, 전체 스캔 대상) · URL https zod 완료(`src/types/auction.ts:16-17` `.url()` + `startsWith("https://")` refine). **미충족: `npm audit --audit-level=high` = high 6건**(postcss 경로순회 · sharp/libvips CVE 4건 — 전이 의존, 해소는 `next@15.5.23` 상향 필요). 재개 조건 = next 상향 후 audit 재측정 |
+| 2 | 개인정보 | 스키마 화이트리스트·성명 마스킹 함수+30건 스팟 체크 | 1.3·3.2·3.3 | 완료 — zod 화이트리스트(`src/types/auction.ts`, PLAN §5.3 필드가 전부) · 마스킹 함수 `scripts/crawl.ts:211` `maskNames()`(오마스킹 방지 화이트리스트·조사 경계 포함), 비고 정리 경로 `:405`가 저장 전 경유 · 스팟 체크는 Phase 3.3 행 참조(실데이터 specialNote 670건 전수 대조, 성명 노출 0건 — 30건 요구를 상회) |
+| 3 | 접근성 | 게이트 차단룰+Lighthouse A11y ≥90 | 0.4·2·4 | 완료 — 게이트 차단룰 R1(`role="alert"`/aria-live)·R2(저대비 본문색)·R3(이모지)·P1(`focus-visible`)·P2(`prefers-reduced-motion`) 등록, 마감 검증에서 위반 0건 · Lighthouse A11y 96(Phase 4.5·§4.5 접근성 행) |
 | 4 | 성능 예산 | First Load JS ≤200KB(gzip)·build 표 확인 | 2·4 DoD | Phase 2 판정: **통과** — 전 라우트 124~130kB(zod 클라이언트 제거로 199→130). LCP 1.8s 통과. P 스코어 보류분은 §4.5 행 참조 |
-| 5 | SRE | ErrorState·try-parse 단일 유틸·오류 E2E | 2 | 대기 |
-| 6 | 데이터 | 검증 실패=무커밋·localStorage v1 버전 키·스키마 변경 시 재생성+test | 1·3 | 대기 |
-| 7 | QA | 단위+E2E 상시·버그 수정=재현 테스트 선행 | 1.5·2.7·전 Phase | 대기 |
-| 8 | 릴리스 | main 배포 가능·커밋 규약·태그·force-push/--no-verify 금지 | 전 Phase | 진행 중 — main 개명 완료 |
-| 9 | 관측성 | crawl 요약 출력·meta.json·Actions 실패 표면화 | 3 | 대기 |
-| 10 | 공급망 | 의존 최소·신규 패키지=사유 1줄·lockfile 커밋 | 전 Phase | 대기 |
-| 11 | FE 아키텍처 | /list 상태=URL 쿼리·전역 상태 라이브러리 금지·딥링크 E2E | 2 | 대기 |
-| 12 | 시간대·금액 | Asia/Seoul date-only 단일 함수·원 단위 정수·직접 Date 연산 grep | 1.5·2 | 대기 |
-| 13 | UX 라이팅 | 단정형·금지어 grep·오류 문구 2문장 규격·용어집 대조 | 0.4·2 | 대기 |
-| 14 | 법무 | LegalNotice 상시·수집 근거 보존·투자 권유/수익 보장 금지 grep | 0.4·2·3.1 | 대기 |
-| 15 | 메인테이너 | README 3명령 실검증·문서 재개 순서 | 0.3·5.4 | 진행 중 — README 작성(0.3), 검증은 5.4 |
+| 5 | SRE | ErrorState·try-parse 단일 유틸·오류 E2E | 2 | 완료 — `src/components/ErrorState.tsx` + `src/app/error.tsx`·`not-found.tsx` · localStorage 접근은 `src/lib/watchlist.ts` try-parse 단일 유틸 경유(`:135` try + `sanitize()` — JSON.parse 성공 후 구조 검증까지 한다) · 오류 E2E `tests/e2e/smoke.spec.ts` "오류 상태 렌더"(meta.json abort → `role="alert"` + "다시 시도") |
+| 6 | 데이터 | 검증 실패=무커밋·localStorage v1 버전 키·스키마 변경 시 재생성+test | 1·3 | 완료 — 검증 게이트 `scripts/crawl.ts:970`(유효 0건이면 무변경 exit 1) + `.github/workflows/crawl.yml` commit 스텝 `git diff --cached --quiet \|\|` · 버전 키 `src/lib/watchlist.ts:6-12`(`crazyvalue.watchlist.v1`·`recent.v1`·`watchdiff.session.v1`·`home-filters.v1`) · 스키마 재생성 회귀 `tests/unit/mock-contract.test.ts` |
+| 7 | QA | 단위+E2E 상시·버그 수정=재현 테스트 선행 | 1.5·2.7·전 Phase | 완료 — `.github/workflows/ci.yml`이 push(main)·PR·dispatch마다 `npm run typecheck` → `npm test` → `npm run build` → `npx playwright test`를 돌린다(로컬 전용 검증은 결국 돌지 않는다는 판단으로 신설) · 재현 테스트 선행은 회귀 스펙이 소유(예: SW 캐시 결함 → `tests/unit/sw-cache-policy.test.ts`, AGENTS.md §9 2026-08-16) |
+| 8 | 릴리스 | main 배포 가능·커밋 규약·태그·force-push/--no-verify 금지 | 전 Phase | 진행 중 — main 개명 완료. **태그 미생성**(Phase 5.5 행) |
+| 9 | 관측성 | crawl 요약 출력·meta.json·Actions 실패 표면화 | 3 | 완료 — `scripts/crawl.ts:1012` `buildSummaryLine()` 산출 후 `:1040`·`:1116` 양 종료 경로에서 출력 · `meta.json` 기준일·건수 · `.github/workflows/crawl.yml`의 report abort·report data value·report screen mismatch·report failure 스텝이 실패·미달을 이슈로 표면화(봇 라벨 `auto-alert`로 중복 억제) |
+| 10 | 공급망 | 의존 최소·신규 패키지=사유 1줄·lockfile 커밋 | 전 Phase | **부분** — `package-lock.json` 커밋됨 · 런타임 의존 8개로 유지(전역 상태 라이브러리 0) · 신규 패키지 사유 1줄은 커밋 규약(AGENTS.md §3). `npm audit` 연동분은 규칙 1 행과 같은 사유로 미충족 |
+| 11 | FE 아키텍처 | /list 상태=URL 쿼리·전역 상태 라이브러리 금지·딥링크 E2E | 2 | 완료 — `src/lib/query.ts`가 필터·정렬·페이지(n)를 URL 쿼리로 직렬화 · `package.json`에 redux·zustand·jotai·recoil·mobx **0건** grep 확인 · 딥링크 E2E `tests/e2e/smoke.spec.ts` "딥링크 복원(§13-11)" |
+| 12 | 시간대·금액 | Asia/Seoul date-only 단일 함수·원 단위 정수·직접 Date 연산 grep | 1.5·2 | 완료 — `src/lib/format.ts`가 `timeZone: "Asia/Seoul"` 포매터로 `todaySeoul()`·`dday()`를 단일 소유(`:1`·`:20`·`:57`) · `src/app`·`src/components`의 `new Date(` 5건은 전부 기일이 아닌 벽시계 용도(리프레쉬 쿨다운 잔여·설치 배너 dismissedAt)로 확인 — **기일 연산 직접 호출 0건** · 경계 회귀 `tests/unit/format.test.ts` |
+| 13 | UX 라이팅 | 단정형·금지어 grep·오류 문구 2문장 규격·용어집 대조 | 0.4·2 | 완료 — 게이트 R4(과장 수식어 `혁신적\|완벽한\|강력한\|손쉽게\|원활한`)·R5(한글 문장 느낌표)·R12(2문장 안내문, 읽기 본문은 `data-reading` 선언으로 예외를 grep 가능하게 명시) 등록 후 위반 0건 · 오류 문구 2문장 규격은 `ErrorState` message+action으로 고정(MASTER.md 세로 리듬 예외 조항) · 용어집 대조는 `GlossarySheet`(PLAN 부록 B 원고) |
+| 14 | 법무 | LegalNotice 상시·수집 근거 보존·투자 권유/수익 보장 금지 grep | 0.4·2·3.1 | 완료 — `src/components/LegalNotice.tsx` 상세·안내 상시 · 수집 근거 `docs/CRAWLER.md` §3(robots.txt 404 실측·저작권법 제24조의2 자유이용·출처표시 의무)·§5 확인 URL 보존 · 게이트 R10 투자 권유·수익 보장 grep 전체 스캔 등록 |
+| 15 | 메인테이너 | README 3명령 실검증·문서 재개 순서 | 0.3·5.4 | 진행 중 — README 퀵스타트·문서 재개 순서 작성 완료(0.3). **3명령 실검증 미실시**(Phase 5.4 행) |
 
 ## 세로 리듬 압축 라운드 (2026-07-19 — 주인님 캡쳐 마크업 2건 + 같은 날 2차 일반화 지시)
 
@@ -262,3 +266,26 @@
 | 신규 건수 = 겹치는 매각기일 한정 신규 유입(2026-08-05 정정 — 창 회전분 제외), 비교 불가면 감춘다 | `scripts/crawl-lib.ts` `countNewOnSharedDates` · `scripts/crawl.ts` `readPreviousOutput`(지역 파일 덮어쓰기 전 id·saleDate 동시 읽기, 부분 수집은 비교 안 함) → `meta.newCount` · `src/types/auction.ts` optional·nullable |
 | "이번 주 신규" 철회 | `src/components/NewThisWeek.tsx` 삭제 · `src/lib/data.ts` `isNewThisWeek`·`newThisWeek` 삭제 · 게이트 R4 **삭제**(newCount는 채점하지 않고 요약 관측값으로만 표기 — 창 회전만으로 0이 되는 요일이 주 2일 구조적으로 발생한다) |
 | 자동 알림 이슈 중복 억제 | `.github/workflows/crawl.yml` — 같은 접두의 열린 알림이 있으면 새로 만들지 않는다. 조회는 봇 라벨 `auto-alert`로 한정(사람이 연 이슈·옛 이슈가 알림을 삼키는 침묵 실패 차단). 닫는 자동화는 두지 않는다 |
+
+## 방문자 감사 3차 라운드 (2026-08-17)
+
+발견 **24건** — 순번 **94~117**의 현상·원인·개선안·등급·상태는 `AGENTS.md` §5-4가 소유한다. 여기에 사본을 두지 않는다(중복 기재 금지); 라운드 헌법은 같은 파일 §5-3.
+
+## 문서 통합·현행화 라운드 (2026-08-17 주인님 지시 — "중복 `.md`를 단일 기준 문서로")
+
+> 원칙: 문서는 숫자를 적는 대신 **상수명과 파일 경로**를 가리킨다. 값을 문서에 박는 관행이 낡음의 원인이다.
+
+| 대상 | 처리 | 대조 근거(2026-08-17 실측) |
+|---|---|---|
+| PLAN §5.4 스케줄 "cron 슬롯 1개" | 슬롯 수를 적지 않고 `crawl.yml on.schedule` 참조로 교체 | `.github/workflows/crawl.yml:10`·`:13` — 슬롯 2개(`0 18 * * 6` full · `0 18 * * 0-5` quick) |
+| PLAN §5.4 산출 "매각기일 임박순 최대 1,000건" | 배분 선별로 정정 + 값은 상수 참조 | `scripts/crawl-lib.ts:125` `capAcrossSaleDates`(물채우기 배분, 기일 내 `priceRatio` 오름차순) · `scripts/crawl.ts:987` 호출 · `scripts/crawl-config.ts` `OUTPUT_CAP`·`OUTPUT_WINDOW_DAYS` |
+| PLAN §2.2 픽 화면 위치 "홈 전용 진입점" | 리스트 배지·`/list?pick`·`/guide`로 정정(홈 진입점은 2026-07-22 철회) | `src/components/` 목록에 `PickEntry.tsx` 부재(`PickBadge.tsx`만 존재) — 이 문서 ①홈-6 행과 일치 |
+| PLAN §7.2·§4.1·Phase 2.1 "하단 탭 3" | 탭 수를 적지 않고 `BottomTabs.tsx` `TABS` 참조로 교체 | `src/components/BottomTabs.tsx` `TABS` = 5개(`/`·`/refresh`·`/watch`·`/guide`·`/me`) |
+| PLAN §9·§13 규칙 9 "주간 점검" + Vercel Analytics | 일일 점검으로 정정 · Analytics는 **미도입** 명기 | 갱신 주기는 이 문서 "매일 갱신 전환" 절 · `package.json` dependencies에 `@vercel/analytics` 없음(Phase 5.3 행과 일치) |
+| PLAN §5.2 아키텍처 도식 + "DB 없음·장애 지점" 문장 | 사본 삭제 → `README.md` "아키텍처" 참조 1줄 | 같은 내용이 `README.md`에 존재 |
+| PLAN §6 디자인 토큰 표 | 사본 삭제 → `design-system/MASTER.md` 최상단 오버라이드 참조 | §6 자신이 마지막 행에서 이미 MASTER.md를 기준파일로 선언하고 있었다 |
+| 픽 판정식 4중 기재(PLAN `:16`·§2.2·§5.3·부록 B) | §2.2 한 곳으로 압축, 도메인 단일 기준은 `AGENTS.md` §2. 부록 B는 앱 도움말 원고라 존치 | `AGENTS.md` §2 도메인 불변식이 판정식·부호 반전을 소유 |
+| 크롤 예절·상한 값 | 값 원천 = `scripts/crawl-config.ts` 상수, 서술 단일 기준 = `docs/CRAWLER.md` §4 | 두 파일 모두 현행 |
+| 이 문서 §4.5·§13 규칙 15의 "대기" 14건 | 저장소 실제로 재판정 — 완료 11건 승격, 부분 2건(규칙 1·10, npm audit high 6건), 진행 중 2건 유지(규칙 8·15) | 각 행에 증거 인용 |
+
+오늘 기준 검증 상태(2026-08-17 실측): typecheck 0 · 유닛 185 · E2E 38 · UI 게이트 0건. **문서에는 이 수치를 상시 기재하지 않는다 — 상시 판정은 `.github/workflows/ci.yml`이 푸시·PR마다 한다.**
