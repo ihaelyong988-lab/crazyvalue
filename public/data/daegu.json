@@ -1,755 +1,5 @@
 [
  {
-  "id": "daegu-2021타경6228-1",
-  "court": "부산지방법원",
-  "caseNo": "2021타경6228",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "대구광역시 중구 국채보상로 525 2층246호",
-  "region": "대구",
-  "district": "중구",
-  "appraisalPrice": 210000000,
-  "minPrice": 50421000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-08-18",
-  "saleTime": "10:00",
-  "courtRoom": "입찰법정(신관지하2층)",
-  "deposit": 5042100,
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
-  "history": [
-   {
-    "date": "2026-02-24",
-    "minPrice": 210000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-31",
-    "minPrice": 210000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-05",
-    "minPrice": 147000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-09",
-    "minPrice": 102900000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-14",
-    "minPrice": 72030000,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "대지권 미등기이나 매각목적물 및 평가에 포함됨."
- },
- {
-  "id": "daegu-2025타경30912-1",
-  "court": "울산지방법원",
-  "caseNo": "2025타경30912",
-  "itemNo": "1",
-  "category": "아파트",
-  "address": "대구광역시 달서구 월성동 120 월성푸르지오 108동 2층204호",
-  "region": "대구",
-  "district": "달서구",
-  "appraisalPrice": 523000000,
-  "minPrice": 10340000,
-  "priceRatio": 0.0198,
-  "failCount": 11,
-  "saleDate": "2026-08-18",
-  "saleTime": "10:00",
-  "courtRoom": "1층입찰법정",
-  "deposit": 1034000,
-  "areaBuilding": 101.8646,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
-  "history": [
-   {
-    "date": "2025-06-24",
-    "minPrice": 523000000,
-    "result": "신건"
-   },
-   {
-    "date": "2025-07-29",
-    "minPrice": 523000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-09-02",
-    "minPrice": 366095433,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-10-07",
-    "minPrice": 256263607,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-11-11",
-    "minPrice": 179382287,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-12-16",
-    "minPrice": 125566035,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-01-20",
-    "minPrice": 87895128,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-24",
-    "minPrice": 61525822,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-31",
-    "minPrice": 43067538,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-05",
-    "minPrice": 30146901,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-09",
-    "minPrice": 21102567,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-14",
-    "minPrice": 14771613,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "대항력 있는 임차인 있음. 배당에서 보증금이 전액 변제되지 아니하면 잔액을 매수인이 인수함"
- },
- {
-  "id": "daegu-2025타경31099-1",
-  "court": "울산지방법원",
-  "caseNo": "2025타경31099",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "대구광역시 서구 상리동 산71",
-  "region": "대구",
-  "district": "서구",
-  "appraisalPrice": 1103250000,
-  "minPrice": 90856000,
-  "priceRatio": 0.0824,
-  "failCount": 7,
-  "saleDate": "2026-08-18",
-  "saleTime": "10:00",
-  "courtRoom": "1층입찰법정",
-  "deposit": 9085600,
-  "areaBuilding": null,
-  "areaLand": 8826,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
-  "history": [
-   {
-    "date": "2025-11-11",
-    "minPrice": 1103250000,
-    "result": "신건"
-   },
-   {
-    "date": "2025-12-16",
-    "minPrice": 1103250000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-01-20",
-    "minPrice": 772273323,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-24",
-    "minPrice": 540590152,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-31",
-    "minPrice": 378412284,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-05",
-    "minPrice": 264888023,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-09",
-    "minPrice": 185421214,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-14",
-    "minPrice": 129794568,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "1.지상 입목 포함 매각 2.지적도상 맹지임 3.본건 지상에 분묘 수기 소재하며(그 수는 확인 불가), 이로 인해 분묘기지권 성립 여지 있음"
- },
- {
-  "id": "daegu-2025타경31322-2",
-  "court": "울산지방법원",
-  "caseNo": "2025타경31322",
-  "itemNo": "2",
-  "category": "토지",
-  "address": "대구광역시 달성군 하빈면 묘리 777",
-  "region": "대구",
-  "district": "달성군",
-  "appraisalPrice": 20988000,
-  "minPrice": 5038000,
-  "priceRatio": 0.24,
-  "failCount": 4,
-  "saleDate": "2026-08-18",
-  "saleTime": "10:00",
-  "courtRoom": "1층입찰법정",
-  "deposit": 503800,
-  "areaBuilding": null,
-  "areaLand": 106,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
-  "history": [
-   {
-    "date": "2026-02-24",
-    "minPrice": 20988000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-31",
-    "minPrice": 20988000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-05",
-    "minPrice": 14690712,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-09",
-    "minPrice": 10282876,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-14",
-    "minPrice": 7197578,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "맹지임"
- },
- {
-  "id": "daegu-2025타경31640-1",
-  "court": "울산지방법원",
-  "caseNo": "2025타경31640",
-  "itemNo": "1",
-  "category": "아파트",
-  "address": "대구광역시 달서구 도원동 1439 가람마을 108동 8층803호",
-  "region": "대구",
-  "district": "달서구",
-  "appraisalPrice": 140000000,
-  "minPrice": 16470000,
-  "priceRatio": 0.1176,
-  "failCount": 6,
-  "saleDate": "2026-08-18",
-  "saleTime": "10:00",
-  "courtRoom": "1층입찰법정",
-  "deposit": 1647000,
-  "areaBuilding": 59.99,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
-  "history": [
-   {
-    "date": "2025-12-16",
-    "minPrice": 140000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-01-20",
-    "minPrice": 140000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-24",
-    "minPrice": 97999147,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-31",
-    "minPrice": 68598806,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-05",
-    "minPrice": 48018746,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-09",
-    "minPrice": 33612830,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-14",
-    "minPrice": 23528776,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "대항력 있는 임차권등기 있음. 배당에서 보증금이 전액 변제되지 아니하면 잔액을 매수인이 인수함"
- },
- {
-  "id": "daegu-2025타경31875-1",
-  "court": "울산지방법원",
-  "caseNo": "2025타경31875",
-  "itemNo": "1",
-  "category": "상가",
-  "address": "대구광역시 달서구 죽전동 273-27 골든타워 1층118호",
-  "region": "대구",
-  "district": "달서구",
-  "appraisalPrice": 605000000,
-  "minPrice": 145260000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-08-18",
-  "saleTime": "10:00",
-  "courtRoom": "1층입찰법정",
-  "deposit": 14526000,
-  "areaBuilding": 21.71,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
-  "history": [
-   {
-    "date": "2026-02-24",
-    "minPrice": 605000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-31",
-    "minPrice": 605000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-05",
-    "minPrice": 423499636,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-09",
-    "minPrice": 296449490,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-14",
-    "minPrice": 207514464,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": null
- },
- {
-  "id": "daegu-2025타경31939-1",
-  "court": "울산지방법원",
-  "caseNo": "2025타경31939",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "대구광역시 달성군 옥포읍 송촌리 37",
-  "region": "대구",
-  "district": "달성군",
-  "appraisalPrice": 184195000,
-  "minPrice": 44224000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-08-18",
-  "saleTime": "10:00",
-  "courtRoom": "1층입찰법정",
-  "deposit": 4422400,
-  "areaBuilding": null,
-  "areaLand": 407,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
-  "history": [
-   {
-    "date": "2026-02-24",
-    "minPrice": 184195000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-31",
-    "minPrice": 184195000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-05",
-    "minPrice": 128935611,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-09",
-    "minPrice": 90254306,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-14",
-    "minPrice": 63177578,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "1.일괄매각 2.지상 수목 포함 매각"
- },
- {
-  "id": "daegu-2025타경31954-1",
-  "court": "울산지방법원",
-  "caseNo": "2025타경31954",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "대구광역시 달성군 논공읍 상리 산84-37",
-  "region": "대구",
-  "district": "달성군",
-  "appraisalPrice": 50154640,
-  "minPrice": 12041000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-08-18",
-  "saleTime": "10:00",
-  "courtRoom": "1층입찰법정",
-  "deposit": 1204100,
-  "areaBuilding": null,
-  "areaLand": 1652,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
-  "history": [
-   {
-    "date": "2026-02-24",
-    "minPrice": 50154640,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-31",
-    "minPrice": 50154640,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-05",
-    "minPrice": 35107425,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-09",
-    "minPrice": 24574621,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-14",
-    "minPrice": 17201832,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "1.일괄매각 2.지분매각. 공유자 우선매수권 있음(행사제한 1회) 3.본건 토지는 인접지와의 경계가 대체로 불분명한 바, 그 경계구분은 전문지적측량을 통해 확인 필요 4.본건 토지 지상에 감정시 확인된 분묘 소재하며, 그외 확인 곤란한 분묘 소재할 수 있음(이로 인해 분묘기지권 성립 여지 있음) 5.지상 입목 포함 매각 6.지적도상 맹지임"
- },
- {
-  "id": "daegu-2025타경31954-2",
-  "court": "울산지방법원",
-  "caseNo": "2025타경31954",
-  "itemNo": "2",
-  "category": "단독다가구",
-  "address": "대구광역시 달성군 논공읍 남리 968-2",
-  "region": "대구",
-  "district": "달성군",
-  "appraisalPrice": 32670000,
-  "minPrice": 7843000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-08-18",
-  "saleTime": "10:00",
-  "courtRoom": "1층입찰법정",
-  "deposit": 784300,
-  "areaBuilding": 330,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
-  "history": [
-   {
-    "date": "2026-02-24",
-    "minPrice": 32670000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-31",
-    "minPrice": 32670000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-05",
-    "minPrice": 22868222,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-09",
-    "minPrice": 16007211,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-14",
-    "minPrice": 11204667,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "1.지분매각. 공유자 우선매수권 있음(행사제한 1회) 2.본건 토지는 인접지와의 경계가 대체로 불분명한 바, 그 경계구분은 전문지적측량을 통해 확인 필요 3.수목(자연생 활잡목)이 우거진 임야화된 묵전임. 지상 입목 포함 매각 4.지적도상 맹지임"
- },
- {
-  "id": "daegu-2025타경7608-1",
-  "court": "부산지방법원",
-  "caseNo": "2025타경7608",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "대구광역시 중구 남산동 694-3 반월당아너스제네스타워오피스텔 20층2002호",
-  "region": "대구",
-  "district": "중구",
-  "appraisalPrice": 208000000,
-  "minPrice": 5876000,
-  "priceRatio": 0.0283,
-  "failCount": 10,
-  "saleDate": "2026-08-18",
-  "saleTime": "10:00",
-  "courtRoom": "입찰법정(신관지하2층)",
-  "deposit": 587600,
-  "areaBuilding": 46.4144,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
-  "history": [
-   {
-    "date": "2025-07-29",
-    "minPrice": 208000000,
-    "result": "신건"
-   },
-   {
-    "date": "2025-09-02",
-    "minPrice": 208000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-10-07",
-    "minPrice": 145601276,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-11-11",
-    "minPrice": 101921786,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-12-16",
-    "minPrice": 71345875,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-01-20",
-    "minPrice": 49942550,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-24",
-    "minPrice": 34960092,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-31",
-    "minPrice": 24472278,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-05",
-    "minPrice": 17130745,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-09",
-    "minPrice": 11991627,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-14",
-    "minPrice": 8394212,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": null
- },
- {
-  "id": "daegu-2025타경8025-1",
-  "court": "부산지방법원",
-  "caseNo": "2025타경8025",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "대구광역시 동구 신기동 191-12",
-  "region": "대구",
-  "district": "동구",
-  "appraisalPrice": 29124360,
-  "minPrice": 3427000,
-  "priceRatio": 0.1177,
-  "failCount": 6,
-  "saleDate": "2026-08-18",
-  "saleTime": "10:00",
-  "courtRoom": "입찰법정(신관지하2층)",
-  "deposit": 342700,
-  "areaBuilding": 400,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
-  "history": [
-   {
-    "date": "2025-12-16",
-    "minPrice": 29124360,
-    "result": "신건"
-   },
-   {
-    "date": "2026-01-20",
-    "minPrice": 29124360,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-24",
-    "minPrice": 20387596,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-31",
-    "minPrice": 14271697,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-05",
-    "minPrice": 9990455,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-09",
-    "minPrice": 6993505,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-14",
-    "minPrice": 4895584,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "지분매각(공유자의 우선매수에 관한 특별매각조건이 있음)."
- },
- {
-  "id": "daegu-2025타경8068-1",
-  "court": "부산지방법원",
-  "caseNo": "2025타경8068",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "대구광역시 수성구 대흥동 873-1 그루타워 1동 4층401호",
-  "region": "대구",
-  "district": "수성구",
-  "appraisalPrice": 365000000,
-  "minPrice": 87637000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-08-18",
-  "saleTime": "10:00",
-  "courtRoom": "입찰법정(신관지하2층)",
-  "deposit": 8763700,
-  "areaBuilding": 93.42,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
-  "history": [
-   {
-    "date": "2026-02-24",
-    "minPrice": 365000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-31",
-    "minPrice": 365000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-05",
-    "minPrice": 255500364,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-09",
-    "minPrice": 178850510,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-14",
-    "minPrice": 125195536,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": null
- },
- {
-  "id": "daegu-2025타경8145-1",
-  "court": "부산지방법원",
-  "caseNo": "2025타경8145",
-  "itemNo": "1",
-  "category": "상가",
-  "address": "대구광역시 동구 신서동 1147-1 드림타워 1층113호",
-  "region": "대구",
-  "district": "동구",
-  "appraisalPrice": 290000000,
-  "minPrice": 69629000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-08-18",
-  "saleTime": "10:00",
-  "courtRoom": "입찰법정(신관지하2층)",
-  "deposit": 6962900,
-  "areaBuilding": 1,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
-  "history": [
-   {
-    "date": "2026-02-24",
-    "minPrice": 290000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-31",
-    "minPrice": 290000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-05",
-    "minPrice": 203000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-09",
-    "minPrice": 142100000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-14",
-    "minPrice": 99470000,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": null
- },
- {
   "id": "daegu-2024타경10570-1",
   "court": "부산지방법원",
   "caseNo": "2024타경10570",
@@ -2303,5 +1553,175 @@
    }
   ],
   "specialNote": "일괄매각"
+ },
+ {
+  "id": "daegu-2025타경791-1",
+  "court": "부산지방법원",
+  "caseNo": "2025타경791",
+  "itemNo": "1",
+  "category": "상가",
+  "address": "대구광역시 중구 대신동 103-9 서문시장역지웰애비뉴 201동 1층116호",
+  "region": "대구",
+  "district": "중구",
+  "appraisalPrice": 850000000,
+  "minPrice": 142860000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-08-25",
+  "saleTime": "10:00",
+  "courtRoom": "신관지하2층입찰법정",
+  "deposit": 14286000,
+  "areaBuilding": 44.515,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-01-27",
+    "minPrice": 850000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-03",
+    "minPrice": 850000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-07",
+    "minPrice": 595000416,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-12",
+    "minPrice": 416500583,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-16",
+    "minPrice": 291550612,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-21",
+    "minPrice": 204085571,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "daegu-2025타경791-2",
+  "court": "부산지방법원",
+  "caseNo": "2025타경791",
+  "itemNo": "2",
+  "category": "상가",
+  "address": "대구광역시 중구 대신동 103-9 서문시장역지웰애비뉴 201동 2층201호",
+  "region": "대구",
+  "district": "중구",
+  "appraisalPrice": 418000000,
+  "minPrice": 70253000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-08-25",
+  "saleTime": "10:00",
+  "courtRoom": "신관지하2층입찰법정",
+  "deposit": 7025300,
+  "areaBuilding": 51.4618,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-01-27",
+    "minPrice": 418000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-03",
+    "minPrice": 418000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-07",
+    "minPrice": 292599783,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-12",
+    "minPrice": 204819697,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-16",
+    "minPrice": 143373682,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-21",
+    "minPrice": 100361503,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "daegu-2025타경791-3",
+  "court": "부산지방법원",
+  "caseNo": "2025타경791",
+  "itemNo": "3",
+  "category": "상가",
+  "address": "대구광역시 중구 대신동 103-9 서문시장역지웰애비뉴 201동 3층302호",
+  "region": "대구",
+  "district": "중구",
+  "appraisalPrice": 248000000,
+  "minPrice": 29177000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-08-25",
+  "saleTime": "10:00",
+  "courtRoom": "신관지하2층입찰법정",
+  "deposit": 2917700,
+  "areaBuilding": 37.3514,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-12-23",
+    "minPrice": 248000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-01-27",
+    "minPrice": 248000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-03",
+    "minPrice": 173600048,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-07",
+    "minPrice": 121520067,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-12",
+    "minPrice": 85064070,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-16",
+    "minPrice": 59544865,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-21",
+    "minPrice": 41681417,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
  }
 ]
