@@ -1,60 +1,5 @@
 [
  {
-  "id": "gangwon-2023타경80452-1",
-  "court": "의정부지방법원",
-  "caseNo": "2023타경80452",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "강원도 철원군 원남면 주파리 산132",
-  "region": "강원",
-  "district": "철원군",
-  "appraisalPrice": 882948185,
-  "minPrice": 148397000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-08-19",
-  "saleTime": "10:30",
-  "courtRoom": "제6호경매법정",
-  "deposit": 14839700,
-  "areaBuilding": null,
-  "areaLand": 13607986,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
-  "history": [
-   {
-    "date": "2026-01-21",
-    "minPrice": 882948185,
-    "result": "신건"
-   },
-   {
-    "date": "2026-02-25",
-    "minPrice": 882948185,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-01",
-    "minPrice": 618063645,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-06",
-    "minPrice": 432644492,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-10",
-    "minPrice": 302851103,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-15",
-    "minPrice": 211995743,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "지분매각(공유자의 우선매수신고는 1회에 한하여 행사할 수 있음)"
- },
- {
   "id": "gangwon-2024타경76337-3",
   "court": "의정부지방법원",
   "caseNo": "2024타경76337",
@@ -3013,5 +2958,205 @@
    }
   ],
   "specialNote": ".농지취득자격증명 제출요(미제출시 보증금 몰수, 입찰 전 농지취득자격증명 신청이 가능하므로 해당 읍.면사무소에 문의 바람) .지적도상 맹지임"
+ },
+ {
+  "id": "gangwon-2025타경10355-1",
+  "court": "춘천지방법원 속초지원",
+  "caseNo": "2025타경10355",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 고성군 거진읍 거진리 180-2",
+  "region": "강원",
+  "district": "고성군",
+  "appraisalPrice": 722995000,
+  "minPrice": 173592000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-08-26",
+  "saleTime": "10:00",
+  "courtRoom": "2층경매법정",
+  "deposit": 17359200,
+  "areaBuilding": null,
+  "areaLand": 2328,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-03-04",
+    "minPrice": 722995000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-08",
+    "minPrice": 722995000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-13",
+    "minPrice": 506097156,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-17",
+    "minPrice": 354268469,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-22",
+    "minPrice": 247988250,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "일괄매각. 분묘소재여부 별도 확인요함(소재시 분묘기지권 성립여지 있음). 목록2의 하단 경계부근의 일부 및 목록4,5,8,10에 매각대상 아닌 건물 소재(정확한 소재여부 및 면적 등은 측량을 요하며, 소재시 법정지상권 성립여지 있음). 일부가 도로(목록4.6)로 및 전(목록6)으로 이용 중임."
+ },
+ {
+  "id": "gangwon-2025타경10359-1",
+  "court": "춘천지방법원 속초지원",
+  "caseNo": "2025타경10359",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 고성군 거진읍 거진리 산76",
+  "region": "강원",
+  "district": "고성군",
+  "appraisalPrice": 216828000,
+  "minPrice": 52060000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-08-26",
+  "saleTime": "10:00",
+  "courtRoom": "2층경매법정",
+  "deposit": 5206000,
+  "areaBuilding": null,
+  "areaLand": 6023,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-03-04",
+    "minPrice": 216828000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-08",
+    "minPrice": 216828000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-13",
+    "minPrice": 151779306,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-17",
+    "minPrice": 106245309,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-22",
+    "minPrice": 74371572,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "분묘소재여부 별도 확인요함(소재시 분묘기지권 성립여지 있음)."
+ },
+ {
+  "id": "gangwon-2025타경193-1",
+  "court": "춘천지방법원 속초지원",
+  "caseNo": "2025타경193",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 양양군 현남면 정자리 산37-2",
+  "region": "강원",
+  "district": "양양군",
+  "appraisalPrice": 294234000,
+  "minPrice": 70646000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-08-26",
+  "saleTime": "10:00",
+  "courtRoom": "2층경매법정",
+  "deposit": 7064600,
+  "areaBuilding": null,
+  "areaLand": 3306,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-03-04",
+    "minPrice": 294234000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-08",
+    "minPrice": 294234000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-13",
+    "minPrice": 205964104,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-17",
+    "minPrice": 144175085,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-22",
+    "minPrice": 100922708,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "양양군으로부터 대지면적 1,896㎡에 대해 건축허가를 득한 토지임(인허가 조건 및 승계 등 별도 확인요함). 분묘소재여부 별도 확인요함(소재시 분묘기지권 성립여지 있음). 현황은 잡종지, 임야 및 진입로 등임."
+ },
+ {
+  "id": "gangwon-2025타경289-1",
+  "court": "춘천지방법원 속초지원",
+  "caseNo": "2025타경289",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 고성군 죽왕면 야촌리 산98",
+  "region": "강원",
+  "district": "고성군",
+  "appraisalPrice": 649094000,
+  "minPrice": 155847000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-08-26",
+  "saleTime": "10:00",
+  "courtRoom": "2층경매법정",
+  "deposit": 15584700,
+  "areaBuilding": null,
+  "areaLand": 76364,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-03-04",
+    "minPrice": 649094000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-08",
+    "minPrice": 649094000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-13",
+    "minPrice": 454365458,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-17",
+    "minPrice": 318055581,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-22",
+    "minPrice": 222638739,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "분묘 소재여부 별도 확인요함.(소재지 분묘기지권 성립여지 있음) 현황 임야 및 일부 토지임야, 일부구거,일부도로임(감정평가서 참조)"
  }
 ]

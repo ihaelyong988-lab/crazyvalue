@@ -1,110 +1,5 @@
 [
  {
-  "id": "chungnam-2025타경502032-5",
-  "court": "대전지방법원",
-  "caseNo": "2025타경502032",
-  "itemNo": "5",
-  "category": "토지",
-  "address": "충청남도 금산군 남일면 신정리 624",
-  "region": "충남",
-  "district": "금산군",
-  "appraisalPrice": 22198800,
-  "minPrice": 3730000,
-  "priceRatio": 0.168,
-  "failCount": 5,
-  "saleDate": "2026-08-19",
-  "saleTime": "10:00",
-  "courtRoom": "본관제106호법정",
-  "deposit": 373000,
-  "areaBuilding": null,
-  "areaLand": 853.8,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
-  "history": [
-   {
-    "date": "2026-01-21",
-    "minPrice": 22198800,
-    "result": "신건"
-   },
-   {
-    "date": "2026-02-25",
-    "minPrice": 22198800,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-01",
-    "minPrice": 15538367,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-06",
-    "minPrice": 10876301,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-10",
-    "minPrice": 7613022,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-15",
-    "minPrice": 5328843,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "- 농지취득자격증명 제출 요함(미제출시 매수보증금 반환하지 않음, 첨부된 남일면 사실조회회신 참조) - 지적도상 맹지이며 공부상 지목은 \"답\"이나, 현황 \"전\"으로 이용중"
- },
- {
-  "id": "chungnam-2025타경503052-1",
-  "court": "대전지방법원",
-  "caseNo": "2025타경503052",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "충청남도 금산군 부리면 불이리 309-6",
-  "region": "충남",
-  "district": "금산군",
-  "appraisalPrice": 593498460,
-  "minPrice": 142498000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-08-19",
-  "saleTime": "10:00",
-  "courtRoom": "본관제106호법정",
-  "deposit": 14249800,
-  "areaBuilding": 2567,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
-  "history": [
-   {
-    "date": "2026-02-25",
-    "minPrice": 593498460,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-01",
-    "minPrice": 593498460,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-06",
-    "minPrice": 415448208,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-10",
-    "minPrice": 290813245,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-15",
-    "minPrice": 203568922,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "- 일괄매각. 제시외 건물(감정평가서상 ㉠~㉢) 포함 - 제시외 컨테이너(감정평가서상 ㉣) 매각제외"
- },
- {
   "id": "chungnam-2025타경502953-1",
   "court": "대전지방법원",
   "caseNo": "2025타경502953",
@@ -1643,5 +1538,390 @@
    }
   ],
   "specialNote": "- 농지취득자격증명원 제출요함(미제출시 매수보증금 미반환)"
+ },
+ {
+  "id": "chungnam-2024타경2550-1",
+  "court": "대전지방법원 서산지원",
+  "caseNo": "2024타경2550",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "충청남도 당진시 석문면 삼화리 20-21",
+  "region": "충남",
+  "district": "당진시",
+  "appraisalPrice": 3029530020,
+  "minPrice": 727390000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-08-26",
+  "saleTime": "10:00",
+  "courtRoom": "제111호경매법정",
+  "deposit": 72739000,
+  "areaBuilding": 403,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-03-04",
+    "minPrice": 3029530020,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-08",
+    "minPrice": 3029530020,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-13",
+    "minPrice": 2120670899,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-17",
+    "minPrice": 1484469549,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-22",
+    "minPrice": 1039128628,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-일괄매각 -목록(1) 일부 접도구역 저촉 -재매각임. 매수신청보증금 20%"
+ },
+ {
+  "id": "chungnam-2024타경5412-1",
+  "court": "대전지방법원 서산지원",
+  "caseNo": "2024타경5412",
+  "itemNo": "1",
+  "category": "상가",
+  "address": "충청남도 태안군 태안읍 송암로 619 (주1동)",
+  "region": "충남",
+  "district": "태안군",
+  "appraisalPrice": 1853711080,
+  "minPrice": 311553000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-08-26",
+  "saleTime": "10:00",
+  "courtRoom": "제111호경매법정",
+  "deposit": 31155300,
+  "areaBuilding": 2,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-01-28",
+    "minPrice": 1853711080,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-04",
+    "minPrice": 1853711080,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-08",
+    "minPrice": 1297597572,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-13",
+    "minPrice": 908318171,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-17",
+    "minPrice": 635822630,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-22",
+    "minPrice": 445075777,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-일괄매각 -목록2. 신축허가를 득하여 건물신축중임, 목록3. 현황 주차장임, 목록4. 현황 일부 도로 및 구거임, 목록5. 현황 건물 신축중임 -제시외 건물(감정평가서 상 ㄱ~ㄷ), 컨테이너 1동 매각에서 제외 -목록2,5,6 지상에 제시외 건물로 인하여 법정지상권 성립여부 불분명 -목록2,5,6 감정평가액(최저매각가격)은 제시외 건물로 인하여 제한받는 정도를 감안한 가격임 -제시외 수목(감정평가서 상 ㄹ) 포함 -목록2,3,4,5 농지취득자격증명 필요(미제출시 보증금 몰수) 원상회복명령 가능성 있음(태안읍장 사실조회회신) -목록3,4,5,6 증축허가를 득한 4필 일단으로 건물 신축 중으로, 그 중 목록4 일부는 대지면적에서 제외되었으므로 재확인 요함 -유치권신고인 주식회사 우형건설로부터 공사대금채권 금 454,000,000원을 위하여 유치권 신고가 있으나 그 성립여부는 불분명함"
+ },
+ {
+  "id": "chungnam-2024타경57758-1",
+  "court": "대전지방법원 서산지원",
+  "caseNo": "2024타경57758",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청남도 당진시 송산면 금암리 481-2",
+  "region": "충남",
+  "district": "당진시",
+  "appraisalPrice": 380768000,
+  "minPrice": 63995000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-08-26",
+  "saleTime": "10:00",
+  "courtRoom": "제111호경매법정",
+  "deposit": 6399500,
+  "areaBuilding": null,
+  "areaLand": 506,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-01-28",
+    "minPrice": 380768000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-04",
+    "minPrice": 380768000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-08",
+    "minPrice": 266537035,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-13",
+    "minPrice": 186575530,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-17",
+    "minPrice": 130602594,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-22",
+    "minPrice": 91421622,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 일괄매각 - 목록2 농지취득자격증명 제출요함(미제출시 매수보증금 몰수) - 제시외 건물(ㄱ~ㄷ,주택,축사,창고) 및 비닐하우스 매각에서 제외 - 목록1 매각에서 제외하는 지상 건물을 위하여 법정지상권 성립 여지 있음 - 최저매각가격은 제시외 건물 소재로 인하여 제한받는 가격임"
+ },
+ {
+  "id": "chungnam-2024타경59983-2",
+  "court": "대전지방법원 서산지원",
+  "caseNo": "2024타경59983",
+  "itemNo": "2",
+  "category": "단독다가구",
+  "address": "충청남도 태안군 태안읍 남문리 718-15",
+  "region": "충남",
+  "district": "태안군",
+  "appraisalPrice": 779396700,
+  "minPrice": 130992000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-08-26",
+  "saleTime": "10:00",
+  "courtRoom": "제111호경매법정",
+  "deposit": 13099200,
+  "areaBuilding": 275.9,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-01-28",
+    "minPrice": 779396700,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-04",
+    "minPrice": 779396700,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-08",
+    "minPrice": 545576688,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-13",
+    "minPrice": 381902980,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-17",
+    "minPrice": 267331595,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-22",
+    "minPrice": 187131772,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-일괄매각 -제시외 건물(감정평가서 상 'ㄷ,ㄹ,ㅁ') 포함 -을구 순위 5번,6번,7번 전세권설정등기(2018.10.30.등기), 을구 순위 9번,10번,11번,12번,13번,14번,15번 전세권설정등기(2018.12.7.등기), 을구 순위 17번,18번 전세권설정등기(2020.1.29.등기)는 각 말소되지 않고 매수인에게 인수됨 - 재매각임. 특별매각조건 매수신청보증금 최저매각가격의 20%"
+ },
+ {
+  "id": "chungnam-2024타경61276-1",
+  "court": "대전지방법원 서산지원",
+  "caseNo": "2024타경61276",
+  "itemNo": "1",
+  "category": "아파트",
+  "address": "충청남도 당진시 운학길 69 104동 4층404호 (채운동,당진채운코아루1차)",
+  "region": "충남",
+  "district": "당진시",
+  "appraisalPrice": 231000000,
+  "minPrice": 38824000,
+  "priceRatio": 0.1681,
+  "failCount": 6,
+  "saleDate": "2026-08-26",
+  "saleTime": "10:00",
+  "courtRoom": "제111호경매법정",
+  "deposit": 3882400,
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2025-12-24",
+    "minPrice": 231000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-01-28",
+    "minPrice": 231000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-04",
+    "minPrice": 171603719,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-08",
+    "minPrice": 127479812,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-13",
+    "minPrice": 94701341,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-17",
+    "minPrice": 70351092,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-22",
+    "minPrice": 52261944,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-선순위 전세권자 겸 임차인은 임차인으**의 지위에 기하여 배당요구를 하고 전세권자로서의 지위에 기하여 배당 요구를 한 것은 아니므로 위 을구 순위 2번 전세권설정등기(2015.11.12.제58286호)는 매수인에게 인수됨(임차인이 배당요구를 하였으나 배당에서 보증금이 전액 변제되지 아니하면 잔액을 매수인이 인수함)"
+ },
+ {
+  "id": "chungnam-2025타경186-1",
+  "court": "대전지방법원 서산지원",
+  "caseNo": "2025타경186",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청남도 당진시 송악읍 가학리 210-6",
+  "region": "충남",
+  "district": "당진시",
+  "appraisalPrice": 96063000,
+  "minPrice": 16145000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-08-26",
+  "saleTime": "10:00",
+  "courtRoom": "제111호경매법정",
+  "deposit": 1614500,
+  "areaBuilding": null,
+  "areaLand": 781,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-01-28",
+    "minPrice": 96063000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-04",
+    "minPrice": 96063000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-08",
+    "minPrice": 67243843,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-13",
+    "minPrice": 47070510,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-17",
+    "minPrice": 32949231,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-22",
+    "minPrice": 23064374,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-농지취득자격증명 제출 요함(미제출시 매수보증금 몰수) -일부 선하지임"
+ },
+ {
+  "id": "chungnam-2025타경51236-1",
+  "court": "대전지방법원 서산지원",
+  "caseNo": "2025타경51236",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청남도 당진시 송악읍 가학리 586-1",
+  "region": "충남",
+  "district": "당진시",
+  "appraisalPrice": 1393305000,
+  "minPrice": 234173000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-08-26",
+  "saleTime": "10:00",
+  "courtRoom": "제111호경매법정",
+  "deposit": 23417300,
+  "areaBuilding": null,
+  "areaLand": 3203,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml",
+  "history": [
+   {
+    "date": "2026-01-28",
+    "minPrice": 1393305000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-04",
+    "minPrice": 1393305000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-08",
+    "minPrice": 975313690,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-13",
+    "minPrice": 682719717,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-17",
+    "minPrice": 477903895,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-22",
+    "minPrice": 334532792,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "농지 취득자격증명 필요(증명서 미제출시 매수신청보증금 몰수), 원상회복명령 발하여질 가능성 있음. 공부상 지목은 전이나 현황 일부가 도로 등으로 이용중임."
  }
 ]
