@@ -200,7 +200,7 @@ describe("번호 복사 — 클립보드가 막힌 기기의 복구 경로", () 
     expect(textOf(find(mounted.render(), (el) => el.type === "button")).trim()).toBe("복사 실패");
     vi.advanceTimersByTime(3000);
     const tree = mounted.render();
-    // 라벨이 idle로 돌아가면 화면은 "사건번호 복사"와 실패 폴백을 동시에 말한다.
+    // 라벨이 idle로 돌아가면 화면은 "번호 복사"와 실패 폴백을 동시에 말한다.
     expect(textOf(find(tree, (el) => el.type === "button")).trim()).toBe("복사 실패");
     expect(find(tree, (el) => el.type === "p"), "폴백 문단 잔존").not.toBeNull();
     mounted.unmount();
