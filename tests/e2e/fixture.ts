@@ -50,10 +50,24 @@ export function pickRegion(minCount = 0): { key: string; name: string; items: Fi
  *
  * 건수가 가장 많은 조합을 고른다 — 동수는 카탈로그 순서로 갈라 실행마다 같은 값을 준다.
  */
+/**
+ * 용도 칩의 **화면 라벨** — 홈·리스트는 4열 그리드 폭에 맞춰 두 분류만 줄여 쓴다(`CategoryFilter`의 사본).
+ * 데이터에서 조합을 고르는 설계라면 클릭은 데이터 값이 아니라 이 라벨로 해야 한다.
+ * 2026-08-20: `empty-result.spec.ts`가 조합이 `단독다가구`로 뽑힌 날 통째로 실패했다 — 같은 함정이
+ * `pickAxes`를 쓰는 스펙 전부에 잠재해 있었으므로 여기 한곳에서 막는다.
+ */
+export function categoryChipLabel(category: string): string {
+  if (category === "단독다가구") return "단독";
+  if (category === "공장창고") return "공장";
+  return category;
+}
+
 export function pickAxes(items: FixtureItem[]): {
   band: string;
   bandKey: string;
   category: string;
+  /** 화면에서 그 용도를 누를 때 쓰는 이름 */
+  categoryLabel: string;
   count: number;
 } {
   let best: { band: string; bandKey: string; category: string; count: number } | null = null;
@@ -70,5 +84,5 @@ export function pickAxes(items: FixtureItem[]): {
   if (!best) {
     throw new Error("E2E 픽스처: 금액×용도 교집합이 1건도 없다 — 산출물을 먼저 확인하라");
   }
-  return best;
+  return { ...best, categoryLabel: categoryChipLabel(best.category) };
 }

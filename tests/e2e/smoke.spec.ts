@@ -49,7 +49,7 @@ test("온보딩→필터 3탭→리스트 도달", async ({ page }) => {
   // 필터 3탭: 지역 → 금액 → 용도. 칩 상태는 aria-pressed로 판정한다.
   const regionChip = page.getByRole("button", { name: fixtureRegion, exact: true });
   const priceChip = page.getByRole("button", { name: axes.band, exact: true });
-  const categoryChip = page.getByRole("button", { name: axes.category, exact: true });
+  const categoryChip = page.getByRole("button", { name: axes.categoryLabel, exact: true });
   await regionChip.click();
   await expect(regionChip).toHaveAttribute("aria-pressed", "true");
   await priceChip.click();
