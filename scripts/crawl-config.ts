@@ -28,11 +28,13 @@ export const ENDPOINTS = {
 } as const;
 
 /**
- * 원문 링크 — 사건 단위 딥링크 불가(CRAWLER.md §4.1, localStorage 전달 구조).
- * 사건상세 화면 고정 링크 + 앱 상세 화면의 법원명·사건번호 표기로 출처표시를 충족한다.
+ * 원문 링크 — 사건 단위 딥링크 불가(CRAWLER.md §4.1). 값은 앱과 **같은 상수 하나**를 쓴다.
+ * 앱 상세는 이 데이터 필드가 아니라 `src/lib/court-origin.ts`의 상수를 렌더하므로(낡은 데이터가
+ * 배포와 어긋나지 않게), 여기서 재선언하면 두 원천이 갈린다.
+ * 2026-08-20 정정: 이전 값 `…PGJ15AF01.xml`은 부모 프레임 없이는 열리지 않는 자식 화면이라
+ * 오류창("부모 객체를 찾을 수 없습니다.")이 떴다 — 경위·근거는 그 파일 주석과 AGENTS §9.
  */
-export const DETAIL_URL =
-  "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ15AF01.xml";
+export { COURT_ORIGIN_URL as DETAIL_URL } from "../src/lib/court-origin";
 
 /** 예절 규칙(PLAN §5.4·CRAWLER.md §4) — 간격 ≥1초, 재시도 3회 지수 백오프 */
 export const POLITENESS = {

@@ -1,6 +1,7 @@
 import { readFileSync, readdirSync } from "node:fs";
 import path from "node:path";
 import { expect, test, type Page } from "@playwright/test";
+import { categoryChipLabel } from "./fixture";
 
 // 0건 UX 회귀 가드 — 홈 하단 고정 CTA의 count===0 분기(§4.3-① 5)와 리스트의 빈 결과 완화
 // 제안(감사 25·26)을 한 흐름으로 잇는다. 0건에서 "물건 0건 보기"라고 쓰면 결과가 있는 것으로
@@ -85,7 +86,10 @@ test("0건 조건(용도 × 금액): 홈 CTA가 없음을 알리고 리스트 �
 
   // 0건 조합 선택. 칩 상태는 aria-pressed로 판정한다.
   const priceChip = page.getByRole("button", { name: combo.band.label, exact: true });
-  const categoryChip = page.getByRole("button", { name: combo.category, exact: true });
+  const categoryChip = page.getByRole("button", {
+    name: categoryChipLabel(combo.category),
+    exact: true,
+  });
   await categoryChip.click();
   await expect(categoryChip).toHaveAttribute("aria-pressed", "true");
   await priceChip.click();
