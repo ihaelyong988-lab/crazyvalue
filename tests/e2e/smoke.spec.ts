@@ -98,7 +98,7 @@ test("상세: 가격·이력·원문·고지", async ({ page }) => {
   await expect(page.getByRole("button", { name: "관심등록", exact: true })).toBeVisible();
   await expect(page.locator('section[aria-label="기일 이력"]')).toBeVisible();
 
-  const original = page.getByRole("link", { name: "법원경매정보에서 원문 보기" });
+  const original = page.getByRole("link", { name: "법원경매정보에서 사건 조회" });
   await expect(original).toBeVisible();
   await expect(original).toHaveAttribute("href", /^https:\/\//);
 

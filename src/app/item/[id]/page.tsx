@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ExternalLink, MapPin } from "lucide-react";
 import { findItem, loadAllItems } from "@/lib/data-server";
+import { COURT_ORIGIN_URL, siteCourtLabel, splitCaseNo } from "@/lib/court-origin";
 import { discountPct, formatArea, formatDateKr, formatDday, dday, formatKrw } from "@/lib/format";
 import { PriceStructure } from "@/components/PriceStructure";
 import { HistoryTimeline } from "@/components/HistoryTimeline";
@@ -42,6 +43,7 @@ export default async function ItemPage({ params }: { params: Promise<{ id: strin
 
   const days = dday(item.saleDate);
   const mapQuery = encodeURIComponent(item.address);
+  const caseParts = splitCaseNo(item.caseNo);
 
   return (
     <div className="space-y-4 p-4">
@@ -143,24 +145,28 @@ export default async function ItemPage({ params }: { params: Promise<{ id: strin
         days={days}
       />
 
-      {/* 법원 원문 도달 3종(AGENTS §2-2 조문 6) — ①사건상세 화면 링크 ②사건번호 복사 ③찾는 방법 1줄.
+      {/* 법원 원문 도달 3종(AGENTS §2-2 조문 6) — ①원문 화면 링크 ②번호 복사 ③찾는 방법 1줄.
           사건 단위 딥링크가 구조적으로 불가하므로(docs/CRAWLER.md §4.1) 세 수단을 한 블록에 묶어
           링크→복사→입력 동선이 끊기지 않게 한다(감사 45).
-          안내가 지목하는 법원명을 문구에 박는다 — 헤더에만 있으면 복사 버튼이 보이는 위치에서 화면 밖이라
-          방문자가 법원명을 확인하러 위로 되돌아가야 한다(감사 3차 J4). 복사 문자열은 사건번호 단독 유지. */}
+          세 수단은 **목적지 폼과 1:1로** 맞춘다 — 목적지는 법원(선택)·연도(선택)·번호(입력) 3칸을 받는다.
+          그래서 링크는 최상단 화면(`court-origin.ts` 주석), 복사값은 번호 단독, 안내는 그 3칸의 순서다.
+          법원 표기는 **선택 목록에 실제로 있는 이름**을 쓴다 — 우리 표기(`대전지방법원 천안지원`)를 그대로
+          지목하면 목록에 없는 항목을 찾게 만든다(2026-08-20 실측 190/1,000건). 안내가 지목하는 값을
+          이 블록 안에 두는 규약은 유지한다 — 헤더에만 있으면 복사 시점에 화면 밖이다(감사 3차 J4). */}
       <section aria-label="법원 원문 확인" className="space-y-2">
         <a
-          href={item.detailUrl}
+          href={COURT_ORIGIN_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="flex min-h-12 w-full cursor-pointer items-center justify-center gap-1.5 rounded-xl border border-accent bg-white font-semibold text-accent transition-colors duration-200 hover:bg-paper"
         >
-          <ExternalLink size={17} aria-hidden /> 법원경매정보에서 원문 보기{" "}
+          <ExternalLink size={17} aria-hidden /> 법원경매정보에서 사건 조회{" "}
           <span className="sr-only">새 창 열림</span>
         </a>
         <CopyCaseNo caseNo={item.caseNo} />
         <p className="text-[13px] leading-snug text-ink/70">
-          원문 화면에서 {item.court} 선택 후 사건번호를 붙여넣는다.
+          원문 화면에서 {siteCourtLabel(item.court)}
+          {caseParts && <> · {caseParts.year}</>} 선택 후 번호를 붙여넣는다.
         </p>
       </section>
 

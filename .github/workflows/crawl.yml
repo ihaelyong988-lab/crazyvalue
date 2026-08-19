@@ -218,6 +218,48 @@ jobs:
             echo "되돌아갔는가(AGENTS §9 2026-08-09) 순으로 본다. 로컬 재현은 \`npx tsx scripts/verify-deployed-date.ts\`."
           } > screen-verify.md
           gh issue create --title "$TITLE" --body-file screen-verify.md --assignee ihaelyong988-lab --label "$ALERT_LABEL"
+      # 원문 링크 도달 감시 — 목적지는 우리 저장소가 아니라 법원 사이트다. 통보 없이 바뀌고,
+      # 바뀌면 아무도 모른다(그 화면 코드에는 2025.12.26 개정 이력이 있다). 2026-08-20까지 전량이
+      # 오류창으로 떨어지는 동안 게이트 3종이 초록이었던 이유는 셋 다 자기 자신과 대조했기 때문이다(§9).
+      # 여기에 두는 이유: 이 워크플로는 이미 그 사이트에 요청을 보내며, 사이트가 죽으면 수집부터 실패한다.
+      # PR마다 외부 사이트를 때리면 CI가 남의 사정으로 빨강이 된다 — 감시는 일일 슬롯의 몫이다.
+      # 배포는 막지 않는다(강등 철학) — 계약 위반 사실만 표면화한다.
+      - name: verify origin link
+        id: origin
+        if: success() && steps.gate.outputs.run == 'true'
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          npx tsx scripts/verify-origin-link.ts 2>&1 | tee origin-verify.txt
+      - name: report origin link change
+        if: success() && steps.origin.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          PREFIX="법원 원문 링크 계약 위반"
+          TITLE="$PREFIX $(TZ=Asia/Seoul date +%F)"
+          gh label create "$ALERT_LABEL" --color BFD4F2 --description "워크플로 자동 알림 — 중복 억제 대상" --force >/dev/null 2>&1 || true
+          OPEN=$(gh issue list --state open --label "$ALERT_LABEL" --limit 100 --json title 2>/dev/null \
+            | jq -r --arg t "$TITLE" '[.[] | select(.title == $t)] | length' || echo 0)
+          if [ "${OPEN:-0}" -gt 0 ]; then
+            echo "'$TITLE' 이미 열려 있다 — 새로 만들지 않는다."
+            exit 0
+          fi
+          {
+            echo "상세의 \"법원경매정보에서 사건 조회\"가 도달 계약을 벗어났다 — 방문자가 원문에 닿지 못한다."
+            echo ""
+            echo '```'
+            cat origin-verify.txt 2>/dev/null || echo "(검증 출력 없음)"
+            echo '```'
+            echo ""
+            echo "실행 로그: $RUN_URL"
+            echo ""
+            echo "점검: 법원이 화면을 옮겼는가(최상단 규격 …F00/…M00) → 검색 폼 필드·번호칸 규격이 바뀌었는가"
+            echo "순으로 본다. 규칙과 경위는 AGENTS §2-2 조문 6·§9, docs/CRAWLER.md §4.1."
+            echo "로컬 재현은 \`npm run verify:origin\`."
+          } > origin-verify.md
+          gh issue create --title "$TITLE" --body-file origin-verify.md --assignee ihaelyong988-lab --label "$ALERT_LABEL"
       # 조기 종료 표면화 — 차단·예산 소진·마감은 exit 0(부분 산출·커밋)이라 아래 report failure가
       # 발화하지 않는다. 그대로 두면 전량 역산 이력이 실취득과 같은 화면으로 게시되고 재발을 아무도 모른다.
       # 이슈 4종(조기 종료·가치 미달·화면 불일치·실패) 공통 규약 — 억제 단위는 **접두가 아니라
