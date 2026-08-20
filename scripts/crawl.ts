@@ -663,7 +663,12 @@ function mapRow(row: RawRow, detail: DetailResult | null, todayYmd: string, fail
   if (!regionKey) return { item: null, skipReason: "지역 판정 불가", historySource: null };
   const district = str(row, "hjguSigu") || parseDistrict(address) || (regionKey === "sejong" ? "세종시" : "");
   if (!district) return { item: null, skipReason: "시·군·구 판정 불가", historySource: null };
-  const court = COURT_BY_CODE[str(row, "boCd")]?.name || stripTags(str(row, "jiwonNm"));
+  // 법원명은 **응답값이 원천**이다(백로그 118 · 2026-08-20). 손코딩 코드표를 앞에 두었더니 대구·부산·울산
+  // 블록이 통째로 어긋나 앱이 틀린 법원을 말했다 — 사이트 실측 코드는 대구지법 B000310 · 대구서부 B000320 ·
+  // 안동 B000311 · 경주 B000312 · 부산지법 B000410인데, 표는 그 코드들에 부산·울산 이름을 붙여 두었다.
+  // 결과: 대구 물건이 "부산지방법원"으로 표시되고 그 법원에는 그 사건번호가 없어 원문 도달이 막혔다(실측 4/4).
+  // 표는 이제 지역 판정의 마지막 폴백으로만 남는다(crawl-config 주석 참조).
+  const court = stripTags(str(row, "jiwonNm")) || COURT_BY_CODE[str(row, "boCd")]?.name || "";
   if (!court) return { item: null, skipReason: "법원명 결측", historySource: null };
 
   const saleInfo = detail?.saleInfo ?? {};
