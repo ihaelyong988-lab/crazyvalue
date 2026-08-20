@@ -191,7 +191,15 @@ export const REGION_KEY_BY_SIDO_PREFIX: [string, string][] = [
 ];
 
 /**
- * 법원코드(cortOfcCd/boCd) → 법원명·시·도 폴백 테이블.
+ * 법원코드(cortOfcCd/boCd) → **지역 폴백 전용** 테이블.
+ *
+ * 2026-08-20 강등: 이 표의 **이름을 쓰지 않는다**(백로그 118). 실측으로 대구·부산·울산 블록이 통째로
+ * 어긋나 있었다 — 사이트가 쓰는 실제 코드는 대구지법 `B000310` · 대구서부지원 `B000320` ·
+ * 안동지원 `B000311` · 경주지원 `B000312` · 부산지법 `B000410` · 울산지법 `B000411` ·
+ * 부산동부 `B000412` · 부산서부 `B000414`인데, 아래 표는 그 코드들에 부산·울산 이름을 붙여 두었다.
+ * 그 결과 대구 물건이 "부산지방법원"으로 게시되고 그 법원에는 그 사건번호가 없어 원문 도달이 막혔다.
+ * 법원명은 응답 `jiwonNm`이 원천이다(`crawl.ts` mapRow). 아래 8건은 실측값으로 정정했고,
+ * 나머지 블록은 **미검증**이다 — 주소 3경로가 모두 실패한 행의 지역 판정에만 쓰인다.
  * 출처: 법원경매정보 법원 코드 체계(구 시스템부터 동일 계열 유지) — dry-run 실측 표본으로 일부 검증.
  * 주의: 관할 경계와 시·도가 불일치하는 예외(예: 인천지법 부천지원 관할=경기 부천)가 있으므로
  * region 판정은 항상 주소(hjguSido·시도코드)가 우선이고 이 표는 최후 폴백으로만 쓴다.
@@ -237,10 +245,14 @@ export const COURT_BY_CODE: Record<string, { name: string; regionKey: string }> 
   B000295: { name: "대구지방법원 의성지원", regionKey: "gyeongbuk" },
   B000296: { name: "대구지방법원 영덕지원", regionKey: "gyeongbuk" },
   B000297: { name: "대구지방법원 포항지원", regionKey: "gyeongbuk" },
-  B000310: { name: "부산지방법원", regionKey: "busan" },
-  B000311: { name: "부산지방법원 동부지원", regionKey: "busan" },
-  B000312: { name: "부산지방법원 서부지원", regionKey: "busan" },
-  B000320: { name: "울산지방법원", regionKey: "ulsan" },
+  B000310: { name: "대구지방법원", regionKey: "daegu" }, // 2026-08-20 실측 정정
+  B000311: { name: "대구지방법원 안동지원", regionKey: "gyeongbuk" }, // 2026-08-20 실측 정정
+  B000312: { name: "대구지방법원 경주지원", regionKey: "gyeongbuk" }, // 2026-08-20 실측 정정
+  B000320: { name: "대구지방법원 서부지원", regionKey: "daegu" }, // 2026-08-20 실측 정정
+  B000410: { name: "부산지방법원", regionKey: "busan" }, // 2026-08-20 실측 정정
+  B000411: { name: "울산지방법원", regionKey: "ulsan" }, // 2026-08-20 실측 정정
+  B000412: { name: "부산지방법원 동부지원", regionKey: "busan" }, // 2026-08-20 실측 정정
+  B000414: { name: "부산지방법원 서부지원", regionKey: "busan" }, // 2026-08-20 실측 정정
   B000330: { name: "창원지방법원", regionKey: "gyeongnam" },
   B000331: { name: "창원지방법원 진주지원", regionKey: "gyeongnam" },
   B000332: { name: "창원지방법원 통영지원", regionKey: "gyeongnam" },

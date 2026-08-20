@@ -132,6 +132,33 @@ describe("법원 원문 도달 — 산출물 전건이 목적지 계약을 만�
     ).toEqual([]);
   });
 
+  it("법원명이 물건 소재지와 동떨어지지 않는다 — 코드표 오매핑 회귀(백로그 118)", async () => {
+    // 2026-08-20: 손코딩 법원코드표가 대구·부산·울산 블록을 잘못 매핑해 대구·경북 물건이
+    // "부산지방법원"·"울산지방법원"으로 게시됐다. 그 법원에는 그 사건번호가 없어 원문 도달이 막혔다(실측 4/4).
+    // 관할과 소재지는 원래 다를 수 있다(광주지법↔전남 · 대전지법↔세종 · 자동차는 채무자 관할) —
+    // 그래서 0을 요구하지 않고 **비율 상한**으로 잰다. 응답값을 원천으로 쓰는 지금은 9.7%(전부 정상 관할),
+    // 오매핑 상태였을 때는 13.8%였다. 상한 12%는 그 둘 사이를 가른다.
+    const items = await loadAllItems();
+    const HOME_REGION: Record<string, string> = {
+      서울: "서울", 의정부: "경기", 인천: "인천", 수원: "경기", 춘천: "강원", 청주: "충북",
+      대전: "대전", 대구: "대구", 부산: "부산", 울산: "울산", 창원: "경남", 광주: "광주",
+      전주: "전북", 제주: "제주",
+    };
+    const homeOf = (court: string): string | null =>
+      Object.entries(HOME_REGION).find(([city]) => court.startsWith(city))?.[1] ?? null;
+    // 본원 이름으로 시작하는 물건만 잰다(지원 단독 표기는 본원을 알 수 없다) · 자동차는 채무자 관할이라 제외
+    const scoped = items.filter(
+      (i) => homeOf(i.court) !== null && !i.address.startsWith("사용본거지"),
+    );
+    expect(scoped.length, "전제: 본원 표기 물건이 있다").toBeGreaterThan(0);
+    const off = scoped.filter((i) => homeOf(i.court) !== i.region);
+    const ratio = off.length / items.length;
+    expect(
+      Number((ratio * 100).toFixed(1)),
+      `법원 본원지역 ≠ 물건지역 ${off.length}건 (예: ${off[0]?.court} → ${off[0]?.region})`,
+    ).toBeLessThanOrEqual(12);
+  });
+
   it("복사값 전건이 번호 입력칸 규격을 통과한다", async () => {
     const items = await loadAllItems();
     const bad = items
