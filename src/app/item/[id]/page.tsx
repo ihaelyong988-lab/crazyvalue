@@ -33,6 +33,8 @@ export async function generateMetadata({
   return {
     title: `${item.region} ${item.district} ${item.category} 최저가 ${formatKrw(item.minPrice)} — 미친가치`,
     description: `감정가 대비 -${pct}% · 유찰 ${item.failCount}회 · 매각기일 ${formatDateKr(item.saleDate)}. 법원경매 공고 사실 정리, 원문 확인 필수.`,
+    // 루트 레이아웃의 canonical("/")을 물려받으면 물건 1,000건이 전부 "홈이 원본"이 된다.
+    alternates: { canonical: `/item/${encodeURIComponent(item.id)}` },
   };
 }
 
