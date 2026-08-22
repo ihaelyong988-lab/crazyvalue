@@ -1040,66 +1040,6 @@
   "specialNote": "-일괄매각. -농지취득자격증명원 제출 요함(미제출시 보증금 미반환). -목록[1~7] 현황 묵전상태이며 맹지임."
  },
  {
-  "id": "gyeongnam-2024타경2288-1",
-  "court": "진주지원",
-  "caseNo": "2024타경2288",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경상남도 남해군 삼동면 물건리 16-18",
-  "region": "경남",
-  "district": "남해군",
-  "appraisalPrice": 3243683000,
-  "minPrice": 651020000,
-  "priceRatio": 0.2007,
-  "failCount": 6,
-  "saleDate": "2026-08-24",
-  "saleTime": "10:00",
-  "courtRoom": "제101호법정",
-  "deposit": 65102000,
-  "areaBuilding": null,
-  "areaLand": 1873,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-12-22",
-    "minPrice": 3243683000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-01-26",
-    "minPrice": 3243683000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-02",
-    "minPrice": 2481976846,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-06",
-    "minPrice": 1899140287,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-11",
-    "minPrice": 1453169813,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-15",
-    "minPrice": 1111925496,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-20",
-    "minPrice": 850814749,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "-일괄매각. -목록[1~5] 농지가 아니라는 사실을 증명하거나 농지취득자격증명을 요함(미제출시 보증금 몰수함), 2024. 6. 7.자 남해군 삼동면 사실조회 회신서 참조. -목록[1~5] 지목 전이나 현황 건축허가를 득하고 부지조성 중인 상태의 토지 및 전(미허가부지) 상태임, 건축허가 및 토목공사 감안평가함(감정서 참조), 건축허가 관련사항 해당관서 확인요함. -목록[1~5] 토지이용계획 및 제한상태 확인요함. -명확한 위치 경계확정은 측량 요함."
- },
- {
   "id": "gyeongnam-2024타경2288-2",
   "court": "진주지원",
   "caseNo": "2024타경2288",
@@ -3590,6 +3530,56 @@
   "specialNote": "-일괄매각. -목록[2,3,4] 농지가 아니라는 사실을 증명하거나 농지취득자격증명을 요함(미제출시 보증금 몰수함). -목록[2~4] 지적도상 맹지임. -인접필지와 정확한 위치 경계확정은 측량 요함."
  },
  {
+  "id": "gyeongnam-2025타경30784-2",
+  "court": "진주지원",
+  "caseNo": "2025타경30784",
+  "itemNo": "2",
+  "category": "토지",
+  "address": "경상남도 남해군 설천면 덕신리 1487",
+  "region": "경남",
+  "district": "남해군",
+  "appraisalPrice": 2280000,
+  "minPrice": 547000,
+  "priceRatio": 0.2399,
+  "failCount": 4,
+  "saleDate": "2026-08-24",
+  "saleTime": "10:00",
+  "courtRoom": "제101호법정",
+  "deposit": 54700,
+  "areaBuilding": null,
+  "areaLand": 300,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-02",
+    "minPrice": 2280000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-06",
+    "minPrice": 2280000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-11",
+    "minPrice": 1595688,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-15",
+    "minPrice": 1116763,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-20",
+    "minPrice": 781581,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-지분매각, 공유자우선매수신고는 1회에 한하여 허용. -농지가 아니라는 사실을 증명하거나 농지취득자격증명을 요함(미제출시 보증금 몰수함). -지적도상 맹지임. -정확한 위치 경계확정은 측량 요함."
+ },
+ {
   "id": "gyeongnam-2025타경370-1",
   "court": "통영지원",
   "caseNo": "2025타경370",
@@ -4328,76 +4318,6 @@
    }
   ],
   "specialNote": "- 일괄매각. 제시외 건물(2-1,2-2) 매각에 포함 - 공유지분 매각임(공유자우** 신고는 1회에 한함). - 목록2. 건물의 소재지번은 공부상 '귀산동 133번지'이나 일부 인접 필지에 걸쳐서 소재함. - 목록2. 건물은 단독 주택 및 창고 등으로 이용 중이며, 창고 등으로 이용 중인 건물의 공부상 면적은 '24.6㎡' 이나 실측면적은 '약42㎡'로, 증축부분과 기존부분의 구분이 곤란하여 현상 및 이용상황을 고려하여 실측면적으로 평가함."
- },
- {
-  "id": "gyeongnam-2024타경4656-1",
-  "court": "창원지방법원",
-  "caseNo": "2024타경4656",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경상남도 김해시 상동면 우계리 76",
-  "region": "경남",
-  "district": "김해시",
-  "appraisalPrice": 65052000,
-  "minPrice": 5597000,
-  "priceRatio": 0.086,
-  "failCount": 8,
-  "saleDate": "2026-08-25",
-  "saleTime": "10:00",
-  "courtRoom": "별관제103호입찰(배당)법정",
-  "deposit": 559700,
-  "areaBuilding": null,
-  "areaLand": 417,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-10-14",
-    "minPrice": 65052000,
-    "result": "신건"
-   },
-   {
-    "date": "2025-11-18",
-    "minPrice": 65052000,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-12-23",
-    "minPrice": 47873754,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-01-27",
-    "minPrice": 35231758,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-03",
-    "minPrice": 25928127,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-07",
-    "minPrice": 19081301,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-12",
-    "minPrice": 14042512,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-16",
-    "minPrice": 10334314,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-21",
-    "minPrice": 7605337,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "- 농지취득자격증명 요함 (미제출시 매수보증금 반환하지 않음). 지적도상 맹지임. - 정확한 경계 확인은 전문적인 지적 경계측량이 필요함."
  },
  {
   "id": "gyeongnam-2025타경11632-1",
@@ -5718,61 +5638,6 @@
    }
   ],
   "specialNote": "제시외 수목(감나무 약 30주) 및 물건(농업용 모노레일 1식) 포함. 이동이 용이한 비닐하우스는 매각 제외함. 농지취득자격증명 요함(미제출시 보증금 반환하지 않음)."
- },
- {
-  "id": "gyeongnam-2025타경505-1",
-  "court": "창원지방법원",
-  "caseNo": "2025타경505",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "경상남도 김해시 상동면 여차리 1037-27",
-  "region": "경남",
-  "district": "김해시",
-  "appraisalPrice": 154818000,
-  "minPrice": 26019000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-08-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관103호(입찰)배당법정",
-  "deposit": 2601900,
-  "areaBuilding": 348,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-01-28",
-    "minPrice": 154818000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-04",
-    "minPrice": 154818000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-08",
-    "minPrice": 108371549,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-13",
-    "minPrice": 75859349,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-17",
-    "minPrice": 53101030,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-22",
-    "minPrice": 37170360,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "일괄매각. 토지조성공사 및 평탄작업이 진행된 나지상태이며 목록2.는 농지취득자격증명원 필요함(미제출시 매수보증금 반환하지 않음). 지상에 소재하는 이동이 용이한 컨테이너(2동)는 매각 제외."
  },
  {
   "id": "gyeongnam-2025타경533-1",

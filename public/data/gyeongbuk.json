@@ -980,6 +980,56 @@
   "specialNote": "농지취득자격증명 필요(미제출시 보증금 몰수). 입목포함. 지상에 연고미상의 분묘 2기가 소재하며 이로 인하여 제한받는 금액임.(분묘기지권 성립여부 불분명)"
  },
  {
+  "id": "gyeongbuk-2025타경10379-1",
+  "court": "경주지원",
+  "caseNo": "2025타경10379",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 경주시 양남면 석읍리 331",
+  "region": "경북",
+  "district": "경주시",
+  "appraisalPrice": 520905000,
+  "minPrice": 125070000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-08-25",
+  "saleTime": "10:00",
+  "courtRoom": "1층경매법정",
+  "deposit": 12507000,
+  "areaBuilding": null,
+  "areaLand": 171,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-03",
+    "minPrice": 520905000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-07",
+    "minPrice": 520905000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-12",
+    "minPrice": 364634017,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-16",
+    "minPrice": 255244174,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-21",
+    "minPrice": 178671175,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "일괄매각. 목록1,2,3은 농지취득자격증명 필요(미제출시 보증금 몰수). 목록1,2,3은 맹지임. 목록5,6은 공부상 지목이 임야이나 현황 \"일부 전, 하천 및 도로\"임."
+ },
+ {
   "id": "gyeongbuk-2025타경10451-1",
   "court": "경주지원",
   "caseNo": "2025타경10451",
@@ -1243,56 +1293,6 @@
    }
   ],
   "specialNote": "일괄매각. 목록3,4,5 공부상 지목이 '답'이나 현황 '도로'임. 재매각임. 매수보증금 최저매각가격의 20%임"
- },
- {
-  "id": "gyeongbuk-2025타경771-1",
-  "court": "대구지방법원",
-  "caseNo": "2025타경771",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경상북도 영천시 임고면 평천리 137",
-  "region": "경북",
-  "district": "영천시",
-  "appraisalPrice": 61200000,
-  "minPrice": 14693000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-08-26",
-  "saleTime": "10:00",
-  "courtRoom": "신관지하2층입찰법정",
-  "deposit": 1469300,
-  "areaBuilding": null,
-  "areaLand": 1200,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-04",
-    "minPrice": 61200000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-08",
-    "minPrice": 61200000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-13",
-    "minPrice": 42839184,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-17",
-    "minPrice": 29986857,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-22",
-    "minPrice": 20990400,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "농지법상 제출해야 하는 농지취득자격증명 미제출시 매수보증금 미반환. 공부상 지목은 '답'이나, 현황 '전'임. 재매각임. 매수보증금 최저매각가격의 20%임"
  },
  {
   "id": "gyeongbuk-2025타경771-2",

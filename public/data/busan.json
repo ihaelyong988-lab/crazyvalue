@@ -1,5 +1,55 @@
 [
  {
+  "id": "busan-2024타경113672-1",
+  "court": "동부지원",
+  "caseNo": "2024타경113672",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "부산광역시 기장군 장안읍 용소리 산151",
+  "region": "부산",
+  "district": "기장군",
+  "appraisalPrice": 1711029000,
+  "minPrice": 410818000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-08-24",
+  "saleTime": "10:00",
+  "courtRoom": "203호법정",
+  "deposit": 41081800,
+  "areaBuilding": null,
+  "areaLand": 24099,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-02",
+    "minPrice": 1711029000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-06",
+    "minPrice": 1711029000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-11",
+    "minPrice": 1197720254,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-15",
+    "minPrice": 838404146,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-20",
+    "minPrice": 586882880,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "맹지임"
+ },
+ {
   "id": "busan-2024타경112637-1",
   "court": "부산서부지원",
   "caseNo": "2024타경112637",
