@@ -6,6 +6,9 @@ import type { Metadata } from "next";
 // 로딩·오류·빈 상태·목록 네 갈래 반환 전부에서 제목이 보장돼야 하기 때문이다.
 export const metadata: Metadata = {
   title: "물건 목록 — 지역·금액·용도 필터 | 미친가치",
+  // 필터는 쿼리스트링으로 붙어 같은 목록이 주소 수십 개로 갈라진다. 원본을 필터 없는 /list로
+  // 못박지 않으면 그 조합들이 서로 다른 문서로 취급돼 색인 점수가 흩어진다.
+  alternates: { canonical: "/list" },
 };
 
 export default function ListLayout({ children }: { children: React.ReactNode }) {

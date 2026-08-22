@@ -2,10 +2,11 @@ import type { Metadata, Viewport } from "next";
 import "pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css";
 import "./globals.css";
 import { AppShell } from "@/components/AppShell";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   // metadataBase: OG·트위터 이미지 상대 경로의 절대화 기준(빌드 경고 해소).
-  metadataBase: new URL("https://crazyvalue.vercel.app"),
+  metadataBase: new URL(SITE_URL),
   title: "미친가치 CrazyValue",
   description:
     "유찰 2회 이상, 가치 대비 가격이 내려간 법원경매 물건 큐레이션. 데이터는 매일 03:00 갱신되며 법적 효력은 법원 공고 원문이 우선한다.",
@@ -13,6 +14,11 @@ export const metadata: Metadata = {
   // 파비콘은 src/app/favicon.ico 파일 규약이 그대로 담당한다.
   icons: {
     apple: [{ url: "/icons/apple-touch-icon-180.png", sizes: "180x180", type: "image/png" }],
+  },
+  // 홈의 대표 주소. metadata는 루트에서 잎으로 필드 단위 상속이라 이 값을 자식이 덮지 않으면
+  // 모든 페이지가 "홈이 원본"이라고 말하게 된다 — 목록·안내·상세가 각자 canonical을 갖는 이유다.
+  alternates: {
+    canonical: "/",
   },
   // openGraph.title/description은 두지 않는다 — 각 페이지의 title/description이
   // og:title/og:description으로 자동 폴백되어 상세 generateMetadata와 충돌하지 않는다.
