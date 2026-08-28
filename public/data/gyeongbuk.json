@@ -1623,5 +1623,145 @@
    }
   ],
   "specialNote": "농지취득자격증명 제출 필요(매각결정기일까지 미제출시 보증금은 반환하지 않음), 원상회복명령이 발하여질 가능성 있음"
+ },
+ {
+  "id": "gyeongbuk-2025타경1709-1",
+  "court": "대구서부지원",
+  "caseNo": "2025타경1709",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 성주군 성주읍 용산리 784-1",
+  "region": "경북",
+  "district": "성주군",
+  "appraisalPrice": 121365000,
+  "minPrice": 29139000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-09-03",
+  "saleTime": "10:00",
+  "courtRoom": "1층입찰법정",
+  "deposit": 2913900,
+  "areaBuilding": null,
+  "areaLand": 2697,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-12",
+    "minPrice": 121365000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-16",
+    "minPrice": 121365000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-21",
+    "minPrice": 84954963,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-25",
+    "minPrice": 59468098,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-30",
+    "minPrice": 41627406,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "농지취득자격증명 요함(미제출시 매수보증금 반환하지 않음) 지적도상 맹지이나 동측 인접토지상 현황 비포장 농로에서 접근가능(감정평가서 참조)"
+ },
+ {
+  "id": "gyeongbuk-2025타경1945-1",
+  "court": "대구서부지원",
+  "caseNo": "2025타경1945",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 고령군 개진면 반운리 672",
+  "region": "경북",
+  "district": "고령군",
+  "appraisalPrice": 26884000,
+  "minPrice": 9220000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-09-03",
+  "saleTime": "10:00",
+  "courtRoom": "1층입찰법정",
+  "deposit": 922000,
+  "areaBuilding": null,
+  "areaLand": 1144,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-16",
+    "minPrice": 26884000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-21",
+    "minPrice": 26884000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-25",
+    "minPrice": 18817975,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-30",
+    "minPrice": 13172006,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "지분매각 공유자의 우선매수권 행사에 따른 매수신고가 매수보증금의 미납으로 실효되는 경우에는 그 공유자는 이후 매각절차에서 우선매수권 행사할 수 없음 농지취득자격증명 요함(미제출시 매수보증금 반환하지 않음) 공부상 '전'이나 북측 및 남측 토지와 일단의 '답'으로 이용중임. 맹지"
+ },
+ {
+  "id": "gyeongbuk-2025타경1945-2",
+  "court": "대구서부지원",
+  "caseNo": "2025타경1945",
+  "itemNo": "2",
+  "category": "토지",
+  "address": "경상북도 고령군 개진면 직리 산8",
+  "region": "경북",
+  "district": "고령군",
+  "appraisalPrice": 139444100,
+  "minPrice": 47828000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-09-03",
+  "saleTime": "10:00",
+  "courtRoom": "1층입찰법정",
+  "deposit": 4782800,
+  "areaBuilding": null,
+  "areaLand": 911,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-16",
+    "minPrice": 139444100,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-21",
+    "minPrice": 139444100,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-25",
+    "minPrice": 97609968,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-30",
+    "minPrice": 68326346,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "일괄매각 지상 분묘에 대한 분묘기지권 성립여부 불분명 목록2,3 공히 맹지"
  }
 ]
