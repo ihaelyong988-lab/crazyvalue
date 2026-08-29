@@ -15,75 +15,75 @@
   "saleDate": "2026-08-31",
   "saleTime": "10:00",
   "courtRoom": "제2호법정",
-  "deposit": 357100,
+  "deposit": 714200,
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-06-02",
+    "date": "2025-04-28",
     "minPrice": 258000000,
-    "result": "신건"
+    "result": "유찰"
+   },
+   {
+    "date": "2025-06-02",
+    "minPrice": 180600000,
+    "result": "유찰"
    },
    {
     "date": "2025-07-07",
-    "minPrice": 258000000,
+    "minPrice": 126420000,
     "result": "유찰"
    },
    {
     "date": "2025-08-11",
-    "minPrice": 180599780,
+    "minPrice": 88494000,
     "result": "유찰"
    },
    {
     "date": "2025-09-15",
-    "minPrice": 126419693,
+    "minPrice": 61946000,
     "result": "유찰"
    },
    {
     "date": "2025-10-20",
-    "minPrice": 88493677,
+    "minPrice": 43362000,
     "result": "유찰"
    },
    {
     "date": "2025-11-24",
-    "minPrice": 61945499,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-12-29",
-    "minPrice": 43361796,
-    "result": "유찰"
+    "minPrice": 30353000,
+    "result": "변경"
    },
    {
     "date": "2026-02-02",
-    "minPrice": 30353221,
+    "minPrice": 30353000,
     "result": "유찰"
    },
    {
     "date": "2026-03-09",
-    "minPrice": 21247229,
+    "minPrice": 21247000,
     "result": "유찰"
    },
    {
     "date": "2026-04-13",
-    "minPrice": 14873042,
+    "minPrice": 14873000,
     "result": "유찰"
    },
    {
     "date": "2026-05-18",
-    "minPrice": 10411117,
+    "minPrice": 10411000,
     "result": "유찰"
    },
    {
     "date": "2026-06-22",
-    "minPrice": 7287773,
+    "minPrice": 7288000,
     "result": "유찰"
    },
    {
     "date": "2026-07-27",
-    "minPrice": 5101435,
+    "minPrice": 5102000,
     "result": "유찰"
    }
   ],
@@ -112,28 +112,23 @@
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-03-09",
-    "minPrice": 524397500,
-    "result": "신건"
-   },
-   {
     "date": "2026-04-13",
-    "minPrice": 524397500,
+    "minPrice": 524397000,
     "result": "유찰"
    },
    {
     "date": "2026-05-18",
-    "minPrice": 367078367,
+    "minPrice": 367078000,
     "result": "유찰"
    },
    {
     "date": "2026-06-22",
-    "minPrice": 256954939,
+    "minPrice": 256955000,
     "result": "유찰"
    },
    {
     "date": "2026-07-27",
-    "minPrice": 179868514,
+    "minPrice": 179869000,
     "result": "유찰"
    }
   ],
@@ -162,28 +157,23 @@
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-03-09",
-    "minPrice": 12474000,
-    "result": "신건"
-   },
-   {
     "date": "2026-04-13",
     "minPrice": 12474000,
     "result": "유찰"
    },
    {
     "date": "2026-05-18",
-    "minPrice": 8731795,
+    "minPrice": 8732000,
     "result": "유찰"
    },
    {
     "date": "2026-06-22",
-    "minPrice": 6112252,
+    "minPrice": 6112000,
     "result": "유찰"
    },
    {
     "date": "2026-07-27",
-    "minPrice": 4278574,
+    "minPrice": 4278000,
     "result": "유찰"
    }
   ],
@@ -1393,6 +1383,56 @@
    }
   ],
   "specialNote": "목록1~4 일괄매각. 벽체구분없이 한 개의 근린생활시설로 이용중임."
+ },
+ {
+  "id": "chungnam-2025타경51239-2",
+  "court": "서산지원",
+  "caseNo": "2025타경51239",
+  "itemNo": "2",
+  "category": "오피스텔",
+  "address": "충청남도 당진시 신평면 운정리 891 1동 2층202호",
+  "region": "충남",
+  "district": "당진시",
+  "appraisalPrice": 340000000,
+  "minPrice": 81634000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-09-01",
+  "saleTime": "10:00",
+  "courtRoom": "제111호경매법정",
+  "deposit": 8163400,
+  "areaBuilding": 164.97,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-10",
+    "minPrice": 340000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 340000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 238000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 166600000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 116620000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "근린생활시설(럭키게임랜드)로 이용중임."
  },
  {
   "id": "chungnam-2025타경51408-1",
