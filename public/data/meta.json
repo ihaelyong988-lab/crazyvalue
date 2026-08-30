@@ -1,5 +1,5 @@
 {
- "crawledAt": "2026-08-30T05:56:13+09:00",
+ "crawledAt": "2026-08-31T06:09:11+09:00",
  "totalCount": 1000,
  "countsByRegion": {
   "seoul": 127,
@@ -20,31 +20,31 @@
   "gyeongnam": 184,
   "jeju": 7
  },
- "nextUpdateAt": "2026-08-31T03:00:00+09:00",
- "newCount": 5,
+ "nextUpdateAt": "2026-09-01T03:00:00+09:00",
+ "newCount": 2,
  "scope": null,
- "aborted": true,
- "abortReason": "로봇탐지(ipcheck=false) — 즉시 중단",
- "abortedAtRequest": 1031,
- "totalRequests": 1031,
- "truncated": 9023,
+ "aborted": false,
+ "abortReason": null,
+ "abortedAtRequest": null,
+ "totalRequests": 227,
+ "truncated": 4342,
  "detailCoverage": {
-  "candidates": 9990,
-  "requested": 498,
-  "succeeded": 497
+  "candidates": 4342,
+  "requested": 0,
+  "succeeded": 0
  },
  "historySource": {
-  "real": 494,
-  "backcalc": 11445
+  "real": 0,
+  "backcalc": 5209
  },
- "dedupDropped": 9082,
+ "dedupDropped": 3647,
  "invalidDropped": 0,
- "cappedFrom": 11861,
+ "cappedFrom": 5193,
  "outputCap": 1000,
  "outputDateSpread": 5,
  "sourceLastSaleDate": "2026-09-04",
  "candidatesByRegion": {
-  "seoul": 629,
+  "seoul": 631,
   "busan": 436,
   "daegu": 39,
   "incheon": 321,
@@ -52,14 +52,14 @@
   "daejeon": 28,
   "ulsan": 66,
   "sejong": 26,
-  "gyeonggi": 804,
+  "gyeonggi": 808,
   "gangwon": 94,
   "chungbuk": 112,
   "chungnam": 189,
   "jeonbuk": 136,
-  "jeonnam": 159,
+  "jeonnam": 160,
   "gyeongbuk": 92,
-  "gyeongnam": 473,
+  "gyeongnam": 475,
   "jeju": 106
  }
 }
