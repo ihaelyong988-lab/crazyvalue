@@ -588,5 +588,120 @@
    }
   ],
   "specialNote": "-일괄매각 -목록3 지상에 연고미상의 분묘 수기 소재하고 분묘기지권 성립 여부는 불분명. 최저매각가격은 분묘로 인해 제한받는 가격임. -지적도상 맹지임. -목록3.매각에서 제외되는 이동가능한 벤치 소재함. -농지취득자격증명 필요(증명서 미제출시 매수보증금 몰수) -전용허가를 얻지 않고 토지현황이 변경된 경우 원상복구명령 가능성 있음."
+ },
+ {
+  "id": "sejong-2024타경10303-4",
+  "court": "대전지방법원",
+  "caseNo": "2024타경10303",
+  "itemNo": "4",
+  "category": "토지",
+  "address": "세종특별자치시 전동면 송성리 181",
+  "region": "세종",
+  "district": "전동면",
+  "appraisalPrice": 3738000,
+  "minPrice": 438000,
+  "priceRatio": 0.1172,
+  "failCount": 6,
+  "saleDate": "2026-09-07",
+  "saleTime": "10:00",
+  "courtRoom": "본관제106호법정",
+  "deposit": 43800,
+  "areaBuilding": null,
+  "areaLand": 1246,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-01-05",
+    "minPrice": 3738000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-09",
+    "minPrice": 3738000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-16",
+    "minPrice": 2614840,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 1829157,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-25",
+    "minPrice": 1279548,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-29",
+    "minPrice": 895081,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-03",
+    "minPrice": 626135,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 지분매각. 공유자의 우선매수신고는 1회에 한하여 행사할 수 있음(공유자가 우선매수권 신고 후 매각기일까지 매수보증금을 미납하여 실효되는 경우에는 그 공유자는 이후 매각기일부터는 우선매수권을 행사할 수 없음) - 농지취득자격증명 제출 필요(매각결정기일까지 미제출시 보증금은 반환하지 않음), 농지상황(농지의 임야화)에 따라 농지원상회복 이행계획이 필요할 수도 있음)"
+ },
+ {
+  "id": "sejong-2024타경115529-1",
+  "court": "대전지방법원",
+  "caseNo": "2024타경115529",
+  "itemNo": "1",
+  "category": "아파트",
+  "address": "세종특별자치시 한누리대로 292 5층507호 (나성동,행복의아침)",
+  "region": "세종",
+  "district": "한누리대로",
+  "appraisalPrice": 129000000,
+  "minPrice": 21680000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-09-07",
+  "saleTime": "10:00",
+  "courtRoom": "본관제106호법정",
+  "deposit": 2168000,
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-09",
+    "minPrice": 129000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-16",
+    "minPrice": 129000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 90299142,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-25",
+    "minPrice": 63208799,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-29",
+    "minPrice": 44245739,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-03",
+    "minPrice": 30971723,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
  }
 ]

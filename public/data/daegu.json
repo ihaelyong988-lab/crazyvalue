@@ -913,5 +913,75 @@
    }
   ],
   "specialNote": "본건 차량 구조변경내역(물품적재장치-냉동탑) 있음. 자동차등록원부(갑) 특기사항(번호판 반납2개) 등록되어 있음."
+ },
+ {
+  "id": "daegu-2024타경129115-1",
+  "court": "대구지방법원",
+  "caseNo": "2024타경129115",
+  "itemNo": "1",
+  "category": "아파트",
+  "address": "대구광역시 수성구 용학로 303 302동 15층 1509호 (지산동,지산타운)",
+  "region": "대구",
+  "district": "수성구",
+  "appraisalPrice": 180000000,
+  "minPrice": 10377000,
+  "priceRatio": 0.0576,
+  "failCount": 8,
+  "saleDate": "2026-09-07",
+  "saleTime": "10:00",
+  "courtRoom": "신관지하2층입찰법정",
+  "deposit": 1037700,
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-10-27",
+    "minPrice": 180000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-01",
+    "minPrice": 180000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-05",
+    "minPrice": 126000544,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-09",
+    "minPrice": 88200761,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-16",
+    "minPrice": 61740799,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 43218746,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-25",
+    "minPrice": 30253253,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-29",
+    "minPrice": 21177368,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-03",
+    "minPrice": 14824222,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "재매각 매수보증금 20%."
  }
 ]
