@@ -1,60 +1,5 @@
 [
  {
-  "id": "sejong-2025타경502619-1",
-  "court": "대전지방법원",
-  "caseNo": "2025타경502619",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "세종특별자치시 나성동 730 에스알파크시티 8층860호",
-  "region": "세종",
-  "district": "나성동",
-  "appraisalPrice": 165000000,
-  "minPrice": 27732000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-09-01",
-  "saleTime": "10:00",
-  "courtRoom": "본관제106호경매법정",
-  "deposit": 2773200,
-  "areaBuilding": 32.36,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-02-03",
-    "minPrice": 165000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-10",
-    "minPrice": 165000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-14",
-    "minPrice": 115500375,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-19",
-    "minPrice": 80850525,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-23",
-    "minPrice": 56595551,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-28",
-    "minPrice": 39617014,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": null
- },
- {
   "id": "sejong-2024타경115888-1",
   "court": "대전지방법원",
   "caseNo": "2024타경115888",
@@ -590,6 +535,141 @@
   "specialNote": "-일괄매각 -목록3 지상에 연고미상의 분묘 수기 소재하고 분묘기지권 성립 여부는 불분명. 최저매각가격은 분묘로 인해 제한받는 가격임. -지적도상 맹지임. -목록3.매각에서 제외되는 이동가능한 벤치 소재함. -농지취득자격증명 필요(증명서 미제출시 매수보증금 몰수) -전용허가를 얻지 않고 토지현황이 변경된 경우 원상복구명령 가능성 있음."
  },
  {
+  "id": "sejong-2025타경504037-1",
+  "court": "대전지방법원",
+  "caseNo": "2025타경504037",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "세종특별자치시 보람동 745 금남프라자 1동 1층111호",
+  "region": "세종",
+  "district": "보람동",
+  "appraisalPrice": 1188800000,
+  "minPrice": 407758000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-09-02",
+  "saleTime": "10:00",
+  "courtRoom": "본관제106호경매법정",
+  "deposit": 40775800,
+  "areaBuilding": 48.21,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-15",
+    "minPrice": 1188800000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-20",
+    "minPrice": 1188800000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 832159728,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 582511619,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-일괄매각. 제시외 건물 포함 -목록1과 목록2는 벽체 구분없이 제1종근린생활시설(휴게음식점) \"더푸켓\"으로 이용중임."
+ },
+ {
+  "id": "sejong-2025타경504056-1",
+  "court": "대전지방법원",
+  "caseNo": "2025타경504056",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "세종특별자치시 연기면 수산리 72-8",
+  "region": "세종",
+  "district": "연기면",
+  "appraisalPrice": 5370840000,
+  "minPrice": 1842198000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-09-02",
+  "saleTime": "10:00",
+  "courtRoom": "본관제106호경매법정",
+  "deposit": 184219800,
+  "areaBuilding": null,
+  "areaLand": 15850,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-15",
+    "minPrice": 5370840000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-20",
+    "minPrice": 5370840000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 3759587918,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 2631711486,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-일괄매각. 제시외 수목 포함 -목록1의 일부는 평탄한 상태임."
+ },
+ {
+  "id": "sejong-2025타경504151-1",
+  "court": "대전지방법원",
+  "caseNo": "2025타경504151",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "세종특별자치시 나성동 738 세종포레뷰원주건축물 1동 8층816호",
+  "region": "세종",
+  "district": "나성동",
+  "appraisalPrice": 139000000,
+  "minPrice": 47677000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-09-02",
+  "saleTime": "10:00",
+  "courtRoom": "본관제106호경매법정",
+  "deposit": 4767700,
+  "areaBuilding": 25.61,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-15",
+    "minPrice": 139000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-20",
+    "minPrice": 139000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 97300000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 68110000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
   "id": "sejong-2024타경10303-4",
   "court": "대전지방법원",
   "caseNo": "2024타경10303",
@@ -703,5 +783,60 @@
    }
   ],
   "specialNote": null
+ },
+ {
+  "id": "sejong-2024타경112704-1",
+  "court": "대전지방법원",
+  "caseNo": "2024타경112704",
+  "itemNo": "1",
+  "category": "단독다가구",
+  "address": "세종특별자치시 연동면 노송웅골길 19-3",
+  "region": "세종",
+  "district": "연동면",
+  "appraisalPrice": 205510000,
+  "minPrice": 34540000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-09-08",
+  "saleTime": "10:00",
+  "courtRoom": "본관제106호법정",
+  "deposit": 3454000,
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-10",
+    "minPrice": 205510000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-17",
+    "minPrice": 205510000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-21",
+    "minPrice": 143856945,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-26",
+    "minPrice": 100699823,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-30",
+    "minPrice": 70489850,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-04",
+    "minPrice": 49342876,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "일괄매각. 제시외 건물 포함"
  }
 ]

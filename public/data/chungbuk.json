@@ -955,6 +955,46 @@
   "specialNote": "농지취득자격증명원 제출요(미제출시 보증금 몰수, 농지법 등 개정으로 농지취득자격증명서 발급기간이 연장되었으므로 소관 행정기관에 농지취득자격증명원의 발급 여부를 확인 후 입찰요망)."
  },
  {
+  "id": "chungbuk-2026타경6-1",
+  "court": "청주지방법원",
+  "caseNo": "2026타경6",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청북도 청주시 상당구 미원면 운용리 산15",
+  "region": "충북",
+  "district": "청주시 상당구",
+  "appraisalPrice": 298410600,
+  "minPrice": 130636000,
+  "priceRatio": 0.4378,
+  "failCount": 2,
+  "saleDate": "2026-09-02",
+  "saleTime": "10:00",
+  "courtRoom": "법정동121호(경매법정)",
+  "deposit": 13063600,
+  "areaBuilding": null,
+  "areaLand": 7396,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-20",
+    "minPrice": 298410600,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 298410600,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 197441554,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "일괄매각. 목록 1,2 지상에 묵묘 수기가 소재하며 분묘기지권 성립여부 불분명함. 최저매각가격은 분묘소재로 인하여 제한 받은 가격임. 목록 1은 지적도상 맹지임."
+ },
+ {
   "id": "chungbuk-2022타경1509-1",
   "court": "충주지원",
   "caseNo": "2022타경1509",
@@ -1843,5 +1883,620 @@
    }
   ],
   "specialNote": "- 농지취득자격증명 요함(매각결정기일까지 미제출시 매수신청보증금은 반환하지 않음)."
+ },
+ {
+  "id": "chungbuk-2024타경3704-2",
+  "court": "청주지방법원",
+  "caseNo": "2024타경3704",
+  "itemNo": "2",
+  "category": "토지",
+  "address": "충청북도 청주시 청원구 내덕동 407-47",
+  "region": "충북",
+  "district": "청주시 청원구",
+  "appraisalPrice": 637635000,
+  "minPrice": 153095000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-09-08",
+  "saleTime": "10:00",
+  "courtRoom": "법정동121호(경매법정)",
+  "deposit": 15309500,
+  "areaBuilding": null,
+  "areaLand": 142,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-17",
+    "minPrice": 637635000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-21",
+    "minPrice": 637635000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-26",
+    "minPrice": 446343652,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-30",
+    "minPrice": 312439963,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-04",
+    "minPrice": 218707558,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "일괄매각. 목록5번 토지상 벽체 이용 시멘블럭조 스레이트지붕 창고가 인접 토지인 407-12 양지상에 소재하는 것으로 보이나 정확한 경계는 측량을 통해 확인할 수 있음"
+ },
+ {
+  "id": "chungbuk-2025타경1101-1",
+  "court": "청주지방법원",
+  "caseNo": "2025타경1101",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청북도 청주시 상당구 남일면 가산리 372-1",
+  "region": "충북",
+  "district": "청주시 상당구",
+  "appraisalPrice": 297653000,
+  "minPrice": 71465000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-09-08",
+  "saleTime": "10:00",
+  "courtRoom": "법정동121호(경매법정)",
+  "deposit": 7146500,
+  "areaBuilding": null,
+  "areaLand": 1240,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-17",
+    "minPrice": 297653000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-21",
+    "minPrice": 297653000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-26",
+    "minPrice": 208356017,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-30",
+    "minPrice": 145848454,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-04",
+    "minPrice": 102093388,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "재매각. 일괄매각. 목록1, 2 토지에 대하여 농지취득자격증명원 제출 요함(미제출시 보증금 몰수, 농지법 등 개정으로 농지취득자격증명서 발급기간이 연장되었으므로 소관 행정기관에 농지취득자격증명원의 발급 여부를 확인 후 입찰요망) 목록3번 토지의 공부상 지목은 \"임야\"이나 현황은 \"답 기타\"로 이용 중임"
+ },
+ {
+  "id": "chungbuk-2025타경51140-1",
+  "court": "청주지방법원",
+  "caseNo": "2025타경51140",
+  "itemNo": "1",
+  "category": "아파트",
+  "address": "충청북도 청주시 서원구 분평동 1360 청주분평주공5단지 502동 5층 501호",
+  "region": "충북",
+  "district": "청주시 서원구",
+  "appraisalPrice": 138000000,
+  "minPrice": 7954000,
+  "priceRatio": 0.0576,
+  "failCount": 8,
+  "saleDate": "2026-09-08",
+  "saleTime": "10:00",
+  "courtRoom": "법정동121호(경매법정)",
+  "deposit": 795400,
+  "areaBuilding": 59.71,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-10-28",
+    "minPrice": 138000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-02",
+    "minPrice": 138000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-06",
+    "minPrice": 96597836,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-10",
+    "minPrice": 67616971,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-17",
+    "minPrice": 47330819,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-21",
+    "minPrice": 33130832,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-26",
+    "minPrice": 23191063,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-30",
+    "minPrice": 16233380,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-04",
+    "minPrice": 11363112,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "chungbuk-2025타경51226-1",
+  "court": "청주지방법원",
+  "caseNo": "2025타경51226",
+  "itemNo": "1",
+  "category": "아파트",
+  "address": "충청북도 청주시 상당구 용암동 2105 진흥한우리아파트 101동 2층206호",
+  "region": "충북",
+  "district": "청주시 상당구",
+  "appraisalPrice": 160000000,
+  "minPrice": 9223000,
+  "priceRatio": 0.0576,
+  "failCount": 8,
+  "saleDate": "2026-09-08",
+  "saleTime": "10:00",
+  "courtRoom": "법정동121호(경매법정)",
+  "deposit": 922300,
+  "areaBuilding": 84.41,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-10-28",
+    "minPrice": 160000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-02",
+    "minPrice": 160000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-06",
+    "minPrice": 111998965,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-10",
+    "minPrice": 78398552,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-17",
+    "minPrice": 54878479,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-21",
+    "minPrice": 38414581,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-26",
+    "minPrice": 26889958,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-30",
+    "minPrice": 18822797,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-04",
+    "minPrice": 13175836,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "chungbuk-2025타경51659-1",
+  "court": "청주지방법원",
+  "caseNo": "2025타경51659",
+  "itemNo": "1",
+  "category": "아파트",
+  "address": "충청북도 청주시 서원구 개신동 709 4층409호",
+  "region": "충북",
+  "district": "청주시 서원구",
+  "appraisalPrice": 64000000,
+  "minPrice": 5270000,
+  "priceRatio": 0.0823,
+  "failCount": 7,
+  "saleDate": "2026-09-08",
+  "saleTime": "10:00",
+  "courtRoom": "법정동121호(경매법정)",
+  "deposit": 527000,
+  "areaBuilding": 30.282,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-12-02",
+    "minPrice": 64000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-01-06",
+    "minPrice": 64000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-10",
+    "minPrice": 44799180,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-17",
+    "minPrice": 31358852,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-21",
+    "minPrice": 21950795,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-26",
+    "minPrice": 15365275,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-30",
+    "minPrice": 10755496,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-04",
+    "minPrice": 7528709,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "chungbuk-2025타경51761-1",
+  "court": "청주지방법원",
+  "caseNo": "2025타경51761",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청북도 청주시 청원구 오창읍 후기리 348",
+  "region": "충북",
+  "district": "청주시 청원구",
+  "appraisalPrice": 149995000,
+  "minPrice": 36012000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-09-08",
+  "saleTime": "10:00",
+  "courtRoom": "법정동121호(경매법정)",
+  "deposit": 3601200,
+  "areaBuilding": null,
+  "areaLand": 655,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-17",
+    "minPrice": 149995000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-21",
+    "minPrice": 149995000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-26",
+    "minPrice": 104995188,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-30",
+    "minPrice": 73495714,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-04",
+    "minPrice": 51446357,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "재매각. 토지만 매각. 본건 지상 소재 비가림막, 창고 및 양봉설비 각 매각 제외. 지적도상 맹지이나 인근 토지의 포장도로를 통하여 진출입 가능함"
+ },
+ {
+  "id": "chungbuk-2025타경51775-1",
+  "court": "청주지방법원",
+  "caseNo": "2025타경51775",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청북도 증평군 도안면 석곡리 392",
+  "region": "충북",
+  "district": "증평군",
+  "appraisalPrice": 55876000,
+  "minPrice": 5258000,
+  "priceRatio": 0.0941,
+  "failCount": 6,
+  "saleDate": "2026-09-08",
+  "saleTime": "10:00",
+  "courtRoom": "법정동121호(경매법정)",
+  "deposit": 525800,
+  "areaBuilding": null,
+  "areaLand": 916,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-01-06",
+    "minPrice": 55876000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-10",
+    "minPrice": 55876000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-17",
+    "minPrice": 37684075,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-21",
+    "minPrice": 25415017,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-26",
+    "minPrice": 17140479,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-30",
+    "minPrice": 11559938,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-04",
+    "minPrice": 7796291,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "지적도상 맹지임. 본건 지상에 분묘 수기 소재(분묘기지권 성립 여부 불분명) 농지취득자격증명원 제출요(미제출시 보증금 몰수, 농지법 등 개정으로 농지취득자격증명서 발급기간이 연장되었으므로 소관 행정기관에 농지취득자격증명원의 발급 여부를 확인 후 입찰요망) 최저매각가격은 토지 소유권(분묘설치)제한으로 인하여 제한받은 가격임."
+ },
+ {
+  "id": "chungbuk-2025타경51781-1",
+  "court": "청주지방법원",
+  "caseNo": "2025타경51781",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청북도 증평군 증평읍 사곡리 132",
+  "region": "충북",
+  "district": "증평군",
+  "appraisalPrice": 66608000,
+  "minPrice": 15991000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-09-08",
+  "saleTime": "10:00",
+  "courtRoom": "법정동121호(경매법정)",
+  "deposit": 1599100,
+  "areaBuilding": null,
+  "areaLand": 1448,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-17",
+    "minPrice": 66608000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-21",
+    "minPrice": 66608000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-26",
+    "minPrice": 46624448,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-30",
+    "minPrice": 32636307,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-04",
+    "minPrice": 22844850,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "지적도상 맹지임. 농지취득자격증명원 제출요(미제출시 보증금 몰수, 농지법 등 개정으로 농지취득자격증명서 발급기간이 연장되었으므로 소관 행정기관에 농지취득자격증명원의 발급 여부를 확인 후 입찰요망)"
+ },
+ {
+  "id": "chungbuk-2025타경51874-1",
+  "court": "청주지방법원",
+  "caseNo": "2025타경51874",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청북도 괴산군 청안면 백봉리 7-1",
+  "region": "충북",
+  "district": "괴산군",
+  "appraisalPrice": 39774000,
+  "minPrice": 9548000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-09-08",
+  "saleTime": "10:00",
+  "courtRoom": "법정동121호(경매법정)",
+  "deposit": 954800,
+  "areaBuilding": null,
+  "areaLand": 1894,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-17",
+    "minPrice": 39774000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-21",
+    "minPrice": 39774000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-26",
+    "minPrice": 27840534,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-30",
+    "minPrice": 19487487,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-04",
+    "minPrice": 13640620,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "농지취득자격증명원 제출요(미제출시 보증금 몰수, 농지법 등 개정으로 농지취득자격증명서 발급기간이 연장되었으므로 소관 행정기관에 농지취득자격증명원의 발급 여부를 확인 후 입찰요망). 지적상 맹지임."
+ },
+ {
+  "id": "chungbuk-2025타경52112-1",
+  "court": "청주지방법원",
+  "caseNo": "2025타경52112",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청북도 괴산군 소수면 길선리 369-2",
+  "region": "충북",
+  "district": "괴산군",
+  "appraisalPrice": 35415000,
+  "minPrice": 8502000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-09-08",
+  "saleTime": "10:00",
+  "courtRoom": "법정동121호(경매법정)",
+  "deposit": 850200,
+  "areaBuilding": null,
+  "areaLand": 787,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-17",
+    "minPrice": 35415000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-21",
+    "minPrice": 35415000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-26",
+    "minPrice": 24789668,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-30",
+    "minPrice": 17352185,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-04",
+    "minPrice": 12146122,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "맹지임. 농지취득자격증명원 제출요(미제출시 보증금 몰수, 농지법 등 개정으로 농지취득자격증명서 발급기간이 연장되었으므로 소관 행정기관에 농지취득자격증명원의 발급 여부를 확인 후 입찰요망)"
+ },
+ {
+  "id": "chungbuk-2025타경5271-1",
+  "court": "청주지방법원",
+  "caseNo": "2025타경5271",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청북도 진천군 덕산읍 용몽리 176-3",
+  "region": "충북",
+  "district": "진천군",
+  "appraisalPrice": 656667000,
+  "minPrice": 157665000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-09-08",
+  "saleTime": "10:00",
+  "courtRoom": "법정동121호(경매법정)",
+  "deposit": 15766500,
+  "areaBuilding": null,
+  "areaLand": 4155,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-17",
+    "minPrice": 656667000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-21",
+    "minPrice": 656667000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-26",
+    "minPrice": 459666356,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-30",
+    "minPrice": 321766068,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-04",
+    "minPrice": 225235981,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "일괄매각. 본건 토지 인접지에 분묘 소재가 소재하며 주변부와 경계 불분명함. 전체 토지는 지적도상 맹지이나 목록 1,2 토지는 비포장농로를 이용하여 진입함. 농지취득자격증명원 제출요(미제출시 보증금 몰수, 농지법 등 개정으로 농지취득자격증명서 발급기간이 연장되었으므로 소관 행정기관에 농지취득자격증명원의 발급 여부를 확인 후 입찰요망)"
  }
 ]
