@@ -1,5 +1,55 @@
 [
  {
+  "id": "daejeon-2025타경502021-1",
+  "court": "대전지방법원",
+  "caseNo": "2025타경502021",
+  "itemNo": "1",
+  "category": "아파트",
+  "address": "대전광역시 서구 월평동 1638 에코리움 5층504호",
+  "region": "대전",
+  "district": "서구",
+  "appraisalPrice": 180000000,
+  "minPrice": 43218000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-09-07",
+  "saleTime": "10:00",
+  "courtRoom": "본관제106호법정",
+  "deposit": 4321800,
+  "areaBuilding": 48.0623,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-16",
+    "minPrice": 180000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 180000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-25",
+    "minPrice": 126000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-29",
+    "minPrice": 88200000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-03",
+    "minPrice": 61740000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 매수인에게 대항할 수 있는 임차인 있** 배당에서 보증금이 전액 변제되지 아니하면 잔액을 매수인이 인수함 - 특별매각조건 매수신청보증금 최저매각가격의 20%"
+ },
+ {
   "id": "daejeon-2025타경502357-1",
   "court": "대전지방법원",
   "caseNo": "2025타경502357",
@@ -1008,5 +1058,285 @@
    }
   ],
   "specialNote": "일괄매각 301, 302호는 인접호수(303호~306호)와 호별 구분 없이 3층 전체가 일체로 이용되어 경계 표지나, 건물 번호 표지가 없는 상태이나 복원이 가능한 것으로 조사됨"
+ },
+ {
+  "id": "daejeon-2025타경3544-1",
+  "court": "대전지방법원",
+  "caseNo": "2025타경3544",
+  "itemNo": "1",
+  "category": "아파트",
+  "address": "대전광역시 대덕구 송촌동 219-3 보령아파트 가동 5층502호",
+  "region": "대전",
+  "district": "대덕구",
+  "appraisalPrice": 128000000,
+  "minPrice": 21512000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-09-10",
+  "saleTime": "10:00",
+  "courtRoom": "본관제106호법정",
+  "deposit": 2151200,
+  "areaBuilding": 61.63,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-12",
+    "minPrice": 128000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-19",
+    "minPrice": 128000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-23",
+    "minPrice": 89599200,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-28",
+    "minPrice": 62718880,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-02",
+    "minPrice": 43902824,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-06",
+    "minPrice": 30731703,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "대항력 있는 임차인 있음. 배당에서 보증금이 전액 변제되지 아니하면 잔액을 매수인이 인수함. 통칭\"1동\"임."
+ },
+ {
+  "id": "daejeon-2025타경502631-1",
+  "court": "대전지방법원",
+  "caseNo": "2025타경502631",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "대전광역시 유성구 봉명동 640-6 라온팰리스 1동 4층404호",
+  "region": "대전",
+  "district": "유성구",
+  "appraisalPrice": 132000000,
+  "minPrice": 15529000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-09-10",
+  "saleTime": "10:00",
+  "courtRoom": "본관제106호법정",
+  "deposit": 1552900,
+  "areaBuilding": 29.968,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-01-08",
+    "minPrice": 132000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-12",
+    "minPrice": 132000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-19",
+    "minPrice": 92399338,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-23",
+    "minPrice": 64679073,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-28",
+    "minPrice": 45275026,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-02",
+    "minPrice": 31692291,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-06",
+    "minPrice": 22184445,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "토지 별도등기 있음."
+ },
+ {
+  "id": "daejeon-2025타경503056-1",
+  "court": "대전지방법원",
+  "caseNo": "2025타경503056",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "대전광역시 서구 갈마동 913 좋은하루2차 2층208호",
+  "region": "대전",
+  "district": "서구",
+  "appraisalPrice": 43000000,
+  "minPrice": 7226000,
+  "priceRatio": 0.168,
+  "failCount": 5,
+  "saleDate": "2026-09-10",
+  "saleTime": "10:00",
+  "courtRoom": "본관제106호법정",
+  "deposit": 722600,
+  "areaBuilding": 21.4493,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-12",
+    "minPrice": 43000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-19",
+    "minPrice": 43000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-23",
+    "minPrice": 30099159,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-28",
+    "minPrice": 21068822,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-02",
+    "minPrice": 14747763,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-06",
+    "minPrice": 10323146,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "daejeon-2025타경503908-1",
+  "court": "대전지방법원",
+  "caseNo": "2025타경503908",
+  "itemNo": "1",
+  "category": "상가",
+  "address": "대전광역시 중구 대사동 197-76 대전아쿠아월드 4층431호",
+  "region": "대전",
+  "district": "중구",
+  "appraisalPrice": 80000000,
+  "minPrice": 19208000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-09-10",
+  "saleTime": "10:00",
+  "courtRoom": "본관제106호법정",
+  "deposit": 1920800,
+  "areaBuilding": 37.136,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-19",
+    "minPrice": 80000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-23",
+    "minPrice": 80000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-28",
+    "minPrice": 56000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-02",
+    "minPrice": 39200000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-06",
+    "minPrice": 27440000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "daejeon-2025타경969-1",
+  "court": "대전지방법원",
+  "caseNo": "2025타경969",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "대전광역시 동구 가오동 140-20",
+  "region": "대전",
+  "district": "동구",
+  "appraisalPrice": 293985000,
+  "minPrice": 34586000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-09-10",
+  "saleTime": "10:00",
+  "courtRoom": "본관제106호법정",
+  "deposit": 3458600,
+  "areaBuilding": null,
+  "areaLand": 695,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-01-08",
+    "minPrice": 293985000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-12",
+    "minPrice": 293985000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-19",
+    "minPrice": 205788467,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-23",
+    "minPrice": 144051204,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-28",
+    "minPrice": 100835337,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-02",
+    "minPrice": 70584382,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-06",
+    "minPrice": 49408819,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
  }
 ]

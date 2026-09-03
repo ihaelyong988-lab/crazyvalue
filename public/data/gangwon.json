@@ -530,6 +530,106 @@
   "specialNote": "- 공유자우선매수권 행사 1회로 제한 - 지상에 분묘 1기 소재(분묘기지권 성립여지 있음)하며, 감정평가액(최저매각가격)은 분묘소재로 인하여 제한받는 정도를 감안한 가격임"
  },
  {
+  "id": "gangwon-2025타경20620-1",
+  "court": "원주지원",
+  "caseNo": "2025타경20620",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 원주시 부론면 흥호리 산85",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 602475000,
+  "minPrice": 144654000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-09-07",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 14465400,
+  "areaBuilding": null,
+  "areaLand": 40165,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-16",
+    "minPrice": 602475000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 602475000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-25",
+    "minPrice": 421732320,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-29",
+    "minPrice": 295212497,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-03",
+    "minPrice": 206648660,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 공부상 임야이나 현황 일부 도로 - 분묘소재 가능성 있음(소재시 분묘기지권 성립여지 있음) - 경계부분에 비닐하우스 등 구조물이 소재한다고 보고 되었으나 정확한 확인은 측량을 필요로 함"
+ },
+ {
+  "id": "gangwon-2025타경20687-1",
+  "court": "원주지원",
+  "caseNo": "2025타경20687",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "강원특별자치도 원주시 중앙동 144 중앙 메디컬센터 1층105호",
+  "region": "강원",
+  "district": "원주시",
+  "appraisalPrice": 264000000,
+  "minPrice": 63386000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-09-07",
+  "saleTime": "10:00",
+  "courtRoom": "경매101호법정",
+  "deposit": 6338600,
+  "areaBuilding": 47.94,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-16",
+    "minPrice": 264000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 264000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-25",
+    "minPrice": 184799708,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-29",
+    "minPrice": 129359592,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-03",
+    "minPrice": 90551571,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
   "id": "gangwon-2025타경50562-1",
   "court": "춘천지방법원",
   "caseNo": "2025타경50562",
@@ -2273,5 +2373,70 @@
    }
   ],
   "specialNote": "지분매각/공유자우선매수신고는 1회에 한하여 행사할 수 있음 농지취득자격증명원 제출요(미제출시 보증금 미반환, 해당 농지는 임야화된 상태로 농지취득자격증명원을 발급받기 위해서 농지 복구 가능성 등을 판단하기 위한 서류 및 해당 농지를 영농에 이용하기 적합한 상태로 복구하기 위한 별도의 원상복구계획서 제출이 필요하다는 김화읍의 사실조회회신 있음.) 본건은 맹지임"
+ },
+ {
+  "id": "gangwon-2025타경71706-1",
+  "court": "의정부지방법원",
+  "caseNo": "2025타경71706",
+  "itemNo": "1",
+  "category": "아파트",
+  "address": "강원특별자치도 철원군 동송읍 이평리 838-8 비-401호",
+  "region": "강원",
+  "district": "철원군",
+  "appraisalPrice": 78000000,
+  "minPrice": 6424000,
+  "priceRatio": 0.0824,
+  "failCount": 7,
+  "saleDate": "2026-09-10",
+  "saleTime": "10:30",
+  "courtRoom": "경매입찰법정(제6호)",
+  "deposit": 642400,
+  "areaBuilding": 84.73,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-12-04",
+    "minPrice": 78000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-01-08",
+    "minPrice": 78000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-12",
+    "minPrice": 54600443,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-19",
+    "minPrice": 38220620,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-23",
+    "minPrice": 26754651,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-28",
+    "minPrice": 18728407,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-02",
+    "minPrice": 13109991,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-06",
+    "minPrice": 9177068,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "일괄매각(대지권 미등기이나 목록 2 토지가 매각목적물 및 평가에 포함됨)"
  }
 ]
