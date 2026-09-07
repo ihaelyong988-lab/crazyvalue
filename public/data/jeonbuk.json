@@ -1,337 +1,727 @@
 [
  {
-  "id": "jeonbuk-2024타경1645-2",
+  "id": "jeonbuk-2024타경34089-2",
   "court": "정읍지원",
-  "caseNo": "2024타경1645",
+  "caseNo": "2024타경34089",
   "itemNo": "2",
   "category": "토지",
-  "address": "전북특별자치도 고창군 대산면 율촌리 529-1",
+  "address": "전북특별자치도 고창군 대산면 상금리 40-1",
   "region": "전북",
   "district": "고창군",
-  "appraisalPrice": 43958000,
-  "minPrice": 4551000,
-  "priceRatio": 0.1035,
-  "failCount": 6,
-  "saleDate": "2026-09-07",
+  "appraisalPrice": 11041800,
+  "minPrice": 1856000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-09-14",
   "saleTime": "10:00",
-  "courtRoom": "제2호법정(경매법정)",
-  "deposit": 455100,
+  "courtRoom": "정읍지원경매법정",
+  "deposit": 185600,
   "areaBuilding": null,
-  "areaLand": 1418,
+  "areaLand": 462,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-01-05",
-    "minPrice": 43958000,
+    "date": "2026-02-16",
+    "minPrice": 11041800,
     "result": "신건"
    },
    {
-    "date": "2026-02-09",
-    "minPrice": 43958000,
+    "date": "2026-03-23",
+    "minPrice": 11041800,
     "result": "유찰"
    },
    {
-    "date": "2026-03-16",
-    "minPrice": 30121926,
+    "date": "2026-04-27",
+    "minPrice": 7729430,
     "result": "유찰"
    },
    {
-    "date": "2026-04-20",
-    "minPrice": 20640849,
+    "date": "2026-06-01",
+    "minPrice": 5410721,
     "result": "유찰"
    },
    {
-    "date": "2026-05-25",
-    "minPrice": 14144004,
+    "date": "2026-07-06",
+    "minPrice": 3787588,
     "result": "유찰"
    },
    {
-    "date": "2026-06-29",
-    "minPrice": 9692085,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-03",
-    "minPrice": 6641436,
+    "date": "2026-08-10",
+    "minPrice": 2651370,
     "result": "유찰"
    }
   ],
-  "specialNote": "1.농지취득자격증명 제출요(미제출시 보증금 몰수), 2024.09.23.자 대산면사무소의 사실조회회신서에 의하면 전용허가를 받지 않고 현황이 변경된 경우 향후 원상회복명령이 발하여질 가능성이 있음(매수시 주의) 2.토지 지상 제시외 건물(주택) 소재로 인해 토지가 제한 받는 가격을 최저매각가격에 반영함 3.공부상 지목 '답'이나 현황은 '답''단독주택 건부지' 및 '일부도로'로 이용 중 4.지상에 제시외 건물(주택) 소재하나 매각에서 제외(토지만 매각하며, 건물을 위한 법정지상권 성립 여부 불분명) 5.지상에 철거 용이한 비닐하우스 소재하나 매각에서 제외"
+  "specialNote": "1. 농지취득자격증명 제출요(미제출시 보증금 몰수), 전용허가 얻지 않고 토지현황 변경된 경우 원상회복명령 가능성 있음 - 대산면 사실조회 회신 2. 지목 '전'이나, 현황 '묘지, 일부도로'임 3. 지상에 연고미상 분묘 소재함 4. 지적도상 맹지 5. 본건 인근 고인돌 집적지로 본건 지상에 고인돌 소재여부는 측량 등 별도 확인 요함"
  },
  {
-  "id": "jeonbuk-2025타경211-3",
-  "court": "정읍지원",
-  "caseNo": "2025타경211",
-  "itemNo": "3",
-  "category": "토지",
-  "address": "전북특별자치도 부안군 변산면 격포리 395",
+  "id": "jeonbuk-2025타경21041-1",
+  "court": "군산지원",
+  "caseNo": "2025타경21041",
+  "itemNo": "1",
+  "category": "아파트",
+  "address": "전북특별자치도 군산시 나운동 156-3 영창아파트 103동 2층202호",
   "region": "전북",
-  "district": "부안군",
-  "appraisalPrice": 439425000,
-  "minPrice": 73854000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-09-07",
+  "district": "군산시",
+  "appraisalPrice": 82000000,
+  "minPrice": 6753000,
+  "priceRatio": 0.0824,
+  "failCount": 7,
+  "saleDate": "2026-09-14",
   "saleTime": "10:00",
-  "courtRoom": "제2호법정(경매법정)",
-  "deposit": 7385400,
-  "areaBuilding": null,
-  "areaLand": 651,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-02-09",
-    "minPrice": 439425000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-16",
-    "minPrice": 439425000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-20",
-    "minPrice": 307597367,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-25",
-    "minPrice": 215318064,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-29",
-    "minPrice": 150722579,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-03",
-    "minPrice": 105505760,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "1.공부상 지목은 '대'이나 현황 '대 및 일부 잡종지'로 이용 중임 2.지상에 소유자 미상의 제시외 건물(건물개황도상 ㄱ 부분, 목조 스트레이트지붕 단층 주택 , 블럭조 스레트지붕 창고 및 화장실 약 49.2㎡)이 소재하나 매각에서 제외함 3.지상에 일부 수목이 식재되어 있으며, 인접지번(격포리 772-9, 부동산표시 제1호)에 걸쳐 소유자 미상의 컨테이너가 소재하나 모두 매각에서 제외함"
- },
- {
-  "id": "jeonbuk-2025타경282-2",
-  "court": "정읍지원",
-  "caseNo": "2025타경282",
-  "itemNo": "2",
-  "category": "상가",
-  "address": "전북특별자치도 부안군 부안읍 서외리 632 부안오투그란데2차하이스트 근린생활시설동 1층 114호",
-  "region": "전북",
-  "district": "부안군",
-  "appraisalPrice": 743000000,
-  "minPrice": 124876000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-09-07",
-  "saleTime": "10:00",
-  "courtRoom": "제2호법정(경매법정)",
-  "deposit": 12487600,
-  "areaBuilding": 52.35,
+  "courtRoom": "101호입찰법정",
+  "deposit": 675300,
+  "areaBuilding": 59.82,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-02-09",
-    "minPrice": 743000000,
+    "date": "2025-12-08",
+    "minPrice": 82000000,
     "result": "신건"
    },
    {
-    "date": "2026-03-16",
-    "minPrice": 743000000,
+    "date": "2026-01-12",
+    "minPrice": 82000000,
     "result": "유찰"
    },
    {
-    "date": "2026-04-20",
-    "minPrice": 520099992,
+    "date": "2026-02-16",
+    "minPrice": 57399936,
     "result": "유찰"
    },
    {
-    "date": "2026-05-25",
-    "minPrice": 364069988,
+    "date": "2026-03-23",
+    "minPrice": 40179911,
     "result": "유찰"
    },
    {
-    "date": "2026-06-29",
-    "minPrice": 254848988,
+    "date": "2026-04-27",
+    "minPrice": 28125906,
     "result": "유찰"
    },
    {
-    "date": "2026-08-03",
-    "minPrice": 178394289,
+    "date": "2026-06-01",
+    "minPrice": 19688112,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 13781663,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 9647154,
     "result": "유찰"
    }
   ],
-  "specialNote": "1.일괄매각 2.경계벽을 제거하여 인접 호수(목록3: 114호, 목록4: 115호)를 현황 1개호의 근린생활시설(상가)로 사용 중이며, 현재 상호는 '세븐일레븐'임"
+  "specialNote": null
  },
  {
-  "id": "jeonbuk-2025타경30330-2",
+  "id": "jeonbuk-2025타경30187-3",
   "court": "정읍지원",
-  "caseNo": "2025타경30330",
-  "itemNo": "2",
+  "caseNo": "2025타경30187",
+  "itemNo": "3",
   "category": "토지",
-  "address": "전북특별자치도 정읍시 농소동 48-165",
-  "region": "전북",
-  "district": "정읍시",
-  "appraisalPrice": 120782000,
-  "minPrice": 20300000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-09-07",
-  "saleTime": "10:00",
-  "courtRoom": "제2호법정(경매법정)",
-  "deposit": 2030000,
-  "areaBuilding": null,
-  "areaLand": 461,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-02-09",
-    "minPrice": 120782000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-16",
-    "minPrice": 120782000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-20",
-    "minPrice": 84547541,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-25",
-    "minPrice": 59183377,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-29",
-    "minPrice": 41428433,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-03",
-    "minPrice": 28999952,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "1.지목은 '답'이나 현재 '주거나지' 임 2.인접지번(농소동 48-18, 157, 158, 159, 167)과 일부 경계 없이 사용 중 3.남서측으로 소폭의 콘크리트 포장된 농로를 이용하여 출입 가능"
- },
- {
-  "id": "jeonbuk-2025타경30332-1",
-  "court": "정읍지원",
-  "caseNo": "2025타경30332",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "전북특별자치도 부안군 변산면 운산리 353-9",
+  "address": "전북특별자치도 부안군 주산면 갈촌리 226-1",
   "region": "전북",
   "district": "부안군",
-  "appraisalPrice": 30871540,
-  "minPrice": 5188000,
+  "appraisalPrice": 109368000,
+  "minPrice": 18382000,
   "priceRatio": 0.1681,
   "failCount": 5,
-  "saleDate": "2026-09-07",
+  "saleDate": "2026-09-14",
   "saleTime": "10:00",
-  "courtRoom": "제2호법정(경매법정)",
-  "deposit": 518800,
+  "courtRoom": "정읍지원경매법정",
+  "deposit": 1838200,
   "areaBuilding": null,
-  "areaLand": 331,
+  "areaLand": 3038,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-02-09",
-    "minPrice": 30871540,
+    "date": "2026-02-16",
+    "minPrice": 109368000,
     "result": "신건"
    },
    {
-    "date": "2026-03-16",
-    "minPrice": 30871540,
+    "date": "2026-03-23",
+    "minPrice": 109368000,
     "result": "유찰"
    },
    {
-    "date": "2026-04-20",
-    "minPrice": 21609595,
+    "date": "2026-04-27",
+    "minPrice": 76558033,
     "result": "유찰"
    },
    {
-    "date": "2026-05-25",
-    "minPrice": 15126379,
+    "date": "2026-06-01",
+    "minPrice": 53590927,
     "result": "유찰"
    },
    {
-    "date": "2026-06-29",
-    "minPrice": 10588228,
+    "date": "2026-07-06",
+    "minPrice": 37513861,
     "result": "유찰"
    },
    {
-    "date": "2026-08-03",
-    "minPrice": 7411594,
+    "date": "2026-08-10",
+    "minPrice": 26259851,
     "result": "유찰"
    }
   ],
-  "specialNote": "1.일괄매각, 지분매각(목록2: 공유자들** 우선매수권 행사는 제한됨) 2.목록1,2 : 농지취득자격증명 제출 요함(미제출시 보증금 몰수) 3.목록1,2 : 지적 및 현황상 맹지임 4.목록1 : 인접지번(부동산표시목록 제2호 및 운산리 353-122)과 일부 경계 없이 사용 중임 5.목록2 : 인접지번(부동산표시목록 제1호 및 운산리 353-122, 123)과 일부 경계 없이 사용 중이며 지상에 인접지번(운산리 353-10)에 걸쳐 블럭조강판지붕 주택 및 보일러실 일부가 걸쳐 건립되어 보이나 그 경계가 불명확하여 정확한 측량을 요함"
+  "specialNote": "1. 농지취득자격증명서 필요(미제출시 보증금몰수, 부안군 주산면의 사실조회서에 따르면 원상회복명령이 발하여질 가능성이 있음(농지취득자격증명서 발급과 관련해서는 해당관서에 문의 바람)) 2. 지상 일부에 연고자 미상의 분묘가 소재하고 분묘기지권 성립 불명 3. 지적도상 맹지이며, 지목은 '전'이나 현황은 '전 및 일부 분묘지'임 4. 지상에 제시외 비닐하우스 소재하나 매각에서 제외(철거 및 이동용이함) 5. 분묘 소재로 인하여 제한받는 가격은 금 108,152,800원임"
  },
  {
-  "id": "jeonbuk-2025타경30413-1",
+  "id": "jeonbuk-2025타경30222-1",
   "court": "정읍지원",
-  "caseNo": "2025타경30413",
+  "caseNo": "2025타경30222",
   "itemNo": "1",
   "category": "토지",
-  "address": "전북특별자치도 정읍시 농소동 33-91",
+  "address": "전북특별자치도 정읍시 산외면 종산리 369",
   "region": "전북",
   "district": "정읍시",
-  "appraisalPrice": 51810000,
-  "minPrice": 8708000,
+  "appraisalPrice": 11830000,
+  "minPrice": 1989000,
   "priceRatio": 0.1681,
   "failCount": 5,
-  "saleDate": "2026-09-07",
+  "saleDate": "2026-09-14",
   "saleTime": "10:00",
-  "courtRoom": "제2호법정(경매법정)",
-  "deposit": 870800,
+  "courtRoom": "정읍지원경매법정",
+  "deposit": 198900,
   "areaBuilding": null,
-  "areaLand": 330,
+  "areaLand": 1183,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-02-09",
-    "minPrice": 51810000,
+    "date": "2026-02-16",
+    "minPrice": 11830000,
     "result": "신건"
    },
    {
-    "date": "2026-03-16",
-    "minPrice": 51810000,
+    "date": "2026-03-23",
+    "minPrice": 11830000,
     "result": "유찰"
    },
    {
-    "date": "2026-04-20",
-    "minPrice": 36267244,
+    "date": "2026-04-27",
+    "minPrice": 8281610,
     "result": "유찰"
    },
    {
-    "date": "2026-05-25",
-    "minPrice": 25387242,
+    "date": "2026-06-01",
+    "minPrice": 5797553,
     "result": "유찰"
    },
    {
-    "date": "2026-06-29",
-    "minPrice": 17771189,
+    "date": "2026-07-06",
+    "minPrice": 4058586,
     "result": "유찰"
    },
    {
-    "date": "2026-08-03",
-    "minPrice": 12439916,
+    "date": "2026-08-10",
+    "minPrice": 2841219,
     "result": "유찰"
    }
   ],
-  "specialNote": "1.세장형의 평지로 주거나지(일시적으로 답으로 이용 중)임. 2.지적상 맹지로 인접토지를 통해 진출입이 가능함."
+  "specialNote": "농지취득자격증명 제출 필요(미제출시 보증금 몰수), 지적도상 맹지임"
+ },
+ {
+  "id": "jeonbuk-2025타경30293-1",
+  "court": "정읍지원",
+  "caseNo": "2025타경30293",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "전북특별자치도 부안군 변산면 도청리 360",
+  "region": "전북",
+  "district": "부안군",
+  "appraisalPrice": 438828000,
+  "minPrice": 73754000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-09-14",
+  "saleTime": "10:00",
+  "courtRoom": "정읍지원경매법정",
+  "deposit": 7375400,
+  "areaBuilding": null,
+  "areaLand": 793,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-16",
+    "minPrice": 438828000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 438828000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 307179748,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 215025928,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 150518222,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 105362806,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "1. 일괄매각 2. 목록1.2. 농지취득자격증명 제출 필요(미제출시 보증금 몰수), 지적도상 맹지임."
+ },
+ {
+  "id": "jeonbuk-2025타경30440-1",
+  "court": "정읍지원",
+  "caseNo": "2025타경30440",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "전북특별자치도 고창군 고창읍 교촌리 262-1 센트럴파크빌 102동 4층402호",
+  "region": "전북",
+  "district": "고창군",
+  "appraisalPrice": 217000000,
+  "minPrice": 36471000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-09-14",
+  "saleTime": "10:00",
+  "courtRoom": "정읍지원경매법정",
+  "deposit": 3647100,
+  "areaBuilding": 76.76,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-16",
+    "minPrice": 217000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 217000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 151899842,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 106329778,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 74430767,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 52101483,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "jeonbuk-2025타경31296-1",
+  "court": "전주지방법원",
+  "caseNo": "2025타경31296",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "전북특별자치도 전주시 완산구 경원동1가 37-2 지하층비101호",
+  "region": "전북",
+  "district": "전주시 완산구",
+  "appraisalPrice": 230000000,
+  "minPrice": 38656000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-09-14",
+  "saleTime": "10:00",
+  "courtRoom": "신청사제101호법정",
+  "deposit": 3865600,
+  "areaBuilding": 219.465,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-16",
+    "minPrice": 230000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 230000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 160999917,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 112699883,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 78889878,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 55222886,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "현황 공실임"
+ },
+ {
+  "id": "jeonbuk-2025타경31296-4",
+  "court": "전주지방법원",
+  "caseNo": "2025타경31296",
+  "itemNo": "4",
+  "category": "오피스텔",
+  "address": "전북특별자치도 전주시 완산구 경원동1가 37-2 5층502호",
+  "region": "전북",
+  "district": "전주시 완산구",
+  "appraisalPrice": 254000000,
+  "minPrice": 42690000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-09-14",
+  "saleTime": "10:00",
+  "courtRoom": "신청사제101호법정",
+  "deposit": 4269000,
+  "areaBuilding": 170.17,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-16",
+    "minPrice": 254000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 254000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 177800183,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 124460257,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 87122269,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 60985651,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "현황은 공실임"
+ },
+ {
+  "id": "jeonbuk-2025타경31296-5",
+  "court": "전주지방법원",
+  "caseNo": "2025타경31296",
+  "itemNo": "5",
+  "category": "오피스텔",
+  "address": "전북특별자치도 전주시 완산구 경원동1가 37-2 6층601호",
+  "region": "전북",
+  "district": "전주시 완산구",
+  "appraisalPrice": 83000000,
+  "minPrice": 13950000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-09-14",
+  "saleTime": "10:00",
+  "courtRoom": "신청사제101호법정",
+  "deposit": 1395000,
+  "areaBuilding": 55.48,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-16",
+    "minPrice": 83000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 83000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 58100158,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 40670222,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 28469233,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 19928517,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "현황은 공실임"
+ },
+ {
+  "id": "jeonbuk-2025타경313-1",
+  "court": "정읍지원",
+  "caseNo": "2025타경313",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "전북특별자치도 고창군 성송면 하고리 201",
+  "region": "전북",
+  "district": "고창군",
+  "appraisalPrice": 24667000,
+  "minPrice": 4146000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-09-14",
+  "saleTime": "10:00",
+  "courtRoom": "정읍지원경매법정",
+  "deposit": 414600,
+  "areaBuilding": null,
+  "areaLand": 1451,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-16",
+    "minPrice": 24667000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 24667000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 17267081,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 12087083,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 8461047,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 5922795,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "1. 농지취득자격증명 제출 필요.(미제출시 보증금 몰수) 2. 지상에 소유자 미상 및 수종 미상의 제시외 수목이 소재하나 매각에서 제외. 3. 지적도상 맹지임."
+ },
+ {
+  "id": "jeonbuk-2025타경327-1",
+  "court": "정읍지원",
+  "caseNo": "2025타경327",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "전북특별자치도 정읍시 농소동 49-166",
+  "region": "전북",
+  "district": "정읍시",
+  "appraisalPrice": 81592000,
+  "minPrice": 13713000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-09-14",
+  "saleTime": "10:00",
+  "courtRoom": "정읍지원경매법정",
+  "deposit": 1371300,
+  "areaBuilding": null,
+  "areaLand": 248,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-16",
+    "minPrice": 81592000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 81592000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 57114261,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 39979885,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 27985851,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 19590048,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "맹지임"
+ },
+ {
+  "id": "jeonbuk-2025타경349-2",
+  "court": "정읍지원",
+  "caseNo": "2025타경349",
+  "itemNo": "2",
+  "category": "토지",
+  "address": "전북특별자치도 부안군 보안면 신복리 27-1",
+  "region": "전북",
+  "district": "부안군",
+  "appraisalPrice": 51743000,
+  "minPrice": 8697000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-09-14",
+  "saleTime": "10:00",
+  "courtRoom": "정읍지원경매법정",
+  "deposit": 869700,
+  "areaBuilding": null,
+  "areaLand": 864,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-16",
+    "minPrice": 51743000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 51743000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 36220561,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 25354716,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 17748527,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 12424127,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "1. 일괄매각, 농지취득자격증명 제출 필요(미제출시 보증금 몰수) 2. 목록3. 지적도상 맹지임"
+ },
+ {
+  "id": "jeonbuk-2025타경349-3",
+  "court": "정읍지원",
+  "caseNo": "2025타경349",
+  "itemNo": "3",
+  "category": "기타",
+  "address": "전북특별자치도 부안군 보안면 신복리 403",
+  "region": "전북",
+  "district": "부안군",
+  "appraisalPrice": 22942500,
+  "minPrice": 3856000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-09-14",
+  "saleTime": "10:00",
+  "courtRoom": "정읍지원경매법정",
+  "deposit": 385600,
+  "areaBuilding": 360,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-16",
+    "minPrice": 22942500,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 22942500,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 16059795,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 11241888,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 7869344,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 5508556,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "1. 일괄매각, 지분매각(공유자 우선매수권 행사는 1회에 한함) 2. 목록4. 농지취득자격증명 제출 필요(미제출시 보증금 몰수) 3. 목록4. 토지이용계획확인서상 2개(계획관리지역, 농림지역)의 용도지역에 속하며, 접도구역에 저촉됨 4. 목록5. 지상에 저온창고(1기) 및 태양광발전설비가 소재하나 매각에서 제외(이동 용이함) 5. 목록6. 지상에 비닐하우스(1동) 소재하나 매각에서 제외(철거 용이함) 6. 목록6. 지적도상 맹지임"
  }
 ]
