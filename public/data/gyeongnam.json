@@ -1130,6 +1130,56 @@
   "specialNote": "- 농지가 아니라는 사실을 증명하거나 농지취득자격증명원 제출을 요함 (미제출시 보증금 몰수)[별첨 사실조회회신 참조] - 성토작업 진행중인 토지로 관할행정관서 확인요함 - 지적도상 맹지임"
  },
  {
+  "id": "gyeongnam-2024타경12465-1",
+  "court": "밀양지원",
+  "caseNo": "2024타경12465",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상남도 창녕군 대지면 왕산리 309-3",
+  "region": "경남",
+  "district": "창녕군",
+  "appraisalPrice": 11290000,
+  "minPrice": 2710000,
+  "priceRatio": 0.24,
+  "failCount": 4,
+  "saleDate": "2026-09-14",
+  "saleTime": "10:00",
+  "courtRoom": "제108호민사법정",
+  "deposit": 271000,
+  "areaBuilding": null,
+  "areaLand": 180,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-23",
+    "minPrice": 11290000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 11290000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 7902469,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 5531356,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 3871689,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "일괄매각. 농지취득자격증명원 제출 필요(미제출시 보증금 몰수). (목록1)공부상 답이나 현황 도로이고, (목록2)공부상 답이나 현황 전 상태임."
+ },
+ {
   "id": "gyeongnam-2024타경13376-1",
   "court": "밀양지원",
   "caseNo": "2024타경13376",
@@ -2210,136 +2260,6 @@
   "specialNote": "-현황 일부 '도로'로 이용중. -분묘 소재 불분명(분묘 소재시 분묘기지권 성립 여지 있음). -지상 자연생 입목 포함 평가. -지적경계가 불분명한 바, 명확한 경계확정은 측량 요함."
  },
  {
-  "id": "gyeongnam-2024타경30996-1",
-  "court": "통영지원",
-  "caseNo": "2024타경30996",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경상남도 거제시 거제면 옥산리 산58-5",
-  "region": "경남",
-  "district": "거제시",
-  "appraisalPrice": 454486500,
-  "minPrice": 55871000,
-  "priceRatio": 0.1229,
-  "failCount": 7,
-  "saleDate": "2026-09-14",
-  "saleTime": "10:00",
-  "courtRoom": "제210호경매법정",
-  "deposit": 5587100,
-  "areaBuilding": null,
-  "areaLand": 53469,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-12-08",
-    "minPrice": 454486500,
-    "result": "신건"
-   },
-   {
-    "date": "2026-01-12",
-    "minPrice": 454486500,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-16",
-    "minPrice": 336878423,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-23",
-    "minPrice": 249703945,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-27",
-    "minPrice": 185087723,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-01",
-    "minPrice": 137192326,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-06",
-    "minPrice": 101690885,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-10",
-    "minPrice": 75376200,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "-분묘 소재 불분명(분묘 소재시 분묘기지권 성립여지 있음). -지상 소재 소나무 기타 자연생 입목 포함 평가."
- },
- {
-  "id": "gyeongnam-2024타경30996-2",
-  "court": "통영지원",
-  "caseNo": "2024타경30996",
-  "itemNo": "2",
-  "category": "토지",
-  "address": "경상남도 거제시 거제면 옥산리 산58-14",
-  "region": "경남",
-  "district": "거제시",
-  "appraisalPrice": 36487200,
-  "minPrice": 4486000,
-  "priceRatio": 0.1229,
-  "failCount": 7,
-  "saleDate": "2026-09-14",
-  "saleTime": "10:00",
-  "courtRoom": "제210호경매법정",
-  "deposit": 448600,
-  "areaBuilding": null,
-  "areaLand": 3966,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-12-08",
-    "minPrice": 36487200,
-    "result": "신건"
-   },
-   {
-    "date": "2026-01-12",
-    "minPrice": 36487200,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-16",
-    "minPrice": 27045833,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-23",
-    "minPrice": 20047498,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-27",
-    "minPrice": 14860041,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-01",
-    "minPrice": 11014881,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-06",
-    "minPrice": 8164689,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-10",
-    "minPrice": 6052007,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "-분묘 소재 불분명(분묘 소재시 분묘기지권 성립여지 있음). -지상 소재 소나무 기타 자연생 입목 포함 평가."
- },
- {
   "id": "gyeongnam-2024타경31388-1",
   "court": "통영지원",
   "caseNo": "2024타경31388",
@@ -3210,146 +3130,6 @@
   "specialNote": null
  },
  {
-  "id": "gyeongnam-2024타경5935-1",
-  "court": "진주지원",
-  "caseNo": "2024타경5935",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "경상남도 산청군 단성면 방목리 914-8",
-  "region": "경남",
-  "district": "산청군",
-  "appraisalPrice": 496165000,
-  "minPrice": 72838000,
-  "priceRatio": 0.1468,
-  "failCount": 8,
-  "saleDate": "2026-09-14",
-  "saleTime": "10:00",
-  "courtRoom": "제101호법정",
-  "deposit": 7283800,
-  "areaBuilding": 3847,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-11-03",
-    "minPrice": 496165000,
-    "result": "신건"
-   },
-   {
-    "date": "2025-12-08",
-    "minPrice": 496165000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-01-12",
-    "minPrice": 390362069,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-16",
-    "minPrice": 307120706,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-23",
-    "minPrice": 241629849,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-27",
-    "minPrice": 190104356,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-01",
-    "minPrice": 149566233,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-06",
-    "minPrice": 117672516,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-10",
-    "minPrice": 92579861,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "- 일괄매각 - 목록1. 산청군으로부터 단독주택 신축 및 진입도로 개설허가를 득한 사실이 있으므로 관할행정관서 확인요함 - 목록1.2. 지목은 임야이나, 현황 임야 및 일부 구거 등 상태임 - 육안으로 확인되지 않는 분묘 소재할 수 있음"
- },
- {
-  "id": "gyeongnam-2024타경5935-2",
-  "court": "진주지원",
-  "caseNo": "2024타경5935",
-  "itemNo": "2",
-  "category": "기타",
-  "address": "경상남도 산청군 단성면 방목리 950-1",
-  "region": "경남",
-  "district": "산청군",
-  "appraisalPrice": 990514600,
-  "minPrice": 145408000,
-  "priceRatio": 0.1468,
-  "failCount": 8,
-  "saleDate": "2026-09-14",
-  "saleTime": "10:00",
-  "courtRoom": "제101호법정",
-  "deposit": 14540800,
-  "areaBuilding": 9465,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-11-03",
-    "minPrice": 990514600,
-    "result": "신건"
-   },
-   {
-    "date": "2025-12-08",
-    "minPrice": 990514600,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-01-12",
-    "minPrice": 779294855,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-16",
-    "minPrice": 613116122,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-23",
-    "minPrice": 482373747,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-27",
-    "minPrice": 379511195,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-01",
-    "minPrice": 298583303,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-06",
-    "minPrice": 234912673,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-10",
-    "minPrice": 184819322,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "- 일괄매각. 제시외건물 [감정상 ㄷ,ㄹ,ㅁ] 및 제시외수목[감정서상 a,b] 매각포함 - 제시외건물 [감정서상 ㄱ,ㄴ] 매각제외 (최저매각가격은 제시외건물로 인하여 제한받는 가격임) - 이설 및 철거 가능한 이동식 창고, 견사, 철제구조물 평가제외 - 목록6. 농지가 아니라는 사실을 증명하거나 농지취득자격증명원 제출을 요함 (미제출시 보증금 몰수) - 목록4.6. 산청군으로부터 단독주택 신축 및 진입도로 개설허가를 득한 사실이 있으므로 관할행정관서 확인요함 - 목록4.6. 현황 일부 토목공사된 부지 등임 [목록6. 도로부분 감안평가] - 육안으로 확인되지 않는 분묘 소재할 수 있음"
- },
- {
   "id": "gyeongnam-2024타경6631-1",
   "court": "진주지원",
   "caseNo": "2024타경6631",
@@ -3533,66 +3313,6 @@
    }
   ],
   "specialNote": "- 일괄매각 - 목록1. 제시외건물[감정서상 (ㄱ), (ㄴ)] 매각제외"
- },
- {
-  "id": "gyeongnam-2025타경20088-1",
-  "court": "통영지원",
-  "caseNo": "2025타경20088",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경상남도 거제시 동부면 가배리 871-2",
-  "region": "경남",
-  "district": "거제시",
-  "appraisalPrice": 463262000,
-  "minPrice": 54502000,
-  "priceRatio": 0.1176,
-  "failCount": 6,
-  "saleDate": "2026-09-14",
-  "saleTime": "10:00",
-  "courtRoom": "2층210호경매법정",
-  "deposit": 5450200,
-  "areaBuilding": null,
-  "areaLand": 2455,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-01-12",
-    "minPrice": 463262000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-02-16",
-    "minPrice": 463262000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-23",
-    "minPrice": 324283092,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-27",
-    "minPrice": 226997948,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-01",
-    "minPrice": 158898413,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-06",
-    "minPrice": 111228783,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-10",
-    "minPrice": 77860074,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "일괄매각. 농지취득자격증명원 제출 요함(미제출시 보증금 미반환). 지적경계가 불분명한 바, 명확한 경계확정은 측량 요함. [목록1] 일부 '도로' 이용 중, 감안하여 평가함. [목록1] 지상 소재 제시외 물건(감정서상 ㄱ. 지하수시설)매각 포함."
  },
  {
   "id": "gyeongnam-2025타경20484-1",
@@ -3853,76 +3573,6 @@
    }
   ],
   "specialNote": "- 농지취득자격증명원 필요(미제출시 보증금 미반환). 제시외 수목(감정서상㉠) 매각포함. - 공부상 '전'이나 대체로 휴경지임. 일부 현황 도로, 인접지 지상 폐가(타인 소유의 제시외 건물) 일부 및 전신주 소재함. - 인접지 토지 지적경계 불명확하여 지적측량 필요함. - 지상 소재 자연생 수목 등은 포함 평가, 육안으로 확인이 어려운 분묘 소재 가능성 있음(분묘 소재시 분묘기지권 성립여지 있음). -2025.10.17.자로 행정구역명칭이 '삼덕리'에서 '당포리'로 변경됨(2026.3.11. 등기)"
- },
- {
-  "id": "gyeongnam-2025타경21020-1",
-  "court": "통영지원",
-  "caseNo": "2025타경21020",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경상남도 거제시 일운면 지세포리 383",
-  "region": "경남",
-  "district": "거제시",
-  "appraisalPrice": 139360000,
-  "minPrice": 11992000,
-  "priceRatio": 0.0861,
-  "failCount": 8,
-  "saleDate": "2026-09-14",
-  "saleTime": "10:00",
-  "courtRoom": "2층210호경매법정",
-  "deposit": 1199200,
-  "areaBuilding": null,
-  "areaLand": 1742,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-11-03",
-    "minPrice": 139360000,
-    "result": "신건"
-   },
-   {
-    "date": "2025-12-08",
-    "minPrice": 139360000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-01-12",
-    "minPrice": 102561018,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-16",
-    "minPrice": 75479064,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-23",
-    "minPrice": 55548290,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-27",
-    "minPrice": 40880376,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-01",
-    "minPrice": 30085627,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-06",
-    "minPrice": 22141307,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-10",
-    "minPrice": 16294740,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "농지취득자격증명원 제출 요함(미제출시 보증금 미반환). 지적도상 맹지임."
  },
  {
   "id": "gyeongnam-2025타경21214-1",
@@ -4623,61 +4273,6 @@
    }
   ],
   "specialNote": "-일괄매각. -농지취득자격증명원 제출 요함(미제출시 보증금 미반환). -분묘 소재 불분명(분묘 소재시 분묘기지권 성립여지 있음). 지적경계가 불분명한 바, 명확한 경계확정은 측량 요함. 지상 소재 잡목 포함 평가. -지적도상 맹지임. 일부 토목작업 중단되어 '휴경지' 상태임."
- },
- {
-  "id": "gyeongnam-2025타경606-1",
-  "court": "진주지원",
-  "caseNo": "2025타경606",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경상남도 사천시 곤양면 대진리 1187",
-  "region": "경남",
-  "district": "사천시",
-  "appraisalPrice": 129675000,
-  "minPrice": 21795000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-09-14",
-  "saleTime": "10:00",
-  "courtRoom": "제101호법정",
-  "deposit": 2179500,
-  "areaBuilding": null,
-  "areaLand": 23,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-02-16",
-    "minPrice": 129675000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-23",
-    "minPrice": 129675000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-27",
-    "minPrice": 90772935,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-01",
-    "minPrice": 63541360,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-06",
-    "minPrice": 44479165,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-10",
-    "minPrice": 31135565,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "- 일괄매각 - 육안으로 확인되지 않는 분묘 소재할 수 있음 - 농지가 아니라는 사실을 증명하거나 농지취득자격증명원 제출을 요함 (미제출시 보증금 몰수)"
  },
  {
   "id": "gyeongnam-2025타경627-1",
@@ -5563,66 +5158,6 @@
    }
   ],
   "specialNote": "지분매각(공유자우선매수권 행사는 1회에 한함). 농지취득자격증명 필요함(미제출시 보증금 몰수). 농경지(대부분 휴경지)로 이용 중임. 경제적 가치 희박한 활・잡목 등이 자생하며, 지적도상 맹지임."
- },
- {
-  "id": "gyeongnam-2024타경105962-1",
-  "court": "마산지원",
-  "caseNo": "2024타경105962",
-  "itemNo": "1",
-  "category": "상가",
-  "address": "경상남도 창원시 마산합포구 해안대로 367 1층112-1호 (동성동,호텔엠에스)",
-  "region": "경남",
-  "district": "창원시 마산합포구",
-  "appraisalPrice": 725000000,
-  "minPrice": 127322000,
-  "priceRatio": 0.1756,
-  "failCount": 6,
-  "saleDate": "2026-09-17",
-  "saleTime": "10:00",
-  "courtRoom": "마산지원법정제122호",
-  "deposit": 12732200,
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-01-15",
-    "minPrice": 725000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-02-19",
-    "minPrice": 725000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-26",
-    "minPrice": 542540605,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-30",
-    "minPrice": 406000425,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 303823057,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 227360476,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 170141090,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "일괄매각. 목록1, 2는 경계벽체 구분 없이 일단의 관광숙박시설(상호: 뉴엠가라오케)로 이용 중이며, 목록1은 복층형의 구조임."
  },
  {
   "id": "gyeongnam-2024타경106330-1",
