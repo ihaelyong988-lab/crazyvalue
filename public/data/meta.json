@@ -1,5 +1,5 @@
 {
- "crawledAt": "2026-09-12T05:27:52+09:00",
+ "crawledAt": "2026-09-14T05:20:56+09:00",
  "totalCount": 1000,
  "countsByRegion": {
   "seoul": 30,
@@ -11,35 +11,35 @@
   "ulsan": 39,
   "sejong": 13,
   "gyeonggi": 298,
-  "gangwon": 32,
+  "gangwon": 33,
   "chungbuk": 48,
   "chungnam": 65,
   "jeonbuk": 12,
-  "jeonnam": 60,
+  "jeonnam": 59,
   "gyeongbuk": 66,
   "gyeongnam": 127,
   "jeju": 16
  },
- "nextUpdateAt": "2026-09-13T03:00:00+09:00",
- "newCount": 156,
+ "nextUpdateAt": "2026-09-15T03:00:00+09:00",
+ "newCount": 1,
  "scope": null,
  "aborted": false,
  "abortReason": null,
  "abortedAtRequest": null,
- "totalRequests": 149,
- "truncated": 2942,
+ "totalRequests": 189,
+ "truncated": 3674,
  "detailCoverage": {
-  "candidates": 2942,
+  "candidates": 3674,
   "requested": 0,
   "succeeded": 0
  },
  "historySource": {
   "real": 0,
-  "backcalc": 3377
+  "backcalc": 4177
  },
- "dedupDropped": 2480,
+ "dedupDropped": 3259,
  "invalidDropped": 0,
- "cappedFrom": 3373,
+ "cappedFrom": 4166,
  "outputCap": 1000,
  "outputDateSpread": 5,
  "sourceLastSaleDate": "2026-09-18",
@@ -57,9 +57,9 @@
   "chungbuk": 286,
   "chungnam": 175,
   "jeonbuk": 97,
-  "jeonnam": 368,
+  "jeonnam": 366,
   "gyeongbuk": 188,
-  "gyeongnam": 347,
+  "gyeongnam": 345,
   "jeju": 111
  }
 }
