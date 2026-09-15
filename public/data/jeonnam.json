@@ -550,6 +550,96 @@
   "specialNote": "- 지분매각, 특별매각조건 있음(공유자우선매수권 1회로 제한) - 지상에 분묘 및 상석 등이 소재함, 매각제외 - 감정가는 분묘 소재로 소유권 제한시 가격임 - 지상에 분묘 주위 수목(백일홍나무 등)이 소재, 매각 제외"
  },
  {
+  "id": "jeonnam-2025타경31718-1",
+  "court": "광주지방법원",
+  "caseNo": "2025타경31718",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "전라남도 나주시 배멧1길 30-1 3층303호 (빛가람동,가람로자벨빌딩주건축물제1동)",
+  "region": "전남",
+  "district": "나주시",
+  "appraisalPrice": 233000000,
+  "minPrice": 104384000,
+  "priceRatio": 0.448,
+  "failCount": 3,
+  "saleDate": "2026-09-16",
+  "saleTime": "10:00",
+  "courtRoom": "입찰법정",
+  "deposit": 10438400,
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-29",
+    "minPrice": 233000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-03",
+    "minPrice": 233000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-08",
+    "minPrice": 178285186,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-12",
+    "minPrice": 136418917,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 공부상 용도는 의원이며, 공실 상태임"
+ },
+ {
+  "id": "jeonnam-2025타경31718-2",
+  "court": "광주지방법원",
+  "caseNo": "2025타경31718",
+  "itemNo": "2",
+  "category": "오피스텔",
+  "address": "전라남도 나주시 배멧1길 30-1 4층402호 (빛가람동,가람로자벨빌딩주건축물제1동)",
+  "region": "전남",
+  "district": "나주시",
+  "appraisalPrice": 281000000,
+  "minPrice": 125888000,
+  "priceRatio": 0.448,
+  "failCount": 3,
+  "saleDate": "2026-09-16",
+  "saleTime": "10:00",
+  "courtRoom": "입찰법정",
+  "deposit": 12588800,
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-29",
+    "minPrice": 281000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-03",
+    "minPrice": 281000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-08",
+    "minPrice": 215013465,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-12",
+    "minPrice": 164522385,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 공부상 용도는 의원이며, 공실 상태임"
+ },
+ {
   "id": "jeonnam-2025타경31718-3",
   "court": "광주지방법원",
   "caseNo": "2025타경31718",
@@ -594,6 +684,51 @@
    {
     "date": "2026-08-12",
     "minPrice": 91252159,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 공부상 용도는 의원이며, 공실 상태임"
+ },
+ {
+  "id": "jeonnam-2025타경31718-4",
+  "court": "광주지방법원",
+  "caseNo": "2025타경31718",
+  "itemNo": "4",
+  "category": "오피스텔",
+  "address": "전라남도 나주시 배멧1길 30-1 5층503호 (빛가람동,가람로자벨빌딩주건축물제1동)",
+  "region": "전남",
+  "district": "나주시",
+  "appraisalPrice": 383000000,
+  "minPrice": 171584000,
+  "priceRatio": 0.448,
+  "failCount": 3,
+  "saleDate": "2026-09-16",
+  "saleTime": "10:00",
+  "courtRoom": "입찰법정",
+  "deposit": 17158400,
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-29",
+    "minPrice": 383000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-03",
+    "minPrice": 383000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-08",
+    "minPrice": 293061057,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-12",
+    "minPrice": 224242254,
     "result": "유찰"
    }
   ],
@@ -1968,5 +2103,805 @@
    }
   ],
   "specialNote": "제시외 수목 매각 포함 인접필지(양매리 918-2, 918-3) 지상에 소재하는 타인 소유의 건물이 일부 걸쳐있음 지적도상 맹지이나 인접 타인 필지를 통하여 출입 가능"
+ },
+ {
+  "id": "jeonnam-2025타경31329-1",
+  "court": "광주지방법원",
+  "caseNo": "2025타경31329",
+  "itemNo": "1",
+  "category": "상가",
+  "address": "전라남도 나주시 배멧2길 25 1층119호 (빛가람동,스페이스코웍)",
+  "region": "전남",
+  "district": "나주시",
+  "appraisalPrice": 992000000,
+  "minPrice": 116503000,
+  "priceRatio": 0.1174,
+  "failCount": 9,
+  "saleDate": "2026-09-22",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 11650300,
+  "areaBuilding": 63,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-10-07",
+    "minPrice": 992000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-11",
+    "minPrice": 992000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-16",
+    "minPrice": 781913917,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-20",
+    "minPrice": 616319933,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-24",
+    "minPrice": 485795496,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-31",
+    "minPrice": 382913568,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-05",
+    "minPrice": 301820008,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-09",
+    "minPrice": 237900468,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-14",
+    "minPrice": 187517829,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-18",
+    "minPrice": 147805242,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "일괄매각 본건 목록 1. 119호와 2. 120호 구분건물은 경계벽 구분없이 이용중인 구분건물로 건축물현황도를 기준으로 위치를 특정함"
+ },
+ {
+  "id": "jeonnam-2025타경31329-2",
+  "court": "광주지방법원",
+  "caseNo": "2025타경31329",
+  "itemNo": "2",
+  "category": "상가",
+  "address": "전라남도 나주시 배멧2길 25 1층121호 (빛가람동,스페이스코웍)",
+  "region": "전남",
+  "district": "나주시",
+  "appraisalPrice": 1488000000,
+  "minPrice": 174752000,
+  "priceRatio": 0.1174,
+  "failCount": 9,
+  "saleDate": "2026-09-22",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 17475200,
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-10-07",
+    "minPrice": 1488000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-11",
+    "minPrice": 1488000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-16",
+    "minPrice": 1172869011,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-20",
+    "minPrice": 924476960,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-24",
+    "minPrice": 728689770,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-31",
+    "minPrice": 574366700,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-05",
+    "minPrice": 452726413,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-09",
+    "minPrice": 356847299,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-14",
+    "minPrice": 281273614,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-18",
+    "minPrice": 221705044,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "일괄매각 본건 목록 3. 121호, 4. 122호, 5. 123호 구분건물은 경계벽 구분없이 이용중인 구분건물로 건축물현황도를 기준으로 위치를 특정함"
+ },
+ {
+  "id": "jeonnam-2025타경32037-1",
+  "court": "광주지방법원",
+  "caseNo": "2025타경32037",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "전라남도 담양군 담양읍 학동리 430",
+  "region": "전남",
+  "district": "담양군",
+  "appraisalPrice": 126021000,
+  "minPrice": 11841000,
+  "priceRatio": 0.094,
+  "failCount": 10,
+  "saleDate": "2026-09-22",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 1184100,
+  "areaBuilding": 357,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-09-02",
+    "minPrice": 126021000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-10-07",
+    "minPrice": 126021000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-11-11",
+    "minPrice": 99480387,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-16",
+    "minPrice": 78529352,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-20",
+    "minPrice": 61990703,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-24",
+    "minPrice": 48935170,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-31",
+    "minPrice": 38629194,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-05",
+    "minPrice": 30493705,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-09",
+    "minPrice": 24071588,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-14",
+    "minPrice": 19001999,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-18",
+    "minPrice": 15000089,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "본건 토지 지상에 소재하는 제시외 건물 분리수거장, 창고는 각 매각 제외 본건 토지 일부 지상 및 인접지에 소재하는 이동가능한 컨테이너 2동 매각 제외"
+ },
+ {
+  "id": "jeonnam-2025타경32892-4",
+  "court": "광주지방법원",
+  "caseNo": "2025타경32892",
+  "itemNo": "4",
+  "category": "토지",
+  "address": "전라남도 화순군 동면 서성리 198-27",
+  "region": "전남",
+  "district": "화순군",
+  "appraisalPrice": 146370000,
+  "minPrice": 33575000,
+  "priceRatio": 0.2294,
+  "failCount": 6,
+  "saleDate": "2026-09-22",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 3357500,
+  "areaBuilding": null,
+  "areaLand": 697,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-01-20",
+    "minPrice": 146370000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-24",
+    "minPrice": 146370000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-31",
+    "minPrice": 114519488,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-05",
+    "minPrice": 89599734,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-09",
+    "minPrice": 70102587,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-14",
+    "minPrice": 54848073,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-18",
+    "minPrice": 42912982,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "농지취득자격증명 요함(미제출시 매수보증금 반환하지 않음), 원상회복명령 발하여질 가능성 있음(사실조회회신 참조) 본건 토지는 포장도로에 접하나 본건 토지로 직접 진입은 곤란한 것으로 조사됨"
+ },
+ {
+  "id": "jeonnam-2025타경32892-5",
+  "court": "광주지방법원",
+  "caseNo": "2025타경32892",
+  "itemNo": "5",
+  "category": "토지",
+  "address": "전남광주통합특별시 화순군 동면 서성리 198-39",
+  "region": "전남",
+  "district": "화순군",
+  "appraisalPrice": 158260000,
+  "minPrice": 23234000,
+  "priceRatio": 0.1468,
+  "failCount": 8,
+  "saleDate": "2026-09-22",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 2323400,
+  "areaBuilding": null,
+  "areaLand": 772,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-11-11",
+    "minPrice": 158260000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-16",
+    "minPrice": 158260000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-20",
+    "minPrice": 124513163,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-24",
+    "minPrice": 97962389,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-31",
+    "minPrice": 77073214,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-05",
+    "minPrice": 60638378,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-09",
+    "minPrice": 47708051,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-14",
+    "minPrice": 37534945,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-18",
+    "minPrice": 29531118,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "농지취득자격증명 요함(미제출시 매수보증금 반환하지 않음), 원상회복명령 발하여질 가능성 있음(사실조회회신 참조) 본건 토지는 포장도로에 접하나 본건 토지로 직접 진입은 곤란한 것으로 조사됨"
+ },
+ {
+  "id": "jeonnam-2025타경33467-1",
+  "court": "광주지방법원",
+  "caseNo": "2025타경33467",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "전라남도 담양군 담양읍 학동리 706",
+  "region": "전남",
+  "district": "담양군",
+  "appraisalPrice": 2376424000,
+  "minPrice": 681370000,
+  "priceRatio": 0.2867,
+  "failCount": 5,
+  "saleDate": "2026-09-22",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 68137000,
+  "areaBuilding": null,
+  "areaLand": 4678,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-24",
+    "minPrice": 2376424000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-31",
+    "minPrice": 2376424000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-05",
+    "minPrice": 1851039752,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-09",
+    "minPrice": 1441808432,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-14",
+    "minPrice": 1123050736,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-18",
+    "minPrice": 874764585,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "본건 토지의 지적경계가 불분명하여 정확한 위치 및 경계는 측량을 요함"
+ },
+ {
+  "id": "jeonnam-2025타경33844-1",
+  "court": "광주지방법원",
+  "caseNo": "2025타경33844",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "전라남도 나주시 동강면 월양리 252",
+  "region": "전남",
+  "district": "나주시",
+  "appraisalPrice": 767588000,
+  "minPrice": 220084000,
+  "priceRatio": 0.2867,
+  "failCount": 5,
+  "saleDate": "2026-09-22",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 22008400,
+  "areaBuilding": 1007,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-24",
+    "minPrice": 767588000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-31",
+    "minPrice": 767588000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-05",
+    "minPrice": 597888549,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-09",
+    "minPrice": 465706494,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-14",
+    "minPrice": 362747437,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-18",
+    "minPrice": 282550716,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "일괄매각(기계・기구 포함) 목록 1, 3 토지 농지취득자격증명 제출 요함(미제출시 보증금 미반환)(사실조회회신 참조) 조사시점 본건 목록 2, 4 건물의 전기계량기는 철거된 상태로 조사됨 [2025타경33844, 목록 1, 2] 공장 및 광업재단 저당법 제6조 기계・기구 인삼재배설비 1식 포함 (감정평가서 참조) 본건 기계기구 목록상 일련번호 냉각기 ③ (1-3 : 냉각기) 중 일부(약 3ea)는 소재불명, 일련번호 (1-5 :온풍기) 중 1ea는 소재불명, 1ea는 일부 부품이 철거된 상태이고, 일련번호 (1-6 : LED 조명)은 일부 확인이 불가능하여 기계기구 명세표상의 수량과 차이가 발생할 수도 있는 것으로 조사됨 [2025타경33845, 목록 3, 4] 공장 및 광업재단 저당법 제6조 기계・기구 인삼재배설비 1식 포함 (감정평가서 참조) 목록 3. 토지 지상에 소재하는 관정 매각 포함"
+ },
+ {
+  "id": "jeonnam-2025타경3508-1",
+  "court": "광주지방법원",
+  "caseNo": "2025타경3508",
+  "itemNo": "1",
+  "category": "상가",
+  "address": "전라남도 나주시 빛가람동 284-2 가람로자벨빌딩주건축물제1동 1층110호",
+  "region": "전남",
+  "district": "나주시",
+  "appraisalPrice": 209000000,
+  "minPrice": 59925000,
+  "priceRatio": 0.2867,
+  "failCount": 5,
+  "saleDate": "2026-09-22",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 5992500,
+  "areaBuilding": 45.54,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-24",
+    "minPrice": 209000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-31",
+    "minPrice": 209000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-05",
+    "minPrice": 162794091,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-09",
+    "minPrice": 126803426,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-14",
+    "minPrice": 98769610,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-18",
+    "minPrice": 76933536,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "jeonnam-2025타경3508-2",
+  "court": "광주지방법원",
+  "caseNo": "2025타경3508",
+  "itemNo": "2",
+  "category": "상가",
+  "address": "전라남도 나주시 빛가람동 284-2 가람로자벨빌딩주건축물제1동 3층304호",
+  "region": "전남",
+  "district": "나주시",
+  "appraisalPrice": 216000000,
+  "minPrice": 61932000,
+  "priceRatio": 0.2867,
+  "failCount": 5,
+  "saleDate": "2026-09-22",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 6193200,
+  "areaBuilding": 149.08,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-24",
+    "minPrice": 216000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-31",
+    "minPrice": 216000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-05",
+    "minPrice": 168246494,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-09",
+    "minPrice": 131050382,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-14",
+    "minPrice": 102077627,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-18",
+    "minPrice": 79510198,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "jeonnam-2025타경3508-3",
+  "court": "광주지방법원",
+  "caseNo": "2025타경3508",
+  "itemNo": "3",
+  "category": "상가",
+  "address": "전라남도 나주시 빛가람동 284-2 가람로자벨빌딩주건축물제1동 4층403호",
+  "region": "전남",
+  "district": "나주시",
+  "appraisalPrice": 175000000,
+  "minPrice": 50176000,
+  "priceRatio": 0.2867,
+  "failCount": 5,
+  "saleDate": "2026-09-22",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 5017600,
+  "areaBuilding": 128.35,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-24",
+    "minPrice": 175000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-31",
+    "minPrice": 175000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-05",
+    "minPrice": 136310605,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-09",
+    "minPrice": 106174749,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-14",
+    "minPrice": 82701396,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-18",
+    "minPrice": 64417585,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "jeonnam-2025타경3508-4",
+  "court": "광주지방법원",
+  "caseNo": "2025타경3508",
+  "itemNo": "4",
+  "category": "상가",
+  "address": "전라남도 나주시 빛가람동 284-2 가람로자벨빌딩주건축물제1동 4층404호",
+  "region": "전남",
+  "district": "나주시",
+  "appraisalPrice": 253000000,
+  "minPrice": 72541000,
+  "priceRatio": 0.2867,
+  "failCount": 5,
+  "saleDate": "2026-09-22",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 7254100,
+  "areaBuilding": 185.62,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-24",
+    "minPrice": 253000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-31",
+    "minPrice": 253000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-05",
+    "minPrice": 197066646,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-09",
+    "minPrice": 153499063,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-14",
+    "minPrice": 119563421,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-18",
+    "minPrice": 93130286,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "jeonnam-2025타경3508-5",
+  "court": "광주지방법원",
+  "caseNo": "2025타경3508",
+  "itemNo": "5",
+  "category": "상가",
+  "address": "전라남도 나주시 빛가람동 284-2 가람로자벨빌딩주건축물제1동 5층502호",
+  "region": "전남",
+  "district": "나주시",
+  "appraisalPrice": 285000000,
+  "minPrice": 81716000,
+  "priceRatio": 0.2867,
+  "failCount": 5,
+  "saleDate": "2026-09-22",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 8171600,
+  "areaBuilding": 209.59,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-24",
+    "minPrice": 285000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-31",
+    "minPrice": 285000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-05",
+    "minPrice": 221991992,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-09",
+    "minPrice": 172913840,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-14",
+    "minPrice": 134685922,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-18",
+    "minPrice": 104909460,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "jeonnam-2025타경5610-1",
+  "court": "광주지방법원",
+  "caseNo": "2025타경5610",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "전라남도 영광군 대마면 송죽리 1016-1",
+  "region": "전남",
+  "district": "영광군",
+  "appraisalPrice": 7528280600,
+  "minPrice": 2158510000,
+  "priceRatio": 0.2867,
+  "failCount": 5,
+  "saleDate": "2026-09-22",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 215851000,
+  "areaBuilding": 16529.3,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-24",
+    "minPrice": 7528280600,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-31",
+    "minPrice": 7528280600,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-05",
+    "minPrice": 5863912098,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-09",
+    "minPrice": 4567505772,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-14",
+    "minPrice": 3557711751,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-18",
+    "minPrice": 2771165169,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "일괄매각(제시외 건물 포함 매각) 제시외 태양광 발전설비 500KW 2식 매각 제외 현황조사보고서에 의하면 본건 건물 중 목록 3., 목록 6 건물 내부에 폐기물로 추정되는 물건이 방치된 것으로 조사됨 특별매각조건(목록 2 내지 6건물에 대하여) : 최고가매수신고인 지방자치단체 보조금의 관리에 관한 법률 제21조 및 영광군 보조금 관리 조례 제27조에 따라 지방자치단체장(영광군수)의 승인서를 제출해야 함, 최고가매수신고인이 매각결정기일까지 지방자치단체장(영광군수)의 승인서를 제출하지 아니함으로써 매각불허가결정이 된 때에는 매수신청보증금을 반환하지 않고 이를 배당할 금액에 산입함."
  }
 ]
