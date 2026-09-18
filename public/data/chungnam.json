@@ -530,6 +530,51 @@
   "specialNote": null
  },
  {
+  "id": "chungnam-2026타경10461-1",
+  "court": "천안지원",
+  "caseNo": "2026타경10461",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "사용본거지 : 서귀포시 안덕면 산방로 433",
+  "region": "충남",
+  "district": "안덕면",
+  "appraisalPrice": 9500000,
+  "minPrice": 3259000,
+  "priceRatio": 0.3431,
+  "failCount": 3,
+  "saleDate": "2026-09-21",
+  "saleTime": "10:00",
+  "courtRoom": "제101호법정(3번출입구)",
+  "deposit": 325900,
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-04",
+    "minPrice": 9500000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-08",
+    "minPrice": 9500000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 6650340,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 4655476,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
   "id": "chungnam-2023타경51586-1",
   "court": "서산지원",
   "caseNo": "2023타경51586",

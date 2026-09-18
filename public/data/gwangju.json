@@ -400,56 +400,6 @@
   "specialNote": "오피스텔로 이용중임"
  },
  {
-  "id": "gwangju-2025타경33392-1",
-  "court": "광주지방법원",
-  "caseNo": "2025타경33392",
-  "itemNo": "1",
-  "category": "상가",
-  "address": "광주광역시 서구 쌍촌동 1385 상무한국아델리움 131동 2층204호",
-  "region": "광주",
-  "district": "서구",
-  "appraisalPrice": 827000000,
-  "minPrice": 296397000,
-  "priceRatio": 0.3584,
-  "failCount": 4,
-  "saleDate": "2026-09-22",
-  "saleTime": "09:55",
-  "courtRoom": "입찰법정",
-  "deposit": 29639700,
-  "areaBuilding": 107.0446,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-31",
-    "minPrice": 827000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-05",
-    "minPrice": 827000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-09",
-    "minPrice": 639878596,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-14",
-    "minPrice": 495096272,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-18",
-    "minPrice": 383073165,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "일괄매각 임차인 이**이 목록 1. 204호 전부 및 목록 2. 203호 일부를 일체로 이용중임"
- },
- {
   "id": "gwangju-2025타경33737-1",
   "court": "광주지방법원",
   "caseNo": "2025타경33737",
@@ -818,96 +768,6 @@
    }
   ],
   "specialNote": "본건 건물의 대지권의 목적인 토지가 2017. 3. 16.분할되어 면적이 2,772㎡로 변경되었으나, 부동산등기사항증명서의 대지권의 표시란의 대지권 비율이 변경되지 않아 공부상 정리가 요하는 것으로 조사됨 2026. 4. 30. 정정・변경"
- },
- {
-  "id": "gwangju-2025타경34366-2",
-  "court": "광주지방법원",
-  "caseNo": "2025타경34366",
-  "itemNo": "2",
-  "category": "토지",
-  "address": "광주광역시 남구 이장동 835-4",
-  "region": "광주",
-  "district": "남구",
-  "appraisalPrice": 198512000,
-  "minPrice": 88935000,
-  "priceRatio": 0.448,
-  "failCount": 3,
-  "saleDate": "2026-09-22",
-  "saleTime": "09:55",
-  "courtRoom": "입찰법정",
-  "deposit": 8893500,
-  "areaBuilding": null,
-  "areaLand": 1306,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-05",
-    "minPrice": 198512000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-09",
-    "minPrice": 198512000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-14",
-    "minPrice": 151896843,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-18",
-    "minPrice": 116227990,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "농지취득자격증명 요함(미제출시 매수보증금 반환하지 않음)"
- },
- {
-  "id": "gwangju-2025타경34366-3",
-  "court": "광주지방법원",
-  "caseNo": "2025타경34366",
-  "itemNo": "3",
-  "category": "토지",
-  "address": "광주광역시 남구 이장동 835-5",
-  "region": "광주",
-  "district": "남구",
-  "appraisalPrice": 224048000,
-  "minPrice": 100375000,
-  "priceRatio": 0.448,
-  "failCount": 3,
-  "saleDate": "2026-09-22",
-  "saleTime": "09:55",
-  "courtRoom": "입찰법정",
-  "deposit": 10037500,
-  "areaBuilding": null,
-  "areaLand": 1474,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-05",
-    "minPrice": 224048000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-09",
-    "minPrice": 224048000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-14",
-    "minPrice": 171436214,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-18",
-    "minPrice": 131178924,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "농지취득자격증명 요함(미제출시 매수보증금 반환하지 않음)"
  },
  {
   "id": "gwangju-2025타경34496-1",
@@ -1540,6 +1400,141 @@
   "specialNote": "오피스텔로 이용중임"
  },
  {
+  "id": "gwangju-2026타경30041-1",
+  "court": "광주지방법원",
+  "caseNo": "2026타경30041",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "광주광역시 북구 신안동 121-2 광주역한국아델리움 10층1024호",
+  "region": "광주",
+  "district": "북구",
+  "appraisalPrice": 236000000,
+  "minPrice": 105728000,
+  "priceRatio": 0.448,
+  "failCount": 3,
+  "saleDate": "2026-09-22",
+  "saleTime": "10:00",
+  "courtRoom": "입찰법정",
+  "deposit": 10572800,
+  "areaBuilding": 48.9949,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-05",
+    "minPrice": 236000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-09",
+    "minPrice": 236000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-14",
+    "minPrice": 180580704,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-18",
+    "minPrice": 138175384,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "오피스텔로 이용중임"
+ },
+ {
+  "id": "gwangju-2026타경30089-1",
+  "court": "광주지방법원",
+  "caseNo": "2026타경30089",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "광주광역시 북구 신안동 121-2 광주역한국아델리움 15층 1514호",
+  "region": "광주",
+  "district": "북구",
+  "appraisalPrice": 221000000,
+  "minPrice": 99008000,
+  "priceRatio": 0.448,
+  "failCount": 3,
+  "saleDate": "2026-09-22",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 9900800,
+  "areaBuilding": 49.0765,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-05",
+    "minPrice": 221000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-09",
+    "minPrice": 221000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-14",
+    "minPrice": 169103117,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-18",
+    "minPrice": 129393050,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "오피스텔로 이용중임"
+ },
+ {
+  "id": "gwangju-2026타경30160-1",
+  "court": "광주지방법원",
+  "caseNo": "2026타경30160",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "광주광역시 북구 신안동 121-2 광주역한국아델리움 19층1905호",
+  "region": "광주",
+  "district": "북구",
+  "appraisalPrice": 216000000,
+  "minPrice": 96768000,
+  "priceRatio": 0.448,
+  "failCount": 3,
+  "saleDate": "2026-09-22",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 9676800,
+  "areaBuilding": 49.0765,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-05",
+    "minPrice": 216000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-09",
+    "minPrice": 216000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-14",
+    "minPrice": 165277254,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-18",
+    "minPrice": 126465605,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "오피스텔로 이용중임"
+ },
+ {
   "id": "gwangju-2024타경63350-2",
   "court": "광주지방법원",
   "caseNo": "2024타경63350",
@@ -1735,6 +1730,56 @@
   "specialNote": "- 공장[지원시설(기숙사)]으로 이용중임"
  },
  {
+  "id": "gwangju-2025타경32440-1",
+  "court": "광주지방법원",
+  "caseNo": "2025타경32440",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "광주광역시 남구 월산동 1016-6",
+  "region": "광주",
+  "district": "남구",
+  "appraisalPrice": 4573449500,
+  "minPrice": 2561132000,
+  "priceRatio": 0.56,
+  "failCount": 4,
+  "saleDate": "2026-09-23",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 256113200,
+  "areaBuilding": 782.1,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-01",
+    "minPrice": 4573449500,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-06",
+    "minPrice": 4573449500,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-10",
+    "minPrice": 3956315400,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-15",
+    "minPrice": 3422456408,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-19",
+    "minPrice": 2960635510,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 일괄매각(제시외 건물 포함) - 공장 및 광업재단 저당법 제6조 목록 기계기구(태양열설비) 및 제시외 기계기구(태양광설비) 매각 포함 - 목록 2. 엘리베이터 1기가 설치(2019.09.18.)되어 있음 - 목록 2. 공부상 구조 '철근콘크리트조 및 시멘트벽돌조 및 철골조 슬래브, 트러스지붕'이나, 현황은 '철근콘크리트조 및 시멘트벽돌조, 슬래브지붕'임 - 목록 2. 4층은 공부상 용도 '사무실'이나, 현황은 '주택'으로 이용중임 - 목록 2. 1층 중 증축된 철골조 트러스지붕 사무소 13.5㎡는 현황상 멸실로 추정됨"
+ },
+ {
   "id": "gwangju-2025타경33152-1",
   "court": "광주지방법원",
   "caseNo": "2025타경33152",
@@ -1898,6 +1943,46 @@
    }
   ],
   "specialNote": "- 연료 : 가솔린 - 주행거리 : 계기판상 147,142㎞임 - 유효검사기간 : 2024.11.08.~2026.11.07. - 색상 : 자동차등록원부상 '검정'이나, 현황 '은색'임 - 사고이력조회에 의하면 내차 피해 11회(78,739,890원), 상대방 피해 4회(3,083,158원) 있음 - 차체 및 휠에 흠집이 있고, 차량 내부 및 외부의 관리상태가 불량한 편임 - 운전석측 헤드램프에 습기가 차 있고, 계기판에 엔진 경고등이 들어온 바 정비가 필요하며, 방전된 상태임"
+ },
+ {
+  "id": "gwangju-2025타경34051-1",
+  "court": "광주지방법원",
+  "caseNo": "2025타경34051",
+  "itemNo": "1",
+  "category": "아파트",
+  "address": "광주광역시 북구 운암동 1782 센텀플로라에듀 제1층 제102호",
+  "region": "광주",
+  "district": "북구",
+  "appraisalPrice": 239000000,
+  "minPrice": 133840000,
+  "priceRatio": 0.56,
+  "failCount": 2,
+  "saleDate": "2026-09-23",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 13384000,
+  "areaBuilding": 57.75,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-06-10",
+    "minPrice": 239000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-15",
+    "minPrice": 239000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-19",
+    "minPrice": 178851223,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 감정평가서에 의하면 영업시설들이 잔존하나, 임대인의 것으로 보임"
  },
  {
   "id": "gwangju-2025타경4297-1",

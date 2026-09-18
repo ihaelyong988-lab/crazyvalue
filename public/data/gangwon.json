@@ -120,101 +120,6 @@
   "specialNote": "*공유자우선매수권 1회로 제한함 *현황상 '전' 등으로 사용되며, 목측상 일부가 마을 도로와 연접, 경제적 가치가 미미한 제시외 수목 수주 식재된 것으로 각 조사된 바, 별도 확인 요함"
  },
  {
-  "id": "gangwon-2025타경1111-1",
-  "court": "춘천지방법원",
-  "caseNo": "2025타경1111",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "강원특별자치도 홍천군 서면 굴업리 292",
-  "region": "강원",
-  "district": "홍천군",
-  "appraisalPrice": 3237633800,
-  "minPrice": 1110509000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-09-21",
-  "saleTime": "10:00",
-  "courtRoom": "경매법정(102호법정)",
-  "deposit": 111050900,
-  "areaBuilding": null,
-  "areaLand": 276,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-04",
-    "minPrice": 3237633800,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-08",
-    "minPrice": 3237633800,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-13",
-    "minPrice": 2266344073,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-17",
-    "minPrice": 1586441140,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "- 일괄매각 - 목록2~5. 농지취득자격증명 필요(미제출시 보증금 몰수, 불법 형질변경 또는 휴경으로 외어 있는 경우 원상회복명령이 발하여 질 수 있다는 서면장의 회신서 제출됨) - 목록3,4,9. 공부상 \"전및임야\"이나 일부 현황 \"도로\"임 - 목록3. 컨테이너 1개동 평가 및 매각 제외 - 목록9. 조경석, 조경수, 조명 등은 타인 소유로 확인인되는 바 매각 제외(2025.11.4.자 채권자 보정서 참조) - 목록1, 6~9. 분묘소재여부는 별도 확인 요망(분묘소재시 분묘기지권 성립여지 있음)"
- },
- {
-  "id": "gangwon-2025타경1432-1",
-  "court": "춘천지방법원",
-  "caseNo": "2025타경1432",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "강원특별자치도 춘천시 남산면 방곡리 466",
-  "region": "강원",
-  "district": "춘천시",
-  "appraisalPrice": 570538000,
-  "minPrice": 136987000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-09-21",
-  "saleTime": "10:00",
-  "courtRoom": "경매법정(102호법정)",
-  "deposit": 13698700,
-  "areaBuilding": null,
-  "areaLand": 893,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-30",
-    "minPrice": 570538000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-04",
-    "minPrice": 570538000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-08",
-    "minPrice": 399377202,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-13",
-    "minPrice": 279564463,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-17",
-    "minPrice": 195695419,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "- 일괄매각, 공부상 \"답\"이나 현황 \"전\"임 - 지적도상 맹지임 - 본건 농지취득자격증명 필요(미제출시 보증금 몰수)"
- },
- {
   "id": "gangwon-2025타경1913-1",
   "court": "춘천지방법원",
   "caseNo": "2025타경1913",
@@ -1298,6 +1203,51 @@
    }
   ],
   "specialNote": "- 추가 분묘소재여부는 별도 확인 요망(분묘소재시 분묘기지권 성립여지 있음) - 공유자 우선매수권 행사 1회로 제한"
+ },
+ {
+  "id": "gangwon-2026타경50048-1",
+  "court": "춘천지방법원",
+  "caseNo": "2026타경50048",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 화천군 간동면 방천리 1972",
+  "region": "강원",
+  "district": "화천군",
+  "appraisalPrice": 4273370,
+  "minPrice": 1466000,
+  "priceRatio": 0.3431,
+  "failCount": 3,
+  "saleDate": "2026-09-21",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(102호법정)",
+  "deposit": 146600,
+  "areaBuilding": null,
+  "areaLand": 1114,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-04",
+    "minPrice": 4273370,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-08",
+    "minPrice": 4273370,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 2991518,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 2094174,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 일괄매각 - 본건 지적도상 맹지임 - 농지취득자격증명 필요(미제출시 보증금 몰수, 전용허가없이 현황이 변경된 경우 원상회복명령이 발하여 질 수 있다는 간동면장의 회신서 제출됨) - 공유자 우선매수권 행사 1회로 제한. - 본건 임야화된 휴경지로 분묘소재여부는 별도 확인 요망(분묘소재시 분묘기지권 성립여지 있음)"
  },
  {
   "id": "gangwon-2025타경10189-1",

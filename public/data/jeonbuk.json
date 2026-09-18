@@ -1,5 +1,140 @@
 [
  {
+  "id": "jeonbuk-2025타경1038-1",
+  "court": "전주지방법원",
+  "caseNo": "2025타경1038",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "전북특별자치도 전주시 완산구 평화동1가 718-1 3층 302호",
+  "region": "전북",
+  "district": "전주시 완산구",
+  "appraisalPrice": 304000000,
+  "minPrice": 104272000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-09-21",
+  "saleTime": "10:00",
+  "courtRoom": "신청사제101호법정",
+  "deposit": 10427200,
+  "areaBuilding": 141.92,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-04",
+    "minPrice": 304000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-08",
+    "minPrice": 304000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 212800000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 148960000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "301호 점유자가 일부 사용 중[일시적 사용으로 보이며 경계복원은 용이(감정평가서 참조)]"
+ },
+ {
+  "id": "jeonbuk-2025타경1066-1",
+  "court": "전주지방법원",
+  "caseNo": "2025타경1066",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "전북특별자치도 완주군 운주면 산북리 417-23",
+  "region": "전북",
+  "district": "완주군",
+  "appraisalPrice": 175186800,
+  "minPrice": 60089000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-09-21",
+  "saleTime": "10:00",
+  "courtRoom": "신청사제101호법정",
+  "deposit": 6008900,
+  "areaBuilding": null,
+  "areaLand": 10814,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-04",
+    "minPrice": 175186800,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-08",
+    "minPrice": 175186800,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 122630711,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 85841463,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "지적도상 맹지, 자연생 입목 경제적가치 미미 임지가액에 포함 평가"
+ },
+ {
+  "id": "jeonbuk-2025타경1098-1",
+  "court": "전주지방법원",
+  "caseNo": "2025타경1098",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "전북특별자치도 전주시 덕진구 만성동 1360-10 주건축물제1동 5층 504호",
+  "region": "전북",
+  "district": "전주시 덕진구",
+  "appraisalPrice": 202000000,
+  "minPrice": 69286000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-09-21",
+  "saleTime": "10:00",
+  "courtRoom": "신청사제101호법정",
+  "deposit": 6928600,
+  "areaBuilding": 65.35,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-04",
+    "minPrice": 202000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-08",
+    "minPrice": 202000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 141400000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 98980000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "503호와 경계구분 없이 사무실로 사용 중, 경계복원시 출입 문제 없음"
+ },
+ {
   "id": "jeonbuk-2025타경31003-1",
   "court": "전주지방법원",
   "caseNo": "2025타경31003",
@@ -48,6 +183,61 @@
    }
   ],
   "specialNote": "1. 농지취득자격증명 제출 필요(미제출시 보증금 몰수, 매각기일 2주 전부터 관할 시ㆍ구ㆍ읍ㆍ면사무소에 신청 가능하므로 미리 확인 후 매수 신청, 별지 사실조회회신서 참조) 2. 남측 및 동측 일부가 도로로 이용 중이고 동측 도로 일부는 석축이 쌓여 있으며 석축 동측을 타인토지(753-1 외)의 '전'과 같이 이용 중으로 이를 감안하여 감정평가 3. 제시외 수목 매각 제외"
+ },
+ {
+  "id": "jeonbuk-2025타경31057-12",
+  "court": "전주지방법원",
+  "caseNo": "2025타경31057",
+  "itemNo": "12",
+  "category": "오피스텔",
+  "address": "전북특별자치도 전주시 완산구 고사동 1-2 라마다전주호텔 7층 711호",
+  "region": "전북",
+  "district": "전주시 완산구",
+  "appraisalPrice": 298000000,
+  "minPrice": 102214000,
+  "priceRatio": 0.343,
+  "failCount": 5,
+  "saleDate": "2026-09-21",
+  "saleTime": "10:00",
+  "courtRoom": "신청사제101호법정",
+  "deposit": 10221400,
+  "areaBuilding": 46.39,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-23",
+    "minPrice": 298000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-30",
+    "minPrice": 298000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-04",
+    "minPrice": 240588624,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-08",
+    "minPrice": 194237872,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 156816854,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 126605205,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "공부상 라마다전주호텔이나 현황은 글로스터호텔로 운영중"
  },
  {
   "id": "jeonbuk-2025타경31449-1",
@@ -170,6 +360,276 @@
   "specialNote": "1. 일괄매각, 지분매각(공유자우** 1회 제한) 2. 농지취득자격증명 제출 필요(미제출시 보증금 몰수, 매각기일 2주 전부터 관할 시ㆍ구ㆍ읍ㆍ면사무소에 신청 가능하므로 미리 확인 후 매수 신청), 현재 농지 불법 전용이 이루어진 상태로 매수인이 원상회복의무를 부담할 수 있음 3. 목록2.3. 지상에 소재하는 제시외 건물(감정평가서 ㉠㉡) 및 이동이 용이한 콘테이너 박스 1동 매각 제외, 지상 소재 건물로 인하여 토지 소유권 행사가 제한 받는 경우 토지의 가격은 목록2.(4,948,000원), 목록3.(4,264,000원)(감정평가서 참조)"
  },
  {
+  "id": "jeonbuk-2025타경31488-1",
+  "court": "전주지방법원",
+  "caseNo": "2025타경31488",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "전북특별자치도 전주시 덕진구 만성동 1339-13 골드타워 1동 3층 301호",
+  "region": "전북",
+  "district": "전주시 덕진구",
+  "appraisalPrice": 331000000,
+  "minPrice": 113533000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-09-21",
+  "saleTime": "10:00",
+  "courtRoom": "신청사제101호법정",
+  "deposit": 11353300,
+  "areaBuilding": 101.92,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-04",
+    "minPrice": 331000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-08",
+    "minPrice": 331000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 231700000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 162190000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "서측 통로 출입문을 통하여 출입, 302호와 칸막이 없는 오픈식 구조"
+ },
+ {
+  "id": "jeonbuk-2025타경31488-2",
+  "court": "전주지방법원",
+  "caseNo": "2025타경31488",
+  "itemNo": "2",
+  "category": "오피스텔",
+  "address": "전북특별자치도 전주시 덕진구 만성동 1339-13 골드타워 1동 3층 302호",
+  "region": "전북",
+  "district": "전주시 덕진구",
+  "appraisalPrice": 315000000,
+  "minPrice": 108045000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-09-21",
+  "saleTime": "10:00",
+  "courtRoom": "신청사제101호법정",
+  "deposit": 10804500,
+  "areaBuilding": 94.38,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-04",
+    "minPrice": 315000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-08",
+    "minPrice": 315000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 220500000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 154350000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "서측 통로 출입문을 통하여 출입, 301호와 칸막이 없는 오픈식 구조"
+ },
+ {
+  "id": "jeonbuk-2025타경31488-3",
+  "court": "전주지방법원",
+  "caseNo": "2025타경31488",
+  "itemNo": "3",
+  "category": "오피스텔",
+  "address": "전북특별자치도 전주시 덕진구 만성동 1339-13 골드타워 1동 3층 303호",
+  "region": "전북",
+  "district": "전주시 덕진구",
+  "appraisalPrice": 278000000,
+  "minPrice": 95354000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-09-21",
+  "saleTime": "10:00",
+  "courtRoom": "신청사제101호법정",
+  "deposit": 9535400,
+  "areaBuilding": 84,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-04",
+    "minPrice": 278000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-08",
+    "minPrice": 278000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 194600000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 136220000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "현황은 공실로 출입문시설 없음"
+ },
+ {
+  "id": "jeonbuk-2025타경31488-4",
+  "court": "전주지방법원",
+  "caseNo": "2025타경31488",
+  "itemNo": "4",
+  "category": "오피스텔",
+  "address": "전북특별자치도 전주시 덕진구 만성동 1339-13 골드타워 1동 3층 305호",
+  "region": "전북",
+  "district": "전주시 덕진구",
+  "appraisalPrice": 247000000,
+  "minPrice": 84721000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-09-21",
+  "saleTime": "10:00",
+  "courtRoom": "신청사제101호법정",
+  "deposit": 8472100,
+  "areaBuilding": 74.55,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-04",
+    "minPrice": 247000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-08",
+    "minPrice": 247000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 172900000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 121030000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "현황은 공실로 바닥, 천정 부분 등이 공사 되어 있음"
+ },
+ {
+  "id": "jeonbuk-2025타경31488-5",
+  "court": "전주지방법원",
+  "caseNo": "2025타경31488",
+  "itemNo": "5",
+  "category": "오피스텔",
+  "address": "전북특별자치도 전주시 덕진구 만성동 1339-13 골드타워 1동 3층 306호",
+  "region": "전북",
+  "district": "전주시 덕진구",
+  "appraisalPrice": 319000000,
+  "minPrice": 109417000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-09-21",
+  "saleTime": "10:00",
+  "courtRoom": "신청사제101호법정",
+  "deposit": 10941700,
+  "areaBuilding": 95.5,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-04",
+    "minPrice": 319000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-08",
+    "minPrice": 319000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 223300000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 156310000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "현황은 공실로 바닥, 천정 부분 등이 공사 되어 있음"
+ },
+ {
+  "id": "jeonbuk-2025타경31488-6",
+  "court": "전주지방법원",
+  "caseNo": "2025타경31488",
+  "itemNo": "6",
+  "category": "오피스텔",
+  "address": "전북특별자치도 전주시 덕진구 만성동 1339-13 골드타워 1동 3층 307호",
+  "region": "전북",
+  "district": "전주시 덕진구",
+  "appraisalPrice": 297000000,
+  "minPrice": 101871000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-09-21",
+  "saleTime": "10:00",
+  "courtRoom": "신청사제101호법정",
+  "deposit": 10187100,
+  "areaBuilding": 91.52,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-04",
+    "minPrice": 297000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-08",
+    "minPrice": 297000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 207900000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 145530000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "현황은 사무실로 이용 중이며 내부 인테리어 등이 공사 되어 있음"
+ },
+ {
   "id": "jeonbuk-2025타경31721-2",
   "court": "전주지방법원",
   "caseNo": "2025타경31721",
@@ -218,6 +678,231 @@
    }
   ],
   "specialNote": "1.농지취득자격증명 제출 필요 (미제출시 보증금 몰수, 매각기일 2주 전부터 관할 시ㆍ구ㆍ읍ㆍ면사무소에 신청 가능하므로 미리 확인 후 매수 신청) 2.일부 지상에 소재하는 제시외 수목(편백나무, 소나무 등) 매각 제외"
+ },
+ {
+  "id": "jeonbuk-2025타경31857-1",
+  "court": "전주지방법원",
+  "caseNo": "2025타경31857",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "전북특별자치도 김제시 순동 251-3",
+  "region": "전북",
+  "district": "김제시",
+  "appraisalPrice": 24255000,
+  "minPrice": 8320000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-09-21",
+  "saleTime": "10:00",
+  "courtRoom": "신청사제101호법정",
+  "deposit": 832000,
+  "areaBuilding": null,
+  "areaLand": 165,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-04",
+    "minPrice": 24255000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-08",
+    "minPrice": 24255000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 16978864,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 11885460,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "1.토지만 매각, 토지 남측 일부 타인소유 건물이 점유 2.제시외 건물로 인하여 토지 소유권 행사가 제한 받는 경우 토지의 가액은 23,430,000원(단가 142,000/㎡, 감정평가서 참조)"
+ },
+ {
+  "id": "jeonbuk-2025타경31874-1",
+  "court": "전주지방법원",
+  "caseNo": "2025타경31874",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "전북특별자치도 김제시 신풍동 524-10",
+  "region": "전북",
+  "district": "김제시",
+  "appraisalPrice": 17825000,
+  "minPrice": 6115000,
+  "priceRatio": 0.3431,
+  "failCount": 3,
+  "saleDate": "2026-09-21",
+  "saleTime": "10:00",
+  "courtRoom": "신청사제101호법정",
+  "deposit": 611500,
+  "areaBuilding": null,
+  "areaLand": 155,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-04",
+    "minPrice": 17825000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-08",
+    "minPrice": 17825000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 12478197,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 8735226,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "지목은 답이나 현황은 전"
+ },
+ {
+  "id": "jeonbuk-2025타경31887-1",
+  "court": "전주지방법원",
+  "caseNo": "2025타경31887",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "전북특별자치도 전주시 완산구 평화동1가 718-1 1층 103호",
+  "region": "전북",
+  "district": "전주시 완산구",
+  "appraisalPrice": 570000000,
+  "minPrice": 195510000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-09-21",
+  "saleTime": "10:00",
+  "courtRoom": "신청사제101호법정",
+  "deposit": 19551000,
+  "areaBuilding": 86.67,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-04",
+    "minPrice": 570000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-08",
+    "minPrice": 570000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 399000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 279300000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "현황 : 공실"
+ },
+ {
+  "id": "jeonbuk-2025타경32043-1",
+  "court": "전주지방법원",
+  "caseNo": "2025타경32043",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "전북특별자치도 완주군 봉동읍 낙평리 595-2",
+  "region": "전북",
+  "district": "완주군",
+  "appraisalPrice": 301645000,
+  "minPrice": 103464000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-09-21",
+  "saleTime": "10:00",
+  "courtRoom": "신청사제101호법정",
+  "deposit": 10346400,
+  "areaBuilding": null,
+  "areaLand": 1403,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-04",
+    "minPrice": 301645000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-08",
+    "minPrice": 301645000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 211151340,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 147805826,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "1.인접 토지의 비닐하우스가 미미하게 걸쳐 있음 2.농지취득자격증명 제출 필요 (미제출시 보증금 몰수, 매각기일 2주 전부터 관할 시ㆍ구ㆍ읍ㆍ면사무소에 신청 가능하므로 미리 확인 후 매수 신청)"
+ },
+ {
+  "id": "jeonbuk-2025타경32043-3",
+  "court": "전주지방법원",
+  "caseNo": "2025타경32043",
+  "itemNo": "3",
+  "category": "토지",
+  "address": "전북특별자치도 김제시 봉남면 평사리 1291-5",
+  "region": "전북",
+  "district": "김제시",
+  "appraisalPrice": 108182420,
+  "minPrice": 37107000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-09-21",
+  "saleTime": "10:00",
+  "courtRoom": "신청사제101호법정",
+  "deposit": 3710700,
+  "areaBuilding": null,
+  "areaLand": 2056.7,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-04",
+    "minPrice": 108182420,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-08",
+    "minPrice": 108182420,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 75727986,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 53009795,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "농지취득자격증명 제출 필요 (미제출시 보증금 몰수, 매각기일 2주 전부터 관할 시ㆍ구ㆍ읍ㆍ면사무소에 신청 가능하므로 미리 확인 후 매수 신청)"
  },
  {
   "id": "jeonbuk-2025타경537-1",
@@ -273,5 +958,50 @@
    }
   ],
   "specialNote": "1.일괄매각, 제시외 건물(감정평가서 ㉠㉡) 매각 포함 2.토지 일부가 하천구역 저촉되어 이를 감안하여 토지를 평가 3.제시외 수목 토지에 포함 평가 매각 4.목록1.2. 지상에 소재하는 철거가 용이한 비닐하우스 및 구축물 매각 제외"
+ },
+ {
+  "id": "jeonbuk-2025타경835-1",
+  "court": "전주지방법원",
+  "caseNo": "2025타경835",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "전북특별자치도 전주시 완산구 중인동 801-3 모악포레빌 2동 2층 201호",
+  "region": "전북",
+  "district": "전주시 완산구",
+  "appraisalPrice": 157000000,
+  "minPrice": 53851000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-09-21",
+  "saleTime": "10:00",
+  "courtRoom": "신청사제101호법정",
+  "deposit": 5385100,
+  "areaBuilding": 72.8,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-04",
+    "minPrice": 157000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-08",
+    "minPrice": 157000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 109900000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 76930000,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "토지에 관하여 별도 등기 있음"
  }
 ]

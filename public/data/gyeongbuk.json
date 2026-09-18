@@ -2940,6 +2940,46 @@
   "specialNote": "일괄매각.본건 지상 수목 매각 포함. 현황 주거나대지. 지상에 소재하던 건물은 멸실 상태 확인 요."
  },
  {
+  "id": "gyeongbuk-2025타경10254-1",
+  "court": "의성지원",
+  "caseNo": "2025타경10254",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 청송군 진보면 각산리 524-6",
+  "region": "경북",
+  "district": "청송군",
+  "appraisalPrice": 11165760,
+  "minPrice": 5472000,
+  "priceRatio": 0.4901,
+  "failCount": 2,
+  "saleDate": "2026-09-23",
+  "saleTime": "10:00",
+  "courtRoom": "의성지원1호법정",
+  "deposit": 547200,
+  "areaBuilding": null,
+  "areaLand": 1008,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-06-10",
+    "minPrice": 11165760,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-15",
+    "minPrice": 11165760,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-19",
+    "minPrice": 7816587,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "농지취득자격증명원 요함(미제출시 보증금 미반환).지분매각(공유자 우선매수에 관한 특별매각조건 있음)."
+ },
+ {
   "id": "gyeongbuk-2025타경10262-1",
   "court": "의성지원",
   "caseNo": "2025타경10262",
@@ -3018,6 +3058,46 @@
    }
   ],
   "specialNote": "농지취득자격증명원요함(미제출시 보증금 미반환). 지적도상 맹지이나 인접지를 경유하여 출입가능"
+ },
+ {
+  "id": "gyeongbuk-2025타경10276-1",
+  "court": "의성지원",
+  "caseNo": "2025타경10276",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 의성군 다인면 덕미리 844-4",
+  "region": "경북",
+  "district": "의성군",
+  "appraisalPrice": 5746800,
+  "minPrice": 2817000,
+  "priceRatio": 0.4902,
+  "failCount": 2,
+  "saleDate": "2026-09-23",
+  "saleTime": "10:00",
+  "courtRoom": "의성지원1호법정",
+  "deposit": 281700,
+  "areaBuilding": null,
+  "areaLand": 431,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-06-10",
+    "minPrice": 5746800,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-15",
+    "minPrice": 5746800,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-19",
+    "minPrice": 4023523,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "지분매각(공유자 우선매수에 관한 특별매각조건 있음.)본건 일부 현황 도로 감안 평가. 현황 주거나지 및 일부 도로"
  },
  {
   "id": "gyeongbuk-2025타경1046-1",
