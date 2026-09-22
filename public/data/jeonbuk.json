@@ -1665,103 +1665,48 @@
   "specialNote": "-현황조사서에 첨부된 사진에 의하면 현재 공실로 보임"
  },
  {
-  "id": "jeonbuk-2025타경999-1",
+  "id": "jeonbuk-2026타경30002-1",
   "court": "전주지방법원",
-  "caseNo": "2025타경999",
+  "caseNo": "2026타경30002",
   "itemNo": "1",
-  "category": "상가",
-  "address": "전북특별자치도 전주시 완산구 효자동3가 1540-3 힐스테이트효자동 103동 1층124호",
+  "category": "토지",
+  "address": "전북특별자치도 무주군 설천면 소천리 1201-35",
   "region": "전북",
-  "district": "전주시 완산구",
-  "appraisalPrice": 758000000,
-  "minPrice": 181996000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
+  "district": "무주군",
+  "appraisalPrice": 54739000,
+  "minPrice": 18213000,
+  "priceRatio": 0.3327,
+  "failCount": 3,
   "saleDate": "2026-09-28",
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
-  "deposit": 18199600,
-  "areaBuilding": 54.3075,
-  "areaLand": null,
+  "deposit": 1821300,
+  "areaBuilding": null,
+  "areaLand": 1273,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-04-06",
-    "minPrice": 758000000,
+    "date": "2026-05-11",
+    "minPrice": 54739000,
     "result": "신건"
    },
    {
-    "date": "2026-05-11",
-    "minPrice": 758000000,
-    "result": "유찰"
-   },
-   {
     "date": "2026-06-15",
-    "minPrice": 530600146,
+    "minPrice": 54739000,
     "result": "유찰"
    },
    {
     "date": "2026-07-20",
-    "minPrice": 371420204,
+    "minPrice": 37930777,
     "result": "유찰"
    },
    {
     "date": "2026-08-24",
-    "minPrice": 259994214,
+    "minPrice": 26283707,
     "result": "유찰"
    }
   ],
-  "specialNote": "일괄매각"
- },
- {
-  "id": "jeonbuk-2025타경999-2",
-  "court": "전주지방법원",
-  "caseNo": "2025타경999",
-  "itemNo": "2",
-  "category": "상가",
-  "address": "전북특별자치도 전주시 완산구 효자동3가 1540-3 힐스테이트효자동 103동 1층126호",
-  "region": "전북",
-  "district": "전주시 완산구",
-  "appraisalPrice": 499000000,
-  "minPrice": 119810000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-09-28",
-  "saleTime": "10:00",
-  "courtRoom": "제101호법정",
-  "deposit": 11981000,
-  "areaBuilding": 71.5031,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-06",
-    "minPrice": 499000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-11",
-    "minPrice": 499000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-15",
-    "minPrice": 349300073,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-20",
-    "minPrice": 244510102,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-24",
-    "minPrice": 171157107,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": null
+  "specialNote": "1.분묘 수기 소재함 2.농지취득자격증명 필요"
  }
 ]
