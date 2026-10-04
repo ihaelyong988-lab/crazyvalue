@@ -1,117 +1,257 @@
 [
  {
-  "id": "gangwon-2025타경849-1",
-  "court": "의정부지방법원",
-  "caseNo": "2025타경849",
+  "id": "gangwon-2021타경30541-1",
+  "court": "강릉지원",
+  "caseNo": "2021타경30541",
   "itemNo": "1",
-  "category": "기타",
-  "address": "강원특별자치도 철원군 철원읍 율이리 242-3",
+  "category": "토지",
+  "address": "강원도 강릉시 사천면 석교리 527",
   "region": "강원",
-  "district": "철원군",
-  "appraisalPrice": 3950670720,
-  "minPrice": 1935829000,
-  "priceRatio": 0.49,
-  "failCount": 2,
+  "district": "강릉시",
+  "appraisalPrice": 516034000,
+  "minPrice": 86730000,
+  "priceRatio": 0.1681,
+  "failCount": 7,
   "saleDate": "2026-10-06",
-  "saleTime": "10:30",
-  "courtRoom": "제6호법정(제2별관101호)",
-  "deposit": 193582900,
-  "areaBuilding": 4694,
-  "areaLand": null,
+  "saleTime": "10:00",
+  "courtRoom": "입찰,경매법정(1층)",
+  "deposit": 8673000,
+  "areaBuilding": null,
+  "areaLand": 3798,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-04-07",
-    "minPrice": 3950670720,
+    "date": "2025-12-30",
+    "minPrice": 516034000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 516034000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 399976226,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 310020234,
     "result": "유찰"
    },
    {
     "date": "2026-05-19",
-    "minPrice": 2765470000,
+    "minPrice": 240295646,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 186252351,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 144363573,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 111895723,
     "result": "유찰"
    }
   ],
-  "specialNote": "1. 제시외 건물 포함하여 일괄매각 2. 별지 공장 및 광업재단 저당법 제6조 목록 제2022-36호,제2024-7호 포함 3. 농지취득자격증명 제출 필요(매각결정기일까지 미제출시 보증금은 반환하지 않음)"
+  "specialNote": "-일괄매각 -현황 맹지이고, \"휴경전\"임 -지상에 수목 다수 소재하나 특별한 명인방법이 없으므로 매각에 포함 -목록3. 일부 접도구역에 저촉 -목록3. 최선순위 가등기권자는 현재의 소유자임 -농지취득자격증명 필요(미제출시 보증금 몰수) -정확한 지적 경계 등은 측량 요함"
  },
  {
-  "id": "gangwon-2026타경163-1",
-  "court": "의정부지방법원",
-  "caseNo": "2026타경163",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "강원특별자치도 철원군 갈말읍 문혜리 44-4",
+  "id": "gangwon-2021타경30541-2",
+  "court": "강릉지원",
+  "caseNo": "2021타경30541",
+  "itemNo": "2",
+  "category": "토지",
+  "address": "강원도 강릉시 사천면 석교리 520-2",
   "region": "강원",
-  "district": "철원군",
-  "appraisalPrice": 87556980,
-  "minPrice": 42903000,
-  "priceRatio": 0.49,
-  "failCount": 2,
-  "saleDate": "2026-10-13",
-  "saleTime": "10:30",
-  "courtRoom": "경매입찰(6호)법정",
-  "deposit": 4290300,
-  "areaBuilding": 627,
+  "district": "강릉시",
+  "appraisalPrice": 231352000,
+  "minPrice": 38883000,
+  "priceRatio": 0.1681,
+  "failCount": 7,
+  "saleDate": "2026-10-06",
+  "saleTime": "10:00",
+  "courtRoom": "입찰,경매법정(1층)",
+  "deposit": 3888300,
+  "areaBuilding": null,
+  "areaLand": 2629,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-12-30",
+    "minPrice": 231352000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 231352000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 179319894,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 138990043,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 107730557,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 83501470,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 64721613,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 50165431,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "-맹지이나 관습상 농로 이용하여 출입가능 -현황 \"휴경전\"임 -지상에 수목 다수 소재하나 특별한 명인방법이 없으므로 매각에 포함 -농지취득자격증명 필요(미제출시 보증금 몰수) -정확한 지적 경계 등은 측량 요함"
+ },
+ {
+  "id": "gangwon-2024타경1599-1",
+  "court": "강릉지원",
+  "caseNo": "2024타경1599",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "강원특별자치도 동해시 임항로 10 1층101호 (부곡동,썬샤인파크)",
+  "region": "강원",
+  "district": "동해시",
+  "appraisalPrice": 5479000000,
+  "minPrice": 1315508000,
+  "priceRatio": 0.2401,
+  "failCount": 7,
+  "saleDate": "2026-10-06",
+  "saleTime": "10:00",
+  "courtRoom": "입찰,경매법정(1층)",
+  "deposit": 131550800,
+  "areaBuilding": 1720.72,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-08-04",
-    "minPrice": 87556980,
+    "date": "2025-12-30",
+    "minPrice": 5479000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 5479000000,
     "result": "유찰"
    },
    {
-    "date": "2026-09-08",
-    "minPrice": 61290000,
+    "date": "2026-03-10",
+    "minPrice": 4468748357,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 3644773111,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 2972727478,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 2424597743,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 1977535532,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 1612905395,
     "result": "유찰"
    }
   ],
-  "specialNote": "일괄매각"
+  "specialNote": "-일괄매각 -목록1. 공부상 지상1층이나, 북측 접면도로 기준 지하1층임 -목록4. 공부상 지상2층이나, 북측 접면도로 기준 지상1층임 -목록1. 찜질방 등, 목록4. 대중목욕탕 등으로 이용 중이고, 지하1층 내 별도의 공간에 소재하는 보일러 설비, 배수설비 중 임차인 주** 대상신소재가 교체하여 소유권을 주장하는 판형열교환기 및 히트펌프는 매각에서 제외함 -목록1. 외부출입구는 폐쇄되어 목록4.의 내부계단을 통해 출입 -목록5. 내부 공사 중 중단된 상태로 목록1.과의 경계벽은 철거되어 있음 -목록2,3. 현황 사무실이고, 목록5. 현황 공실임 -2024. 12. 23. 주식회사 초석건설 대표자 이석으로부터(계약자 주식회사 대상신소재동해지점 백대길) 본건 부동산 전부에 대해 유치권(공사대금 585,000,000원 중 공사미수금 발생채권 318,500,000, 이자 25,916,300원, 각 부가세 별도) 신고가 제출되었으나, 그 성립여부는 불분명함"
  },
  {
-  "id": "gangwon-2025타경3701-2",
-  "court": "의정부지방법원",
-  "caseNo": "2025타경3701",
-  "itemNo": "2",
+  "id": "gangwon-2025타경30462-1",
+  "court": "강릉지원",
+  "caseNo": "2025타경30462",
+  "itemNo": "1",
   "category": "토지",
-  "address": "강원특별자치도 철원군 김화읍 생창리 131",
+  "address": "강원특별자치도 강릉시 강동면 정동진리 50-30",
   "region": "강원",
-  "district": "철원군",
-  "appraisalPrice": 50524000,
-  "minPrice": 12131000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-10-14",
-  "saleTime": "10:30",
-  "courtRoom": "제6호법정(제2별관101호)",
-  "deposit": 1213100,
+  "district": "강릉시",
+  "appraisalPrice": 3818580000,
+  "minPrice": 449252000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-10-06",
+  "saleTime": "10:00",
+  "courtRoom": "입찰,경매법정(1층)",
+  "deposit": 44925200,
   "areaBuilding": null,
-  "areaLand": 5944,
+  "areaLand": 8212,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-05-27",
-    "minPrice": 50524000,
+    "date": "2026-02-03",
+    "minPrice": 3818580000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 3818580000,
     "result": "유찰"
    },
    {
-    "date": "2026-07-01",
-    "minPrice": 35367000,
+    "date": "2026-04-14",
+    "minPrice": 2673005883,
     "result": "유찰"
    },
    {
-    "date": "2026-08-05",
-    "minPrice": 24757000,
+    "date": "2026-05-19",
+    "minPrice": 1871104036,
     "result": "유찰"
    },
    {
-    "date": "2026-09-09",
-    "minPrice": 17330000,
+    "date": "2026-06-23",
+    "minPrice": 1309772767,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 916840897,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 641788600,
     "result": "유찰"
    }
   ],
-  "specialNote": "지분매각/공유자우선매수신고는 1회에 한하여 행사할 수 있음 농지취득자격증명원 제출요(미제출시 보증금 미반환, 해당 농지는 임야화된 상태로 농지취득자격증명원을 발급받기 위해서 농지 복구 가능성 등을 판단하기 위한 서류 및 해당 농지를 영농에 이용하기 적합한 상태로 복구하기 위한 별도의 원상복구계획서 제출이 필요하다는 김화읍의 사실조회회신 있음.) 본건은 맹지임"
+  "specialNote": "-활잡목 재생중인 자연림 상태임 -분묘소재여부는 별도 확인 요함(분묘소재시 분묘기지권 성립여지 있음) -강릉시청 건축과 확인 결과 본건 토지는 2020년 8월에 건축허가를 득하고 2023년 10월에 착공신고 되어있는 상태임(구체적 내용은 별도확인 요함) -정확한 지적 경계 등은 측량 요함 -을구 순위 11번 지상권설정등기(2020.02.14. 접수 제5569호)는 지상권자인 신청채권자의 말소동의서가 제출되어 있음"
  }
 ]
