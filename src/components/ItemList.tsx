@@ -22,6 +22,7 @@ export function ItemList({
   onSortChange,
   onMore,
   relaxActions,
+  emptyTitle = "현재 게시 물건에 조건에 맞는 물건이 없다",
 }: {
   items: AuctionItem[];
   shown: number;
@@ -30,6 +31,8 @@ export function ItemList({
   onMore: () => void;
   /** 빈 결과 완화 제안 — 실제 적용 중인 조건의 해제 동작만 담는다(감사 25·26: 무동작 버튼 금지). */
   relaxActions: { label: string; onClick: () => void }[];
+  /** 기간 메타가 있으면 해당 제공 기간을, 없거나 창 밖 보충분이 있으면 게시 자료를 기준으로 말한다. */
+  emptyTitle?: string;
 }) {
   // 이번 더보기로 삽입된 카드의 시작 인덱스(= 더보기 직전 표시 건수). null이면 차단 없음.
   const [guardFrom, setGuardFrom] = useState<number | null>(null);
@@ -47,7 +50,7 @@ export function ItemList({
   if (items.length === 0) {
     return (
       <EmptyState
-        title="조건에 맞는 물건이 없다"
+        title={emptyTitle}
         description={
           relaxActions.length > 0
             ? "아래 버튼으로 조건을 해제하면 결과 범위가 넓어진다."

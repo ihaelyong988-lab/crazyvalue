@@ -17,6 +17,7 @@ import {
   type ListQuery,
 } from "@/lib/query";
 import { useAuctionData } from "@/lib/use-auction-data";
+import { emptyResultTitle, outputPeriodLabel, resolveOutputPeriod } from "@/lib/output-period";
 import { ItemList } from "@/components/ItemList";
 import { ListSkeleton } from "@/components/Skeleton";
 import { ErrorState } from "@/components/ErrorState";
@@ -25,7 +26,8 @@ import { ErrorState } from "@/components/ErrorState";
 function ListContent() {
   const params = useSearchParams();
   const query = useMemo(() => parseListQuery(new URLSearchParams(params.toString())), [params]);
-  const { status, items, retry } = useAuctionData();
+  const { status, items, meta, retry } = useAuctionData();
+  const period = useMemo(() => resolveOutputPeriod(meta, items), [meta, items]);
 
   const filtered = useMemo(
     () => sortItems(applyFilters(items, query), query.sort),
@@ -123,6 +125,11 @@ function ListContent() {
 
   return (
     <>
+      {period && (
+        <p data-testid="output-period" className="px-4 pt-4 text-[13px] leading-relaxed tabular-nums text-ink/75">
+          {outputPeriodLabel(period)}
+        </p>
+      )}
       {chips.length > 0 && (
         <div
           role="group"
@@ -154,6 +161,7 @@ function ListContent() {
         // 상한을 넘겨 쓰면 URL은 505를 주장하고 화면은 500을 그린다 — 쿼리가 화면의 원천이라 어긋나면 안 된다.
         onMore={() => update({ count: Math.min(query.count + 10, LIST_COUNT_MAX) })}
         relaxActions={relaxActions}
+        emptyTitle={emptyResultTitle(period)}
       />
     </>
   );

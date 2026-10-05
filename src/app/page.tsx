@@ -19,6 +19,7 @@ import {
   type Prefs,
 } from "@/lib/watchlist";
 import { useAuctionData } from "@/lib/use-auction-data";
+import { outputPeriodLabel, resolveOutputPeriod } from "@/lib/output-period";
 import { RegionFilter } from "@/components/RegionFilter";
 import { PriceFilter } from "@/components/PriceFilter";
 import { CategoryFilter } from "@/components/CategoryFilter";
@@ -63,7 +64,7 @@ function filtersFromQuery(query: string): Filters {
 // "유찰 2회 이상으로 값이 내려간 물건" 하나로 통일한다(2026-07-22 주인님 지시). 감정가 50% 기준은
 // 리스트 카드 픽 배지·/list?pick·안내(/guide)에만 부가정보로 남긴다.
 export default function HomePage() {
-  const { status, items, retry } = useAuctionData();
+  const { status, items, meta, retry } = useAuctionData();
   const [filters, setFilters] = useState<Filters>(emptyFilters);
 
   // 필터 출처 추적(감사 2차 33): 관심조건에서 온 필터만 타 탭의 조건 변경을 따라간다.
@@ -149,6 +150,7 @@ export default function HomePage() {
   };
 
   const count = useMemo(() => applyFilters(items, filters).length, [items, filters]);
+  const period = useMemo(() => resolveOutputPeriod(meta, items), [meta, items]);
 
   // 필터 UI는 정적이므로 데이터와 무관하게 즉시 렌더한다(첫 페인트 = 필터 화면).
   // 데이터 의존 블록(최근 본 물건·건수)만 로드 후 표시 — LCP 예산(§13 규칙 4) 준수 구조.
@@ -161,6 +163,12 @@ export default function HomePage() {
       <h1 className="text-[15px] font-semibold leading-snug">
         유찰 2회 이상으로 값이 내려간 물건만 모았다.
       </h1>
+
+      {status === "ready" && period && (
+        <p data-testid="output-period" className="text-[13px] leading-relaxed tabular-nums text-ink/75">
+          {outputPeriodLabel(period)}
+        </p>
+      )}
 
       {status === "error" && (
         <ErrorState

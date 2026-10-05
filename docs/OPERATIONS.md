@@ -40,6 +40,14 @@ gh issue list --label auto-alert --state open
 
 ## 2. quick·full 모드 판별
 
+### 목록 완주·지역 제외 진단
+
+목록 성공은 `collectionCompleteness.received === totalCnt`인 전량 수신이다. 총계는 중복 포함 행수이며 고유 물건 수와 다르다. 동일한 전체 페이지 응답이나 총계·행 범위 변경은 같은 페이지를 제한적으로 재확인한다. 미완주·페이지 상한·예산 소진은 실패하고 기존 산출물을 보존한다. `--dry-run`과 `--limit` 조회는 파일을 쓰지 않는다.
+
+`collectionDiagnostics`는 이번 실행의 조회 범위, 끝날 포함 여부, 지역별·날짜별 단계 건수와 제외 사유를 담는다. `receiveRaw`는 수용한 페이지의 중복 포함 행수, `dedup`은 목록 고유 행수, `mapped`는 정규화 성공, `invalid`는 정규화·스키마 탈락, `idDuplicates`는 출력 id 중복이다. `candidates`는 검증 후 우선 배분 기간 안 후보, `output`은 실제 선별된 물건이다. `windowExcluded`는 우선 기간 밖 물건이라 후일 보충으로 출력될 수 있으며, 실제 상한 제외는 `exclusionsByReason.cap`으로 확인한다. 미인식 지역은 `unknown`에 남겨 다른 시도에 추정 귀속하지 않는다. 원천 행·주소·이름·사건번호·인증값은 이 집계에 넣지 않는다.
+
+`outputWindow`는 수집 시작 KST 날짜를 기준으로 고정한 미포함 끝 경계이며 `outputSaleDateRange`는 유지된 지역까지 포함하는 게시 물건의 기일 범위다. 화면의 기본 7일 기간과 후일 보충 분포를 함께 대조한다. `candidatesByRegion`과 `sourceLastSaleDate`는 필터 후 우선 기간 안 값이므로 원천 전체 수치로 해석하지 않는다.
+
 슬롯 2개는 실행 여부가 아니라 **모드**를 가른다. 이 표가 갱신 슬롯·모드 분기의 서술 단일 기준이고, 기계 원천은 `.github/workflows/crawl.yml`의 `on.schedule`이다.
 
 | cron (UTC) | KST | 모드 | 수집 범위 |

@@ -4,6 +4,7 @@ import { z } from "zod";
 // 화면 코드는 데이터 출처를 모른다. 필드 추가·변경은 이 파일에서만 한다(§13 규칙 6).
 
 import { CATEGORIES } from "./catalog";
+import { CrawlDiagnosticsSchema } from "./crawl-diagnostics";
 
 export { CATEGORIES, REGIONS, regionNameByKey, regionKeyByName } from "./catalog";
 export type { Category } from "./catalog";
@@ -123,9 +124,30 @@ export const MetaSchema = z.object({
    */
   sourceLastSaleDate: z.string().nullable().optional(),
   /**
-   * 상한 적용 **전** 배분 창 안 유효 물건의 지역별 건수. countsByRegion(상한 적용 후)과 대조하면
-   * 어떤 지역이 "원천에 없어서" 0건인지 "상한 배분에 지워져서" 0건인지 그 자리에서 갈린다.
+   * 상한 적용 **전** 배분 창 안 유효 물건의 지역별 건수. 지역 매핑·가격·스키마·날짜 필터 이후 값이며
+   * 원천 전체 지역별 건수가 아니다. 원천과 필터 탈락은 collectionDiagnostics로 확인한다.
    */
   candidatesByRegion: z.record(z.string(), z.number().int().nonnegative()).optional(),
+  /** 수집 시작 KST 날짜로 고정한 우선 제공 기간. end는 미포함이다. */
+  outputWindow: z.object({
+    start: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+    end: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+    endInclusive: z.literal(false),
+  }).optional(),
+  /** 부분 갱신 때 유지된 지역까지 포함하는 실제 게시 물건의 매각기일 범위. */
+  outputSaleDateRange: z.object({
+    first: z.string().nullable(),
+    last: z.string().nullable(),
+  }).optional(),
+  /** 지역별 원천·중복 제거·매핑·검증·기간·상한 진단. 이번 실행 범위만 집계한다. */
+  collectionDiagnostics: CrawlDiagnosticsSchema.optional(),
+  collectionCompleteness: z.object({
+    complete: z.boolean(),
+    totalCnt: z.number().int().nonnegative(),
+    received: z.number().int().nonnegative(),
+    pageCount: z.number().int().positive(),
+    retries: z.number().int().nonnegative(),
+    rejectedRows: z.number().int().nonnegative(),
+  }).optional(),
 });
 export type Meta = z.infer<typeof MetaSchema>;

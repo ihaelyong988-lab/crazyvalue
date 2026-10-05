@@ -52,17 +52,15 @@ import {
   USER_AGENT,
 } from "./crawl-config";
 import {
-  STALL_PAGE_LIMIT,
-  acceptPage,
   buildSummaryLine,
   capAcrossSaleDates,
   countNewOnSharedDates,
-  createListAccumulator,
   describeError,
   gateItems,
-  isStalled,
   type PreviousOutput,
 } from "./crawl-lib";
+import { collectPaginatedRows, type PaginationPage } from "./crawl-pagination";
+import { createCrawlDiagnostics, type CrawlDiagnosticObservation, type CrawlExclusionReason } from "./crawl-diagnostics";
 
 // ---------------------------------------------------------------------------
 // CLI 옵션
@@ -133,14 +131,14 @@ function kstNow(): Date {
 const pad2 = (n: number) => String(n).padStart(2, "0");
 
 /** KST 기준 오늘+offsetDays 를 YYYYMMDD 로 */
-function ymdKst(offsetDays: number): string {
-  const d = new Date(Date.now() + KST_OFFSET_MS + offsetDays * 86_400_000);
+function ymdKst(offsetDays: number, referenceTime = Date.now()): string {
+  const d = new Date(referenceTime + KST_OFFSET_MS + offsetDays * 86_400_000);
   return `${d.getUTCFullYear()}${pad2(d.getUTCMonth() + 1)}${pad2(d.getUTCDate())}`;
 }
 
 /** KST 기준 오늘+offsetDays 를 YYYY-MM-DD 로 — saleDate(날짜 전용)와 직접 비교하는 경계값용 */
-function isoDayKst(offsetDays: number): string {
-  const ymd = ymdKst(offsetDays);
+function isoDayKst(offsetDays: number, referenceTime = Date.now()): string {
+  const ymd = ymdKst(offsetDays, referenceTime);
   return `${ymd.slice(0, 4)}-${ymd.slice(4, 6)}-${ymd.slice(6)}`;
 }
 
@@ -419,15 +417,24 @@ function toCategory(usageName: string): AuctionItem["category"] {
 }
 
 /** region 판정 — 주소(행정구역명)·시도코드 우선, 법원 코드는 최후 폴백(config 표 주석 참조) */
-function resolveRegionKey(row: RawRow): string | null {
+function observeRawRow(row: RawRow): CrawlDiagnosticObservation {
+  const saleDate = ymdToIso(str(row, "maeGiil")) || null;
   const sido = str(row, "hjguSido") || str(row, "printSt") || str(row, "realSt");
   for (const [prefix, key] of REGION_KEY_BY_SIDO_PREFIX) {
-    if (sido.startsWith(prefix)) return key;
+    if (sido.startsWith(prefix)) return { regionKey: key, saleDate, mappingSource: "sidoPrefix" };
   }
   const sdCd = str(row, "daepyoSidoCd").slice(0, 2);
-  if (sdCd && REGION_KEY_BY_SD_CD[sdCd]) return REGION_KEY_BY_SD_CD[sdCd];
+  if (sdCd && REGION_KEY_BY_SD_CD[sdCd]) return { regionKey: REGION_KEY_BY_SD_CD[sdCd], saleDate, mappingSource: "sidoCode" };
   const court = COURT_BY_CODE[str(row, "boCd")];
-  return court ? court.regionKey : null;
+  return { regionKey: court?.regionKey ?? null, saleDate, mappingSource: court ? "courtFallback" : "unknown" };
+}
+
+function resolveRegionKey(row: RawRow): string | null {
+  return observeRawRow(row).regionKey;
+}
+
+function observeItem(item: AuctionItem): CrawlDiagnosticObservation {
+  return { regionKey: REGIONS.find((region) => region.name === item.region)?.key ?? null, saleDate: item.saleDate };
 }
 
 /** 주소에서 시·군·구 추출 — "수원시 영통구"처럼 시+구/군 2단은 결합 */
@@ -452,7 +459,7 @@ function firstArea(raw: string): number | null {
 // 검색(목록) 수집
 // ---------------------------------------------------------------------------
 
-function buildSearchInfo(windowDays: number = SEARCH.windowDays): Record<string, string> {
+function buildSearchInfo(windowDays: number = SEARCH.windowDays, referenceTime = Date.now()): Record<string, string> {
   // 브라우저는 dataMap의 키 전부를 직렬화하므로 동일하게 전체 키를 빈 문자열로 채운다(crawl-config 주석).
   const info: Record<string, string> = {};
   for (const key of SEARCH_INFO_KEYS) info[key] = "";
@@ -462,20 +469,36 @@ function buildSearchInfo(windowDays: number = SEARCH.windowDays): Record<string,
   info.cortStDvs = SEARCH.cortStDvs;
   info.cortOfcCd = ""; // 공백 = 전국(CRAWLER.md §2.6 1안)
   info.flbdNcntMin = SEARCH.flbdNcntMin;
-  info.bidBgngYmd = ymdKst(0);
-  info.bidEndYmd = ymdKst(windowDays);
+  info.bidBgngYmd = ymdKst(0, referenceTime);
+  info.bidEndYmd = ymdKst(windowDays, referenceTime);
   info.pgmId = SEARCH.pgmId;
   info.statNum = "1"; // CRAWLER.md §2.3 실측 예시 값
   info.notifyLoc = "off";
   return info;
 }
 
-interface SearchPage {
-  rows: RawRow[];
-  totalCnt: number;
+/** 총계 결측을 rows.length로 대체하면 변경된 응답을 완주로 오판한다. */
+export function parseSearchPage(data: Record<string, unknown>): PaginationPage {
+  if (!Array.isArray(data.dlt_srchResult)) throw new Error("목록 응답 배열 결측 — 기존 산출물을 유지한다.");
+  const info = data.dma_pageInfo;
+  if (info === null || typeof info !== "object" || Array.isArray(info)) throw new Error("목록 페이지 메타데이터 결측");
+  const pageInfo = info as Record<string, unknown>;
+  const integer = (value: unknown): number => {
+    if (typeof value === "number") return Number.isInteger(value) && value >= 0 ? value : NaN;
+    return typeof value === "string" && /^\d+$/.test(value) ? Number(value) : NaN;
+  };
+  const result: PaginationPage = { rows: data.dlt_srchResult as RawRow[], totalCnt: integer(pageInfo.totalCnt) };
+  for (const field of ["pageNo", "pageSize", "startRowNo"] as const) {
+    if (pageInfo[field] !== undefined && pageInfo[field] !== null && pageInfo[field] !== "") {
+      const value = integer(pageInfo[field]);
+      // 공식 원천 실측: 요청 시작행 0/40에 응답은 1/41이다. 내부 비교 기준은 0-based로 통일한다.
+      result[field] = field === "startRowNo" ? value > 0 ? value - 1 : NaN : value;
+    }
+  }
+  return result;
 }
 
-async function fetchSearchPage(searchInfo: Record<string, string>, pageNo: number, knownTotal: number): Promise<SearchPage> {
+async function fetchSearchPage(searchInfo: Record<string, string>, pageNo: number, knownTotal: number): Promise<PaginationPage> {
   const body = {
     dma_pageInfo: {
       pageNo,
@@ -487,10 +510,7 @@ async function fetchSearchPage(searchInfo: Record<string, string>, pageNo: numbe
     dma_srchGdsDtlSrchInfo: searchInfo,
   };
   const data = await postJson(ENDPOINTS.search, body);
-  const rows = Array.isArray(data.dlt_srchResult) ? (data.dlt_srchResult as RawRow[]) : [];
-  const pageInfo = (data.dma_pageInfo ?? {}) as RawRow;
-  const totalCnt = num(pageInfo, "totalCnt");
-  return { rows, totalCnt: Number.isFinite(totalCnt) ? totalCnt : rows.length };
+  return parseSearchPage(data);
 }
 
 // ---------------------------------------------------------------------------
@@ -618,6 +638,18 @@ interface MapOutcome {
   skipReason: string | null;
   historySource: "실취득" | "역산" | null;
 }
+
+const EXCLUSION_REASON_BY_SKIP: Record<string, CrawlExclusionReason> = {
+  "식별자·주소 결측": "missingIdentity",
+  "가격 결측": "missingPrice",
+  "유찰 2회 미만": "failCount",
+  "최저가≥감정가(유찰 2회 계약 밖)": "priceContract",
+  "매각기일 결측": "missingSaleDate",
+  "기일 경과": "expiredSaleDate",
+  "지역 판정 불가": "unmappedRegion",
+  "시·군·구 판정 불가": "missingDistrict",
+  "법원명 결측": "missingCourt",
+};
 
 function mapRow(row: RawRow, detail: DetailResult | null, todayYmd: string, failedCode: string): MapOutcome {
   // printCsNo는 "법원명<br/>2008타경25092<br/>…(중복)" 형태의 표시 셀(dry-run 실측) — 대표 사건번호만 추출한다.
@@ -755,14 +787,22 @@ function readPreviousOutput(outDir: string): PreviousOutput | null {
 // 메인
 // ---------------------------------------------------------------------------
 
-async function main(): Promise<void> {
-  const opts = parseArgs(process.argv.slice(2));
-  const t0 = startedAt;
-  const todayYmd = ymdKst(0);
+export async function main(argv = process.argv.slice(2)): Promise<void> {
+  const opts = parseArgs(argv);
+  const t0 = Date.now();
+  const todayYmd = ymdKst(0, t0);
   const windowDays = opts.windowDays ?? SEARCH.windowDays;
+  const windowStart = isoDayKst(0, t0);
+  const outputWindowEnd = isoDayKst(OUTPUT_WINDOW_DAYS, t0);
+  const outputWindow = { start: windowStart, end: outputWindowEnd, endInclusive: false as const };
+  const diagnostics = createCrawlDiagnostics({
+    searchWindow: { start: windowStart, end: isoDayKst(windowDays, t0), endInclusive: true },
+    outputWindow,
+    scope: opts.region,
+  });
 
   console.log(
-    `수집 시작 — 대상 전국 유찰 2회 이상 · 매각기일 창 ${ymdKst(0)}~${ymdKst(windowDays)}(${windowDays}일)` +
+    `수집 시작 — 대상 전국 유찰 2회 이상 · 매각기일 창 ${todayYmd}~${ymdKst(windowDays, t0)}(${windowDays}일)` +
       `${opts.region ? ` · 지역 ${opts.region}` : ""}${opts.dryRun ? " · dry-run(쓰기 없음·1페이지)" : ""}` +
       `${opts.limit ? ` · limit ${opts.limit}` : ""}${opts.noDetail ? " · 상세 생략(이력 역산)" : ""}`,
   );
@@ -776,58 +816,46 @@ async function main(): Promise<void> {
     process.exit(1);
   }
 
-  // 2) 목록 페이지네이션 — 수신 시점 dedupe(crawl-lib seenRowKeys).
-  // 서버가 야간 배치 중 같은 행을 재서빙해도(07-28 실측: 같은 id 최대 154회) 첫 등장만 축적한다.
-  // 종결 판정의 누적 행수(acc.rows.length)는 자연히 고유 건수다 — 재서빙 구간에서 고유 건수가
-  // totalCnt에 영원히 못 미치면 아래 정체 종결(stallPages)이 목록을 정상 종결한다.
-  const searchInfo = buildSearchInfo(windowDays);
-  const acc = createListAccumulator();
-  let totalCnt = 0;
-  let pageNo = 1;
-  // 폭주 방지 상한 — 실측(2026-07-19) 전국 유찰 2회 이상은 약 1만 9천 건(488페이지)이므로 여유 있게 둔다.
-  const HARD_PAGE_CAP = 600;
-  for (;;) {
-    // 예산은 계획치가 아니라 런타임 상한이다 — request()는 재시도마다 liveRequestCount를 올리므로
-    // 착수 전 1회 계산만으로는 상한이 지켜지지 않는다. 목록 단계 소진은 조기 종료로 강등하지 않는다:
-    // 부분 목록은 지역별 건수를 거짓으로 만들기 때문이다(아래 상세 루프 주석과 대칭).
+  // 2) 중복 포함 원천 총계와 수용한 페이지의 행수를 대조한다. 고유 물건 수는 완주 기준이 아니다.
+  // 반복 응답·범위/총계 변동은 같은 페이지를 최대 두 번 추가 조회하고 실패하면 쓰기 전에 중단한다.
+  const searchInfo = buildSearchInfo(windowDays, t0);
+  const pagination = await collectPaginatedRows(async ({ pageNo, knownTotal }) => {
     if (liveRequestCount >= BUDGET.maxRequests) {
-      throw new Error(
-        `목록 단계에서 요청 예산(${BUDGET.maxRequests}회) 소진 — ` +
-          `${pageNo}페이지 · 라이브 요청 ${liveRequestCount}회 · 경과 ${elapsedSec(t0)}초에서 중단한다.`,
-      );
+      throw new Error(`목록 요청 예산(${BUDGET.maxRequests}회) 소진 — ${pageNo}페이지 · 기존 산출물을 유지한다.`);
     }
-    const page = await fetchSearchPage(searchInfo, pageNo, totalCnt);
-    totalCnt = page.totalCnt;
-    acceptPage(acc, page.rows);
-    const collectedEnough = opts.limit !== null && acc.rows.length >= opts.limit;
-    const exhausted = page.rows.length < SEARCH.pageSize || acc.rows.length >= totalCnt;
-    if (opts.dryRun || collectedEnough || exhausted) break;
-    // 정체 종결 — 연속 STALL_PAGE_LIMIT페이지 신규 고유 0건이면 서버 꼬리 반복으로 보고 정상 종결한다.
-    // 오류·경고가 아니라 정보 로그다(수집된 고유 목록은 그대로 유효하다).
-    if (isStalled(acc)) {
-      console.log(
-        `목록 정체 종결 — 연속 ${STALL_PAGE_LIMIT}페이지 신규 고유 0건(stallPages) · ` +
-          `고유 ${acc.rows.length}건 · 서버 총 ${totalCnt}건 · ${pageNo}페이지`,
-      );
-      break;
-    }
-    if (pageNo >= HARD_PAGE_CAP) {
-      console.error(`페이지 상한(${HARD_PAGE_CAP}) 도달 — 서버 총 ${totalCnt}건 중 고유 ${acc.rows.length}건에서 절단한다.`);
-      break;
-    }
-    pageNo++;
-    // 목록 단계에서 차단당해도 차단 시점을 페이지 단위로 특정할 수 있게 남긴다(AGENTS.md §9).
-    if (pageNo % 100 === 0) console.log(`목록 진행 — ${pageNo}페이지 · 라이브 요청 ${liveRequestCount}회`);
-  }
+    return fetchSearchPage(searchInfo, pageNo, knownTotal);
+  }, {
+    pageSize: SEARCH.pageSize,
+    maxPages: 600,
+    maxRepeatRetries: 2,
+    dryRun: opts.dryRun,
+    limit: opts.limit,
+    onAcceptedPage: ({ page, pageNo }) => {
+      for (const row of page.rows) diagnostics.record("receiveRaw", observeRawRow(row));
+      if (pageNo % 100 === 0) console.log(`목록 진행 — ${pageNo}페이지 · 라이브 요청 ${liveRequestCount}회`);
+    },
+    onRetry: ({ request, reason, nextAttempt }) => {
+      console.error(`목록 재확인 — ${request.pageNo}페이지 · ${reason} · 시도 ${nextAttempt}/3`);
+    },
+  }).catch((error: unknown) => {
+    console.error(`목록 미완주 부분 관측(파일 쓰기 없음) — ${JSON.stringify(diagnostics.snapshot())}`);
+    throw error;
+  });
+  const { accumulator: acc, totalCnt, pageCount: pageNo } = pagination;
   const rows = acc.rows;
-  console.log(`목록 조회 — 서버 총 ${totalCnt}건 중 수신 ${acc.received}건 · 고유 ${rows.length}건(${pageNo}페이지)`);
+  for (const row of rows) diagnostics.record("dedup", observeRawRow(row));
+  console.log(`목록 조회 — 서버 총 ${totalCnt}건 중 수신 ${acc.received}건 · 고유 ${rows.length}건(${pageNo}페이지) · 완주 ${pagination.complete} · 재확인 ${pagination.retries}회 · 폐기 응답 ${pagination.rejectedRows}행`);
 
   let picked = rows;
   if (opts.region) {
+    for (const row of picked) if (resolveRegionKey(row) !== opts.region) diagnostics.exclude("scope", observeRawRow(row));
     picked = picked.filter((r) => resolveRegionKey(r) === opts.region);
     console.log(`지역 필터(${opts.region}) — ${picked.length}건`);
   }
-  if (opts.limit !== null) picked = picked.slice(0, opts.limit);
+  if (opts.limit !== null) {
+    for (const row of picked.slice(opts.limit)) diagnostics.exclude("limit", observeRawRow(row));
+    picked = picked.slice(0, opts.limit);
+  }
 
   // 3) 물건별 상세(기일 이력) — 요청하지 않았거나 실패한 물건은 역산 폴백(buildBackcalcHistory)
   //
@@ -949,11 +977,13 @@ async function main(): Promise<void> {
     const outcome = mapRow(row, details[i], todayYmd, failedCode);
     if (!outcome.item) {
       skips.set(outcome.skipReason ?? "기타", (skips.get(outcome.skipReason ?? "기타") ?? 0) + 1);
+      diagnostics.record("invalid", observeRawRow(row), EXCLUSION_REASON_BY_SKIP[outcome.skipReason ?? ""] ?? "other");
       return;
     }
     if (outcome.historySource === "실취득") realCount++;
     else backcalcCount++;
     items.push(outcome.item);
+    diagnostics.record("mapped", observeItem(outcome.item));
   });
   if (skips.size > 0) {
     console.error(`수집 제외 — ${[...skips.entries()].map(([k, v]) => `${k} ${v}건`).join(" · ")}`);
@@ -971,33 +1001,34 @@ async function main(): Promise<void> {
       return false;
     }
     return true;
+  }, (item, reason) => {
+    diagnostics.record(reason === "invalid" ? "invalid" : "idDuplicates", observeItem(item), reason === "invalid" ? "schemaInvalid" : "duplicateId");
   });
   if (gate.valid.length === 0) {
     console.error(
       `검증 게이트 기각 — 유효 0건(무효드롭 ${gate.invalidDropped}건 · 중복드롭 ${gate.dupDropped}건). ` +
         `기존 파일을 변경하지 않는다.`,
     );
-    process.exit(1);
+    console.error(`수집 단계 진단 — ${JSON.stringify(diagnostics.snapshot())}`);
+    throw new Error("검증 게이트 기각 — 유효 0건 · 기존 산출물을 유지한다.");
   }
 
   // 산출물 상한 — 수집일부터 OUTPUT_WINDOW_DAYS일의 매각기일에 배분해 OUTPUT_CAP건을 산출한다.
   // 임박순 단순 절단은 상한을 첫 기일에서 소진해 창의 나머지 날을 빈 채로 남긴다(crawl-lib 주석).
   // 창 경계는 미포함이라 오늘~오늘+6일 7일치다. 갱신 주기(nextUpdateAt)를 경계로 쓰지 않는 이유는
   // crawl-config OUTPUT_WINDOW_DAYS 주석 참조 — 매일 갱신에서는 창이 하루로 붕괴한다.
-  const outputWindowEnd = isoDayKst(OUTPUT_WINDOW_DAYS);
   const {
     capped: outItems,
     cappedFrom,
     dateSpread,
   } = capAcrossSaleDates(gate.valid, OUTPUT_CAP, outputWindowEnd);
-  // 원천이 무엇을 줬는지 상한 적용 **전** 값으로 기록한다(2026-08-11).
+  // 지역 매핑·계약 검증·기간을 통과한 후보이며 원천 전체 지역 건수가 아니다.
   // 이 두 값이 없으면 "원천에 그 기일·그 지역이 없어서 산출에 없는 것"과 "우리가 상한으로 잘라서
   // 없는 것"을 구분할 수단이 아예 없다. 08-11 산출이 배분 창 마지막 날을 못 덮어 게이트 R2가
   // 위반을 냈는데, 목록 조회는 서버 총 5,666건을 전량 수신하고 정상 종결했고(142페이지·조기 종결
   // 없음) 08-09 런과 08-11 런의 마지막 기일이 창 길이와 무관하게 똑같이 08-14였다 — 원천에 그
   // 이후가 없었다. 원천에 없는 것을 요구하는 채점은 영원히 빨간불이고, 매일 쌓이는 그 알림이
   // 진짜 신호를 가린다(원장 2026-08-05 R4 폐기와 같은 계열).
-  const windowStart = isoDayKst(0);
   const inWindow = gate.valid.filter(
     (i) => i.saleDate >= windowStart && i.saleDate < outputWindowEnd,
   );
@@ -1008,9 +1039,20 @@ async function main(): Promise<void> {
   const candidatesByRegion: Record<string, number> = {};
   for (const r of REGIONS) candidatesByRegion[r.key] = 0;
   for (const i of inWindow) {
+    diagnostics.record("candidates", observeItem(i));
     const key = REGIONS.find((r) => r.name === i.region)?.key;
     if (key !== undefined) candidatesByRegion[key] += 1;
   }
+  const outputIds = new Set(outItems.map((item) => item.id));
+  for (const item of gate.valid) {
+    if (item.saleDate < windowStart || item.saleDate >= outputWindowEnd) {
+      diagnostics.record("windowExcluded", observeItem(item), item.saleDate < windowStart ? "beforeOutputWindow" : "afterOutputWindow");
+    }
+    if (!outputIds.has(item.id)) diagnostics.exclude("cap", observeItem(item));
+  }
+  for (const item of outItems) diagnostics.record("output", observeItem(item));
+  const collectionDiagnostics = diagnostics.snapshot();
+  console.log(`수집 단계 진단 — ${JSON.stringify(collectionDiagnostics)}`);
 
   // 중복 드롭 합계 = 목록 수신 시점 dedupe(acc.received − 고유) + 게이트 중복 id.
   const dedupDropped = acc.received - rows.length + gate.dupDropped;
@@ -1035,7 +1077,8 @@ async function main(): Promise<void> {
   }
   const elapsed = ((Date.now() - t0) / 1000).toFixed(1);
 
-  if (opts.dryRun) {
+  // 명시한 제한 조회도 전량 수집이 아니다. 운영 파일을 부분 목록으로 바꾸지 않는다.
+  if (opts.dryRun || opts.limit !== null || !pagination.complete) {
     for (const item of outItems) {
       console.log(
         `  ${item.id} · ${item.category} · ${item.region} ${item.district} · 감정 ${item.appraisalPrice.toLocaleString("ko-KR")}원 · ` +
@@ -1044,7 +1087,7 @@ async function main(): Promise<void> {
     }
     console.log(summaryLine);
     console.log(
-      `dry-run 완료(쓰기 없음) — 총 ${outItems.length}건 · 픽 ${picks}건 · 지역 ${byRegion.size}개 · 기일 ${dateSpread}일 · 소요 ${elapsed}초`,
+      `${opts.dryRun ? "dry-run" : opts.limit !== null ? "limit" : pagination.stopReason} 부분 조회 완료(쓰기 없음) — 총 ${outItems.length}건 · 픽 ${picks}건 · 지역 ${byRegion.size}개 · 기일 ${dateSpread}일 · 소요 ${elapsed}초`,
     );
     console.log(`라이브 요청 ${liveRequestCount}회`);
     return;
@@ -1063,6 +1106,7 @@ async function main(): Promise<void> {
 
   const targets = opts.region ? REGIONS.filter((r) => r.key === opts.region) : REGIONS;
   const countsByRegion: Record<string, number> = {};
+  const postedSaleDates = outItems.map((item) => item.saleDate);
   for (const r of REGIONS) {
     if (targets.some((t) => t.key === r.key)) {
       countsByRegion[r.key] = byRegion.get(r.key)?.length ?? 0;
@@ -1071,7 +1115,9 @@ async function main(): Promise<void> {
     // 부분 수집(--region) 시 나머지 지역은 기존 파일 건수를 유지한다(meta 합계 계약 §MetaSchema).
     const file = join(outDir, `${r.key}.json`);
     try {
-      countsByRegion[r.key] = existsSync(file) ? (JSON.parse(readFileSync(file, "utf8")) as unknown[]).length : 0;
+      const retained = existsSync(file) ? JSON.parse(readFileSync(file, "utf8")) as { saleDate?: unknown }[] : [];
+      countsByRegion[r.key] = retained.length;
+      for (const item of retained) if (typeof item.saleDate === "string") postedSaleDates.push(item.saleDate);
     } catch {
       countsByRegion[r.key] = 0;
     }
@@ -1113,6 +1159,13 @@ async function main(): Promise<void> {
     // 상한 적용 전 원천 사실 — 게이트 R2가 "창을 덮었나"가 아니라 "원천이 준 것을 다 반영했나"를 묻는 근거.
     sourceLastSaleDate,
     candidatesByRegion,
+    outputWindow,
+    outputSaleDateRange: {
+      first: postedSaleDates.reduce<string | null>((first, date) => first === null || date < first ? date : first, null),
+      last: postedSaleDates.reduce<string | null>((last, date) => last === null || date > last ? date : last, null),
+    },
+    collectionDiagnostics,
+    collectionCompleteness: { complete: pagination.complete, totalCnt, received: acc.received, pageCount: pageNo, retries: pagination.retries, rejectedRows: pagination.rejectedRows },
   };
   writeFileSync(join(outDir, "meta.json"), JSON.stringify(meta, null, 1));
 
