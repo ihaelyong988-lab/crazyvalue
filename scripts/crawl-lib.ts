@@ -88,6 +88,7 @@ export interface GateResult<T> {
 export function gateItems<T extends { id: string }>(
   items: readonly T[],
   isValid: (item: T) => boolean,
+  onDrop?: (item: T, reason: "invalid" | "duplicateId") => void,
 ): GateResult<T> {
   const valid: T[] = [];
   const ids = new Set<string>();
@@ -96,10 +97,12 @@ export function gateItems<T extends { id: string }>(
   for (const item of items) {
     if (!isValid(item)) {
       invalidDropped++;
+      onDrop?.(item, "invalid");
       continue;
     }
     if (ids.has(item.id)) {
       dupDropped++;
+      onDrop?.(item, "duplicateId");
       continue;
     }
     ids.add(item.id);

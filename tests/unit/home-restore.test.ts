@@ -3,6 +3,7 @@ import * as jsxRuntime from "react/jsx-runtime";
 import * as dataLib from "@/lib/data";
 import * as queryLib from "@/lib/query";
 import * as watchlist from "@/lib/watchlist";
+import * as outputPeriod from "@/lib/output-period";
 import {
   chooseHomeRestore,
   getWatchState,
@@ -45,6 +46,7 @@ function pageStubs(react: Record<string, unknown>): Record<string, unknown> {
     "@/lib/data": dataLib,
     "@/lib/query": queryLib,
     "@/lib/watchlist": watchlist,
+    "@/lib/output-period": outputPeriod,
     "@/lib/use-auction-data": {
       useAuctionData: () => ({ status: "ready", items: [], retry: () => {} }),
     },

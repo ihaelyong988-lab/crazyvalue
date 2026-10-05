@@ -26,6 +26,7 @@ interface ListProps {
   onSortChange: (s: string) => void;
   onMore: () => void;
   relaxActions: { label: string; onClick: () => void }[];
+  emptyTitle?: string;
 }
 
 /** 트리 전주회 — 조건에 맞는 엘리먼트 전량(react-harness의 find는 첫 건만 준다). */
@@ -177,7 +178,7 @@ describe("ItemList 빈 결과 문구 — 단정형(앱 기준 문체)", () => {
     const list = mountList({ items: [], relaxActions: [{ label: "금액 범위 넓히기", onClick: () => {} }] });
     const props = propsOf(list.render(), list.EmptyState);
     const text = `${String(props.title)} ${String(props.description ?? "")}`;
-    expect(props.title).toMatch(/^조건에 맞는/);
+    expect(props.title).toBe("현재 게시 물건에 조건에 맞는 물건이 없다");
     expect(text).not.toMatch(POLITE);
     // 1문장 압축(세로 리듬) — 종결 마침표는 하나뿐이다.
     expect(String(props.description).match(/[가-힣)\]][.?]/g)?.length ?? 0).toBe(1);
@@ -190,5 +191,12 @@ describe("ItemList 빈 결과 문구 — 단정형(앱 기준 문체)", () => {
     expect(text).not.toMatch(POLITE);
     // 슬롯이 바뀌면 앱이 거짓을 말한다 — 하드코딩된 시각·주기는 문구에 두지 않는다.
     expect(text).not.toMatch(/\d{1,2}:\d{2}|매일|갱신/);
+  });
+
+  it("기간이 있는 부모의 안내를 빈 결과에서 유지한다", () => {
+    const list = mountList({ items: [], emptyTitle: "현재 제공 기간에 조건에 맞는 물건이 없다" });
+    const props = propsOf(list.render(), list.EmptyState);
+    expect(props.title).toBe("현재 제공 기간에 조건에 맞는 물건이 없다");
+    expect(props.description).toBeUndefined();
   });
 });

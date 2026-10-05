@@ -29,6 +29,39 @@ import { COURT_SELECT_OPTIONS } from "@/lib/court-select-options";
 
 const CopyCaseNoStub = makeStub();
 
+/**
+ * 법원 소재 도시와 관할 시도는 다르다. 대전 본원은 세종 전체와 충남 금산군을 관할한다.
+ * 공식 표(2025. 1. 1. 기준): https://daejeon.scourt.go.kr/jibubmgr/jurisdiction/Jurisdiction.work
+ * 본원 표기만 인정한다. 지원이나 충남 전체를 예외로 넓히면 코드표 오매핑을 가릴 수 있다.
+ */
+function isDaejeonCrossRegionJurisdiction(
+  item: Pick<AuctionItem, "court" | "region" | "district">,
+): boolean {
+  return item.court === "대전지방법원" &&
+    (item.region === "세종" || (item.region === "충남" && item.district === "금산군"));
+}
+
+describe("법원 본원지역 비교 — 공식 관할 예외의 경계", () => {
+  it.each([
+    ["대전지방법원", "세종", "도담동"],
+    ["대전지방법원", "세종", "장군면"],
+    ["대전지방법원", "충남", "금산군"],
+  ])("%s의 %s %s는 공식 관할이며 오매핑으로 세지 않는다", (court, region, district) => {
+    expect(isDaejeonCrossRegionJurisdiction({ court, region, district })).toBe(true);
+  });
+
+  it.each([
+    ["대전지방법원", "충남", "천안시"],
+    ["대전지방법원", "충북", "금산군"],
+    ["대전지방법원 논산지원", "충남", "금산군"],
+    ["울산지방법원", "대구", "달서구"],
+    ["부산지방법원", "경북", "경주시"],
+    ["부산서부지원", "전북", "익산시"],
+  ])("%s의 %s %s는 대전 본원 예외로 숨기지 않는다", (court, region, district) => {
+    expect(isDaejeonCrossRegionJurisdiction({ court, region, district })).toBe(false);
+  });
+});
+
 interface ItemPageModule {
   default: (props: { params: Promise<{ id: string }> }) => Promise<unknown>;
 }
@@ -136,8 +169,9 @@ describe("법원 원문 도달 — 산출물 전건이 목적지 계약을 만�
     // 2026-08-20: 손코딩 법원코드표가 대구·부산·울산 블록을 잘못 매핑해 대구·경북 물건이
     // "부산지방법원"·"울산지방법원"으로 게시됐다. 그 법원에는 그 사건번호가 없어 원문 도달이 막혔다(실측 4/4).
     // 관할과 소재지는 원래 다를 수 있다(광주지법↔전남 · 대전지법↔세종 · 자동차는 채무자 관할) —
-    // 그래서 0을 요구하지 않고 **비율 상한**으로 잰다. 응답값을 원천으로 쓰는 지금은 9.7%(전부 정상 관할),
-    // 오매핑 상태였을 때는 13.8%였다. 상한 12%는 그 둘 사이를 가른다.
+    // 그래서 0을 요구하지 않고 **비율 상한**으로 잰다. 당시 정상 관할 9.7%와 오매핑 13.8%를
+    // 가르던 상한 12%는 유지한다. 2026-10-05 baseline도 128/1000으로 실패했지만,
+    // 공식 관할인 세종10·금산1까지 오매핑으로 세던 오탐이었다. 확인된 본원 예외만 제외한다.
     const items = await loadAllItems();
     const HOME_REGION: Record<string, string> = {
       서울: "서울", 의정부: "경기", 인천: "인천", 수원: "경기", 춘천: "강원", 청주: "충북",
@@ -151,7 +185,9 @@ describe("법원 원문 도달 — 산출물 전건이 목적지 계약을 만�
       (i) => homeOf(i.court) !== null && !i.address.startsWith("사용본거지"),
     );
     expect(scoped.length, "전제: 본원 표기 물건이 있다").toBeGreaterThan(0);
-    const off = scoped.filter((i) => homeOf(i.court) !== i.region);
+    const off = scoped.filter(
+      (i) => homeOf(i.court) !== i.region && !isDaejeonCrossRegionJurisdiction(i),
+    );
     const ratio = off.length / items.length;
     expect(
       Number((ratio * 100).toFixed(1)),
