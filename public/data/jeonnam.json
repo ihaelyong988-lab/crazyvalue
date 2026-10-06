@@ -1,5 +1,115 @@
 [
  {
+  "id": "jeonnam-2024타경72187-1",
+  "court": "광주지방법원",
+  "caseNo": "2024타경72187",
+  "itemNo": "1",
+  "category": "아파트",
+  "address": "전남광주통합특별시 광산구 북문대로583번길 35 1동 1,2,지하1층101호 (수완동,디프리마수완)",
+  "region": "전남",
+  "district": "광산구",
+  "appraisalPrice": 2660000000,
+  "minPrice": 762676000,
+  "priceRatio": 0.2867,
+  "failCount": 5,
+  "saleDate": "2026-10-07",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 76267600,
+  "areaBuilding": 1,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-11",
+    "minPrice": 2660000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-15",
+    "minPrice": 2660000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-20",
+    "minPrice": 2071921635,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 1613856865,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 1257062013,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 979148113,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "2025.05.09.자 채무자겸소유자 유** 더벨류에스로부터 '목록1.의 1층 드레스룸 콘크리트 타설증축 구조체마감 16.2㎡ ' 불법건축물 및 증축현황도가 제출되었음 2025. 5.13. 정정・변경 2025.05.19.자 임차인 정**으로부터 유익비 비용상환청구서(금액 64,522,500원)가 제출되었음 2025.5.20. 정정・변경"
+ },
+ {
+  "id": "jeonnam-2024타경81259-1",
+  "court": "광주지방법원",
+  "caseNo": "2024타경81259",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "전라남도 나주시 우정로 10 바동 1층107호",
+  "region": "전남",
+  "district": "나주시",
+  "appraisalPrice": 650000000,
+  "minPrice": 186368000,
+  "priceRatio": 0.2867,
+  "failCount": 5,
+  "saleDate": "2026-10-07",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 18636800,
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-11",
+    "minPrice": 650000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-15",
+    "minPrice": 650000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-20",
+    "minPrice": 506296534,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 394363354,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 307176614,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 239265316,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "건축물대장상 1층 용도는 일반음식점이나 현 사무소 등으로 이용함. 감정서상 집합건축물대장(표제부,갑)에는 위반건축물로 등재되어 있으나 사실조회 결과 시정완료 됨(2025.04.30.자 사실조회 회신 참조)"
+ },
+ {
   "id": "jeonnam-2024타경81815-2",
   "court": "광주지방법원",
   "caseNo": "2024타경81815",
@@ -423,136 +533,6 @@
    }
   ],
   "specialNote": "관리비는 2024.12.월까지 1,428,270원 미납됨(현황서 참조)"
- },
- {
-  "id": "jeonnam-2025타경31862-10",
-  "court": "광주지방법원",
-  "caseNo": "2025타경31862",
-  "itemNo": "10",
-  "category": "오피스텔",
-  "address": "전남광주통합특별시 남구 서문대로749번다길 37 4층407호 (진월동,금산빌딩)",
-  "region": "전남",
-  "district": "남구",
-  "appraisalPrice": 75000000,
-  "minPrice": 13764000,
-  "priceRatio": 0.1835,
-  "failCount": 7,
-  "saleDate": "2026-10-07",
-  "saleTime": "09:55",
-  "courtRoom": "입찰법정",
-  "deposit": 1376400,
-  "areaBuilding": 31.9056,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-12-31",
-    "minPrice": 75000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-02-04",
-    "minPrice": 75000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-11",
-    "minPrice": 58867173,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-15",
-    "minPrice": 46204587,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-20",
-    "minPrice": 36265779,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 28464851,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 22341938,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 17536089,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": null
- },
- {
-  "id": "jeonnam-2025타경31862-9",
-  "court": "광주지방법원",
-  "caseNo": "2025타경31862",
-  "itemNo": "9",
-  "category": "오피스텔",
-  "address": "전남광주통합특별시 남구 서문대로749번다길 37 4층406호 (진월동,금산빌딩)",
-  "region": "전남",
-  "district": "남구",
-  "appraisalPrice": 93000000,
-  "minPrice": 17067000,
-  "priceRatio": 0.1835,
-  "failCount": 7,
-  "saleDate": "2026-10-07",
-  "saleTime": "09:55",
-  "courtRoom": "입찰법정",
-  "deposit": 1706700,
-  "areaBuilding": 39.7716,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-12-31",
-    "minPrice": 93000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-02-04",
-    "minPrice": 93000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-11",
-    "minPrice": 72995074,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-15",
-    "minPrice": 57293343,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-20",
-    "minPrice": 44969159,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 35295990,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 27703585,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 21744358,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": null
  },
  {
   "id": "jeonnam-2024타경571-1",
@@ -3279,6 +3259,66 @@
    {
     "date": "2026-09-07",
     "minPrice": 113164462,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "jeonnam-2025타경51415-3",
+  "court": "순천지원",
+  "caseNo": "2025타경51415",
+  "itemNo": "3",
+  "category": "기타",
+  "address": "전라남도 광양시 중동 1309-1 이편한세상광양 101동 2층227호",
+  "region": "전남",
+  "district": "광양시",
+  "appraisalPrice": 608000000,
+  "minPrice": 139461000,
+  "priceRatio": 0.2294,
+  "failCount": 6,
+  "saleDate": "2026-10-12",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(108호법정)",
+  "deposit": 13946100,
+  "areaBuilding": 175.974,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-09",
+    "minPrice": 608000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-16",
+    "minPrice": 608000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 475694845,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-25",
+    "minPrice": 372180240,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-29",
+    "minPrice": 291191154,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-03",
+    "minPrice": 227825873,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-07",
+    "minPrice": 178249331,
     "result": "유찰"
    }
   ],
