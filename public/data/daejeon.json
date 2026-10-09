@@ -485,51 +485,6 @@
   "specialNote": "재매각으로, 매수신청보증금 최저매각가격의 20%"
  },
  {
-  "id": "daejeon-2024타경121821-2",
-  "court": "대전지방법원",
-  "caseNo": "2024타경121821",
-  "itemNo": "2",
-  "category": "다세대",
-  "address": "대전광역시 대덕구 덕암동 9-10 3층302호",
-  "region": "대전",
-  "district": "대덕구",
-  "appraisalPrice": 203000000,
-  "minPrice": 69629000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-10-15",
-  "saleTime": "10:00",
-  "courtRoom": "본관제106호법정",
-  "deposit": 6962900,
-  "areaBuilding": 68.57,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-28",
-    "minPrice": 203000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-02",
-    "minPrice": 203000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-06",
-    "minPrice": 142100000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-10",
-    "minPrice": 99470000,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": null
- },
- {
   "id": "daejeon-2025타경3544-1",
   "court": "대전지방법원",
   "caseNo": "2025타경3544",
@@ -700,51 +655,6 @@
   "specialNote": null
  },
  {
-  "id": "daejeon-2025타경503552-1",
-  "court": "대전지방법원",
-  "caseNo": "2025타경503552",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "대전광역시 유성구 구암동 430-1",
-  "region": "대전",
-  "district": "유성구",
-  "appraisalPrice": 1015799000,
-  "minPrice": 348418000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-10-15",
-  "saleTime": "10:00",
-  "courtRoom": "본관제106호법정",
-  "deposit": 34841800,
-  "areaBuilding": null,
-  "areaLand": 648,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-28",
-    "minPrice": 1015799000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-02",
-    "minPrice": 1015799000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-06",
-    "minPrice": 711058581,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-10",
-    "minPrice": 497740503,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "- 일괄매각. 제외외 구조물(감정평가서상 ㄱ) 매각 제외 - 농지취득자격증명 제출 요함(미제출시 매수보증금 미반환)."
- },
- {
   "id": "daejeon-2025타경503908-1",
   "court": "대전지방법원",
   "caseNo": "2025타경503908",
@@ -794,96 +704,6 @@
    {
     "date": "2026-09-10",
     "minPrice": 19207314,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": null
- },
- {
-  "id": "daejeon-2026타경600320-1",
-  "court": "대전지방법원",
-  "caseNo": "2026타경600320",
-  "itemNo": "1",
-  "category": "상가",
-  "address": "대전광역시 유성구 지족동 1023-2 사나래빌딩 2층201호",
-  "region": "대전",
-  "district": "유성구",
-  "appraisalPrice": 1290000000,
-  "minPrice": 442470000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-10-15",
-  "saleTime": "10:00",
-  "courtRoom": "본관제106호법정",
-  "deposit": 44247000,
-  "areaBuilding": 339.63,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-28",
-    "minPrice": 1290000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-02",
-    "minPrice": 1290000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-06",
-    "minPrice": 903000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-10",
-    "minPrice": 632100000,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": null
- },
- {
-  "id": "daejeon-2026타경600320-2",
-  "court": "대전지방법원",
-  "caseNo": "2026타경600320",
-  "itemNo": "2",
-  "category": "상가",
-  "address": "대전광역시 유성구 지족동 1023-2 사나래빌딩 3층301호",
-  "region": "대전",
-  "district": "유성구",
-  "appraisalPrice": 1070000000,
-  "minPrice": 367010000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-10-15",
-  "saleTime": "10:00",
-  "courtRoom": "본관제106호법정",
-  "deposit": 36701000,
-  "areaBuilding": 339.63,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-28",
-    "minPrice": 1070000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-02",
-    "minPrice": 1070000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-06",
-    "minPrice": 749000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-10",
-    "minPrice": 524300000,
     "result": "유찰"
    }
   ],

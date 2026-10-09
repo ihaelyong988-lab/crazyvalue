@@ -165,56 +165,6 @@
   "specialNote": "- 지분 매각임 - 제시외 철제 구조물 매각에서 제외 - 육안으로 확인되지 않는 분묘 소재 가능성이 있음."
  },
  {
-  "id": "sejong-2024타경11191-1",
-  "court": "대전지방법원",
-  "caseNo": "2024타경11191",
-  "itemNo": "1",
-  "category": "상가",
-  "address": "세종특별자치시 나성로 96 1층104호 (나성동,더센트럴)",
-  "region": "세종",
-  "district": "나성로",
-  "appraisalPrice": 1280000000,
-  "minPrice": 307328000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-10-14",
-  "saleTime": "10:00",
-  "courtRoom": "본관제106호경매법정",
-  "deposit": 30732800,
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-22",
-    "minPrice": 1280000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-27",
-    "minPrice": 1280000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-01",
-    "minPrice": 896000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-05",
-    "minPrice": 627200000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-09",
-    "minPrice": 439040000,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "대지권 미등기이며, 최저매각가격에 대지권 가격이 포함됨. 특별매각조건 매수신청보증금 최저매각가격의 20%"
- },
- {
   "id": "sejong-2025타경4006-1",
   "court": "대전지방법원",
   "caseNo": "2025타경4006",
@@ -268,56 +218,6 @@
    }
   ],
   "specialNote": "일괄매각 목록 2는 맹지임"
- },
- {
-  "id": "sejong-2025타경502691-1",
-  "court": "대전지방법원",
-  "caseNo": "2025타경502691",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "세종특별자치시 나성동 759 블루지움 8층807호",
-  "region": "세종",
-  "district": "나성동",
-  "appraisalPrice": 106000000,
-  "minPrice": 25451000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-10-14",
-  "saleTime": "10:00",
-  "courtRoom": "본관제106호경매법정",
-  "deposit": 2545100,
-  "areaBuilding": 26.07,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-22",
-    "minPrice": 106000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-27",
-    "minPrice": 106000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-01",
-    "minPrice": 74200292,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-05",
-    "minPrice": 51940408,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-09",
-    "minPrice": 36358429,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": null
  },
  {
   "id": "sejong-2025타경503378-1",
@@ -618,51 +518,6 @@
    }
   ],
   "specialNote": null
- },
- {
-  "id": "sejong-2025타경503809-1",
-  "court": "대전지방법원",
-  "caseNo": "2025타경503809",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "세종특별자치시 전의면 신흥리 130-15",
-  "region": "세종",
-  "district": "전의면",
-  "appraisalPrice": 136818000,
-  "minPrice": 44590000,
-  "priceRatio": 0.3259,
-  "failCount": 3,
-  "saleDate": "2026-10-14",
-  "saleTime": "10:00",
-  "courtRoom": "본관제106호경매법정",
-  "deposit": 4459000,
-  "areaBuilding": null,
-  "areaLand": 198,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-27",
-    "minPrice": 136818000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-01",
-    "minPrice": 136818000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-05",
-    "minPrice": 94154551,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-09",
-    "minPrice": 64794687,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "지상 소재 전신주 매각에서 제외 최저매각가격은 전신주 소재로 인하여 제한받는 가격임 농지취득자격증명요함(미제출시 매수보증금 반환하지 않음)(별지 사실조회회신서 참조)"
  },
  {
   "id": "sejong-2024타경6533-2",
