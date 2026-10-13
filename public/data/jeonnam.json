@@ -1,707 +1,1457 @@
 [
  {
-  "id": "jeonnam-2024타경535-1",
-  "court": "해남지원",
-  "caseNo": "2024타경535",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "전라남도 완도군 노화읍 고막리 715",
-  "region": "전남",
-  "district": "완도군",
-  "appraisalPrice": 967957400,
-  "minPrice": 142097000,
-  "priceRatio": 0.1468,
-  "failCount": 8,
-  "saleDate": "2026-10-12",
-  "saleTime": "10:00",
-  "courtRoom": "입찰법정",
-  "deposit": 14209700,
-  "areaBuilding": 5289,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-12-01",
-    "minPrice": 967957400,
-    "result": "신건"
-   },
-   {
-    "date": "2026-01-05",
-    "minPrice": 967957400,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-09",
-    "minPrice": 761548080,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-16",
-    "minPrice": 599153928,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-20",
-    "minPrice": 471389054,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-25",
-    "minPrice": 370869037,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-29",
-    "minPrice": 291784125,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-03",
-    "minPrice": 229563450,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-07",
-    "minPrice": 180610846,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "1. 일괄매각, 공장 및 광업재단저당법 제6조 기계 기구 포함. 2. 목록11. 특별매각조건있음(농지취득자격증명 필요-미제출시 보증금 미반환) 3. 본건 인접필지 지상 및 본건 건물 내에 소재하는 그 밖의 기계기구(신축 양수시설, 히트펌프, 소수력 발전설비 등)는 타인소유의 것으로 조사되어 평가외 되었으며, 매각에서 제외함.(감정평가서 및 현황조사서 참조) 4. 목록4. 지상 제시외 건물(ㄱ.경량철골조 기계실 10㎡) 매각에 포함. 5. 기계기구1. 양수시설 중 양수펌프 및 Blower 전부 소재불명, 기계기구12. 에어컨덴서 소재불명.(감정평가서 참조) 6. 목록1,14. 북측 일부 현황 '도로'로 이용중임. 7. 목록5. 북측 일부 '묘지'로 이용중이며 감안하여 평가됨. 8. 목록29. 냉동창고 부분은 공부상 면적과 현황 상이함. 9. 목록6,29. 등기사항전부증명서상 도로명주소와 현황이 상이하여 현황주소를 기준으로 평가됨. 10. 목록1~15, 목록11~28. 인접지와의 지적 경계가 불분명한 바, 정확한 경계 등의 확인은 측량을 요함."
- },
- {
-  "id": "jeonnam-2024타경54106-1",
+  "id": "jeonnam-2024타경50937-1",
   "court": "목포지원",
-  "caseNo": "2024타경54106",
+  "caseNo": "2024타경50937",
   "itemNo": "1",
   "category": "토지",
-  "address": "전라남도 함평군 손불면 학산리 661",
-  "region": "전남",
-  "district": "함평군",
-  "appraisalPrice": 494000,
-  "minPrice": 30000,
-  "priceRatio": 0.0607,
-  "failCount": 12,
-  "saleDate": "2026-10-12",
-  "saleTime": "10:00",
-  "courtRoom": "경매법정",
-  "deposit": 3000,
-  "areaBuilding": null,
-  "areaLand": 105,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-07-14",
-    "minPrice": 494000,
-    "result": "신건"
-   },
-   {
-    "date": "2025-08-18",
-    "minPrice": 494000,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-09-22",
-    "minPrice": 391150,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-10-27",
-    "minPrice": 309713,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-12-01",
-    "minPrice": 245231,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-01-05",
-    "minPrice": 194174,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-09",
-    "minPrice": 153747,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-16",
-    "minPrice": 121737,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-20",
-    "minPrice": 96392,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-25",
-    "minPrice": 76323,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-29",
-    "minPrice": 60433,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-03",
-    "minPrice": 47851,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-07",
-    "minPrice": 37888,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "농지취득자격증명 제출요(미제출시 매수보증금 미반환) 지분매각. 특별매각조건있음(공유자우선매수권 1회로 행사 제한)"
- },
- {
-  "id": "jeonnam-2024타경54106-5",
-  "court": "목포지원",
-  "caseNo": "2024타경54106",
-  "itemNo": "5",
-  "category": "기타",
-  "address": "전라남도 함평군 손불면 학산리 1018-9",
-  "region": "전남",
-  "district": "함평군",
-  "appraisalPrice": 21861000,
-  "minPrice": 1314000,
-  "priceRatio": 0.0601,
-  "failCount": 12,
-  "saleDate": "2026-10-12",
-  "saleTime": "10:00",
-  "courtRoom": "경매법정",
-  "deposit": 131400,
-  "areaBuilding": 694,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-07-14",
-    "minPrice": 21861000,
-    "result": "신건"
-   },
-   {
-    "date": "2025-08-18",
-    "minPrice": 21861000,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-09-22",
-    "minPrice": 17294731,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-10-27",
-    "minPrice": 13682252,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-12-01",
-    "minPrice": 10824338,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-01-05",
-    "minPrice": 8563378,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-09",
-    "minPrice": 6774682,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-16",
-    "minPrice": 5359604,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-20",
-    "minPrice": 4240104,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-25",
-    "minPrice": 3354442,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-29",
-    "minPrice": 2653775,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-03",
-    "minPrice": 2099461,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-07",
-    "minPrice": 1660931,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "일괄매각 맹지 목록 7 농지취득자격증명 제출요(미제출시 매수보증금 미반환) 지분매각. 특별매각조건있음(공유자우선매수권 1회로 행사 제한)"
- },
- {
-  "id": "jeonnam-2024타경54533-1",
-  "court": "목포지원",
-  "caseNo": "2024타경54533",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "전라남도 무안군 해제면 만풍리 산2-1",
+  "address": "전라남도 무안군 일로읍 망월리 349-1",
   "region": "전남",
   "district": "무안군",
-  "appraisalPrice": 277025400,
-  "minPrice": 32534000,
-  "priceRatio": 0.1174,
-  "failCount": 9,
-  "saleDate": "2026-10-12",
+  "appraisalPrice": 9520940,
+  "minPrice": 1398000,
+  "priceRatio": 0.1468,
+  "failCount": 8,
+  "saleDate": "2026-10-19",
   "saleTime": "10:00",
   "courtRoom": "경매법정",
-  "deposit": 3253400,
+  "deposit": 139800,
   "areaBuilding": null,
-  "areaLand": 10614,
+  "areaLand": 386,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-10-27",
-    "minPrice": 277025400,
+    "date": "2025-12-08",
+    "minPrice": 9520940,
     "result": "신건"
    },
    {
-    "date": "2025-12-01",
-    "minPrice": 277025400,
+    "date": "2026-01-12",
+    "minPrice": 9520940,
     "result": "유찰"
    },
    {
-    "date": "2026-01-05",
-    "minPrice": 218356448,
+    "date": "2026-02-16",
+    "minPrice": 7490887,
     "result": "유찰"
    },
    {
-    "date": "2026-02-09",
-    "minPrice": 172112515,
+    "date": "2026-03-23",
+    "minPrice": 5893682,
     "result": "유찰"
    },
    {
-    "date": "2026-03-16",
-    "minPrice": 135662208,
+    "date": "2026-04-27",
+    "minPrice": 4637032,
     "result": "유찰"
    },
    {
-    "date": "2026-04-20",
-    "minPrice": 106931414,
+    "date": "2026-06-01",
+    "minPrice": 3648325,
     "result": "유찰"
    },
    {
-    "date": "2026-05-25",
-    "minPrice": 84285281,
+    "date": "2026-07-06",
+    "minPrice": 2870430,
     "result": "유찰"
    },
    {
-    "date": "2026-06-29",
-    "minPrice": 66435189,
+    "date": "2026-08-10",
+    "minPrice": 2258397,
     "result": "유찰"
    },
    {
-    "date": "2026-08-03",
-    "minPrice": 52365421,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-07",
-    "minPrice": 41275375,
+    "date": "2026-09-14",
+    "minPrice": 1776862,
     "result": "유찰"
    }
   ],
-  "specialNote": null
+  "specialNote": "지분매각, 특별매각조건있음(공유자우선매수권 행사제한) 농지취득자격증명 필요, 미제출 시 보증금 미반환 원상회복명령이 발하여질 가능성 있음, 일로읍장의 2025. 5. 1.자 사실조회 회신 참조 제시 외 건물 및 비닐하우스, 수목은 매각에서 제외 도로가 일부 경계에 걸려있음 2026. 7. 30. 정정・변경"
  },
  {
-  "id": "jeonnam-2024타경57600-1",
+  "id": "jeonnam-2024타경50937-3",
   "court": "목포지원",
-  "caseNo": "2024타경57600",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "전라남도 무안군 삼향읍 남악리 2115 남악도휘에드가2차오피스텔 7층710호",
+  "caseNo": "2024타경50937",
+  "itemNo": "3",
+  "category": "토지",
+  "address": "전라남도 무안군 일로읍 망월리 428-1",
   "region": "전남",
   "district": "무안군",
-  "appraisalPrice": 64000000,
-  "minPrice": 7516000,
-  "priceRatio": 0.1174,
+  "appraisalPrice": 4840000,
+  "minPrice": 710000,
+  "priceRatio": 0.1467,
+  "failCount": 8,
+  "saleDate": "2026-10-19",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정",
+  "deposit": 71000,
+  "areaBuilding": null,
+  "areaLand": 1666,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-12-08",
+    "minPrice": 4840000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-01-12",
+    "minPrice": 4840000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-16",
+    "minPrice": 3807562,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 2995357,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 2356407,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 1853753,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 1458322,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 1147242,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-14",
+    "minPrice": 902520,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "지분매각, 특별매각조건있음(공유자우선매수권 행사제한) 농지취득자격증명 필요, 미제출 시 보증금 미반환 연고자 미상의 분묘 소재 원상회복명령이 발하여질 가능성 있음(묘지가 조성된 농지는 농취신청시 반려처분 됨), 일로읍장의 2025. 5. 1.자 사실조회 회신 참조 도로가 일부 경계에 걸려있음 2026. 7. 30. 정정・변경"
+ },
+ {
+  "id": "jeonnam-2024타경50937-4",
+  "court": "목포지원",
+  "caseNo": "2024타경50937",
+  "itemNo": "4",
+  "category": "토지",
+  "address": "전라남도 무안군 일로읍 망월리 608-1",
+  "region": "전남",
+  "district": "무안군",
+  "appraisalPrice": 1714350,
+  "minPrice": 201000,
+  "priceRatio": 0.1172,
   "failCount": 9,
-  "saleDate": "2026-10-12",
+  "saleDate": "2026-10-19",
   "saleTime": "10:00",
   "courtRoom": "경매법정",
-  "deposit": 751600,
+  "deposit": 20100,
   "areaBuilding": null,
-  "areaLand": null,
+  "areaLand": 187,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-10-27",
-    "minPrice": 64000000,
+    "date": "2025-11-03",
+    "minPrice": 1714350,
     "result": "신건"
    },
    {
-    "date": "2025-12-01",
-    "minPrice": 64000000,
+    "date": "2025-12-08",
+    "minPrice": 1714350,
     "result": "유찰"
    },
    {
-    "date": "2026-01-05",
-    "minPrice": 50445819,
+    "date": "2026-01-12",
+    "minPrice": 1351032,
     "result": "유찰"
    },
    {
-    "date": "2026-02-09",
-    "minPrice": 39762197,
+    "date": "2026-02-16",
+    "minPrice": 1064712,
     "result": "유찰"
    },
    {
-    "date": "2026-03-16",
-    "minPrice": 31341197,
+    "date": "2026-03-23",
+    "minPrice": 839070,
     "result": "유찰"
    },
    {
-    "date": "2026-04-20",
-    "minPrice": 24703630,
+    "date": "2026-04-27",
+    "minPrice": 661248,
     "result": "유찰"
    },
    {
-    "date": "2026-05-25",
-    "minPrice": 19471794,
+    "date": "2026-06-01",
+    "minPrice": 521112,
     "result": "유찰"
    },
    {
-    "date": "2026-06-29",
-    "minPrice": 15347978,
+    "date": "2026-07-06",
+    "minPrice": 410674,
     "result": "유찰"
    },
    {
-    "date": "2026-08-03",
-    "minPrice": 12097521,
+    "date": "2026-08-10",
+    "minPrice": 323641,
     "result": "유찰"
    },
    {
-    "date": "2026-09-07",
-    "minPrice": 9535458,
+    "date": "2026-09-14",
+    "minPrice": 255053,
     "result": "유찰"
    }
   ],
-  "specialNote": null
+  "specialNote": "지분매각, 특별매각조건있음(공유자우선매수권 행사제한) 농지취득자격증명 필요, 미제출 시 보증금 미반환 원상회복명령이 발하여질 가능성 있음, 일로읍장의 2025. 5. 1.자 사실조회 회신 참조 2026. 7. 30. 정정・변경"
  },
  {
-  "id": "jeonnam-2024타경58207-1",
-  "court": "목포지원",
-  "caseNo": "2024타경58207",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "전라남도 신안군 암태면 도창리 280",
-  "region": "전남",
-  "district": "신안군",
-  "appraisalPrice": 27455000,
-  "minPrice": 4030000,
-  "priceRatio": 0.1468,
-  "failCount": 8,
-  "saleDate": "2026-10-12",
-  "saleTime": "10:00",
-  "courtRoom": "경매법정",
-  "deposit": 403000,
-  "areaBuilding": null,
-  "areaLand": 1445,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-12-01",
-    "minPrice": 27455000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-01-05",
-    "minPrice": 27455000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-09",
-    "minPrice": 21600157,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-16",
-    "minPrice": 16993872,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-20",
-    "minPrice": 13369889,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-25",
-    "minPrice": 10518729,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-29",
-    "minPrice": 8275585,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-03",
-    "minPrice": 6510797,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-07",
-    "minPrice": 5122354,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "맹지 농지취득자격증명 제출요(미제출시 매수보증금 미반환)"
- },
- {
-  "id": "jeonnam-2024타경58276-1",
-  "court": "목포지원",
-  "caseNo": "2024타경58276",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "전라남도 신안군 증도면 우전리 475",
-  "region": "전남",
-  "district": "신안군",
-  "appraisalPrice": 56651700,
-  "minPrice": 8316000,
-  "priceRatio": 0.1468,
-  "failCount": 8,
-  "saleDate": "2026-10-12",
-  "saleTime": "10:00",
-  "courtRoom": "경매법정",
-  "deposit": 831600,
-  "areaBuilding": null,
-  "areaLand": 1527,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-12-01",
-    "minPrice": 56651700,
-    "result": "신건"
-   },
-   {
-    "date": "2026-01-05",
-    "minPrice": 56651700,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-09",
-    "minPrice": 44570821,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-16",
-    "minPrice": 35066170,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-20",
-    "minPrice": 27588369,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-25",
-    "minPrice": 21705196,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-29",
-    "minPrice": 17076600,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-03",
-    "minPrice": 13435044,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-07",
-    "minPrice": 10570044,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "지적도상 맹지 농지취득자격증명 제출요(미제출시 매수보증금 미반환)"
- },
- {
-  "id": "jeonnam-2024타경58739-1",
+  "id": "jeonnam-2024타경58425-1",
   "court": "순천지원",
-  "caseNo": "2024타경58739",
+  "caseNo": "2024타경58425",
   "itemNo": "1",
   "category": "토지",
-  "address": "전라남도 여수시 화양면 이목리 산144-5",
-  "region": "전남",
-  "district": "여수시",
-  "appraisalPrice": 31716750,
-  "minPrice": 1907000,
-  "priceRatio": 0.0601,
-  "failCount": 12,
-  "saleDate": "2026-10-12",
-  "saleTime": "10:00",
-  "courtRoom": "경매법정(108호법정)",
-  "deposit": 190700,
-  "areaBuilding": null,
-  "areaLand": 9759,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-07-14",
-    "minPrice": 31716750,
-    "result": "신건"
-   },
-   {
-    "date": "2025-08-18",
-    "minPrice": 31716750,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-09-22",
-    "minPrice": 25092495,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-10-27",
-    "minPrice": 19851760,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-12-01",
-    "minPrice": 15705587,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-01-05",
-    "minPrice": 12425371,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-09",
-    "minPrice": 9830249,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-16",
-    "minPrice": 7777136,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-20",
-    "minPrice": 6152829,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-25",
-    "minPrice": 4867770,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-29",
-    "minPrice": 3851103,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-03",
-    "minPrice": 3046775,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-07",
-    "minPrice": 2410436,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "지분매각, 특별매각조건 있음(공유자 우선매수권행사는 1회로 제한함),근저당권설정등기의 말소등기 절차를 이행을 명하는 확정된 화해권고결정 있음"
- },
- {
-  "id": "jeonnam-2025타경72-2",
-  "court": "순천지원",
-  "caseNo": "2025타경72",
-  "itemNo": "2",
-  "category": "토지",
-  "address": "전라남도 광양시 태인동 651",
+  "address": "전라남도 광양시 도이동 산26-43",
   "region": "전남",
   "district": "광양시",
-  "appraisalPrice": 21338490,
-  "minPrice": 2506000,
-  "priceRatio": 0.1174,
-  "failCount": 9,
-  "saleDate": "2026-10-12",
+  "appraisalPrice": 25066000,
+  "minPrice": 1884000,
+  "priceRatio": 0.0752,
+  "failCount": 11,
+  "saleDate": "2026-10-19",
   "saleTime": "10:00",
   "courtRoom": "경매법정(108호법정)",
-  "deposit": 250600,
+  "deposit": 188400,
   "areaBuilding": null,
-  "areaLand": 1349,
+  "areaLand": 330,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-10-27",
-    "minPrice": 21338490,
+    "date": "2025-08-25",
+    "minPrice": 25066000,
     "result": "신건"
    },
    {
-    "date": "2025-12-01",
-    "minPrice": 21338490,
+    "date": "2025-09-29",
+    "minPrice": 25066000,
     "result": "유찰"
    },
    {
-    "date": "2026-01-05",
-    "minPrice": 16819383,
+    "date": "2025-11-03",
+    "minPrice": 19810838,
     "result": "유찰"
    },
    {
-    "date": "2026-02-09",
-    "minPrice": 13257341,
+    "date": "2025-12-08",
+    "minPrice": 15657436,
     "result": "유찰"
    },
    {
-    "date": "2026-03-16",
-    "minPrice": 10449676,
+    "date": "2026-01-12",
+    "minPrice": 12374808,
     "result": "유찰"
    },
    {
-    "date": "2026-04-20",
-    "minPrice": 8236623,
+    "date": "2026-02-16",
+    "minPrice": 9780392,
     "result": "유찰"
    },
    {
-    "date": "2026-05-25",
-    "minPrice": 6492255,
+    "date": "2026-03-23",
+    "minPrice": 7729903,
     "result": "유찰"
    },
    {
-    "date": "2026-06-29",
-    "minPrice": 5117313,
+    "date": "2026-04-27",
+    "minPrice": 6109306,
     "result": "유찰"
    },
    {
-    "date": "2026-08-03",
-    "minPrice": 4033558,
+    "date": "2026-06-01",
+    "minPrice": 4828472,
     "result": "유찰"
    },
    {
-    "date": "2026-09-07",
-    "minPrice": 3179323,
+    "date": "2026-07-06",
+    "minPrice": 3816168,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 3016097,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-14",
+    "minPrice": 2383763,
     "result": "유찰"
    }
   ],
-  "specialNote": "지분경매,특별매각조건 있음(공유자 우선매수권행사는 1회로 제한함)"
+  "specialNote": "지분매각・특별매각조건있음(공유자 우선매수신고는 1회에 한함)"
+ },
+ {
+  "id": "jeonnam-2024타경60886-1",
+  "court": "순천지원",
+  "caseNo": "2024타경60886",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "전라남도 고흥군 고흥읍 호형리 1006-7",
+  "region": "전남",
+  "district": "고흥군",
+  "appraisalPrice": 68768000,
+  "minPrice": 6461000,
+  "priceRatio": 0.094,
+  "failCount": 10,
+  "saleDate": "2026-10-19",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(108호법정)",
+  "deposit": 646100,
+  "areaBuilding": null,
+  "areaLand": 2456,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-09-29",
+    "minPrice": 68768000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-03",
+    "minPrice": 68768000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-08",
+    "minPrice": 54284736,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-12",
+    "minPrice": 42851799,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-16",
+    "minPrice": 33826760,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 26702488,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 21078663,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 16639275,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 13134869,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 10368527,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-14",
+    "minPrice": 8184806,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "1.파악이 어려운 연고미상의 분묘가 소재할 수 있음 2.농지취득자격증명 제출요(미제출시 보증금 몰수)"
+ },
+ {
+  "id": "jeonnam-2024타경63199-1",
+  "court": "순천지원",
+  "caseNo": "2024타경63199",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "전라남도 여수시 묘도동 산113-1",
+  "region": "전남",
+  "district": "여수시",
+  "appraisalPrice": 674381500,
+  "minPrice": 79199000,
+  "priceRatio": 0.1174,
+  "failCount": 9,
+  "saleDate": "2026-10-19",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(108호법정)",
+  "deposit": 7919900,
+  "areaBuilding": null,
+  "areaLand": 18785,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-11-03",
+    "minPrice": 674381500,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-08",
+    "minPrice": 674381500,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-12",
+    "minPrice": 531559218,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-16",
+    "minPrice": 418984213,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 330250638,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 260309292,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 205180307,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 161726684,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 127475783,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-14",
+    "minPrice": 100478627,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "jeonnam-2025타경507-1",
+  "court": "순천지원",
+  "caseNo": "2025타경507",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "전라남도 광양시 옥룡면 율천리 573-1",
+  "region": "전남",
+  "district": "광양시",
+  "appraisalPrice": 12953330,
+  "minPrice": 2377000,
+  "priceRatio": 0.1835,
+  "failCount": 7,
+  "saleDate": "2026-10-19",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(108호법정)",
+  "deposit": 237700,
+  "areaBuilding": null,
+  "areaLand": 364,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-01-12",
+    "minPrice": 12953330,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-16",
+    "minPrice": 12953330,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 10166893,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 7979856,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 6263281,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 4915964,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 3858474,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-14",
+    "minPrice": 3028464,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "특별매각조건 있음(공유자우선매수권 행사는 1회로 제한). 수목 포함"
+ },
+ {
+  "id": "jeonnam-2025타경50848-1",
+  "court": "순천지원",
+  "caseNo": "2025타경50848",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "전라남도 여수시 남면 횡간리 149",
+  "region": "전남",
+  "district": "여수시",
+  "appraisalPrice": 17238200,
+  "minPrice": 3163000,
+  "priceRatio": 0.1835,
+  "failCount": 7,
+  "saleDate": "2026-10-19",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(108호법정)",
+  "deposit": 316300,
+  "areaBuilding": null,
+  "areaLand": 1759,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-01-12",
+    "minPrice": 17238200,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-16",
+    "minPrice": 17238200,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 13529849,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 10619254,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 8334797,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 6541782,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 5134488,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-14",
+    "minPrice": 4029936,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "농지취득자격증명 제출요(미제출시 보증금 몰수)"
+ },
+ {
+  "id": "jeonnam-2025타경51011-1",
+  "court": "목포지원",
+  "caseNo": "2025타경51011",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "전라남도 무안군 일로읍 의산리 산102",
+  "region": "전남",
+  "district": "무안군",
+  "appraisalPrice": 234975000,
+  "minPrice": 43118000,
+  "priceRatio": 0.1835,
+  "failCount": 7,
+  "saleDate": "2026-10-19",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정",
+  "deposit": 4311800,
+  "areaBuilding": null,
+  "areaLand": 9399,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-01-12",
+    "minPrice": 234975000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-16",
+    "minPrice": 234975000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 184428034,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 144754547,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 113615476,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 89174929,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 69991943,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-14",
+    "minPrice": 54935531,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "jeonnam-2025타경51263-1",
+  "court": "순천지원",
+  "caseNo": "2025타경51263",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "전라남도 순천시 석현동 산138",
+  "region": "전남",
+  "district": "순천시",
+  "appraisalPrice": 88230450,
+  "minPrice": 16190000,
+  "priceRatio": 0.1835,
+  "failCount": 7,
+  "saleDate": "2026-10-19",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(108호법정)",
+  "deposit": 1619000,
+  "areaBuilding": null,
+  "areaLand": 53473,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-01-12",
+    "minPrice": 88230450,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-16",
+    "minPrice": 88230450,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 69250441,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 54353385,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 42660962,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 33483797,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 26280810,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-14",
+    "minPrice": 20627320,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "지분매각.특별매각조건 있음(공유자우선매수권 행사는 1회로 제한). 구분지상권 있음."
+ },
+ {
+  "id": "jeonnam-2025타경51324-2",
+  "court": "순천지원",
+  "caseNo": "2025타경51324",
+  "itemNo": "2",
+  "category": "토지",
+  "address": "전라남도 순천시 해룡면 상내리 109",
+  "region": "전남",
+  "district": "순천시",
+  "appraisalPrice": 20640000,
+  "minPrice": 3029000,
+  "priceRatio": 0.1468,
+  "failCount": 8,
+  "saleDate": "2026-10-19",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(108호법정)",
+  "deposit": 302900,
+  "areaBuilding": null,
+  "areaLand": 688,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-12-08",
+    "minPrice": 20640000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-01-12",
+    "minPrice": 20640000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-16",
+    "minPrice": 16238032,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 12774888,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 10050341,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 7906868,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 6220541,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 4893864,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-14",
+    "minPrice": 3850132,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "농지취득자격증명 제출요(미제출시 보증금 몰수)"
+ },
+ {
+  "id": "jeonnam-2025타경51384-1",
+  "court": "순천지원",
+  "caseNo": "2025타경51384",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "전라남도 여수시 율촌면 월산리 산79",
+  "region": "전남",
+  "district": "여수시",
+  "appraisalPrice": 399852000,
+  "minPrice": 58699000,
+  "priceRatio": 0.1468,
+  "failCount": 8,
+  "saleDate": "2026-10-19",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(108호법정)",
+  "deposit": 5869900,
+  "areaBuilding": null,
+  "areaLand": 11107,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-12-08",
+    "minPrice": 399852000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-01-12",
+    "minPrice": 399852000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-16",
+    "minPrice": 314586949,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 247503948,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 194725828,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 153202195,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 120533125,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 94830457,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-14",
+    "minPrice": 74608666,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "jeonnam-2025타경51438-1",
+  "court": "순천지원",
+  "caseNo": "2025타경51438",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "전라남도 여수시 화양면 이목리 615-1",
+  "region": "전남",
+  "district": "여수시",
+  "appraisalPrice": 335458000,
+  "minPrice": 49245000,
+  "priceRatio": 0.1468,
+  "failCount": 8,
+  "saleDate": "2026-10-19",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(108호법정)",
+  "deposit": 4924500,
+  "areaBuilding": null,
+  "areaLand": 902,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-12-08",
+    "minPrice": 335458000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-01-12",
+    "minPrice": 335458000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-16",
+    "minPrice": 263923859,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 207643887,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 163365238,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 128528710,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 101120835,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 79557503,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-14",
+    "minPrice": 62592406,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "일괄매각,농지취득자격증명 제출요(미제출시 보증금 몰수),연고 미상의 분묘 소재함(목록 3번)"
+ },
+ {
+  "id": "jeonnam-2025타경51438-2",
+  "court": "순천지원",
+  "caseNo": "2025타경51438",
+  "itemNo": "2",
+  "category": "토지",
+  "address": "전라남도 여수시 화양면 이목리 산651-1",
+  "region": "전남",
+  "district": "여수시",
+  "appraisalPrice": 319825000,
+  "minPrice": 46951000,
+  "priceRatio": 0.1468,
+  "failCount": 8,
+  "saleDate": "2026-10-19",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(108호법정)",
+  "deposit": 4695100,
+  "areaBuilding": null,
+  "areaLand": 12793,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-12-08",
+    "minPrice": 319825000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-01-12",
+    "minPrice": 319825000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-16",
+    "minPrice": 251625102,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 197968238,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 155753234,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 122540212,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 96409578,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 75851074,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-14",
+    "minPrice": 59676493,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "연고 미상의 분묘 소재함"
+ },
+ {
+  "id": "jeonnam-2025타경51450-1",
+  "court": "순천지원",
+  "caseNo": "2025타경51450",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "전라남도 순천시 별량면 우산리 341",
+  "region": "전남",
+  "district": "순천시",
+  "appraisalPrice": 16583000,
+  "minPrice": 2433000,
+  "priceRatio": 0.1467,
+  "failCount": 8,
+  "saleDate": "2026-10-19",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(108호법정)",
+  "deposit": 243300,
+  "areaBuilding": null,
+  "areaLand": 721,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-12-08",
+    "minPrice": 16583000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-01-12",
+    "minPrice": 16583000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-16",
+    "minPrice": 13045868,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 10263201,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 8074074,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 6351885,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 4997036,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 3931175,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-14",
+    "minPrice": 3092660,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "농지취득자격증명 제출요(미제출시 보증금 몰수)"
+ },
+ {
+  "id": "jeonnam-2025타경51672-3",
+  "court": "순천지원",
+  "caseNo": "2025타경51672",
+  "itemNo": "3",
+  "category": "아파트",
+  "address": "전라남도 광양시 광양읍 덕례리 1688-1 효성아파트 101동 3층315호",
+  "region": "전남",
+  "district": "광양시",
+  "appraisalPrice": 29000000,
+  "minPrice": 5322000,
+  "priceRatio": 0.1835,
+  "failCount": 7,
+  "saleDate": "2026-10-19",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(108호법정)",
+  "deposit": 532200,
+  "areaBuilding": 31.59,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-01-12",
+    "minPrice": 29000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-16",
+    "minPrice": 29000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 22761925,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 17865697,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 14022677,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 11006315,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 8638790,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-14",
+    "minPrice": 6780534,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": null
+ },
+ {
+  "id": "jeonnam-2025타경51702-1",
+  "court": "순천지원",
+  "caseNo": "2025타경51702",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "전라남도 여수시 주삼동 648",
+  "region": "전남",
+  "district": "여수시",
+  "appraisalPrice": 140659000,
+  "minPrice": 25811000,
+  "priceRatio": 0.1835,
+  "failCount": 7,
+  "saleDate": "2026-10-19",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(108호법정)",
+  "deposit": 2581100,
+  "areaBuilding": null,
+  "areaLand": 3038,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-01-12",
+    "minPrice": 140659000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-16",
+    "minPrice": 140659000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 110400961,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 86651919,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 68011682,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 53381263,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 41898085,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-14",
+    "minPrice": 32885125,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "농지취득자격증명 제출요(미제출시 보증금 몰수),연고 미상의 분묘 수기 소재함,특별매각조건 있음(공유자우선매수권 행사는 1회로 제한)"
+ },
+ {
+  "id": "jeonnam-2025타경51708-1",
+  "court": "순천지원",
+  "caseNo": "2025타경51708",
+  "itemNo": "1",
+  "category": "단독다가구",
+  "address": "전라남도 보성군 복내면 유정리 49",
+  "region": "전남",
+  "district": "보성군",
+  "appraisalPrice": 189229200,
+  "minPrice": 34723000,
+  "priceRatio": 0.1835,
+  "failCount": 7,
+  "saleDate": "2026-10-19",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(108호법정)",
+  "deposit": 3472300,
+  "areaBuilding": 510,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-01-12",
+    "minPrice": 189229200,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-16",
+    "minPrice": 189229200,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 148522520,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 116572595,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 91495686,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 71813282,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 56364925,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-14",
+    "minPrice": 44239793,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "일괄매각"
+ },
+ {
+  "id": "jeonnam-2025타경51708-2",
+  "court": "순천지원",
+  "caseNo": "2025타경51708",
+  "itemNo": "2",
+  "category": "단독다가구",
+  "address": "전라남도 보성군 복내면 유정리 49-2",
+  "region": "전남",
+  "district": "보성군",
+  "appraisalPrice": 247489280,
+  "minPrice": 45414000,
+  "priceRatio": 0.1835,
+  "failCount": 7,
+  "saleDate": "2026-10-19",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(108호법정)",
+  "deposit": 4541400,
+  "areaBuilding": 657,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-01-12",
+    "minPrice": 247489280,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-16",
+    "minPrice": 247489280,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 194250059,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 152463514,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 119665977,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 93923757,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 73719134,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-14",
+    "minPrice": 57860874,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "일괄매각"
+ },
+ {
+  "id": "jeonnam-2025타경51906-5",
+  "court": "순천지원",
+  "caseNo": "2025타경51906",
+  "itemNo": "5",
+  "category": "상가",
+  "address": "전라남도 광양시 중동 1324-1 수하임2차근린생활시설 1층105호",
+  "region": "전남",
+  "district": "광양시",
+  "appraisalPrice": 573000000,
+  "minPrice": 105146000,
+  "priceRatio": 0.1835,
+  "failCount": 7,
+  "saleDate": "2026-10-19",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(108호법정)",
+  "deposit": 10514600,
+  "areaBuilding": 88.65,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-01-12",
+    "minPrice": 573000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-16",
+    "minPrice": 573000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 449738503,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 352992532,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 277058172,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 217458512,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 170679696,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-14",
+    "minPrice": 133963754,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "미납관리비 427,330원(2025.8.12. 현황조사일 기준)"
+ },
+ {
+  "id": "jeonnam-2025타경531-1",
+  "court": "순천지원",
+  "caseNo": "2025타경531",
+  "itemNo": "1",
+  "category": "상가",
+  "address": "전라남도 고흥군 포두면 남촌리 40",
+  "region": "전남",
+  "district": "고흥군",
+  "appraisalPrice": 39635400,
+  "minPrice": 7274000,
+  "priceRatio": 0.1835,
+  "failCount": 7,
+  "saleDate": "2026-10-19",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(108호법정)",
+  "deposit": 727400,
+  "areaBuilding": 2,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-01-12",
+    "minPrice": 39635400,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-16",
+    "minPrice": 39635400,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-23",
+    "minPrice": 31109721,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-27",
+    "minPrice": 24417937,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-01",
+    "minPrice": 19165574,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-06",
+    "minPrice": 15043009,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-10",
+    "minPrice": 11807218,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-14",
+    "minPrice": 9267454,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "제시외 건물 포함"
  }
 ]
