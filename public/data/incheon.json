@@ -2193,5 +2193,70 @@
    }
   ],
   "specialNote": "특별매각조건 매수신청보증금 최저매각가격의 20%"
+ },
+ {
+  "id": "incheon-2025타경509685-1",
+  "court": "인천지방법원",
+  "caseNo": "2025타경509685",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "소재지 : 인천 남동구 장도로 86-13 논현동",
+  "region": "인천",
+  "district": "남동구",
+  "appraisalPrice": 203390000,
+  "minPrice": 16750000,
+  "priceRatio": 0.0824,
+  "failCount": 7,
+  "saleDate": "2026-10-26",
+  "saleTime": "10:00",
+  "courtRoom": "219호법정",
+  "deposit": 1675000,
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-01-19",
+    "minPrice": 203390000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-23",
+    "minPrice": 203390000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-30",
+    "minPrice": 142372950,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-04",
+    "minPrice": 99661030,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-08",
+    "minPrice": 69762697,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 48833871,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 34183697,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-21",
+    "minPrice": 23928580,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "①2025.6.20. 임시검사에 불합격 후 계선중인 것으로 조사됨. ②어획물운반선으로 펌프등이 작동하지 않아 기관실 일부에 물이 차 있음."
  }
 ]

@@ -1,57 +1,337 @@
 [
  {
-  "id": "busan-2025타경94-1",
+  "id": "busan-2024타경113597-1",
   "court": "동부지원",
-  "caseNo": "2025타경94",
+  "caseNo": "2024타경113597",
   "itemNo": "1",
-  "category": "오피스텔",
-  "address": "부산광역시 기장군 장안읍 정관로 1142 에이동 3층304호 (힐탑프리미엄아울렛)",
+  "category": "토지",
+  "address": "부산광역시 수영구 망미동 산114",
   "region": "부산",
-  "district": "기장군",
-  "appraisalPrice": 309000000,
-  "minPrice": 51934000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-10-19",
+  "district": "수영구",
+  "appraisalPrice": 11800437000,
+  "minPrice": 1388310000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-10-26",
   "saleTime": "10:00",
   "courtRoom": "203호법정",
-  "deposit": 5193400,
+  "deposit": 138831000,
   "areaBuilding": null,
+  "areaLand": 359107,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-23",
+    "minPrice": 11800437000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-30",
+    "minPrice": 11800437000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-04",
+    "minPrice": 8260306284,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-08",
+    "minPrice": 5782214668,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 4047550456,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 2833285451,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-21",
+    "minPrice": 1983299908,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "지상에 소재하는 소유자 불명의 제시외 건물(단독주택, 종교시설, 창고, 관리사, 초소 등)이 소재하나 평가 및 매각에서 제외함. 최저매각가격은 제시 외 건물 소재로 인하여 제한 받는 가격임. 지상에 소재하는 수목은 토지가격에 포함하여 평가함. 지상 분묘에 대한 분묘기지권 성립여부 불분명."
+ },
+ {
+  "id": "busan-2025타경285-1",
+  "court": "동부지원",
+  "caseNo": "2025타경285",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "부산광역시 기장군 장안읍 좌천리 390",
+  "region": "부산",
+  "district": "기장군",
+  "appraisalPrice": 1339920000,
+  "minPrice": 321715000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-10-26",
+  "saleTime": "10:00",
+  "courtRoom": "203호법정",
+  "deposit": 32171500,
+  "areaBuilding": null,
+  "areaLand": 1218,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-04",
+    "minPrice": 1339920000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-08",
+    "minPrice": 1339920000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 937944152,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 656561012,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-21",
+    "minPrice": 459592783,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 농지취득자격증명 불필요(2025.10.10.자 기장군 사실조회회신). - 제시외건물 창고 1개동 포함. 소유자로** 처분 및 철거에 이의 없으며, 소요되는 비용도 소유자가 부담 한다는 각서가 제출됨(2026.4.3.자)."
+ },
+ {
+  "id": "busan-2025타경419-1",
+  "court": "동부지원",
+  "caseNo": "2025타경419",
+  "itemNo": "1",
+  "category": "상가",
+  "address": "부산광역시 기장군 기장읍 시랑리 717 스타테라스 1층131호",
+  "region": "부산",
+  "district": "기장군",
+  "appraisalPrice": 478000000,
+  "minPrice": 80338000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-10-26",
+  "saleTime": "10:00",
+  "courtRoom": "203호법정",
+  "deposit": 8033800,
+  "areaBuilding": 47.385,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-03-23",
-    "minPrice": 309000000,
+    "date": "2026-03-30",
+    "minPrice": 478000000,
     "result": "신건"
    },
    {
-    "date": "2026-04-27",
-    "minPrice": 309000000,
+    "date": "2026-05-04",
+    "minPrice": 478000000,
     "result": "유찰"
    },
    {
-    "date": "2026-06-01",
-    "minPrice": 216300308,
+    "date": "2026-06-08",
+    "minPrice": 334600450,
     "result": "유찰"
    },
    {
-    "date": "2026-07-06",
-    "minPrice": 151410431,
+    "date": "2026-07-13",
+    "minPrice": 234220630,
     "result": "유찰"
    },
    {
-    "date": "2026-08-10",
-    "minPrice": 105987453,
+    "date": "2026-08-17",
+    "minPrice": 163954661,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 74191323,
+    "date": "2026-09-21",
+    "minPrice": 114768417,
     "result": "유찰"
    }
   ],
-  "specialNote": null
+  "specialNote": "판매시설로서 인접한 약 22여개의 제시외 호수와 통합하여 1개의 판매시설(상호:부산칠드런스뮤지엄)로 이용할 수 있는 구조임."
+ },
+ {
+  "id": "busan-2025타경4461-1",
+  "court": "동부지원",
+  "caseNo": "2025타경4461",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "부산광역시 기장군 정관읍 모전리 산37-1",
+  "region": "부산",
+  "district": "기장군",
+  "appraisalPrice": 490690200,
+  "minPrice": 57730000,
+  "priceRatio": 0.1177,
+  "failCount": 6,
+  "saleDate": "2026-10-26",
+  "saleTime": "10:00",
+  "courtRoom": "203호법정",
+  "deposit": 5773000,
+  "areaBuilding": null,
+  "areaLand": 34314,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-23",
+    "minPrice": 490690200,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-30",
+    "minPrice": 490690200,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-04",
+    "minPrice": 343483922,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-08",
+    "minPrice": 240439293,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 168307888,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 117815790,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-21",
+    "minPrice": 82471241,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "분묘가 소재할 수도 있는바, 이로 인해 분묘기지권 성립 여지 있음."
+ },
+ {
+  "id": "busan-2025타경5103-1",
+  "court": "동부지원",
+  "caseNo": "2025타경5103",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "부산광역시 남구 대연동 76-10 제이캐슬 7층701호",
+  "region": "부산",
+  "district": "남구",
+  "appraisalPrice": 148000000,
+  "minPrice": 24875000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-10-26",
+  "saleTime": "10:00",
+  "courtRoom": "203호법정",
+  "deposit": 2487500,
+  "areaBuilding": 27.28,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-30",
+    "minPrice": 148000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-04",
+    "minPrice": 148000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-08",
+    "minPrice": 103600533,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 72520746,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 50764784,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-21",
+    "minPrice": 35535531,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "오피스텔로 이용중임"
+ },
+ {
+  "id": "busan-2025타경5136-1",
+  "court": "동부지원",
+  "caseNo": "2025타경5136",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "부산광역시 기장군 일광읍 이천리 764-10",
+  "region": "부산",
+  "district": "기장군",
+  "appraisalPrice": 295920000,
+  "minPrice": 49736000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-10-26",
+  "saleTime": "10:00",
+  "courtRoom": "203호법정",
+  "deposit": 4973600,
+  "areaBuilding": null,
+  "areaLand": 38,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-30",
+    "minPrice": 295920000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-04",
+    "minPrice": 295920000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-08",
+    "minPrice": 207144604,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 145001646,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 101501448,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-21",
+    "minPrice": 71051221,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 일괄매각 - 농지취득자격증명 제출 필요(매각결정기일까지 미제출시 보증금은 반환하지 않음), 원상회복명령이 발하여질 가능성 있음 - 금강한스빌아파트의 주차장으로 이용 중이며, 공부상 맹지임."
  }
 ]
