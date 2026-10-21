@@ -325,51 +325,6 @@
   "specialNote": "- 일괄매각(목록8 지상의 콘크리트 구조물 및 목록5 지상의 수목 포함) - 공부상 지목은 '과수원'이고 현황은 일부 '도로', 토목공사가 진행되거나 진행중인 '주거나지'이나 농지취득자격증명이 필요하며(미제출시 매수신청보증금 몰수함), 향후 원상회복명령 가능성 있음(첨부된 화순군 동면의 사실조회 회신 참조). - 지상에 매각대상이 아닌 이동식컨테이너(목록1,5,8) 및 비닐하우스(목록5) 소재함"
  },
  {
-  "id": "jeonnam-2025타경3218-1",
-  "court": "광주지방법원",
-  "caseNo": "2025타경3218",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "전라남도 화순군 도곡면 원화리 188-1",
-  "region": "전남",
-  "district": "화순군",
-  "appraisalPrice": 484418000,
-  "minPrice": 217020000,
-  "priceRatio": 0.448,
-  "failCount": 3,
-  "saleDate": "2026-10-23",
-  "saleTime": "10:00",
-  "courtRoom": "입찰법정",
-  "deposit": 21702000,
-  "areaBuilding": null,
-  "areaLand": 319,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-06-05",
-    "minPrice": 484418000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-10",
-    "minPrice": 484418000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-14",
-    "minPrice": 370663738,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-18",
-    "minPrice": 283622010,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "- 일괄매각 - 목록1,4 지상에 식재된 수목 매각 포함 - 지목상 '전'이나 목록 1,3,4는 토목공사로 '나대지상태'이고 목록2는 '묵전'임 - 농지취득자격증명이 필요함(미제출시 매수신청보증금 몰수함) - 화순군 도곡면 사실조회 회신에 의하면 향후 원상회복명령이 발하여질 가능성이 있으며 농지가 방치,훼손될 경우 농지에 대한 원상복구계획서 제출 또는 원상복구 후 농지취득자격증명 취득 가능함"
- },
- {
   "id": "jeonnam-2025타경32199-1",
   "court": "광주지방법원",
   "caseNo": "2025타경32199",
@@ -3993,5 +3948,660 @@
    }
   ],
   "specialNote": "농지취득자격증명 제출요(미제출시 매수신청보증금 미반환), 지분매각, 특별매각조건 있음(공유자 우선매수권행사는 1회로 제한함)"
+ },
+ {
+  "id": "jeonnam-2024타경85848-1",
+  "court": "광주지방법원",
+  "caseNo": "2024타경85848",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "전라남도 담양군 창평면 삼천리 5-1",
+  "region": "전남",
+  "district": "담양군",
+  "appraisalPrice": 163770530,
+  "minPrice": 37565000,
+  "priceRatio": 0.2294,
+  "failCount": 6,
+  "saleDate": "2026-10-28",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 3756500,
+  "areaBuilding": null,
+  "areaLand": 3038,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-25",
+    "minPrice": 163770530,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-01",
+    "minPrice": 163770530,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-06",
+    "minPrice": 128132813,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-10",
+    "minPrice": 100250135,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-15",
+    "minPrice": 78434941,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-19",
+    "minPrice": 61366899,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-23",
+    "minPrice": 48012994,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 목록1,2 일괄매각 - 목록1,2 각 지분매각, 특별매각조건 있음(공유자우선매수권 1회로 제한) - 목록1,2 농지취득자격증명 각 필요(미제출시 보증금 미반환) - 목록1 맹지"
+ },
+ {
+  "id": "jeonnam-2024타경85848-2",
+  "court": "광주지방법원",
+  "caseNo": "2024타경85848",
+  "itemNo": "2",
+  "category": "토지",
+  "address": "전라남도 담양군 대덕면 매산리 389-15",
+  "region": "전남",
+  "district": "담양군",
+  "appraisalPrice": 34439580,
+  "minPrice": 7899000,
+  "priceRatio": 0.2294,
+  "failCount": 6,
+  "saleDate": "2026-10-28",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 789900,
+  "areaBuilding": null,
+  "areaLand": 820,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-25",
+    "minPrice": 34439580,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-01",
+    "minPrice": 34439580,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-06",
+    "minPrice": 26944920,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-10",
+    "minPrice": 21081229,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-15",
+    "minPrice": 16493582,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-19",
+    "minPrice": 12904287,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-23",
+    "minPrice": 10096087,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 지분매각, 특별매각조건 있음(공유자우선매수권 1회로 제한) - 농지취득자격증명 필요(미제출시 보증금 미반환)"
+ },
+ {
+  "id": "jeonnam-2024타경87066-1",
+  "court": "광주지방법원",
+  "caseNo": "2024타경87066",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "전라남도 곡성군 고달면 목동리 39",
+  "region": "전남",
+  "district": "곡성군",
+  "appraisalPrice": 11100000,
+  "minPrice": 1630000,
+  "priceRatio": 0.1468,
+  "failCount": 8,
+  "saleDate": "2026-10-28",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 163000,
+  "areaBuilding": null,
+  "areaLand": 770,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-12-17",
+    "minPrice": 11100000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-01-21",
+    "minPrice": 11100000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-25",
+    "minPrice": 8733354,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-01",
+    "minPrice": 6871304,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-06",
+    "minPrice": 5406264,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-10",
+    "minPrice": 4253587,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-15",
+    "minPrice": 3346674,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-19",
+    "minPrice": 2633125,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-23",
+    "minPrice": 2071713,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 농지취득자격증명 제출요 (미제출시 보증금 미반환) - 전 최고가매수신고인의 농지취득자격증명신청에 대하여 고달면으로부터 농지 복구 등 농업 경영상 실현 가능성이 낮음(묘지)을 이유로 발급불가통지가 있었고, 농지취득자격증명 미발급으로 인한 책임은 모두 매수인이 부담하므로 주의를 요함 - 지상에 연고미상의 분묘 소재함(감정평가서 참조), 매각제외 - 감정평가액 11,100,000원은 분묘 소재로 소유권 제한시 가격임 - 지상에 수목(감나무 3주) 있음, 매각 제외 - 지적도상 맹지이나, 북쪽으로 소폭의 콘크리트 포장도로가 개설되어 있음"
+ },
+ {
+  "id": "jeonnam-2025타경2123-1",
+  "court": "광주지방법원",
+  "caseNo": "2025타경2123",
+  "itemNo": "1",
+  "category": "아파트",
+  "address": "전라남도 곡성군 곡성읍 읍내리 349-4 청암센트럴빌 1층104호",
+  "region": "전남",
+  "district": "곡성군",
+  "appraisalPrice": 460000000,
+  "minPrice": 105513000,
+  "priceRatio": 0.2294,
+  "failCount": 6,
+  "saleDate": "2026-10-28",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 10551300,
+  "areaBuilding": 73.92,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-25",
+    "minPrice": 460000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-01",
+    "minPrice": 460000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-06",
+    "minPrice": 359900559,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-10",
+    "minPrice": 281583506,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-15",
+    "minPrice": 220308829,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-19",
+    "minPrice": 172367980,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-23",
+    "minPrice": 134859418,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 인접한 105호와 벽체 구분 없이 1개로 사용되고 있는 상태임 - 벽체 제거 과정에서 관련 법령에서 정한 절차를 거쳤는지 여부는 알 수 없으며, 만일 절차를 거치지 않았다면 관련 법령에서 정한 불이익을 입을 수 있음 - 추후 건물의 벽체 복원 과정에서 인접한 105호의 소유자와 분쟁 발생 및 추가 비용이 발생할 수 있으므로 주의를 요함 - 감정평가액은 벽체가 일부 제거된 것을 감안하여 평가한 금액임"
+ },
+ {
+  "id": "jeonnam-2025타경31718-3",
+  "court": "광주지방법원",
+  "caseNo": "2025타경31718",
+  "itemNo": "3",
+  "category": "오피스텔",
+  "address": "전라남도 나주시 배멧1길 30-1 5층501호 (빛가람동,가람로자벨빌딩주건축물제1동)",
+  "region": "전남",
+  "district": "나주시",
+  "appraisalPrice": 197000000,
+  "minPrice": 56484000,
+  "priceRatio": 0.2867,
+  "failCount": 5,
+  "saleDate": "2026-10-28",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 5648400,
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-01",
+    "minPrice": 197000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-06",
+    "minPrice": 197000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-10",
+    "minPrice": 153446883,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-15",
+    "minPrice": 119522567,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-19",
+    "minPrice": 93098301,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-23",
+    "minPrice": 72515960,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 공부상 용도는 의원이며, 공실 상태임"
+ },
+ {
+  "id": "jeonnam-2025타경32017-1",
+  "court": "광주지방법원",
+  "caseNo": "2025타경32017",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "전라남도 나주시 봉황면 황용리 760-3",
+  "region": "전남",
+  "district": "나주시",
+  "appraisalPrice": 151563000,
+  "minPrice": 43457000,
+  "priceRatio": 0.2867,
+  "failCount": 5,
+  "saleDate": "2026-10-28",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 4345700,
+  "areaBuilding": null,
+  "areaLand": 1692,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-01",
+    "minPrice": 151563000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-06",
+    "minPrice": 151563000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-10",
+    "minPrice": 118055576,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-15",
+    "minPrice": 91955945,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-19",
+    "minPrice": 71626400,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-23",
+    "minPrice": 55791294,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 일괄매각 - 목록1,2 농지취득자격증명 각 필요(미제출시 보증금 미반환) - 목록1,2 지상에 비닐하우스 6개동, 관리사 1개동, 작동여부 확인 불가능한 기계 있음, 각 매각 제외 - 목록1,2 지상에 비닐하우스 내부에 저온창고 있음, 매각 제외"
+ },
+ {
+  "id": "jeonnam-2025타경32191-1",
+  "court": "광주지방법원",
+  "caseNo": "2025타경32191",
+  "itemNo": "1",
+  "category": "단독다가구",
+  "address": "전라남도 나주시 이창동 173-29",
+  "region": "전남",
+  "district": "나주시",
+  "appraisalPrice": 242166630,
+  "minPrice": 44437760,
+  "priceRatio": 0.1835,
+  "failCount": 7,
+  "saleDate": "2026-10-28",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 4443800,
+  "areaBuilding": 224,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-01-21",
+    "minPrice": 242166630,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-25",
+    "minPrice": 242166630,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-01",
+    "minPrice": 190072684,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-06",
+    "minPrice": 149184985,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-10",
+    "minPrice": 117092890,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-15",
+    "minPrice": 91904321,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-19",
+    "minPrice": 72134220,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-23",
+    "minPrice": 56616987,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 일괄매각 - 제시외 건물 매각 포함 - 목록1 토지 일부는 타인이 일부 점유 중 - 제시외 건물(목록1-2) 일부는 인접지(나주시 이창동 173-12번지)에 걸쳐 있음 - 목록1 토지 지적경계가 불분명하여 측량 필요함"
+ },
+ {
+  "id": "jeonnam-2025타경32396-1",
+  "court": "광주지방법원",
+  "caseNo": "2025타경32396",
+  "itemNo": "1",
+  "category": "단독다가구",
+  "address": "전라남도 화순군 화순읍 향청리 65-4",
+  "region": "전남",
+  "district": "화순군",
+  "appraisalPrice": 346311260,
+  "minPrice": 99295000,
+  "priceRatio": 0.2867,
+  "failCount": 5,
+  "saleDate": "2026-10-28",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 9929500,
+  "areaBuilding": 269,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-01",
+    "minPrice": 346311260,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-06",
+    "minPrice": 346311260,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-10",
+    "minPrice": 269748331,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-15",
+    "minPrice": 210112030,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-19",
+    "minPrice": 163660198,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-23",
+    "minPrice": 127477996,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 일괄매각 - 제시외 건물 매각 포함"
+ },
+ {
+  "id": "jeonnam-2025타경32686-1",
+  "court": "광주지방법원",
+  "caseNo": "2025타경32686",
+  "itemNo": "1",
+  "category": "단독다가구",
+  "address": "전라남도 나주시 금천면 촌곡리 384",
+  "region": "전남",
+  "district": "나주시",
+  "appraisalPrice": 69683000,
+  "minPrice": 19980000,
+  "priceRatio": 0.2867,
+  "failCount": 5,
+  "saleDate": "2026-10-28",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 1998000,
+  "areaBuilding": 347,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-01",
+    "minPrice": 69683000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-06",
+    "minPrice": 69683000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-10",
+    "minPrice": 54277592,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-15",
+    "minPrice": 42277987,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-19",
+    "minPrice": 32931236,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-23",
+    "minPrice": 25650850,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 일괄매각 - 부속건물인 축사는 현황상 창고 및 퇴비사 등으로 이용중임 - 본건 토지상에 시멘트벽돌조 주택(69.4㎡) 및 시멘트블럭조 창고(62.8㎡)가 일반건축물대장(갑) 및 등기사항전부증명서 (나주시 금천면 촌곡리 384, 438-1)에 등재되어 있으나 소재불명임"
+ },
+ {
+  "id": "jeonnam-2025타경32837-1",
+  "court": "광주지방법원",
+  "caseNo": "2025타경32837",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "전라남도 화순군 도곡면 원화리 산2-7",
+  "region": "전남",
+  "district": "화순군",
+  "appraisalPrice": 99174000,
+  "minPrice": 18198507,
+  "priceRatio": 0.1835,
+  "failCount": 7,
+  "saleDate": "2026-10-28",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 1819900,
+  "areaBuilding": null,
+  "areaLand": 16529,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-01-21",
+    "minPrice": 99174000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-25",
+    "minPrice": 99174000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-01",
+    "minPrice": 77840076,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-06",
+    "minPrice": 61095422,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-10",
+    "minPrice": 47952813,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-15",
+    "minPrice": 37637390,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-19",
+    "minPrice": 29540982,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-23",
+    "minPrice": 23186241,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 분묘가 존재하는지 여부는 불분명 - 맹지"
+ },
+ {
+  "id": "jeonnam-2025타경3553-1",
+  "court": "광주지방법원",
+  "caseNo": "2025타경3553",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "전라남도 나주시 세지면 오봉리 421",
+  "region": "전남",
+  "district": "나주시",
+  "appraisalPrice": 53849800,
+  "minPrice": 15440000,
+  "priceRatio": 0.2867,
+  "failCount": 5,
+  "saleDate": "2026-10-28",
+  "saleTime": "09:55",
+  "courtRoom": "입찰법정",
+  "deposit": 1544000,
+  "areaBuilding": null,
+  "areaLand": 1417.1,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-01",
+    "minPrice": 53849800,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-06",
+    "minPrice": 53849800,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-10",
+    "minPrice": 41944665,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-15",
+    "minPrice": 32671523,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-19",
+    "minPrice": 25448490,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-23",
+    "minPrice": 19822328,
+    "result": "유찰"
+   }
+  ],
+  "specialNote": "- 농지취득자격증명 필요(미제출시 보증금 미반환) - 지적도상 맹지 - 인접필지(나주시 세지면 오봉리 422-1번지, 동소 466번지 등)와 경계 구분없이 일체로 이용중, 정확한 지적경계의 확인을 위해서는 측량이 필요함 - 본건 토지는 계획관리지역 및 생산관리지역 둘 이상의 용도지역에 걸쳐있으나 계획관리지역의 면적이 미미함"
  }
 ]
