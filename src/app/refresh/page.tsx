@@ -10,6 +10,8 @@ import { ErrorState } from "@/components/ErrorState";
 
 /** 진행 중일 때 상태를 다시 묻는 간격. 수집이 분 단위라 초 단위 폴링은 낭비다. */
 const POLL_MS = 20_000;
+/** 실행 완료와 배포 반영 사이에는 최대 2분(6회)만 추가 상태 조회한다. */
+const PUBLICATION_CHECKS = 6;
 
 type Phase = "loading" | "ready" | "failed";
 
@@ -18,12 +20,15 @@ export default function RefreshPage() {
   const [phase, setPhase] = useState<Phase>("loading");
   const [notice, setNotice] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
+  const [now, setNow] = useState(() => Date.now());
+  const publicationChecksLeft = useRef(0);
 
   const load = useCallback(async () => {
     try {
       const res = await fetch("/api/refresh", { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       setStatus((await res.json()) as RefreshStatus);
+      setNow(Date.now());
       setPhase("ready");
     } catch {
       setPhase("failed");
@@ -37,20 +42,44 @@ export default function RefreshPage() {
   // 진행 중일 때만 폴링한다 — 끝난 상태에서 계속 묻지 않는다.
   useEffect(() => {
     if (status?.state !== "running") return;
+    publicationChecksLeft.current = PUBLICATION_CHECKS;
     const id = setInterval(() => void load(), POLL_MS);
     return () => clearInterval(id);
   }, [status?.state, load]);
 
-  // 수집이 끝나면 데이터 캐시를 비우고 화면을 다시 읽는다.
+  // 남은 시간은 기기 시계로 갱신하고 해제 시점에 서버 상태를 다시 확인한다.
+  // 로컬에서 idle로 바꾸면 미설정이나 다른 실행의 진행 상태를 놓친다.
+  useEffect(() => {
+    if (status?.state !== "cooldown" || !status.cooldownUntil) return;
+    const until = Date.parse(status.cooldownUntil);
+    if (!Number.isFinite(until)) return;
+    const tick = setInterval(() => setNow(Date.now()), 30_000);
+    const delay = until > Date.now() ? until - Date.now() : POLL_MS;
+    const expiry = setTimeout(() => {
+      setNow(Date.now());
+      void load();
+    }, delay);
+    return () => {
+      clearInterval(tick);
+      clearTimeout(expiry);
+    };
+  }, [status, load]);
+
+  // 더 새로운 게시가 확인되면 데이터 캐시를 비우고 화면을 다시 읽는다.
   // 서비스워커가 직전 물건 목록을 들고 있으면 수집이 끝나도 화면은 옛 데이터 그대로다 —
   // 방문자에게는 "눌렀는데 아무것도 안 바뀌었다"로 남는다(2026-08-02 주인님 지적).
   const wasRunning = useRef(false);
+  const previousPublication = useRef<string | null>(null);
   useEffect(() => {
     if (status?.state === "running") {
+      if (!wasRunning.current) previousPublication.current = status.publishedAt;
       wasRunning.current = true;
       return;
     }
-    if (!wasRunning.current || status?.lastConclusion !== "success") return;
+    if (
+      !wasRunning.current || !previousPublication.current || !status?.publishedAt ||
+      Date.parse(status.publishedAt) <= Date.parse(previousPublication.current)
+    ) return;
     wasRunning.current = false;
     void (async () => {
       if (typeof caches !== "undefined") {
@@ -58,30 +87,47 @@ export default function RefreshPage() {
       }
       window.location.reload();
     })();
-  }, [status?.state, status?.lastConclusion]);
+  }, [status?.state, status?.publishedAt]);
+
+  // 실행이 먼저 끝나고 배포가 나중에 바뀔 수 있다 — 전체 결론과 무관하게 새 게시를 잠시 더 확인한다.
+  // 공개 API 조회 예산을 지키도록 횟수를 제한하고, 새 게시·언마운트 때 바로 멈춘다.
+  useEffect(() => {
+    if (!status?.state || status.state === "running" || !wasRunning.current || publicationChecksLeft.current <= 0) return;
+    const id = setInterval(() => {
+      if (!wasRunning.current || publicationChecksLeft.current <= 0) {
+        clearInterval(id);
+        return;
+      }
+      publicationChecksLeft.current -= 1;
+      void load();
+      if (publicationChecksLeft.current === 0) clearInterval(id);
+    }, POLL_MS);
+    return () => clearInterval(id);
+  }, [status?.state, status?.publishedAt, load]);
 
   const start = async () => {
     setBusy(true);
     setNotice(null);
     try {
       const res = await fetch("/api/refresh", { method: "POST" });
-      const body = (await res.json()) as RefreshStatus & { error?: string };
+      const body = (await res.json()) as RefreshStatus & { error?: string; outcome?: string };
       if (res.ok || res.status === 202) {
         setStatus(body);
         setNotice("수집을 시작했다. 완료되면 화면 상단의 수집 시각이 바뀐다.");
       } else {
         setStatus((prev) => (body.state ? body : prev));
         setNotice(body.error ?? "지금은 실행할 수 없다.");
+        if (body.outcome === "unknown") await load();
       }
     } catch {
-      setNotice("요청을 보내지 못했다. 잠시 후 다시 시도한다.");
+      setNotice("실행 요청 결과를 확인하지 못해 상태를 다시 확인한다.");
+      await load();
     } finally {
       setBusy(false);
     }
   };
 
-  const now = new Date();
-  const waitText = status ? remainingText(status.cooldownUntil, now) : null;
+  const waitText = status ? remainingText(status.cooldownUntil, new Date(now)) : null;
   const running = status?.state === "running";
   const canStart = status?.state === "idle" && !busy;
   // success 외의 결론(failure·cancelled·timed_out)은 모두 "완료되지 못함"으로 본다.
@@ -112,7 +158,7 @@ export default function RefreshPage() {
             방문자에게는 "눌렀는데 아무 일도 없었다"로 남는다(§13 규칙 5 조용한 실패 금지). */}
         {phase === "ready" && !running && failedLast && (
           <p role="status" className="mt-2 text-ink">
-            직전 수집이 완료되지 못해 데이터는 직전 수집분 그대로다.
+            직전 실행이 정상 완료되지 않았으며 게시된 데이터는 화면 상단의 수집 시각으로 확인한다.
           </p>
         )}
         {notice && (
@@ -123,7 +169,11 @@ export default function RefreshPage() {
       </section>
 
       {phase === "failed" ? (
-        <ErrorState message="수집 상태를 불러오지 못했다." onRetry={() => void load()} />
+        <ErrorState
+          message="수집 상태를 불러오지 못했다."
+          action="잠시 후 수집 상태를 다시 확인한다."
+          onRetry={() => void load()}
+        />
       ) : (
         <button
           type="button"

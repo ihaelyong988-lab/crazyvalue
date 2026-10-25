@@ -3,10 +3,10 @@ import { join } from "node:path";
 import {
   MetaSchema,
   REGIONS,
-  RegionFileSchema,
   type AuctionItem,
   type Meta,
 } from "@/types/auction";
+import { parseRegionItems } from "@/lib/auction-snapshot";
 
 // 서버 전용 로더 — /item/[id]의 메타(OG)·초기 렌더에서만 사용한다(§5.2).
 
@@ -15,8 +15,7 @@ const dataDir = join(process.cwd(), "public", "data");
 async function readRegion(key: string): Promise<AuctionItem[]> {
   try {
     const raw = JSON.parse(await readFile(join(dataDir, `${key}.json`), "utf8"));
-    const parsed = RegionFileSchema.safeParse(raw);
-    return parsed.success ? parsed.data : [];
+    return parseRegionItems(raw, key).items;
   } catch {
     return []; // 파일 결손은 빈 목록으로 흡수 — 앱은 빈 화면이 되지 않는다(§4.5 안정성)
   }

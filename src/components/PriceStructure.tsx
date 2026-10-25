@@ -7,7 +7,15 @@ import { PickBadge } from "@/components/PickBadge";
 export function PriceStructure({ item }: { item: AuctionItem }) {
   const pct = discountPct(item.priceRatio);
   const width = Math.max(6, Math.round(item.priceRatio * 100));
-  const resale = item.specialNote?.startsWith("재매각") === true;
+  // 재매각 여부나 금액의 역산 비율로 확정하지 않는다: 명시된 보증금 비율만 같은 금액과 대조한다.
+  const noteRates = [...(item.specialNote ?? "").matchAll(
+    /(?:매수(?:신청)?보증금|입찰보증금|매각보증금)[^.!?\n]{0,60}?(?:최저(?:매각)?가격|최저가)(?:의|에 대한)?\s*(\d+(?:\.\d+)?)\s*%/g,
+  )].map((match) => Number(match[1]));
+  const detailRates = item.depositSource === "observed" && item.depositRate !== undefined ? [item.depositRate] : [];
+  const rates = [...new Set([...detailRates, ...noteRates])];
+  const rate = rates.length === 1 && rates[0] > 0 && rates[0] <= 100 ? rates[0] : null;
+  const confirmed = rate !== null && item.deposit === Math.ceil((item.minPrice * rate) / 10_000) * 100;
+  const conflict = rates.length > 0 && !confirmed;
   return (
     <section aria-label="가격 구조" className="rounded-xl border border-line bg-white p-4">
       <div className="flex items-center justify-between text-[13px] text-ink/70">
@@ -38,13 +46,15 @@ export function PriceStructure({ item }: { item: AuctionItem }) {
           {formatWon(item.minPrice)}
         </span>
       </div>
-      {/* 보증금 문구는 1문장·중복 0 — 재매각을 두 번 말하고 2문장으로 늘어지던 표기를 압축했다(감사 85).
-          비율은 앱이 파생한 값이라 공고 기준임을 1회만 병기한다(§2 임의 단정 금지). */}
       <p className="mt-3 border-t border-line pt-3 text-[13px] leading-snug tabular-nums text-ink/80">
-        입찰보증금 {formatKrw(item.deposit)}
+        입찰보증금 {formatKrw(item.deposit)}{!confirmed && <strong className="ml-1 text-accent">확인 필요</strong>}
         <span className="text-ink/70">
           {" "}
-          — 최저가의 {resale ? "20%(재매각 사건)" : "10%"}, 비율은 공고 원문이 기준이다.
+          {confirmed
+            ? `— 최저가의 ${rate}%, ${noteRates.length > 0 ? "공고 비고" : "상세 수집 비율"} 기준 계산값이다.`
+            : conflict
+              ? "— 저장 금액과 명시 비율(비고·상세)이 달라 법원 공고 확인이 필요하다."
+              : "— 출처 미확인 참고값으로 금액·비율은 법원 공고에서 확인한다."}
         </span>
       </p>
     </section>

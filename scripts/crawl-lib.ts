@@ -79,19 +79,22 @@ export interface GateResult<T> {
   invalidDropped: number;
   /** 중복 id로 드롭한 건수(첫 등장 유지) */
   dupDropped: number;
+  /** 같은 출력 ID에 서로 다른 원천 법원 코드가 확인된 드롭. 일반 중복과 손실 추정을 구분한다. */
+  idCollisions: { id: string; keptCourtCode: string; droppedCourtCode: string }[];
 }
 
 /**
  * 검증 게이트 — 순회하며 ① 검증 실패 → 드롭+invalidDropped++ ② 중복 id → 드롭+dupDropped++(첫 등장 유지).
  * 유효 부분집합만 돌려준다. 전체 기각(exit 1)은 호출부가 "유효 0건"일 때만 한다.
  */
-export function gateItems<T extends { id: string }>(
+export function gateItems<T extends { id: string; courtCode?: string }>(
   items: readonly T[],
   isValid: (item: T) => boolean,
   onDrop?: (item: T, reason: "invalid" | "duplicateId") => void,
 ): GateResult<T> {
   const valid: T[] = [];
-  const ids = new Set<string>();
+  const ids = new Map<string, T>();
+  const idCollisions: GateResult<T>["idCollisions"] = [];
   let invalidDropped = 0;
   let dupDropped = 0;
   for (const item of items) {
@@ -102,13 +105,17 @@ export function gateItems<T extends { id: string }>(
     }
     if (ids.has(item.id)) {
       dupDropped++;
+      const keptCourtCode = ids.get(item.id)?.courtCode;
+      if (keptCourtCode && item.courtCode && keptCourtCode !== item.courtCode) {
+        idCollisions.push({ id: item.id, keptCourtCode, droppedCourtCode: item.courtCode });
+      }
       onDrop?.(item, "duplicateId");
       continue;
     }
-    ids.add(item.id);
+    ids.set(item.id, item);
     valid.push(item);
   }
-  return { valid, invalidDropped, dupDropped };
+  return { valid, invalidDropped, dupDropped, idCollisions };
 }
 
 /**

@@ -1,4 +1,4 @@
-import type { HistoryEntry } from "@/types/auction";
+import type { EvidenceSource, HistoryEntry } from "@/types/auction";
 import { formatDateKr, formatKrw } from "@/lib/format";
 
 // 유찰 이력 타임라인 — "왜 이 가격인가"의 근거. 본 앱의 시그니처 블록(§4.3-③).
@@ -11,19 +11,28 @@ export function HistoryTimeline({
   saleDate,
   minPrice,
   days,
+  historySource = "unknown",
 }: {
   history: HistoryEntry[];
   saleDate: string;
   minPrice: number;
   days: number;
+  historySource?: EvidenceSource;
 }) {
-  const sorted = [...history].sort((a, b) => a.date.localeCompare(b.date));
+  const observed = historySource === "observed";
+  const estimated = historySource === "estimated";
+  const sorted = historySource === "unknown" ? [] : [...history].sort((a, b) => a.date.localeCompare(b.date));
   const upcoming = days >= 0;
   return (
     <section aria-label="기일 이력" className="rounded-xl border border-line bg-white p-4">
       <h2 className="text-[13px] font-semibold text-ink/70">
-        유찰 이력 — 회차별 최저가 흐름
+        유찰 이력 — {observed ? "회차별 최저가 흐름" : estimated ? "추정 가격 흐름" : "출처 미확인"}
       </h2>
+      {!observed && (
+        <p className="mt-2 text-[13px] leading-snug text-ink/70">
+          {estimated ? "과거 회차 가격은 역산 추정값이며 실제 기일·가격은 법원 원문에서 확인한다." : "과거 이력의 출처가 확인되지 않아 기일·가격은 법원 원문에서 확인한다."}
+        </p>
+      )}
       <ol className="mt-3 space-y-0">
         {sorted.map((h, i) => {
           // 다음 행(다음 회차 또는 예정 행)이 있을 때만 연결선·아래 여백을 둔다 — 예정 행을
@@ -41,7 +50,7 @@ export function HistoryTimeline({
                 {hasNext && <span aria-hidden className="w-px flex-1 bg-line" />}
               </span>
               <div className="flex flex-1 items-baseline justify-between gap-2 text-[13px]">
-                <span className="tabular-nums text-ink/70">{formatDateKr(h.date)}</span>
+                <span className="tabular-nums text-ink/70">{observed ? formatDateKr(h.date) : `추정 ${i + 1}회차`}</span>
                 <span className="tabular-nums font-medium">{formatKrw(h.minPrice)}</span>
                 <span
                   className={h.result === "유찰" ? "font-semibold text-accent" : "text-ink/70"}

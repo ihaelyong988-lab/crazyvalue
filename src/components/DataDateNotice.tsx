@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { formatDateKr, seoulDateTime } from "@/lib/format";
-import { useMeta } from "@/lib/use-meta";
+import { reportBuildSnapshot, useMeta } from "@/lib/use-meta";
 
 // 기준일 바의 클라이언트 부분 — 값이 아니라 "알림"만 맡는다.
 // 기준일 자체는 DataDateBar가 빌드 산출물에서 서버 렌더한다(build-meta.ts 참조).
@@ -12,9 +12,11 @@ import { useMeta } from "@/lib/use-meta";
 const CHECK_MIN_MS = 5 * 60_000;
 
 export function DataDateNotice({ baked }: { baked: string }) {
-  const { dropped } = useMeta();
+  const { dropped, snapshotMismatch } = useMeta();
   const [newer, setNewer] = useState<string | null>(null);
   const lastCheckedAt = useRef(0);
+
+  useEffect(() => reportBuildSnapshot(baked), [baked]);
 
   useEffect(() => {
     const bakedMs = Date.parse(baked);
@@ -56,7 +58,17 @@ export function DataDateNotice({ baked }: { baked: string }) {
   return (
     <div role="status">
       {dropped > 0 && <p className="mt-0.5">형식 오류 {dropped}건 제외</p>}
-      {newerDate && (
+      {snapshotMismatch && (
+        <button
+          type="button"
+          onClick={() => window.location.reload()}
+          className="mt-1 flex min-h-11 w-full cursor-pointer items-center justify-between gap-2 rounded-lg border border-white/40 px-3 text-left text-white transition-colors duration-200 hover:bg-white/10"
+        >
+          <span>데이터 버전 일치 확인이 필요하다.</span>
+          <span className="font-semibold">새로고침</span>
+        </button>
+      )}
+      {!snapshotMismatch && newerDate && (
         <button
           type="button"
           onClick={() => window.location.reload()}

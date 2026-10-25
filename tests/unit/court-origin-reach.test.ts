@@ -78,7 +78,7 @@ const page = loadModule<ItemPageModule>("src/app/item/[id]/page.tsx", {
   "@/lib/court-origin": { COURT_ORIGIN_URL, siteCourtLabel, splitCaseNo },
   "@/lib/format": format,
   "@/components/PriceStructure": { PriceStructure: makeStub() },
-  "@/components/HistoryTimeline": { HistoryTimeline: makeStub() },
+  "@/components/ItemDates": { ItemHistory: makeStub(), ItemSchedule: makeStub() },
   "@/components/WatchToggle": { WatchToggle: makeStub() },
   "@/components/ShareButton": { ShareButton: makeStub() },
   "@/components/CopyCaseNo": { CopyCaseNo: CopyCaseNoStub },

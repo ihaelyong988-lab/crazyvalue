@@ -200,3 +200,24 @@ describe("ItemList 빈 결과 문구 — 단정형(앱 기준 문체)", () => {
     expect(props.description).toBeUndefined();
   });
 });
+
+describe("정렬 근거와 결과 수 접근성", () => {
+  it("최근 유찰일순에서 추정·출처 미상 날짜가 섞임을 명시한다", () => {
+    const tree = mountList({ sort: "new" }).render();
+    const select = find(tree, (el) => el.type === "select");
+    const helpId = select?.props["aria-describedby"];
+    expect(typeof helpId).toBe("string");
+    const help = find(tree, (el) => el.props.id === helpId);
+    expect(textOf(help)).toContain("추정");
+    expect(textOf(help)).toContain("출처 미상");
+    expect(textOf(help)).toContain("등록일");
+  });
+
+  it("필터 결과 수를 낭독 영역에서 갱신한다", () => {
+    const list = mountList({ items: mkItems(10) });
+    list.render();
+    const tree = list.render({ items: mkItems(4) });
+    const count = find(tree, (el) => el.props["aria-live"] === "polite");
+    expect(textOf(count)).toBe("총 4건");
+  });
+});

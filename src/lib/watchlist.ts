@@ -238,6 +238,7 @@ export function chooseHomeRestore(input: HomeRestoreInput): HomeRestoreSource {
 export function subscribeWatchState(onChange: () => void): () => void {
   if (typeof window === "undefined") return () => {};
   const handler = (e: StorageEvent) => {
+    if (e.storageArea && e.storageArea !== window.localStorage) return;
     if (e.key !== null && e.key !== WATCH_KEY) return; // key === null = 타 탭의 storage.clear()
     onChange();
   };
@@ -314,6 +315,14 @@ export function removeWatch(id: string): boolean {
   return saved;
 }
 
+/** 제거 되돌리기: 원래 등록 정보는 유지하고, 다른 탭의 최신 재등록은 덮어쓰지 않는다. */
+export function restoreWatch(id: string, entry: WatchEntry): boolean {
+  const state = getWatchState();
+  if (id in state.items) return true;
+  state.items[id] = entry;
+  return safeWrite(WATCH_KEY, state);
+}
+
 /**
  * 관심조건 저장. 온보딩 완료 플래그는 세우지 않는다(감사 2차 34 — 기록은 온보딩 시트만).
  * 저장 시각을 함께 남긴다(감사 3차 32): 미러 무효화가 실패하거나 옛 URL이 미러로 되살아나도,
@@ -338,11 +347,11 @@ export function markOnboarded(): boolean {
 }
 
 // ---- 상태 변화 판정(원안 "추적기능", §5.5) ----
-export type WatchDiff = "재유찰" | "기일 변경" | "매각 종료" | null;
+export type WatchDiff = "재유찰" | "기일 변경" | "현재 목록 확인 불가" | null;
 
-/** 갱신된 산출물과 스냅샷 비교. current 부재 = 목록 소멸(매각 종료 등). */
+/** 현재 목록의 미포함만으로 매각·취하 등 실제 결과를 판단할 수 없다. */
 export function diffWatch(snapshot: WatchSnapshot, current: AuctionItem | undefined): WatchDiff {
-  if (!current) return "매각 종료";
+  if (!current) return "현재 목록 확인 불가";
   if (current.minPrice < snapshot.minPrice) return "재유찰";
   if (current.saleDate !== snapshot.saleDate) return "기일 변경";
   return null;
@@ -374,7 +383,7 @@ export interface CachedDiff {
   prevSaleDate: string;
 }
 
-const DIFF_VALUES: readonly string[] = ["재유찰", "기일 변경", "매각 종료"];
+const DIFF_VALUES: readonly string[] = ["재유찰", "기일 변경", "현재 목록 확인 불가"];
 
 function isCachedDiff(v: unknown): v is CachedDiff {
   return (
@@ -401,12 +410,13 @@ export function readDiffCache(): Record<string, CachedDiff> {
   }
 }
 
-export function writeDiffCache(cache: Record<string, CachedDiff>): void {
-  if (typeof window === "undefined") return;
+export function writeDiffCache(cache: Record<string, CachedDiff>): boolean {
+  if (typeof window === "undefined") return false;
   try {
     window.sessionStorage.setItem(DIFF_CACHE_KEY, JSON.stringify(cache));
+    return true;
   } catch {
-    // 저장 실패는 배지 지속성 저하로만 흡수한다.
+    return false;
   }
 }
 

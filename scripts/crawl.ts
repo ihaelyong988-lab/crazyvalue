@@ -712,7 +712,7 @@ function mapRow(row: RawRow, detail: DetailResult | null, todayYmd: string, fail
   const history = realHistory ?? buildBackcalcHistory(appraisal, minPrice, failCount, saleDate);
 
   // 매수신청보증금 — 상세의 비율(prchDposRate)과 사이트 동일 산식(100원 단위 올림, PGJ15BM01.xml 실측).
-  // 상세 미취득 시 기본 최저매각가격의 10%(민사집행규칙 제63조 기본 보증금)로 계산한다.
+  // 상세 미취득의 10% 계산값은 추정으로 보존하며 화면에서 확정 보증금처럼 제시하지 않는다.
   const rateRaw = num(saleInfo, "prchDposRate");
   const depositRate = Number.isFinite(rateRaw) && rateRaw > 0 ? rateRaw : 10;
   const deposit = Math.ceil((minPrice * depositRate) / 100 / 100) * 100;
@@ -726,6 +726,7 @@ function mapRow(row: RawRow, detail: DetailResult | null, todayYmd: string, fail
   const item: AuctionItem = {
     id: `${regionKey}-${caseNo}-${itemNo}`,
     court,
+    ...(str(row, "boCd") ? { courtCode: str(row, "boCd") } : {}),
     caseNo,
     itemNo,
     category,
@@ -740,11 +741,14 @@ function mapRow(row: RawRow, detail: DetailResult | null, todayYmd: string, fail
     saleTime: hmToClock(str(row, "maeHh1")) || hmToClock(str(upcoming ?? {}, "dxdyHm")) || hmToClock(str(saleInfo, "fstDspslHm")),
     courtRoom: stripTags(str(row, "maePlace") || str(upcoming ?? {}, "dxdyPlcNm") || str(saleInfo, "dspslPlcNm")),
     deposit,
+    depositRate,
+    depositSource: Number.isFinite(rateRaw) && rateRaw > 0 ? "observed" : "estimated",
     areaBuilding: isLand ? null : area,
     areaLand: isLand ? area : null,
     photoUrl: null, // MVP는 무사진(핫링크 리스크, CRAWLER.md §4) — 화면은 용도별 플레이스홀더
     detailUrl: DETAIL_URL,
     history,
+    historySource: realHistory ? "observed" : "estimated",
     specialNote: cleanNote(str(row, "mulBigo")),
   };
   return { item, skipReason: null, historySource: realHistory ? "실취득" : "역산" };
@@ -1004,6 +1008,9 @@ export async function main(argv = process.argv.slice(2)): Promise<void> {
   }, (item, reason) => {
     diagnostics.record(reason === "invalid" ? "invalid" : "idDuplicates", observeItem(item), reason === "invalid" ? "schemaInvalid" : "duplicateId");
   });
+  if (gate.idCollisions.length > 0) {
+    console.error(`출력 ID의 법원 키 충돌 — ${JSON.stringify(gate.idCollisions)} · 첫 항목 유지, 실제 손실 규모는 원천 대조가 필요하다.`);
+  }
   if (gate.valid.length === 0) {
     console.error(
       `검증 게이트 기각 — 유효 0건(무효드롭 ${gate.invalidDropped}건 · 중복드롭 ${gate.dupDropped}건). ` +

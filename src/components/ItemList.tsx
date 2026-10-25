@@ -66,7 +66,7 @@ export function ItemList({
   return (
     <div className="p-4">
       <div className="mb-3 flex items-center justify-between">
-        <p className="text-[13px] tabular-nums text-ink/70">
+        <p aria-live="polite" aria-atomic="true" className="text-[13px] tabular-nums text-ink/70">
           총 {items.length.toLocaleString("ko-KR")}건
         </p>
         <label className="flex items-center gap-1.5 text-[13px] text-ink/70">
@@ -74,6 +74,7 @@ export function ItemList({
           {/* 글꼴 16px(감사 7) — iOS는 포커스된 폼 컨트롤이 16px 미만이면 화면을 강제 확대한다. */}
           <select
             value={sort}
+            aria-describedby={sort === "new" ? "sort-history-note" : undefined}
             onChange={(e) => onSortChange(e.target.value as SortKey)}
             className="min-h-11 cursor-pointer rounded-lg border border-line bg-white px-2 text-[16px] text-ink"
           >
@@ -85,6 +86,11 @@ export function ItemList({
           </select>
         </label>
       </div>
+      {sort === "new" && (
+        <p id="sort-history-note" className="mb-3 text-[13px] leading-snug text-ink/70">
+          등록일이 아닌 유찰 이력 날짜 기준이며 추정·출처 미상 날짜를 포함한다.
+        </p>
+      )}
       <ul className="space-y-3">
         {visible.map((i, idx) => (
           <li

@@ -145,3 +145,46 @@ describe("remainingText — 쿨다운 잔여 표기", () => {
     expect(remainingText("미상", now)).toBeNull();
   });
 });
+
+describe("게시 스냅샷 — 워크플로 전체 결과와 별도 근거", () => {
+  it("전체 실패 뒤에도 새 게시가 확인되면 게시 시각부터 1시간 동안 재수집을 막는다", () => {
+    const s = deriveStatus(
+      [
+        run("completed", "2026-08-02T11:20:00Z", "latest", "failure"),
+        run("completed", "2026-08-02T10:00:00Z", "old-success", "success"),
+      ],
+      NOW,
+      true,
+      "2026-08-02T11:55:00Z",
+    );
+    expect(s.state).toBe("cooldown");
+    expect(s.cooldownUntil).toBe("2026-08-02T12:55:00.000Z");
+    expect(s.lastConclusion).toBe("failure");
+    expect(s.publishedAt).toBe("2026-08-02T11:55:00Z");
+  });
+
+  it("게시 근거의 쿨다운도 1시간이 지나면 서버 설정에 따라 해제한다", () => {
+    const runs = [run("completed", "2026-08-02T10:00:00Z", "failed", "failure")];
+    const publishedAt = "2026-08-02T11:00:00Z";
+    expect(deriveStatus(runs, NOW, true, publishedAt).state).toBe("idle");
+    expect(deriveStatus(runs, NOW, false, publishedAt).state).toBe("unconfigured");
+  });
+
+  it("전체 실행이 실패해도 이미 게시된 스냅샷을 유지한다", () => {
+    const publishedAt = "2026-10-25T06:15:43+09:00";
+    const s = deriveStatus(
+      [run("completed", "2026-10-24T19:58:29Z", "40127695397", "failure")],
+      new Date("2026-10-25T00:00:00Z"),
+      true,
+      publishedAt,
+    );
+    expect(s.lastConclusion).toBe("failure");
+    expect(s.publishedAt).toBe("2026-10-25T06:15:43+09:00");
+    expect(s.state).toBe("idle");
+  });
+
+  it("게시 시각이 없거나 손상되면 성공 실행으로 대신 추정하지 않는다", () => {
+    expect(deriveStatus([], NOW, true).publishedAt).toBeNull();
+    expect(deriveStatus([run("completed", AFTER_COOLDOWN)], NOW, true, "미상").publishedAt).toBeNull();
+  });
+});
