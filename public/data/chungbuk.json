@@ -2,6 +2,7 @@
  {
   "id": "chungbuk-2024타경1629-1",
   "court": "제천지원",
+  "courtCode": "B000272",
   "caseNo": "2024타경1629",
   "itemNo": "1",
   "category": "토지",
@@ -16,72 +17,81 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정",
   "deposit": 314200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 813,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-06-09",
+    "date": "2025-09-01",
+    "minPrice": 29268000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-10-06",
     "minPrice": 29268000,
     "result": "유찰"
    },
    {
-    "date": "2025-07-21",
-    "minPrice": 23414000,
+    "date": "2025-11-10",
+    "minPrice": 23893796,
     "result": "유찰"
    },
    {
-    "date": "2025-09-01",
-    "minPrice": 18731000,
+    "date": "2025-12-15",
+    "minPrice": 19506406,
     "result": "유찰"
    },
    {
-    "date": "2025-10-13",
-    "minPrice": 14984000,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-11-24",
-    "minPrice": 11987000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-01-05",
-    "minPrice": 9590000,
+    "date": "2026-01-19",
+    "minPrice": 15924630,
     "result": "유찰"
    },
    {
     "date": "2026-02-23",
-    "minPrice": 7672000,
+    "minPrice": 13000542,
     "result": "유찰"
    },
    {
     "date": "2026-03-30",
-    "minPrice": 6138000,
+    "minPrice": 10613376,
     "result": "유찰"
    },
    {
-    "date": "2026-05-11",
-    "minPrice": 4910000,
+    "date": "2026-05-04",
+    "minPrice": 8664543,
     "result": "유찰"
    },
    {
-    "date": "2026-06-22",
-    "minPrice": 4910000,
+    "date": "2026-06-08",
+    "minPrice": 7073556,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 3928000,
+    "date": "2026-07-13",
+    "minPrice": 5774706,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 4714352,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-21",
+    "minPrice": 3848700,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "농지취득자격증명서 필요(미제출시 매수보증금 몰수), 지상에 분묘 소재(분묘기지권 성립 여지 있음). 현황: 맹지로 휴경지이고, 분묘는 인접토지와 함께 걸쳐 있음"
  },
  {
   "id": "chungbuk-2024타경1780-2",
   "court": "제천지원",
+  "courtCode": "B000272",
   "caseNo": "2024타경1780",
   "itemNo": "2",
   "category": "아파트",
@@ -96,67 +106,71 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정",
   "deposit": 1092500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-07-21",
+    "date": "2025-11-10",
+    "minPrice": 81400000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-15",
     "minPrice": 81400000,
     "result": "유찰"
    },
    {
-    "date": "2025-09-01",
-    "minPrice": 65120000,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-10-13",
-    "minPrice": 52096000,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-11-24",
-    "minPrice": 41676000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-01-05",
-    "minPrice": 33341000,
+    "date": "2026-01-19",
+    "minPrice": 65119786,
     "result": "유찰"
    },
    {
     "date": "2026-02-23",
-    "minPrice": 26673000,
+    "minPrice": 52095658,
     "result": "유찰"
    },
    {
     "date": "2026-03-30",
-    "minPrice": 21338000,
+    "minPrice": 41676389,
     "result": "유찰"
    },
    {
-    "date": "2026-05-11",
-    "minPrice": 17070000,
+    "date": "2026-05-04",
+    "minPrice": 33341002,
     "result": "유찰"
    },
    {
-    "date": "2026-06-22",
-    "minPrice": 13656000,
-    "result": "변경"
+    "date": "2026-06-08",
+    "minPrice": 26672714,
+    "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 13656000,
+    "date": "2026-07-13",
+    "minPrice": 21338101,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 17070425,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-21",
+    "minPrice": 13656295,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "chungbuk-2024타경1803-3",
   "court": "제천지원",
+  "courtCode": "B000272",
   "caseNo": "2024타경1803",
   "itemNo": "3",
   "category": "토지",
@@ -171,37 +185,46 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정",
   "deposit": 31633600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 4950,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-05-11",
-    "minPrice": 882633000,
+    "date": "2026-05-04",
+    "minPrice": 1379115000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-08",
+    "minPrice": 1379115000,
     "result": "유찰"
    },
    {
-    "date": "2026-06-22",
-    "minPrice": 706106000,
+    "date": "2026-07-13",
+    "minPrice": 954415571,
     "result": "유찰"
    },
    {
-    "date": "2026-08-03",
-    "minPrice": 564885000,
+    "date": "2026-08-17",
+    "minPrice": 660502629,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 451908000,
+    "date": "2026-09-21",
+    "minPrice": 457100382,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "지상 제시외 주택 6개동 매각제외(법정지상권 성립 여부 알 수 없음). 현황: 지목은 임야이나 주택 신축신고를 득한 후 10개의 주택부지를 조성하여 주택 6개동을 신축한 상태이고, 나머지 주택부지 4개는 주거나지 및 일부 도로로 이용 중임."
  },
  {
   "id": "chungbuk-2024타경2384-1",
   "court": "충주지원",
+  "courtCode": "B000271",
   "caseNo": "2024타경2384",
   "itemNo": "1",
   "category": "기타",
@@ -216,52 +239,61 @@
   "saleTime": "10:00",
   "courtRoom": "제3호법정",
   "deposit": 20816600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 185,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-11-17",
+    "date": "2026-01-19",
+    "minPrice": 992615000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-23",
     "minPrice": 992615000,
     "result": "유찰"
    },
    {
-    "date": "2025-12-22",
-    "minPrice": 794092000,
+    "date": "2026-03-30",
+    "minPrice": 794091753,
     "result": "유찰"
    },
    {
-    "date": "2026-01-26",
-    "minPrice": 635274000,
+    "date": "2026-05-04",
+    "minPrice": 635273205,
     "result": "유찰"
    },
    {
-    "date": "2026-03-16",
-    "minPrice": 508219000,
+    "date": "2026-06-08",
+    "minPrice": 508218406,
     "result": "유찰"
    },
    {
-    "date": "2026-04-20",
-    "minPrice": 406575000,
+    "date": "2026-07-13",
+    "minPrice": 406574598,
     "result": "유찰"
    },
    {
-    "date": "2026-06-01",
-    "minPrice": 325260000,
+    "date": "2026-08-17",
+    "minPrice": 325259577,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 260208000,
+    "date": "2026-09-21",
+    "minPrice": 260207581,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-일괄매각 -목록 2 동측 도로에 소재하는 제시외건물(감정평가서상 ㉡, 철재기둥 판넬지붕 단층 저유탱크펌프실) 매각 포함 -목록 3 지상 제시외건물(감정평가서상 ㉠, 철골조 판넬지붕 단층 저유소 출하대) 매각 제외(이로인하여 토지소유권이 제한될때의 단가 226,000원/㎡) -2025.10.17.자 채권자 곡성농업협동조합으로부터 목록3 지상의 저유소출하대(감정평가서상 ㉠)에 대하여 채무자가 작성한 임의처분각서 제출함 -목록 6 지상에 현황 건물이 없음에도 일반 건축물대장에 타인 소유 '흙벽조 스레트지붕 단층 창고 38.08㎡'이 등재되어 있음(감정평가서 참조) -목록 8 건물은 철거되어 주유소캐노피 부분만 남아있음(기둥 콘크리트 부분 제거하여 철골기둥만 있고 내외 벽체 없음, 감정평가서 참조) -본건 기계기구 기호 1~3,4 소재불명, 5~11,13은 정상작동여부 미상이며 13은 일부부품제거됨, 기호14는 철거하다 중단된 상태임(감정평가서 참조-기계기구 기호 5~11,12,13 평가 후 매각 포함) -본건 토지는 오염토양을 정화하기 위하여 소요되는 복원비용 및 복원에 따른 지하시설물(유류탱크 등) 훼손시 그 복원비용 등의 비용이 소요될 것으로 예상되며 그에 따른 공사비를 감정하기 위해서는 토양정화업 등록을 한 토양정화업자의 특별용역이 요구됨 -오염토양정화조치명령으로 인한 정화조치이행의무 등이 부과될 수 있으니 관계기관에 확인 후 입찰요망 -본건 소재 동측으로 충청대로(국도36번)이 접하고 있으나 서측 인근 '충청내륙화고속화도로'가 부분적으로 개통하여 동측도로에 차량통행 거의 없는 상태임 -본건 토지에 기존 건물 철거한 폐자재가 적치되어 있고 기계기구 기호14번 지하탱크 3개 중 1개는 철거하여 토지상 방치, 2개는 철거하다 중단된 상태로 평가 및 매각 제외 -본건 토지 7필지 상호간, 인접필지간 경계불분명하므로 정확한 경계확인을 위한 측량필요"
  },
  {
   "id": "chungbuk-2024타경2452-1",
   "court": "충주지원",
+  "courtCode": "B000271",
   "caseNo": "2024타경2452",
   "itemNo": "1",
   "category": "토지",
@@ -276,57 +308,66 @@
   "saleTime": "10:00",
   "courtRoom": "제3호법정",
   "deposit": 1486200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 2060,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-12-22",
+    "date": "2025-12-15",
+    "minPrice": 88580000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-01-19",
     "minPrice": 88580000,
     "result": "유찰"
    },
    {
-    "date": "2026-01-26",
-    "minPrice": 70864000,
+    "date": "2026-02-23",
+    "minPrice": 70864442,
     "result": "유찰"
    },
    {
-    "date": "2026-03-16",
-    "minPrice": 56691000,
+    "date": "2026-03-30",
+    "minPrice": 56691908,
     "result": "유찰"
    },
    {
-    "date": "2026-04-20",
-    "minPrice": 45353000,
+    "date": "2026-05-04",
+    "minPrice": 45353809,
     "result": "유찰"
    },
    {
-    "date": "2026-06-01",
-    "minPrice": 36282000,
+    "date": "2026-06-08",
+    "minPrice": 36283274,
     "result": "유찰"
    },
    {
-    "date": "2026-07-06",
-    "minPrice": 29026000,
+    "date": "2026-07-13",
+    "minPrice": 29026800,
     "result": "유찰"
    },
    {
-    "date": "2026-08-10",
-    "minPrice": 23221000,
+    "date": "2026-08-17",
+    "minPrice": 23221585,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 18577000,
+    "date": "2026-09-21",
+    "minPrice": 18577384,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-맹지임 -농지취득자격증명 제출 필요(미제출시 보증금 몰수)"
  },
  {
   "id": "chungbuk-2024타경2452-3",
   "court": "충주지원",
+  "courtCode": "B000271",
   "caseNo": "2024타경2452",
   "itemNo": "3",
   "category": "토지",
@@ -341,67 +382,76 @@
   "saleTime": "10:00",
   "courtRoom": "제3호법정",
   "deposit": 310400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 278,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-09-01",
+    "date": "2025-10-06",
+    "minPrice": 28912000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-10",
     "minPrice": 28912000,
     "result": "유찰"
    },
    {
-    "date": "2025-11-17",
-    "minPrice": 23130000,
+    "date": "2025-12-15",
+    "minPrice": 23129300,
     "result": "유찰"
    },
    {
-    "date": "2025-12-22",
-    "minPrice": 18504000,
+    "date": "2026-01-19",
+    "minPrice": 18503200,
     "result": "유찰"
    },
    {
-    "date": "2026-01-26",
-    "minPrice": 14803000,
+    "date": "2026-02-23",
+    "minPrice": 14802368,
     "result": "유찰"
    },
    {
-    "date": "2026-03-16",
-    "minPrice": 11842000,
+    "date": "2026-03-30",
+    "minPrice": 11841741,
     "result": "유찰"
    },
    {
-    "date": "2026-04-20",
-    "minPrice": 9474000,
+    "date": "2026-05-04",
+    "minPrice": 9473270,
     "result": "유찰"
    },
    {
-    "date": "2026-06-01",
-    "minPrice": 7579000,
+    "date": "2026-06-08",
+    "minPrice": 7578518,
     "result": "유찰"
    },
    {
-    "date": "2026-07-06",
-    "minPrice": 6063000,
+    "date": "2026-07-13",
+    "minPrice": 6062736,
     "result": "유찰"
    },
    {
-    "date": "2026-08-10",
-    "minPrice": 4850000,
+    "date": "2026-08-17",
+    "minPrice": 4850126,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 3880000,
+    "date": "2026-09-21",
+    "minPrice": 3880050,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-맹지임"
  },
  {
   "id": "chungbuk-2024타경31276-1",
   "court": "충주지원",
+  "courtCode": "B000271",
   "caseNo": "2024타경31276",
   "itemNo": "1",
   "category": "오피스텔",
@@ -416,72 +466,81 @@
   "saleTime": "10:00",
   "courtRoom": "제3호법정",
   "deposit": 8405400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-07-28",
-    "minPrice": 501000000,
-    "result": "유찰"
-   },
-   {
     "date": "2025-09-01",
-    "minPrice": 400800000,
-    "result": "유찰"
+    "minPrice": 501000000,
+    "result": "신건"
    },
    {
-    "date": "2025-10-13",
-    "minPrice": 320640000,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-12-22",
+    "date": "2025-10-06",
     "minPrice": 501000000,
     "result": "유찰"
    },
    {
-    "date": "2026-01-26",
-    "minPrice": 400800000,
+    "date": "2025-11-10",
+    "minPrice": 425949179,
     "result": "유찰"
    },
    {
-    "date": "2026-03-16",
-    "minPrice": 320640000,
+    "date": "2025-12-15",
+    "minPrice": 362141125,
     "result": "유찰"
    },
    {
-    "date": "2026-04-20",
-    "minPrice": 256512000,
+    "date": "2026-01-19",
+    "minPrice": 307891646,
     "result": "유찰"
    },
    {
-    "date": "2026-06-01",
-    "minPrice": 205210000,
+    "date": "2026-02-23",
+    "minPrice": 261768850,
     "result": "유찰"
    },
    {
-    "date": "2026-07-06",
-    "minPrice": 164168000,
+    "date": "2026-03-30",
+    "minPrice": 222555343,
     "result": "유찰"
    },
    {
-    "date": "2026-08-10",
-    "minPrice": 131334000,
+    "date": "2026-05-04",
+    "minPrice": 189216100,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 105067000,
+    "date": "2026-06-08",
+    "minPrice": 160871142,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 136772317,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 116283546,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-21",
+    "minPrice": 98864034,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "chungbuk-2024타경31276-5",
   "court": "충주지원",
+  "courtCode": "B000271",
   "caseNo": "2024타경31276",
   "itemNo": "5",
   "category": "오피스텔",
@@ -496,72 +555,81 @@
   "saleTime": "10:00",
   "courtRoom": "제3호법정",
   "deposit": 9294600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-07-28",
-    "minPrice": 554000000,
-    "result": "유찰"
-   },
-   {
     "date": "2025-09-01",
-    "minPrice": 443200000,
-    "result": "유찰"
+    "minPrice": 554000000,
+    "result": "신건"
    },
    {
-    "date": "2025-10-13",
-    "minPrice": 354560000,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-12-22",
+    "date": "2025-10-06",
     "minPrice": 554000000,
     "result": "유찰"
    },
    {
-    "date": "2026-01-26",
-    "minPrice": 443200000,
+    "date": "2025-11-10",
+    "minPrice": 471009699,
     "result": "유찰"
    },
    {
-    "date": "2026-03-16",
-    "minPrice": 354560000,
+    "date": "2025-12-15",
+    "minPrice": 400451510,
     "result": "유찰"
    },
    {
-    "date": "2026-04-20",
-    "minPrice": 283648000,
+    "date": "2026-01-19",
+    "minPrice": 340463078,
     "result": "유찰"
    },
    {
-    "date": "2026-06-01",
-    "minPrice": 226918000,
+    "date": "2026-02-23",
+    "minPrice": 289461032,
     "result": "유찰"
    },
    {
-    "date": "2026-07-06",
-    "minPrice": 181534000,
+    "date": "2026-03-30",
+    "minPrice": 246099194,
     "result": "유찰"
    },
    {
-    "date": "2026-08-10",
-    "minPrice": 145227000,
+    "date": "2026-05-04",
+    "minPrice": 209233046,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 116182000,
+    "date": "2026-06-08",
+    "minPrice": 177889520,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 151241316,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 128585066,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-21",
+    "minPrice": 109322768,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "chungbuk-2024타경31276-6",
   "court": "충주지원",
+  "courtCode": "B000271",
   "caseNo": "2024타경31276",
   "itemNo": "6",
   "category": "오피스텔",
@@ -576,72 +644,81 @@
   "saleTime": "10:00",
   "courtRoom": "제3호법정",
   "deposit": 10737400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-07-28",
-    "minPrice": 640000000,
-    "result": "유찰"
-   },
-   {
     "date": "2025-09-01",
-    "minPrice": 512000000,
-    "result": "유찰"
+    "minPrice": 640000000,
+    "result": "신건"
    },
    {
-    "date": "2025-10-13",
-    "minPrice": 409600000,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-12-22",
+    "date": "2025-10-06",
     "minPrice": 640000000,
     "result": "유찰"
    },
    {
-    "date": "2026-01-26",
-    "minPrice": 512000000,
+    "date": "2025-11-10",
+    "minPrice": 544126525,
     "result": "유찰"
    },
    {
-    "date": "2026-03-16",
-    "minPrice": 409600000,
+    "date": "2025-12-15",
+    "minPrice": 462615118,
     "result": "유찰"
    },
    {
-    "date": "2026-04-20",
-    "minPrice": 327680000,
+    "date": "2026-01-19",
+    "minPrice": 393314307,
     "result": "유찰"
    },
    {
-    "date": "2026-06-01",
-    "minPrice": 262144000,
+    "date": "2026-02-23",
+    "minPrice": 334394917,
     "result": "유찰"
    },
    {
-    "date": "2026-07-06",
-    "minPrice": 209715000,
+    "date": "2026-03-30",
+    "minPrice": 284301788,
     "result": "유찰"
    },
    {
-    "date": "2026-08-10",
-    "minPrice": 167772000,
+    "date": "2026-05-04",
+    "minPrice": 241712725,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 134218000,
+    "date": "2026-06-08",
+    "minPrice": 205503602,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 174718689,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 148545427,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-21",
+    "minPrice": 126292979,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "chungbuk-2024타경33449-1",
   "court": "충주지원",
+  "courtCode": "B000271",
   "caseNo": "2024타경33449",
   "itemNo": "1",
   "category": "오피스텔",
@@ -656,62 +733,71 @@
   "saleTime": "10:00",
   "courtRoom": "제3호법정",
   "deposit": 14814300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 321.541,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-10-13",
+    "date": "2025-11-10",
+    "minPrice": 883000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-15",
     "minPrice": 883000000,
     "result": "유찰"
    },
    {
-    "date": "2025-12-22",
-    "minPrice": 883000000,
+    "date": "2026-01-19",
+    "minPrice": 724133317,
     "result": "유찰"
    },
    {
-    "date": "2026-01-26",
-    "minPrice": 706400000,
+    "date": "2026-02-23",
+    "minPrice": 593849445,
     "result": "유찰"
    },
    {
-    "date": "2026-03-16",
-    "minPrice": 565120000,
+    "date": "2026-03-30",
+    "minPrice": 487005853,
     "result": "유찰"
    },
    {
-    "date": "2026-04-20",
-    "minPrice": 452096000,
+    "date": "2026-05-04",
+    "minPrice": 399385236,
     "result": "유찰"
    },
    {
-    "date": "2026-06-01",
-    "minPrice": 361677000,
+    "date": "2026-06-08",
+    "minPrice": 327529055,
     "result": "유찰"
    },
    {
-    "date": "2026-07-06",
-    "minPrice": 289342000,
+    "date": "2026-07-13",
+    "minPrice": 268601020,
     "result": "유찰"
    },
    {
-    "date": "2026-08-10",
-    "minPrice": 231474000,
+    "date": "2026-08-17",
+    "minPrice": 220275139,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 185179000,
+    "date": "2026-09-21",
+    "minPrice": 180643904,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "chungbuk-2024타경33562-1",
   "court": "충주지원",
+  "courtCode": "B000271",
   "caseNo": "2024타경33562",
   "itemNo": "1",
   "category": "단독다가구",
@@ -726,6 +812,8 @@
   "saleTime": "10:00",
   "courtRoom": "제3호법정",
   "deposit": 1917500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -734,64 +822,71 @@
    {
     "date": "2025-09-01",
     "minPrice": 223224020,
+    "result": "신건"
+   },
+   {
+    "date": "2025-10-06",
+    "minPrice": 223224020,
     "result": "유찰"
    },
    {
-    "date": "2025-10-13",
-    "minPrice": 178579000,
+    "date": "2025-11-10",
+    "minPrice": 178579388,
     "result": "유찰"
    },
    {
-    "date": "2025-11-17",
-    "minPrice": 142863000,
+    "date": "2025-12-15",
+    "minPrice": 142863647,
     "result": "유찰"
    },
    {
-    "date": "2025-12-22",
-    "minPrice": 114290000,
+    "date": "2026-01-19",
+    "minPrice": 114291028,
     "result": "유찰"
    },
    {
-    "date": "2026-01-26",
-    "minPrice": 91432000,
+    "date": "2026-02-23",
+    "minPrice": 91432910,
     "result": "유찰"
    },
    {
-    "date": "2026-03-16",
-    "minPrice": 73146000,
+    "date": "2026-03-30",
+    "minPrice": 73146398,
     "result": "유찰"
    },
    {
-    "date": "2026-04-20",
-    "minPrice": 58517000,
+    "date": "2026-05-04",
+    "minPrice": 58517175,
     "result": "유찰"
    },
    {
-    "date": "2026-06-01",
-    "minPrice": 46814000,
+    "date": "2026-06-08",
+    "minPrice": 46813785,
     "result": "유찰"
    },
    {
-    "date": "2026-07-06",
-    "minPrice": 37451000,
+    "date": "2026-07-13",
+    "minPrice": 37451064,
     "result": "유찰"
    },
    {
-    "date": "2026-08-10",
-    "minPrice": 29961000,
+    "date": "2026-08-17",
+    "minPrice": 29960880,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 23969000,
+    "date": "2026-09-21",
+    "minPrice": 23968727,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-일괄매각 -목록 3,4 지분매각, 공유자 우선매수권 없음 -목록 1 지상에 소재하는 소유자 미상의 컨테이너(조립식 플라스틱) 매각 제외"
  },
  {
   "id": "chungbuk-2024타경36264-2",
   "court": "충주지원",
+  "courtCode": "B000271",
   "caseNo": "2024타경36264",
   "itemNo": "2",
   "category": "토지",
@@ -806,52 +901,61 @@
   "saleTime": "10:00",
   "courtRoom": "제3호법정",
   "deposit": 3283600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 2882,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-01-26",
+    "date": "2026-01-19",
+    "minPrice": 156572000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-23",
     "minPrice": 156572000,
     "result": "유찰"
    },
    {
-    "date": "2026-03-16",
-    "minPrice": 125258000,
+    "date": "2026-03-30",
+    "minPrice": 125257857,
     "result": "유찰"
    },
    {
-    "date": "2026-04-20",
-    "minPrice": 100206000,
+    "date": "2026-05-04",
+    "minPrice": 100206491,
     "result": "유찰"
    },
    {
-    "date": "2026-06-01",
-    "minPrice": 80165000,
+    "date": "2026-06-08",
+    "minPrice": 80165358,
     "result": "유찰"
    },
    {
-    "date": "2026-07-06",
-    "minPrice": 64132000,
+    "date": "2026-07-13",
+    "minPrice": 64132418,
     "result": "유찰"
    },
    {
-    "date": "2026-08-10",
-    "minPrice": 51306000,
+    "date": "2026-08-17",
+    "minPrice": 51306039,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 41045000,
+    "date": "2026-09-21",
+    "minPrice": 41044916,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-제시외 수목 포함 -지적상 맹지임 -농지취득자격증명 제출 필요(미제출시 보증금 몰수)"
  },
  {
   "id": "chungbuk-2024타경3691-1",
   "court": "충주지원",
+  "courtCode": "B000271",
   "caseNo": "2024타경3691",
   "itemNo": "1",
   "category": "오피스텔",
@@ -866,57 +970,66 @@
   "saleTime": "10:00",
   "courtRoom": "제3호법정",
   "deposit": 9965700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-12-22",
+    "date": "2025-12-15",
+    "minPrice": 594000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-01-19",
     "minPrice": 594000000,
     "result": "유찰"
    },
    {
-    "date": "2026-01-26",
-    "minPrice": 475200000,
+    "date": "2026-02-23",
+    "minPrice": 475200201,
     "result": "유찰"
    },
    {
-    "date": "2026-03-16",
-    "minPrice": 380160000,
+    "date": "2026-03-30",
+    "minPrice": 380160321,
     "result": "유찰"
    },
    {
-    "date": "2026-04-20",
-    "minPrice": 304128000,
+    "date": "2026-05-04",
+    "minPrice": 304128386,
     "result": "유찰"
    },
    {
-    "date": "2026-06-01",
-    "minPrice": 243302000,
+    "date": "2026-06-08",
+    "minPrice": 243302811,
     "result": "유찰"
    },
    {
-    "date": "2026-07-06",
-    "minPrice": 194642000,
+    "date": "2026-07-13",
+    "minPrice": 194642331,
     "result": "유찰"
    },
    {
-    "date": "2026-08-10",
-    "minPrice": 155714000,
+    "date": "2026-08-17",
+    "minPrice": 155713931,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 124571000,
+    "date": "2026-09-21",
+    "minPrice": 124571197,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-타인소유로 탐문되는 시스템냉난방설비는 매각제외(감정평가서 참조)"
  },
  {
   "id": "chungbuk-2024타경7443-1",
   "court": "제천지원",
+  "courtCode": "B000272",
   "caseNo": "2024타경7443",
   "itemNo": "1",
   "category": "상가",
@@ -931,57 +1044,66 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정",
   "deposit": 5767200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-06-09",
+    "date": "2025-12-15",
+    "minPrice": 275000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-01-19",
     "minPrice": 275000000,
     "result": "유찰"
    },
    {
-    "date": "2025-07-21",
-    "minPrice": 220000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-11-24",
-    "minPrice": 176000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-01-05",
-    "minPrice": 140800000,
-    "result": "유찰"
-   },
-   {
     "date": "2026-02-23",
-    "minPrice": 112640000,
+    "minPrice": 226222988,
     "result": "유찰"
    },
    {
     "date": "2026-03-30",
-    "minPrice": 90112000,
+    "minPrice": 186097601,
     "result": "유찰"
    },
    {
-    "date": "2026-05-11",
-    "minPrice": 72090000,
+    "date": "2026-05-04",
+    "minPrice": 153089292,
     "result": "유찰"
    },
    {
-    "date": "2026-06-22",
-    "minPrice": 72090000,
+    "date": "2026-06-08",
+    "minPrice": 125935698,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 103598363,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 85223023,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-21",
+    "minPrice": 70106934,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "현황 공실이며, 건물 후면으로 인접한 115호와 구분되는 벽체 미설치 상태임."
  },
  {
   "id": "chungbuk-2024타경7887-1",
   "court": "제천지원",
+  "courtCode": "B000272",
   "caseNo": "2024타경7887",
   "itemNo": "1",
   "category": "토지",
@@ -996,57 +1118,66 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정",
   "deposit": 373400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 1855,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-07-21",
+    "date": "2025-12-15",
+    "minPrice": 22260000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-01-19",
     "minPrice": 22260000,
     "result": "유찰"
    },
    {
-    "date": "2026-01-05",
-    "minPrice": 17808000,
-    "result": "유찰"
-   },
-   {
     "date": "2026-02-23",
-    "minPrice": 14246000,
+    "minPrice": 17807637,
     "result": "유찰"
    },
    {
     "date": "2026-03-30",
-    "minPrice": 11397000,
+    "minPrice": 14245820,
     "result": "유찰"
    },
    {
-    "date": "2026-05-11",
-    "minPrice": 9118000,
+    "date": "2026-05-04",
+    "minPrice": 11396424,
     "result": "유찰"
    },
    {
-    "date": "2026-06-22",
-    "minPrice": 7294000,
+    "date": "2026-06-08",
+    "minPrice": 9116953,
     "result": "유찰"
    },
    {
-    "date": "2026-08-03",
-    "minPrice": 5835000,
+    "date": "2026-07-13",
+    "minPrice": 7293414,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 4668000,
+    "date": "2026-08-17",
+    "minPrice": 5834613,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-21",
+    "minPrice": 4667595,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "농지취득자격증명서 필요(미제출시 매수보증금 몰수), 현황: 맹지로서 휴경지임."
  },
  {
   "id": "chungbuk-2024타경947-1",
   "court": "제천지원",
+  "courtCode": "B000272",
   "caseNo": "2024타경947",
   "itemNo": "1",
   "category": "오피스텔",
@@ -1061,67 +1192,76 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정",
   "deposit": 4428100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-03-17",
+    "date": "2025-10-06",
+    "minPrice": 412400000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-10",
     "minPrice": 412400000,
     "result": "유찰"
    },
    {
-    "date": "2025-04-28",
-    "minPrice": 329920000,
+    "date": "2025-12-15",
+    "minPrice": 329919916,
     "result": "유찰"
    },
    {
-    "date": "2025-06-09",
-    "minPrice": 263936000,
+    "date": "2026-01-19",
+    "minPrice": 263935866,
     "result": "유찰"
    },
    {
-    "date": "2025-07-21",
-    "minPrice": 211149000,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-09-01",
-    "minPrice": 168919000,
+    "date": "2026-02-23",
+    "minPrice": 211148639,
     "result": "유찰"
    },
    {
     "date": "2026-03-30",
-    "minPrice": 135135000,
+    "minPrice": 168918868,
     "result": "유찰"
    },
    {
-    "date": "2026-05-11",
-    "minPrice": 108108000,
+    "date": "2026-05-04",
+    "minPrice": 135135060,
     "result": "유찰"
    },
    {
-    "date": "2026-06-22",
-    "minPrice": 86486000,
+    "date": "2026-06-08",
+    "minPrice": 108108020,
     "result": "유찰"
    },
    {
-    "date": "2026-08-03",
-    "minPrice": 69189000,
+    "date": "2026-07-13",
+    "minPrice": 86486394,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 55351000,
+    "date": "2026-08-17",
+    "minPrice": 69189098,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-21",
+    "minPrice": 55351264,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "현황: 공실임"
  },
  {
   "id": "chungbuk-2025타경108-1",
   "court": "제천지원",
+  "courtCode": "B000272",
   "caseNo": "2025타경108",
   "itemNo": "1",
   "category": "기타",
@@ -1136,52 +1276,61 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정",
   "deposit": 28390300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 4465.4,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-01-05",
+    "date": "2026-01-19",
+    "minPrice": 1353757800,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-23",
     "minPrice": 1353757800,
     "result": "유찰"
    },
    {
-    "date": "2026-02-23",
-    "minPrice": 1083006000,
-    "result": "유찰"
-   },
-   {
     "date": "2026-03-30",
-    "minPrice": 866405000,
+    "minPrice": 1083005920,
     "result": "유찰"
    },
    {
-    "date": "2026-05-11",
-    "minPrice": 693124000,
+    "date": "2026-05-04",
+    "minPrice": 866404479,
     "result": "유찰"
    },
    {
-    "date": "2026-06-22",
-    "minPrice": 554499000,
+    "date": "2026-06-08",
+    "minPrice": 693123379,
     "result": "유찰"
    },
    {
-    "date": "2026-08-03",
-    "minPrice": 443599000,
+    "date": "2026-07-13",
+    "minPrice": 554498539,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 354879000,
+    "date": "2026-08-17",
+    "minPrice": 443598700,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-21",
+    "minPrice": 354878855,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "일괄매각. 공장저당법 제6조에 의한 기계기구 매각 포함(감정평가서 참조) 평가외 캐노피 매각제외 매각물건명세서, 부동산현황조사보고서, 감정평가서 등을 참고하고 현지 답사 등을 통하여 철저히 사전 조사 후 입찰자 본인의 책임하에 입찰 요망."
  },
  {
   "id": "chungbuk-2025타경126-2",
   "court": "제천지원",
+  "courtCode": "B000272",
   "caseNo": "2025타경126",
   "itemNo": "2",
   "category": "토지",
@@ -1196,47 +1345,56 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정",
   "deposit": 1123200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 2129,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-01-05",
+    "date": "2026-02-23",
+    "minPrice": 48967000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-30",
     "minPrice": 48967000,
     "result": "유찰"
    },
    {
-    "date": "2026-02-23",
-    "minPrice": 39174000,
+    "date": "2026-05-04",
+    "minPrice": 38311495,
     "result": "유찰"
    },
    {
-    "date": "2026-05-11",
-    "minPrice": 31339000,
+    "date": "2026-06-08",
+    "minPrice": 29974690,
     "result": "유찰"
    },
    {
-    "date": "2026-06-22",
-    "minPrice": 25071000,
+    "date": "2026-07-13",
+    "minPrice": 23452022,
     "result": "유찰"
    },
    {
-    "date": "2026-08-03",
-    "minPrice": 20057000,
+    "date": "2026-08-17",
+    "minPrice": 18348725,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 16046000,
+    "date": "2026-09-21",
+    "minPrice": 14355935,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "농지취득자격증명 제출요(미제출시 보증금 미반환, 소관 행정기관에 농지취득자격증명 발급 여부 사전 문의 후 입찰 요망). 지적도상 맹지이나 인접필지를 통하여 접근 가능함."
  },
  {
   "id": "chungbuk-2025타경5161-1",
   "court": "제천지원",
+  "courtCode": "B000272",
   "caseNo": "2025타경5161",
   "itemNo": "1",
   "category": "토지",
@@ -1251,67 +1409,76 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정",
   "deposit": 156200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 661,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-09-01",
+    "date": "2025-10-06",
+    "minPrice": 14542000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-10",
     "minPrice": 14542000,
     "result": "유찰"
    },
    {
-    "date": "2025-10-13",
-    "minPrice": 11634000,
+    "date": "2025-12-15",
+    "minPrice": 11634021,
     "result": "유찰"
    },
    {
-    "date": "2025-11-24",
-    "minPrice": 9307000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-01-05",
-    "minPrice": 7446000,
+    "date": "2026-01-19",
+    "minPrice": 9307553,
     "result": "유찰"
    },
    {
     "date": "2026-02-23",
-    "minPrice": 5957000,
+    "minPrice": 7446312,
     "result": "유찰"
    },
    {
     "date": "2026-03-30",
-    "minPrice": 4766000,
+    "minPrice": 5957265,
     "result": "유찰"
    },
    {
-    "date": "2026-05-11",
-    "minPrice": 3813000,
+    "date": "2026-05-04",
+    "minPrice": 4765984,
     "result": "유찰"
    },
    {
-    "date": "2026-06-22",
-    "minPrice": 3050000,
+    "date": "2026-06-08",
+    "minPrice": 3812925,
     "result": "유찰"
    },
    {
-    "date": "2026-08-03",
-    "minPrice": 2440000,
+    "date": "2026-07-13",
+    "minPrice": 3050450,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 1952000,
+    "date": "2026-08-17",
+    "minPrice": 2440449,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-21",
+    "minPrice": 1952429,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "농지취득자격증명 제출요(미제출시 보증금 미반환, 소관 행정기관에 농지취득자격증명 발급 여부 사전 문의 후 입찰 요망). 제시 외 분묘 소재하나 정확한 경계측량이 필요하며 소유관계 미상, 분묘기지권 성립여부 불분명."
  },
  {
   "id": "chungbuk-2025타경5300-1",
   "court": "제천지원",
+  "courtCode": "B000272",
   "caseNo": "2025타경5300",
   "itemNo": "1",
   "category": "토지",
@@ -1326,62 +1493,71 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정",
   "deposit": 1107000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 15860,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-10-13",
+    "date": "2025-11-10",
+    "minPrice": 82472000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-15",
     "minPrice": 82472000,
     "result": "유찰"
    },
    {
-    "date": "2025-11-24",
-    "minPrice": 65978000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-01-05",
-    "minPrice": 52782000,
+    "date": "2026-01-19",
+    "minPrice": 65978127,
     "result": "유찰"
    },
    {
     "date": "2026-02-23",
-    "minPrice": 42226000,
+    "minPrice": 52782923,
     "result": "유찰"
    },
    {
     "date": "2026-03-30",
-    "minPrice": 33781000,
+    "minPrice": 42226676,
     "result": "유찰"
    },
    {
-    "date": "2026-05-11",
-    "minPrice": 27025000,
+    "date": "2026-05-04",
+    "minPrice": 33781610,
     "result": "유찰"
    },
    {
-    "date": "2026-06-22",
-    "minPrice": 21620000,
+    "date": "2026-06-08",
+    "minPrice": 27025504,
     "result": "유찰"
    },
    {
-    "date": "2026-08-03",
-    "minPrice": 17296000,
+    "date": "2026-07-13",
+    "minPrice": 21620576,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 13837000,
+    "date": "2026-08-17",
+    "minPrice": 17296599,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-21",
+    "minPrice": 13837390,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "지분 매각. 공유자의 우선매수신고는 1회에 한하여 행사할 수 있음 지족도상 맹지임. 평장묘가 소재하며 분묘기지권 성립 여부 불분명"
  },
  {
   "id": "chungbuk-2025타경5358-1",
   "court": "제천지원",
+  "courtCode": "B000272",
   "caseNo": "2025타경5358",
   "itemNo": "1",
   "category": "토지",
@@ -1396,52 +1572,61 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정",
   "deposit": 3749300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 4132,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-01-05",
+    "date": "2026-01-19",
+    "minPrice": 178776000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-23",
     "minPrice": 178776000,
     "result": "유찰"
    },
    {
-    "date": "2026-02-23",
-    "minPrice": 143021000,
-    "result": "유찰"
-   },
-   {
     "date": "2026-03-30",
-    "minPrice": 114417000,
+    "minPrice": 143021321,
     "result": "유찰"
    },
    {
-    "date": "2026-05-11",
-    "minPrice": 91534000,
+    "date": "2026-05-04",
+    "minPrice": 114417473,
     "result": "유찰"
    },
    {
-    "date": "2026-06-22",
-    "minPrice": 73227000,
+    "date": "2026-06-08",
+    "minPrice": 91534312,
     "result": "유찰"
    },
    {
-    "date": "2026-08-03",
-    "minPrice": 58582000,
+    "date": "2026-07-13",
+    "minPrice": 73227716,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 46866000,
+    "date": "2026-08-17",
+    "minPrice": 58582386,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-21",
+    "minPrice": 46866079,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "일괄매각, 농지취득자격증명 제출요(미제출시 보증금 미반환, 소관 행정기관에 농지취득자격증명 발급 여부 사전 문의 후 입찰 요망)"
  },
  {
   "id": "chungbuk-2025타경5358-2",
   "court": "제천지원",
+  "courtCode": "B000272",
   "caseNo": "2025타경5358",
   "itemNo": "2",
   "category": "토지",
@@ -1456,52 +1641,61 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정",
   "deposit": 2152800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 2933,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-01-05",
+    "date": "2026-01-19",
+    "minPrice": 102655000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-23",
     "minPrice": 102655000,
     "result": "유찰"
    },
    {
-    "date": "2026-02-23",
-    "minPrice": 82124000,
-    "result": "유찰"
-   },
-   {
     "date": "2026-03-30",
-    "minPrice": 65699000,
+    "minPrice": 82123829,
     "result": "유찰"
    },
    {
-    "date": "2026-05-11",
-    "minPrice": 52559000,
+    "date": "2026-05-04",
+    "minPrice": 65698926,
     "result": "유찰"
    },
    {
-    "date": "2026-06-22",
-    "minPrice": 42047000,
+    "date": "2026-06-08",
+    "minPrice": 52559032,
     "result": "유찰"
    },
    {
-    "date": "2026-08-03",
-    "minPrice": 33638000,
+    "date": "2026-07-13",
+    "minPrice": 42047138,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 26910000,
+    "date": "2026-08-17",
+    "minPrice": 33637640,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-21",
+    "minPrice": 26910056,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "농지취득자격증명 제출요(미제출시 보증금 미반환, 소관 행정기관에 농지취득자격증명 발급 여부 사전 문의 후 입찰 요망)"
  },
  {
   "id": "chungbuk-2025타경90-1",
   "court": "제천지원",
+  "courtCode": "B000272",
   "caseNo": "2025타경90",
   "itemNo": "1",
   "category": "토지",
@@ -1516,67 +1710,76 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정",
   "deposit": 232000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 2770,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-09-01",
+    "date": "2025-10-06",
+    "minPrice": 21606000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-10",
     "minPrice": 21606000,
     "result": "유찰"
    },
    {
-    "date": "2025-10-13",
-    "minPrice": 17285000,
+    "date": "2025-12-15",
+    "minPrice": 17284855,
     "result": "유찰"
    },
    {
-    "date": "2025-11-24",
-    "minPrice": 13828000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-01-05",
-    "minPrice": 11062000,
+    "date": "2026-01-19",
+    "minPrice": 13827928,
     "result": "유찰"
    },
    {
     "date": "2026-02-23",
-    "minPrice": 8850000,
+    "minPrice": 11062377,
     "result": "유찰"
    },
    {
     "date": "2026-03-30",
-    "minPrice": 7080000,
+    "minPrice": 8849930,
     "result": "유찰"
    },
    {
-    "date": "2026-05-11",
-    "minPrice": 5664000,
+    "date": "2026-05-04",
+    "minPrice": 7079966,
     "result": "유찰"
    },
    {
-    "date": "2026-06-22",
-    "minPrice": 4531000,
+    "date": "2026-06-08",
+    "minPrice": 5663991,
     "result": "유찰"
    },
    {
-    "date": "2026-08-03",
-    "minPrice": 3625000,
+    "date": "2026-07-13",
+    "minPrice": 4531207,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 2900000,
+    "date": "2026-08-17",
+    "minPrice": 3624977,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-21",
+    "minPrice": 2899991,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "농지취득자격증명 제출요(미제출시 보증금 미반환, 소관 행정기관에 농지취득자격증명 발급 여부 사전 문의 후 입찰 요망)."
  },
  {
   "id": "chungbuk-2024타경57336-1",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2024타경57336",
   "itemNo": "1",
   "category": "토지",
@@ -1591,6 +1794,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 1850500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 734,
   "photoUrl": null,
@@ -1627,11 +1832,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "농지취득자격증명필요(미제출시 보증금 미반환-소관 행정기관에 농지취득자격증명원 발급여부 확인 후 입찰요망). 맹지임."
  },
  {
   "id": "chungbuk-2024타경62505-1",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2024타경62505",
   "itemNo": "1",
   "category": "오피스텔",
@@ -1646,6 +1853,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 78564100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 1895,
   "areaLand": null,
   "photoUrl": null,
@@ -1672,11 +1881,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "일괄매각. 제시외 컨테이너 1동 매각 제외. 목록1 공부상 지목 \"답\", 현황 건축허가 득한 준공 전 토지. 목록2 건축법상 사용승인 받지 않은 건물. 농지취득자격증명 제출 필요(매각결정기일까지 미제출시 보증금은 반환하지 않음, 소관 행정기관에 농지취득자격증명원의 발급 여부를 확인 후 입찰요망)"
  },
  {
   "id": "chungbuk-2025타경4698-1",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2025타경4698",
   "itemNo": "1",
   "category": "토지",
@@ -1691,6 +1902,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 853500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 1643,
   "photoUrl": null,
@@ -1727,11 +1940,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "재매각. 일괄매각. 목록1,2 지분 매각. 공유자의 우선매수신고는 1회에 한하여 행사할 수 있음. 목록1 농지취득자격증명 제출 필요(매각결정기일까지 미제출시 보증금은 반환하지 않음.) 목록2 토지임야 및 일부도로로 이용중."
  },
  {
   "id": "chungbuk-2025타경4698-2",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2025타경4698",
   "itemNo": "2",
   "category": "토지",
@@ -1746,6 +1961,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 38300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 134,
   "photoUrl": null,
@@ -1782,11 +1999,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "지분매각. 공유자의 우선매수신고는 1회에 한하여 행사할 수 있음. 농지취득자격증명 제출 필요(매각결정기일까지 미제출시 보증금은 반환하지 않음.)"
  },
  {
   "id": "chungbuk-2025타경50462-1",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2025타경50462",
   "itemNo": "1",
   "category": "토지",
@@ -1801,6 +2020,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 135496000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 63,
   "photoUrl": null,
@@ -1827,11 +2048,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "일괄매각. 목록5,8. 지상 컨테이너박스 매각 제외. 목록1,3.의 공부상 지목은 임야 및 전이나 토목공사 중인 이행지. 목록5.의 공부상 지목은 과수원이나, 토목공사 진행중 중단됨. 목록4,6,7,8.의 공부상 지목은 전 및 과수원이나 토지정리 진행된 전 기타 상태. 목록9,10.의 공부상 지목은 전이나 인접허가지의 진입로로 이용중. 목록3,4,5,6,7,8,9,10.은 농지취득자격증명 제출 필요(매각결정기일까지 미제출시 보증금은 반환하지 않음. 주무관청의 인허가 확인요). 목록6,9.는 지분매각임. 목록2,4,5,7,8.의 최선순위 지상권(2018.03.09. 제23881호)이 있으나, 지상권자인 우암새마을금고가 2026.04.13.자 말소동의서를 제출함. 2026.06.04.자 (주)신화산업개발으로부터 상당구 용정동 281-40외 9필지 부동산에 대해 공사대금 금 473,000,000원의 유치권신고서가 제출되었으나, 그 성립 여부는 불분명함. 2026.06.04.자 (주)하나건기로부터 상당구 용정동 281-40외 9필지 부동산에 대해 공사대금 금 35,000,000원의 유치권신고서가 제출되었으나, 그 성립 여부는 불분명함. 2026. 06. 22.자 근저당권자 우암새마을금고가 (주)신화산업개발, (주)하나건기의 유치권신고에 대한 유치권배제신청서를 제출함"
  },
  {
   "id": "chungbuk-2025타경51572-1",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2025타경51572",
   "itemNo": "1",
   "category": "토지",
@@ -1846,6 +2069,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 20409100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 6013,
   "photoUrl": null,
@@ -1872,11 +2097,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "일괄매각. 제시외 관정 매각 포함. 제시외 비닐하우스 매각제외. 목록 1,2. 토지는 지목 '전'이나 현황은 동식물관련시설 건부지, 목록6. 공부상 '임야'이나 현황은 임야기타(묵전)임. 목록 1,2,4.는 농지취득자격증명필요(미제출시 보증금 미반환-소관 행정기관에 농지취득자격증명원 발급여부 확인 후 입찰요망), 원상회복명령 발하여질 가능성 있음."
  },
  {
   "id": "chungbuk-2025타경51650-1",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2025타경51650",
   "itemNo": "1",
   "category": "단독다가구",
@@ -1891,6 +2118,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 479600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 846,
   "areaLand": null,
   "photoUrl": null,
@@ -1922,11 +2151,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "일괄매각. 맹지임. 지분 매각임. 공유자의 우선매수신고는 1회에 한하여 행사할 수 있음(공유자가 우선매수권 신고 후 매각기일까지 매수보증금을 미납하여 실효되는 경우에는 그 공유자는 이후 매각기일부터는 우선매수권을 행사할 수 없음)"
  },
  {
   "id": "chungbuk-2025타경51650-2",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2025타경51650",
   "itemNo": "2",
   "category": "토지",
@@ -1941,6 +2172,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 373500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 42645,
   "photoUrl": null,
@@ -1972,11 +2205,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "맹지임. 지분 매각임. 공유자의 우선매수신고는 1회에 한하여 행사할 수 있음(공유자가 우선매수권 신고 후 매각기일까지 매수보증금을 미납하여 실효되는 경우에는 그 공유자는 이후 매각기일부터는 우선매수권을 행사할 수 없음)"
  },
  {
   "id": "chungbuk-2025타경51650-3",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2025타경51650",
   "itemNo": "3",
   "category": "토지",
@@ -1991,6 +2226,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 2431500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 13884,
   "photoUrl": null,
@@ -2022,11 +2259,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "지적상 맹지임. 다수의 분묘 소재함(분묘기지권 성립 불분명). 지분 매각임. 공유자의 우선매수신고는 1회에 한하여 행사할 수 있음(공유자가 우선매수권 신고 후 매각기일까지 매수보증금을 미납하여 실효되는 경우에는 그 공유자는 이후 매각기일부터는 우선매수권을 행사할 수 없음)"
  },
  {
   "id": "chungbuk-2025타경51650-4",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2025타경51650",
   "itemNo": "4",
   "category": "토지",
@@ -2041,6 +2280,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 327300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 28165,
   "photoUrl": null,
@@ -2072,11 +2313,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "일괄매각. 맹지임. 지분 매각임. 공유자의 우선매수신고는 1회에 한하여 행사할 수 있음(공유자가 우선매수권 신고 후 매각기일까지 매수보증금을 미납하여 실효되는 경우에는 그 공유자는 이후 매각기일부터는 우선매수권을 행사할 수 없음)"
  },
  {
   "id": "chungbuk-2025타경51650-5",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2025타경51650",
   "itemNo": "5",
   "category": "토지",
@@ -2091,6 +2334,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 183100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 19835,
   "photoUrl": null,
@@ -2122,11 +2367,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "맹지임. 지분 매각임. 공유자의 우선매수신고는 1회에 한하여 행사할 수 있음(공유자가 우선매수권 신고 후 매각기일까지 매수보증금을 미납하여 실효되는 경우에는 그 공유자는 이후 매각기일부터는 우선매수권을 행사할 수 없음)"
  },
  {
   "id": "chungbuk-2025타경51661-1",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2025타경51661",
   "itemNo": "1",
   "category": "토지",
@@ -2141,6 +2388,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 1305800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 423,
   "photoUrl": null,
@@ -2162,11 +2411,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "토지만 매각. 최저매각가격은 건물 소재로 인하여 제한 받는 가격임."
  },
  {
   "id": "chungbuk-2025타경51712-1",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2025타경51712",
   "itemNo": "1",
   "category": "아파트",
@@ -2181,6 +2432,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 939700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 59.4045,
   "areaLand": null,
   "photoUrl": null,
@@ -2232,11 +2485,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "chungbuk-2025타경51839-1",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2025타경51839",
   "itemNo": "1",
   "category": "토지",
@@ -2251,6 +2506,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 153300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 2068,
   "photoUrl": null,
@@ -2297,11 +2554,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "지분매각 농지취득자격증명 제출 필요(매각결정기일까지 미제출시 보증금은 반환하지 않음) 공유자의 우선매수신고는 1회에 한하여 행사할 수 있음 전 및 일부 \"도로\"로 이용중"
  },
  {
   "id": "chungbuk-2025타경51876-1",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2025타경51876",
   "itemNo": "1",
   "category": "토지",
@@ -2316,6 +2575,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 726700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 940,
   "photoUrl": null,
@@ -2352,11 +2613,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "지적도상 맹지임."
  },
  {
   "id": "chungbuk-2025타경51876-2",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2025타경51876",
   "itemNo": "2",
   "category": "토지",
@@ -2371,6 +2634,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 359500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 465,
   "photoUrl": null,
@@ -2407,11 +2672,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "지적도상 맹지임."
  },
  {
   "id": "chungbuk-2025타경52064-1",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2025타경52064",
   "itemNo": "1",
   "category": "아파트",
@@ -2426,6 +2693,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 1932800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 49.77,
   "areaLand": null,
   "photoUrl": null,
@@ -2462,11 +2731,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "chungbuk-2025타경52074-1",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2025타경52074",
   "itemNo": "1",
   "category": "토지",
@@ -2481,6 +2752,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 485900,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 1287.7,
   "photoUrl": null,
@@ -2507,11 +2780,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "연고자 미상의 분묘 2기 소재함(지상 분묘에 대한 분묘기지권 성립여부 불분명). 최저매각가격은 분묘 소재로 인하여 제한받는 가격임"
  },
  {
   "id": "chungbuk-2025타경52090-1",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2025타경52090",
   "itemNo": "1",
   "category": "오피스텔",
@@ -2526,6 +2801,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 18281900,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 48.36,
   "areaLand": null,
   "photoUrl": null,
@@ -2552,11 +2829,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "chungbuk-2025타경52129-1",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2025타경52129",
   "itemNo": "1",
   "category": "다세대",
@@ -2571,6 +2850,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 3241400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 27.25,
   "areaLand": null,
   "photoUrl": null,
@@ -2602,11 +2883,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "chungbuk-2025타경52204-1",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2025타경52204",
   "itemNo": "1",
   "category": "단독다가구",
@@ -2621,6 +2904,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 495000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 2,
   "areaLand": null,
   "photoUrl": null,
@@ -2647,11 +2932,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "건물만 매각이며 법정지상권 성립여부 불분명함. 제시외 건물 포함. 지분매각. 공유자의 우선매수신고는 1회에 한하여 행사할 수 있음(공유자가 우선매수권 신고 후 매각기일까지 매수보증금을 미납하여 실효되는 경우에는 그 공유자는 이후 매각기일부터는 우선매수권을 행사할 수 없음)."
  },
  {
   "id": "chungbuk-2025타경6106-1",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2025타경6106",
   "itemNo": "1",
   "category": "토지",
@@ -2666,6 +2953,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 13209800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 502,
   "photoUrl": null,
@@ -2692,11 +2981,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "일괄매각. 농지취득자격증명필요(미제출시 보증금 미반환-소관 행정기관에 농지취득자격증명원 발급여부 및 원상복구 관련 확인 후 입찰요망)"
  },
  {
   "id": "chungbuk-2026타경2-1",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2026타경2",
   "itemNo": "1",
   "category": "기타",
@@ -2711,6 +3002,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 24922700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 1821,
   "areaLand": null,
   "photoUrl": null,
@@ -2737,11 +3030,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "일괄매각. 제시 외 건물 포함. 목록 1.은 공부상 지목이 공장용지이나, 현황 일부 \"도로 등\"임. 본건 건물 일부가 매각 대상 아닌 인근 가곡리 279-1번지 토지 위에 소재하고 있음(감정평가서 참조)"
  },
  {
   "id": "chungbuk-2026타경43-1",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2026타경43",
   "itemNo": "1",
   "category": "토지",
@@ -2756,6 +3051,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 85799600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 6025,
   "photoUrl": null,
@@ -2782,11 +3079,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "일괄매각. 공부상 임야이나 현황 목록1 \"토목공사 진행된 토지\", 목록2 \"토목공사 진행된 토지 및 일부도로\", 목록3 \"토목공사 진행된 토지 및 일부도로, 자연림\"임."
  },
  {
   "id": "chungbuk-2026타경50108-1",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2026타경50108",
   "itemNo": "1",
   "category": "토지",
@@ -2801,6 +3100,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 2853600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 2311,
   "photoUrl": null,
@@ -2827,11 +3128,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "제시외 계사 및 비닐하우스 매각 제외. 농지취득자격증명필요(미제출시 보증금 미반환-소관 행정기관에 농지취득자격증명원 발급여부 확인 후 입찰요망). 지적상 맹지임."
  },
  {
   "id": "chungbuk-2026타경50161-1",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2026타경50161",
   "itemNo": "1",
   "category": "아파트",
@@ -2846,6 +3149,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 10015600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 84.9696,
   "areaLand": null,
   "photoUrl": null,
@@ -2872,11 +3177,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "chungbuk-2026타경50207-1",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2026타경50207",
   "itemNo": "1",
   "category": "토지",
@@ -2891,6 +3198,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 5378200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 10116,
   "photoUrl": null,
@@ -2917,11 +3226,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "chungbuk-2026타경50226-1",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2026타경50226",
   "itemNo": "1",
   "category": "아파트",
@@ -2936,6 +3247,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 5831000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 84.96,
   "areaLand": null,
   "photoUrl": null,
@@ -2962,11 +3275,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "chungbuk-2026타경50284-1",
   "court": "청주지방법원",
+  "courtCode": "B000270",
   "caseNo": "2026타경50284",
   "itemNo": "1",
   "category": "토지",
@@ -2981,6 +3296,8 @@
   "saleTime": "10:00",
   "courtRoom": "법정동121호(경매법정)",
   "deposit": 6926400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 3223,
   "photoUrl": null,
@@ -3007,6 +3324,7 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "제시외 수목 포함. 농지취득자격증명필요(미제출시 보증금 미반환-소관 행정기관에 농지취득자격증명원 발급여부 확인 후 입찰요망)."
  }
 ]

@@ -2,6 +2,7 @@
  {
   "id": "ulsan-2024타경113389-1",
   "court": "울산지방법원",
+  "courtCode": "B000411",
   "caseNo": "2024타경113389",
   "itemNo": "1",
   "category": "오피스텔",
@@ -16,6 +17,8 @@
   "saleTime": "10:00",
   "courtRoom": "133호입찰법정",
   "deposit": 960500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -72,6 +75,7 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  }
 ]

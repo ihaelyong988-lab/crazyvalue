@@ -2,6 +2,7 @@
  {
   "id": "gyeonggi-2024타경101239-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경101239",
   "itemNo": "1",
   "category": "오피스텔",
@@ -16,57 +17,66 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 668700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-01-06",
+    "date": "2025-12-15",
+    "minPrice": 116000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-01-19",
     "minPrice": 116000000,
     "result": "유찰"
    },
    {
-    "date": "2026-02-06",
-    "minPrice": 81200000,
+    "date": "2026-02-23",
+    "minPrice": 81199743,
     "result": "유찰"
    },
    {
-    "date": "2026-03-18",
-    "minPrice": 56840000,
+    "date": "2026-03-30",
+    "minPrice": 56839641,
     "result": "유찰"
    },
    {
-    "date": "2026-04-20",
-    "minPrice": 39788000,
+    "date": "2026-05-04",
+    "minPrice": 39787623,
     "result": "유찰"
    },
    {
-    "date": "2026-05-26",
-    "minPrice": 27852000,
+    "date": "2026-06-08",
+    "minPrice": 27851248,
     "result": "유찰"
    },
    {
-    "date": "2026-07-01",
-    "minPrice": 19496000,
+    "date": "2026-07-13",
+    "minPrice": 19495812,
     "result": "유찰"
    },
    {
-    "date": "2026-08-12",
-    "minPrice": 13647000,
+    "date": "2026-08-17",
+    "minPrice": 13647025,
     "result": "유찰"
    },
    {
-    "date": "2026-09-15",
-    "minPrice": 9553000,
+    "date": "2026-09-21",
+    "minPrice": 9552887,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 오피스텔로 이용중임 2. 대지권 미등기이나 매각목적물 및 평가에 포함함. 처인구 회신서에 따르면 토지에 대한 취득세가 납부됨"
  },
  {
   "id": "gyeonggi-2024타경4931-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2024타경4931",
   "itemNo": "1",
   "category": "오피스텔",
@@ -81,42 +91,51 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 5579900,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-09-01",
+    "date": "2026-03-30",
+    "minPrice": 332000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-04",
     "minPrice": 332000000,
     "result": "유찰"
    },
    {
-    "date": "2025-10-20",
-    "minPrice": 232400000,
+    "date": "2026-06-08",
+    "minPrice": 232399800,
     "result": "유찰"
    },
    {
-    "date": "2025-11-24",
-    "minPrice": 162680000,
+    "date": "2026-07-13",
+    "minPrice": 162679720,
     "result": "유찰"
    },
    {
-    "date": "2026-01-19",
-    "minPrice": 113876000,
+    "date": "2026-08-17",
+    "minPrice": 113875706,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 79713000,
+    "date": "2026-09-21",
+    "minPrice": 79712926,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-공실임."
  },
  {
   "id": "gyeonggi-2024타경4931-2",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2024타경4931",
   "itemNo": "2",
   "category": "오피스텔",
@@ -131,42 +150,51 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 5260600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-09-01",
+    "date": "2026-03-30",
+    "minPrice": 313000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-04",
     "minPrice": 313000000,
     "result": "유찰"
    },
    {
-    "date": "2025-10-20",
-    "minPrice": 219100000,
+    "date": "2026-06-08",
+    "minPrice": 219100075,
     "result": "유찰"
    },
    {
-    "date": "2025-11-24",
-    "minPrice": 153370000,
+    "date": "2026-07-13",
+    "minPrice": 153370105,
     "result": "유찰"
    },
    {
-    "date": "2026-01-19",
-    "minPrice": 107359000,
+    "date": "2026-08-17",
+    "minPrice": 107359110,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 75151000,
+    "date": "2026-09-21",
+    "minPrice": 75151403,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-공실임."
  },
  {
   "id": "gyeonggi-2024타경51999-6",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2024타경51999",
   "itemNo": "6",
   "category": "토지",
@@ -180,53 +208,57 @@
   "saleDate": "2026-10-26",
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
-  "deposit": 3351800,
+  "deposit": 1675900,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 833,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-07-14",
+    "date": "2026-02-23",
+    "minPrice": 142443000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-30",
     "minPrice": 142443000,
     "result": "유찰"
    },
    {
-    "date": "2025-11-24",
-    "minPrice": 99710100,
+    "date": "2026-05-04",
+    "minPrice": 99710817,
     "result": "유찰"
    },
    {
-    "date": "2026-01-19",
-    "minPrice": 69797070,
-    "result": "변경"
-   },
-   {
-    "date": "2026-06-01",
-    "minPrice": 69797070,
+    "date": "2026-06-08",
+    "minPrice": 69798074,
     "result": "유찰"
    },
    {
-    "date": "2026-07-06",
-    "minPrice": 48858000,
+    "date": "2026-07-13",
+    "minPrice": 48859004,
     "result": "유찰"
    },
    {
-    "date": "2026-08-03",
-    "minPrice": 34201000,
+    "date": "2026-08-17",
+    "minPrice": 34201549,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 23941000,
+    "date": "2026-09-21",
+    "minPrice": 23941256,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-맹지임 -농지취득자격증명제출요함(미제출시 보증금은 반환하지 아니함) -농작물(콩,들깨)재배 중 재매각임. 매수보증금은 최저매각가격의 20%를 납부하여야 함."
  },
  {
   "id": "gyeonggi-2024타경52909-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2024타경52909",
   "itemNo": "1",
   "category": "오피스텔",
@@ -241,72 +273,81 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 172100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-07-14",
+    "date": "2025-09-01",
+    "minPrice": 87000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-10-06",
     "minPrice": 87000000,
     "result": "유찰"
    },
    {
-    "date": "2025-09-01",
-    "minPrice": 60900000,
+    "date": "2025-11-10",
+    "minPrice": 60902335,
     "result": "유찰"
    },
    {
-    "date": "2025-10-20",
-    "minPrice": 42630000,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-11-24",
-    "minPrice": 29841000,
+    "date": "2025-12-15",
+    "minPrice": 42633269,
     "result": "유찰"
    },
    {
     "date": "2026-01-19",
-    "minPrice": 20888700,
+    "minPrice": 29844433,
     "result": "유찰"
    },
    {
-    "date": "2026-03-09",
-    "minPrice": 14622090,
+    "date": "2026-02-23",
+    "minPrice": 20891904,
     "result": "유찰"
    },
    {
-    "date": "2026-04-06",
-    "minPrice": 10235460,
+    "date": "2026-03-30",
+    "minPrice": 14624894,
     "result": "유찰"
    },
    {
-    "date": "2026-06-01",
-    "minPrice": 7164820,
+    "date": "2026-05-04",
+    "minPrice": 10237818,
     "result": "유찰"
    },
    {
-    "date": "2026-07-06",
-    "minPrice": 5015000,
+    "date": "2026-06-08",
+    "minPrice": 7166747,
     "result": "유찰"
    },
    {
-    "date": "2026-08-03",
-    "minPrice": 3511000,
+    "date": "2026-07-13",
+    "minPrice": 5016916,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 2458000,
+    "date": "2026-08-17",
+    "minPrice": 3511976,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-21",
+    "minPrice": 2458477,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2024타경69727-1",
   "court": "성남지원",
+  "courtCode": "B000251",
   "caseNo": "2024타경69727",
   "itemNo": "1",
   "category": "다세대",
@@ -321,67 +362,76 @@
   "saleTime": "10:00",
   "courtRoom": "제3별관1층제5호법정",
   "deposit": 757100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-11-03",
+    "date": "2025-10-06",
+    "minPrice": 268000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-10",
     "minPrice": 268000000,
     "result": "유찰"
    },
    {
-    "date": "2025-12-08",
-    "minPrice": 187600000,
+    "date": "2025-12-15",
+    "minPrice": 187601644,
     "result": "유찰"
    },
    {
     "date": "2026-01-19",
-    "minPrice": 131320000,
+    "minPrice": 131322301,
     "result": "유찰"
    },
    {
     "date": "2026-02-23",
-    "minPrice": 91924000,
+    "minPrice": 91926416,
     "result": "유찰"
    },
    {
     "date": "2026-03-30",
-    "minPrice": 64347000,
+    "minPrice": 64349055,
     "result": "유찰"
    },
    {
     "date": "2026-05-04",
-    "minPrice": 45043000,
+    "minPrice": 45044733,
     "result": "유찰"
    },
    {
     "date": "2026-06-08",
-    "minPrice": 31530000,
+    "minPrice": 31531590,
     "result": "유찰"
    },
    {
     "date": "2026-07-13",
-    "minPrice": 22071000,
+    "minPrice": 22072306,
     "result": "유찰"
    },
    {
-    "date": "2026-08-14",
-    "minPrice": 15450000,
+    "date": "2026-08-17",
+    "minPrice": 15450750,
     "result": "유찰"
    },
    {
     "date": "2026-09-21",
-    "minPrice": 10815000,
+    "minPrice": 10815620,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2024타경70765-1",
   "court": "성남지원",
+  "courtCode": "B000251",
   "caseNo": "2024타경70765",
   "itemNo": "1",
   "category": "다세대",
@@ -396,62 +446,71 @@
   "saleTime": "10:00",
   "courtRoom": "제3별관1층제5호법정",
   "deposit": 847500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 81.93,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-12-08",
+    "date": "2025-11-10",
+    "minPrice": 210000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-15",
     "minPrice": 210000000,
     "result": "유찰"
    },
    {
     "date": "2026-01-19",
-    "minPrice": 147000000,
+    "minPrice": 147001431,
     "result": "유찰"
    },
    {
     "date": "2026-02-23",
-    "minPrice": 102900000,
+    "minPrice": 102902004,
     "result": "유찰"
    },
    {
     "date": "2026-03-30",
-    "minPrice": 72030000,
+    "minPrice": 72032104,
     "result": "유찰"
    },
    {
     "date": "2026-05-04",
-    "minPrice": 50421000,
+    "minPrice": 50422963,
     "result": "유찰"
    },
    {
     "date": "2026-06-08",
-    "minPrice": 35295000,
+    "minPrice": 35296418,
     "result": "유찰"
    },
    {
     "date": "2026-07-13",
-    "minPrice": 24707000,
+    "minPrice": 24707733,
     "result": "유찰"
    },
    {
-    "date": "2026-08-14",
-    "minPrice": 17295000,
+    "date": "2026-08-17",
+    "minPrice": 17295582,
     "result": "유찰"
    },
    {
     "date": "2026-09-21",
-    "minPrice": 12107000,
+    "minPrice": 12107025,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "현황상 출입문 표시는 101호임."
  },
  {
   "id": "gyeonggi-2024타경7392-1",
   "court": "성남지원",
+  "courtCode": "B000251",
   "caseNo": "2024타경7392",
   "itemNo": "1",
   "category": "오피스텔",
@@ -466,42 +525,51 @@
   "saleTime": "10:00",
   "courtRoom": "제3별관1층제5호법정",
   "deposit": 20168400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-09-29",
+    "date": "2026-03-30",
+    "minPrice": 1200000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-04",
     "minPrice": 1200000000,
     "result": "유찰"
    },
    {
-    "date": "2025-11-03",
+    "date": "2026-06-08",
     "minPrice": 840000000,
     "result": "유찰"
    },
    {
-    "date": "2025-12-08",
+    "date": "2026-07-13",
     "minPrice": 588000000,
     "result": "유찰"
    },
    {
-    "date": "2026-01-19",
+    "date": "2026-08-17",
     "minPrice": 411600000,
     "result": "유찰"
    },
    {
-    "date": "2026-02-23",
+    "date": "2026-09-21",
     "minPrice": 288120000,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "본 건 물건에 '스트릿 1988 하남감일점'이라는 상호로 이용중임"
  },
  {
   "id": "gyeonggi-2024타경81618-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경81618",
   "itemNo": "1",
   "category": "상가",
@@ -516,42 +584,51 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 16571600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-07-08",
+    "date": "2026-03-30",
+    "minPrice": 986000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-04",
     "minPrice": 986000000,
     "result": "유찰"
    },
    {
-    "date": "2025-08-25",
-    "minPrice": 690200000,
+    "date": "2026-06-08",
+    "minPrice": 690199150,
     "result": "유찰"
    },
    {
-    "date": "2026-01-06",
-    "minPrice": 483140000,
+    "date": "2026-07-13",
+    "minPrice": 483138810,
     "result": "유찰"
    },
    {
-    "date": "2026-02-06",
-    "minPrice": 338198000,
+    "date": "2026-08-17",
+    "minPrice": 338196751,
     "result": "유찰"
    },
    {
-    "date": "2026-09-15",
-    "minPrice": 236738000,
+    "date": "2026-09-21",
+    "minPrice": 236737434,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 본건 포함 동 건물 143~147호 전체를 '찰리 황'이라는 중국음식점으로 이용중임 2. 본건 부동산은 건축물현황도상 특정이 가능하며, 인근호수를 이용하지 않고 외부 출입이 가능하므로 구조상 및 이용상 독립성을 갖춘 것으로 보임. 벽체 설치와 출입문 설치는 비용이 다소 소요된다고 하더라도 그 원상회복이 어려워 보이지는 않음"
  },
  {
   "id": "gyeonggi-2024타경90490-2",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경90490",
   "itemNo": "2",
   "category": "기타",
@@ -565,58 +642,62 @@
   "saleDate": "2026-10-26",
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
-  "deposit": 5684200,
+  "deposit": 2842100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-12-03",
+    "date": "2026-01-19",
+    "minPrice": 345100000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-23",
     "minPrice": 345100000,
     "result": "유찰"
    },
    {
-    "date": "2026-01-06",
-    "minPrice": 241570000,
+    "date": "2026-03-30",
+    "minPrice": 241570645,
     "result": "유찰"
    },
    {
-    "date": "2026-02-06",
-    "minPrice": 169099000,
+    "date": "2026-05-04",
+    "minPrice": 169099903,
     "result": "유찰"
    },
    {
-    "date": "2026-03-18",
-    "minPrice": 118369000,
+    "date": "2026-06-08",
+    "minPrice": 118370248,
     "result": "유찰"
    },
    {
-    "date": "2026-04-20",
-    "minPrice": 82858000,
+    "date": "2026-07-13",
+    "minPrice": 82859395,
     "result": "유찰"
    },
    {
-    "date": "2026-05-26",
-    "minPrice": 58001000,
+    "date": "2026-08-17",
+    "minPrice": 58001731,
     "result": "유찰"
    },
    {
-    "date": "2026-07-01",
-    "minPrice": 40601000,
+    "date": "2026-09-21",
+    "minPrice": 40601320,
     "result": "유찰"
-   },
-   {
-    "date": "2026-08-12",
-    "minPrice": 28421000,
-    "result": "변경"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 공장(지식산업센터)이며, 공실임 2. 재매각임. 매수신청보증금 20%"
  },
  {
   "id": "gyeonggi-2025타경1285-1",
   "court": "성남지원",
+  "courtCode": "B000251",
   "caseNo": "2025타경1285",
   "itemNo": "1",
   "category": "토지",
@@ -631,11 +712,18 @@
   "saleTime": "10:00",
   "courtRoom": "제3별관1층제5호법정",
   "deposit": 1765300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 7957,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
+   {
+    "date": "2026-03-30",
+    "minPrice": 105032400,
+    "result": "신건"
+   },
    {
     "date": "2026-05-04",
     "minPrice": 105032400,
@@ -643,30 +731,32 @@
    },
    {
     "date": "2026-06-08",
-    "minPrice": 73523000,
+    "minPrice": 73522850,
     "result": "유찰"
    },
    {
     "date": "2026-07-13",
-    "minPrice": 51466000,
+    "minPrice": 51466115,
     "result": "유찰"
    },
    {
-    "date": "2026-08-14",
-    "minPrice": 36026000,
+    "date": "2026-08-17",
+    "minPrice": 36026364,
     "result": "유찰"
    },
    {
     "date": "2026-09-21",
-    "minPrice": 25218000,
+    "minPrice": 25218513,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 본건 토지까지 차량진출입 불가능, 도로가 개설되지 않은 '맹지'임 2. 본건 토지 지상에 일부 송전탑이 소재하고 송전선이 통과함 3. 인근 토지와의 경계 등은 측량 등 별도의 확인이 필요 4. 현황상 토지 중심부로 등산로가 있음"
  },
  {
   "id": "gyeonggi-2025타경1360-1",
   "court": "성남지원",
+  "courtCode": "B000251",
   "caseNo": "2025타경1360",
   "itemNo": "1",
   "category": "토지",
@@ -681,11 +771,18 @@
   "saleTime": "10:00",
   "courtRoom": "제3별관1층제5호법정",
   "deposit": 6441100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 5686,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
+   {
+    "date": "2026-03-30",
+    "minPrice": 383236400,
+    "result": "신건"
+   },
    {
     "date": "2026-05-04",
     "minPrice": 383236400,
@@ -693,30 +790,32 @@
    },
    {
     "date": "2026-06-08",
-    "minPrice": 268265000,
+    "minPrice": 268265862,
     "result": "유찰"
    },
    {
     "date": "2026-07-13",
-    "minPrice": 187786000,
+    "minPrice": 187786370,
     "result": "유찰"
    },
    {
-    "date": "2026-08-14",
-    "minPrice": 131450000,
+    "date": "2026-08-17",
+    "minPrice": 131450646,
     "result": "유찰"
    },
    {
     "date": "2026-09-21",
-    "minPrice": 92015000,
+    "minPrice": 92015583,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "본건 맹지이고, 토지상에 터널2개가 관통하고 있음"
  },
  {
   "id": "gyeonggi-2025타경29-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2025타경29",
   "itemNo": "1",
   "category": "오피스텔",
@@ -731,47 +830,56 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 1788300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-03-18",
+    "date": "2026-02-23",
+    "minPrice": 152000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-30",
     "minPrice": 152000000,
     "result": "유찰"
    },
    {
-    "date": "2026-04-20",
-    "minPrice": 106400000,
+    "date": "2026-05-04",
+    "minPrice": 106400349,
     "result": "유찰"
    },
    {
-    "date": "2026-05-26",
-    "minPrice": 74480000,
+    "date": "2026-06-08",
+    "minPrice": 74480489,
     "result": "유찰"
    },
    {
-    "date": "2026-07-01",
-    "minPrice": 52136000,
+    "date": "2026-07-13",
+    "minPrice": 52136513,
     "result": "유찰"
    },
    {
-    "date": "2026-08-12",
-    "minPrice": 36495000,
+    "date": "2026-08-17",
+    "minPrice": 36495679,
     "result": "유찰"
    },
    {
-    "date": "2026-09-15",
-    "minPrice": 25547000,
+    "date": "2026-09-21",
+    "minPrice": 25547059,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "공장(지식산업센터)"
  },
  {
   "id": "gyeonggi-2025타경42108-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경42108",
   "itemNo": "1",
   "category": "오피스텔",
@@ -786,6 +894,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 642400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 26.11,
   "areaLand": null,
   "photoUrl": null,
@@ -794,44 +904,51 @@
    {
     "date": "2026-01-19",
     "minPrice": 78000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-23",
+    "minPrice": 78000000,
     "result": "유찰"
    },
    {
-    "date": "2026-03-09",
-    "minPrice": 54600000,
+    "date": "2026-03-30",
+    "minPrice": 54600443,
     "result": "유찰"
    },
    {
-    "date": "2026-04-06",
-    "minPrice": 38220000,
+    "date": "2026-05-04",
+    "minPrice": 38220620,
     "result": "유찰"
    },
    {
-    "date": "2026-06-01",
-    "minPrice": 26754000,
+    "date": "2026-06-08",
+    "minPrice": 26754651,
     "result": "유찰"
    },
    {
-    "date": "2026-07-06",
-    "minPrice": 18728000,
+    "date": "2026-07-13",
+    "minPrice": 18728407,
     "result": "유찰"
    },
    {
-    "date": "2026-08-03",
-    "minPrice": 13110000,
+    "date": "2026-08-17",
+    "minPrice": 13109991,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 9177000,
+    "date": "2026-09-21",
+    "minPrice": 9177068,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경42108-2",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경42108",
   "itemNo": "2",
   "category": "오피스텔",
@@ -846,6 +963,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 765900,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 32.45,
   "areaLand": null,
   "photoUrl": null,
@@ -854,44 +973,51 @@
    {
     "date": "2026-01-19",
     "minPrice": 93000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-23",
+    "minPrice": 93000000,
     "result": "유찰"
    },
    {
-    "date": "2026-03-09",
-    "minPrice": 65100000,
+    "date": "2026-03-30",
+    "minPrice": 65100061,
     "result": "유찰"
    },
    {
-    "date": "2026-04-06",
-    "minPrice": 45570000,
+    "date": "2026-05-04",
+    "minPrice": 45570085,
     "result": "유찰"
    },
    {
-    "date": "2026-06-01",
-    "minPrice": 31899000,
+    "date": "2026-06-08",
+    "minPrice": 31899089,
     "result": "유찰"
    },
    {
-    "date": "2026-07-06",
-    "minPrice": 22329000,
+    "date": "2026-07-13",
+    "minPrice": 22329383,
     "result": "유찰"
    },
    {
-    "date": "2026-08-03",
-    "minPrice": 15630000,
+    "date": "2026-08-17",
+    "minPrice": 15630583,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 10941000,
+    "date": "2026-09-21",
+    "minPrice": 10941418,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경42522-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경42522",
   "itemNo": "1",
   "category": "토지",
@@ -906,47 +1032,56 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 523600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 187,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-03-09",
+    "date": "2026-02-23",
+    "minPrice": 44506000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-30",
     "minPrice": 44506000,
     "result": "유찰"
    },
    {
-    "date": "2026-04-06",
-    "minPrice": 31154000,
+    "date": "2026-05-04",
+    "minPrice": 31154114,
     "result": "유찰"
    },
    {
-    "date": "2026-06-01",
-    "minPrice": 21808000,
+    "date": "2026-06-08",
+    "minPrice": 21807820,
     "result": "유찰"
    },
    {
-    "date": "2026-07-06",
-    "minPrice": 15266000,
+    "date": "2026-07-13",
+    "minPrice": 15265432,
     "result": "유찰"
    },
    {
-    "date": "2026-08-03",
-    "minPrice": 10686000,
+    "date": "2026-08-17",
+    "minPrice": 10685773,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 7480000,
+    "date": "2026-09-21",
+    "minPrice": 7480021,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1.농지취득자격증명 필요(미제출시 보증금 미반환) 2.'토지이용계획확인서'상 '고속국도법상의접도구역'에 일부(약 114㎡)저촉되어, 공법상 제한 정도를 감안하여 평가함. 3.지적도 및 현황 \"맹지\"임."
  },
  {
   "id": "gyeonggi-2025타경42575-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경42575",
   "itemNo": "1",
   "category": "토지",
@@ -961,42 +1096,51 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 1884600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 671,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-04-06",
+    "date": "2026-03-30",
+    "minPrice": 112133000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-04",
     "minPrice": 112133000,
     "result": "유찰"
    },
    {
-    "date": "2026-06-01",
-    "minPrice": 78493000,
+    "date": "2026-06-08",
+    "minPrice": 78492939,
     "result": "유찰"
    },
    {
-    "date": "2026-07-06",
-    "minPrice": 54945000,
+    "date": "2026-07-13",
+    "minPrice": 54944945,
     "result": "유찰"
    },
    {
-    "date": "2026-08-03",
-    "minPrice": 38462000,
+    "date": "2026-08-17",
+    "minPrice": 38461382,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
-    "minPrice": 26923000,
+    "date": "2026-09-21",
+    "minPrice": 26922912,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1.지적상 맹지임. 2.연고미상의 분묘3기가 존재하고, 분묘기지권 성립여부는 불분명함. 3.분묘로 인해 제한 받는 가격으로 평가함."
  },
  {
   "id": "gyeonggi-2025타경50034-1",
   "court": "성남지원",
+  "courtCode": "B000251",
   "caseNo": "2025타경50034",
   "itemNo": "1",
   "category": "오피스텔",
@@ -1010,48 +1154,52 @@
   "saleDate": "2026-10-26",
   "saleTime": "10:00",
   "courtRoom": "제3별관1층제5호법정",
-  "deposit": 1815200,
+  "deposit": 907600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-12-08",
+    "date": "2026-03-30",
+    "minPrice": 54000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-04",
     "minPrice": 54000000,
     "result": "유찰"
    },
    {
-    "date": "2026-01-19",
-    "minPrice": 37800000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-23",
-    "minPrice": 26460000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-30",
-    "minPrice": 18522000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-04",
-    "minPrice": 12965000,
-    "result": "유찰"
-   },
-   {
     "date": "2026-06-08",
-    "minPrice": 9076000,
-    "result": "변경"
+    "minPrice": 37800183,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 26460257,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 18522269,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-21",
+    "minPrice": 12965651,
+    "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 특별매각조건 매수신청보증금 최저매각가격의 20% 2. 지분매각, 공유자 우선매수권 행사는 1회에 한함 3. 집합건축물대장(표제부)상 위반건축물로 등재되어 있음 4. 본건은 인접 호수와 경계 구분없이 일단의 음식점으로 이용중임"
  },
  {
   "id": "gyeonggi-2025타경51419-1",
   "court": "성남지원",
+  "courtCode": "B000251",
   "caseNo": "2025타경51419",
   "itemNo": "1",
   "category": "다세대",
@@ -1066,11 +1214,18 @@
   "saleTime": "10:00",
   "courtRoom": "제3별관1층제5호법정",
   "deposit": 2482400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
+   {
+    "date": "2026-02-23",
+    "minPrice": 211000000,
+    "result": "신건"
+   },
    {
     "date": "2026-03-30",
     "minPrice": 211000000,
@@ -1078,35 +1233,37 @@
    },
    {
     "date": "2026-05-04",
-    "minPrice": 147700000,
+    "minPrice": 147700060,
     "result": "유찰"
    },
    {
     "date": "2026-06-08",
-    "minPrice": 103390000,
+    "minPrice": 103390085,
     "result": "유찰"
    },
    {
     "date": "2026-07-13",
-    "minPrice": 72373000,
+    "minPrice": 72373089,
     "result": "유찰"
    },
    {
-    "date": "2026-08-14",
-    "minPrice": 50661000,
+    "date": "2026-08-17",
+    "minPrice": 50661183,
     "result": "유찰"
    },
    {
     "date": "2026-09-21",
-    "minPrice": 35463000,
+    "minPrice": 35462843,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경51573-1",
   "court": "성남지원",
+  "courtCode": "B000251",
   "caseNo": "2025타경51573",
   "itemNo": "1",
   "category": "오피스텔",
@@ -1121,72 +1278,81 @@
   "saleTime": "10:00",
   "courtRoom": "제3별관1층제5호법정",
   "deposit": 282800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 20.69,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-09-29",
+    "date": "2025-09-01",
+    "minPrice": 143000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-10-06",
     "minPrice": 143000000,
     "result": "유찰"
    },
    {
-    "date": "2025-11-03",
-    "minPrice": 100100000,
+    "date": "2025-11-10",
+    "minPrice": 100101360,
     "result": "유찰"
    },
    {
-    "date": "2025-12-08",
-    "minPrice": 70070000,
+    "date": "2025-12-15",
+    "minPrice": 70071905,
     "result": "유찰"
    },
    {
     "date": "2026-01-19",
-    "minPrice": 49049000,
+    "minPrice": 49051000,
     "result": "유찰"
    },
    {
     "date": "2026-02-23",
-    "minPrice": 34334000,
+    "minPrice": 34336167,
     "result": "유찰"
    },
    {
     "date": "2026-03-30",
-    "minPrice": 24034000,
+    "minPrice": 24035643,
     "result": "유찰"
    },
    {
     "date": "2026-05-04",
-    "minPrice": 16824000,
+    "minPrice": 16825179,
     "result": "유찰"
    },
    {
     "date": "2026-06-08",
-    "minPrice": 11777000,
+    "minPrice": 11777785,
     "result": "유찰"
    },
    {
     "date": "2026-07-13",
-    "minPrice": 8244000,
+    "minPrice": 8244562,
     "result": "유찰"
    },
    {
-    "date": "2026-08-14",
-    "minPrice": 5771000,
+    "date": "2026-08-17",
+    "minPrice": 5771272,
     "result": "유찰"
    },
    {
     "date": "2026-09-21",
-    "minPrice": 4040000,
+    "minPrice": 4039945,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경51655-1",
   "court": "성남지원",
+  "courtCode": "B000251",
   "caseNo": "2025타경51655",
   "itemNo": "1",
   "category": "다세대",
@@ -1201,67 +1367,76 @@
   "saleTime": "10:00",
   "courtRoom": "제3별관1층제5호법정",
   "deposit": 553600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 53.34,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-11-03",
+    "date": "2025-10-06",
+    "minPrice": 196000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-10",
     "minPrice": 196000000,
     "result": "유찰"
    },
    {
-    "date": "2025-12-08",
-    "minPrice": 137200000,
+    "date": "2025-12-15",
+    "minPrice": 137198724,
     "result": "유찰"
    },
    {
     "date": "2026-01-19",
-    "minPrice": 96040000,
+    "minPrice": 96038214,
     "result": "유찰"
    },
    {
     "date": "2026-02-23",
-    "minPrice": 67228000,
+    "minPrice": 67226124,
     "result": "유찰"
    },
    {
     "date": "2026-03-30",
-    "minPrice": 47060000,
+    "minPrice": 47057849,
     "result": "유찰"
    },
    {
     "date": "2026-05-04",
-    "minPrice": 32942000,
+    "minPrice": 32940188,
     "result": "유찰"
    },
    {
     "date": "2026-06-08",
-    "minPrice": 23059000,
+    "minPrice": 23057917,
     "result": "유찰"
    },
    {
     "date": "2026-07-13",
-    "minPrice": 16141000,
+    "minPrice": 16140392,
     "result": "유찰"
    },
    {
-    "date": "2026-08-14",
-    "minPrice": 11299000,
+    "date": "2026-08-17",
+    "minPrice": 11298169,
     "result": "유찰"
    },
    {
     "date": "2026-09-21",
-    "minPrice": 7909000,
+    "minPrice": 7908645,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "본 건 다락층이 있음"
  },
  {
   "id": "gyeonggi-2025타경51873-1",
   "court": "성남지원",
+  "courtCode": "B000251",
   "caseNo": "2025타경51873",
   "itemNo": "1",
   "category": "오피스텔",
@@ -1276,11 +1451,18 @@
   "saleTime": "10:00",
   "courtRoom": "제3별관1층제5호법정",
   "deposit": 635300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 20.32,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
+   {
+    "date": "2026-02-23",
+    "minPrice": 54000000,
+    "result": "신건"
+   },
    {
     "date": "2026-03-30",
     "minPrice": 54000000,
@@ -1288,35 +1470,37 @@
    },
    {
     "date": "2026-05-04",
-    "minPrice": 37800000,
+    "minPrice": 37799954,
     "result": "유찰"
    },
    {
     "date": "2026-06-08",
-    "minPrice": 26460000,
+    "minPrice": 26459936,
     "result": "유찰"
    },
    {
     "date": "2026-07-13",
-    "minPrice": 18522000,
+    "minPrice": 18521933,
     "result": "유찰"
    },
    {
-    "date": "2026-08-14",
-    "minPrice": 12965000,
+    "date": "2026-08-17",
+    "minPrice": 12965337,
     "result": "유찰"
    },
    {
     "date": "2026-09-21",
-    "minPrice": 9076000,
+    "minPrice": 9075725,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 지분매각, 공유자 우선매수권 행사는 1회에 한함 2. 집합건축물대장(표제부)상 위반건축물로 등재되어 있음 3. 본건은 인접 호수와 경계 구분없이 일단의 음식점으로 이용중임 4. 현황상 이건 부동산은 3층 '황포냉면'의 일부라고 하나 황포냉면 폐업(영업종료안내문 게시)함"
  },
  {
   "id": "gyeonggi-2025타경51951-1",
   "court": "성남지원",
+  "courtCode": "B000251",
   "caseNo": "2025타경51951",
   "itemNo": "1",
   "category": "오피스텔",
@@ -1331,11 +1515,18 @@
   "saleTime": "10:00",
   "courtRoom": "제3별관1층제5호법정",
   "deposit": 3153000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 27.76,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
+   {
+    "date": "2026-02-23",
+    "minPrice": 268000000,
+    "result": "신건"
+   },
    {
     "date": "2026-03-30",
     "minPrice": 268000000,
@@ -1343,35 +1534,37 @@
    },
    {
     "date": "2026-05-04",
-    "minPrice": 187600000,
+    "minPrice": 187600067,
     "result": "유찰"
    },
    {
     "date": "2026-06-08",
-    "minPrice": 131320000,
+    "minPrice": 131320094,
     "result": "유찰"
    },
    {
     "date": "2026-07-13",
-    "minPrice": 91924000,
+    "minPrice": 91924099,
     "result": "유찰"
    },
    {
-    "date": "2026-08-14",
-    "minPrice": 64347000,
+    "date": "2026-08-17",
+    "minPrice": 64346893,
     "result": "유찰"
    },
    {
     "date": "2026-09-21",
-    "minPrice": 45043000,
+    "minPrice": 45042841,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경52131-1",
   "court": "성남지원",
+  "courtCode": "B000251",
   "caseNo": "2025타경52131",
   "itemNo": "1",
   "category": "오피스텔",
@@ -1386,11 +1579,18 @@
   "saleTime": "10:00",
   "courtRoom": "제3별관1층제5호법정",
   "deposit": 28612200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 57.31,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
+   {
+    "date": "2026-02-23",
+    "minPrice": 2432000000,
+    "result": "신건"
+   },
    {
     "date": "2026-03-30",
     "minPrice": 2432000000,
@@ -1398,35 +1598,37 @@
    },
    {
     "date": "2026-05-04",
-    "minPrice": 1702400000,
+    "minPrice": 1702399635,
     "result": "유찰"
    },
    {
     "date": "2026-06-08",
-    "minPrice": 1191680000,
+    "minPrice": 1191679489,
     "result": "유찰"
    },
    {
     "date": "2026-07-13",
-    "minPrice": 834176000,
+    "minPrice": 834175464,
     "result": "유찰"
    },
    {
-    "date": "2026-08-14",
-    "minPrice": 583923000,
+    "date": "2026-08-17",
+    "minPrice": 583922699,
     "result": "유찰"
    },
    {
     "date": "2026-09-21",
-    "minPrice": 408746000,
+    "minPrice": 408745802,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "일괄매각 현황 목록1, 2, 3은 3개호 일괄로 음식점(홀, 주방 등)으로 이용중임"
  },
  {
   "id": "gyeonggi-2025타경54364-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2025타경54364",
   "itemNo": "1",
   "category": "다세대",
@@ -1441,42 +1643,51 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 4033700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 52.07,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-04-20",
+    "date": "2026-03-30",
+    "minPrice": 240000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-04",
     "minPrice": 240000000,
     "result": "유찰"
    },
    {
-    "date": "2026-05-26",
-    "minPrice": 168000000,
+    "date": "2026-06-08",
+    "minPrice": 168000167,
     "result": "유찰"
    },
    {
-    "date": "2026-07-01",
-    "minPrice": 117600000,
+    "date": "2026-07-13",
+    "minPrice": 117600233,
     "result": "유찰"
    },
    {
-    "date": "2026-08-12",
-    "minPrice": 82320000,
+    "date": "2026-08-17",
+    "minPrice": 82320245,
     "result": "유찰"
    },
    {
-    "date": "2026-09-15",
-    "minPrice": 57624000,
+    "date": "2026-09-21",
+    "minPrice": 57624229,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경55206-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2025타경55206",
   "itemNo": "1",
   "category": "토지",
@@ -1491,42 +1702,51 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 6058200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 675,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-04-20",
+    "date": "2026-03-30",
+    "minPrice": 360450000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-04",
     "minPrice": 360450000,
     "result": "유찰"
    },
    {
-    "date": "2026-05-26",
-    "minPrice": 252315000,
+    "date": "2026-06-08",
+    "minPrice": 252315973,
     "result": "유찰"
    },
    {
-    "date": "2026-07-01",
-    "minPrice": 176621000,
+    "date": "2026-07-13",
+    "minPrice": 176621863,
     "result": "유찰"
    },
    {
-    "date": "2026-08-12",
-    "minPrice": 123635000,
+    "date": "2026-08-17",
+    "minPrice": 123635781,
     "result": "유찰"
    },
    {
-    "date": "2026-09-15",
-    "minPrice": 86545000,
+    "date": "2026-09-21",
+    "minPrice": 86545380,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 임목이 거의 없는 토지임야 상태로 일부는 농작물을 경작하고 있으며, 울타리 및 농작물 등은 평가에서 제외. 2. 맹지 상태임."
  },
  {
   "id": "gyeonggi-2025타경913-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2025타경913",
   "itemNo": "1",
   "category": "토지",
@@ -1541,42 +1761,51 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 681800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 3325,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-04-20",
+    "date": "2026-03-30",
+    "minPrice": 40565000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-04",
     "minPrice": 40565000,
     "result": "유찰"
    },
    {
-    "date": "2026-05-26",
-    "minPrice": 28396000,
+    "date": "2026-06-08",
+    "minPrice": 28395700,
     "result": "유찰"
    },
    {
-    "date": "2026-07-01",
-    "minPrice": 19877000,
+    "date": "2026-07-13",
+    "minPrice": 19877130,
     "result": "유찰"
    },
    {
-    "date": "2026-08-12",
-    "minPrice": 13914000,
+    "date": "2026-08-17",
+    "minPrice": 13914089,
     "result": "유찰"
    },
    {
-    "date": "2026-09-15",
-    "minPrice": 9740000,
+    "date": "2026-09-21",
+    "minPrice": 9739931,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 지분매각임, 공유자의 우선매수신고는 1회에 한하여 행사할 수 있음(공유자가 우선매수권 신고 후 매각기일까지 매수보증금을 미납하여 실효되는 경우에는 그 공유자는 이후 매각기일부터는 우선매수권을 행사할 수 없음). 2. 송전철탑이 소재하며 남동측 방향으로 송전선이 통과하고 있음. 3. 지적공부상 맹지임."
  },
  {
   "id": "gyeonggi-2023타경52766-3",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2023타경52766",
   "itemNo": "3",
   "category": "다세대",
@@ -1591,6 +1820,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 12245100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -1622,11 +1853,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "미군 관련 외국인들이 많이 거주하는 집합건물인 에메랄드미도우 F동 4층 연립주택(8세대)에 속한 전유부분 재매각임. 매수신청보증금 20%."
  },
  {
   "id": "gyeonggi-2023타경52766-5",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2023타경52766",
   "itemNo": "5",
   "category": "다세대",
@@ -1641,6 +1874,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 12245100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -1672,11 +1907,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "미군 관련 외국인들이 많이 거주하는 집합건물인 에메랄드미도우 F동 4층 연립주택(8세대)에 속한 전유부분 재매각임. 매수신청보증금 20%."
  },
  {
   "id": "gyeonggi-2023타경78643-1",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2023타경78643",
   "itemNo": "1",
   "category": "다세대",
@@ -1691,6 +1928,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원제101호입찰법정",
   "deposit": 68200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -1782,11 +2021,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "재매각임. 매수신청보증금 20%."
  },
  {
   "id": "gyeonggi-2023타경79325-1",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2023타경79325",
   "itemNo": "1",
   "category": "아파트",
@@ -1801,6 +2042,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원제101호입찰법정",
   "deposit": 321400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -1887,11 +2130,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "재매각임. 매수신청보증금 20%."
  },
  {
   "id": "gyeonggi-2024타경100359-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경100359",
   "itemNo": "1",
   "category": "다세대",
@@ -1906,6 +2151,8 @@
   "saleTime": "10:00",
   "courtRoom": "광교신청사제101호법정",
   "deposit": 1262500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -1957,11 +2204,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2024타경102737-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경102737",
   "itemNo": "1",
   "category": "다세대",
@@ -1976,6 +2225,8 @@
   "saleTime": "10:00",
   "courtRoom": "광교신청사제101호법정",
   "deposit": 1078000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -2027,11 +2278,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2024타경107772-1",
   "court": "안양지원",
+  "courtCode": "B000254",
   "caseNo": "2024타경107772",
   "itemNo": "1",
   "category": "아파트",
@@ -2046,6 +2299,8 @@
   "saleTime": "10:00",
   "courtRoom": "104호입찰법정",
   "deposit": 2587800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -2107,11 +2362,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2024타경13608-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경13608",
   "itemNo": "1",
   "category": "오피스텔",
@@ -2126,6 +2383,8 @@
   "saleTime": "10:00",
   "courtRoom": "광교신청사제101호법정",
   "deposit": 17959500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -2157,11 +2416,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2024타경13608-2",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경13608",
   "itemNo": "2",
   "category": "오피스텔",
@@ -2176,6 +2437,8 @@
   "saleTime": "10:00",
   "courtRoom": "광교신청사제101호법정",
   "deposit": 17959500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -2207,11 +2470,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2024타경2372-1",
   "court": "안양지원",
+  "courtCode": "B000254",
   "caseNo": "2024타경2372",
   "itemNo": "1",
   "category": "오피스텔",
@@ -2226,6 +2491,8 @@
   "saleTime": "10:00",
   "courtRoom": "104호입찰법정",
   "deposit": 31037800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -2277,11 +2544,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2024타경3693-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2024타경3693",
   "itemNo": "1",
   "category": "기타",
@@ -2296,6 +2565,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 3932900,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -2332,11 +2603,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "공부상 용도는 공장이며, 이용상태 확인요망. 재매각임. 매수신청보증금 20%."
  },
  {
   "id": "gyeonggi-2024타경44717-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2024타경44717",
   "itemNo": "1",
   "category": "토지",
@@ -2351,6 +2624,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 301200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 362,
   "photoUrl": null,
@@ -2382,11 +2657,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 일괄매각 2. 목록1은 지적도상 맹지이나 현황상 포장도로 및 목록2 토지에 인접. 공부상 임야이나 현황은 잡종지(제시외건부지). 토지에 소재하고 있는 소유자 미상의 제시외건물(미등기)은 매각에서 제외하며, 최저매각가는 제시외건물로 제한받는 가격임. 3. 목록2는 임야기타상태. 4. 공유자의 우선매수신고는 1회에 한하여 행사할 수 있음(공유자가 우선매수권 신고 후 매각기일까지 매수보증금을 미납하여 실효되는 경우에는 그 공유자는 이후 매각기일부터는 우선매수권을 행사할 수 없음) 5. 재매각임. 매수신청보증금 20%"
  },
  {
   "id": "gyeonggi-2024타경48761-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2024타경48761",
   "itemNo": "1",
   "category": "토지",
@@ -2401,6 +2678,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관제122호법정",
   "deposit": 3971200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 3669,
   "photoUrl": null,
@@ -2442,11 +2721,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 지적상 맹지임. 2. 분묘 및 시설물 소재 여부는 미상임. 3. 임야를 포함한 지역이 지뢰 매설지역 출입금지 안내문과 군사보호구역 표지석 설치되어 있음. 4. 정확한 면적 및 경계는 측량 등 별도의 확인이 필요함. 5. 특별매각조건 매수신청보증금 최저매각가격의 20%"
  },
  {
   "id": "gyeonggi-2024타경49033-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2024타경49033",
   "itemNo": "1",
   "category": "상가",
@@ -2461,6 +2742,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 19184000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -2492,11 +2775,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "인접 157호와 일체로 근린생활시설(커피 디저트)로 이용중이나 2025.11.17. 자 감정인의 사실조회회신서에 따르면 다소 견고한 벽체로 분리되어 있어, 구분가능"
  },
  {
   "id": "gyeonggi-2024타경49993-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2024타경49993",
   "itemNo": "1",
   "category": "다세대",
@@ -2511,6 +2796,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관제122호법정",
   "deposit": 508200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -2577,11 +2864,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2024타경5187-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2024타경5187",
   "itemNo": "1",
   "category": "기타",
@@ -2596,6 +2885,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 2435400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -2637,11 +2928,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "재매각임. 매수신청보증금 20%."
  },
  {
   "id": "gyeonggi-2024타경52586-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2024타경52586",
   "itemNo": "1",
   "category": "다세대",
@@ -2656,6 +2949,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관제122호법정",
   "deposit": 711900,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -2717,11 +3012,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2024타경5351-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2024타경5351",
   "itemNo": "1",
   "category": "상가",
@@ -2736,6 +3033,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관제122호법정",
   "deposit": 15942600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -2767,11 +3066,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "특별매각조건 매수신청보증금 최저매각가격의 20%"
  },
  {
   "id": "gyeonggi-2024타경53537-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2024타경53537",
   "itemNo": "1",
   "category": "아파트",
@@ -2786,6 +3087,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 375700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -2852,11 +3155,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2024타경54264-2",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2024타경54264",
   "itemNo": "2",
   "category": "단독다가구",
@@ -2871,6 +3176,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 10984400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 400,
   "areaLand": null,
   "photoUrl": null,
@@ -2907,11 +3214,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 일괄매각. 제시외 건물(창고 및 보일러실) 포함 2. 목록 5~8,10은 현황 도로이고, 목록9는 잡종지로서 주거기타(운동시설 등)로 이용중. 3. 목록3은 다가구주택의 건부지이고, 목록4는 다가구주택(3가구)이며, 1층 일부는 누수현상이 있는 것으로 파악됨. 목록4는 \"근내리다가구주택 가동\" 이며 통칭 \"스카이빌리지\"단지 내에 소재함. 출입구에 'E'라고 표시되어 있음. 목록3 지상에 작은 텃밭이 소재함."
  },
  {
   "id": "gyeonggi-2024타경54370-2",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2024타경54370",
   "itemNo": "2",
   "category": "토지",
@@ -2926,6 +3235,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 534000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 63,
   "photoUrl": null,
@@ -2957,11 +3268,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "목록5는 삼각형평지로 전기타 상태. 농지취득자격증명 제출 필요. (미제출시 보증금 몰수) 단, 농지법을 위반하여 불법으로 형질이 변경되었거나, 불법건축물이 있는 경우 농지취득자격증명 발급이 제한될 수 있음."
  },
  {
   "id": "gyeonggi-2024타경55110-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2024타경55110",
   "itemNo": "1",
   "category": "다세대",
@@ -2976,6 +3289,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관제122호법정",
   "deposit": 1880600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -3027,11 +3342,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 제시외 건물 포함 2. 건축물대장상 복수층(하층) 36.72㎡, 복수층(상층)31.18㎡로 기재되어 현황 복층구조임. 3. 건축물대장상 위반건축물 시정계고에 의거(무단증축/조립식패널조/주거/10㎡)위반건축물로 등재됨 4. 특별매각조건 매수신청보증금 최저매각가격의 20%"
  },
  {
   "id": "gyeonggi-2024타경57065-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2024타경57065",
   "itemNo": "1",
   "category": "아파트",
@@ -3046,6 +3363,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 2235400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -3082,11 +3401,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2024타경57065-2",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2024타경57065",
   "itemNo": "2",
   "category": "아파트",
@@ -3101,6 +3422,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 2201800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -3137,11 +3460,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2024타경62334-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경62334",
   "itemNo": "1",
   "category": "아파트",
@@ -3156,6 +3481,8 @@
   "saleTime": "10:00",
   "courtRoom": "광교신청사제101호법정",
   "deposit": 559200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -3207,11 +3534,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "2019.03.14.자 접수 제54014호 든솔신용협동조합 명의의 근저당권에 대하여, 2025.05.09.자로 피담보채권이 없다는 계산서가 제출됨 매수보증금은 최저매각가격의 20%임"
  },
  {
   "id": "gyeonggi-2024타경62334-11",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경62334",
   "itemNo": "11",
   "category": "아파트",
@@ -3226,6 +3555,8 @@
   "saleTime": "10:00",
   "courtRoom": "광교신청사제101호법정",
   "deposit": 467000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -3277,11 +3608,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "2019.03.14.자 접수 제54014호 든솔신용협동조합 명의의 근저당권에 대하여, 2025.05.09.자로 피담보채권이 없다는 계산서가 제출됨"
  },
  {
   "id": "gyeonggi-2024타경62334-13",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경62334",
   "itemNo": "13",
   "category": "아파트",
@@ -3296,6 +3629,8 @@
   "saleTime": "10:00",
   "courtRoom": "광교신청사제101호법정",
   "deposit": 576500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -3347,11 +3682,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "2019.03.14.자 접수 제54014호 든솔신용협동조합 명의의 근저당권에 대하여, 2025.05.09.자로 피담보채권이 없다는 계산서가 제출됨"
  },
  {
   "id": "gyeonggi-2024타경62334-15",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경62334",
   "itemNo": "15",
   "category": "아파트",
@@ -3366,6 +3703,8 @@
   "saleTime": "10:00",
   "courtRoom": "광교신청사제101호법정",
   "deposit": 576500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -3417,11 +3756,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "2019.03.14.자 접수 제54014호 든솔신용협동조합 명의의 근저당권에 대하여, 2025.05.09.자로 피담보채권이 없다는 계산서가 제출됨"
  },
  {
   "id": "gyeonggi-2024타경62334-19",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경62334",
   "itemNo": "19",
   "category": "아파트",
@@ -3436,6 +3777,8 @@
   "saleTime": "10:00",
   "courtRoom": "광교신청사제101호법정",
   "deposit": 467000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -3487,11 +3830,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "2019.03.14.자 접수 제54014호 든솔신용협동조합 명의의 근저당권에 대하여, 2025.05.09.자로 피담보채권이 없다는 계산서가 제출됨"
  },
  {
   "id": "gyeonggi-2024타경62334-2",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경62334",
   "itemNo": "2",
   "category": "아파트",
@@ -3506,6 +3851,8 @@
   "saleTime": "10:00",
   "courtRoom": "광교신청사제101호법정",
   "deposit": 559200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -3557,11 +3904,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "2019.03.14.자 접수 제54014호 든솔신용협동조합 명의의 근저당권에 대하여, 2025.05.09.자로 피담보채권이 없다는 계산서가 제출됨"
  },
  {
   "id": "gyeonggi-2024타경62334-4",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경62334",
   "itemNo": "4",
   "category": "아파트",
@@ -3576,6 +3925,8 @@
   "saleTime": "10:00",
   "courtRoom": "광교신청사제101호법정",
   "deposit": 426600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -3627,11 +3978,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "2019.03.14.자 접수 제54014호 든솔신용협동조합 명의의 근저당권에 대하여, 2025.05.09.자로 피담보채권이 없다는 계산서가 제출됨"
  },
  {
   "id": "gyeonggi-2024타경6591-1",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2024타경6591",
   "itemNo": "1",
   "category": "오피스텔",
@@ -3646,6 +3999,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원제101호입찰법정",
   "deposit": 15882700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -3687,11 +4042,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "공부상 '지1층'이나 서측 주도로 기준 현황 '지상1층'으로 확인됨."
  },
  {
   "id": "gyeonggi-2024타경69892-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경69892",
   "itemNo": "1",
   "category": "토지",
@@ -3706,6 +4063,8 @@
   "saleTime": "10:00",
   "courtRoom": "수원지방법원101호법정",
   "deposit": 19513600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 3306,
   "photoUrl": null,
@@ -3747,11 +4106,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 일괄매각 2. 목록2,3은 현황 건축중단 상태이며 사용승인을 받지 않은 건축물임"
  },
  {
   "id": "gyeonggi-2024타경7122-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경7122",
   "itemNo": "1",
   "category": "상가",
@@ -3766,6 +4127,8 @@
   "saleTime": "10:00",
   "courtRoom": "수원지방법원101호법정",
   "deposit": 9781700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -3802,11 +4165,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "임차인 유**이 2024.8.26. 유치권신고(공사대금 4천만원)를 하였으나 그 성립여부는 불분명함"
  },
  {
   "id": "gyeonggi-2024타경7986-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경7986",
   "itemNo": "1",
   "category": "상가",
@@ -3821,6 +4186,8 @@
   "saleTime": "10:00",
   "courtRoom": "광교신청사제101호법정",
   "deposit": 21633000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -3852,11 +4219,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 일괄매각 2. 목록1,2,3,4가 벽체없이 개방되어 있고 내부 복도로 통행함"
  },
  {
   "id": "gyeonggi-2024타경7986-2",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경7986",
   "itemNo": "2",
   "category": "상가",
@@ -3871,6 +4240,8 @@
   "saleTime": "10:00",
   "courtRoom": "광교신청사제101호법정",
   "deposit": 14165900,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -3902,11 +4273,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 일괄매각 2. 목록 5,6,7은 벽체 구분없이 내부에 방실을 만든것으로 보이며, 인테리어 공사를 하다가 중단된 것으로 보임"
  },
  {
   "id": "gyeonggi-2024타경83406-1",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2024타경83406",
   "itemNo": "1",
   "category": "다세대",
@@ -3921,6 +4294,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원제101호입찰법정",
   "deposit": 1199100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -3972,11 +4347,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2024타경84034-1",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2024타경84034",
   "itemNo": "1",
   "category": "다세대",
@@ -3991,6 +4368,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원제101호입찰법정",
   "deposit": 415300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -4062,11 +4441,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2024타경85860-1",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2024타경85860",
   "itemNo": "1",
   "category": "다세대",
@@ -4081,6 +4462,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원제101호입찰법정",
   "deposit": 694900,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -4142,11 +4525,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2024타경91783-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경91783",
   "itemNo": "1",
   "category": "토지",
@@ -4161,6 +4546,8 @@
   "saleTime": "10:00",
   "courtRoom": "수원지방법원101호법정",
   "deposit": 33081900,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 686,
   "photoUrl": null,
@@ -4192,11 +4579,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 일괄매각 2. 목록2. 지상에 소유자 미상의 건축중인 건축물은 평가 및 매각에서 제외(감정평가서 참조). 제시 외 건물 소재로 인하여 제한 받는 가격은 492,450,000원임. 3. 목록2. 건축허가를 득한 토지로서, 차후 건축허가 취소가능성, 원상회복명령 등의 행정적 조치가 행해질 수 있음"
  },
  {
   "id": "gyeonggi-2025타경100777-2",
   "court": "안양지원",
+  "courtCode": "B000254",
   "caseNo": "2025타경100777",
   "itemNo": "2",
   "category": "오피스텔",
@@ -4211,6 +4600,8 @@
   "saleTime": "10:00",
   "courtRoom": "104호입찰법정",
   "deposit": 2600500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 23.0223,
   "areaLand": null,
   "photoUrl": null,
@@ -4262,11 +4653,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경100777-4",
   "court": "안양지원",
+  "courtCode": "B000254",
   "caseNo": "2025타경100777",
   "itemNo": "4",
   "category": "다세대",
@@ -4281,6 +4674,8 @@
   "saleTime": "10:00",
   "courtRoom": "104호입찰법정",
   "deposit": 4110500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 39.54,
   "areaLand": null,
   "photoUrl": null,
@@ -4332,11 +4727,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경33629-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경33629",
   "itemNo": "1",
   "category": "다세대",
@@ -4351,6 +4748,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관제122호법정",
   "deposit": 675300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 33.22,
   "areaLand": null,
   "photoUrl": null,
@@ -4397,11 +4796,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "통칭 '중앙연립 라동'임"
  },
  {
   "id": "gyeonggi-2025타경33651-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경33651",
   "itemNo": "1",
   "category": "다세대",
@@ -4416,6 +4817,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관제122호법정",
   "deposit": 10084200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 59.8149,
   "areaLand": null,
   "photoUrl": null,
@@ -4452,11 +4855,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "특별매각조건 매수신청보증금 최저매각가격의 20%"
  },
  {
   "id": "gyeonggi-2025타경33686-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경33686",
   "itemNo": "1",
   "category": "아파트",
@@ -4471,6 +4876,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관제122호법정",
   "deposit": 2783600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 84.92,
   "areaLand": null,
   "photoUrl": null,
@@ -4517,11 +4924,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경34402-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경34402",
   "itemNo": "1",
   "category": "오피스텔",
@@ -4536,6 +4945,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관제122호법정",
   "deposit": 3506000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 55.66,
   "areaLand": null,
   "photoUrl": null,
@@ -4577,11 +4988,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경34464-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경34464",
   "itemNo": "1",
   "category": "오피스텔",
@@ -4596,6 +5009,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관제122호법정",
   "deposit": 3553000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 57.07,
   "areaLand": null,
   "photoUrl": null,
@@ -4637,11 +5052,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경34565-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경34565",
   "itemNo": "1",
   "category": "다세대",
@@ -4656,6 +5073,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관제122호법정",
   "deposit": 2047100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 36.75,
   "areaLand": null,
   "photoUrl": null,
@@ -4697,11 +5116,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경34638-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경34638",
   "itemNo": "1",
   "category": "토지",
@@ -4716,6 +5137,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관제122호법정",
   "deposit": 2401000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 11.34,
   "photoUrl": null,
@@ -4747,11 +5170,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 현황 호별 구분없이 인접 호수와 함께 인근 매장의 상품창고로 이용중임. 2. 정확한 면적 및 경계는 측량 등 별도의 확인이 필요함 3. 관리회사인 ㈜고암으로부터 상가공용관리비 21,151,410원(2026.03.18.기준)이 체납되었음을 신고함."
  },
  {
   "id": "gyeonggi-2025타경34638-2",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경34638",
   "itemNo": "2",
   "category": "오피스텔",
@@ -4766,6 +5191,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관제122호법정",
   "deposit": 2449000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 11.34,
   "areaLand": null,
   "photoUrl": null,
@@ -4797,11 +5224,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 현황 호별 구분없이 인접 호수와 함께 인근 매장의 상품창고로 이용중임. 2. 정확한 면적 및 경계는 측량 등 별도의 확인이 필요함 3. 관리회사인 ㈜고암으로부터 상가공용관리비 21,151,157원(2026.03.18.기준)이 체납되었음을 신고함."
  },
  {
   "id": "gyeonggi-2025타경34693-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경34693",
   "itemNo": "1",
   "category": "다세대",
@@ -4816,6 +5245,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관제122호법정",
   "deposit": 1260600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 28.56,
   "areaLand": null,
   "photoUrl": null,
@@ -4852,11 +5283,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경34763-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경34763",
   "itemNo": "1",
   "category": "아파트",
@@ -4871,6 +5304,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관제122호법정",
   "deposit": 1411800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 12.63,
   "areaLand": null,
   "photoUrl": null,
@@ -4907,11 +5342,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경3505-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경3505",
   "itemNo": "1",
   "category": "기타",
@@ -4926,6 +5363,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관제122호법정",
   "deposit": 3001300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 23.2917,
   "areaLand": null,
   "photoUrl": null,
@@ -4957,11 +5396,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "지원시설(기숙사)임"
  },
  {
   "id": "gyeonggi-2025타경3505-2",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경3505",
   "itemNo": "2",
   "category": "기타",
@@ -4976,6 +5417,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관제122호법정",
   "deposit": 3097300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 23.2917,
   "areaLand": null,
   "photoUrl": null,
@@ -5007,11 +5450,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "지원시설(기숙사)임."
  },
  {
   "id": "gyeonggi-2025타경35302-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경35302",
   "itemNo": "1",
   "category": "오피스텔",
@@ -5026,6 +5471,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관제122호법정",
   "deposit": 14478000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 100.54,
   "areaLand": null,
   "photoUrl": null,
@@ -5057,11 +5504,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경35493-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경35493",
   "itemNo": "1",
   "category": "다세대",
@@ -5076,6 +5525,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관제122호법정",
   "deposit": 4105700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 49.23,
   "areaLand": null,
   "photoUrl": null,
@@ -5107,11 +5558,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경3797-1",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2025타경3797",
   "itemNo": "1",
   "category": "아파트",
@@ -5126,6 +5579,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원제101호입찰법정",
   "deposit": 6026500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 47.91,
   "areaLand": null,
   "photoUrl": null,
@@ -5157,11 +5612,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경407-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경407",
   "itemNo": "1",
   "category": "상가",
@@ -5176,6 +5633,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관제122호법정",
   "deposit": 6473000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 42,
   "areaLand": null,
   "photoUrl": null,
@@ -5222,11 +5681,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경41455-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경41455",
   "itemNo": "1",
   "category": "오피스텔",
@@ -5241,6 +5702,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 6602800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 59.49,
   "areaLand": null,
   "photoUrl": null,
@@ -5272,11 +5735,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "공부상 용도 '소매점'으로, 기준시점 현재 '공실' 호수표시도 없고, 상호도 없음 내부에 냉장고, 탁자, 사다리, 페인트통 등 각종 물건이 많이 쌓여 있음"
  },
  {
   "id": "gyeonggi-2025타경41529-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경41529",
   "itemNo": "1",
   "category": "다세대",
@@ -5291,6 +5756,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 5106000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 38.115,
   "areaLand": null,
   "photoUrl": null,
@@ -5337,11 +5804,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "소매점(기준시점 현재 공실상태임)으로 이용중임."
  },
  {
   "id": "gyeonggi-2025타경41588-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경41588",
   "itemNo": "1",
   "category": "아파트",
@@ -5356,6 +5825,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 807100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 26.9,
   "areaLand": null,
   "photoUrl": null,
@@ -5402,11 +5873,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경41607-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경41607",
   "itemNo": "1",
   "category": "아파트",
@@ -5421,6 +5894,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 2075400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 59.5428,
   "areaLand": null,
   "photoUrl": null,
@@ -5467,11 +5942,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경41662-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경41662",
   "itemNo": "1",
   "category": "아파트",
@@ -5486,6 +5963,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 823600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 39.36,
   "areaLand": null,
   "photoUrl": null,
@@ -5532,11 +6011,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경41787-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경41787",
   "itemNo": "1",
   "category": "아파트",
@@ -5551,6 +6032,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 1243800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 18.0622,
   "areaLand": null,
   "photoUrl": null,
@@ -5587,11 +6070,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "복도식 현관구조의 도시형 생활주택"
  },
  {
   "id": "gyeonggi-2025타경41834-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경41834",
   "itemNo": "1",
   "category": "다세대",
@@ -5606,6 +6091,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 15102300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 169.8,
   "areaLand": null,
   "photoUrl": null,
@@ -5637,11 +6124,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경41834-2",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경41834",
   "itemNo": "2",
   "category": "다세대",
@@ -5656,6 +6145,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 15102300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 169.8,
   "areaLand": null,
   "photoUrl": null,
@@ -5687,11 +6178,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경41834-3",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경41834",
   "itemNo": "3",
   "category": "다세대",
@@ -5706,6 +6199,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 15894700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 169.8,
   "areaLand": null,
   "photoUrl": null,
@@ -5737,11 +6232,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경41834-4",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경41834",
   "itemNo": "4",
   "category": "다세대",
@@ -5756,6 +6253,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 15894700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 169.8,
   "areaLand": null,
   "photoUrl": null,
@@ -5787,11 +6286,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경41834-5",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경41834",
   "itemNo": "5",
   "category": "다세대",
@@ -5806,6 +6307,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 15894700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 169.8,
   "areaLand": null,
   "photoUrl": null,
@@ -5837,11 +6340,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경41834-6",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경41834",
   "itemNo": "6",
   "category": "다세대",
@@ -5856,6 +6361,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 15894700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 169.8,
   "areaLand": null,
   "photoUrl": null,
@@ -5887,11 +6394,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경41926-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경41926",
   "itemNo": "1",
   "category": "기타",
@@ -5906,6 +6415,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 5671600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 279,
   "areaLand": null,
   "photoUrl": null,
@@ -5937,11 +6448,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1.일괄매각 2. 목록1,2는 주거나지이고 목록3은 묵전상태임. 목록1~3 지상 일부에 건축폐자재 등이 산재. 목록1의 공부상 지목은 임야이나 현황 단독주택 건축신고 된 주거나지. 3. 목록3은 지목 '전'으로 농지취득자격증명 제출 필요(미제출시 보증금 몰수)하고 지분매각임. 현황 농사를 하지 아니하고, 나무와 잡풀로 덮혀있음. 4. 목록4,5,6은 공부상 지목은 대 또는 임야이나, 현황 도로. 지분매각임."
  },
  {
   "id": "gyeonggi-2025타경41943-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경41943",
   "itemNo": "1",
   "category": "기타",
@@ -5956,6 +6469,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 3783100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 257,
   "areaLand": null,
   "photoUrl": null,
@@ -5987,11 +6502,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 일괄매각 2. 목록1은 지목 '임야'이나, 현황 건축신고필 된 주거나지이며, 목록2는 지목 '대', 현황 나대지, 목록3,4는 지목이 대/임야 이나 현황 도로임 3. 목록1,2는 목록3,4(세로)를 통하여 출입함"
  },
  {
   "id": "gyeonggi-2025타경42170-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경42170",
   "itemNo": "1",
   "category": "오피스텔",
@@ -6006,6 +6523,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 6907700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 19.28,
   "areaLand": null,
   "photoUrl": null,
@@ -6042,11 +6561,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "비전동 근린생활시설인 '평택가로수길센트럴돔' 1층에 속하는 전유부분"
  },
  {
   "id": "gyeonggi-2025타경42604-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경42604",
   "itemNo": "1",
   "category": "오피스텔",
@@ -6061,6 +6582,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 6890900,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 50.83,
   "areaLand": null,
   "photoUrl": null,
@@ -6097,11 +6620,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "현황 공실이며, 공부상 근린생활시설임."
  },
  {
   "id": "gyeonggi-2025타경42604-2",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경42604",
   "itemNo": "2",
   "category": "오피스텔",
@@ -6116,6 +6641,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 6890900,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 50.83,
   "areaLand": null,
   "photoUrl": null,
@@ -6152,11 +6679,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "현황 공실이며, 공부상 근린생활시설임."
  },
  {
   "id": "gyeonggi-2025타경42717-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경42717",
   "itemNo": "1",
   "category": "토지",
@@ -6171,6 +6700,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 28644700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 4230.6,
   "photoUrl": null,
@@ -6202,11 +6733,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 농지취득자격증명 제출 필요(미제출시 보증금 몰수) 2. 공부상 지목은 '답'이나 현황 '전' 3. 본건 지상의 컨테이너 및 이동식화장실은 매각제외 4. 본건 지상에 조경수가 소재하나, 관리상태 불량하여 토지에 포함하여 감정평가"
  },
  {
   "id": "gyeonggi-2025타경42793-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경42793",
   "itemNo": "1",
   "category": "기타",
@@ -6221,6 +6754,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 3097300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 15.84,
   "areaLand": null,
   "photoUrl": null,
@@ -6252,11 +6787,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "숙박시설(원룸형호텔)"
  },
  {
   "id": "gyeonggi-2025타경42844-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경42844",
   "itemNo": "1",
   "category": "토지",
@@ -6271,6 +6808,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 4600500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 9124,
   "photoUrl": null,
@@ -6302,11 +6841,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "부정형, 급경사지로서 조사일 현재 자연림 상태임. 맹지상태임 경매진행시 인접지와의 경계를 확인하시기 바람."
  },
  {
   "id": "gyeonggi-2025타경42920-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경42920",
   "itemNo": "1",
   "category": "토지",
@@ -6321,6 +6862,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 13459100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 398,
   "photoUrl": null,
@@ -6352,11 +6895,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-일괄매각 -본건 지상에 소유자 미상의 이동이 용이한 콘테이너(6x3)와 공사용 휀스가 소재하나, 미평가. -목록1은 세장형 평지 일부 경사지로 상업나지 상태이고, 목록2는 이에 접한 '도로' -인접지와의 지적경계 등에 대한 정확한 확인은 측량을 요함."
  },
  {
   "id": "gyeonggi-2025타경5297-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경5297",
   "itemNo": "1",
   "category": "오피스텔",
@@ -6371,6 +6916,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관제122호법정",
   "deposit": 8115400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 30.45,
   "areaLand": null,
   "photoUrl": null,
@@ -6402,11 +6949,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경5297-2",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경5297",
   "itemNo": "2",
   "category": "오피스텔",
@@ -6421,6 +6970,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관제122호법정",
   "deposit": 7875300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 29.58,
   "areaLand": null,
   "photoUrl": null,
@@ -6452,11 +7003,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경533-1",
   "court": "안양지원",
+  "courtCode": "B000254",
   "caseNo": "2025타경533",
   "itemNo": "1",
   "category": "오피스텔",
@@ -6471,6 +7024,8 @@
   "saleTime": "10:00",
   "courtRoom": "104호입찰법정",
   "deposit": 2566900,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 42.9,
   "areaLand": null,
   "photoUrl": null,
@@ -6522,11 +7077,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경540-1",
   "court": "안양지원",
+  "courtCode": "B000254",
   "caseNo": "2025타경540",
   "itemNo": "1",
   "category": "상가",
@@ -6541,6 +7098,8 @@
   "saleTime": "10:00",
   "courtRoom": "104호입찰법정",
   "deposit": 25815900,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 65.58,
   "areaLand": null,
   "photoUrl": null,
@@ -6587,11 +7146,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "집합건축물대장상 제1종근린생활시설(휴게음식점) 용도임"
  },
  {
   "id": "gyeonggi-2025타경54259-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2025타경54259",
   "itemNo": "1",
   "category": "오피스텔",
@@ -6606,6 +7167,8 @@
   "saleTime": "10:00",
   "courtRoom": "광교신청사제101호법정",
   "deposit": 9294300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 53.49,
   "areaLand": null,
   "photoUrl": null,
@@ -6647,11 +7210,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경55397-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2025타경55397",
   "itemNo": "1",
   "category": "토지",
@@ -6666,6 +7231,8 @@
   "saleTime": "10:00",
   "courtRoom": "광교신청사제101호법정",
   "deposit": 6251200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 26358,
   "photoUrl": null,
@@ -6702,11 +7269,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "- 공유자의 우선매수신고는 1회에 한하여 행사할 수 있음(공유자가 우선매수권 신고 후 매각기일까지 매수보증금을 미납하여 실효되는 경우에는 그 공유자는 이후 매각기일부터는 우선매수권을 행사할 수 없음) - 임야 한가운데 송전철탑과 타인 소유 묘지와 밭이 있으며(해당 임야와 접하여 있는 인근 타인 소유 토지에 묘지가 있으나 경계선이 모호하여 전문적인 측량을 통해 특정해야 할 것으로 보임), 공중으로 고압 송전선이 지나고 있음 (부동산현황조사보고서 참조) - 지적도상 맹지이나 대체로 주변 임도와 연계되어 있음"
  },
  {
   "id": "gyeonggi-2025타경573-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경573",
   "itemNo": "1",
   "category": "기타",
@@ -6721,6 +7290,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 26795200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 50.4,
   "areaLand": null,
   "photoUrl": null,
@@ -6752,11 +7323,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "고덕동 지식산업센터인 '프리미엄원희캐슬' 1층에 속하는 전유부분으로서, 공실임."
  },
  {
   "id": "gyeonggi-2025타경573-2",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경573",
   "itemNo": "2",
   "category": "기타",
@@ -6771,6 +7344,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 26795200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 50.4,
   "areaLand": null,
   "photoUrl": null,
@@ -6802,11 +7377,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "고덕동 지식산업센터인 '프리미엄원희캐슬' 1층에 속하는 전유부분으로서, 공실임."
  },
  {
   "id": "gyeonggi-2025타경62781-1",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2025타경62781",
   "itemNo": "1",
   "category": "오피스텔",
@@ -6821,6 +7398,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원제101호입찰법정",
   "deposit": 10907800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 45.08,
   "areaLand": null,
   "photoUrl": null,
@@ -6857,11 +7436,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "인접호(101호)와의 경계벽을 철거하여 근린생활시설로 이용중임."
  },
  {
   "id": "gyeonggi-2025타경62851-1",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2025타경62851",
   "itemNo": "1",
   "category": "다세대",
@@ -6876,6 +7457,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원제101호입찰법정",
   "deposit": 1372100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 52.9125,
   "areaLand": null,
   "photoUrl": null,
@@ -6927,11 +7510,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "2026. 7. 13.자로 이해관계인 박순옥이 제출한 참고자료에 따르면, 본인은 이 사건 목록 부동산의 아랫층(302호) 거주자 이며, 이 사건 부동산에서 누수가 발생하여 본인 소유의 부동산 302호의 천장이 피해를 입었다는 주장이 있음"
  },
  {
   "id": "gyeonggi-2025타경63493-1",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2025타경63493",
   "itemNo": "1",
   "category": "다세대",
@@ -6946,6 +7531,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원제101호입찰법정",
   "deposit": 3563100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 56.74,
   "areaLand": null,
   "photoUrl": null,
@@ -6982,11 +7569,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경63526-1",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2025타경63526",
   "itemNo": "1",
   "category": "다세대",
@@ -7001,6 +7590,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원제101호입찰법정",
   "deposit": 1305900,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 37.12,
   "areaLand": null,
   "photoUrl": null,
@@ -7042,11 +7633,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "재매각임. 매수신청보증금 20%."
  },
  {
   "id": "gyeonggi-2025타경63972-1",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2025타경63972",
   "itemNo": "1",
   "category": "오피스텔",
@@ -7061,6 +7654,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원제101호입찰법정",
   "deposit": 4802000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 39.82,
   "areaLand": null,
   "photoUrl": null,
@@ -7092,11 +7687,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경645-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경645",
   "itemNo": "1",
   "category": "기타",
@@ -7111,6 +7708,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 2388300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 43.63,
   "areaLand": null,
   "photoUrl": null,
@@ -7152,11 +7751,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "고덕면 해창리 지식산업센터인 '고덕비즈타워'5층에 속하는 전유부분임. 출입문에 '오성쎌레트라(주)'간판이 있음"
  },
  {
   "id": "gyeonggi-2025타경709-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경709",
   "itemNo": "1",
   "category": "기타",
@@ -7171,6 +7772,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 2924500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 38.38,
   "areaLand": null,
   "photoUrl": null,
@@ -7207,11 +7810,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "모곡동 지식산업센터인 '부성타워'9층에 속하는 전유부분으로서, 공장(지식산업센터) 용도임."
  },
  {
   "id": "gyeonggi-2025타경751-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경751",
   "itemNo": "1",
   "category": "오피스텔",
@@ -7226,6 +7831,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 12302800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 67.2,
   "areaLand": null,
   "photoUrl": null,
@@ -7262,11 +7869,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "부동산 1층의 각 출입구에 '채권자 유치권 행사중'이라는 안내문 부착, 엘레베이터 미가동중이며, 비상계단출입문이 잠겨있음."
  },
  {
   "id": "gyeonggi-2025타경759-1",
   "court": "평택지원",
+  "courtCode": "B000253",
   "caseNo": "2025타경759",
   "itemNo": "1",
   "category": "기타",
@@ -7281,6 +7890,8 @@
   "saleTime": "10:00",
   "courtRoom": "1층경매법정",
   "deposit": 5227000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 67.83,
   "areaLand": null,
   "photoUrl": null,
@@ -7317,61 +7928,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "공장(지식산업센터)용도"
- },
- {
-  "id": "gyeonggi-2025타경782-1",
-  "court": "평택지원",
-  "caseNo": "2025타경782",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경기도 평택시 현덕면 방축리 310-4",
-  "region": "경기",
-  "district": "평택시",
-  "appraisalPrice": 59664000,
-  "minPrice": 14325326,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-10-27",
-  "saleTime": "10:00",
-  "courtRoom": "1층경매법정",
-  "deposit": 1432600,
-  "areaBuilding": null,
-  "areaLand": 231,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-05",
-    "minPrice": 59664000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-09",
-    "minPrice": 59664000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-14",
-    "minPrice": 41764800,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-18",
-    "minPrice": 29235360,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-22",
-    "minPrice": 20464752,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "1. 일괄매각 2. 지분매각 3. 목록1,2는 지적공부상 '전'이나 서측일부가 노폭 약3미터 내외의 현황 '도로'로 이용중임. 농지취득자격증명 제출 필요(미제출시 보증금 몰수) 4. 목록1,2 지상에 소유자 미상의 감나무, 뽕나무 등이 수주 소재하나 평가에서 제외"
  },
  {
   "id": "gyeonggi-2022타경37095-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2022타경37095",
   "itemNo": "1",
   "category": "토지",
@@ -7386,6 +7949,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 25956200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -7417,11 +7982,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "지분매각. 일괄매각. 농지취득자격증명 제출 필요(매각결정기일까지 미제출시 보증금은 반환하지 않음). 목록2,11. 현황은 '대지'임. 목록7. 축대가 축조되어 대지화 단계. 매각에서 제외되는 대형 물탱크 소재. 목록4,8,9,15. 현황은 '도로'임."
  },
  {
   "id": "gyeonggi-2023타경5996-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2023타경5996",
   "itemNo": "1",
   "category": "토지",
@@ -7436,6 +8003,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 14260800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 885,
   "photoUrl": null,
@@ -7472,11 +8041,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 일괄매각(목록5는 지분매각임) 2. 목록 1,2 지상 소재 제시외 콘크리트관(건축자재)은 매각제외 3. 목록 4 : 공부상 지목은 '창고용지'이나 현황은 '나지'상태임"
  },
  {
   "id": "gyeonggi-2023타경86924-1",
   "court": "의정부지방법원",
+  "courtCode": "B000214",
   "caseNo": "2023타경86924",
   "itemNo": "1",
   "category": "기타",
@@ -7491,6 +8062,8 @@
   "saleTime": "10:30",
   "courtRoom": "제6호경매법정",
   "deposit": 35783800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 458,
   "areaLand": null,
   "photoUrl": null,
@@ -7537,11 +8110,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "일괄매각. 제시외 건물 포함. 목록 1~3은 지분매각임"
  },
  {
   "id": "gyeonggi-2024타경10869-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경10869",
   "itemNo": "1",
   "category": "오피스텔",
@@ -7556,6 +8131,8 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 8647100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -7602,11 +8179,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "공부상 제2종근린생활시설로서 현황 공실 상태이나 내부에 단열재, 베니어판 등이 적치되어 있음"
  },
  {
   "id": "gyeonggi-2024타경10869-2",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경10869",
   "itemNo": "2",
   "category": "오피스텔",
@@ -7621,6 +8200,8 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 7543500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -7667,11 +8248,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "공부상 제2종근린생활시설이나 현황 공실 상태임."
  },
  {
   "id": "gyeonggi-2024타경10869-3",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경10869",
   "itemNo": "3",
   "category": "오피스텔",
@@ -7686,6 +8269,8 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 7543500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -7732,11 +8317,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "공부상 제2종근린생활시설이나 현황 공실 상태임."
  },
  {
   "id": "gyeonggi-2024타경36201-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2024타경36201",
   "itemNo": "1",
   "category": "기타",
@@ -7751,6 +8338,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 60026300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 737,
   "areaLand": null,
   "photoUrl": null,
@@ -7787,11 +8376,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "일괄매각"
  },
  {
   "id": "gyeonggi-2024타경36850-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2024타경36850",
   "itemNo": "1",
   "category": "토지",
@@ -7806,6 +8397,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 2683100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 874,
   "photoUrl": null,
@@ -7837,11 +8430,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-일괄매각 -농지취득자격증명 제출 필요(미제출시 매수보증금 반환하지 않음) -공히 맹지이며, 목록1 인근에 관습상 농로 소재함 -목록1 지상에 매각에서 제외되는 다수의 양봉용 벌통 존재함 -공부상 지목이 답이나 목록1은 전, 목록2는 구거임"
  },
  {
   "id": "gyeonggi-2024타경3805-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2024타경3805",
   "itemNo": "1",
   "category": "토지",
@@ -7856,6 +8451,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 467000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 380,
   "photoUrl": null,
@@ -7892,11 +8489,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-지분매각, 공유자의 우선매수신고는 1회에 한하여 행사할 수 있음 -맹지"
  },
  {
   "id": "gyeonggi-2024타경38085-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2024타경38085",
   "itemNo": "1",
   "category": "토지",
@@ -7911,6 +8510,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 8240400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 1286,
   "photoUrl": null,
@@ -7942,11 +8543,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "농지취득자격증명 제출 필요(매각결정기일까지 미제출시 보증금은 반환하지 않음) 제시외 수목 포함[배나무 약130주 - 2025.12.30.자로 근저당권자 용문농업협동조합이 근저당권설정 당시 채무자 겸 소유자가 작성한 위 지상의 수목(배나무)이 본인 소유라는 확인서를 제출함]"
  },
  {
   "id": "gyeonggi-2024타경38375-2",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2024타경38375",
   "itemNo": "2",
   "category": "토지",
@@ -7961,6 +8564,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 2630200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 1131,
   "photoUrl": null,
@@ -7987,11 +8592,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-지분매각, 공유자의 우선매수신고는 1회에 한하여 행사할 수 있음 -지상에 소유자 미상의 제시외 건물(주택 2동) 평가 및 매각 제외, 최저매각가격은 지상의 매각 대상 아닌 건물로 인하여 제한받는 가격임"
  },
  {
   "id": "gyeonggi-2024타경38498-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2024타경38498",
   "itemNo": "1",
   "category": "다세대",
@@ -8006,6 +8613,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 634100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -8052,11 +8661,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2024타경39286-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2024타경39286",
   "itemNo": "1",
   "category": "기타",
@@ -8071,6 +8682,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 760000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 638,
   "areaLand": null,
   "photoUrl": null,
@@ -8107,11 +8720,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "일괄매각"
  },
  {
   "id": "gyeonggi-2024타경40026-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2024타경40026",
   "itemNo": "1",
   "category": "토지",
@@ -8126,6 +8741,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 1309800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 1091,
   "photoUrl": null,
@@ -8157,11 +8774,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "공부상 맹지임. 지상에 매각외 분묘소재.(분묘기지권 성립여부 불분명) 매각외 분묘 소재로 인하여 제한받는 가격임."
  },
  {
   "id": "gyeonggi-2024타경40033-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2024타경40033",
   "itemNo": "1",
   "category": "토지",
@@ -8176,6 +8795,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 5885400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 4778,
   "photoUrl": null,
@@ -8202,11 +8823,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 일괄매각(지분 매각임) 2. 공유자의 우선매수신고는 1회에 한하여 행사할 수 있음 3. 농지취득자격증명 제출 필요(미제출시 매수보증금 반환하지 않음) 4. 지적 및 현황 맹지임"
  },
  {
   "id": "gyeonggi-2024타경40132-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2024타경40132",
   "itemNo": "1",
   "category": "기타",
@@ -8221,6 +8844,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 7844800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 466,
   "areaLand": null,
   "photoUrl": null,
@@ -8247,11 +8872,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-일괄매각. 제시외 물건 포함 -목록1 공부상 지목 '대'이나 일부 '현황 도로'임 -목록2(가) 공부상 '흙벽돌조, 스레이트 지붕 1개동'이나 현황 '목조, 함석지붕 및 강판기와지붕 2개동'으로 실측 및 목측에 의한 개략적인 면적(약168㎡)과 공부 면적(173.69㎡)은 유사하며, 목록2(나)는 소재불명임(감정평가서 참조)"
  },
  {
   "id": "gyeonggi-2024타경41203-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2024타경41203",
   "itemNo": "1",
   "category": "토지",
@@ -8266,6 +8893,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 1786300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 496,
   "photoUrl": null,
@@ -8292,11 +8921,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "농지취득자격증명 제출 필요(미제출시 매수보증금 반환하지 않음)"
  },
  {
   "id": "gyeonggi-2024타경41333-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2024타경41333",
   "itemNo": "1",
   "category": "단독다가구",
@@ -8311,6 +8942,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 18041700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -8337,11 +8970,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-일괄매각. 제시외 건물은 매각에 포함된 가격임. -일부 내부 설비 및 마감 건축중(감정평가서 참조). -급 배수설비, LPG설비등이 되어 있느나 정상가동 여부는 확인을 요함."
  },
  {
   "id": "gyeonggi-2024타경41371-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2024타경41371",
   "itemNo": "1",
   "category": "토지",
@@ -8356,6 +8991,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 4125100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 1534,
   "photoUrl": null,
@@ -8392,11 +9029,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 농지취득자격증명 제출 필요(미제출시 매수보증금 반환하지 않음). 2. 지상 소재 제시외 건물(ㄱ. 컨테이너박스 및 판넬조 판넬지붕 단층 창고 약21㎡, ㄴ. 판넬조 판넬지붕 단층 창고 약21㎡) 매각에서 제외. 최저매각가격은 지상 제시외 건물 소재로 인하여 제한 받는 가격임. 3. 수원지방법원 여주지원 2023가단22608 공유물분할 사건의 2024. 5. 8.자 화해조서의 화해조항 중 2.항에 '피고는 이 사건 부동산이 제3자에게 매도되거나 경매절차에서 매각되는 경우 이 사건 부동산 지상에 소재한 컨테이너 등 피고 소유 지상물 전체를 취거한다.'는 기재 있음."
  },
  {
   "id": "gyeonggi-2024타경41661-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2024타경41661",
   "itemNo": "1",
   "category": "토지",
@@ -8411,6 +9050,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 5338800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 326,
   "photoUrl": null,
@@ -8437,11 +9078,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 지상 소재 제시외 수목(ㄱ): 1식(소나무 및 유실수 등 약 20주 내외이고 개략적인 범위는 약 80㎡ 내외임) 매각에 포함(감정평가서 참조). 2. 지상 소재 제시외 건물(ㄴ, 철파이프구조 단층, 면적 약 16㎡임) 및 제시외 건물(ㄷ, 철파이프구조 단층, 면적 약 12㎡임)은 이동이 비교적 가능한 것으로 보고되나 제시외 건물(ㄴ)은 본건 토지 지상 일부 및 연접한 92-16 토지와, 제시외 건물(ㄷ)은 본건 토지 지상 일부와 연접한 92-22 토지와 양지상에 걸쳐 위치하고 있음(감정평가서 참조). 지상 소재 제시외 건물(ㄴ, ㄷ)은 매각에서 제외함. 최저매각가격은 제시외 건물(ㄴ, ㄷ) 소재로 인하여 제한 받는 가격임. 3. 지상 소재 이동식 화장실, 소규모 계사는 매각에서 제외함. 4. 농지취득자격증명 요함(미제출시 매수보증금 반환하지 않음)."
  },
  {
   "id": "gyeonggi-2024타경42848-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2024타경42848",
   "itemNo": "1",
   "category": "오피스텔",
@@ -8456,6 +9099,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 4465900,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -8487,11 +9132,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-본건과 이 사건 물건 2.(동소 208호)는 경계구분없이 근린생활시설 (당구장)로 이용중이며, 경계벽 설치등 원상복구 비용발생 여지있 음. -집합건축물대장 표제부에 위반건축물 표시 있음. -현황조사서에 의하면 본건 건물에 '유치권 행사 중(관리비체납)'이 라는 안내문이 부착되어 있으나 그 성립여부는 불분명함."
  },
  {
   "id": "gyeonggi-2024타경42848-2",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2024타경42848",
   "itemNo": "2",
   "category": "오피스텔",
@@ -8506,6 +9153,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 9195800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -8537,11 +9186,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-본건과 이 사건 물건 1.(동소 205호)는 경계구분없이 근린생활시설 (당구장)로 이용중이며, 경계벽 설치등 원상복구 비용발생 여지있 음. -집합건축물대장 표제부에 위반건축물 표시 있음. -현황조사서에 의하면 본건 건물에 '유치권 행사 중(관리비체납)'이 라는 안내문이 부착되어 있으나 그 성립여부는 불분명함."
  },
  {
   "id": "gyeonggi-2024타경4334-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2024타경4334",
   "itemNo": "1",
   "category": "상가",
@@ -8556,6 +9207,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 24215800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -8582,11 +9235,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2024타경4334-2",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2024타경4334",
   "itemNo": "2",
   "category": "상가",
@@ -8601,6 +9256,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 16532600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -8627,11 +9284,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "목록2.는 인접305호와 경계 구분없이 공동으로 PC방으로 사용하고 있음. 복원에 소요되는 예상비용등 관련하여, 2026. 2. 4.자 감정평가서의 사실조회에 대한 회신에 의하면 복원에 측량 등이 필요한 경우 그 측량비용과 경계벽 설치비용은 그에 필요한 자재, 시공상태에 따라 비용에 상당한 차이가 있을 것으로 판단되며 관계 전문가의 견적이 필요한 것으로 보임"
  },
  {
   "id": "gyeonggi-2024타경5115-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2024타경5115",
   "itemNo": "1",
   "category": "다세대",
@@ -8646,6 +9305,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 3270700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -8687,11 +9348,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2024타경5511-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2024타경5511",
   "itemNo": "1",
   "category": "토지",
@@ -8706,6 +9369,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 820100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 1431,
   "photoUrl": null,
@@ -8762,11 +9427,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 농지취득자격증명 제출 필요(미제출시 매수보증금 반환하지 않음) 2. 지분매각임, 공유자의 우선매수신고는 1회에 한하여 행사할 수 있음 3. 공부상 지목은 '전'이나, 현황은 임야화되고 있음"
  },
  {
   "id": "gyeonggi-2024타경5603-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2024타경5603",
   "itemNo": "1",
   "category": "토지",
@@ -8781,6 +9448,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 2141000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 1821,
   "photoUrl": null,
@@ -8812,11 +9481,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "일괄매각(지분매각임)"
  },
  {
   "id": "gyeonggi-2024타경5603-2",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2024타경5603",
   "itemNo": "2",
   "category": "토지",
@@ -8831,6 +9502,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 55200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 46,
   "photoUrl": null,
@@ -8862,11 +9535,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1.농지취득자격증명 제출 필요(미제출시 매수보증금 반환하지 않음) 2.공부상 지목이 답이나 현황 하천 및 법면 등으로 이용중이며, 일부가 소하천구역 및 접도구역에 저촉됨"
  },
  {
   "id": "gyeonggi-2024타경5603-3",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2024타경5603",
   "itemNo": "3",
   "category": "토지",
@@ -8881,6 +9556,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 55300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 36,
   "photoUrl": null,
@@ -8912,11 +9589,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1.농지취득자격증명 제출 필요(미제출시 매수보증금 반환하지 않음) 2.맹지임 3.공부상 지목이 답이나 현황 전으로 이용중임"
  },
  {
   "id": "gyeonggi-2024타경6125-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2024타경6125",
   "itemNo": "1",
   "category": "토지",
@@ -8931,6 +9610,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 26161900,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 733,
   "photoUrl": null,
@@ -8957,11 +9638,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 일괄매각 2. 목록3. 공부상지목은'대'이나 현황'도로'로 이용중임"
  },
  {
   "id": "gyeonggi-2024타경6125-2",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2024타경6125",
   "itemNo": "2",
   "category": "토지",
@@ -8976,6 +9659,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 12843200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 1043,
   "photoUrl": null,
@@ -9002,101 +9687,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "농지취득자격증명 제출 필요(미제출시 매수보증금 반환하지 않음)"
- },
- {
-  "id": "gyeonggi-2024타경62546-1",
-  "court": "고양지원",
-  "caseNo": "2024타경62546",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경기도 파주시 파주읍 연풍리 222-1",
-  "region": "경기",
-  "district": "파주시",
-  "appraisalPrice": 292297000,
-  "minPrice": 100258000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-10-28",
-  "saleTime": "10:00",
-  "courtRoom": "고양지원101호입찰법정",
-  "deposit": 10025800,
-  "areaBuilding": null,
-  "areaLand": 89,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-06-10",
-    "minPrice": 292297000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-15",
-    "minPrice": 292297000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-19",
-    "minPrice": 204607988,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-23",
-    "minPrice": 143225653,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "1. 일괄매각, 목록 1~4 농지취득자격증명요[미제출시 보증금 미반환], 매각에서 제외되는 비닐하우스 수동 소재함 2. 목록 2, 4 지상 매각에서 제외되는 제시외 수목(사과대추 등) 소재 3. 목록 1~4 맹지임, 목록 2, 4는 공부상 '답'이나 현황 '전'으로 이용중"
- },
- {
-  "id": "gyeonggi-2024타경62546-2",
-  "court": "고양지원",
-  "caseNo": "2024타경62546",
-  "itemNo": "2",
-  "category": "토지",
-  "address": "경기도 파주시 파주읍 연풍리 250",
-  "region": "경기",
-  "district": "파주시",
-  "appraisalPrice": 723575000,
-  "minPrice": 248186000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-10-28",
-  "saleTime": "10:00",
-  "courtRoom": "고양지원101호입찰법정",
-  "deposit": 24818600,
-  "areaBuilding": null,
-  "areaLand": 688,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-06-10",
-    "minPrice": 723575000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-15",
-    "minPrice": 723575000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-19",
-    "minPrice": 506502347,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-23",
-    "minPrice": 354551536,
-    "result": "유찰"
-   }
-  ],
-  "specialNote": "1. 일괄매각, 목록 5~7 농지취득자격증명요[미제출시 보증금 미반환], 매각에서 제외되는 비닐하우스 수동 소재함 2. 목록 5. 토지 중 일부가 타인 점유부분과 현황 도로인 바 이를 감안하여 평가함, 본건 지상 매각에서 제외되는 주거시설(샌드위치판넬구조물), 냉동창고 등 소재하며, 제시외건물이 토지에 영향을 미치는 가격은 감정평가명세표 참조 요함 3. 목록 5~7 지상 매각에서 제외되는 제시외 수목(아로니아 등), 표고버섯 재배사, 관정 2개소 소재 4. 목록 6. 지상 매각에서 제외되는 창고 등 소재하며, 토지만을 평가함 5. 목록 5는 공부상 '전'이나 현황 '전기타'로 이용중"
  },
  {
   "id": "gyeonggi-2024타경6682-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2024타경6682",
   "itemNo": "1",
   "category": "토지",
@@ -9111,6 +9708,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 13300100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 529,
   "photoUrl": null,
@@ -9137,11 +9736,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 일괄매각 2. 공히 공부상 지목은 임야이나 현황은 주거나지 상태임"
  },
  {
   "id": "gyeonggi-2024타경74447-1",
   "court": "의정부지방법원",
+  "courtCode": "B000214",
   "caseNo": "2024타경74447",
   "itemNo": "1",
   "category": "토지",
@@ -9156,6 +9757,8 @@
   "saleTime": "10:30",
   "courtRoom": "제6호경매법정",
   "deposit": 7670000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 606,
   "photoUrl": null,
@@ -9182,11 +9785,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "농지취득자격증명원 제출요함(미제출시 보증금 미반환)"
  },
  {
   "id": "gyeonggi-2024타경75511-1",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2024타경75511",
   "itemNo": "1",
   "category": "다세대",
@@ -9201,6 +9806,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원101호입찰법정",
   "deposit": 920100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -9257,11 +9864,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "특별매각조건 매수신청보증금 최저매각가격의 20%"
  },
  {
   "id": "gyeonggi-2024타경79698-1",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2024타경79698",
   "itemNo": "1",
   "category": "다세대",
@@ -9276,6 +9885,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원101호입찰법정",
   "deposit": 5498300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -9347,11 +9958,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2024타경82608-1",
   "court": "의정부지방법원",
+  "courtCode": "B000214",
   "caseNo": "2024타경82608",
   "itemNo": "1",
   "category": "토지",
@@ -9366,6 +9979,8 @@
   "saleTime": "10:30",
   "courtRoom": "제6호경매법정",
   "deposit": 1338100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 4777,
   "photoUrl": null,
@@ -9422,11 +10037,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "농지취득자격증명원 필요(미제출시 보증금 미반환). 지분매각. 특별매각조건 있음(공유자 우선매수신고는 1회에 한하여 행사할 수 있음)."
  },
  {
   "id": "gyeonggi-2024타경82608-2",
   "court": "의정부지방법원",
+  "courtCode": "B000214",
   "caseNo": "2024타경82608",
   "itemNo": "2",
   "category": "토지",
@@ -9441,6 +10058,8 @@
   "saleTime": "10:30",
   "courtRoom": "제6호경매법정",
   "deposit": 1195200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 2294,
   "photoUrl": null,
@@ -9497,11 +10116,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "지적도상 맹지임."
  },
  {
   "id": "gyeonggi-2024타경82608-3",
   "court": "의정부지방법원",
+  "courtCode": "B000214",
   "caseNo": "2024타경82608",
   "itemNo": "3",
   "category": "토지",
@@ -9516,6 +10137,8 @@
   "saleTime": "10:30",
   "courtRoom": "제6호경매법정",
   "deposit": 1083200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 3392,
   "photoUrl": null,
@@ -9572,11 +10195,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "지적도상 맹지임. 지분매각. 특별매각조건 있음(공유자 우선매수신고는 1회에 한하여 행사할 수 있음)"
  },
  {
   "id": "gyeonggi-2024타경82608-4",
   "court": "의정부지방법원",
+  "courtCode": "B000214",
   "caseNo": "2024타경82608",
   "itemNo": "4",
   "category": "토지",
@@ -9591,6 +10216,8 @@
   "saleTime": "10:30",
   "courtRoom": "제6호경매법정",
   "deposit": 1447000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 2327,
   "photoUrl": null,
@@ -9647,11 +10274,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "지적도상 맹지임."
  },
  {
   "id": "gyeonggi-2024타경9200-1",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2024타경9200",
   "itemNo": "1",
   "category": "기타",
@@ -9666,6 +10295,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원101호입찰법정",
   "deposit": 10804900,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -9712,11 +10343,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "현황 근린생활시설로 이용중"
  },
  {
   "id": "gyeonggi-2024타경92629-1",
   "court": "의정부지방법원",
+  "courtCode": "B000214",
   "caseNo": "2024타경92629",
   "itemNo": "1",
   "category": "상가",
@@ -9731,6 +10364,8 @@
   "saleTime": "10:30",
   "courtRoom": "제6호경매법정",
   "deposit": 23010800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -9772,11 +10407,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "일괄매각"
  },
  {
   "id": "gyeonggi-2025타경1183-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2025타경1183",
   "itemNo": "1",
   "category": "기타",
@@ -9791,6 +10428,8 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 7364800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 43.918,
   "areaLand": null,
   "photoUrl": null,
@@ -9832,11 +10471,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "판매시설(상점)로 이용중임."
  },
  {
   "id": "gyeonggi-2025타경1349-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2025타경1349",
   "itemNo": "1",
   "category": "다세대",
@@ -9851,6 +10492,8 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 2713100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 88.5,
   "areaLand": null,
   "photoUrl": null,
@@ -9882,11 +10525,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "재매각임. 매수신청보증금 20%"
  },
  {
   "id": "gyeonggi-2025타경2947-1",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2025타경2947",
   "itemNo": "1",
   "category": "토지",
@@ -9901,6 +10546,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원101호입찰법정",
   "deposit": 2931100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 1600,
   "photoUrl": null,
@@ -9937,11 +10584,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "지적도상 맹지이며, 농지취득자격증명요[미제출시 보증금 미반환]."
  },
  {
   "id": "gyeonggi-2025타경30033-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2025타경30033",
   "itemNo": "1",
   "category": "토지",
@@ -9956,6 +10605,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 131392200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 1049.5,
   "photoUrl": null,
@@ -9982,11 +10633,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경30101-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2025타경30101",
   "itemNo": "1",
   "category": "토지",
@@ -10001,6 +10654,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 12053200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 3699,
   "photoUrl": null,
@@ -10027,11 +10682,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 농지취득자격증명 제출 필요(미제출시 매수보증금 반환하지 않음) 2. 지적도 및 현황 맹지임"
  },
  {
   "id": "gyeonggi-2025타경30248-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2025타경30248",
   "itemNo": "1",
   "category": "토지",
@@ -10046,6 +10703,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 4060600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 784,
   "photoUrl": null,
@@ -10072,11 +10731,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 동측 일부에 제시외 '비닐하우스 1개동'이 인접토지에 걸쳐 소재하고 있으나 평가 및 매각 제외 2. 공부상 지목 '대지'이나 현황은 '나지'임"
  },
  {
   "id": "gyeonggi-2025타경30514-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2025타경30514",
   "itemNo": "1",
   "category": "토지",
@@ -10091,6 +10752,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 6499400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 2178,
   "photoUrl": null,
@@ -10117,11 +10780,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 농지취득자격증명 제출 필요(미제출시 매수보증금 반환하지 않음) 2. 지적도상 맹지임"
  },
  {
   "id": "gyeonggi-2025타경30514-2",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2025타경30514",
   "itemNo": "2",
   "category": "토지",
@@ -10136,6 +10801,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 6470400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 2096,
   "photoUrl": null,
@@ -10162,11 +10829,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 농지취득자격증명 제출 필요(미제출시 매수보증금 반환하지 않음) 2. 지적도상 맹지임"
  },
  {
   "id": "gyeonggi-2025타경30521-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2025타경30521",
   "itemNo": "1",
   "category": "기타",
@@ -10181,6 +10850,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 8692800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 1213,
   "areaLand": null,
   "photoUrl": null,
@@ -10207,11 +10878,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-일괄매각 -목록1 농지취득자격증명 제출 필요(미제출시 매수보증금 반환하지 않음) -목록1 지적도상 맹지 상태임 -목록2 토지는 건축허가를 득한 것으로 조사되었음(감정평가서 참조)"
  },
  {
   "id": "gyeonggi-2025타경30935-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2025타경30935",
   "itemNo": "1",
   "category": "토지",
@@ -10226,6 +10899,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 29700700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 1310,
   "photoUrl": null,
@@ -10252,11 +10927,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경31099-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2025타경31099",
   "itemNo": "1",
   "category": "다세대",
@@ -10271,6 +10948,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 8677900,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 84.48,
   "areaLand": null,
   "photoUrl": null,
@@ -10297,11 +10976,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경31608-1",
   "court": "여주지원",
+  "courtCode": "B000252",
   "caseNo": "2025타경31608",
   "itemNo": "1",
   "category": "다세대",
@@ -10316,6 +10997,8 @@
   "saleTime": "10:00",
   "courtRoom": "경매법정(101호)",
   "deposit": 5693800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 58.45,
   "areaLand": null,
   "photoUrl": null,
@@ -10342,11 +11025,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경3605-1",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2025타경3605",
   "itemNo": "1",
   "category": "오피스텔",
@@ -10361,6 +11046,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원101호입찰법정",
   "deposit": 9916100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 34.5,
   "areaLand": null,
   "photoUrl": null,
@@ -10397,11 +11084,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경4117-1",
   "court": "의정부지방법원",
+  "courtCode": "B000214",
   "caseNo": "2025타경4117",
   "itemNo": "1",
   "category": "상가",
@@ -10416,6 +11105,8 @@
   "saleTime": "10:30",
   "courtRoom": "제6호경매법정",
   "deposit": 16269200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 48.55,
   "areaLand": null,
   "photoUrl": null,
@@ -10452,11 +11143,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "일괄매각"
  },
  {
   "id": "gyeonggi-2025타경4288-1",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2025타경4288",
   "itemNo": "1",
   "category": "다세대",
@@ -10471,6 +11164,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원101호입찰법정",
   "deposit": 7820400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 66.723,
   "areaLand": null,
   "photoUrl": null,
@@ -10497,11 +11192,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경4776-1",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2025타경4776",
   "itemNo": "1",
   "category": "기타",
@@ -10516,6 +11213,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원101호입찰법정",
   "deposit": 222803300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 1741,
   "areaLand": null,
   "photoUrl": null,
@@ -10542,11 +11241,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 일괄매각. 제시외 건물 및 별지 공장 및 광업재단저당법 제6조 목록 제2019-183호 포함(가액은 감정평가명세표 참조 요) 2. 본건 지상 매각에서 제외되는 제시외 컨테이너 박스 수개 동 소재함 3. 목록 3, 4 지적상 맹지이나, 목록 1, 2를 통해 접근 가능하며 지상에 자생하는 입목은 거래관행 등을 고려하여 토지에 포함하여 평가함"
  },
  {
   "id": "gyeonggi-2025타경53658-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2025타경53658",
   "itemNo": "1",
   "category": "기타",
@@ -10561,6 +11262,8 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 60460500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -10587,11 +11290,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 일괄매각. 본건 지상에 소재하는 주유기 4기는 장기간 방치된 상태로 가치가 낮아 평가 제외. 2. 주유소와 사무실은 현재 운영하지 않고 공실 상태임."
  },
  {
   "id": "gyeonggi-2025타경54939-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2025타경54939",
   "itemNo": "1",
   "category": "오피스텔",
@@ -10606,6 +11311,8 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 500400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 17.48,
   "areaLand": null,
   "photoUrl": null,
@@ -10662,11 +11369,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "오피스텔로 이용중임. 매수인에게 대항할 수 있는 임차인이 있음. 배당에서 보증금이 전액 변제되지 않으면 잔액을 매수인이 인수함."
  },
  {
   "id": "gyeonggi-2025타경55961-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2025타경55961",
   "itemNo": "1",
   "category": "다세대",
@@ -10681,6 +11390,8 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 7551400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 45.8,
   "areaLand": null,
   "photoUrl": null,
@@ -10707,11 +11418,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 도시형생활주택(단지형 다세대)으로 이용중임. 2. 매수인에게 대항할 수 있는 임차인이 있음. 배당에서 보증금이 전액 변제되지 않으면 잔액을 매수인이 인수함."
  },
  {
   "id": "gyeonggi-2025타경56023-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2025타경56023",
   "itemNo": "1",
   "category": "오피스텔",
@@ -10726,6 +11439,8 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 4973500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 20.04,
   "areaLand": null,
   "photoUrl": null,
@@ -10752,11 +11467,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "보증금 전액에 관하여 배당금으로 전액을 변제받지 못하더라도 매수인에 대한 잔존 임대차보증금반환청구권을 포기하고 임차권등기를 말소하는 것에 동의한다는 신청채권자겸 주택임차권자 승계인의 대항력 포기 확약서가 제출되었음"
  },
  {
   "id": "gyeonggi-2025타경56580-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2025타경56580",
   "itemNo": "1",
   "category": "오피스텔",
@@ -10771,6 +11488,8 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 1764800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 28.556,
   "areaLand": null,
   "photoUrl": null,
@@ -10812,11 +11531,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "매수인에게 대항할 수 있는 임차인이 있음. 배당에서 보증금이 전액 변제되지 않으면 잔액을 매수인이 인수함."
  },
  {
   "id": "gyeonggi-2025타경57261-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2025타경57261",
   "itemNo": "1",
   "category": "상가",
@@ -10831,6 +11552,8 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 50078000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 77.532,
   "areaLand": null,
   "photoUrl": null,
@@ -10857,11 +11580,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "제1종근린생활시설(현황 공실)임"
  },
  {
   "id": "gyeonggi-2025타경57261-2",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2025타경57261",
   "itemNo": "2",
   "category": "상가",
@@ -10876,6 +11601,8 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 50078000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 77.532,
   "areaLand": null,
   "photoUrl": null,
@@ -10902,11 +11629,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "제1종근린생활시설(현황 공실)임"
  },
  {
   "id": "gyeonggi-2025타경57534-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2025타경57534",
   "itemNo": "1",
   "category": "다세대",
@@ -10921,6 +11650,8 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 1955100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 14.877,
   "areaLand": null,
   "photoUrl": null,
@@ -10947,11 +11678,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "매수인에게 대항할 수 있는 임차인이 있음. 배당에서 보증금이 전액 변제되지 않으면 잔액을 매수인이 인수함."
  },
  {
   "id": "gyeonggi-2025타경57634-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2025타경57634",
   "itemNo": "1",
   "category": "기타",
@@ -10966,6 +11699,8 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 14165900,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 69.2614,
   "areaLand": null,
   "photoUrl": null,
@@ -10992,11 +11727,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 노유자시설(노인복지주택)로 이용중임. 2. 매수인에게 대항할 수 있는 임차인이 있음. 배당에서 보증금이 전액 변제되지 않으면 잔액을 매수인이 인수함."
  },
  {
   "id": "gyeonggi-2025타경60851-1",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2025타경60851",
   "itemNo": "1",
   "category": "오피스텔",
@@ -11011,6 +11748,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원101호입찰법정",
   "deposit": 170200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -11082,11 +11821,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경62814-1",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2025타경62814",
   "itemNo": "1",
   "category": "단독다가구",
@@ -11101,6 +11842,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원101호입찰법정",
   "deposit": 4475100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 41.52,
   "areaLand": null,
   "photoUrl": null,
@@ -11132,11 +11875,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 일괄매각. 제시외 건물 포함 2. 주건물(기호1 건물)은 공부상 '슬레이트지붕'으로 등록되어 있으나 현황은 '판넬지붕'임. 3. 본건 토지(일산동 973-23) 지상에 철파이프조 판넬 및 썬라이트지붕 다용도실 약 11㎡가 소재하고, 인접 토지(일산동 973-15) 지상에 벽돌조 판넬지붕 주택 약 15㎡가 소재함[인접 토지(일산동 973-15) 지상에 소재하는 제시외건물은 본건 주건물(기호1 건물)에 접속해 있는 건물로 허가기관의 허가없이 증축된 것으로 추정되고, 주건물(기호1 건물)을 통하여 외부 출입이 가능하며, 주건물(기호1 건물)과 일체로 이용되고 있음]."
  },
  {
   "id": "gyeonggi-2025타경62852-1",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2025타경62852",
   "itemNo": "1",
   "category": "다세대",
@@ -11151,6 +11896,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원101호입찰법정",
   "deposit": 3261200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 50.0208,
   "areaLand": null,
   "photoUrl": null,
@@ -11197,11 +11944,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 건축물대장 건축물현황도상 404호 평면도가 현황과 상이하여(인접 호수인 403호 평면도 등재) 4층 및 옥탑1층 평면도를 참고하여 내부구조도를 작성하였다고 함(감정평가서 참조). 2. 특별매각조건 매수신청보증금 최저매각가격의 20%"
  },
  {
   "id": "gyeonggi-2025타경62958-1",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2025타경62958",
   "itemNo": "1",
   "category": "오피스텔",
@@ -11216,6 +11965,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원101호입찰법정",
   "deposit": 34505800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 40.6,
   "areaLand": null,
   "photoUrl": null,
@@ -11242,11 +11993,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경62958-10",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2025타경62958",
   "itemNo": "10",
   "category": "오피스텔",
@@ -11261,6 +12014,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원101호입찰법정",
   "deposit": 8437800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 40.6,
   "areaLand": null,
   "photoUrl": null,
@@ -11287,11 +12042,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경62958-11",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2025타경62958",
   "itemNo": "11",
   "category": "오피스텔",
@@ -11306,6 +12063,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원101호입찰법정",
   "deposit": 34505800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 40.6,
   "areaLand": null,
   "photoUrl": null,
@@ -11332,11 +12091,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경62958-12",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2025타경62958",
   "itemNo": "12",
   "category": "오피스텔",
@@ -11351,6 +12112,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원101호입찰법정",
   "deposit": 34505800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 40.6,
   "areaLand": null,
   "photoUrl": null,
@@ -11377,11 +12140,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경62958-13",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2025타경62958",
   "itemNo": "13",
   "category": "오피스텔",
@@ -11396,6 +12161,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원101호입찰법정",
   "deposit": 34505800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 40.6,
   "areaLand": null,
   "photoUrl": null,
@@ -11422,11 +12189,111 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2025타경62958-2",
+  "court": "고양지원",
+  "courtCode": "B214807",
+  "caseNo": "2025타경62958",
+  "itemNo": "2",
+  "category": "오피스텔",
+  "address": "경기도 고양시 덕양구 지축동 1005-5 벨라미 9층913호",
+  "region": "경기",
+  "district": "고양시 덕양구",
+  "appraisalPrice": 271000000,
+  "minPrice": 92953000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-10-28",
+  "saleTime": "10:00",
+  "courtRoom": "고양지원101호입찰법정",
+  "deposit": 9295300,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 40.6,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-06-10",
+    "minPrice": 271000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-15",
+    "minPrice": 271000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-19",
+    "minPrice": 189700000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-23",
+    "minPrice": 132790000,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2025타경62958-3",
+  "court": "고양지원",
+  "courtCode": "B214807",
+  "caseNo": "2025타경62958",
+  "itemNo": "3",
+  "category": "오피스텔",
+  "address": "경기도 고양시 덕양구 지축동 1005-5 벨라미 9층912호",
+  "region": "경기",
+  "district": "고양시 덕양구",
+  "appraisalPrice": 271000000,
+  "minPrice": 92953000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-10-28",
+  "saleTime": "10:00",
+  "courtRoom": "고양지원101호입찰법정",
+  "deposit": 9295300,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 40.6,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-06-10",
+    "minPrice": 271000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-15",
+    "minPrice": 271000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-19",
+    "minPrice": 189700000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-23",
+    "minPrice": 132790000,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경63527-1",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2025타경63527",
   "itemNo": "1",
   "category": "다세대",
@@ -11441,6 +12308,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원101호입찰법정",
   "deposit": 960500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 45.16,
   "areaLand": null,
   "photoUrl": null,
@@ -11497,11 +12366,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "집합건축물대장상 건축물현황도에 내부계단을 통한 다락이 소재(감정평가서 참조)."
  },
  {
   "id": "gyeonggi-2025타경63940-1",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2025타경63940",
   "itemNo": "1",
   "category": "토지",
@@ -11516,6 +12387,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원101호입찰법정",
   "deposit": 390900,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 40,
   "photoUrl": null,
@@ -11547,11 +12420,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "지적 및 현황 맹지이고, 본건 지상 매각에서 제외되는 제시외건물(블럭조 슬레이트지붕) 소재하며, 소유권행사에 제한을 받는 상태의 평가액은 감정평가명세표 참조 요함"
  },
  {
   "id": "gyeonggi-2025타경63940-2",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2025타경63940",
   "itemNo": "2",
   "category": "토지",
@@ -11566,6 +12441,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원101호입찰법정",
   "deposit": 634100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 38,
   "photoUrl": null,
@@ -11597,11 +12474,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 지적 및 현황 맹지이며, 남측 토지를 통해 제방도로(보행자) 접근 가능 2. 본건 지상 매각에서 제외되는 제시외건물(샌드위치판넬조 판넬지붕) 소재하며, 소유권행사에 제한을 받는 상태의 평가액은 감정평가명세표 참조 요함 3. 농지취득자격증명요[미제출시 보증금 미반환]."
  },
  {
   "id": "gyeonggi-2025타경63940-3",
   "court": "고양지원",
+  "courtCode": "B214807",
   "caseNo": "2025타경63940",
   "itemNo": "3",
   "category": "토지",
@@ -11616,6 +12495,8 @@
   "saleTime": "10:00",
   "courtRoom": "고양지원101호입찰법정",
   "deposit": 1374000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 76,
   "photoUrl": null,
@@ -11647,11 +12528,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 지적상 맹지, 서측으로 현황 주차장 및 도로로 사용중인 토지와 접하나 고저 차이등으로 진출입은 불가함 2. 공부상 지목 답이나, 현황 전으로 이용중임 3. 농지취득자격증명요[미제출시 보증금 미반환]."
  },
  {
   "id": "gyeonggi-2025타경72890-1",
   "court": "의정부지방법원",
+  "courtCode": "B000214",
   "caseNo": "2025타경72890",
   "itemNo": "1",
   "category": "토지",
@@ -11666,6 +12549,8 @@
   "saleTime": "10:30",
   "courtRoom": "제6호경매법정",
   "deposit": 6855900,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 44826,
   "photoUrl": null,
@@ -11707,11 +12592,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "지적도상 맹지임"
  },
  {
   "id": "gyeonggi-2024타경4860-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2024타경4860",
   "itemNo": "1",
   "category": "토지",
@@ -11726,6 +12613,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관122호법정",
   "deposit": 5181500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 582,
   "photoUrl": null,
@@ -11767,11 +12656,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1.일괄매각 2. 지적도상 맹지이며 인근 토지를 통하여 출입 가능함 3. 목록5.토지(일부)상에 소유자 미상의 분묘 2기가 소재하는 것으로 파악되나 인접 토지와의 경계가 불분명하여 정확한 위치는 측량을 요함, 지상 분묘에 대한 분묘기지권 성립여부 불분명 4.토지 상에 자생하는 입목은 그 경제적 가치가 미미하고 토지와 일괄로 거래되는 관행 등을 고려하여 본건 토지에 포함하여 평가하였음(기타 자세한 사항은 감정평가서 참조 요)"
  },
  {
   "id": "gyeonggi-2025타경2861-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경2861",
   "itemNo": "1",
   "category": "오피스텔",
@@ -11786,6 +12677,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관122호법정",
   "deposit": 7443100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 84.55,
   "areaLand": null,
   "photoUrl": null,
@@ -11817,11 +12710,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "인접호실(305호)과 함께 유흥주점으로 일괄 이용중 임"
  },
  {
   "id": "gyeonggi-2025타경30545-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경30545",
   "itemNo": "1",
   "category": "다세대",
@@ -11836,6 +12731,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관122호법정",
   "deposit": 367200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -11897,11 +12794,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 내부에서 출입하는 전용테라스가 소재, 고려하여 평가함 2. 건물 외부에 '바동'으로 표기되어 있음"
  },
  {
   "id": "gyeonggi-2025타경32650-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경32650",
   "itemNo": "1",
   "category": "다세대",
@@ -11916,6 +12815,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관122호법정",
   "deposit": 3217300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 35.1,
   "areaLand": null,
   "photoUrl": null,
@@ -11947,11 +12848,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "특별매각조건 매수신청보증금 최저매각가격의 20%"
  },
  {
   "id": "gyeonggi-2025타경33105-4",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경33105",
   "itemNo": "4",
   "category": "오피스텔",
@@ -11966,6 +12869,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관122호법정",
   "deposit": 4941200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 64.8019,
   "areaLand": null,
   "photoUrl": null,
@@ -12007,11 +12912,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경33744-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경33744",
   "itemNo": "1",
   "category": "다세대",
@@ -12026,6 +12933,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관122호법정",
   "deposit": 2329500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 36.68,
   "areaLand": null,
   "photoUrl": null,
@@ -12067,11 +12976,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경33863-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경33863",
   "itemNo": "1",
   "category": "아파트",
@@ -12086,6 +12997,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관122호법정",
   "deposit": 2211800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 27.901,
   "areaLand": null,
   "photoUrl": null,
@@ -12127,11 +13040,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경33949-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경33949",
   "itemNo": "1",
   "category": "오피스텔",
@@ -12146,6 +13061,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관122호법정",
   "deposit": 15366400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 62.45,
   "areaLand": null,
   "photoUrl": null,
@@ -12177,11 +13094,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경34075-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경34075",
   "itemNo": "1",
   "category": "아파트",
@@ -12196,6 +13115,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관122호법정",
   "deposit": 3042100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 36.71,
   "areaLand": null,
   "photoUrl": null,
@@ -12232,11 +13153,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경34499-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경34499",
   "itemNo": "1",
   "category": "다세대",
@@ -12251,6 +13174,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관122호법정",
   "deposit": 6362700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 58.155,
   "areaLand": null,
   "photoUrl": null,
@@ -12282,11 +13207,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경34579-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경34579",
   "itemNo": "1",
   "category": "오피스텔",
@@ -12301,6 +13228,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관122호법정",
   "deposit": 17719400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 48,
   "areaLand": null,
   "photoUrl": null,
@@ -12332,11 +13261,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "집합건축물대장상 용도는 일반음식점이나 현황 공실임"
  },
  {
   "id": "gyeonggi-2025타경34828-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경34828",
   "itemNo": "1",
   "category": "다세대",
@@ -12351,6 +13282,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관122호법정",
   "deposit": 4898000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 55.135,
   "areaLand": null,
   "photoUrl": null,
@@ -12382,11 +13315,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-베란다에 제시외 건물(판넬조 판넬지붕 다용도실 약 7㎡)이소재하는 바, 본건 건물에 포함하여 평가 경매진행시 참고 바람"
  },
  {
   "id": "gyeonggi-2025타경34989-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경34989",
   "itemNo": "1",
   "category": "오피스텔",
@@ -12401,6 +13336,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관122호법정",
   "deposit": 8712200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 27.2963,
   "areaLand": null,
   "photoUrl": null,
@@ -12427,11 +13364,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경35011-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경35011",
   "itemNo": "1",
   "category": "다세대",
@@ -12446,6 +13385,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관122호법정",
   "deposit": 3704400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 48.01,
   "areaLand": null,
   "photoUrl": null,
@@ -12472,11 +13413,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경35194-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경35194",
   "itemNo": "1",
   "category": "오피스텔",
@@ -12491,6 +13434,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관122호법정",
   "deposit": 35329000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 59.29,
   "areaLand": null,
   "photoUrl": null,
@@ -12517,11 +13462,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-현황 '교회(상호:하안중앙교회)'로 이용중 임"
  },
  {
   "id": "gyeonggi-2025타경35272-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경35272",
   "itemNo": "1",
   "category": "다세대",
@@ -12536,6 +13483,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관122호법정",
   "deposit": 7031500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 39.945,
   "areaLand": null,
   "photoUrl": null,
@@ -12562,11 +13511,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경3932-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경3932",
   "itemNo": "1",
   "category": "기타",
@@ -12581,6 +13532,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관122호법정",
   "deposit": 9628000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 104.7744,
   "areaLand": null,
   "photoUrl": null,
@@ -12612,11 +13565,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-공부상 공장(지식산업센터)임"
  },
  {
   "id": "gyeonggi-2025타경4300-1",
   "court": "부천지원",
+  "courtCode": "B000241",
   "caseNo": "2025타경4300",
   "itemNo": "1",
   "category": "오피스텔",
@@ -12631,6 +13586,8 @@
   "saleTime": "10:00",
   "courtRoom": "별관122호법정",
   "deposit": 30938600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 58,
   "areaLand": null,
   "photoUrl": null,
@@ -12657,11 +13614,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2022타경3751-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2022타경3751",
   "itemNo": "1",
   "category": "오피스텔",
@@ -12676,6 +13635,8 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 144516200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 872.16,
   "areaLand": null,
   "photoUrl": null,
@@ -12717,11 +13678,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 일괄매각 : 목록1~10번 2. 주차장 지분(목록1번 ~ 목록8번) : 2023.2.20. 대지권등기됨 3. 판매시설 지분(목록9번 ~ 목록10번) 1) 대지권 미등기이나 매각목적물 및 평가에 포함됨. 2) 채권자가 제출한 판결문(서울중앙지법 2021가합533701 소유권이전등기)에 따르면 분양대금(1,047,090,213원)을 완납하지 못함. 매수인이 미납한 분양대금을 추가 지급해야 대지권 이전등기가 가능할 것으로 보임."
  },
  {
   "id": "gyeonggi-2023타경13113-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2023타경13113",
   "itemNo": "1",
   "category": "상가",
@@ -12736,6 +13699,8 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 5968200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -12762,11 +13727,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2023타경13113-2",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2023타경13113",
   "itemNo": "2",
   "category": "상가",
@@ -12781,6 +13748,8 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 5488000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -12807,11 +13776,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2023타경13113-3",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2023타경13113",
   "itemNo": "3",
   "category": "상가",
@@ -12826,6 +13797,8 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 23186800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -12852,11 +13825,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2024타경100335-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경100335",
   "itemNo": "1",
   "category": "다세대",
@@ -12871,6 +13846,8 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 5109300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -12907,11 +13884,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2024타경102096-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경102096",
   "itemNo": "1",
   "category": "토지",
@@ -12926,6 +13905,8 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 7218800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 688,
   "photoUrl": null,
@@ -12957,11 +13938,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1.일부(263㎡)는 선하지로서 행정상 규제 정도 등을 감안하여 평가하였음 2.농지취득자격증명 요함(미제출시 매수보증금 반환하지 않음)"
  },
  {
   "id": "gyeonggi-2024타경104306-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경104306",
   "itemNo": "1",
   "category": "오피스텔",
@@ -12976,6 +13959,8 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 5522300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -13002,11 +13987,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "매수인에게 대항할 수 있는 임차인 있음. 배당에서 보증금이 전액 변제되지 아니하면 잔액을 매수인이 인수함"
  },
  {
   "id": "gyeonggi-2024타경75873-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경75873",
   "itemNo": "1",
   "category": "다세대",
@@ -13021,6 +14008,8 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 404700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -13087,11 +14076,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "제시외 건물(건축물현황도상 다락방) 평가 및 매각 포함(기타 자세한 사항은 감정평가서 참조 요망). 재매각. 특별매각조건 매수신청보증금 최저매각가격의 20%"
  },
  {
   "id": "gyeonggi-2024타경78797-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경78797",
   "itemNo": "1",
   "category": "아파트",
@@ -13106,6 +14097,8 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 5522300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -13177,11 +14170,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1.임대차관계 불분명(전입인 배종훈) 2.주택도시보증공사(양도전:임차인 강**)로부터 2026.06.09.자에 '임차보증금에 대하여 우선변제권만 주장하고 대항력은 포기하며, 전액을 변제받지 못하더라도 임차권등기를 말소해 주겠다.'는 내용의 확약서가 제출됨"
  },
  {
   "id": "gyeonggi-2024타경89407-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경89407",
   "itemNo": "1",
   "category": "아파트",
@@ -13196,6 +14191,8 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 28709100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -13227,11 +14224,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 매수인에게 대항할 수 있는 임차인 있음 2. 2025.08.21. 배당요구 없이 권리신고함"
  },
  {
   "id": "gyeonggi-2024타경97989-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2024타경97989",
   "itemNo": "1",
   "category": "토지",
@@ -13246,6 +14245,8 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 210800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 20997,
   "photoUrl": null,
@@ -13282,11 +14283,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "지분매각임. 공유자 우선매수신고는 1회에 한하여 행사할 수 있음(공유자가 우선매수권 신고 후 매각기일까지 매수보증금을 미납하여 실효되는 경우에는 그 공유자는 이후 매각기일부터는 우선매수권을 행사할 수 없음)"
  },
  {
   "id": "gyeonggi-2025타경54665-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2025타경54665",
   "itemNo": "1",
   "category": "오피스텔",
@@ -13301,6 +14304,8 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 19952300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 53.1337,
   "areaLand": null,
   "photoUrl": null,
@@ -13332,11 +14337,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "gyeonggi-2025타경59386-1",
   "court": "수원지방법원",
+  "courtCode": "B000250",
   "caseNo": "2025타경59386",
   "itemNo": "1",
   "category": "기타",
@@ -13351,6 +14358,8 @@
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
   "deposit": 465500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -13372,6 +14381,7 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "중고차 사고이력정보 보고서 상 사고이력 있음."
  }
 ]

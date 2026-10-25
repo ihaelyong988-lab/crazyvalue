@@ -2,6 +2,7 @@
  {
   "id": "incheon-2025타경509685-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경509685",
   "itemNo": "1",
   "category": "기타",
@@ -16,52 +17,61 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 1675000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
+    "date": "2026-01-19",
+    "minPrice": 203390000,
+    "result": "신건"
+   },
+   {
     "date": "2026-02-23",
     "minPrice": 203390000,
     "result": "유찰"
    },
    {
-    "date": "2026-03-31",
-    "minPrice": 142373000,
+    "date": "2026-03-30",
+    "minPrice": 142372950,
     "result": "유찰"
    },
    {
-    "date": "2026-04-30",
-    "minPrice": 99661000,
+    "date": "2026-05-04",
+    "minPrice": 99661030,
     "result": "유찰"
    },
    {
-    "date": "2026-06-05",
-    "minPrice": 69763000,
+    "date": "2026-06-08",
+    "minPrice": 69762697,
     "result": "유찰"
    },
    {
-    "date": "2026-07-09",
-    "minPrice": 48834000,
+    "date": "2026-07-13",
+    "minPrice": 48833871,
     "result": "유찰"
    },
    {
-    "date": "2026-08-10",
-    "minPrice": 34184000,
+    "date": "2026-08-17",
+    "minPrice": 34183697,
     "result": "유찰"
    },
    {
-    "date": "2026-09-11",
-    "minPrice": 23929000,
+    "date": "2026-09-21",
+    "minPrice": 23928580,
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "①2025.6.20. 임시검사에 불합격 후 계선중인 것으로 조사됨. ②어획물운반선으로 펌프등이 작동하지 않아 기관실 일부에 물이 차 있음."
  },
  {
   "id": "incheon-2024타경539103-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2024타경539103",
   "itemNo": "1",
   "category": "다세대",
@@ -76,6 +86,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 1144700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -162,11 +174,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2024타경563380-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2024타경563380",
   "itemNo": "1",
   "category": "다세대",
@@ -181,6 +195,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 1932800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -247,11 +263,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "통칭 삼성연립"
  },
  {
   "id": "incheon-2025타경1101-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경1101",
   "itemNo": "1",
   "category": "토지",
@@ -266,6 +284,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 3871600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 1545,
   "photoUrl": null,
@@ -307,11 +327,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "공부상 '임야'이나 현황 '잡종지'임"
  },
  {
   "id": "incheon-2025타경1383-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경1383",
   "itemNo": "1",
   "category": "토지",
@@ -326,6 +348,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 32393000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 9809,
   "photoUrl": null,
@@ -362,11 +386,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "일괄매각. 목록1~28 맹지이며 목록1 서측,남측부분에 등산로(오솔길)가 있고 경계가 불분명한 개발되지 않은 야산상태임. 목록1 정상에 '국사봉전망대'가 소재하며 '소사나무보호지역' 안내문이 설치되어 있음."
  },
  {
   "id": "incheon-2025타경508779-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경508779",
   "itemNo": "1",
   "category": "아파트",
@@ -381,6 +407,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 1082300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 29.41,
   "areaLand": null,
   "photoUrl": null,
@@ -422,11 +450,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경508797-2",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경508797",
   "itemNo": "2",
   "category": "상가",
@@ -441,6 +471,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 24835700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 61.36,
   "areaLand": null,
   "photoUrl": null,
@@ -482,11 +514,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "일괄매각 등기부상 구분되어 있으나 현황은 통합하여 하나의 점포(사무실)로 사용 중임(벽체 없음)"
  },
  {
   "id": "incheon-2025타경509527-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경509527",
   "itemNo": "1",
   "category": "기타",
@@ -501,6 +535,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 12134400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 212,
   "areaLand": null,
   "photoUrl": null,
@@ -537,11 +573,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "일괄매각. 제시외 건물 포함"
  },
  {
   "id": "incheon-2025타경510183-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경510183",
   "itemNo": "1",
   "category": "아파트",
@@ -556,6 +594,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 1092500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 14.32,
   "areaLand": null,
   "photoUrl": null,
@@ -592,11 +632,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "현관에 단수예정 안내문과 관리비청구서가 붙어 있음"
  },
  {
   "id": "incheon-2025타경510454-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경510454",
   "itemNo": "1",
   "category": "다세대",
@@ -611,6 +653,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 1697500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 36.2,
   "areaLand": null,
   "photoUrl": null,
@@ -647,11 +691,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경510689-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경510689",
   "itemNo": "1",
   "category": "상가",
@@ -666,6 +712,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 23798700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 47.5,
   "areaLand": null,
   "photoUrl": null,
@@ -702,11 +750,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "등기사항전부증명서상 용도는 '근린생활시설', 집합건축물대장상 용도는 '소매점'이며 현재 공실상태임"
  },
  {
   "id": "incheon-2025타경891-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경891",
   "itemNo": "1",
   "category": "상가",
@@ -721,6 +771,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 9966500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 40.62,
   "areaLand": null,
   "photoUrl": null,
@@ -757,11 +809,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "공부상 판매시설이며 현재 공실상태임. 대지권 미등기이나 최저매각가격에는 대지권 가격이 포함되며 인천 서구청으로부터 대지지분이 명시된 분양계약서와 분양대금 완납증명이 첨부된 사실조회 회신 있음(2026.1.29.자)"
  },
  {
   "id": "incheon-2025타경507928-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경507928",
   "itemNo": "1",
   "category": "다세대",
@@ -776,6 +830,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 667000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 35.94,
   "areaLand": null,
   "photoUrl": null,
@@ -822,11 +878,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경508457-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경508457",
   "itemNo": "1",
   "category": "다세대",
@@ -841,6 +899,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 799900,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 37.56,
   "areaLand": null,
   "photoUrl": null,
@@ -882,11 +942,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경508968-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경508968",
   "itemNo": "1",
   "category": "토지",
@@ -901,6 +963,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 38669100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 2940,
   "photoUrl": null,
@@ -932,11 +996,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-개시결정 이후 2026.3.16. 자로 인천시 연수구 동춘동 산 65-16 임야 3471㎡가 동소 2940㎡, 인천시 연수구 동춘동 산65-29 임야 531㎡로 분할됨 -현황 자연림 상태로 경제적 가치가 희박한 수목등에 대해서는 토지에 포함하여 평가하였음 -미등기 제시외 건물(폐가)가 일부 소재하나 사용수익에 제한을 미치는 영향은 미미하다고 판단되는 바 경매진행시 참고 바람 -육안으로는 분묘나 그 밖의 시설물 발견할 수 없으나 별도 확인 요하며, 수목에 대한 명인방법의 존재여부 등도 별도 확인이 필요 -연수구로부터 푸른송도배수지 2단계 건설공사 일반수도사업(변경)인가에 관한 주민 등의 의견 청취 공고 통지서가 제출되었음"
  },
  {
   "id": "incheon-2025타경509710-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경509710",
   "itemNo": "1",
   "category": "다세대",
@@ -951,6 +1017,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 2117600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 46.32,
   "areaLand": null,
   "photoUrl": null,
@@ -987,11 +1055,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경510320-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경510320",
   "itemNo": "1",
   "category": "토지",
@@ -1006,6 +1076,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 2985700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 95,
   "photoUrl": null,
@@ -1042,11 +1114,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "토지 지상에 소재하는 건물의 일부가 소재하나 평가목적을 고려하여 이에 구애됨이 없이 토지를 평가하였음"
  },
  {
   "id": "incheon-2025타경510822-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경510822",
   "itemNo": "1",
   "category": "오피스텔",
@@ -1061,6 +1135,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 2881200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 45.29,
   "areaLand": null,
   "photoUrl": null,
@@ -1092,11 +1168,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경511019-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경511019",
   "itemNo": "1",
   "category": "토지",
@@ -1111,6 +1189,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 3682800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 23802,
   "photoUrl": null,
@@ -1142,11 +1222,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-지분매각임, 공유자의 우선매수신고는 1회에 한하여 행사할 수 있고 우선매수권행사에 따른 매수신고가 매수보증금의 미납으로 실효되는 경우 그 공유자는 이후 매각절차에서 우선매수권을 행사할 수 없음 -지적상 맹지이며 자연림으로 이용중임 -지상에 잡목과 수풀이 우거져 육안으로는 분묘나 그밖의 시설물을 발견할 수 없었으나 별도 확인을 요하며, 수목에 대한 명인방법의 존재여부 등도 별도 확인 필요"
  },
  {
   "id": "incheon-2022타경518836-2",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2022타경518836",
   "itemNo": "2",
   "category": "토지",
@@ -1161,6 +1243,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 109000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 205,
   "photoUrl": null,
@@ -1187,11 +1271,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 일괄매각. 2. 농지 전용허가를 얻지 않고 토지현황이 변경된 경우로 원상회복명령 가능성 있으며, 목록 2, 4에 대하여 농지취득자격증명원 제출요함(미제출시 매수보증금 반환하지 않음) 3. 목록 2는 공부상 지목 \"전\"이나 다른 용도로 사용중임. 4. 목록 4는 공부상 지목 \"전\"이나, 농사를 짓지 않아 대부분 잡목과 수풀이 우거져 있음(자세한 사항은 현황조사보고서 참조)"
  },
  {
   "id": "incheon-2022타경518836-3",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2022타경518836",
   "itemNo": "3",
   "category": "토지",
@@ -1206,6 +1292,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 22500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 24,
   "photoUrl": null,
@@ -1232,11 +1320,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 농지취득자격증명원 제출요함(미제출시 매수보증금 반환하지 않음) 2. 공부상 지목 \"전\"이나, 상당한 부분 도로로 이용중이고, 토지의 일부가 백령로 807 건물의 부지로 편입된 것으로 보이나 정확한 것은 전문가의 측량을 요함(자세한 사항은 현황조사보고서 참조)."
  },
  {
   "id": "incheon-2023타경551557-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2023타경551557",
   "itemNo": "1",
   "category": "상가",
@@ -1251,6 +1341,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 35500500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -1277,11 +1369,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-본건은 4층 전체이나, 임의적으로 구조변경을 한 것으로 보임. -호실 표시가 되어 있지 않아 건물관리인을 통해 호실을 특정함. -집합건축물 대장상 용도는 일반음식점임."
  },
  {
   "id": "incheon-2023타경551557-2",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2023타경551557",
   "itemNo": "2",
   "category": "상가",
@@ -1296,6 +1390,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 11284700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -1322,11 +1418,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-본건 건물은 엘리베이터가 4층까지 운행하므로 5층은 4층내부 계단을 통해 출입함. -호실 표시가 되어 있지 않아 건물관리인을 통해 호실을 특정함. -집합건축물 대장상 용도는 학원임."
  },
  {
   "id": "incheon-2023타경551557-3",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2023타경551557",
   "itemNo": "3",
   "category": "상가",
@@ -1341,6 +1439,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 1234800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -1367,11 +1467,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-본건 건물은 엘리베이터가 4층까지 운행하므로 5층은 4층내부 계단을 통해 출입함. -호실 표시가 되어 있지 않아 건물관리인을 통해 호실을 특정함. -집합건축물 대장상 용도는 학원임."
  },
  {
   "id": "incheon-2023타경551557-4",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2023타경551557",
   "itemNo": "4",
   "category": "상가",
@@ -1386,6 +1488,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 1337700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -1412,11 +1516,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-본건 건물은 엘리베이터가 4층까지 운행하므로 5층은 4층내부 계단을 통해 출입함. -호실 표시가 되어 있지 않아 건물관리인을 통해 호실을 특정함. -집합건축물 대장상 용도는 학원임."
  },
  {
   "id": "incheon-2023타경551557-5",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2023타경551557",
   "itemNo": "5",
   "category": "상가",
@@ -1431,6 +1537,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 1337700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -1457,11 +1565,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-본건 건물은 엘리베이터가 4층까지 운행하므로 5층은 4층내부 계단을 통해 출입함. -호실 표시가 되어 있지 않아 건물관리인을 통해 호실을 특정함. -집합건축물 대장상 용도는 의원임."
  },
  {
   "id": "incheon-2023타경551557-6",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2023타경551557",
   "itemNo": "6",
   "category": "상가",
@@ -1476,6 +1586,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 1406300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -1502,11 +1614,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-본건 건물은 엘리베이터가 4층까지 운행하므로 5층은 4층내부 계단을 통해 출입함. -호실 표시가 되어 있지 않아 건물관리인을 통해 호실을 특정함. -집합건축물 대장상 용도는 의원임."
  },
  {
   "id": "incheon-2023타경551557-7",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2023타경551557",
   "itemNo": "7",
   "category": "상가",
@@ -1521,6 +1635,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 4047400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -1547,11 +1663,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-본건 건물은 엘리베이터가 4층까지 운행하므로 5층은 4층내부 계단을 통해 출입함. -호실 표시가 되어 있지 않아 건물관리인을 통해 호실을 특정함. -집합건축물 대장상 용도는 학원임."
  },
  {
   "id": "incheon-2023타경551557-8",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2023타경551557",
   "itemNo": "8",
   "category": "상가",
@@ -1566,6 +1684,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 1440600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -1592,11 +1712,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-본건 건물은 엘리베이터가 4층까지 운행하므로 5층은 4층내부 계단을 통해 출입함. -호실 표시가 되어 있지 않아 건물관리인을 통해 호실을 특정함. -집합건축물 대장상 용도는 학원임."
  },
  {
   "id": "incheon-2023타경551557-9",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2023타경551557",
   "itemNo": "9",
   "category": "상가",
@@ -1611,6 +1733,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 2366700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -1637,11 +1761,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-본건 건물은 엘리베이터가 4층까지 운행하므로 5층은 4층내부 계단을 통해 출입함. -호실 표시가 되어 있지 않아 건물관리인을 통해 호실을 특정함. -집합건축물 대장상 용도는 사무소임."
  },
  {
   "id": "incheon-2024타경509294-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2024타경509294",
   "itemNo": "1",
   "category": "오피스텔",
@@ -1656,6 +1782,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 143200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 69.2516,
   "areaLand": null,
   "photoUrl": null,
@@ -1737,11 +1865,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2024타경525869-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2024타경525869",
   "itemNo": "1",
   "category": "토지",
@@ -1756,6 +1886,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 23322500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 1573,
   "photoUrl": null,
@@ -1787,11 +1919,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 일괄매각 2. 제시외건물(창고 판넬조 4㎡)은 평가 및 매각에 포함. 3. 목록2 토지 지상에 목록3건물과 제시외건물(창고 판넬조 4㎡)소재함. 4. 목록9는 공부상 지목이 '임야'이나 현황 '도로'로 이용중임. 5. 목록1~8까지 목록9 도로와 접함."
  },
  {
   "id": "incheon-2024타경533709-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2024타경533709",
   "itemNo": "1",
   "category": "토지",
@@ -1806,6 +1940,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 4127400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 700,
   "photoUrl": null,
@@ -1872,11 +2008,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 일괄매각 2. 목록 3은 공부상\"임야\"이나, 현황은 \"도로\"로 이용중 3. 목록 2,3은 지분매각임"
  },
  {
   "id": "incheon-2024타경564178-10",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2024타경564178",
   "itemNo": "10",
   "category": "다세대",
@@ -1891,6 +2029,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 8300600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -1917,11 +2057,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-특별매각조건으로 매수신청보증금은 최저매각가격의 20%임."
  },
  {
   "id": "incheon-2025타경1113-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경1113",
   "itemNo": "1",
   "category": "기타",
@@ -1936,6 +2078,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 9959900,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 129,
   "areaLand": null,
   "photoUrl": null,
@@ -1962,11 +2106,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-일괄매각. -제시외(창고등 판넬조4㎡)물건은 평가 및 매각에 포함."
  },
  {
   "id": "incheon-2025타경1116-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경1116",
   "itemNo": "1",
   "category": "다세대",
@@ -1981,6 +2127,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 2040900,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 46,
   "areaLand": null,
   "photoUrl": null,
@@ -2012,11 +2160,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경1189-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경1189",
   "itemNo": "1",
   "category": "오피스텔",
@@ -2031,6 +2181,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 17407300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 46.3,
   "areaLand": null,
   "photoUrl": null,
@@ -2062,11 +2214,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-현재 '판매시설(상점)'이고, 공실 상태임."
  },
  {
   "id": "incheon-2025타경1245-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경1245",
   "itemNo": "1",
   "category": "오피스텔",
@@ -2081,6 +2235,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 20168400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 36.08,
   "areaLand": null,
   "photoUrl": null,
@@ -2107,11 +2263,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-토지에 관하여 별도등기(을구1번 구분지상권 설정 등기)있음. -근린생활시설이며 공실로 보임. -감정평가서상 현황은 C-122로 표기되어 있음."
  },
  {
   "id": "incheon-2025타경1314-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경1314",
   "itemNo": "1",
   "category": "다세대",
@@ -2126,6 +2284,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 10118500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 65.34,
   "areaLand": null,
   "photoUrl": null,
@@ -2152,11 +2312,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경507409-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경507409",
   "itemNo": "1",
   "category": "토지",
@@ -2171,6 +2333,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 49946700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 408,
   "photoUrl": null,
@@ -2197,11 +2361,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-일괄매각 -1,2번 물건은 농지취득자격증명 제출 요(매각결정기일까지 미제출시 보증금은 반환하지 않음). -1번 물건은 지목 답이나 현황 묵답이며, 원상회복명령이 발하여질 가능성이 있음(2026.5.6.자 사실조회회신 참조). -2번 물건은 지목 전으로 경작인 미상의 마늘 등의 작물이 식재되어 있음. -3번,4번물건은 지목 임야의 맹지이며, 지상에 자생하고 있는 수목 등은 거래관행 등을 고려하여 토지가격에 포함하여 평가하였음. -4번 물건과 인근 외리 378, 379 토지 지상 부근에 건물이 현존하고 있는데, 위 건물이 4번 물건위에 걸쳐져 있는지 여부는 알수 없어 측량을 통하여 확인 필요."
  },
  {
   "id": "incheon-2025타경508541-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경508541",
   "itemNo": "1",
   "category": "토지",
@@ -2216,6 +2382,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 6687800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 6528,
   "photoUrl": null,
@@ -2242,11 +2410,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-일괄매각 -지분매각 -공유자의 우선매수신고는 1회에 한하여 행사할 수 있음. -1번토지 지상에 육안으로 분묘3기가 발견되었으며, 분묘기지권 성립여부는 불분명함. -2번토지는 맹지이며, 육안으로는 지상에 분묘가 발견되지 않음. -3번토지 지상에 최상남 소유의 미등기 건물(컨테이너2동)이 소재하나, 매각및평가에서는 제외하였으며, 건물에 대한 법정지상권 성립여부는 불분명함. -4번 토지는 도로로 사용중임."
  },
  {
   "id": "incheon-2025타경509103-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경509103",
   "itemNo": "1",
   "category": "오피스텔",
@@ -2261,6 +2431,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 16855000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 28.8,
   "areaLand": null,
   "photoUrl": null,
@@ -2292,11 +2464,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-집합건축물대장상으로는 제1종근린생활시설(세탁소)임. -현황상 본건에는 임차인이 '슈퍼키친' 반찬가게를 운영하고 있음."
  },
  {
   "id": "incheon-2025타경509577-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경509577",
   "itemNo": "1",
   "category": "오피스텔",
@@ -2311,6 +2485,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 1080500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 19.76,
   "areaLand": null,
   "photoUrl": null,
@@ -2342,11 +2518,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경509709-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경509709",
   "itemNo": "1",
   "category": "다세대",
@@ -2361,6 +2539,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 3121300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 59.64,
   "areaLand": null,
   "photoUrl": null,
@@ -2392,11 +2572,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경509781-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경509781",
   "itemNo": "1",
   "category": "오피스텔",
@@ -2411,6 +2593,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 10084200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 56.32,
   "areaLand": null,
   "photoUrl": null,
@@ -2442,11 +2626,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-집합건축물대장상 용도는 제2종근린생활시설(일반음식점)임. -기준시점 현재 공실상태임."
  },
  {
   "id": "incheon-2025타경510192-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경510192",
   "itemNo": "1",
   "category": "다세대",
@@ -2461,6 +2647,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 4287500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 55.88,
   "areaLand": null,
   "photoUrl": null,
@@ -2487,11 +2675,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-승강기설비는 장기간 운용이 중단된 것으로 탐문조사됨."
  },
  {
   "id": "incheon-2025타경510316-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경510316",
   "itemNo": "1",
   "category": "기타",
@@ -2506,6 +2696,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 2503900,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 23.95,
   "areaLand": null,
   "photoUrl": null,
@@ -2532,11 +2724,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경510385-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경510385",
   "itemNo": "1",
   "category": "다세대",
@@ -2551,6 +2745,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 5145000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 38.8,
   "areaLand": null,
   "photoUrl": null,
@@ -2577,11 +2773,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경510423-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경510423",
   "itemNo": "1",
   "category": "상가",
@@ -2596,6 +2794,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 23838500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 88.07,
   "areaLand": null,
   "photoUrl": null,
@@ -2622,11 +2822,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-공부상 휴게음식점으로 등재되어 있음. -근린생활시설 중 점포로 식당으로 이용중이나 현재 휴업인 것으로 보임."
  },
  {
   "id": "incheon-2025타경510547-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경510547",
   "itemNo": "1",
   "category": "다세대",
@@ -2641,6 +2843,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 3567200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 42.12,
   "areaLand": null,
   "photoUrl": null,
@@ -2667,11 +2871,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-본건 외벽에 '엄지빌라 가동'으로 기재됨."
  },
  {
   "id": "incheon-2025타경924-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경924",
   "itemNo": "1",
   "category": "기타",
@@ -2686,6 +2892,8 @@
   "saleTime": "10:00",
   "courtRoom": "제219호법정",
   "deposit": 3467500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 132.6,
   "areaLand": null,
   "photoUrl": null,
@@ -2712,11 +2920,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-일괄매각 -토지는 지분매각임. -본건 토지는 2인의 구분소유적 공유토지로 조사(공유자인 이종한으로부터 구두확인)되었고, 법정지상권 성립여부는 불분명함. -본건 토지상에는 위 대상건물(통칭45호) 이외에, 본건 토지 공유자인 이종한 소유의 별도 등기된 건축물 3개호(통칭 38호,39호,46호)가 소재함. -대상건물 옥상에 콘크리트 벽과 유리창 지붕이 있는 옥탑방이 있음(옥탑방이 감정평가에 포함되었고 그 가치는 0원이라고함). -일반건축물대장상 위반건축물로 등재되어 있음(옥탑방이 위반건축물이라고 함)."
  },
  {
   "id": "incheon-2023타경519799-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2023타경519799",
   "itemNo": "1",
   "category": "오피스텔",
@@ -2731,6 +2941,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 1482300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -2777,11 +2989,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1.건축법상 사용승인을 받지 않은 건물로서 건축물대장이 부존재하며 건축허가 내역상 오피스텔임. 2.대지권 미등기이며, 대지권 유무는 알 수 없음. 최저매각가격에 대지권가격이 포함됨. 대지권취득과 등기여부는 매수인의 책임과 부담으로 함(대지권 관련 미추홀구로부터 '대지권정보부존재' 회신 있음). 3.미완성상태의 추가공사가 필요하나 중지된 상태이며 그 공정정도를 감안하여 평가하였음. 4.급.배수 배관설비 및 위생설비, 승강기 설비, 소환전 설비, 도시가스, 난방설비 등 설치(예정포함) 또는 연결 중으로 건물 내.외 추가적인 마무리 작업이 필요한 상태임. 5.출입구가 봉쇄되어 있고 '유치권행사중 출입금지' 표시가 부착되어 있음. 6. 특별매각조건 매수신청보증금 최저매각가격의 20%"
  },
  {
   "id": "incheon-2023타경519799-2",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2023타경519799",
   "itemNo": "2",
   "category": "오피스텔",
@@ -2796,6 +3010,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 1482300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -2842,11 +3058,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1.건축법상 사용승인을 받지 않은 건물로서 건축물대장이 부존재하며 건축허가 내역상 오피스텔임. 2.대지권 미등기이며, 대지권 유무는 알 수 없음. 최저매각가격에 대지권가격이 포함됨. 대지권취득과 등기여부는 매수인의 책임과 부담으로 함(대지권 관련 미추홀구로부터 '대지권정보부존재' 회신 있음). 3.미완성상태의 추가공사가 필요하나 중지된 상태이며 그 공정정도를 감안하여 평가하였음. 4.급.배수 배관설비 및 위생설비, 승강기 설비, 소환전 설비, 도시가스, 난방설비 등 설치(예정포함) 또는 연결 중으로 건물 내.외 추가적인 마무리 작업이 필요한 상태임. 5.출입구가 봉쇄되어 있고 '유치권행사중 출입금지' 표시가 부착되어 있음. 6.특별매각조건 매수신청보증금 최저매각가격의 20%"
  },
  {
   "id": "incheon-2023타경519799-3",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2023타경519799",
   "itemNo": "3",
   "category": "오피스텔",
@@ -2861,6 +3079,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 1087000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -2907,11 +3127,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1.건축법상 사용승인을 받지 않은 건물로서 건축물대장이 부존재하며 건축허가 내역상 오피스텔임. 2.대지권 미등기이며, 대지권 유무는 알 수 없음. 최저매각가격에 대지권가격이 포함됨. 대지권취득과 등기여부는 매수인의 책임과 부담으로 함(대지권 관련 미추홀구로부터 '대지권정보부존재' 회신 있음). 3.미완성상태의 추가공사가 필요하나 중지된 상태이며 그 공정정도를 감안하여 평가하였음. 4.급.배수 배관설비 및 위생설비, 승강기 설비, 소환전 설비, 도시가스, 난방설비 등 설치(예정포함) 또는 연결 중으로 건물 내.외 추가적인 마무리 작업이 필요한 상태임. 5.출입구가 봉쇄되어 있고 '유치권행사중 출입금지' 표시가 부착되어 있음. 6.특별매각조건 매수신청보증금 최저매각가격의 20%"
  },
  {
   "id": "incheon-2023타경519799-4",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2023타경519799",
   "itemNo": "4",
   "category": "오피스텔",
@@ -2926,6 +3148,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 1391700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -2972,11 +3196,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1.건축법상 사용승인을 받지 않은 건물로서 건축물대장이 부존재하며 건축허가 내역상 오피스텔임. 2.대지권 미등기이며, 대지권 유무는 알 수 없음. 최저매각가격에 대지권가격이 포함됨. 대지권취득과 등기여부는 매수인의 책임과 부담으로 함(대지권 관련 미추홀구로부터 '대지권정보부존재' 회신 있음). 3.미완성상태의 추가공사가 필요하나 중지된 상태이며 그 공정정도를 감안하여 평가하였음. 4.급.배수 배관설비 및 위생설비, 승강기 설비, 소환전 설비, 도시가스, 난방설비 등 설치(예정포함) 또는 연결 중으로 건물 내.외 추가적인 마무리 작업이 필요한 상태임. 5.출입구가 봉쇄되어 있고 '유치권행사중 출입금지' 표시가 부착되어 있음. 6.특별매각조건 매수신청보증금 최저매각가격의 20%"
  },
  {
   "id": "incheon-2023타경519799-5",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2023타경519799",
   "itemNo": "5",
   "category": "오피스텔",
@@ -2991,6 +3217,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 1202300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -3037,11 +3265,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1.건축법상 사용승인을 받지 않은 건물로서 건축물대장이 부존재하며 건축허가 내역상 오피스텔임. 2.대지권 미등기이며, 대지권 유무는 알 수 없음. 최저매각가격에 대지권가격이 포함됨. 대지권취득과 등기여부는 매수인의 책임과 부담으로 함(대지권 관련 미추홀구로부터 '대지권정보부존재' 회신 있음). 3.미완성상태의 추가공사가 필요하나 중지된 상태이며 그 공정정도를 감안하여 평가하였음. 4.급.배수 배관설비 및 위생설비, 승강기 설비, 소환전 설비, 도시가스, 난방설비 등 설치(예정포함) 또는 연결 중으로 건물 내.외 추가적인 마무리 작업이 필요한 상태임. 5.출입구가 봉쇄되어 있고 '유치권행사중 출입금지' 표시가 부착되어 있음. 6.특별매각조건 매수신청보증금 최저매각가격의 20%"
  },
  {
   "id": "incheon-2023타경530659-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2023타경530659",
   "itemNo": "1",
   "category": "토지",
@@ -3056,6 +3286,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 4201100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 1319,
   "photoUrl": null,
@@ -3077,11 +3309,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "- 지분매각 - 공유자 우** 신고는 1회에 한하여 행사할 수 있음. - 지적도상 맹지이며 남동측 본건 일부를 통행하는 도로가 존재함(감정평가서 참조). - 본 건은 임야로 목적물까지 임도가 개설되어 있어 차량으로 접근이 가능하며 목록 1,2의 일부가 임도로 사용중임(현황조사 보고서 참조)."
  },
  {
   "id": "incheon-2023타경530659-2",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2023타경530659",
   "itemNo": "2",
   "category": "토지",
@@ -3096,6 +3330,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 3666000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 1151,
   "photoUrl": null,
@@ -3117,11 +3353,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "- 지분매각 - 공유자 우** 신고는 1회에 한하여 행사할 수 있음. - 지적도상 맹지이며 남동측 본건 일부를 통행하는 도로가 존재함(감정평가서 참조). - 본 건은 임야로 목적물까지 임도가 개설되어 있어 차량으로 접근이 가능하며 목록 1,2의 일부가 임도로 사용중임(현황조사 보고서 참조)."
  },
  {
   "id": "incheon-2024타경13335-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2024타경13335",
   "itemNo": "1",
   "category": "오피스텔",
@@ -3136,6 +3374,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 241538400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 529.4,
   "areaLand": null,
   "photoUrl": null,
@@ -3157,11 +3397,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "- 일괄매각. 제시외 건물 포함 - 본건 1목록 부동산에는 5층 건물이 소재하며, 일부는 병원 주차장으로 사용되고 있음. - 본건 2목록 부동산(5층 건물) 전부를 소유자가 병원(연세나오미 의원)을 운영하기 위해 점유 사용하고 있음. (현황조사보고서 참조)"
  },
  {
   "id": "incheon-2024타경14772-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2024타경14772",
   "itemNo": "1",
   "category": "상가",
@@ -3176,6 +3418,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 10495800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -3202,11 +3446,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "집합건축물대장의 용도는 제1종근린생활시설(치과의원)이나 현재 공실 상태임.(감정평가서 참조)"
  },
  {
   "id": "incheon-2024타경16846-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2024타경16846",
   "itemNo": "1",
   "category": "상가",
@@ -3221,6 +3467,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 10708500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -3252,11 +3500,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "이마트24 편의점이 입점.(현황조사서)"
  },
  {
   "id": "incheon-2024타경3567-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2024타경3567",
   "itemNo": "1",
   "category": "상가",
@@ -3271,6 +3521,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 17798600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -3307,11 +3559,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "1. 1층 115호~121호를 경계구분 없이 하나의 점포(방이옥 청라점)로 사용중 2. 위 각 구분점포간의 경계벽 및 경계표지의 부존재가 일시적이고, 집합건축물대장에 의한 복원이 가능하고 용이하므로 매각함."
  },
  {
   "id": "incheon-2024타경4409-3",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2024타경4409",
   "itemNo": "3",
   "category": "오피스텔",
@@ -3326,6 +3580,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 5364800,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -3367,11 +3623,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "특별매각조건 매수신청보증금 최저매각가격의 20%"
  },
  {
   "id": "incheon-2024타경537756-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2024타경537756",
   "itemNo": "1",
   "category": "다세대",
@@ -3386,6 +3644,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 3910200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -3412,11 +3672,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "출입문에 아래층 메모(누수로 벽지 등 훼손이 심하니 이 집 관계자는 연락달라는 내용)등 부착되어 있음(2025.12.26.자 현황조사보고서 참조)."
  },
  {
   "id": "incheon-2024타경545641-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2024타경545641",
   "itemNo": "1",
   "category": "단독다가구",
@@ -3431,6 +3693,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 1524700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -3452,11 +3716,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "- 지분매각 - 공유자 우** 신고는 1회에 한하여 행사할 수 있음. - 일괄매각. 제시 외 건물 포함. - 토지는 지적도상 맹지상태로써 인접필지를 통해 출입해야 함. - 본 건 건물 1층과 2층에 제시 외 건물 소재하나 토지에 미치는 영향은 별무함. 지상에 소재하는 샌드위치판넬조 차양은 본건에 포함하여 평가함(감정평가서 참조)."
  },
  {
   "id": "incheon-2024타경552021-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2024타경552021",
   "itemNo": "1",
   "category": "토지",
@@ -3471,6 +3737,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 53934200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 1715,
   "photoUrl": null,
@@ -3492,11 +3760,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "- 일괄매각 - 농지취득자격증명 필요함(미제출시 매수보증금 반환하지 않음). - 목록2 토지는 지적도상 맹지이나, 목록1(남동구 운연동 103-1)을 통하여 출입 가능함(감정평가서 참조). - 비닐하우스 1개동 소재, 매각대상에서 제외(감정평가서 참조). - 2026.10.19. 주식회사 드림팩토리그룹으로부터 315,000,000원에 대하여 유치권신고서가 제출 되었으나 그 성립여부는 불분명함(2026.10.19.자 추가 기재)"
  },
  {
   "id": "incheon-2024타경554669-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2024타경554669",
   "itemNo": "1",
   "category": "기타",
@@ -3511,6 +3781,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 589200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -3567,11 +3839,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2024타경567849-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2024타경567849",
   "itemNo": "1",
   "category": "오피스텔",
@@ -3586,6 +3860,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 6585600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -3612,11 +3888,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-대지권 미등기이나 매각목적물 및 평가에 포함됨. 인천 서구청으로부터 본건 부동산에 대한 취득세가 납부되었다는 사실조회회신 있음(2026.6.4.자)."
  },
  {
   "id": "incheon-2024타경581975-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2024타경581975",
   "itemNo": "1",
   "category": "상가",
@@ -3631,6 +3909,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 103098700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -3652,11 +3932,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "- 일괄매각, 제시 외 건물 매각에 포함. - 본건 옥탑층에 소재하는 '계단실'은 연면적에서 제외된 부분이므로 제시 외 건물로 평가하였음(제시 외 건물 계단실 약 15.25㎡). - 건물의 3층 및 4층은 일반건축물 대장 도면상 4개호로 표기되어 있으나, 현재 3층 8개호, 4층(유리문 시건장치로 인한 미확인)으로 탐문되었음. (감정평가서 참조)"
  },
  {
   "id": "incheon-2025타경1111-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경1111",
   "itemNo": "1",
   "category": "다세대",
@@ -3671,6 +3953,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 3528000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 36.87,
   "areaLand": null,
   "photoUrl": null,
@@ -3692,11 +3976,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경466-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경466",
   "itemNo": "1",
   "category": "다세대",
@@ -3711,6 +3997,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 1344600,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
@@ -3747,11 +4035,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경507357-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경507357",
   "itemNo": "1",
   "category": "기타",
@@ -3766,6 +4056,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 8907700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 122.4,
   "areaLand": null,
   "photoUrl": null,
@@ -3797,11 +4089,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경507534-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경507534",
   "itemNo": "1",
   "category": "아파트",
@@ -3816,6 +4110,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 4047400,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 46.05,
   "areaLand": null,
   "photoUrl": null,
@@ -3842,11 +4138,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "제시외 건물(발코니 등 판넬조 판넬지붕 약4㎡) 포함 특별매각조건 매수신청보증금 최저매각가격의 20%"
  },
  {
   "id": "incheon-2025타경507658-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경507658",
   "itemNo": "1",
   "category": "다세대",
@@ -3861,6 +4159,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 941200,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 25.12,
   "areaLand": null,
   "photoUrl": null,
@@ -3902,11 +4202,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "집합건출물대장상 '위반건축물(무단증축)' 등재"
  },
  {
   "id": "incheon-2025타경507976-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경507976",
   "itemNo": "1",
   "category": "상가",
@@ -3921,6 +4223,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 8307500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 28.585,
   "areaLand": null,
   "photoUrl": null,
@@ -3952,11 +4256,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "-공부상 근린생활시설로 휴게음식점이나 현황은 네일으로 이용중에 있음.(감정평가서 참고) -'MIMIMOOD NAIL PEDI STUDIO'가 영업 중이었음.(현황조사서 참고)"
  },
  {
   "id": "incheon-2025타경508705-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경508705",
   "itemNo": "1",
   "category": "오피스텔",
@@ -3971,6 +4277,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 3121300,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 29.805,
   "areaLand": null,
   "photoUrl": null,
@@ -4002,11 +4310,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경508802-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경508802",
   "itemNo": "1",
   "category": "기타",
@@ -4021,6 +4331,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 7717500,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 55.27,
   "areaLand": null,
   "photoUrl": null,
@@ -4047,11 +4359,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경508950-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경508950",
   "itemNo": "1",
   "category": "오피스텔",
@@ -4066,6 +4380,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 33075000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 46.905,
   "areaLand": null,
   "photoUrl": null,
@@ -4087,11 +4403,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "- 대지권 미등기이나 매각목적물 및 감정평가에 포함됨(최초 수분양자가 대지 지분이 포함된 분양대금을 완납하였고 이를 양수 하였다는 소명자료가 제출됨). - 공부상 '제2종 근린생활시설(사무소)'이고 현황은 '경성김밥'으로 사용 중이라고 기재 되어있으나(감정평가서 참조), 임차인 권리신고에 의하면 2024. 12. 10.자로 폐업신고 되었음. - 현재 영업하지 않고 내부에 식당 비품이 그대로 있음(현황조사보고서 참조)."
  },
  {
   "id": "incheon-2025타경509347-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경509347",
   "itemNo": "1",
   "category": "아파트",
@@ -4106,6 +4424,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 4165000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 45,
   "areaLand": null,
   "photoUrl": null,
@@ -4127,11 +4447,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경509428-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경509428",
   "itemNo": "1",
   "category": "오피스텔",
@@ -4146,6 +4468,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 31899000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 46.8,
   "areaLand": null,
   "photoUrl": null,
@@ -4167,11 +4491,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "본건은 공부상 지층이나, 수변공원의 보행자 도로를 통하여 직접 출입이 가능한 상태임. (감정평가서 참조)"
  },
  {
   "id": "incheon-2025타경509494-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경509494",
   "itemNo": "1",
   "category": "다세대",
@@ -4186,6 +4512,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 7742000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 58.39,
   "areaLand": null,
   "photoUrl": null,
@@ -4207,11 +4535,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경509605-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경509605",
   "itemNo": "1",
   "category": "오피스텔",
@@ -4226,6 +4556,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 5978000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 32.85,
   "areaLand": null,
   "photoUrl": null,
@@ -4247,11 +4579,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경509774-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경509774",
   "itemNo": "1",
   "category": "다세대",
@@ -4266,6 +4600,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 10290000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 60.01,
   "areaLand": null,
   "photoUrl": null,
@@ -4287,11 +4623,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "등기사항전부증명서상 용도는 업무시설, 집합건축물대장 표제부상 용도는 도시형생활주택(단지형연립)이고, 집합건축물대장 전유부상 용도는 단지형연립주택임."
  },
  {
   "id": "incheon-2025타경510160-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경510160",
   "itemNo": "1",
   "category": "상가",
@@ -4306,6 +4644,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 21070000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 200.54,
   "areaLand": null,
   "photoUrl": null,
@@ -4327,11 +4667,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경510307-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경510307",
   "itemNo": "1",
   "category": "상가",
@@ -4346,6 +4688,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 8232000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 44.72,
   "areaLand": null,
   "photoUrl": null,
@@ -4367,11 +4711,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경510486-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경510486",
   "itemNo": "1",
   "category": "다세대",
@@ -4386,6 +4732,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 9408000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 66.57,
   "areaLand": null,
   "photoUrl": null,
@@ -4407,11 +4755,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경935-1",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경935",
   "itemNo": "1",
   "category": "오피스텔",
@@ -4426,6 +4776,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 7301000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 23.46,
   "areaLand": null,
   "photoUrl": null,
@@ -4447,11 +4799,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "본 건 101호, 102호는 ㈜배꼽아리랑이 한 점포로 사용하고 있음(감정평가서 사진 참조)."
  },
  {
   "id": "incheon-2025타경935-2",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경935",
   "itemNo": "2",
   "category": "오피스텔",
@@ -4466,6 +4820,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 7301000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 23.46,
   "areaLand": null,
   "photoUrl": null,
@@ -4487,11 +4843,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": "본 건 101호, 102호는 ㈜배꼽아리랑이 한 점포로 사용하고 있음(감정평가서 사진 참조)."
  },
  {
   "id": "incheon-2025타경935-3",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경935",
   "itemNo": "3",
   "category": "오피스텔",
@@ -4506,6 +4864,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 7301000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 23.46,
   "areaLand": null,
   "photoUrl": null,
@@ -4527,11 +4887,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경935-4",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경935",
   "itemNo": "4",
   "category": "오피스텔",
@@ -4546,6 +4908,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 14357000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 42.78,
   "areaLand": null,
   "photoUrl": null,
@@ -4567,11 +4931,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경935-5",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경935",
   "itemNo": "5",
   "category": "다세대",
@@ -4586,6 +4952,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 5145000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 27.03,
   "areaLand": null,
   "photoUrl": null,
@@ -4607,11 +4975,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경935-6",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경935",
   "itemNo": "6",
   "category": "다세대",
@@ -4626,6 +4996,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 5145000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 27.03,
   "areaLand": null,
   "photoUrl": null,
@@ -4647,11 +5019,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경935-7",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경935",
   "itemNo": "7",
   "category": "다세대",
@@ -4666,6 +5040,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 5145000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 27.03,
   "areaLand": null,
   "photoUrl": null,
@@ -4687,11 +5063,13 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  },
  {
   "id": "incheon-2025타경935-8",
   "court": "인천지방법원",
+  "courtCode": "B000240",
   "caseNo": "2025타경935",
   "itemNo": "8",
   "category": "다세대",
@@ -4706,6 +5084,8 @@
   "saleTime": "10:00",
   "courtRoom": "219호법정",
   "deposit": 12887000,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 81.14,
   "areaLand": null,
   "photoUrl": null,
@@ -4727,6 +5107,7 @@
     "result": "유찰"
    }
   ],
+  "historySource": "estimated",
   "specialNote": null
  }
 ]
