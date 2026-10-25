@@ -87,6 +87,32 @@ describe("shared row validation", () => {
 });
 
 describe("dataset snapshot consistency", () => {
+  it("accepts legacy metadata omitting empty regions while preserving actual counts", async () => {
+    serve(() => ({ ...meta(), countsByRegion: { seoul: 1, jeonbuk: 0 } }));
+    const { data, notice } = await mountLoader();
+    await settle();
+    expect(data.render().status).toBe("ready");
+    expect(data.render().items.map((entry) => entry.id)).toEqual([item.id]);
+    expect(notice.render().snapshotMismatch).toBe(false);
+  });
+
+  it("rejects an omitted region when its actual file contains items", async () => {
+    serve(() => ({ ...meta(), countsByRegion: { gyeonggi: 1 } }));
+    const { data, notice } = await mountLoader();
+    await settle();
+    expect(data.render().status).toBe("error");
+    expect(notice.render().snapshotMismatch).toBe(true);
+  });
+
+  it("treats explicit zero and omitted zero as the same metadata snapshot", async () => {
+    let reads = 0;
+    serve(() => reads++ === 0 ? meta() : { ...meta(), countsByRegion: { seoul: 1 } });
+    const { data, notice } = await mountLoader();
+    await settle();
+    expect(data.render().status).toBe("ready");
+    expect(notice.render().snapshotMismatch).toBe(false);
+  });
+
   it("preserves valid rows and reports losses without mistaking drops for a different snapshot", async () => {
     serve(() => meta(2), [item, { ...item, minPrice: -1 }]);
     const { data, notice } = await mountLoader();

@@ -27,7 +27,8 @@ export function assertRegionCounts(meta: Meta, counts: readonly number[]): void 
     counts.length !== REGIONS.length ||
     total !== meta.totalCount ||
     Object.values(meta.countsByRegion).reduce((sum, count) => sum + count, 0) !== meta.totalCount ||
-    REGIONS.some((region, i) => meta.countsByRegion[region.key] !== counts[i])
+    // 구형 meta는 0건 지역 키를 생략할 수 있다 — 실제 파일도 0건일 때만 같은 값이다.
+    REGIONS.some((region, i) => (meta.countsByRegion[region.key] ?? 0) !== counts[i])
   ) throw new SnapshotMismatchError();
 }
 
@@ -36,5 +37,5 @@ export function sameSnapshot(before: Meta, after: Meta): boolean {
   const keys = new Set([...Object.keys(before.countsByRegion), ...Object.keys(after.countsByRegion)]);
   return Date.parse(before.crawledAt) === Date.parse(after.crawledAt) &&
     before.totalCount === after.totalCount &&
-    [...keys].every((key) => before.countsByRegion[key] === after.countsByRegion[key]);
+    [...keys].every((key) => (before.countsByRegion[key] ?? 0) === (after.countsByRegion[key] ?? 0));
 }
