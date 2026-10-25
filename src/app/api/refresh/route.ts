@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { deriveStatus, type RunSummary } from "@/lib/refresh";
+import { buildMeta } from "@/lib/build-meta";
 
 // 수동 재수집(리셋) — 브라우저는 크롤러를 직접 돌릴 수 없다(앱은 정적 서빙, 크롤러는 Actions에만 있다).
 // 이 핸들러가 서버에서 workflow_dispatch를 대신 호출한다. 토큰은 서버 환경변수로만 존재하며
@@ -39,7 +40,8 @@ async function fetchRuns(): Promise<RunSummary[]> {
       html_url: string;
     }>;
   };
-  return (json.workflow_runs ?? []).map((r) => ({
+  if (!Array.isArray(json.workflow_runs)) throw new Error("GitHub run list missing");
+  return json.workflow_runs.map((r) => ({
     status: r.status,
     conclusion: r.conclusion,
     createdAt: r.created_at,
@@ -49,7 +51,9 @@ async function fetchRuns(): Promise<RunSummary[]> {
 
 export async function GET() {
   try {
-    return NextResponse.json(deriveStatus(await fetchRuns(), new Date(), dispatchToken() !== null));
+    return NextResponse.json(
+      deriveStatus(await fetchRuns(), new Date(), dispatchToken() !== null, buildMeta.crawledAt),
+    );
   } catch {
     return NextResponse.json({ error: "수집 상태를 확인하지 못했다" }, { status: 502 });
   }
@@ -65,7 +69,7 @@ export async function POST() {
   }
   let status;
   try {
-    status = deriveStatus(await fetchRuns(), new Date(), true);
+    status = deriveStatus(await fetchRuns(), new Date(), true, buildMeta.crawledAt);
   } catch {
     return NextResponse.json({ error: "수집 상태를 확인하지 못했다" }, { status: 502 });
   }
@@ -73,25 +77,35 @@ export async function POST() {
   if (status.state === "running") return NextResponse.json(status, { status: 409 });
   if (status.state === "cooldown") return NextResponse.json(status, { status: 429 });
 
-  const res = await fetch(`${API}/actions/workflows/${WORKFLOW}/dispatches`, {
-    method: "POST",
-    headers: {
-      Accept: "application/vnd.github+json",
-      "X-GitHub-Api-Version": "2022-11-28",
-      Authorization: `Bearer ${token}`,
-      "Content-Type": "application/json",
-    },
-    // quick = 경량 모드(창 7일·상세 생략). 실측 182초라 방문자가 기다릴 수 있는 범위다.
-    // 전량 모드(60분)는 주간 슬롯이 담당한다 — 리프레쉬가 그것을 대신하지 않는다.
-    body: JSON.stringify({ ref: "main", inputs: { mode: "quick" } }),
-  });
+  let res: Response;
+  try {
+    res = await fetch(`${API}/actions/workflows/${WORKFLOW}/dispatches`, {
+      method: "POST",
+      headers: {
+        Accept: "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
+      },
+      // quick = 경량 모드(창 7일·상세 생략). 실측 182초라 방문자가 기다릴 수 있는 범위다.
+      // 전량 모드(60분)는 주간 슬롯이 담당한다 — 리프레쉬가 그것을 대신하지 않는다.
+      body: JSON.stringify({ ref: "main", inputs: { mode: "quick" } }),
+    });
+  } catch {
+    // 응답 유실은 미실행의 증거가 아니다 — POST를 재전송하지 않고 상태 확인으로 돌아간다.
+    return NextResponse.json(
+      { outcome: "unknown", error: "실행 요청 결과를 확인하지 못했다" },
+      { status: 502 },
+    );
+  }
   if (!res.ok) {
     return NextResponse.json({ error: `실행 요청이 거부됐다(${res.status})` }, { status: 502 });
   }
-  // dispatch는 202만 주고 런 식별자를 주지 않는다. 목록에 잡히기까지 수 초 걸리므로 화면이 폴링해 잇는다.
+  // dispatch는 런 식별자를 주지 않는다. 목록에 잡히기까지 수 초 걸리므로 화면이 폴링해 잇는다.
   return NextResponse.json(
     {
       state: "running",
+      publishedAt: status.publishedAt,
       lastRunAt: new Date().toISOString(),
       cooldownUntil: null,
       runUrl: null,

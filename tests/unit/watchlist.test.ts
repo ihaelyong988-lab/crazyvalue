@@ -7,11 +7,16 @@ import {
   isOnboarded,
   markOnboarded,
   pushRecent,
+  readDiffCache,
+  refreshSnapshot,
+  removeWatch,
   resetAll,
+  restoreWatch,
   setPrefs,
   subscribePrefs,
   subscribeWatchState,
   toggleWatch,
+  writeDiffCache,
   type Prefs,
 } from "@/lib/watchlist";
 import type { AuctionItem } from "@/types/auction";
@@ -45,8 +50,8 @@ function shim(map: Map<string, string>, blockable: boolean) {
 }
 
 /** 타 탭 저장 모사 — storage 이벤트는 저장한 탭이 아닌 다른 탭에서만 발생한다(감사 2차 33). */
-function fireStorage(key: string | null): void {
-  for (const fn of [...listeners]) fn({ key } as unknown as StorageEvent);
+function fireStorage(key: string | null, storageArea?: Storage): void {
+  for (const fn of [...listeners]) fn({ key, storageArea } as unknown as StorageEvent);
 }
 
 beforeEach(() => {
@@ -154,6 +159,16 @@ describe("관심조건 저장과 홈 세션 미러(감사 2차 32)", () => {
 });
 
 describe("타 탭 변경 구독(감사 2차 33)", () => {
+  it("다른 탭의 세션 저장소 변경은 관심함에 반영하지 않는다", () => {
+    let visible = Object.keys(getWatchState().items);
+    subscribeWatchState(() => { visible = Object.keys(getWatchState().items); });
+    toggleWatch(mk({}));
+    fireStorage("crazyvalue.watchlist.v1", window.sessionStorage);
+    expect(visible).toEqual([]);
+    fireStorage("crazyvalue.watchlist.v1", window.localStorage);
+    expect(visible).toEqual(["t-1"]);
+  });
+
   it("관심함 키 변경만 통지하고 해제 후에는 통지하지 않는다", () => {
     const seen = vi.fn();
     const unsubscribe = subscribeWatchState(seen);
@@ -291,7 +306,7 @@ describe("스냅샷 형태 가드(감사 2차 35)", () => {
   });
 });
 
-describe("diffWatch — 재유찰·기일 변경·매각 종료", () => {
+describe("diffWatch — 재유찰·기일 변경·현재 목록 확인 불가", () => {
   const snapshot = { minPrice: 49_000_000, saleDate: "2026-08-01", failCount: 2 };
   it("최저가 인하 = 재유찰", () => {
     expect(diffWatch(snapshot, mk({ minPrice: 34_300_000, priceRatio: 0.343, failCount: 3 }))).toBe("재유찰");
@@ -299,11 +314,51 @@ describe("diffWatch — 재유찰·기일 변경·매각 종료", () => {
   it("기일만 바뀌면 기일 변경", () => {
     expect(diffWatch(snapshot, mk({ saleDate: "2026-08-15" }))).toBe("기일 변경");
   });
-  it("목록 소멸 = 매각 종료", () => {
-    expect(diffWatch(snapshot, undefined)).toBe("매각 종료");
+  it("목록 미포함은 실제 매각 결과를 단정하지 않는다", () => {
+    expect(diffWatch(snapshot, undefined)).toBe("현재 목록 확인 불가");
   });
   it("변화 없음 = null", () => {
     expect(diffWatch(snapshot, mk({}))).toBe(null);
+  });
+});
+
+describe("관심함 삭제·복구의 저장 결과", () => {
+  it("삭제 실패는 기존 항목과 변화 배지를 보존한다", () => {
+    toggleWatch(mk({}));
+    writeDiffCache({ "t-1": { diff: "재유찰", prevMinPrice: 70_000_000, prevSaleDate: "2026-08-01" } });
+    blockWrite = true;
+    expect(removeWatch("t-1")).toBe(false);
+    expect(getWatchState().items["t-1"]).toBeDefined();
+    expect(readDiffCache()["t-1"].diff).toBe("재유찰");
+  });
+
+  it("되돌리기 실패는 제거된 상태를 유지하고 재시도 시 원래 등록 정보를 복원한다", () => {
+    toggleWatch(mk({}), new Date("2026-07-20T00:00:00Z"));
+    const entry = getWatchState().items["t-1"];
+    expect(removeWatch("t-1")).toBe(true);
+    blockWrite = true;
+    expect(restoreWatch("t-1", entry)).toBe(false);
+    expect(getWatchState().items["t-1"]).toBeUndefined();
+    blockWrite = false;
+    expect(restoreWatch("t-1", entry)).toBe(true);
+    expect(getWatchState().items["t-1"]).toEqual(entry);
+  });
+
+  it("되돌리기는 다른 탭에서 다시 등록한 최신 항목을 덮어쓰지 않는다", () => {
+    toggleWatch(mk({}));
+    const old = getWatchState().items["t-1"];
+    removeWatch("t-1");
+    toggleWatch(mk({ minPrice: 34_300_000 }), new Date("2026-10-25T00:00:00Z"));
+    expect(restoreWatch("t-1", old)).toBe(true);
+    expect(getWatchState().items["t-1"].snapshot.minPrice).toBe(34_300_000);
+    expect(getWatchState().items["t-1"].addedAt).toBe("2026-10-25T00:00:00.000Z");
+  });
+
+  it("스냅샷 저장 실패는 직전 가격을 보존한다", () => {
+    toggleWatch(mk({}));
+    blockWrite = true;
+    expect(refreshSnapshot("t-1", mk({ minPrice: 34_300_000 }))).toBe(false);
+    expect(getWatchState().items["t-1"].snapshot.minPrice).toBe(49_000_000);
   });
 });
 

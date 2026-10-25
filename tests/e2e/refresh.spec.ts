@@ -34,7 +34,10 @@ async function mockRefresh(page: Page, body: Record<string, unknown>, postStatus
   });
 }
 
-const idle = { state: "idle", lastRunAt: "2026-08-01T00:00:00Z", cooldownUntil: null, runUrl: null };
+const idle = {
+  state: "idle", lastRunAt: "2026-08-01T00:00:00Z", cooldownUntil: null, runUrl: null,
+  lastConclusion: null, publishedAt: "2026-08-01T00:10:00Z",
+};
 
 test("홈 옆 리프레쉬 탭으로 이동한다", async ({ page }) => {
   await suppressOnboarding(page);
@@ -96,7 +99,7 @@ test("진행 중 — 남은 소요를 말하고 중복 실행을 막는다", asy
   await expect(page.getByRole("button", { name: "수집 중" })).toBeDisabled();
 });
 
-test("직전 실행 실패 — 조용히 넘어가지 않는다", async ({ page }) => {
+test("직전 실행 실패 — 실패와 게시된 데이터를 구별한다", async ({ page }) => {
   await suppressOnboarding(page);
   // 실측 사례: 세션 GET 거부로 런이 죽었고, 폴링은 running에서 idle로 돌아갈 뿐이었다.
   await mockRefresh(page, {
@@ -105,10 +108,13 @@ test("직전 실행 실패 — 조용히 넘어가지 않는다", async ({ page 
     cooldownUntil: null,
     runUrl: "https://github.com/o/r/actions/runs/3",
     lastConclusion: "failure",
+    publishedAt: "2026-08-02T00:15:00Z",
   });
   await page.goto("/refresh");
 
-  await expect(page.getByText(/직전 수집이 완료되지 못해/)).toBeVisible();
+  await expect(page.getByText(/직전 실행이 정상 완료되지 않았으며/)).toBeVisible();
+  await expect(page.getByText(/게시된 데이터는 화면 상단의 수집 시각으로 확인한다/)).toBeVisible();
+  await expect(page.getByText(/데이터는 직전 수집분 그대로다/)).toHaveCount(0);
   await expect(page.getByRole("button", { name: "지금 다시 수집" })).toBeEnabled();
 });
 

@@ -20,26 +20,35 @@ export interface MetaState {
   failed: boolean;
   /** 형식 오류로 제외한 물건 수(감사 36). */
   dropped: number;
+  /** 파일·meta 또는 빌드 기준 시각이 달라 새로고침/재시도가 필요한 상태. */
+  snapshotMismatch: boolean;
 }
 
-let state: MetaState = { meta: null, failed: false, dropped: 0 };
+let state: MetaState = { meta: null, failed: false, dropped: 0, snapshotMismatch: false };
 const listeners = new Set<(s: MetaState) => void>();
+let bakedAt: number | null = null;
+let dataMismatch = false;
+
+function hasSnapshotMismatch(meta = state.meta): boolean {
+  return dataMismatch || (meta !== null && bakedAt !== null && Date.parse(meta.crawledAt) !== bakedAt);
+}
 
 function publish(patch: Partial<MetaState>): void {
   state = { ...state, ...patch };
   for (const notify of listeners) notify(state);
 }
 
-// 필수 4필드만 검사한다 — newCount를 비롯한 optional 필드는 옛 meta.json(서비스워커 캐시)에 없고,
-// 여기에 더하면 재방문자의 물건 화면이 통째로 로드 실패로 떨어진다. 소비처는 값 부재를 표시로 흡수한다.
+// 필수 필드의 값까지 검사한다. optional 필드는 없어도 기존 산출물을 수용한다.
 function isMeta(v: unknown): v is Meta {
+  if (typeof v !== "object" || v === null || Array.isArray(v)) return false;
   const m = v as Meta;
+  const isCount = (n: unknown) => typeof n === "number" && Number.isSafeInteger(n) && n >= 0;
   return (
-    !!m &&
-    typeof m.crawledAt === "string" &&
-    typeof m.nextUpdateAt === "string" &&
-    typeof m.totalCount === "number" &&
-    typeof m.countsByRegion === "object"
+    typeof m.crawledAt === "string" && Number.isFinite(Date.parse(m.crawledAt)) &&
+    typeof m.nextUpdateAt === "string" && Number.isFinite(Date.parse(m.nextUpdateAt)) &&
+    isCount(m.totalCount) &&
+    typeof m.countsByRegion === "object" && m.countsByRegion !== null && !Array.isArray(m.countsByRegion) &&
+    Object.values(m.countsByRegion).every(isCount)
   );
 }
 
@@ -62,7 +71,7 @@ export async function readMeta(force = false): Promise<Meta> {
     run.then(
       (meta) => {
         inflight = null;
-        publish({ meta, failed: false });
+        publish({ meta, failed: false, snapshotMismatch: hasSnapshotMismatch(meta) });
       },
       () => {
         inflight = null; // 실패 시 초기화 — 다음 시도가 새 요청을 낸다
@@ -76,6 +85,20 @@ export async function readMeta(force = false): Promise<Meta> {
 /** 손상 항목 제외 결과 보고(감사 36) — 고지는 기준일 바 1곳에서만 한다(1정보 1표시). */
 export function reportDropped(count: number): void {
   if (count !== state.dropped) publish({ dropped: count });
+}
+
+/** DataDateNotice가 서버에서 받은 작은 시각 값만 등록한다 — 원본 JSON을 클라이언트에 import하지 않는다. */
+export function reportBuildSnapshot(crawledAt: string): void {
+  const parsed = Date.parse(crawledAt);
+  if (!Number.isFinite(parsed)) return;
+  bakedAt = parsed;
+  publish({ snapshotMismatch: hasSnapshotMismatch() });
+}
+
+/** 재시도 성공 때 파일 불일치를 해제해도 빌드와 다른 시각 안내는 유지한다. */
+export function reportSnapshotMismatch(mismatch: boolean): void {
+  dataMismatch = mismatch;
+  publish({ snapshotMismatch: hasSnapshotMismatch() });
 }
 
 /**

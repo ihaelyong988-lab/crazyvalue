@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 // 단일 데이터 계약(기획안 §5.3) — 목데이터(Phase 1)와 실데이터(Phase 3)가 공유한다.
-// 화면 코드는 데이터 출처를 모른다. 필드 추가·변경은 이 파일에서만 한다(§13 규칙 6).
+// 출처 근거도 이 계약으로 전달한다. 필드 추가·변경은 이 파일에서만 한다(§13 규칙 6).
 
 import { CATEGORIES } from "./catalog";
 import { CrawlDiagnosticsSchema } from "./crawl-diagnostics";
@@ -10,6 +10,8 @@ export { CATEGORIES, REGIONS, regionNameByKey, regionKeyByName } from "./catalog
 export type { Category } from "./catalog";
 
 export const CategorySchema = z.enum(CATEGORIES);
+export const EvidenceSourceSchema = z.enum(["observed", "estimated", "unknown"]);
+export type EvidenceSource = z.infer<typeof EvidenceSourceSchema>;
 
 // 외부 데이터 불신 원칙(§13 규칙 1): URL은 https 검증 통과 후에만 src·href에 쓴다.
 const HttpsUrl = z
@@ -26,8 +28,9 @@ export type HistoryEntry = z.infer<typeof HistoryEntrySchema>;
 
 export const AuctionItemSchema = z
   .object({
-    id: z.string().min(1), // "{법원코드}-{사건번호}-{물건번호}"
+    id: z.string().min(1), // "{시도키}-{사건번호}-{물건번호}" — 기존 URL·관심함 호환을 유지한다.
     court: z.string().min(1),
+    courtCode: z.string().min(1).optional(), // 원천 boCd 보존; 기존 id·관심함 키는 그대로 유지한다.
     caseNo: z.string().min(1),
     itemNo: z.string().min(1),
     category: CategorySchema,
@@ -42,11 +45,15 @@ export const AuctionItemSchema = z
     saleTime: z.string(),
     courtRoom: z.string(),
     deposit: z.number().int().nonnegative(),
+    // 비율의 출처다. 금액은 현재 최저가×비율을 100원 단위로 올린 계산값이며 관측 금액이 아니다.
+    depositRate: z.number().gt(0).lte(100).optional(),
+    depositSource: EvidenceSourceSchema.optional(),
     areaBuilding: z.number().nullable(),
     areaLand: z.number().nullable(),
     photoUrl: HttpsUrl.nullable(),
     detailUrl: HttpsUrl,
     history: z.array(HistoryEntrySchema).min(1),
+    historySource: EvidenceSourceSchema.optional(), // 없으면 unknown; 과거 자료를 관측으로 추정하지 않는다.
     specialNote: z.string().nullable(), // 자연인 성명은 수집 단계에서 마스킹(§13 규칙 2)
   })
   .superRefine((item, ctx) => {

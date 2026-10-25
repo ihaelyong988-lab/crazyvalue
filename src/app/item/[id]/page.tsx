@@ -3,9 +3,9 @@ import { notFound } from "next/navigation";
 import { ExternalLink, MapPin } from "lucide-react";
 import { findItem, loadAllItems } from "@/lib/data-server";
 import { COURT_ORIGIN_URL, siteCourtLabel, splitCaseNo } from "@/lib/court-origin";
-import { discountPct, formatArea, formatDateKr, formatDday, dday, formatKrw } from "@/lib/format";
+import { discountPct, formatArea, formatDateKr, formatKrw, todaySeoul } from "@/lib/format";
 import { PriceStructure } from "@/components/PriceStructure";
-import { HistoryTimeline } from "@/components/HistoryTimeline";
+import { ItemHistory, ItemSchedule } from "@/components/ItemDates";
 import { WatchToggle } from "@/components/WatchToggle";
 import { ShareButton } from "@/components/ShareButton";
 import { CopyCaseNo } from "@/components/CopyCaseNo";
@@ -43,7 +43,7 @@ export default async function ItemPage({ params }: { params: Promise<{ id: strin
   const item = await findItem(decodeURIComponent(id));
   if (!item) notFound();
 
-  const days = dday(item.saleDate);
+  const initialToday = todaySeoul();
   const mapQuery = encodeURIComponent(item.address);
   const caseParts = splitCaseNo(item.caseNo);
 
@@ -68,26 +68,7 @@ export default async function ItemPage({ params }: { params: Promise<{ id: strin
 
       <PriceStructure item={item} />
 
-      <section aria-label="기일 정보" className="rounded-xl border border-line bg-white p-4">
-        <div className="flex items-baseline justify-between">
-          <span className="text-[13px] text-ink/70">매각기일</span>
-          <span className="tabular-nums font-semibold">
-            {formatDateKr(item.saleDate)} {item.saleTime}
-          </span>
-        </div>
-        <div className="mt-1 flex items-baseline justify-between">
-          <span className="text-[13px] text-ink/70">남은 기간</span>
-          <span
-            className={`tabular-nums font-bold ${days >= 0 && days <= 7 ? "text-accent" : ""}`}
-          >
-            {formatDday(days)}
-          </span>
-        </div>
-        <div className="mt-1 flex items-baseline justify-between">
-          <span className="text-[13px] text-ink/70">장소</span>
-          <span>{item.courtRoom}</span>
-        </div>
-      </section>
+      <ItemSchedule saleDate={item.saleDate} saleTime={item.saleTime} courtRoom={item.courtRoom} initialToday={initialToday} />
 
       <section aria-label="기본 정보" className="rounded-xl border border-line bg-white p-4">
         <h2 className="text-[13px] font-semibold text-ink/70">기본 정보</h2>
@@ -140,11 +121,12 @@ export default async function ItemPage({ params }: { params: Promise<{ id: strin
         </section>
       )}
 
-      <HistoryTimeline
+      <ItemHistory
         history={item.history}
         saleDate={item.saleDate}
         minPrice={item.minPrice}
-        days={days}
+        initialToday={initialToday}
+        historySource={item.historySource}
       />
 
       {/* 법원 원문 도달 3종(AGENTS §2-2 조문 6) — ①원문 화면 링크 ②번호 복사 ③찾는 방법 1줄.

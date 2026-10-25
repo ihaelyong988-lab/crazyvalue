@@ -19,7 +19,7 @@ export const SORT_OPTIONS: { key: SortKey; label: string }[] = [
   { key: "date", label: "기일 임박순" },
   { key: "discount", label: "할인율 높은순" },
   { key: "price", label: "최저가 낮은순" },
-  { key: "new", label: "신규순" },
+  { key: "new", label: "최근 유찰일순" },
 ];
 
 export interface Filters {
@@ -68,12 +68,19 @@ export const EMPTY_FILTERS: Filters = {
 
 const CATEGORY_SET: ReadonlySet<string> = new Set<string>(CATEGORIES);
 const RESULT_SET: ReadonlySet<string> = new Set(["유찰", "변경", "신건"]);
+const EVIDENCE_SOURCE_SET: ReadonlySet<string> = new Set(["observed", "estimated", "unknown"]);
 
 const isText = (v: unknown): v is string => typeof v === "string" && v.length > 0;
 const isPosInt = (v: unknown): v is number =>
   typeof v === "number" && Number.isInteger(v) && v > 0;
-const isHttps = (v: unknown): v is string =>
-  typeof v === "string" && v.startsWith("https://");
+const isHttps = (v: unknown): v is string => {
+  if (typeof v !== "string" || !v.startsWith("https://")) return false;
+  try {
+    return new URL(v).protocol === "https:";
+  } catch {
+    return false;
+  }
+};
 const isNumberOrNull = (v: unknown): v is number | null =>
   v === null || (typeof v === "number" && Number.isFinite(v));
 
@@ -94,6 +101,14 @@ export function isValidAuctionItem(value: unknown): value is AuctionItem {
   }
   if (typeof it.saleTime !== "string" || typeof it.courtRoom !== "string") return false;
   if (it.specialNote !== null && typeof it.specialNote !== "string") return false;
+  // 확장 필드는 기존 파일에 없을 수 있다. 값이 있으면 스키마와 같은 계약을 적용한다.
+  if (it.courtCode !== undefined && !isText(it.courtCode)) return false;
+  for (const source of [it.historySource, it.depositSource]) {
+    if (source !== undefined && !EVIDENCE_SOURCE_SET.has(source as string)) return false;
+  }
+  if (it.depositRate !== undefined && (
+    typeof it.depositRate !== "number" || !(it.depositRate > 0) || it.depositRate > 100
+  )) return false;
   if (!CATEGORY_SET.has(it.category as string)) return false;
   if (!isValidDateOnly(it.saleDate)) return false; // 존재하지 않는 기일 폐기(감사 37)
   if (!isNumberOrNull(it.areaBuilding) || !isNumberOrNull(it.areaLand)) return false;
@@ -148,7 +163,7 @@ export function applyFilters(items: AuctionItem[], f: Filters): AuctionItem[] {
   return items.filter((i) => matchesFilters(i, f));
 }
 
-/** 마지막(=2회 도달 이후 최근) 유찰 일자 — 신규순 정렬 근거 */
+/** 마지막 유찰 이력 날짜 — 등록일이 아니며 추정·출처 미상 이력도 포함한다. */
 function latestFailDate(item: AuctionItem): string {
   const fails = item.history.filter((h) => h.result === "유찰").map((h) => h.date);
   return fails.length ? fails.sort().at(-1)! : "0000-00-00";

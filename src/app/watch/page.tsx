@@ -11,8 +11,12 @@ import {
   readDiffCache,
   refreshSnapshot,
   removeWatch,
+  restoreWatch,
+  subscribeWatchState,
   writeDiffCache,
+  type CachedDiff,
   type WatchDiff,
+  type WatchEntry,
   type WatchSnapshot,
 } from "@/lib/watchlist";
 import { useAuctionData } from "@/lib/use-auction-data";
@@ -23,16 +27,16 @@ import { EmptyState } from "@/components/EmptyState";
 
 interface Row {
   id: string;
-  item: AuctionItem | null; // null = 목록 소멸
+  item: AuctionItem | null; // null = 현재 목록에서 확인할 수 없음
   snapshot: WatchSnapshot;
   diff: WatchDiff;
   prev: WatchPrev | null; // 변화 판정 당시의 이전 값(배지 요약 표기용)
 }
 
-/** 제거 되돌리기 창(ms). 창이 닫히는 순간 저장소에 확정한다. */
+/** 제거를 저장한 뒤 되돌리기를 제공하는 시간(ms). */
 const UNDO_WINDOW_MS = 8000;
 
-/** id("{지역key}-{사건번호}-{물건번호}") → "서울 · 2025타경36267(2)" — 종료 카드·제거 버튼·되돌리기 식별 표기 */
+/** id("{지역key}-{사건번호}-{물건번호}") → "서울 · 2025타경36267(2)" — 카드·제거 버튼·되돌리기 식별 표기 */
 function watchIdLabel(id: string): string {
   const first = id.indexOf("-");
   const last = id.lastIndexOf("-");
@@ -45,32 +49,27 @@ function watchIdLabel(id: string): string {
 export default function WatchPage() {
   const { status, items, retry } = useAuctionData();
   const [rows, setRows] = useState<Row[] | null>(null);
-  const [removed, setRemoved] = useState<{ row: Row; index: number } | null>(null);
-  // 되돌리기 창이 열린 동안에는 저장소를 건드리지 않는다 — 되돌리기가 곧 "쓰기 취소"다(감사 60).
-  const pendingId = useRef<string | null>(null);
+  const [removed, setRemoved] = useState<{
+    row: Row;
+    index: number;
+    entry: WatchEntry;
+    cachedDiff?: CachedDiff;
+  } | null>(null);
+  const [failed, setFailed] = useState(false);
   const undoTimer = useRef<number | null>(null);
 
-  /** 되돌리기 창을 닫고 제거를 저장소에 확정한다(시간 경과·다음 제거·화면 이탈 공통 경로). */
-  const commitRemoval = useCallback(() => {
+  /** 시간 경과·다음 제거·화면 이탈 시 되돌리기 타이머를 정리한다. */
+  const clearUndoTimer = useCallback(() => {
     if (undoTimer.current !== null) {
       window.clearTimeout(undoTimer.current);
       undoTimer.current = null;
     }
-    const id = pendingId.current;
-    pendingId.current = null;
-    if (id !== null) removeWatch(id);
   }, []);
 
-  useEffect(() => {
-    // 화면을 떠나면(탭 이동·뒤로가기·앱 종료) 즉시 확정한다 — 되돌릴 수단이 사라진 뒤 항목이 되살아나지 않게.
-    window.addEventListener("pagehide", commitRemoval);
-    return () => {
-      window.removeEventListener("pagehide", commitRemoval);
-      commitRemoval();
-    };
-  }, [commitRemoval]);
+  // 제거는 이미 저장되었으므로 화면 이탈 때 추가 쓰기를 하지 않는다.
+  useEffect(() => clearUndoTimer, [clearUndoTimer]);
 
-  useEffect(() => {
+  const syncRows = useCallback((acknowledge = true) => {
     if (status !== "ready") return;
     const byId = new Map(items.map((i) => [i.id, i]));
     const state = getWatchState();
@@ -79,8 +78,6 @@ export default function WatchPage() {
     let cacheDirty = false;
     const refreshTargets: { id: string; item: AuctionItem }[] = [];
     const built: Row[] = Object.entries(state.items)
-      // 되돌리기 대기 중인 항목은 저장소에 남아 있어도 화면에서는 제거된 상태다.
-      .filter(([id]) => id !== pendingId.current)
       .map(([id, entry]) => {
         const current = byId.get(id);
         const fresh = diffWatch(entry.snapshot, current);
@@ -99,7 +96,7 @@ export default function WatchPage() {
           refreshTargets.push({ id, item: current });
         } else if (fresh === null) {
           const kept = cache[id];
-          if (kept && kept.diff !== "매각 종료") {
+          if (kept && kept.diff !== "현재 목록 확인 불가") {
             diff = kept.diff;
             prev = { minPrice: kept.prevMinPrice, saleDate: kept.prevSaleDate };
           }
@@ -121,42 +118,74 @@ export default function WatchPage() {
       return dA - dB;
     });
     setRows(built);
-    if (cacheDirty) writeDiffCache(cache);
-    // 배지 표시 후 스냅샷 갱신(§5.5) — 다음 방문의 비교 기준. 이번 방문 표시는 세션 캐시가 담당한다.
-    for (const t of refreshTargets) refreshSnapshot(t.id, t.item);
+    const cacheSaved = !cacheDirty || writeDiffCache(cache);
+    let saved = cacheSaved;
+    // 세션 배지를 보존한 뒤 스냅샷을 갱신한다. 캐시 실패 시 다음 방문도 변화를 알릴 수 있다.
+    if (cacheSaved && acknowledge) {
+      for (const t of refreshTargets) if (!refreshSnapshot(t.id, t.item)) saved = false;
+    }
+    if (!saved) setFailed(true);
   }, [status, items]);
+
+  useEffect(() => {
+    syncRows();
+    return subscribeWatchState(() => {
+      // 외부 초기화·재등록 뒤 오래된 되돌리기로 저장값을 되살리지 않는다.
+      clearUndoTimer();
+      setRemoved(null);
+      setFailed(false);
+      // 탭마다 산출물 버전이 다를 수 있다. 외부 이벤트로는 저장 스냅샷을 덮어쓰지 않는다.
+      syncRows(false);
+    });
+  }, [syncRows, clearUndoTimer]);
 
   const handleRemove = useCallback(
     (id: string) => {
-      commitRemoval(); // 직전 제거를 확정 — 되돌릴 수 있는 건 항상 마지막 1건이다
       if (!rows) return;
       const index = rows.findIndex((x) => x.id === id);
       if (index < 0) return;
-      setRemoved({ row: rows[index], index });
+      const entry = getWatchState().items[id];
+      if (!entry) {
+        syncRows();
+        return;
+      }
+      const cachedDiff = readDiffCache()[id];
+      if (!removeWatch(id)) {
+        setFailed(true);
+        return;
+      }
+      clearUndoTimer();
+      setFailed(false);
+      setRemoved({ row: rows[index], index, entry, cachedDiff });
       setRows(rows.filter((x) => x.id !== id));
-      pendingId.current = id;
       undoTimer.current = window.setTimeout(() => {
-        commitRemoval();
+        undoTimer.current = null;
         setRemoved(null);
       }, UNDO_WINDOW_MS);
     },
-    [rows, commitRemoval],
+    [rows, clearUndoTimer, syncRows],
   );
 
   const handleUndo = useCallback(() => {
     if (!removed) return;
-    if (undoTimer.current !== null) {
-      window.clearTimeout(undoTimer.current);
-      undoTimer.current = null;
+    const alreadyWatched = removed.row.id in getWatchState().items;
+    if (!restoreWatch(removed.row.id, removed.entry)) {
+      clearUndoTimer(); // 실패 알림과 재시도 수단을 시간 만료로 지우지 않는다.
+      setFailed(true);
+      return;
     }
-    pendingId.current = null; // 저장소에 쓴 적이 없다 — 화면 상태만 되돌리면 복구 완료다
-    setRows((current) => {
-      const next = current ? [...current] : [];
-      next.splice(Math.min(removed.index, next.length), 0, removed.row);
-      return next;
-    });
+    clearUndoTimer();
+    let cacheSaved = true;
+    if (!alreadyWatched && removed.cachedDiff) {
+      const cache = readDiffCache();
+      cache[removed.row.id] = removed.cachedDiff;
+      cacheSaved = writeDiffCache(cache);
+    }
+    setFailed(!cacheSaved);
+    // 다른 탭의 재등록은 최신 스냅샷일 수 있으므로 이 탭의 산출물로 갱신하지 않는다.
+    syncRows(!alreadyWatched);
     setRemoved(null);
-  }, [removed]);
+  }, [removed, clearUndoTimer, syncRows]);
 
   if (status === "loading" || (status === "ready" && rows === null)) return <ListSkeleton />;
   if (status === "error")
@@ -191,7 +220,7 @@ export default function WatchPage() {
       ) : (
         <div className="rounded-xl border border-line bg-white p-4">
           <span className="rounded bg-ink/70 px-1.5 py-0.5 text-[11px] font-semibold text-white">
-            매각 종료
+            현재 목록 확인 불가
           </span>
           <p className="mt-2 text-[13px] font-semibold tabular-nums">{watchIdLabel(r.id)}</p>
           {(r.snapshot.address || r.snapshot.category) && (
@@ -200,7 +229,7 @@ export default function WatchPage() {
             </p>
           )}
           <p className="mt-2 text-[13px] text-ink/70">
-            이번 갱신 목록에서 빠진 물건이다(매각·취하 등). 마지막 확인:
+            현재 제공 목록에 없어 진행 상태를 확인할 수 없다. 마지막 확인:
             최저가 <span className="tabular-nums">{formatKrw(r.snapshot.minPrice)}</span> ·
             기일 <span className="tabular-nums">{formatDateKr(r.snapshot.saleDate)}</span>
           </p>
@@ -248,6 +277,11 @@ export default function WatchPage() {
       <p className="text-[12px] leading-snug text-ink/70">
         관심함은 이 기기에만 저장, 기기 변경 시 이전되지 않음.
       </p>
+      {failed && (
+        <p role="alert" className="rounded-lg border border-line bg-paper px-3 py-2 text-[13px] leading-snug">
+          이 기기에 저장하지 못했다 — 저장 공간을 확인한 뒤 다시 시도하라.
+        </p>
+      )}
       <ul className="space-y-4">{cards}</ul>
     </div>
   );
