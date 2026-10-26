@@ -527,65 +527,6 @@
   "specialNote": "- 일괄매각 - 제시외 건물 매각 포함 - 목록2 2층은 공실 상태임 - 목록1 맹지 - 목록2 공부상 \"1층 : 61.74㎡, 2층 : 36.0㎡, 변소 : 2.10㎡\"이나, 실측면적은 각 \"1층 : 72.34㎡, 2층 : 44.88㎡\", 변소 : \"3.68㎡\" 로 상이함 - 목록2 일반건축물대장상 2025. 4. 24.자로 \"증축/조립식/주택/10㎡/2층\"으로 인하여 위반건축물로 등재되어 있고, 시정사항이 이행되지 아니하면 이행강제금이 반복적으로 부과될 수 있음 - 대항력 있는 임차인 있음"
  },
  {
-  "id": "gwangju-2025타경3980-1",
-  "court": "광주지방법원",
-  "courtCode": "B000510",
-  "caseNo": "2025타경3980",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "광주광역시 동구 수기동 89 충장홀리어스오피스텔주건축물 1동 7층707호",
-  "region": "광주",
-  "district": "동구",
-  "appraisalPrice": 133000000,
-  "minPrice": 38135000,
-  "priceRatio": 0.2867,
-  "failCount": 5,
-  "saleDate": "2026-10-28",
-  "saleTime": "09:55",
-  "courtRoom": "입찰법정",
-  "deposit": 3813500,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 23.6192,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-01",
-    "minPrice": 133000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-06",
-    "minPrice": 133000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-10",
-    "minPrice": 103596734,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-15",
-    "minPrice": 80693859,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-19",
-    "minPrice": 62854287,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-23",
-    "minPrice": 48958638,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "- 대항력 있는 임차인 있음"
- },
- {
   "id": "gwangju-2025타경4877-1",
   "court": "광주지방법원",
   "courtCode": "B000510",
