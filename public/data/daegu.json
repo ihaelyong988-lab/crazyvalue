@@ -1,104 +1,5 @@
 [
  {
-  "id": "daegu-2024타경10440-1",
-  "court": "대구지방법원",
-  "courtCode": "B000310",
-  "caseNo": "2024타경10440",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "대구광역시 수성구 동대구로 354 10층오-1006호 (범어동,브라운스톤범어)",
-  "region": "대구",
-  "district": "수성구",
-  "appraisalPrice": 208000000,
-  "minPrice": 2015000,
-  "priceRatio": 0.0097,
-  "failCount": 13,
-  "saleDate": "2026-10-27",
-  "saleTime": "10:00",
-  "courtRoom": "신관지하2층입찰법정",
-  "deposit": 201500,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-06-24",
-    "minPrice": 208000000,
-    "result": "신건"
-   },
-   {
-    "date": "2025-07-29",
-    "minPrice": 208000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-09-02",
-    "minPrice": 145598380,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-10-07",
-    "minPrice": 101917732,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-11-11",
-    "minPrice": 71341619,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-12-16",
-    "minPrice": 49938578,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-01-20",
-    "minPrice": 34956616,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-24",
-    "minPrice": 24469359,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-31",
-    "minPrice": 17128361,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-05",
-    "minPrice": 11989719,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-09",
-    "minPrice": 8392710,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-14",
-    "minPrice": 5874832,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-18",
-    "minPrice": 4112336,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-22",
-    "minPrice": 2878603,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
   "id": "daegu-2024타경113561-1",
   "court": "대구지방법원",
   "courtCode": "B000310",
@@ -1131,6 +1032,183 @@
    {
     "date": "2026-09-25",
     "minPrice": 5600000,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "daegu-2024타경44952-1",
+  "court": "대구서부지원",
+  "courtCode": "B000320",
+  "caseNo": "2024타경44952",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "대구광역시 달성군 유가읍 도의리 568",
+  "region": "대구",
+  "district": "달성군",
+  "appraisalPrice": 8994600,
+  "minPrice": 1510000,
+  "priceRatio": 0.1679,
+  "failCount": 5,
+  "saleDate": "2026-11-03",
+  "saleTime": "10:00",
+  "courtRoom": "1층입찰법정",
+  "deposit": 151000,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 906,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-07",
+    "minPrice": 8994600,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-12",
+    "minPrice": 8994600,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-16",
+    "minPrice": 6294785,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-21",
+    "minPrice": 4405345,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-25",
+    "minPrice": 3083038,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-29",
+    "minPrice": 2157635,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "일괄매각. 지분매각. 농지취득자격증명 제출이 필요하며 최고가매수신고 후 매각허가기일까지 제출하지 아니한 경우 부득이한 사유가 없는 한 매수보증금을 반환하지 아니함. 공유자의 우선매수신고는 1회에 한하여 행사할 수 있음(공유자가 우선매수권 신고 후 매각기일까지 매수보증금을 미납하여 실효되는 경우에는 그 공유자는 이후 매각 기일부터는 우선매수권을 행사할 수 없음)"
+ },
+ {
+  "id": "daegu-2025타경2269-1",
+  "court": "대구서부지원",
+  "courtCode": "B000320",
+  "caseNo": "2025타경2269",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "대구광역시 달성군 논공읍 금포리 2355-3",
+  "region": "대구",
+  "district": "달성군",
+  "appraisalPrice": 275730000,
+  "minPrice": 46340000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-03",
+  "saleTime": "10:00",
+  "courtRoom": "1층입찰법정",
+  "deposit": 4634000,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 413,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-07",
+    "minPrice": 275730000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-12",
+    "minPrice": 275730000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-16",
+    "minPrice": 193009383,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-21",
+    "minPrice": 135105436,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-25",
+    "minPrice": 94573013,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-29",
+    "minPrice": 66200555,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "지적도상 맹지. 과수목은 매각에서 제외. 공부상 지목이 '답'이나 현황 '전'임. 농지취득자격증명 제출 필요(매각결정기일까지 미제출 시 매수신청보증금을 반환하지 아니함)"
+ },
+ {
+  "id": "daegu-2025타경31704-1",
+  "court": "대구서부지원",
+  "courtCode": "B000320",
+  "caseNo": "2025타경31704",
+  "itemNo": "1",
+  "category": "아파트",
+  "address": "대구광역시 달서구 도원동 1440 아람마을 913동 9층904호",
+  "region": "대구",
+  "district": "달서구",
+  "appraisalPrice": 147000000,
+  "minPrice": 24705000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-03",
+  "saleTime": "10:00",
+  "courtRoom": "1층입찰법정",
+  "deposit": 2470500,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 59.63,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-07",
+    "minPrice": 147000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-12",
+    "minPrice": 147000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-16",
+    "minPrice": 102898925,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-21",
+    "minPrice": 72028496,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-25",
+    "minPrice": 50419420,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-29",
+    "minPrice": 35293226,
     "result": "유찰"
    }
   ],
