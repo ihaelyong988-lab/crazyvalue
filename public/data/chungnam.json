@@ -113,65 +113,6 @@
   "specialNote": "- 일괄매각 - 목록 1 ~ 4, 7 ~ 10. 지분매각 - 목록 6. 제시외 건물(감정평가서상 ㉡, ㉢)매각에 포함 - 목록 2, 3, 5. 제시외 비닐하우스(감정평가서상 ㉠), 컨테이너박스, 수목은 매각에서 제외함"
  },
  {
-  "id": "chungnam-2024타경4600-1",
-  "court": "서산지원",
-  "courtCode": "B000285",
-  "caseNo": "2024타경4600",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "충청남도 서산시 해미면 동암리 185-1 제1동",
-  "region": "충남",
-  "district": "서산시",
-  "appraisalPrice": 1612898410,
-  "minPrice": 271079000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-03",
-  "saleTime": "10:00",
-  "courtRoom": "제111호경매법정",
-  "deposit": 27107900,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-07",
-    "minPrice": 1612898410,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-12",
-    "minPrice": 1612898410,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-16",
-    "minPrice": 1129028191,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-21",
-    "minPrice": 790319246,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-25",
-    "minPrice": 553223131,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-29",
-    "minPrice": 387255953,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "- 일괄매각 - 목록 7, 8, 9. 지분매각 - 목록 6. 농지취득자격증명원 제출요함(미제출 시 매수보증금 미반환) - 목록 1 ~ 5. 건축법상 사용승인을 받지 않은 건물임 - 목록 1 ~ 5. 제시외 건물(감정평가서 상 ㉠ ~ ㉤)은 매각에 포함 - 목록 7. 지상 제시외 건물(감정평가서 상 ㉥, ㉦, ㉧)은 매각에서 제외 - 목록 8, 9. 지목 \"임야\" 이나 현황 \"도로 및 주거용 건부지\" 로 이용 중 - 목록 1, 2. 갑구 순위 2번 최선순위 가처분등기(2023. 6. 16. 등기)는 매각으로 소멸하지 않고 매수인에게 인수됨. 만약 위 가처분의 피보전권리가 실제로 존재하는 것으로 확정되는 경우에는 매수인이 소유권을 상실할 수 있음 - 목록 5. 갑구 순위 2번 최선순위 가처분등기(2023. 10. 20. 등기)는 매각으로 소멸하지 않고 매수인에게 인수됨"
- },
- {
   "id": "chungnam-2024타경50139-1",
   "court": "서산지원",
   "courtCode": "B000285",
@@ -472,6 +413,114 @@
   "specialNote": "일괄매각. 목록3~5 지적도상 맹지임. 제2종일반주거지역 및 일반공업지역으로 공부상 '과수원'이나 현황 '주거나지'상태, 인근상가 주차장으로 이용 중임. 목록4 지상소재 컨테이너 1동 매각에서 제외."
  },
  {
+  "id": "chungnam-2025타경12456-1",
+  "court": "천안지원",
+  "courtCode": "B000283",
+  "caseNo": "2025타경12456",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "충청남도 아산시 탕정면 용두리 695 더콜럼버스 7층 725호",
+  "region": "충남",
+  "district": "아산시",
+  "appraisalPrice": 330000000,
+  "minPrice": 79233000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-03",
+  "saleTime": "10:00",
+  "courtRoom": "제101호법정(3번출입구)",
+  "deposit": 7923300,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 70.74,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-12",
+    "minPrice": 330000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-16",
+    "minPrice": 330000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-21",
+    "minPrice": 231000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-25",
+    "minPrice": 161700000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-29",
+    "minPrice": 113190000,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "공장(지식산업센터)으로 이용 중임."
+ },
+ {
+  "id": "chungnam-2025타경12456-2",
+  "court": "천안지원",
+  "courtCode": "B000283",
+  "caseNo": "2025타경12456",
+  "itemNo": "2",
+  "category": "기타",
+  "address": "충청남도 아산시 탕정면 용두리 695 더콜럼버스 7층 726호",
+  "region": "충남",
+  "district": "아산시",
+  "appraisalPrice": 357000000,
+  "minPrice": 85716000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-03",
+  "saleTime": "10:00",
+  "courtRoom": "제101호법정(3번출입구)",
+  "deposit": 8571600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 76.63,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-12",
+    "minPrice": 357000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-16",
+    "minPrice": 357000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-21",
+    "minPrice": 249900219,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-25",
+    "minPrice": 174930306,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-29",
+    "minPrice": 122451321,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "공장(지식산업센터)으로 이용 중임."
+ },
+ {
   "id": "chungnam-2025타경12814-1",
   "court": "천안지원",
   "courtCode": "B000283",
@@ -529,6 +578,60 @@
   ],
   "historySource": "estimated",
   "specialNote": null
+ },
+ {
+  "id": "chungnam-2025타경12991-1",
+  "court": "천안지원",
+  "courtCode": "B000283",
+  "caseNo": "2025타경12991",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청남도 천안시 동남구 목천읍 운전리 산62",
+  "region": "충남",
+  "district": "천안시 동남구",
+  "appraisalPrice": 106018875,
+  "minPrice": 25455000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-03",
+  "saleTime": "10:00",
+  "courtRoom": "제101호법정(3번출입구)",
+  "deposit": 2545500,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 7641,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-12",
+    "minPrice": 106018875,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-16",
+    "minPrice": 106018875,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-21",
+    "minPrice": 74213116,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-25",
+    "minPrice": 51949114,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-29",
+    "minPrice": 36364333,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "지분매각. 제시외 분묘 4기 소재. 공유자우**는 1회에 한함(1회에 한하여 허용)."
  },
  {
   "id": "chungnam-2025타경15654-2",
@@ -898,6 +1001,60 @@
   ],
   "historySource": "estimated",
   "specialNote": "- 일괄매각 - 목록1 부정형 완경사지로 '토지임야'이고, 목록2 사다리 완경사지로 '전'으로 이용중임 - 목록2 동측으로 왕복2차선 도로에 접함"
+ },
+ {
+  "id": "chungnam-2025타경15957-1",
+  "court": "홍성지원",
+  "courtCode": "B000281",
+  "caseNo": "2025타경15957",
+  "itemNo": "1",
+  "category": "단독다가구",
+  "address": "충청남도 홍성군 홍동면 운월리 737-5",
+  "region": "충남",
+  "district": "홍성군",
+  "appraisalPrice": 274377600,
+  "minPrice": 65878000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-03",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정",
+  "deposit": 6587800,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 526,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-12",
+    "minPrice": 274377600,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-16",
+    "minPrice": 274377600,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-21",
+    "minPrice": 192064275,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-25",
+    "minPrice": 134444961,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-29",
+    "minPrice": 94111451,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "- 일괄매각. 제시외 건물 ㉠,㉡ 및 가정용 태양광설비 매각 포함 - 목록2의 1층은 일반건축물대장상 용도 단독주택이나, 현황 근린생활시설(교육장) 및 주택이고, 2층은 일반건축물대장상 용도 사무실이나, 현황 주택임"
  },
  {
   "id": "chungnam-2025타경51128-1",

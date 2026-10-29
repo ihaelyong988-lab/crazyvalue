@@ -380,55 +380,6 @@
   "specialNote": null
  },
  {
-  "id": "jeju-2024타경3185-1",
-  "court": "제주지방법원",
-  "courtCode": "B000530",
-  "caseNo": "2024타경3185",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "제주특별자치도 제주시 한림읍 협재리 2271",
-  "region": "제주",
-  "district": "제주시",
-  "appraisalPrice": 7103327000,
-  "minPrice": 584989000,
-  "priceRatio": 0.0824,
-  "failCount": 3,
-  "saleDate": "2026-11-03",
-  "saleTime": "10:00",
-  "courtRoom": "제101법정",
-  "deposit": 58498900,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 5408,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-06-16",
-    "minPrice": 7103327000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-21",
-    "minPrice": 7103327000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-25",
-    "minPrice": 3090464589,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-29",
-    "minPrice": 1344577179,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "-일괄매각"
- },
- {
   "id": "jeju-2024타경35779-1",
   "court": "제주지방법원",
   "courtCode": "B000530",
