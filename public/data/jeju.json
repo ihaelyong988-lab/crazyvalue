@@ -1,59 +1,5 @@
 [
  {
-  "id": "jeju-2022타경6104-1",
-  "court": "제주지방법원",
-  "courtCode": "B000530",
-  "caseNo": "2022타경6104",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "제주특별자치도 제주시 애월읍 봉성리 130",
-  "region": "제주",
-  "district": "제주시",
-  "appraisalPrice": 18984203000,
-  "minPrice": 4487153000,
-  "priceRatio": 0.2364,
-  "failCount": 4,
-  "saleDate": "2026-11-03",
-  "saleTime": "10:00",
-  "courtRoom": "제101법정",
-  "deposit": 448715300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 14348,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-12",
-    "minPrice": 18984203000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-16",
-    "minPrice": 18984203000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-21",
-    "minPrice": 13236921594,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-25",
-    "minPrice": 9229573308,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-29",
-    "minPrice": 6435410442,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "-일괄매각 -본 건 토지 지상에 분묘 수십 기가 소재함."
- },
- {
   "id": "jeju-2024타경1554-10",
   "court": "제주지방법원",
   "courtCode": "B000530",
