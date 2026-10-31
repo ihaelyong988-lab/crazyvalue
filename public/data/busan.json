@@ -2832,6 +2832,55 @@
   "specialNote": null
  },
  {
+  "id": "busan-2025타경22285-1",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2025타경22285",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "부산광역시 동래구 온천동 1681-22 코리노파크빌리지 3층301호",
+  "region": "부산",
+  "district": "동래구",
+  "appraisalPrice": 160000000,
+  "minPrice": 54880000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-11-04",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 5488000,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 67.85,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-06-17",
+    "minPrice": 160000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-22",
+    "minPrice": 160000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-26",
+    "minPrice": 112000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-30",
+    "minPrice": 78400000,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "현황조사서에 의하면 건물입구에 '103동'으로 표기되어 있음"
+ },
+ {
   "id": "busan-2025타경22976-1",
   "court": "부산지방법원",
   "courtCode": "B000410",
