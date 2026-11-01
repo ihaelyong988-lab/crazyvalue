@@ -18,39 +18,44 @@
   "courtRoom": "제3호법정",
   "deposit": 34680500,
   "depositRate": 10,
-  "depositSource": "observed",
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 809.2,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-11-17",
+    "date": "2026-04-06",
+    "minPrice": 2063460000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-11",
     "minPrice": 2063460000,
     "result": "유찰"
    },
    {
-    "date": "2026-06-29",
-    "minPrice": 1444422000,
+    "date": "2026-06-15",
+    "minPrice": 1444421398,
     "result": "유찰"
    },
    {
-    "date": "2026-07-27",
-    "minPrice": 1011095000,
+    "date": "2026-07-20",
+    "minPrice": 1011094558,
     "result": "유찰"
    },
    {
-    "date": "2026-08-31",
-    "minPrice": 707766000,
+    "date": "2026-08-24",
+    "minPrice": 707765896,
     "result": "유찰"
    },
    {
     "date": "2026-09-28",
-    "minPrice": 495436000,
+    "minPrice": 495435921,
     "result": "유찰"
    }
   ],
-  "historySource": "observed",
+  "historySource": "estimated",
   "specialNote": null
  },
  {
@@ -72,64 +77,69 @@
   "courtRoom": "제3호법정",
   "deposit": 680600,
   "depositRate": 10,
-  "depositSource": "observed",
+  "depositSource": "estimated",
   "areaBuilding": 734.27,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-12-15",
+    "date": "2025-10-13",
+    "minPrice": 241000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-17",
     "minPrice": 241000000,
     "result": "유찰"
    },
    {
-    "date": "2026-01-19",
-    "minPrice": 168700000,
+    "date": "2025-12-22",
+    "minPrice": 168695902,
     "result": "유찰"
    },
    {
-    "date": "2026-02-23",
-    "minPrice": 118090000,
+    "date": "2026-01-26",
+    "minPrice": 118084263,
     "result": "유찰"
    },
    {
-    "date": "2026-03-30",
-    "minPrice": 82663000,
+    "date": "2026-03-02",
+    "minPrice": 82656976,
     "result": "유찰"
    },
    {
-    "date": "2026-04-27",
-    "minPrice": 57864000,
+    "date": "2026-04-06",
+    "minPrice": 57858478,
     "result": "유찰"
    },
    {
-    "date": "2026-06-01",
-    "minPrice": 40504000,
+    "date": "2026-05-11",
+    "minPrice": 40499951,
     "result": "유찰"
    },
    {
-    "date": "2026-06-29",
-    "minPrice": 28352000,
+    "date": "2026-06-15",
+    "minPrice": 28349277,
     "result": "유찰"
    },
    {
-    "date": "2026-07-27",
-    "minPrice": 19846000,
+    "date": "2026-07-20",
+    "minPrice": 19844012,
     "result": "유찰"
    },
    {
-    "date": "2026-08-31",
-    "minPrice": 13892000,
+    "date": "2026-08-24",
+    "minPrice": 13890471,
     "result": "유찰"
    },
    {
     "date": "2026-09-28",
-    "minPrice": 9724000,
+    "minPrice": 9723093,
     "result": "유찰"
    }
   ],
-  "historySource": "observed",
+  "historySource": "estimated",
   "specialNote": null
  },
  {
@@ -151,34 +161,39 @@
   "courtRoom": "제3호법정",
   "deposit": 161267500,
   "depositRate": 10,
-  "depositSource": "observed",
+  "depositSource": "estimated",
   "areaBuilding": 1,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-02-23",
+    "date": "2026-05-11",
+    "minPrice": 6716683800,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-15",
     "minPrice": 6716683800,
     "result": "유찰"
    },
    {
-    "date": "2026-03-30",
-    "minPrice": 4701679000,
+    "date": "2026-07-20",
+    "minPrice": 4701678091,
     "result": "유찰"
    },
    {
-    "date": "2026-08-31",
-    "minPrice": 3291175000,
+    "date": "2026-08-24",
+    "minPrice": 3291174266,
     "result": "유찰"
    },
    {
     "date": "2026-09-28",
-    "minPrice": 2303822000,
+    "minPrice": 2303821707,
     "result": "유찰"
    }
   ],
-  "historySource": "observed",
+  "historySource": "estimated",
   "specialNote": "건축법상 사용승인을 받지 않은 건물이며, 신축 중 공사 중단된 상태인바 공사진척도(공정율) 등 감안 평가. 건물만의 매각. 이 사건 건물을 위하여 그 대지에 법정지상권이 성립여부 불명. 옥탑 부분에 매각에서 제외되는 이동 가능한 물탱크 소재함. 이동가능한 컨테이너 1동, 판넬조 판넬지붕 조립식 단층 1동 소재함.(현황조사서 참조)"
  },
  {
@@ -200,54 +215,59 @@
   "courtRoom": "제3호법정",
   "deposit": 5023000,
   "depositRate": 10,
-  "depositSource": "observed",
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 4710,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-02-23",
+    "date": "2025-12-22",
+    "minPrice": 871350000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-01-26",
     "minPrice": 871350000,
     "result": "유찰"
    },
    {
-    "date": "2026-03-30",
-    "minPrice": 609945000,
+    "date": "2026-03-02",
+    "minPrice": 609942581,
     "result": "유찰"
    },
    {
-    "date": "2026-04-27",
-    "minPrice": 426962000,
+    "date": "2026-04-06",
+    "minPrice": 426958114,
     "result": "유찰"
    },
    {
-    "date": "2026-06-01",
-    "minPrice": 298873000,
+    "date": "2026-05-11",
+    "minPrice": 298869494,
     "result": "유찰"
    },
    {
-    "date": "2026-06-29",
-    "minPrice": 209211000,
+    "date": "2026-06-15",
+    "minPrice": 209207817,
     "result": "유찰"
    },
    {
-    "date": "2026-07-27",
-    "minPrice": 146447000,
+    "date": "2026-07-20",
+    "minPrice": 146444891,
     "result": "유찰"
    },
    {
-    "date": "2026-08-31",
-    "minPrice": 102512000,
+    "date": "2026-08-24",
+    "minPrice": 102511017,
     "result": "유찰"
    },
    {
     "date": "2026-09-28",
-    "minPrice": 71758000,
+    "minPrice": 71757427,
     "result": "유찰"
    }
   ],
-  "historySource": "observed",
+  "historySource": "estimated",
   "specialNote": "입목 포함. 임야도상 맹지임."
  },
  {
@@ -267,41 +287,41 @@
   "saleDate": "2026-11-02",
   "saleTime": "10:00",
   "courtRoom": "제3호법정",
-  "deposit": 2740200,
-  "depositRate": 20,
-  "depositSource": "observed",
+  "deposit": 1370100,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 91.9,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-04-27",
+    "date": "2026-05-11",
+    "minPrice": 57069900,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-15",
     "minPrice": 57069900,
     "result": "유찰"
    },
    {
-    "date": "2026-06-01",
-    "minPrice": 39948000,
+    "date": "2026-07-20",
+    "minPrice": 39947849,
     "result": "유찰"
    },
    {
-    "date": "2026-06-29",
-    "minPrice": 27963000,
+    "date": "2026-08-24",
+    "minPrice": 27962738,
     "result": "유찰"
-   },
-   {
-    "date": "2026-07-27",
-    "minPrice": 19574000,
-    "result": "변경"
    },
    {
     "date": "2026-09-28",
-    "minPrice": 19574000,
+    "minPrice": 19573387,
     "result": "유찰"
    }
   ],
-  "historySource": "observed",
+  "historySource": "estimated",
   "specialNote": "맹지. 재매각임. 매수신청보증금은 최저매각가격의 20%임."
  },
  {
@@ -323,39 +343,44 @@
   "courtRoom": "제3호법정",
   "deposit": 8991700,
   "depositRate": 10,
-  "depositSource": "observed",
+  "depositSource": "estimated",
   "areaBuilding": 351.9968,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-06-01",
+    "date": "2026-04-06",
+    "minPrice": 535000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-11",
     "minPrice": 535000000,
     "result": "유찰"
    },
    {
-    "date": "2026-06-29",
-    "minPrice": 374500000,
+    "date": "2026-06-15",
+    "minPrice": 374499625,
     "result": "유찰"
    },
    {
-    "date": "2026-07-27",
-    "minPrice": 262150000,
+    "date": "2026-07-20",
+    "minPrice": 262149475,
     "result": "유찰"
    },
    {
-    "date": "2026-08-31",
-    "minPrice": 183505000,
+    "date": "2026-08-24",
+    "minPrice": 183504449,
     "result": "유찰"
    },
    {
     "date": "2026-09-28",
-    "minPrice": 128453000,
+    "minPrice": 128452986,
     "result": "유찰"
    }
   ],
-  "historySource": "observed",
+  "historySource": "estimated",
   "specialNote": "공부상 용도는 일반음식점이나 공실 상태이며, 바닥 일부 등 일부 공사가 필요한 상태임. 영업 준비를 위한 내부공사가 진행 중인 상태로 보이며 임대관계는 확인하지 못함."
  },
  {
@@ -377,34 +402,39 @@
   "courtRoom": "제3호법정",
   "deposit": 18207700,
   "depositRate": 10,
-  "depositSource": "observed",
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 132077,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-06-29",
+    "date": "2026-05-11",
+    "minPrice": 758343700,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-15",
     "minPrice": 758343700,
     "result": "유찰"
    },
    {
-    "date": "2026-07-27",
-    "minPrice": 530840000,
+    "date": "2026-07-20",
+    "minPrice": 530839626,
     "result": "유찰"
    },
    {
-    "date": "2026-08-31",
-    "minPrice": 371588000,
+    "date": "2026-08-24",
+    "minPrice": 371587064,
     "result": "유찰"
    },
    {
     "date": "2026-09-28",
-    "minPrice": 260111000,
+    "minPrice": 260110472,
     "result": "유찰"
    }
   ],
-  "historySource": "observed",
+  "historySource": "estimated",
   "specialNote": "일괄매각. 목록 1~5 일부 접도구역 저촉 감안 평가. 목록 1~5 지상에 소재하는 입목(수목) 포함 평가. 목록 2,3,4 일부 지상에 소재하는 사과나무 등의 과수목 포함 평가. 목록 1~5는 분묘 소재 여부에 대한 지표의 전체조사가 불가하여 이에 구애 없이 평가. 목록 1 토지의 남동측 일부는 타인 점유일 개연성이 있으나, 정확한 경계 확인은 측량이 필요함. 목록 1~4 공부상 지목은 '임야'이나, 목록 1 현황은 '일부 도로', 목록 2 현황은 '일부 과수원, 도로 및 하천', 목록 3,4 현황은 '일부 과수원임' 목록 5 농지취득자격증명 제출요(미제출시 보증금 몰수)"
  },
  {
@@ -426,34 +456,39 @@
   "courtRoom": "제3호법정",
   "deposit": 379100,
   "depositRate": 10,
-  "depositSource": "observed",
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 1653,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-06-29",
+    "date": "2026-05-11",
+    "minPrice": 15793900,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-15",
     "minPrice": 15793900,
     "result": "유찰"
    },
    {
-    "date": "2026-07-27",
-    "minPrice": 11055000,
+    "date": "2026-07-20",
+    "minPrice": 11054917,
     "result": "유찰"
    },
    {
-    "date": "2026-08-31",
-    "minPrice": 7738000,
+    "date": "2026-08-24",
+    "minPrice": 7737873,
     "result": "유찰"
    },
    {
     "date": "2026-09-28",
-    "minPrice": 5416000,
+    "minPrice": 5416113,
     "result": "유찰"
    }
   ],
-  "historySource": "observed",
+  "historySource": "estimated",
   "specialNote": "이명환 지분 매각. 지적도상 맹지. 현황조사서상 공부상 '전'이나 현황은 '묵전'임. 특별매각조건 있음(공유자 우선매수권(민사집행법제140조)행사에 따른 매수신고가 매수보증금의 미납으로 실효되는 경우, 그 공유자는 해당 부동산의 다음 매각기일에서는 우선매수권을 행사할 수 없음) 농지취득자격증명 제출요(미제출시 보증금 몰수)"
  },
  {
@@ -475,34 +510,39 @@
   "courtRoom": "제3호법정",
   "deposit": 19793200,
   "depositRate": 10,
-  "depositSource": "observed",
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 849,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-06-29",
+    "date": "2026-05-11",
+    "minPrice": 824379000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-15",
     "minPrice": 824379000,
     "result": "유찰"
    },
    {
-    "date": "2026-07-27",
-    "minPrice": 577065000,
+    "date": "2026-07-20",
+    "minPrice": 577064281,
     "result": "유찰"
    },
    {
-    "date": "2026-08-31",
-    "minPrice": 403945000,
+    "date": "2026-08-24",
+    "minPrice": 403944284,
     "result": "유찰"
    },
    {
     "date": "2026-09-28",
-    "minPrice": 282761000,
+    "minPrice": 282760499,
     "result": "유찰"
    }
   ],
-  "historySource": "observed",
+  "historySource": "estimated",
   "specialNote": "일괄매각. 맹지. 입목 포함 평가. 토지의 일부가 도시계획시설 도로 또는 주차장에 저촉 감안 평가."
  },
  {
@@ -578,34 +618,39 @@
   "courtRoom": "제3호법정",
   "deposit": 13375000,
   "depositRate": 10,
-  "depositSource": "observed",
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": 5158,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-06-29",
+    "date": "2026-05-11",
+    "minPrice": 557064000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-15",
     "minPrice": 557064000,
     "result": "유찰"
    },
    {
-    "date": "2026-07-27",
-    "minPrice": 389944000,
+    "date": "2026-07-20",
+    "minPrice": 389944023,
     "result": "유찰"
    },
    {
-    "date": "2026-08-31",
-    "minPrice": 272960000,
+    "date": "2026-08-24",
+    "minPrice": 272960272,
     "result": "유찰"
    },
    {
     "date": "2026-09-28",
-    "minPrice": 191072000,
+    "minPrice": 191071809,
     "result": "유찰"
    }
   ],
-  "historySource": "observed",
+  "historySource": "estimated",
   "specialNote": "수목 포함 평가. 공부상 지목 '임야'이나 현황 일부 '도로'로 이용 중임."
  },
  {

@@ -2906,60 +2906,6 @@
   "specialNote": "본건 상가건물임대차 현황서 열람결과 조회내역 없음"
  },
  {
-  "id": "gyeongnam-2025타경30879-1",
-  "court": "진주지원",
-  "courtCode": "B000421",
-  "caseNo": "2025타경30879",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경상남도 사천시 서포면 선전리 958-13",
-  "region": "경남",
-  "district": "사천시",
-  "appraisalPrice": 15346920,
-  "minPrice": 3685000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-02",
-  "saleTime": "10:00",
-  "courtRoom": "제101호법정",
-  "deposit": 368500,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 1805.5,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-11",
-    "minPrice": 15346920,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-15",
-    "minPrice": 15346920,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-20",
-    "minPrice": 10742993,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-24",
-    "minPrice": 7520199,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-28",
-    "minPrice": 5264213,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "-지분매각, 공유자우선매수신고는 1회에 한하여 허용. -토지 일부는 소하천예정지에 저촉되어 이를 감안하여 평가함 -농지가 아니라는 사실을 증명하거나 농지취득자격증명을 요함(미제출시 보증금 몰수함)"
- },
- {
   "id": "gyeongnam-2025타경30884-1",
   "court": "진주지원",
   "courtCode": "B000421",
@@ -3550,60 +3496,6 @@
   "specialNote": "-일괄매각. 농지가 아니라는 사실을 증명하거나 농지취득자격증명원 제출 요함(미제출시 보증금 몰수). -지적도상 맹지임."
  },
  {
-  "id": "gyeongnam-2025타경31039-1",
-  "court": "진주지원",
-  "courtCode": "B000421",
-  "caseNo": "2025타경31039",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경상남도 남해군 남면 죽전리 72-1",
-  "region": "경남",
-  "district": "남해군",
-  "appraisalPrice": 137548030,
-  "minPrice": 33025000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-02",
-  "saleTime": "10:00",
-  "courtRoom": "제101호법정",
-  "deposit": 3302500,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 1402,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-11",
-    "minPrice": 137548030,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-15",
-    "minPrice": 137548030,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-20",
-    "minPrice": 96283415,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-24",
-    "minPrice": 67398247,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-28",
-    "minPrice": 47178672,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "-일괄매각, 지분매각(공유자 우선매수신고는 1회에 한하여 허용). -농지가 아니라는 사실을 증명하거나 농지취득자격증명원 제출요함(미제출시 보증금 몰수). -육안으로 식별이 어려운 분묘가 소재할 수 있음(분묘 소재시 분묘기지권 성립여지 있음). -지적도상 맹지이나 동측으로 도로 소재함."
- },
- {
   "id": "gyeongnam-2025타경501-1",
   "court": "진주지원",
   "courtCode": "B000421",
@@ -3676,6 +3568,75 @@
   ],
   "historySource": "estimated",
   "specialNote": "-토지 일부 현황 '구거'임 -감정서 상 토지 일부는 사천시로부터 근린생활시설 용도로 건축허가를 득한 후 부지조성 중 중단되었고,건축허가는 취소된 것으로 조사되는 바 입찰전 관련사항 주무관서에 확인요함 -[목록1] 및 인접토지(실안동 318-1, 323)의 경계부근에 분묘 수기가 소재하는것으로 조사되나, 해당 토지 내 소재 여부 및 정확한 위치확인은 측량을 요함(분묘 소재시 분묘기지권 성립여지 있음) -감정서 상 별지'사진용지' 와 같이 '불법 파묘 수사중'이라는 푯말이 소재하며, 파묘 및 이장 여부는 불분명한것으로 조사됨 -육안으로 확인할 수 없는 분묘가 소재할 가능성 있음(분묘 소재시 분묘기지권 성립여지 있음)"
+ },
+ {
+  "id": "gyeongnam-2025타경505-1",
+  "court": "진주지원",
+  "courtCode": "B000421",
+  "caseNo": "2025타경505",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상남도 산청군 단성면 운리 754-5",
+  "region": "경남",
+  "district": "산청군",
+  "appraisalPrice": 67689000,
+  "minPrice": 8321000,
+  "priceRatio": 0.1229,
+  "failCount": 7,
+  "saleDate": "2026-11-02",
+  "saleTime": "10:00",
+  "courtRoom": "제101호법정",
+  "deposit": 832100,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 130,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-01-26",
+    "minPrice": 67689000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-02",
+    "minPrice": 67689000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-06",
+    "minPrice": 50172895,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-11",
+    "minPrice": 37189490,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-15",
+    "minPrice": 27565843,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-20",
+    "minPrice": 20432539,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-24",
+    "minPrice": 15145144,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-28",
+    "minPrice": 11225985,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "-일괄매각 -목록 3의 매각가격은 수목포함 평가액임"
  },
  {
   "id": "gyeongnam-2025타경505-2",
