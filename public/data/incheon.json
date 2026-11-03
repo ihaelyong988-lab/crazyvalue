@@ -1,773 +1,5 @@
 [
  {
-  "id": "incheon-2024타경578894-1",
-  "court": "인천지방법원",
-  "courtCode": "B000240",
-  "caseNo": "2024타경578894",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "인천광역시 미추홀구 매소홀로386번길 21-17 4층401호",
-  "region": "인천",
-  "district": "미추홀구",
-  "appraisalPrice": 82000000,
-  "minPrice": 9647000,
-  "priceRatio": 0.1176,
-  "failCount": 6,
-  "saleDate": "2026-11-02",
-  "saleTime": "10:00",
-  "courtRoom": "219호법정",
-  "deposit": 964700,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-02",
-    "minPrice": 82000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-06",
-    "minPrice": 82000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-11",
-    "minPrice": 57399784,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-15",
-    "minPrice": 40179697,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-20",
-    "minPrice": 28125682,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-24",
-    "minPrice": 19687903,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-28",
-    "minPrice": 13781480,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "incheon-2024타경584257-1",
-  "court": "인천지방법원",
-  "courtCode": "B000240",
-  "caseNo": "2024타경584257",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "인천광역시 남동구 논현로26번길 12 5층 510호 (논현동,부티크646)",
-  "region": "인천",
-  "district": "남동구",
-  "appraisalPrice": 104000000,
-  "minPrice": 2938000,
-  "priceRatio": 0.0283,
-  "failCount": 10,
-  "saleDate": "2026-11-02",
-  "saleTime": "10:00",
-  "courtRoom": "219호법정",
-  "deposit": 293800,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-10-13",
-    "minPrice": 104000000,
-    "result": "신건"
-   },
-   {
-    "date": "2025-11-17",
-    "minPrice": 104000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-12-22",
-    "minPrice": 72800638,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-01-26",
-    "minPrice": 50960893,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-02",
-    "minPrice": 35672938,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-06",
-    "minPrice": 24971275,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-11",
-    "minPrice": 17480046,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-15",
-    "minPrice": 12236139,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-20",
-    "minPrice": 8565373,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-24",
-    "minPrice": 5995813,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-28",
-    "minPrice": 4197106,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "별도의 출입문을 사용하는 510-A 및 510-B로 이용중임"
- },
- {
-  "id": "incheon-2025타경507202-1",
-  "court": "인천지방법원",
-  "courtCode": "B000240",
-  "caseNo": "2025타경507202",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "인천광역시 남동구 만수동 109-379 2층201호",
-  "region": "인천",
-  "district": "남동구",
-  "appraisalPrice": 109000000,
-  "minPrice": 18320000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-02",
-  "saleTime": "10:00",
-  "courtRoom": "219호법정",
-  "deposit": 1832000,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 51.54,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-06",
-    "minPrice": 109000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-11",
-    "minPrice": 109000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-15",
-    "minPrice": 76300308,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-20",
-    "minPrice": 53410431,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-24",
-    "minPrice": 37387453,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-28",
-    "minPrice": 26171323,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "-현황은 '101동'임"
- },
- {
-  "id": "incheon-2025타경507894-1",
-  "court": "인천지방법원",
-  "courtCode": "B000240",
-  "caseNo": "2025타경507894",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "인천광역시 미추홀구 숭의동 3-73 3층302호",
-  "region": "인천",
-  "district": "미추홀구",
-  "appraisalPrice": 117000000,
-  "minPrice": 9636000,
-  "priceRatio": 0.0824,
-  "failCount": 7,
-  "saleDate": "2026-11-02",
-  "saleTime": "10:00",
-  "courtRoom": "219호법정",
-  "deposit": 963600,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 47.84,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-01-26",
-    "minPrice": 117000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-02",
-    "minPrice": 117000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-06",
-    "minPrice": 81900664,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-11",
-    "minPrice": 57330930,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-15",
-    "minPrice": 40131976,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-20",
-    "minPrice": 28092611,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-24",
-    "minPrice": 19664987,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-28",
-    "minPrice": 13765603,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "외벽에 '우성아트빌'로 표시되어 있음"
- },
- {
-  "id": "incheon-2025타경508235-1",
-  "court": "인천지방법원",
-  "courtCode": "B000240",
-  "caseNo": "2025타경508235",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "인천광역시 부평구 부평동 768-218 4층402호",
-  "region": "인천",
-  "district": "부평구",
-  "appraisalPrice": 92000000,
-  "minPrice": 10823000,
-  "priceRatio": 0.1176,
-  "failCount": 6,
-  "saleDate": "2026-11-02",
-  "saleTime": "10:00",
-  "courtRoom": "219호법정",
-  "deposit": 1082300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 43.68,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-02",
-    "minPrice": 92000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-06",
-    "minPrice": 92000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-11",
-    "minPrice": 64399298,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-15",
-    "minPrice": 45079017,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-20",
-    "minPrice": 31554968,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-24",
-    "minPrice": 22088237,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-28",
-    "minPrice": 15461597,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "-현황 상 '태영그린빌라'로 통용됨"
- },
- {
-  "id": "incheon-2025타경508235-3",
-  "court": "인천지방법원",
-  "courtCode": "B000240",
-  "caseNo": "2025타경508235",
-  "itemNo": "3",
-  "category": "다세대",
-  "address": "인천광역시 부평구 부평동 768-265 희망빌라 1층103호",
-  "region": "인천",
-  "district": "부평구",
-  "appraisalPrice": 96000000,
-  "minPrice": 11295000,
-  "priceRatio": 0.1177,
-  "failCount": 6,
-  "saleDate": "2026-11-02",
-  "saleTime": "10:00",
-  "courtRoom": "219호법정",
-  "deposit": 1129500,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 37.81,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-02",
-    "minPrice": 96000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-06",
-    "minPrice": 96000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-11",
-    "minPrice": 67200690,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-15",
-    "minPrice": 47040966,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-20",
-    "minPrice": 32929015,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-24",
-    "minPrice": 23050547,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-28",
-    "minPrice": 16135549,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "incheon-2025타경508235-4",
-  "court": "인천지방법원",
-  "courtCode": "B000240",
-  "caseNo": "2025타경508235",
-  "itemNo": "4",
-  "category": "다세대",
-  "address": "인천광역시 부평구 부평동 768-47 선경빌라 2층203호",
-  "region": "인천",
-  "district": "부평구",
-  "appraisalPrice": 85900000,
-  "minPrice": 10107000,
-  "priceRatio": 0.1177,
-  "failCount": 6,
-  "saleDate": "2026-11-02",
-  "saleTime": "10:00",
-  "courtRoom": "219호법정",
-  "deposit": 1010700,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 34.43,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-02",
-    "minPrice": 85900000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-06",
-    "minPrice": 85900000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-11",
-    "minPrice": 60130943,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-15",
-    "minPrice": 42092320,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-20",
-    "minPrice": 29465086,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-24",
-    "minPrice": 20625884,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-28",
-    "minPrice": 14438345,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "incheon-2025타경509290-1",
-  "court": "인천지방법원",
-  "courtCode": "B000240",
-  "caseNo": "2025타경509290",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "인천광역시 중구 남북동 산6-24",
-  "region": "인천",
-  "district": "중구",
-  "appraisalPrice": 45347000,
-  "minPrice": 5334000,
-  "priceRatio": 0.1176,
-  "failCount": 6,
-  "saleDate": "2026-11-02",
-  "saleTime": "10:00",
-  "courtRoom": "219호법정",
-  "deposit": 533400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 992,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-02",
-    "minPrice": 45347000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-06",
-    "minPrice": 45347000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-11",
-    "minPrice": 31741879,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-15",
-    "minPrice": 22218601,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-20",
-    "minPrice": 15552521,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-24",
-    "minPrice": 10886414,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-28",
-    "minPrice": 7620245,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "-제시외 건물 매각제외(본건 지상에는 인접한 토지(남북동 809 전) 소유자의 소유인 것으로 탐문되는 제시외 건물(목조 목조지붕, 창고 등, 약 7.5㎡)이 소재하는 것으로 추정되나, 철거 및 이동이 용이한 것으로 판단되는 바, 토지만 평가.) -지분매각, 공유자의 우선매수신고는 1회에 한하여 행사할 수 있음(공유자가 우선매수권 신고 후 매각기일까지 매수보증금을 미납하여 실효되는 경우에는 그 공유자는 이후 매각기일부터는 우선매수권을 행사할 수 없음) -자연림 상태, 맹지임. -본건은 보전녹지지역과 자연녹지지역에 걸쳐 있는 토지로서, 면적비율에 따른 평균가액으로 평가하였음. -본건 지상에 소재하는 수목 등은 토지부합물로, 거래관행 등을 고려하여 토지에 포함하여 평가하였음. -본건 부동산은 대부분 소나무, 잡목, 등이 우거져 육안으로는 분묘나 그밖의 시설물을 발견할 수 없었으나 평장이나 봉분이 무너져서 발견하기가 용이하지 않는 점 등을 고려하여 분묘, 수목의 명인방법, 그 점유관계 등은 확인이 필요함.(현황조사서 상) -본건 부동산의 정확한 위치, 경계, 면적 등은 측량전문가의 측량이 필요함."
- },
- {
-  "id": "incheon-2025타경509869-1",
-  "court": "인천지방법원",
-  "courtCode": "B000240",
-  "caseNo": "2025타경509869",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "인천광역시 부평구 부평동 10-382 정도빌라 4층 403호",
-  "region": "인천",
-  "district": "부평구",
-  "appraisalPrice": 114000000,
-  "minPrice": 19160000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-02",
-  "saleTime": "10:00",
-  "courtRoom": "219호법정",
-  "deposit": 1916000,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 36.025,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-06",
-    "minPrice": 114000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-11",
-    "minPrice": 114000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-15",
-    "minPrice": 79800017,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-20",
-    "minPrice": 55860023,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-24",
-    "minPrice": 39102024,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-28",
-    "minPrice": 27371423,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "-등기사항증명서 상 표시된 부평동 10-1124필지는 부평동 10-382와 합병(2001.09.12.)되었음(토지대장 참조)"
- },
- {
-  "id": "incheon-2025타경510145-1",
-  "court": "인천지방법원",
-  "courtCode": "B000240",
-  "caseNo": "2025타경510145",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "인천광역시 옹진군 영흥면 외리 산62-1",
-  "region": "인천",
-  "district": "옹진군",
-  "appraisalPrice": 450602000,
-  "minPrice": 75733000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-02",
-  "saleTime": "10:00",
-  "courtRoom": "219호법정",
-  "deposit": 7573300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 7769,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-06",
-    "minPrice": 450602000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-11",
-    "minPrice": 450602000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-15",
-    "minPrice": 315421668,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-20",
-    "minPrice": 220795355,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-24",
-    "minPrice": 154556880,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-28",
-    "minPrice": 108189908,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "-부정형토지로서 소나무와 잡목이 어우러진 자연림 상태임 -산기슭에 위치하고 있는 급경사지로 내부 접근이 어려워 발견되지 않은 분묘등이 있을수 있음 -지적도상 맹지로서 인접필지를 통하여 출입이 가능함 -본건 지상의 수목은 토지에 포함하여 평가함 -본건 남측의 상당부분은 현황 포락지 상태로서 정확한 위치 및 면적은 별도의 측량을 요함"
- },
- {
-  "id": "incheon-2025타경510436-1",
-  "court": "인천지방법원",
-  "courtCode": "B000240",
-  "caseNo": "2025타경510436",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "인천광역시 미추홀구 숭의동 66-40 온누리휴그린 6층602호",
-  "region": "인천",
-  "district": "미추홀구",
-  "appraisalPrice": 65000000,
-  "minPrice": 10925000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-02",
-  "saleTime": "10:00",
-  "courtRoom": "219호법정",
-  "deposit": 1092500,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 20.55,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-06",
-    "minPrice": 65000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-11",
-    "minPrice": 65000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-15",
-    "minPrice": 45500375,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-20",
-    "minPrice": 31850525,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-24",
-    "minPrice": 22295551,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-28",
-    "minPrice": 15607014,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "incheon-2025타경510824-1",
-  "court": "인천지방법원",
-  "courtCode": "B000240",
-  "caseNo": "2025타경510824",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "인천광역시 서구 검암동 674-6 자연마을 나동 2층204호",
-  "region": "인천",
-  "district": "서구",
-  "appraisalPrice": 130000000,
-  "minPrice": 21849000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-02",
-  "saleTime": "10:00",
-  "courtRoom": "219호법정",
-  "deposit": 2184900,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 36.19,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-06",
-    "minPrice": 130000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-11",
-    "minPrice": 130000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-15",
-    "minPrice": 90999917,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-20",
-    "minPrice": 63699883,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-24",
-    "minPrice": 44589878,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-28",
-    "minPrice": 31212886,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
   "id": "incheon-2021타경521675-1",
   "court": "인천지방법원",
   "courtCode": "B000240",
@@ -3870,6 +3102,829 @@
    {
     "date": "2026-10-02",
     "minPrice": 71400000,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "incheon-2021타경526137-1",
+  "court": "인천지방법원",
+  "courtCode": "B000240",
+  "caseNo": "2021타경526137",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "인천광역시 옹진군 영흥면 내리 219-31",
+  "region": "인천",
+  "district": "옹진군",
+  "appraisalPrice": 3124236810,
+  "minPrice": 525090000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-09",
+  "saleTime": "10:00",
+  "courtRoom": "219호법정",
+  "deposit": 52509000,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 1732,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-13",
+    "minPrice": 3124236810,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-18",
+    "minPrice": 3124236810,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-22",
+    "minPrice": 2186965367,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-27",
+    "minPrice": 1530875476,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-31",
+    "minPrice": 1071612637,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-05",
+    "minPrice": 750128709,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "-일괄매각 -목록1. 토지상에 소재하는 목록4.는 건축법상 사용승인을 받지 않은 상태로서 건축물대장이 발급되지 않고 있으며 공정률이 90% 정도로 판단되어 감정평가시 이를 감안하였음. -목록1. 토지상 제시외 (ㄱ) 콘테이너(3x9), (ㄴ) 컨테이너(3x6), (ㄷ) 이동식 화장실(1.5x5.0) (ㄹ) 닭장(철망 3x4) 등이 소재하나 유치권자가 임시로 설치한 이동 및 철거가 용이한 물건으로서 평가에서 제외하였음. -목록1.은 공부상 '전' 이나 현황은 '대' 임 - 부정형의 평지로서 목록1. 근린생활시설 부지로 목록2. 및 목록3.은 전으로 이용중임. -목록4. 건물은 근린생활시설용이나 현황 공실 상태임 -목록1. 내지 목록3.에 대하여 농지취득자격증명 제출 필요(매각결정기일까지 미제출시 보증금은 반환하지 않음) -상림건설주식회사가 2021.12.6.자 유치권신고(공사대금 693,000,000원), 명성종합건설 주식회사가 2021.12.6.자 유치권신고(공사대금445,500,000원)를 하였으나 신청채권자 중소기업은행이 유치권자 명성종합건설 주식회사, 상림건설 주식회사를 상대로 유치권부존재확인청구의 소송을 제기하여 승소로 확정됨(1심 인천지법 2022가합51993, 항소심 인천고등법원 2024나13423). -각 토지의 정확한 경계점, 위치, 지적 등에 대하여는 측량이 필요"
+ },
+ {
+  "id": "incheon-2023타경18081-1",
+  "court": "인천지방법원",
+  "courtCode": "B000240",
+  "caseNo": "2023타경18081",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "인천광역시 강화군 양도면 인산리 8-2",
+  "region": "인천",
+  "district": "강화군",
+  "appraisalPrice": 2338756000,
+  "minPrice": 474291000,
+  "priceRatio": 0.2028,
+  "failCount": 4,
+  "saleDate": "2026-11-09",
+  "saleTime": "10:00",
+  "courtRoom": "219호법정",
+  "deposit": 47429100,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 5329,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-18",
+    "minPrice": 2338756000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-22",
+    "minPrice": 2338756000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-27",
+    "minPrice": 1569458755,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-31",
+    "minPrice": 1053209819,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-05",
+    "minPrice": 706772904,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "1. 일괄매각 2. 물건 목록1. 내지 7. : 농지취득자격증명 제출 요(매각결정기일까지 미제출시 보증금은 반환하지 않음) 3. 물건 목록1.2.4.5.6.7. 지상 제시외 수목에 대하여 소유권 및 지상권 주장이 있으며, 성립여부는 불분명하며 매각에서 제외 4. 본건 토지상 제시외 수목외 이동식 간이화장실, 콘테이너 등이 소재하나 평가 및 매각에서 제외함 5. 제시외 수목(소나무 적송 및 장송, 반송, 단풍나무 등)에 의해 토지소유권이 제한되는 경우의 토지가액은 감정평가서 '토지감정평가명세표' 비고란 참조 6.물건 목록 1. 내지 7. 부정형의 토지로서 현황은 소나무 등 수목재배지로 이용중임 7. 물건 목록2. 내지 7. : 지적도상 맹지이나, 현황은 본건 토지 일부를 진입도로로 이용중임 8. 물건 목록 8.9.는 진입도로로 이용중임 9.특별매각조건 매수신청보증금 최저매각가격의 20%"
+ },
+ {
+  "id": "incheon-2024타경14628-1",
+  "court": "인천지방법원",
+  "courtCode": "B000240",
+  "caseNo": "2024타경14628",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "인천광역시 서구 가람로 14 4층402호 (오류동,인천표면처리센터공장동)",
+  "region": "인천",
+  "district": "서구",
+  "appraisalPrice": 1432860000,
+  "minPrice": 57821000,
+  "priceRatio": 0.0404,
+  "failCount": 9,
+  "saleDate": "2026-11-09",
+  "saleTime": "10:00",
+  "courtRoom": "219호법정",
+  "deposit": 5782100,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-11-24",
+    "minPrice": 1432860000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-29",
+    "minPrice": 1432860000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-02",
+    "minPrice": 1003001866,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-09",
+    "minPrice": 702101213,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-13",
+    "minPrice": 491470784,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-18",
+    "minPrice": 344029503,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-22",
+    "minPrice": 240820620,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-27",
+    "minPrice": 168574411,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-31",
+    "minPrice": 118002072,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-05",
+    "minPrice": 82601440,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "일괄매각. 공장및광업재단저당법 제6조 기계및기구 도금설비라인 1식포함(감정평가서 참조). 기계및기구 일부는 장기간 미가동 상태인바, 정상작동 여부는 확인이 필요. 제시외 건물 포함"
+ },
+ {
+  "id": "incheon-2024타경506141-4",
+  "court": "인천지방법원",
+  "courtCode": "B000240",
+  "caseNo": "2024타경506141",
+  "itemNo": "4",
+  "category": "토지",
+  "address": "인천광역시 강화군 길상면 선두리 1053-79",
+  "region": "인천",
+  "district": "강화군",
+  "appraisalPrice": 42042000,
+  "minPrice": 7066000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-09",
+  "saleTime": "10:00",
+  "courtRoom": "219호법정",
+  "deposit": 706600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 231,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-13",
+    "minPrice": 42042000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-18",
+    "minPrice": 42042000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-22",
+    "minPrice": 29429401,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-27",
+    "minPrice": 20600581,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-31",
+    "minPrice": 14420407,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-05",
+    "minPrice": 10094285,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "농지취득자격증명 제출 필요(매각결정기일까지 미제출시 보증금은 반환하지 않음) 지목은 '답' 이나 현황은 '전' 임 필지별 경계가 불분명하여 정확한 위치 및 경계 등에 대하여 정밀한 지적측량이 필요"
+ },
+ {
+  "id": "incheon-2024타경508529-1",
+  "court": "인천지방법원",
+  "courtCode": "B000240",
+  "caseNo": "2024타경508529",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "인천광역시 계양구 까치말로6번길 5-1 에이동 1층102호",
+  "region": "인천",
+  "district": "계양구",
+  "appraisalPrice": 110000000,
+  "minPrice": 3107000,
+  "priceRatio": 0.0282,
+  "failCount": 10,
+  "saleDate": "2026-11-09",
+  "saleTime": "10:00",
+  "courtRoom": "219호법정",
+  "deposit": 310700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-10-20",
+    "minPrice": 110000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-24",
+    "minPrice": 110000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-29",
+    "minPrice": 76999436,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-02",
+    "minPrice": 53899210,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-09",
+    "minPrice": 37729170,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-13",
+    "minPrice": 26410226,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-18",
+    "minPrice": 18487022,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-22",
+    "minPrice": 12940821,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-27",
+    "minPrice": 9058508,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-31",
+    "minPrice": 6340909,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-05",
+    "minPrice": 4438604,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "incheon-2024타경559336-1",
+  "court": "인천지방법원",
+  "courtCode": "B000240",
+  "caseNo": "2024타경559336",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "인천광역시 부평구 대정로 83 15층1501호 (부평동,대준블루온)",
+  "region": "인천",
+  "district": "부평구",
+  "appraisalPrice": 102000000,
+  "minPrice": 2881000,
+  "priceRatio": 0.0282,
+  "failCount": 10,
+  "saleDate": "2026-11-09",
+  "saleTime": "10:00",
+  "courtRoom": "219호법정",
+  "deposit": 288100,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-10-20",
+    "minPrice": 102000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-24",
+    "minPrice": 102000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-29",
+    "minPrice": 71399387,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-02",
+    "minPrice": 49979141,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-09",
+    "minPrice": 34985098,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-13",
+    "minPrice": 24489358,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-18",
+    "minPrice": 17142404,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-22",
+    "minPrice": 11999579,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-27",
+    "minPrice": 8399633,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-31",
+    "minPrice": 5879693,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-05",
+    "minPrice": 4115750,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "집합건축물대장상 용도는 도시형생활주택으로 되어있음"
+ },
+ {
+  "id": "incheon-2024타경581074-1",
+  "court": "인천지방법원",
+  "courtCode": "B000240",
+  "caseNo": "2024타경581074",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "인천광역시 서구 탁옥로73번길 54 2층204호 (연희동,대명그린빌)",
+  "region": "인천",
+  "district": "서구",
+  "appraisalPrice": 157000000,
+  "minPrice": 4435000,
+  "priceRatio": 0.0282,
+  "failCount": 10,
+  "saleDate": "2026-11-09",
+  "saleTime": "10:00",
+  "courtRoom": "219호법정",
+  "deposit": 443500,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-10-20",
+    "minPrice": 157000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-24",
+    "minPrice": 157000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-29",
+    "minPrice": 109900343,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-02",
+    "minPrice": 76930481,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-09",
+    "minPrice": 53851505,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-13",
+    "minPrice": 37696171,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-18",
+    "minPrice": 26387402,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-22",
+    "minPrice": 18471239,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-27",
+    "minPrice": 12929908,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-31",
+    "minPrice": 9050964,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-05",
+    "minPrice": 6335694,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "incheon-2025타경508982-1",
+  "court": "인천지방법원",
+  "courtCode": "B000240",
+  "caseNo": "2025타경508982",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "인천광역시 남동구 논현동 680-1 1층103호",
+  "region": "인천",
+  "district": "남동구",
+  "appraisalPrice": 96000000,
+  "minPrice": 11295000,
+  "priceRatio": 0.1177,
+  "failCount": 6,
+  "saleDate": "2026-11-09",
+  "saleTime": "10:00",
+  "courtRoom": "219호법정",
+  "deposit": 1129500,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 6.6,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-09",
+    "minPrice": 96000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-13",
+    "minPrice": 96000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-18",
+    "minPrice": 67200690,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-22",
+    "minPrice": 47040966,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-27",
+    "minPrice": 32929015,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-31",
+    "minPrice": 23050547,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-05",
+    "minPrice": 16135549,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "공부상 시장 판매시설이며, 오픈형 상가로 인접호수와 벽체구분 없음"
+ },
+ {
+  "id": "incheon-2025타경509035-1",
+  "court": "인천지방법원",
+  "courtCode": "B000240",
+  "caseNo": "2025타경509035",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "인천광역시 미추홀구 주안동 1336-6 지하층비01호",
+  "region": "인천",
+  "district": "미추홀구",
+  "appraisalPrice": 45000000,
+  "minPrice": 5295000,
+  "priceRatio": 0.1177,
+  "failCount": 6,
+  "saleDate": "2026-11-09",
+  "saleTime": "10:00",
+  "courtRoom": "219호법정",
+  "deposit": 529500,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 39.15,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-09",
+    "minPrice": 45000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-13",
+    "minPrice": 45000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-18",
+    "minPrice": 31500788,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-22",
+    "minPrice": 22051104,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-27",
+    "minPrice": 15436159,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-31",
+    "minPrice": 10805582,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-05",
+    "minPrice": 7564096,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "incheon-2025타경509635-1",
+  "court": "인천지방법원",
+  "courtCode": "B000240",
+  "caseNo": "2025타경509635",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "인천광역시 서구 마전동 924-2 3층301호",
+  "region": "인천",
+  "district": "서구",
+  "appraisalPrice": 120000000,
+  "minPrice": 14118000,
+  "priceRatio": 0.1177,
+  "failCount": 6,
+  "saleDate": "2026-11-09",
+  "saleTime": "10:00",
+  "courtRoom": "219호법정",
+  "deposit": 1411800,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 40.41,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-09",
+    "minPrice": 120000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-13",
+    "minPrice": 120000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-18",
+    "minPrice": 84000119,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-22",
+    "minPrice": 58800167,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-27",
+    "minPrice": 41160175,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-31",
+    "minPrice": 28812163,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-05",
+    "minPrice": 20168543,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "incheon-2025타경509784-1",
+  "court": "인천지방법원",
+  "courtCode": "B000240",
+  "caseNo": "2025타경509784",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "인천광역시 부평구 갈산동 41-9 스카이캐슬 비동 5층501호",
+  "region": "인천",
+  "district": "부평구",
+  "appraisalPrice": 240000000,
+  "minPrice": 28236000,
+  "priceRatio": 0.1177,
+  "failCount": 6,
+  "saleDate": "2026-11-09",
+  "saleTime": "10:00",
+  "courtRoom": "219호법정",
+  "deposit": 2823600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 77.28,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-09",
+    "minPrice": 240000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-13",
+    "minPrice": 240000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-18",
+    "minPrice": 168000238,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-22",
+    "minPrice": 117600333,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-27",
+    "minPrice": 82320350,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-31",
+    "minPrice": 57624327,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-05",
+    "minPrice": 40337086,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "incheon-2025타경510007-1",
+  "court": "인천지방법원",
+  "courtCode": "B000240",
+  "caseNo": "2025타경510007",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "인천광역시 연수구 옥련동 205-1 성현아트빌 101동 2층201호",
+  "region": "인천",
+  "district": "연수구",
+  "appraisalPrice": 135000000,
+  "minPrice": 15883000,
+  "priceRatio": 0.1177,
+  "failCount": 6,
+  "saleDate": "2026-11-09",
+  "saleTime": "10:00",
+  "courtRoom": "219호법정",
+  "deposit": 1588300,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 75.42,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-09",
+    "minPrice": 135000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-13",
+    "minPrice": 135000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-18",
+    "minPrice": 94500382,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-22",
+    "minPrice": 66150534,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-27",
+    "minPrice": 46305561,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-31",
+    "minPrice": 32414024,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-05",
+    "minPrice": 22689908,
     "result": "유찰"
    }
   ],

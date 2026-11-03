@@ -615,6 +615,60 @@
   "specialNote": null
  },
  {
+  "id": "ulsan-2025타경11681-1",
+  "court": "울산지방법원",
+  "courtCode": "B000411",
+  "caseNo": "2025타경11681",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "울산광역시 울주군 상북면 등억알프스리 616",
+  "region": "울산",
+  "district": "울주군",
+  "appraisalPrice": 542232000,
+  "minPrice": 130190000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-05",
+  "saleTime": "10:00",
+  "courtRoom": "133호경매법정",
+  "deposit": 13019000,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 3544,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-14",
+    "minPrice": 542232000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-18",
+    "minPrice": 542232000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-23",
+    "minPrice": 379562471,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-27",
+    "minPrice": 265693779,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-01",
+    "minPrice": 185985680,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "1. 농지취득자격증명 필요함.(임야화된 부분은 농지로 복구 필요:사실조회 회신서 참고) 매각결정기일까지 제출하여야 하며 미제출시 입찰보증금 몰수. 2. 본 건 토지 일부 지상의 이동 및 철거가 용이한 농막(2기) 및 견사는 토지에 미치는 영향이 미미하여 평가에서 제외하였고, 제시외건물 \"철파이프조 천막지붕 단층 농막 및 양봉장 68㎡\"는 매각에서 제외함. 3. 최저매각가격은 제시외 건물[토지 남측 일부 및 인접지상 타인소유로 추정되는 제시외 건물(ㄱ):감정평가서 사진 참조]이 매각대상에서 제외되어 토지의 소유권행사가 제한 받은 경우를 감안한 금액임. 응찰시 확인 요함 4. 미확인 분묘가 소재할 수 있으므로 응찰시 확인 요함 5. 지목은 '답'이나 현황은 '전'이며 일부는 잡목 등이 자생하는 임야이며 맹지임 6. 본 건 지상에 소재하는 자연생 임목은 토지에 포함하여 평가하였으며 인접지와 지적경계가 불분명하여 정확한 지적경계는 측량을 요함"
+ },
+ {
   "id": "ulsan-2025타경11926-1",
   "court": "울산지방법원",
   "courtCode": "B000411",
