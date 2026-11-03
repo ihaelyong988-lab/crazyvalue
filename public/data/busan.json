@@ -1,1181 +1,5 @@
 [
  {
-  "id": "busan-2024타경112860-1",
-  "court": "동부지원",
-  "courtCode": "B000412",
-  "caseNo": "2024타경112860",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "부산광역시 남구 동명로131번길 26 10층1003호 (용호동,용호클래스원)",
-  "region": "부산",
-  "district": "남구",
-  "appraisalPrice": 168000000,
-  "minPrice": 40336800,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-03",
-  "saleTime": "10:00",
-  "courtRoom": "203호법정",
-  "deposit": 4033700,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-12",
-    "minPrice": 168000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-16",
-    "minPrice": 168000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-21",
-    "minPrice": 117600000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-25",
-    "minPrice": 82320000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-29",
-    "minPrice": 57624000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "busan-2024타경3038-1",
-  "court": "부산지방법원",
-  "courtCode": "B000410",
-  "caseNo": "2024타경3038",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "부산광역시 중구 충장대로13번길 22(중앙동4가) 19층1913호 (중앙동4가,일동미라주더마린)",
-  "region": "부산",
-  "district": "중구",
-  "appraisalPrice": 223000000,
-  "minPrice": 8999000,
-  "priceRatio": 0.0404,
-  "failCount": 9,
-  "saleDate": "2026-11-03",
-  "saleTime": "10:00",
-  "courtRoom": "입찰전용법정(256호법정)",
-  "deposit": 899900,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-11-18",
-    "minPrice": 223000000,
-    "result": "신건"
-   },
-   {
-    "date": "2025-12-23",
-    "minPrice": 223000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-01-27",
-    "minPrice": 156100281,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-03",
-    "minPrice": 109270393,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-07",
-    "minPrice": 76489413,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-12",
-    "minPrice": 53542685,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-16",
-    "minPrice": 37479947,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-21",
-    "minPrice": 26236010,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-25",
-    "minPrice": 18365240,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-29",
-    "minPrice": 12855691,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "busan-2024타경4864-1",
-  "court": "부산지방법원",
-  "courtCode": "B000410",
-  "caseNo": "2024타경4864",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "부산광역시 연제구 신금로 25 1층113호 (연산동,노블레스스퀘어)",
-  "region": "부산",
-  "district": "연제구",
-  "appraisalPrice": 485000000,
-  "minPrice": 81514000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-03",
-  "saleTime": "10:00",
-  "courtRoom": "입찰전용법정(256호법정)",
-  "deposit": 8151400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-07",
-    "minPrice": 485000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-12",
-    "minPrice": 485000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-16",
-    "minPrice": 339500042,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-21",
-    "minPrice": 237650058,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-25",
-    "minPrice": 166355061,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-29",
-    "minPrice": 116448557,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "물건1.113호, 물건2.114호, 물건3.115호는 벽체구분없이 일괄사용중(상호: 시온커피아카데미학원)이나 각 전유부분의 위치와 면적이 대장상 건축물현황도에 의하여 특정가능함. 경계벽 복원 가능한 것으로 보임(감정평가서 참조) 재매각임. 매수신청보증금 최저매각가격의 20%"
- },
- {
-  "id": "busan-2024타경4864-2",
-  "court": "부산지방법원",
-  "courtCode": "B000410",
-  "caseNo": "2024타경4864",
-  "itemNo": "2",
-  "category": "오피스텔",
-  "address": "부산광역시 연제구 신금로 25 1층114호 (연산동,노블레스스퀘어)",
-  "region": "부산",
-  "district": "연제구",
-  "appraisalPrice": 485000000,
-  "minPrice": 81514000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-03",
-  "saleTime": "10:00",
-  "courtRoom": "입찰전용법정(256호법정)",
-  "deposit": 8151400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-07",
-    "minPrice": 485000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-12",
-    "minPrice": 485000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-16",
-    "minPrice": 339500042,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-21",
-    "minPrice": 237650058,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-25",
-    "minPrice": 166355061,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-29",
-    "minPrice": 116448557,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "물건1.113호, 물건2.114호, 물건3.115호는 벽체구분없이 일괄사용중(상호: 시온커피아카데미학원)이나 각 전유부분의 위치와 면적이 대장상 건축물현황도에 의하여 특정가능함. 경계벽 복원 가능한 것으로 보임(감정평가서 참조) 재매각임. 매수신청보증금 최저매각가격의 20%"
- },
- {
-  "id": "busan-2024타경4864-3",
-  "court": "부산지방법원",
-  "courtCode": "B000410",
-  "caseNo": "2024타경4864",
-  "itemNo": "3",
-  "category": "오피스텔",
-  "address": "부산광역시 연제구 신금로 25 1층115호 (연산동,노블레스스퀘어)",
-  "region": "부산",
-  "district": "연제구",
-  "appraisalPrice": 481000000,
-  "minPrice": 80842000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-03",
-  "saleTime": "10:00",
-  "courtRoom": "입찰전용법정(256호법정)",
-  "deposit": 8084200,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-07",
-    "minPrice": 481000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-12",
-    "minPrice": 481000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-16",
-    "minPrice": 336700275,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-21",
-    "minPrice": 235690385,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-25",
-    "minPrice": 164983404,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-29",
-    "minPrice": 115488477,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "물건1.113호, 물건2.114호, 물건3.115호는 벽체구분없이 일괄사용중(상호: 시온커피아카데미학원)이나 각 전유부분의 위치와 면적이 대장상 건축물현황도에 의하여 특정가능함. 경계벽 복원 가능한 것으로 보임(감정평가서 참조) 재매각임. 매수신청보증금 최저매각가격의 20%"
- },
- {
-  "id": "busan-2024타경493-3",
-  "court": "동부지원",
-  "courtCode": "B000412",
-  "caseNo": "2024타경493",
-  "itemNo": "3",
-  "category": "상가",
-  "address": "부산광역시 기장군 기장읍 동부산관광7로 31 1층103호 (헬로시티)",
-  "region": "부산",
-  "district": "기장군",
-  "appraisalPrice": 990000000,
-  "minPrice": 81530700,
-  "priceRatio": 0.0824,
-  "failCount": 7,
-  "saleDate": "2026-11-03",
-  "saleTime": "10:00",
-  "courtRoom": "203호법정",
-  "deposit": 8153100,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-01-27",
-    "minPrice": 990000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-03",
-    "minPrice": 990000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-07",
-    "minPrice": 692999931,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-12",
-    "minPrice": 485099903,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-16",
-    "minPrice": 339569898,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-21",
-    "minPrice": 237698905,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-25",
-    "minPrice": 166389217,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-29",
-    "minPrice": 116472440,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "재매각. 매수신청보증금 최저매각가격의 20%. 제2종근린생활시설(현재 공실상태)임."
- },
- {
-  "id": "busan-2024타경61553-1",
-  "court": "부산지방법원",
-  "courtCode": "B000410",
-  "caseNo": "2024타경61553",
-  "itemNo": "1",
-  "category": "아파트",
-  "address": "부산광역시 부산진구 성지로8번길 30 10층1001호 (연지동,연지센트럴파크)",
-  "region": "부산",
-  "district": "부산진구",
-  "appraisalPrice": 188000000,
-  "minPrice": 15483000,
-  "priceRatio": 0.0824,
-  "failCount": 7,
-  "saleDate": "2026-11-03",
-  "saleTime": "10:00",
-  "courtRoom": "입찰전용법정(256호법정)",
-  "deposit": 1548300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-01-27",
-    "minPrice": 188000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-03",
-    "minPrice": 188000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-07",
-    "minPrice": 131600476,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-12",
-    "minPrice": 92120666,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-16",
-    "minPrice": 64484699,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-21",
-    "minPrice": 45139452,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-25",
-    "minPrice": 31597731,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-29",
-    "minPrice": 22118492,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "busan-2025타경100949-1",
-  "court": "부산서부지원",
-  "courtCode": "B000414",
-  "caseNo": "2025타경100949",
-  "itemNo": "1",
-  "category": "단독다가구",
-  "address": "부산광역시 북구 구포동 1241-12",
-  "region": "부산",
-  "district": "북구",
-  "appraisalPrice": 265511680,
-  "minPrice": 63750000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-03",
-  "saleTime": "10:00",
-  "courtRoom": "101호경매법정",
-  "deposit": 6375000,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 172.3,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-12",
-    "minPrice": 265511680,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-16",
-    "minPrice": 265511680,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-21",
-    "minPrice": 185858647,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-25",
-    "minPrice": 130101382,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-29",
-    "minPrice": 91071198,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "- 일괄매각. 제시외 건물 포함. - 지하층 근린생활시설, 1,2층 주택으로 이용중임. - 본건 건물은 공부상 지하1층이 외관상 1층으로, 외관상 3층 건물로 보임. (2026. 5. 19. 사실조회회신 참조) - 특별매각조건 매수신청보증금 최저매각가격의 20%"
- },
- {
-  "id": "busan-2025타경101103-1",
-  "court": "부산서부지원",
-  "courtCode": "B000414",
-  "caseNo": "2025타경101103",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "부산광역시 북구 덕천동 385-7 홍익빌레트 10층1003호",
-  "region": "부산",
-  "district": "북구",
-  "appraisalPrice": 135000000,
-  "minPrice": 11118000,
-  "priceRatio": 0.0824,
-  "failCount": 7,
-  "saleDate": "2026-11-03",
-  "saleTime": "10:00",
-  "courtRoom": "101호경매법정",
-  "deposit": 1111800,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 42.35,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-01-27",
-    "minPrice": 135000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-03",
-    "minPrice": 135000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-07",
-    "minPrice": 94500206,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-12",
-    "minPrice": 66150288,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-16",
-    "minPrice": 46305303,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-21",
-    "minPrice": 32413782,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-25",
-    "minPrice": 22689697,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-29",
-    "minPrice": 15882823,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "오피스텔(주거용)으로 이용중. 특별매각조건 매수신청보증금 최저매각가격의 20%"
- },
- {
-  "id": "busan-2025타경101257-1",
-  "court": "부산서부지원",
-  "courtCode": "B000414",
-  "caseNo": "2025타경101257",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "부산광역시 강서구 명지동 3599-3 명지국제신도시 삼정그린코아 더베스트 105동 24층2412호",
-  "region": "부산",
-  "district": "강서구",
-  "appraisalPrice": 203000000,
-  "minPrice": 23883000,
-  "priceRatio": 0.1177,
-  "failCount": 6,
-  "saleDate": "2026-11-03",
-  "saleTime": "10:00",
-  "courtRoom": "101호경매법정",
-  "deposit": 2388300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 59.389,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-03",
-    "minPrice": 203000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-07",
-    "minPrice": 203000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-12",
-    "minPrice": 142100251,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-16",
-    "minPrice": 99470351,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-21",
-    "minPrice": 69629369,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-25",
-    "minPrice": 48740644,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-29",
-    "minPrice": 34118511,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "주거용으로 사용가능한 오피스텔임."
- },
- {
-  "id": "busan-2025타경101291-1",
-  "court": "부산서부지원",
-  "courtCode": "B000414",
-  "caseNo": "2025타경101291",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "부산광역시 사상구 모라동 산91",
-  "region": "부산",
-  "district": "사상구",
-  "appraisalPrice": 1581472000,
-  "minPrice": 265797000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-03",
-  "saleTime": "10:00",
-  "courtRoom": "101호경매법정",
-  "deposit": 26579700,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 98842,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-07",
-    "minPrice": 1581472000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-12",
-    "minPrice": 1581472000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-16",
-    "minPrice": 1107029568,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-21",
-    "minPrice": 774920115,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-25",
-    "minPrice": 542443673,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-29",
-    "minPrice": 379710285,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "- 지적도상 맹지이나 인접 토지를 경유하여 접근가능함. - 지상소재 분묘들을 위한 분묘기지권 성립여부는 불명. - 제시외건물들은 매각에서 제외. 감정평가액은 제시외 건물 소재 감안한 토지가액임. - 별첨 지적 및건물개황도와 사진(7매)과 같이 제시외 건물이 존재하나 그 위치, 면적, 경계 등 정밀한 사항은 별도의 측량을 요하므로 응찰시 확인 요함. - 집행권원인 공유물분할판결[2020가단337761(2021가단338525(반소)] 주문에 제시외 건물들에 대한 철거 기재사항 있으나 감정평가서의 제시외 건물과 일부상이 하므로 확인요함."
- },
- {
-  "id": "busan-2025타경101359-1",
-  "court": "부산서부지원",
-  "courtCode": "B000414",
-  "caseNo": "2025타경101359",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "부산광역시 사하구 감천동 산72",
-  "region": "부산",
-  "district": "사하구",
-  "appraisalPrice": 148258000,
-  "minPrice": 17443000,
-  "priceRatio": 0.1177,
-  "failCount": 6,
-  "saleDate": "2026-11-03",
-  "saleTime": "10:00",
-  "courtRoom": "101호경매법정",
-  "deposit": 1744300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 6446,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-03",
-    "minPrice": 148258000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-07",
-    "minPrice": 148258000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-12",
-    "minPrice": 103781190,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-16",
-    "minPrice": 72647245,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-21",
-    "minPrice": 50853361,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-25",
-    "minPrice": 35597555,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-29",
-    "minPrice": 24918430,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "지적도상 맹지이나, 본건 북측 임도 및 인접 필지 통해 접근 가능함. 자연녹지지역 준보전산지에 속함."
- },
- {
-  "id": "busan-2025타경1536-1",
-  "court": "부산서부지원",
-  "courtCode": "B000414",
-  "caseNo": "2025타경1536",
-  "itemNo": "1",
-  "category": "단독다가구",
-  "address": "부산광역시 서구 서대신동3가 95-3",
-  "region": "부산",
-  "district": "서구",
-  "appraisalPrice": 72342000,
-  "minPrice": 8510000,
-  "priceRatio": 0.1176,
-  "failCount": 6,
-  "saleDate": "2026-11-03",
-  "saleTime": "10:00",
-  "courtRoom": "101호경매법정",
-  "deposit": 851000,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 40,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-03",
-    "minPrice": 72342000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-07",
-    "minPrice": 72342000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-12",
-    "minPrice": 50638444,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-16",
-    "minPrice": 35446242,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-21",
-    "minPrice": 24811901,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-25",
-    "minPrice": 17368003,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-29",
-    "minPrice": 12157372,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "일괄매각. 제시외 건물포함."
- },
- {
-  "id": "busan-2025타경21405-1",
-  "court": "부산지방법원",
-  "courtCode": "B000410",
-  "caseNo": "2025타경21405",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "부산광역시 연제구 연산동 307-23 행복케스빌 5층501호",
-  "region": "부산",
-  "district": "연제구",
-  "appraisalPrice": 143400000,
-  "minPrice": 24101000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-03",
-  "saleTime": "10:00",
-  "courtRoom": "입찰전용법정(256호법정)",
-  "deposit": 2410100,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 64.5,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-07",
-    "minPrice": 143400000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-12",
-    "minPrice": 143400000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-16",
-    "minPrice": 100379802,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-21",
-    "minPrice": 70265722,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-25",
-    "minPrice": 49185909,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-29",
-    "minPrice": 34430068,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "busan-2025타경274-1",
-  "court": "부산서부지원",
-  "courtCode": "B000414",
-  "caseNo": "2025타경274",
-  "itemNo": "1",
-  "category": "단독다가구",
-  "address": "부산광역시 사하구 감천동 13-1488",
-  "region": "부산",
-  "district": "사하구",
-  "appraisalPrice": 32720400,
-  "minPrice": 3849000,
-  "priceRatio": 0.1176,
-  "failCount": 6,
-  "saleDate": "2026-11-03",
-  "saleTime": "10:00",
-  "courtRoom": "101호경매법정",
-  "deposit": 384900,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 68,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-03",
-    "minPrice": 32720400,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-07",
-    "minPrice": 32720400,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-12",
-    "minPrice": 22903762,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-16",
-    "minPrice": 16032271,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-21",
-    "minPrice": 11222336,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-25",
-    "minPrice": 7855457,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-29",
-    "minPrice": 5498696,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "- 일괄매각(본건 지상위 감정서 (ㄱ) 제시외 건물 매각제외. 제시외 건물 (ㄱ)을 감안한 토지 가격임). - 단독주택으로 현황 공가임. 본건 지상위 건물은 정확한 길이와 면적을 알 수 없어 공부, 실측 및 목측으로 하였으니 정확한 길이와 면적은 측량을 요함. - 재매각 : 매수보증금은 최저매각가격의 20%임"
- },
- {
-  "id": "busan-2025타경5261-1",
-  "court": "동부지원",
-  "courtCode": "B000412",
-  "caseNo": "2025타경5261",
-  "itemNo": "1",
-  "category": "상가",
-  "address": "부산광역시 기장군 기장읍 시랑리 717 스타테라스 10층1019호",
-  "region": "부산",
-  "district": "기장군",
-  "appraisalPrice": 734000000,
-  "minPrice": 123363300,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-03",
-  "saleTime": "10:00",
-  "courtRoom": "203호법정",
-  "deposit": 12336400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 2,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-07",
-    "minPrice": 734000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-12",
-    "minPrice": 734000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-16",
-    "minPrice": 513799933,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-21",
-    "minPrice": 359659907,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-25",
-    "minPrice": 251761902,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-29",
-    "minPrice": 176233309,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "인접 호와 벽체 경계 없이 이용 중이며, 현재 공실임."
- },
- {
-  "id": "busan-2025타경5432-1",
-  "court": "동부지원",
-  "courtCode": "B000412",
-  "caseNo": "2025타경5432",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "부산광역시 기장군 기장읍 시랑리 717 스타테라스 1층115호",
-  "region": "부산",
-  "district": "기장군",
-  "appraisalPrice": 719000000,
-  "minPrice": 172631900,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-03",
-  "saleTime": "10:00",
-  "courtRoom": "203호법정",
-  "deposit": 17263200,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 47.415,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-12",
-    "minPrice": 719000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-16",
-    "minPrice": 719000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-21",
-    "minPrice": 503300000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-25",
-    "minPrice": 352310000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-29",
-    "minPrice": 246617000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "busan-2025타경564-1",
-  "court": "동부지원",
-  "courtCode": "B000412",
-  "caseNo": "2025타경564",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "부산광역시 기장군 기장읍 대변리 161",
-  "region": "부산",
-  "district": "기장군",
-  "appraisalPrice": 480948000,
-  "minPrice": 80832800,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-03",
-  "saleTime": "10:00",
-  "courtRoom": "203호법정",
-  "deposit": 8083300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 664,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-07",
-    "minPrice": 480948000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-12",
-    "minPrice": 480948000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-16",
-    "minPrice": 336663491,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-21",
-    "minPrice": 235664368,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-25",
-    "minPrice": 164965004,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-29",
-    "minPrice": 115475466,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "농지취득자격증명 요함(미제출시 매수신청보증금 미반환). 지상에 매각에서 제외되는 제시외 계사(약 6㎡) 있음."
- },
- {
-  "id": "busan-2025타경564-2",
-  "court": "동부지원",
-  "courtCode": "B000412",
-  "caseNo": "2025타경564",
-  "itemNo": "2",
-  "category": "토지",
-  "address": "부산광역시 기장군 기장읍 대변리 162",
-  "region": "부산",
-  "district": "기장군",
-  "appraisalPrice": 744818000,
-  "minPrice": 125181400,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-03",
-  "saleTime": "10:00",
-  "courtRoom": "203호법정",
-  "deposit": 12518200,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 298,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-07",
-    "minPrice": 744818000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-12",
-    "minPrice": 744818000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-16",
-    "minPrice": 521372466,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-21",
-    "minPrice": 364960632,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-25",
-    "minPrice": 255472377,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-29",
-    "minPrice": 178830618,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "일괄매각. 지상에 매각에서 제외되는 비닐하우스 2동(약 45㎡ 및 75㎡) 및 창고(약 25㎡ ) 있음. 농지취득자격증명 요함(미제출시 매수신청보증금 미반환)."
- },
- {
   "id": "busan-2023타경2146-3",
   "court": "부산서부지원",
   "courtCode": "B000414",
@@ -1651,55 +475,6 @@
   ],
   "historySource": "estimated",
   "specialNote": "인접토지와의 경계 등은 측량 등 별도의 확인이 필요하기에 응찰시 유의 요망 육안관찰로 분묘를 발견하지 못한 바, 분묘기지권성립여부 확인할 수 없음"
- },
- {
-  "id": "busan-2024타경2402-1",
-  "court": "부산서부지원",
-  "courtCode": "B000414",
-  "caseNo": "2024타경2402",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "부산광역시 강서구 대저1동 1296-44",
-  "region": "부산",
-  "district": "강서구",
-  "appraisalPrice": 763090000,
-  "minPrice": 261740000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-04",
-  "saleTime": "10:00",
-  "courtRoom": "제101호경매법정",
-  "deposit": 26174000,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 557,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-06-17",
-    "minPrice": 763090000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-22",
-    "minPrice": 763090000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-26",
-    "minPrice": 534163088,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-30",
-    "minPrice": 373914224,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "을구 6.8.9.10.11.번 지상권설정등기(2017.11.10. 등기)가 있으나, 지상권자인 신청채권자 부경원예농업협동조합이 2024.06.19.자 말소동의서를 제출함"
  },
  {
   "id": "busan-2024타경4866-1",
@@ -6102,5 +4877,4102 @@
   ],
   "historySource": "estimated",
   "specialNote": "공동주택임."
+ },
+ {
+  "id": "busan-2023타경60232-10",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2023타경60232",
+  "itemNo": "10",
+  "category": "오피스텔",
+  "address": "부산광역시 금정구 금강로 700 1층138호",
+  "region": "부산",
+  "district": "금정구",
+  "appraisalPrice": 73000000,
+  "minPrice": 2946000,
+  "priceRatio": 0.0404,
+  "failCount": 9,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 294600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-11-25",
+    "minPrice": 73000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-30",
+    "minPrice": 73000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 51100360,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 35770504,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 25039529,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 17527794,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 12269542,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 8588740,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 6012160,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 4208542,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "현칭 '남산시장' 빌딩. 본건 구분건물은 통칭 오픈상로서, 건출물 현황도상 호별로 치수가 표시되어 있으며, 벽면 또는 바닥 등에 각 호수의 표시 및 경계표시 등이 되어 있어 각 호별 위치의 확인이 가능한 상태임. 2026. 09. 14. 남산시장관리단으로부터 미납관리비 청구서가 제출됨(공용관리비 3,662,390원, 연체료 1,605,000원, 합계 5,267,390원). 이 중 공용부분 관리비는 매수인에게 승계될 수 있으며, 승계되는 정확한 금액은 남산시장관리단에 재확인 필요함"
+ },
+ {
+  "id": "busan-2023타경60232-11",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2023타경60232",
+  "itemNo": "11",
+  "category": "오피스텔",
+  "address": "부산광역시 금정구 금강로 700 1층140호",
+  "region": "부산",
+  "district": "금정구",
+  "appraisalPrice": 70000000,
+  "minPrice": 2825000,
+  "priceRatio": 0.0404,
+  "failCount": 9,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 282500,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-11-25",
+    "minPrice": 70000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-30",
+    "minPrice": 70000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 49000477,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 34300668,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 24010701,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 16807654,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 11765473,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 8235911,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 5765194,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 4035675,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "현칭 '남산시장' 빌딩. 본건 구분건물은 통칭 오픈상로서, 건출물 현황도상 호별로 치수가 표시되어 있으며, 벽면 또는 바닥 등에 각 호수의 표시 및 경계표시 등이 되어 있어 각 호별 위치의 확인이 가능한 상태임. 2026. 09. 14. 남산시장관리단으로부터 미납관리비 청구서가 제출됨(공용관리비 4,926,030원, 연체료 2,443,060원, 합계 7,369,090원). 이 중 공용부분 관리비는 매수인에게 승계될 수 있으며, 승계되는 정확한 금액은 남산시장관리단에 재확인 필요함"
+ },
+ {
+  "id": "busan-2023타경60232-12",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2023타경60232",
+  "itemNo": "12",
+  "category": "오피스텔",
+  "address": "부산광역시 금정구 금강로 700 1층141호",
+  "region": "부산",
+  "district": "금정구",
+  "appraisalPrice": 70000000,
+  "minPrice": 2825000,
+  "priceRatio": 0.0404,
+  "failCount": 9,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 282500,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-11-25",
+    "minPrice": 70000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-30",
+    "minPrice": 70000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 49000477,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 34300668,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 24010701,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 16807654,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 11765473,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 8235911,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 5765194,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 4035675,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "현칭 '남산시장' 빌딩. 본건 구분건물은 통칭 오픈상로서, 건출물 현황도상 호별로 치수가 표시되어 있으며, 벽면 또는 바닥 등에 각 호수의 표시 및 경계표시 등이 되어 있어 각 호별 위치의 확인이 가능한 상태임. 2026. 09. 14. 남산시장관리단으로부터 미납관리비 청구서가 제출됨(공용관리비 4,926,030원, 연체료 2,443,060원, 합계 7,369,090원). 이 중 공용부분 관리비는 매수인에게 승계될 수 있으며, 승계되는 정확한 금액은 남산시장관리단에 재확인 필요함"
+ },
+ {
+  "id": "busan-2023타경60232-13",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2023타경60232",
+  "itemNo": "13",
+  "category": "오피스텔",
+  "address": "부산광역시 금정구 금강로 700 1층142호",
+  "region": "부산",
+  "district": "금정구",
+  "appraisalPrice": 72000000,
+  "minPrice": 2906000,
+  "priceRatio": 0.0404,
+  "failCount": 9,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 290600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-11-25",
+    "minPrice": 72000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-30",
+    "minPrice": 72000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 50401041,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 35281458,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 24697531,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 17288629,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 12102290,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 8471778,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 5930367,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 4151343,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "현칭 '남산시장' 빌딩. 본건 구분건물은 통칭 오픈상로서, 건출물 현황도상 호별로 치수가 표시되어 있으며, 벽면 또는 바닥 등에 각 호수의 표시 및 경계표시 등이 되어 있어 각 호별 위치의 확인이 가능한 상태임. 2026. 09. 14. 남산시장관리단으로부터 미납관리비 청구서가 제출됨(공용관리비 5,080,120원, 연체료 2,518,960원, 합계 7,599,080원). 이 중 공용부분 관리비는 매수인에게 승계될 수 있으며, 승계되는 정확한 금액은 남산시장관리단에 재확인 필요함"
+ },
+ {
+  "id": "busan-2023타경60232-14",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2023타경60232",
+  "itemNo": "14",
+  "category": "오피스텔",
+  "address": "부산광역시 금정구 금강로 700 1층143호",
+  "region": "부산",
+  "district": "금정구",
+  "appraisalPrice": 70000000,
+  "minPrice": 2825000,
+  "priceRatio": 0.0404,
+  "failCount": 9,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 282500,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-11-25",
+    "minPrice": 70000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-30",
+    "minPrice": 70000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 49000477,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 34300668,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 24010701,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 16807654,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 11765473,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 8235911,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 5765194,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 4035675,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "현칭 '남산시장' 빌딩. 본건 구분건물은 통칭 오픈상로서, 건출물 현황도상 호별로 치수가 표시되어 있으며, 벽면 또는 바닥 등에 각 호수의 표시 및 경계표시 등이 되어 있어 각 호별 위치의 확인이 가능한 상태임. 2026. 09. 14. 남산시장관리단으로부터 미납관리비 청구서가 제출됨(공용관리비 4,296,030원, 연체료 2,443,060원, 합계 7,369,090원). 이 중 공용부분 관리비는 매수인에게 승계될 수 있으며, 승계되는 정확한 금액은 남산시장관리단에 재확인 필요함"
+ },
+ {
+  "id": "busan-2023타경60232-15",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2023타경60232",
+  "itemNo": "15",
+  "category": "오피스텔",
+  "address": "부산광역시 금정구 금강로 700 1층144호",
+  "region": "부산",
+  "district": "금정구",
+  "appraisalPrice": 76000000,
+  "minPrice": 3067000,
+  "priceRatio": 0.0404,
+  "failCount": 9,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 306700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-11-25",
+    "minPrice": 76000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-30",
+    "minPrice": 76000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 53200243,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 37240340,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 26068357,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 18247933,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 12773611,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 8941569,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 6259127,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 4381409,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "현칭 '남산시장' 빌딩. 본건 구분건물은 통칭 오픈상로서, 건출물 현황도상 호별로 치수가 표시되어 있으며, 벽면 또는 바닥 등에 각 호수의 표시 및 경계표시 등이 되어 있어 각 호별 위치의 확인이 가능한 상태임. 2026. 09. 14. 남산시장관리단으로부터 미납관리비 청구서가 제출됨(공용관리비 4,296,030원, 연체료 2,443,060원, 합계 7,369,090원). 이 중 공용부분 관리비는 매수인에게 승계될 수 있으며, 승계되는 정확한 금액은 남산시장관리단에 재확인 필요함"
+ },
+ {
+  "id": "busan-2023타경60232-16",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2023타경60232",
+  "itemNo": "16",
+  "category": "오피스텔",
+  "address": "부산광역시 금정구 금강로 700 1층145호",
+  "region": "부산",
+  "district": "금정구",
+  "appraisalPrice": 76000000,
+  "minPrice": 3067000,
+  "priceRatio": 0.0404,
+  "failCount": 9,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 306700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-11-25",
+    "minPrice": 76000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-30",
+    "minPrice": 76000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 53200243,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 37240340,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 26068357,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 18247933,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 12773611,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 8941569,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 6259127,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 4381409,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "현칭 '남산시장' 빌딩. 본건 구분건물은 통칭 오픈상로서, 건출물 현황도상 호별로 치수가 표시되어 있으며, 벽면 또는 바닥 등에 각 호수의 표시 및 경계표시 등이 되어 있어 각 호별 위치의 확인이 가능한 상태임. 2026. 09. 14. 남산시장관리단으로부터 미납관리비 청구서가 제출됨(공용관리비 332,906원, 전용관리비 486,874원, 연체료 24,520원, 합계 844,300원). 이 중 공용부분 관리비는 매수인에게 승계될 수 있으며, 승계되는 정확한 금액은 남산시장관리단에 재확인 필요함"
+ },
+ {
+  "id": "busan-2023타경60232-17",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2023타경60232",
+  "itemNo": "17",
+  "category": "오피스텔",
+  "address": "부산광역시 금정구 금강로 700 1층146호",
+  "region": "부산",
+  "district": "금정구",
+  "appraisalPrice": 73000000,
+  "minPrice": 2946000,
+  "priceRatio": 0.0404,
+  "failCount": 9,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 294600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-11-25",
+    "minPrice": 73000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-30",
+    "minPrice": 73000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 51100360,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 35770504,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 25039529,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 17527794,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 12269542,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 8588740,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 6012160,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 4208542,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "현칭 '남산시장' 빌딩. 본건 구분건물은 통칭 오픈상로서, 건출물 현황도상 호별로 치수가 표시되어 있으며, 벽면 또는 바닥 등에 각 호수의 표시 및 경계표시 등이 되어 있어 각 호별 위치의 확인이 가능한 상태임. 2026. 09. 14. 남산시장관리단으로부터 미납관리비 청구서가 제출됨(공용관리비 4,772,280원, 연체료 2,336,750원, 합계 7,139,030원). 이 중 공용부분 관리비는 매수인에게 승계될 수 있으며, 승계되는 정확한 금액은 남산시장관리단에 재확인 필요함"
+ },
+ {
+  "id": "busan-2023타경60232-2",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2023타경60232",
+  "itemNo": "2",
+  "category": "오피스텔",
+  "address": "부산광역시 금정구 금강로 700 1층117호",
+  "region": "부산",
+  "district": "금정구",
+  "appraisalPrice": 82000000,
+  "minPrice": 3309000,
+  "priceRatio": 0.0404,
+  "failCount": 9,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 330900,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-11-25",
+    "minPrice": 82000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-30",
+    "minPrice": 82000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 57400008,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 40180011,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 28126012,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 19688211,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 13781750,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 9647226,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 6753059,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 4727142,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "현칭 '남산시장' 빌딩. 본건 구분건물은 통칭 오픈상로서, 건출물 현황도상 호별로 치수가 표시되어 있으며, 벽면 또는 바닥 등에 각 호수의 표시 및 경계표시 등이 되어 있어 각 호별 위치의 확인이 가능한 상태임. 2026. 09. 14. 남산시장관리단으로부터 미납관리비 청구서가 제출됨(공용관리비 5,350,760원, 연체료 2,653,640원, 합계 8,004,440원). 이 중 공용부분 관리비는 매수인에게 승계될 수 있으며, 승계되는 정확한 금액은 남산시장관리단에 재확인 필요함"
+ },
+ {
+  "id": "busan-2023타경60232-20",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2023타경60232",
+  "itemNo": "20",
+  "category": "오피스텔",
+  "address": "부산광역시 금정구 금강로 700 1층149호",
+  "region": "부산",
+  "district": "금정구",
+  "appraisalPrice": 69000000,
+  "minPrice": 2785000,
+  "priceRatio": 0.0404,
+  "failCount": 9,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 278500,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-11-25",
+    "minPrice": 69000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-30",
+    "minPrice": 69000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 48301158,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 33811622,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 23668703,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 16568489,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 11598221,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 8118949,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 5683401,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 3978476,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "현칭 '남산시장' 빌딩. 본건 구분건물은 통칭 오픈상로서, 건출물 현황도상 호별로 치수가 표시되어 있으며, 벽면 또는 바닥 등에 각 호수의 표시 및 경계표시 등이 되어 있어 각 호별 위치의 확인이 가능한 상태임. 2026. 09. 14. 남산시장관리단으로부터 미납관리비 청구서가 제출됨(공용관리비 4,904,820원, 연체료 2,431,390원, 합계 7,336,210원). 이 중 공용부분 관리비는 매수인에게 승계될 수 있으며, 승계되는 정확한 금액은 남산시장관리단에 재확인 필요함"
+ },
+ {
+  "id": "busan-2023타경60232-21",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2023타경60232",
+  "itemNo": "21",
+  "category": "오피스텔",
+  "address": "부산광역시 금정구 금강로 700 1층150호",
+  "region": "부산",
+  "district": "금정구",
+  "appraisalPrice": 69000000,
+  "minPrice": 2785000,
+  "priceRatio": 0.0404,
+  "failCount": 9,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 278500,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-11-25",
+    "minPrice": 69000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-30",
+    "minPrice": 69000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 48301158,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 33811622,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 23668703,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 16568489,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 11598221,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 8118949,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 5683401,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 3978476,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "현칭 '남산시장' 빌딩. 본건 구분건물은 통칭 오픈상로서, 건출물 현황도상 호별로 치수가 표시되어 있으며, 벽면 또는 바닥 등에 각 호수의 표시 및 경계표시 등이 되어 있어 각 호별 위치의 확인이 가능한 상태임. 2026. 09. 14. 남산시장관리단으로부터 미납관리비 청구서가 제출됨(공용관리비 4,904,820원, 연체료 2,431,390원, 합계 7,336,210원). 이 중 공용부분 관리비는 매수인에게 승계될 수 있으며, 승계되는 정확한 금액은 남산시장관리단에 재확인 필요함"
+ },
+ {
+  "id": "busan-2023타경60232-22",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2023타경60232",
+  "itemNo": "22",
+  "category": "오피스텔",
+  "address": "부산광역시 금정구 금강로 700 1층151호",
+  "region": "부산",
+  "district": "금정구",
+  "appraisalPrice": 72000000,
+  "minPrice": 2906000,
+  "priceRatio": 0.0404,
+  "failCount": 9,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 290600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-11-25",
+    "minPrice": 72000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-30",
+    "minPrice": 72000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 50401041,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 35281458,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 24697531,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 17288629,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 12102290,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 8471778,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 5930367,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 4151343,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "현칭 '남산시장' 빌딩. 본건 구분건물은 통칭 오픈상로서, 건출물 현황도상 호별로 치수가 표시되어 있으며, 벽면 또는 바닥 등에 각 호수의 표시 및 경계표시 등이 되어 있어 각 호별 위치의 확인이 가능한 상태임. 2026. 09. 14. 남산시장관리단으로부터 미납관리비 청구서가 제출됨(공용관리비 5,081,120원, 연체료 2,518,960원, 합계 7,599,080원). 이 중 공용부분 관리비는 매수인에게 승계될 수 있으며, 승계되는 정확한 금액은 남산시장관리단에 재확인 필요함"
+ },
+ {
+  "id": "busan-2023타경60232-23",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2023타경60232",
+  "itemNo": "23",
+  "category": "오피스텔",
+  "address": "부산광역시 금정구 금강로 700 1층152호",
+  "region": "부산",
+  "district": "금정구",
+  "appraisalPrice": 69000000,
+  "minPrice": 2785000,
+  "priceRatio": 0.0404,
+  "failCount": 9,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 278500,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-11-25",
+    "minPrice": 69000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-30",
+    "minPrice": 69000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 48301158,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 33811622,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 23668703,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 16568489,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 11598221,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 8118949,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 5683401,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 3978476,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "현칭 '남산시장' 빌딩. 본건 구분건물은 통칭 오픈상로서, 건출물 현황도상 호별로 치수가 표시되어 있으며, 벽면 또는 바닥 등에 각 호수의 표시 및 경계표시 등이 되어 있어 각 호별 위치의 확인이 가능한 상태임. 2026. 09. 14. 남산시장관리단으로부터 미납관리비 청구서가 제출됨(공용관리비 4,904,820원, 연체료 2,431,390원, 합계 7,336,210원). 이 중 공용부분 관리비는 매수인에게 승계될 수 있으며, 승계되는 정확한 금액은 남산시장관리단에 재확인 필요함"
+ },
+ {
+  "id": "busan-2023타경60232-24",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2023타경60232",
+  "itemNo": "24",
+  "category": "오피스텔",
+  "address": "부산광역시 금정구 금강로 700 1층157호",
+  "region": "부산",
+  "district": "금정구",
+  "appraisalPrice": 66000000,
+  "minPrice": 2664000,
+  "priceRatio": 0.0404,
+  "failCount": 9,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 266400,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-11-25",
+    "minPrice": 66000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-30",
+    "minPrice": 66000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 46201276,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 32341786,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 22639875,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 15848350,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 11094152,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 7766121,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 5436434,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 3805609,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "현칭 '남산시장' 빌딩. 본건 구분건물은 통칭 오픈상로서, 건출물 현황도상 호별로 치수가 표시되어 있으며, 벽면 또는 바닥 등에 각 호수의 표시 및 경계표시 등이 되어 있어 각 호별 위치의 확인이 가능한 상태임. 2026. 09. 14. 남산시장관리단으로부터 미납관리비 청구서가 제출됨(공용관리비 4,729,580원, 연체료 2,364,230원, 합계 7,093,810원). 이 중 공용부분 관리비는 매수인에게 승계될 수 있으며, 승계되는 정확한 금액은 남산시장관리단에 재확인 필요함"
+ },
+ {
+  "id": "busan-2023타경60232-25",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2023타경60232",
+  "itemNo": "25",
+  "category": "오피스텔",
+  "address": "부산광역시 금정구 금강로 700 2층216호",
+  "region": "부산",
+  "district": "금정구",
+  "appraisalPrice": 498000000,
+  "minPrice": 20096000,
+  "priceRatio": 0.0404,
+  "failCount": 9,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 2009600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-11-25",
+    "minPrice": 498000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-30",
+    "minPrice": 498000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 348599814,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 244019740,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 170813727,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 119569545,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 83698637,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 58589015,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 41012289,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 28708587,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "일괄매각. 현칭 '남산시장' 빌딩. 본건 구분건물은 통칭 오픈상로서, 건출물 현황도상 호별로 치수가 표시되어 있으며, 벽면 또는 바닥 등에 각 호수의 표시 및 경계표시 등이 되어 있어 각 호별 위치의 확인이 가능한 상태임. 2026. 09. 14. 남산시장관리단으로부터 미납관리비 청구서가 제출됨(공용관리비 46,029,020원, 연체료 26,208,180원, 합계 72,237,200원). 이 중 공용부분 관리비는 매수인에게 승계될 수 있으며, 승계되는 정확한 금액은 남산시장관리단에 재확인 필요함"
+ },
+ {
+  "id": "busan-2023타경60232-3",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2023타경60232",
+  "itemNo": "3",
+  "category": "오피스텔",
+  "address": "부산광역시 금정구 금강로 700 1층118호",
+  "region": "부산",
+  "district": "금정구",
+  "appraisalPrice": 76000000,
+  "minPrice": 6259000,
+  "priceRatio": 0.0824,
+  "failCount": 7,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 625900,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-03",
+    "minPrice": 76000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 76000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 53200089,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 37240124,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 26068131,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 18247722,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 12773427,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 8941414,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "현칭 '남산시장' 빌딩. 본건 구분건물은 통칭 오픈상로서, 건출물 현황도상 호별로 치수가 표시되어 있으며, 벽면 또는 바닥 등에 각 호수의 표시 및 경계표시 등이 되어 있어 각 호별 위치의 확인이 가능한 상태임. 2026. 09. 14. 남산시장관리단으로부터 미납관리비 청구서가 제출됨(공용관리비 1,155,760원, 연체료 1,043,370원, 합계 2,199,130원). 이 중 공용부분 관리비는 매수인에게 승계될 수 있으며, 승계되는 정확한 금액은 남산시장관리단에 재확인 필요함 특별매각조건 매수신청보증금 최저매각가격의 20%"
+ },
+ {
+  "id": "busan-2023타경60232-4",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2023타경60232",
+  "itemNo": "4",
+  "category": "오피스텔",
+  "address": "부산광역시 금정구 금강로 700 1층119호",
+  "region": "부산",
+  "district": "금정구",
+  "appraisalPrice": 66000000,
+  "minPrice": 5436000,
+  "priceRatio": 0.0824,
+  "failCount": 7,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 543600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-03",
+    "minPrice": 66000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 66000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 46200748,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 32341047,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 22639100,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 15847627,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 11093518,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 7765589,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "현칭 '남산시장' 빌딩. 본건 구분건물은 통칭 오픈상로서, 건출물 현황도상 호별로 치수가 표시되어 있으며, 벽면 또는 바닥 등에 각 호수의 표시 및 경계표시 등이 되어 있어 각 호별 위치의 확인이 가능한 상태임. 2026. 09. 14. 남산시장관리단으로부터 미납관리비 청구서가 제출됨(공용관리비 4,681,510원, 연체료 2,321,260원, 합계 7,002,770원). 이 중 공용부분 관리비는 매수인에게 승계될 수 있으며, 승계되는 정확한 금액은 남산시장관리단에 재확인 필요함 특별매각조건 매수신청보증금 최저매각가격의 20%"
+ },
+ {
+  "id": "busan-2023타경60232-5",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2023타경60232",
+  "itemNo": "5",
+  "category": "오피스텔",
+  "address": "부산광역시 금정구 금강로 700 1층120호",
+  "region": "부산",
+  "district": "금정구",
+  "appraisalPrice": 77000000,
+  "minPrice": 3107000,
+  "priceRatio": 0.0404,
+  "failCount": 9,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 310700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-11-25",
+    "minPrice": 77000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-30",
+    "minPrice": 77000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 53899561,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 37729385,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 26410355,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 18487098,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 12940863,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 9058530,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 6340920,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 4438608,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "현칭 '남산시장' 빌딩. 본건 구분건물은 통칭 오픈상로서, 건출물 현황도상 호별로 치수가 표시되어 있으며, 벽면 또는 바닥 등에 각 호수의 표시 및 경계표시 등이 되어 있어 각 호별 위치의 확인이 가능한 상태임. 2026. 09. 14. 남산시장관리단으로부터 미납관리비 청구서가 제출됨(공용관리비 5,413,760원, 연체료 2,684,500원, 합계 8,097,660원). 이 중 공용부분 관리비는 매수인에게 승계될 수 있으며, 승계되는 정확한 금액은 남산시장관리단에 재확인 필요함"
+ },
+ {
+  "id": "busan-2023타경60232-6",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2023타경60232",
+  "itemNo": "6",
+  "category": "오피스텔",
+  "address": "부산광역시 금정구 금강로 700 1층121호",
+  "region": "부산",
+  "district": "금정구",
+  "appraisalPrice": 67000000,
+  "minPrice": 2704000,
+  "priceRatio": 0.0404,
+  "failCount": 9,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 270400,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-11-25",
+    "minPrice": 67000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-30",
+    "minPrice": 67000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 46900594,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 32830832,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 22981874,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 16087515,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 11261403,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 7883082,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 5518228,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 3862808,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "현칭 '남산시장' 빌딩. 본건 구분건물은 통칭 오픈상로서, 건출물 현황도상 호별로 치수가 표시되어 있으며, 벽면 또는 바닥 등에 각 호수의 표시 및 경계표시 등이 되어 있어 각 호별 위치의 확인이 가능한 상태임. 2026. 09. 14. 남산시장관리단으로부터 미납관리비 청구서가 제출됨(공용관리비 4,716,250원, 연체료 2,339,050원, 합계 7,055,300원). 이 중 공용부분 관리비는 매수인에게 승계될 수 있으며, 승계되는 정확한 금액은 남산시장관리단에 재확인 필요함"
+ },
+ {
+  "id": "busan-2023타경60232-7",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2023타경60232",
+  "itemNo": "7",
+  "category": "오피스텔",
+  "address": "부산광역시 금정구 금강로 700 1층133호",
+  "region": "부산",
+  "district": "금정구",
+  "appraisalPrice": 76000000,
+  "minPrice": 3067000,
+  "priceRatio": 0.0404,
+  "failCount": 9,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 306700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-11-25",
+    "minPrice": 76000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-30",
+    "minPrice": 76000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 53200243,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 37240340,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 26068357,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 18247933,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 12773611,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 8941569,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 6259127,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 4381409,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "현칭 '남산시장' 빌딩. 본건 구분건물은 통칭 오픈상로서, 건출물 현황도상 호별로 치수가 표시되어 있으며, 벽면 또는 바닥 등에 각 호수의 표시 및 경계표시 등이 되어 있어 각 호별 위치의 확인이 가능한 상태임. 2026. 09. 14. 남산시장관리단으로부터 미납관리비 청구서가 제출됨(공용관리비 385,150원, 전용관리비 84,480원, 연체료 14,280원, 합계 483,910원). 이 중 공용부분 관리비는 매수인에게 승계될 수 있으며, 승계되는 정확한 금액은 남산시장관리단에 재확인 필요함"
+ },
+ {
+  "id": "busan-2023타경60232-8",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2023타경60232",
+  "itemNo": "8",
+  "category": "오피스텔",
+  "address": "부산광역시 금정구 금강로 700 1층134호",
+  "region": "부산",
+  "district": "금정구",
+  "appraisalPrice": 73000000,
+  "minPrice": 2946000,
+  "priceRatio": 0.0404,
+  "failCount": 9,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 294600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-11-25",
+    "minPrice": 73000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-30",
+    "minPrice": 73000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 51100360,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 35770504,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 25039529,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 17527794,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 12269542,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 8588740,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 6012160,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 4208542,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "현칭 '남산시장' 빌딩. 본건 구분건물은 통칭 오픈상로서, 건출물 현황도상 호별로 치수가 표시되어 있으며, 벽면 또는 바닥 등에 각 호수의 표시 및 경계표시 등이 되어 있어 각 호별 위치의 확인이 가능한 상태임. 2026. 09. 14. 남산시장관리단으로부터 미납관리비 청구서가 제출됨(공용관리비 2,083,790원, 연체료 388,380원, 합계 2,472,170원). 이 중 공용부분 관리비는 매수인에게 승계될 수 있으며, 승계되는 정확한 금액은 남산시장관리단에 재확인 필요함"
+ },
+ {
+  "id": "busan-2023타경60232-9",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2023타경60232",
+  "itemNo": "9",
+  "category": "오피스텔",
+  "address": "부산광역시 금정구 금강로 700 1층135호",
+  "region": "부산",
+  "district": "금정구",
+  "appraisalPrice": 76000000,
+  "minPrice": 3067000,
+  "priceRatio": 0.0404,
+  "failCount": 9,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 306700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-11-25",
+    "minPrice": 76000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-30",
+    "minPrice": 76000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 53200243,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 37240340,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 26068357,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 18247933,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 12773611,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 8941569,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 6259127,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 4381409,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "현칭 '남산시장' 빌딩. 본건 구분건물은 통칭 오픈상로서, 건출물 현황도상 호별로 치수가 표시되어 있으며, 벽면 또는 바닥 등에 각 호수의 표시 및 경계표시 등이 되어 있어 각 호별 위치의 확인이 가능한 상태임. 2026. 09. 14. 남산시장관리단으로부터 미납관리비 청구서가 제출됨(공용관리비 2,148,040원, 연체료 400,300원, 합계 2,548,340원). 이 중 공용부분 관리비는 매수인에게 승계될 수 있으며, 승계되는 정확한 금액은 남산시장관리단에 재확인 필요함"
+ },
+ {
+  "id": "busan-2024타경110891-1",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2024타경110891",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "부산광역시 사하구 다대로83번길 50 3층312호 (신평동,샹트패미리타운)",
+  "region": "부산",
+  "district": "사하구",
+  "appraisalPrice": 45000000,
+  "minPrice": 1815000,
+  "priceRatio": 0.0403,
+  "failCount": 9,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 181500,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-11-25",
+    "minPrice": 45000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-30",
+    "minPrice": 45000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 31498241,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 22047538,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 15432415,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 10802087,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 7561039,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 5292432,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 3704495,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 2593002,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "- 재매각. - 특별매각조건 매수신청보증금 최저매각가격의 20% - 공부상 노인복지시설이나, 현황 주거용으로 이용 중임."
+ },
+ {
+  "id": "busan-2024타경3243-1",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2024타경3243",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "부산광역시 부산진구 중앙대로 694 지하1층19호 (부전동,쥬디스태화백화점본관)",
+  "region": "부산",
+  "district": "부산진구",
+  "appraisalPrice": 469000000,
+  "minPrice": 13249000,
+  "priceRatio": 0.0282,
+  "failCount": 10,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 1324900,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-10-21",
+    "minPrice": 469000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-25",
+    "minPrice": 469000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-30",
+    "minPrice": 328302257,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 229813160,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 160870318,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 112609997,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 78827540,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 55179657,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 38626026,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 27038404,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 18927013,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "판매시설(현황 공실임). 특별매각조건 매수신청보증금 최저매각가격의 20%"
+ },
+ {
+  "id": "busan-2024타경4802-2",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2024타경4802",
+  "itemNo": "2",
+  "category": "단독다가구",
+  "address": "부산광역시 동래구 안락동 440-13",
+  "region": "부산",
+  "district": "동래구",
+  "appraisalPrice": 269657500,
+  "minPrice": 7617000,
+  "priceRatio": 0.0282,
+  "failCount": 10,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 761700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 98.8,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-10-21",
+    "minPrice": 269657500,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-25",
+    "minPrice": 269657500,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-30",
+    "minPrice": 188759861,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 132131630,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 92491951,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 64744232,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 45320869,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 31724543,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 22207134,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 15544962,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 10881451,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "지분매각. 일괄매각. 제시외 건물 포함. 공유자의 우선매수신고는 1회에 한함. 해당 건물은 건축물대장상 위반건축물(증축, 블록판넬, 15㎡)로 등재되어 있음."
+ },
+ {
+  "id": "busan-2025타경101315-1",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2025타경101315",
+  "itemNo": "1",
+  "category": "상가",
+  "address": "부산광역시 강서구 명지동 3593-1 우진메디컬프라자 2층206호",
+  "region": "부산",
+  "district": "강서구",
+  "appraisalPrice": 661000000,
+  "minPrice": 111094000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 11109400,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 120.56,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-14",
+    "minPrice": 661000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 661000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 462699775,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 323889685,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 226722669,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 158705791,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "공부 및 현황 근린생활시설임."
+ },
+ {
+  "id": "busan-2025타경101467-1",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2025타경101467",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "부산광역시 서구 서대신동1가 34-2 대신에코팰리스 14층1406호",
+  "region": "부산",
+  "district": "서구",
+  "appraisalPrice": 179000000,
+  "minPrice": 10319000,
+  "priceRatio": 0.0576,
+  "failCount": 8,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 1031900,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 41.31,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-12-30",
+    "minPrice": 179000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 179000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 125300009,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 87710013,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 61397014,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 42977913,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 30084541,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 21059181,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 14741427,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "업무시설(오피스텔-주거용)임."
+ },
+ {
+  "id": "busan-2025타경101486-1",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2025타경101486",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "부산광역시 북구 덕천동 산118-1",
+  "region": "부산",
+  "district": "북구",
+  "appraisalPrice": 3400434000,
+  "minPrice": 571510000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 57151000,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 125942,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-14",
+    "minPrice": 3400434000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 3400434000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 2380303015,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 1666211561,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 1166347708,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 816443126,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "- 재매각. 매수보증금은 최저매각가격의 20%임. - 본건 토지는 광평수이고 급경사지로서 분묘의 소재 등에 대하여는 정확한 조사가 불가능한바, 경매 입찰시 분묘 소재 여부에 대해 재확인 바람(감정평가서 참조)"
+ },
+ {
+  "id": "busan-2025타경101705-1",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2025타경101705",
+  "itemNo": "1",
+  "category": "단독다가구",
+  "address": "부산광역시 서구 동대신동2가 80-3",
+  "region": "부산",
+  "district": "서구",
+  "appraisalPrice": 81662750,
+  "minPrice": 13724000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 1372400,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 76,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-14",
+    "minPrice": 81662750,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 81662750,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 57163043,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 40013513,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 28009027,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 19606017,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "- 재매각. - 특별매각조건 매수신청보증금 최저매각가격의 20% - 일괄매각. 주택으로 이용중임. - 공부상 면적(61.49㎡)과 실측면적(약 94.75㎡) 간에 다소 차이가 있으나 현장에서 측정한 실측면적(개략적인 면적)으로 사정하여 평가하였음(감정평가서 참조)."
+ },
+ {
+  "id": "busan-2025타경101710-4",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2025타경101710",
+  "itemNo": "4",
+  "category": "다세대",
+  "address": "부산광역시 사하구 하단동 870-110 5층501호",
+  "region": "부산",
+  "district": "사하구",
+  "appraisalPrice": 82400000,
+  "minPrice": 6786000,
+  "priceRatio": 0.0824,
+  "failCount": 7,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 678600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 29.78,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-03",
+    "minPrice": 82400000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 82400000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 57680007,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 40376010,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 28263210,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 19784249,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 13848976,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 9694285,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "busan-2025타경101710-5",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2025타경101710",
+  "itemNo": "5",
+  "category": "다세대",
+  "address": "부산광역시 사하구 하단동 870-110 7층701호",
+  "region": "부산",
+  "district": "사하구",
+  "appraisalPrice": 72000000,
+  "minPrice": 5930000,
+  "priceRatio": 0.0824,
+  "failCount": 7,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 593000,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 25.71,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-03",
+    "minPrice": 72000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 72000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 50400595,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 35280834,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 24696875,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 17288017,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 12101755,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 8471328,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "busan-2025타경101710-7",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2025타경101710",
+  "itemNo": "7",
+  "category": "다세대",
+  "address": "부산광역시 사하구 하단동 870-110 8층801호",
+  "region": "부산",
+  "district": "사하구",
+  "appraisalPrice": 52900000,
+  "minPrice": 4357000,
+  "priceRatio": 0.0824,
+  "failCount": 7,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 435700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 18.68,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-03",
+    "minPrice": 52900000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 52900000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 37030556,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 25921778,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 18145517,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 12702052,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 8891570,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 6224192,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "busan-2025타경101790-1",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2025타경101790",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "부산광역시 사하구 하단동 888-9 남영아트펠리체 3층301호",
+  "region": "부산",
+  "district": "사하구",
+  "appraisalPrice": 169000000,
+  "minPrice": 13918000,
+  "priceRatio": 0.0824,
+  "failCount": 7,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 1391800,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 56.026,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-03",
+    "minPrice": 169000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 169000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 118300150,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 82810210,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 57967220,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 40577105,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 28404010,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 19882832,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "집합건축물대장상 공동주택(도시형생활주택)임."
+ },
+ {
+  "id": "busan-2025타경101790-2",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2025타경101790",
+  "itemNo": "2",
+  "category": "다세대",
+  "address": "부산광역시 사하구 하단동 888-9 남영아트펠리체 5층502호",
+  "region": "부산",
+  "district": "사하구",
+  "appraisalPrice": 173000000,
+  "minPrice": 14247000,
+  "priceRatio": 0.0824,
+  "failCount": 7,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 1424700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 56.026,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-03",
+    "minPrice": 173000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 173000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 121099643,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 84769500,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 59338475,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 41536810,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 29075682,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 20352917,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "집합건축물대장상 공동주택(도시형생활주택)임."
+ },
+ {
+  "id": "busan-2025타경101790-3",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2025타경101790",
+  "itemNo": "3",
+  "category": "오피스텔",
+  "address": "부산광역시 사하구 하단동 888-9 남영아트펠리체 10층1002호",
+  "region": "부산",
+  "district": "사하구",
+  "appraisalPrice": 203000000,
+  "minPrice": 16718000,
+  "priceRatio": 0.0824,
+  "failCount": 7,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 1671800,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 76.9033,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-03",
+    "minPrice": 203000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 203000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 142100094,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 99470131,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 69629138,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 48740428,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 34118322,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 23882841,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "집합건축물대장상 업무시설(오피스텔)임."
+ },
+ {
+  "id": "busan-2025타경101790-4",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2025타경101790",
+  "itemNo": "4",
+  "category": "오피스텔",
+  "address": "부산광역시 사하구 하단동 888-9 남영아트펠리체 12층1202호",
+  "region": "부산",
+  "district": "사하구",
+  "appraisalPrice": 205000000,
+  "minPrice": 16883000,
+  "priceRatio": 0.0824,
+  "failCount": 7,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 1688300,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 76.9033,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-03",
+    "minPrice": 205000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 205000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 143500447,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 100450626,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 70315658,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 49221114,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 34454887,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 24118496,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "집합건축물대장상 업무시설(오피스텔)임."
+ },
+ {
+  "id": "busan-2025타경101911-1",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2025타경101911",
+  "itemNo": "1",
+  "category": "아파트",
+  "address": "부산광역시 사상구 괘법동 270-9 파크블루11차 7층702호",
+  "region": "부산",
+  "district": "사상구",
+  "appraisalPrice": 140000000,
+  "minPrice": 11530000,
+  "priceRatio": 0.0824,
+  "failCount": 7,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 1153000,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 21.42,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-03",
+    "minPrice": 140000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 140000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 98000483,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 68600677,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 48020710,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 33614663,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 23530380,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 16471347,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "busan-2025타경101911-2",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2025타경101911",
+  "itemNo": "2",
+  "category": "아파트",
+  "address": "부산광역시 사상구 괘법동 270-9 파크블루11차 7층706호",
+  "region": "부산",
+  "district": "사상구",
+  "appraisalPrice": 112000000,
+  "minPrice": 9224000,
+  "priceRatio": 0.0824,
+  "failCount": 7,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 922400,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 17.12,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-03",
+    "minPrice": 112000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 112000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 78400387,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 54880541,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 38416568,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 26891730,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 18824304,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 13177078,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "busan-2025타경101911-3",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2025타경101911",
+  "itemNo": "3",
+  "category": "아파트",
+  "address": "부산광역시 사상구 괘법동 270-9 파크블루11차 8층811호",
+  "region": "부산",
+  "district": "사상구",
+  "appraisalPrice": 124000000,
+  "minPrice": 10212000,
+  "priceRatio": 0.0824,
+  "failCount": 7,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 1021200,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 19.43,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-03",
+    "minPrice": 124000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 124000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 86800081,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 60760114,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 42532119,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 29772511,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 20840777,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 14588558,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "busan-2025타경101911-4",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2025타경101911",
+  "itemNo": "4",
+  "category": "아파트",
+  "address": "부산광역시 사상구 괘법동 270-9 파크블루11차 9층901호",
+  "region": "부산",
+  "district": "사상구",
+  "appraisalPrice": 173000000,
+  "minPrice": 14247000,
+  "priceRatio": 0.0824,
+  "failCount": 7,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 1424700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 26.46,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-03",
+    "minPrice": 173000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 173000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 121099643,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 84769500,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 59338475,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 41536810,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 29075682,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 20352917,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "busan-2025타경101911-5",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2025타경101911",
+  "itemNo": "5",
+  "category": "아파트",
+  "address": "부산광역시 사상구 괘법동 270-9 파크블루11차 9층908호",
+  "region": "부산",
+  "district": "사상구",
+  "appraisalPrice": 170000000,
+  "minPrice": 14000000,
+  "priceRatio": 0.0824,
+  "failCount": 7,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 1400000,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 25.99,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-03",
+    "minPrice": 170000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 170000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 118999720,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 83299607,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 58309588,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 40816615,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 28571563,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 20000047,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "busan-2025타경101981-1",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2025타경101981",
+  "itemNo": "1",
+  "category": "단독다가구",
+  "address": "부산광역시 사상구 감전동 132-1",
+  "region": "부산",
+  "district": "사상구",
+  "appraisalPrice": 659971000,
+  "minPrice": 110921000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 11092100,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 3682,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-14",
+    "minPrice": 659971000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 659971000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 461979428,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 323385410,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 226369654,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 158458665,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "일괄매각. 제시외 건물 포함. 일부(목록1.2.)는 지분매각임. 감정서상 제시외 2-1의 평가금액에서 지분을 감안함. 목록1. 토지는 수인의 공유지분으로 이루어져 있으며, 토지상에 등기부등본상 26개 동의 건물이 소재하고 있음. 목록2. 건물은 건축물대장상 대지면적이 기재되어 있으나 건축물현황도 또는 배치도, 건축허가서 등이 없는 등의 사유로 지분면적에 상응하는 특정위치를 지정할 수 없는 점, 목록3. 건물은 배치도 및 건축물현황도상 위치는 특정되나 건축물대장상 대지면적 기재가 없고, 건축허가서 등 확인 자료가 존재하지 않는 점 등으로 보아 본건 목록1. 토지(강원중 지분)의 특정 위치를 지정하는 것에 어려움이 있는바 본건 목록1. 토지는 전체를 기준으로 지분 비율(강원중 지분 55690분의 2222)을 적용하여 감정평가하였으니 경매진행 및 응찰시 참고하시기 바람(감정평가서 참조). 목록2.3. 건물은 공부상 1층 창고, 2층 주택이나, 현황은 주택으로 사용중임."
+ },
+ {
+  "id": "busan-2025타경102021-1",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2025타경102021",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "부산광역시 사하구 하단동 산61-1",
+  "region": "부산",
+  "district": "사하구",
+  "appraisalPrice": 136500000,
+  "minPrice": 16058000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 1605800,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 1050,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-10",
+    "minPrice": 136500000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 136500000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 95548921,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 66883489,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 46817913,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 32772169,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 22940259,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "맹지임. 본 건은 둘 이상의 용도지역(자연녹지지역, 제2종일반주거지역)에 걸쳐 있는 토지임. 임야의 특성상 현장에서 확인치 못한 분묘 등이 있을 수 있으니 경매진행 및 응찰시 유의 바람."
+ },
+ {
+  "id": "busan-2025타경102021-2",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2025타경102021",
+  "itemNo": "2",
+  "category": "토지",
+  "address": "부산광역시 사하구 하단동 298-3",
+  "region": "부산",
+  "district": "사하구",
+  "appraisalPrice": 48852000,
+  "minPrice": 5747000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 574700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 92,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-10",
+    "minPrice": 48852000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 48852000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 34196014,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 23936940,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 16755669,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 11728836,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 8210093,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "북측 아파트 진입도로에 접하고 있음. 임야의 특성상 현장에서 확인치 못한 분묘 등이 있을 수 있으니 경매진행 및 응찰시 유의 바람."
+ },
+ {
+  "id": "busan-2025타경102081-1",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2025타경102081",
+  "itemNo": "1",
+  "category": "단독다가구",
+  "address": "부산광역시 사하구 하단동 784-5",
+  "region": "부산",
+  "district": "사하구",
+  "appraisalPrice": 505567600,
+  "minPrice": 59479000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 5947900,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 220,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-10",
+    "minPrice": 505567600,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 505567600,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 353896802,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 247727399,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 173408925,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 121386070,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 84970124,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "일괄매각. 제시외 건물(2-1, 2-3) 포함. 제시외 건물(2-2)(블록조 스라브지붕 1층 주택 약 20㎡)은 매각에서 제외함. 매각에서 제외하는 건물에 대한 법정지상권 성립여부 불분명. 최저매각가격은 제시외 건물 소재로 인하여 제한받는 가격임. 목록2. 건물에 제시외 건물(2-1)을 무허가로 확장하여 101~106호로 구성한 것으로 추정되며, 외관상 주택으로 이용중임. 공부상 건물 면적은 1층: 76.63㎡로 등재되어 있으나, 현장조사시 개략적으로 측정된 면적은 1층: 약 111.4㎡로 공부상 면적과 현저한 차이가 존재함. 일반건축물대장 상 호수/가구수/세대수 : 0호/1가구/0세대로 등재되어 있으나, 현황은 101호~106호가 존재함.(단, 106호는 호실번호를 추정하였음)(감정평가서 참조)"
+ },
+ {
+  "id": "busan-2025타경102091-1",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2025타경102091",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "부산광역시 강서구 녹산동 967",
+  "region": "부산",
+  "district": "강서구",
+  "appraisalPrice": 48778400,
+  "minPrice": 8197000,
+  "priceRatio": 0.168,
+  "failCount": 5,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 819700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 506,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-14",
+    "minPrice": 48778400,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 48778400,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 34143892,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 23900033,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 16729539,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 11710339,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "농지취득자격증명 제출 필요(매각허가결정기일까지 미제출시 보증금은 반환하지 않음). 전으로 이용중임. 본건 토지이용계획확인서상 맹지이나 인근 지번을 통해서 출입이 가능함."
+ },
+ {
+  "id": "busan-2025타경102239-1",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2025타경102239",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "부산광역시 사하구 당리동 33-12",
+  "region": "부산",
+  "district": "사하구",
+  "appraisalPrice": 199260000,
+  "minPrice": 33489000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 3348900,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 162,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-14",
+    "minPrice": 199260000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 199260000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 139481477,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 97636667,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 68345411,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 47841608,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "토지대장상 지목은 '임야'이나 현황 '주거나지'(일부 일시적 '전')임. 본건 토지는 인접도로와 약 1.2미터 내외의 지반 격차가 있음."
+ },
+ {
+  "id": "busan-2025타경102239-2",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2025타경102239",
+  "itemNo": "2",
+  "category": "토지",
+  "address": "부산광역시 사하구 당리동 산35-3",
+  "region": "부산",
+  "district": "사하구",
+  "appraisalPrice": 258960000,
+  "minPrice": 43523000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 4352300,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 624,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-14",
+    "minPrice": 258960000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 258960000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 181271661,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 126889925,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 88822781,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 62175831,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "자연림 상태 및 일부 '전', 일부 '구거' 등으로 이용 중이며, 일부 임지 상에 분묘 2기가 소재하는 것으로 조사되고, 일부분은 인접 필지 경계에 소재하는 것으로 판단되어 정확한 분묘 소재 및 위치 확인은 정밀 측량을 요함(감정평가서 참조). 최저매각가격은 분묘 소재로 인하여 제한받는 가격임. 분묘기지권 성립여지 있음. 지적도상 맹지이며, 인접토지를 통하여 접근가능함."
+ },
+ {
+  "id": "busan-2025타경102271-1",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2025타경102271",
+  "itemNo": "1",
+  "category": "아파트",
+  "address": "부산광역시 사상구 괘법동 523-4 굿모닝뷰 8층802호",
+  "region": "부산",
+  "district": "사상구",
+  "appraisalPrice": 273000000,
+  "minPrice": 45882000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 4588200,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 69.105,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-14",
+    "minPrice": 273000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 273000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 191099075,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 133768706,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 93637641,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 65546031,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "busan-2025타경1291-1",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2025타경1291",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "부산광역시 사하구 하단동 521-5 한라리치스파티움 8층801호",
+  "region": "부산",
+  "district": "사하구",
+  "appraisalPrice": 211000000,
+  "minPrice": 12163000,
+  "priceRatio": 0.0576,
+  "failCount": 8,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 1216300,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 84.565,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-12-30",
+    "minPrice": 211000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-03",
+    "minPrice": 211000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-10",
+    "minPrice": 147698892,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 103388449,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 72371371,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 50659580,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 35461440,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 24822821,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 17375845,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "주거용으로 사용 가능한 오피스텔임."
+ },
+ {
+  "id": "busan-2025타경21412-1",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2025타경21412",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "부산광역시 영도구 동삼동 산98-26 2층조표19841호",
+  "region": "부산",
+  "district": "영도구",
+  "appraisalPrice": 92000000,
+  "minPrice": 10823000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 1082300,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 36.99,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-10",
+    "minPrice": 92000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 92000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 64399298,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 45079017,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 31554968,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 22088237,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 15461597,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "일괄매각, 주거용으로 이용중임"
+ },
+ {
+  "id": "busan-2025타경21801-1",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2025타경21801",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "부산광역시 연제구 연산동 57-76 시원힐스타주건축물제1동 2층201호",
+  "region": "부산",
+  "district": "연제구",
+  "appraisalPrice": 122000000,
+  "minPrice": 14353000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 1435300,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 40.43,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-10",
+    "minPrice": 122000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 122000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 85399823,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 59779753,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 41845741,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 29291958,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 20504328,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "busan-2025타경21865-1",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2025타경21865",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "부산광역시 부산진구 가야동 300-22 제이엠하우스 3층306호",
+  "region": "부산",
+  "district": "부산진구",
+  "appraisalPrice": 126000000,
+  "minPrice": 21177000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 2117700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 24.69,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-14",
+    "minPrice": 126000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 126000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 88200150,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 61740210,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 43218220,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 30252806,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "공부상 용도는 공동주택(도시형생활주택)임"
+ },
+ {
+  "id": "busan-2025타경22109-1",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2025타경22109",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "부산광역시 동래구 온천동 1850 동래3차에스케이뷰 108동 34층3405호",
+  "region": "부산",
+  "district": "동래구",
+  "appraisalPrice": 382000000,
+  "minPrice": 64203000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 6420300,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 80.955,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-14",
+    "minPrice": 382000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 382000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 267400217,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 187180303,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 131026318,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 91718497,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "busan-2025타경2522-1",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2025타경2522",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "부산광역시 서구 동대신동2가 78-8 지에이하우스빌7차 4층402호",
+  "region": "부산",
+  "district": "서구",
+  "appraisalPrice": 65000000,
+  "minPrice": 10924000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 1092400,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 43.77,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-14",
+    "minPrice": 65000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 65000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 45499542,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 31849359,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 22294327,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 15605871,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "공동주택(다세대주택)임."
+ },
+ {
+  "id": "busan-2025타경2621-2",
+  "court": "부산서부지원",
+  "courtCode": "B000414",
+  "caseNo": "2025타경2621",
+  "itemNo": "2",
+  "category": "상가",
+  "address": "부산광역시 강서구 명지동 3357-7 명지뉴타워복합상가 지층비102호",
+  "region": "부산",
+  "district": "강서구",
+  "appraisalPrice": 207000000,
+  "minPrice": 24353000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제101호경매법정",
+  "deposit": 2435300,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 69.55,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-10",
+    "minPrice": 207000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 207000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 144899660,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 101429524,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 71000500,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 49700233,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 34790082,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "근린생활시설로 현재 공실상태임. 2025. 8. 현재 관리비 198,000원정도 미납됨(현황조사서 참조)."
+ },
+ {
+  "id": "busan-2025타경4007-1",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2025타경4007",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "부산광역시 부산진구 엄광로 37 6층624호 (개금동,개금인제빌리지)",
+  "region": "부산",
+  "district": "부산진구",
+  "appraisalPrice": 144000000,
+  "minPrice": 16941000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 1694100,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-10",
+    "minPrice": 144000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-14",
+    "minPrice": 144000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 100799548,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 70559367,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 49391335,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 34573780,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 24201537,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "busan-2025타경814-1",
+  "court": "부산지방법원",
+  "courtCode": "B000410",
+  "caseNo": "2025타경814",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "부산광역시 금정구 구서동 86-12 4층402호",
+  "region": "부산",
+  "district": "금정구",
+  "appraisalPrice": 252000000,
+  "minPrice": 42354000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "2층256호입찰법정",
+  "deposit": 4235400,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 71.87,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-14",
+    "minPrice": 252000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 252000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 176400300,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 123480420,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 86436441,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 60505611,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
  }
 ]
