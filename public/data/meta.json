@@ -1,160 +1,161 @@
 {
- "crawledAt": "2026-11-04T08:01:44+09:00",
+ "crawledAt": "2026-11-05T08:17:13+09:00",
  "totalCount": 1000,
  "countsByRegion": {
-  "seoul": 106,
+  "seoul": 84,
   "busan": 149,
-  "daegu": 29,
-  "incheon": 67,
-  "gwangju": 6,
-  "daejeon": 14,
-  "ulsan": 17,
-  "sejong": 17,
-  "gyeonggi": 273,
-  "gangwon": 36,
-  "chungbuk": 0,
-  "chungnam": 50,
+  "daegu": 31,
+  "incheon": 77,
+  "gwangju": 13,
+  "daejeon": 12,
+  "ulsan": 32,
+  "sejong": 13,
+  "gyeonggi": 216,
+  "gangwon": 31,
+  "chungbuk": 15,
+  "chungnam": 57,
   "jeonbuk": 7,
-  "jeonnam": 31,
-  "gyeongbuk": 41,
-  "gyeongnam": 151,
+  "jeonnam": 24,
+  "gyeongbuk": 75,
+  "gyeongnam": 158,
   "jeju": 6
  },
- "nextUpdateAt": "2026-11-05T03:00:00+09:00",
- "newCount": 15,
+ "nextUpdateAt": "2026-11-06T03:00:00+09:00",
+ "newCount": 10,
  "scope": null,
  "aborted": false,
  "abortReason": null,
  "abortedAtRequest": null,
- "totalRequests": 240,
- "truncated": 4773,
+ "totalRequests": 219,
+ "truncated": 4482,
  "detailCoverage": {
-  "candidates": 4773,
+  "candidates": 4482,
   "requested": 0,
   "succeeded": 0
  },
  "historySource": {
   "real": 0,
-  "backcalc": 5483
+  "backcalc": 5161
  },
- "dedupDropped": 4004,
+ "dedupDropped": 3503,
  "invalidDropped": 0,
- "cappedFrom": 5476,
+ "cappedFrom": 5153,
  "outputCap": 1000,
  "outputDateSpread": 5,
- "sourceLastSaleDate": "2026-11-10",
+ "sourceLastSaleDate": "2026-11-11",
  "candidatesByRegion": {
-  "seoul": 566,
-  "busan": 463,
-  "daegu": 112,
-  "incheon": 334,
-  "gwangju": 75,
-  "daejeon": 39,
-  "ulsan": 39,
-  "sejong": 50,
-  "gyeonggi": 1244,
-  "gangwon": 164,
-  "chungbuk": 1,
-  "chungnam": 213,
-  "jeonbuk": 107,
-  "jeonnam": 283,
-  "gyeongbuk": 273,
-  "gyeongnam": 483,
-  "jeju": 176
+  "seoul": 599,
+  "busan": 442,
+  "daegu": 126,
+  "incheon": 332,
+  "gwangju": 77,
+  "daejeon": 31,
+  "ulsan": 87,
+  "sejong": 35,
+  "gyeonggi": 994,
+  "gangwon": 135,
+  "chungbuk": 36,
+  "chungnam": 256,
+  "jeonbuk": 108,
+  "jeonnam": 289,
+  "gyeongbuk": 324,
+  "gyeongnam": 504,
+  "jeju": 162
  },
  "outputWindow": {
-  "start": "2026-11-04",
-  "end": "2026-11-11",
+  "start": "2026-11-05",
+  "end": "2026-11-12",
   "endInclusive": false
  },
  "outputSaleDateRange": {
-  "first": "2026-11-04",
-  "last": "2026-11-10"
+  "first": "2026-11-05",
+  "last": "2026-11-11"
  },
  "collectionDiagnostics": {
   "version": 1,
   "searchWindow": {
-   "start": "2026-11-04",
-   "end": "2026-11-11",
+   "start": "2026-11-05",
+   "end": "2026-11-12",
    "endInclusive": true
   },
   "outputWindow": {
-   "start": "2026-11-04",
-   "end": "2026-11-11",
+   "start": "2026-11-05",
+   "end": "2026-11-12",
    "endInclusive": false
   },
   "scope": null,
   "totals": {
    "stages": {
-    "receiveRaw": 9536,
-    "dedup": 5539,
-    "mapped": 5483,
-    "invalid": 56,
-    "idDuplicates": 7,
-    "windowExcluded": 854,
-    "candidates": 4622,
+    "receiveRaw": 8711,
+    "dedup": 5216,
+    "mapped": 5161,
+    "invalid": 55,
+    "idDuplicates": 8,
+    "windowExcluded": 616,
+    "candidates": 4537,
     "output": 1000
    },
    "saleDatesByStage": {
     "receiveRaw": {
-     "2026-11-04": 1596,
-     "2026-11-10": 2590,
-     "2026-11-05": 1225,
-     "2026-11-09": 2596,
-     "2026-11-06": 161,
-     "2026-11-11": 1368
+     "2026-11-10": 2536,
+     "2026-11-05": 1172,
+     "2026-11-12": 910,
+     "2026-11-09": 2572,
+     "2026-11-06": 158,
+     "2026-11-11": 1363
     },
     "dedup": {
-     "2026-11-04": 874,
-     "2026-11-10": 1615,
-     "2026-11-05": 769,
-     "2026-11-09": 1284,
-     "2026-11-06": 129,
-     "2026-11-11": 868
+     "2026-11-10": 1581,
+     "2026-11-05": 750,
+     "2026-11-12": 620,
+     "2026-11-09": 1272,
+     "2026-11-06": 128,
+     "2026-11-11": 865
     },
     "mapped": {
-     "2026-11-04": 870,
-     "2026-11-10": 1601,
-     "2026-11-05": 764,
-     "2026-11-09": 1265,
-     "2026-11-06": 129,
-     "2026-11-11": 854
+     "2026-11-10": 1567,
+     "2026-11-05": 745,
+     "2026-11-12": 617,
+     "2026-11-09": 1253,
+     "2026-11-06": 128,
+     "2026-11-11": 851
     },
     "invalid": {
+     "2026-11-12": 3,
      "2026-11-10": 14,
      "2026-11-05": 5,
-     "2026-11-04": 4,
      "2026-11-09": 19,
      "2026-11-11": 14
     },
     "idDuplicates": {
      "2026-11-10": 3,
      "2026-11-09": 3,
-     "2026-11-05": 1
+     "2026-11-05": 1,
+     "2026-11-12": 1
     },
     "windowExcluded": {
-     "2026-11-11": 854
+     "2026-11-12": 616
     },
     "candidates": {
-     "2026-11-04": 870,
-     "2026-11-10": 1598,
-     "2026-11-05": 763,
-     "2026-11-09": 1262,
-     "2026-11-06": 129
+     "2026-11-10": 1564,
+     "2026-11-05": 744,
+     "2026-11-09": 1250,
+     "2026-11-06": 128,
+     "2026-11-11": 851
     },
     "output": {
-     "2026-11-04": 218,
      "2026-11-05": 218,
-     "2026-11-06": 129,
+     "2026-11-06": 128,
      "2026-11-09": 218,
-     "2026-11-10": 217
+     "2026-11-10": 218,
+     "2026-11-11": 218
     }
    },
    "mappingSources": {
-    "sidoPrefix": 5513,
+    "sidoPrefix": 5191,
     "sidoCode": 0,
-    "courtFallback": 15,
-    "unknown": 11
+    "courtFallback": 13,
+    "unknown": 12
    },
    "exclusionsByReason": {
     "missingIdentity": {
@@ -170,11 +171,11 @@
      "saleDates": {}
     },
     "priceContract": {
-     "count": 45,
+     "count": 43,
      "saleDates": {
+      "2026-11-12": 2,
       "2026-11-10": 13,
       "2026-11-05": 4,
-      "2026-11-04": 4,
       "2026-11-09": 11,
       "2026-11-11": 13
      }
@@ -188,10 +189,11 @@
      "saleDates": {}
     },
     "unmappedRegion": {
-     "count": 11,
+     "count": 12,
      "saleDates": {
       "2026-11-09": 8,
       "2026-11-11": 1,
+      "2026-11-12": 1,
       "2026-11-10": 1,
       "2026-11-05": 1
      }
@@ -209,11 +211,12 @@
      "saleDates": {}
     },
     "duplicateId": {
-     "count": 7,
+     "count": 8,
      "saleDates": {
       "2026-11-10": 3,
       "2026-11-09": 3,
-      "2026-11-05": 1
+      "2026-11-05": 1,
+      "2026-11-12": 1
      }
     },
     "beforeOutputWindow": {
@@ -221,9 +224,9 @@
      "saleDates": {}
     },
     "afterOutputWindow": {
-     "count": 854,
+     "count": 616,
      "saleDates": {
-      "2026-11-11": 854
+      "2026-11-12": 616
      }
     },
     "scope": {
@@ -235,13 +238,13 @@
      "saleDates": {}
     },
     "cap": {
-     "count": 4476,
+     "count": 4153,
      "saleDates": {
-      "2026-11-04": 652,
-      "2026-11-10": 1381,
-      "2026-11-05": 545,
-      "2026-11-09": 1044,
-      "2026-11-11": 854
+      "2026-11-10": 1346,
+      "2026-11-05": 526,
+      "2026-11-12": 616,
+      "2026-11-09": 1032,
+      "2026-11-11": 633
      }
     },
     "other": {
@@ -253,68 +256,67 @@
   "byRegion": {
    "seoul": {
     "stages": {
-     "receiveRaw": 760,
-     "dedup": 709,
-     "mapped": 702,
+     "receiveRaw": 717,
+     "dedup": 681,
+     "mapped": 674,
      "invalid": 7,
      "idDuplicates": 2,
-     "windowExcluded": 134,
-     "candidates": 566,
-     "output": 106
+     "windowExcluded": 73,
+     "candidates": 599,
+     "output": 84
     },
     "saleDatesByStage": {
      "receiveRaw": {
-      "2026-11-04": 120,
-      "2026-11-10": 261,
+      "2026-11-10": 259,
       "2026-11-05": 169,
-      "2026-11-09": 50,
+      "2026-11-12": 82,
+      "2026-11-09": 47,
       "2026-11-06": 26,
       "2026-11-11": 134
      },
      "dedup": {
-      "2026-11-04": 98,
-      "2026-11-10": 244,
+      "2026-11-10": 243,
       "2026-11-05": 166,
-      "2026-11-09": 41,
+      "2026-11-12": 74,
+      "2026-11-09": 38,
       "2026-11-06": 26,
       "2026-11-11": 134
      },
      "mapped": {
-      "2026-11-04": 97,
-      "2026-11-10": 239,
+      "2026-11-10": 238,
       "2026-11-05": 165,
-      "2026-11-09": 41,
+      "2026-11-12": 73,
+      "2026-11-09": 38,
       "2026-11-06": 26,
       "2026-11-11": 134
      },
      "invalid": {
+      "2026-11-12": 1,
       "2026-11-10": 5,
-      "2026-11-05": 1,
-      "2026-11-04": 1
+      "2026-11-05": 1
      },
      "idDuplicates": {
       "2026-11-10": 2
      },
      "windowExcluded": {
-      "2026-11-11": 134
+      "2026-11-12": 73
      },
      "candidates": {
-      "2026-11-04": 97,
-      "2026-11-10": 237,
+      "2026-11-10": 236,
       "2026-11-05": 165,
-      "2026-11-09": 41,
-      "2026-11-06": 26
+      "2026-11-09": 38,
+      "2026-11-06": 26,
+      "2026-11-11": 134
      },
      "output": {
-      "2026-11-04": 26,
-      "2026-11-05": 6,
+      "2026-11-05": 10,
       "2026-11-06": 26,
       "2026-11-09": 6,
       "2026-11-10": 42
      }
     },
     "mappingSources": {
-     "sidoPrefix": 709,
+     "sidoPrefix": 681,
      "sidoCode": 0,
      "courtFallback": 0,
      "unknown": 0
@@ -335,9 +337,9 @@
      "priceContract": {
       "count": 7,
       "saleDates": {
+       "2026-11-12": 1,
        "2026-11-10": 5,
-       "2026-11-05": 1,
-       "2026-11-04": 1
+       "2026-11-05": 1
       }
      },
      "missingSaleDate": {
@@ -375,9 +377,9 @@
       "saleDates": {}
      },
      "afterOutputWindow": {
-      "count": 134,
+      "count": 73,
       "saleDates": {
-       "2026-11-11": 134
+       "2026-11-12": 73
       }
      },
      "scope": {
@@ -389,12 +391,12 @@
       "saleDates": {}
      },
      "cap": {
-      "count": 594,
+      "count": 588,
       "saleDates": {
-       "2026-11-04": 71,
-       "2026-11-10": 195,
-       "2026-11-05": 159,
-       "2026-11-09": 35,
+       "2026-11-10": 194,
+       "2026-11-05": 155,
+       "2026-11-12": 73,
+       "2026-11-09": 32,
        "2026-11-11": 134
       }
      },
@@ -406,195 +408,62 @@
    },
    "busan": {
     "stages": {
-     "receiveRaw": 653,
-     "dedup": 536,
-     "mapped": 536,
+     "receiveRaw": 589,
+     "dedup": 476,
+     "mapped": 476,
      "invalid": 0,
      "idDuplicates": 0,
-     "windowExcluded": 73,
-     "candidates": 463,
+     "windowExcluded": 34,
+     "candidates": 442,
      "output": 149
     },
     "saleDatesByStage": {
      "receiveRaw": {
-      "2026-11-11": 94,
-      "2026-11-10": 189,
-      "2026-11-04": 94,
+      "2026-11-11": 92,
+      "2026-11-10": 181,
       "2026-11-06": 56,
-      "2026-11-09": 141,
+      "2026-11-09": 140,
+      "2026-11-12": 41,
       "2026-11-05": 79
      },
      "dedup": {
-      "2026-11-11": 73,
-      "2026-11-10": 146,
-      "2026-11-04": 84,
+      "2026-11-11": 72,
+      "2026-11-10": 138,
       "2026-11-06": 44,
-      "2026-11-09": 133,
+      "2026-11-09": 132,
+      "2026-11-12": 34,
       "2026-11-05": 56
      },
      "mapped": {
-      "2026-11-11": 73,
-      "2026-11-10": 146,
-      "2026-11-04": 84,
+      "2026-11-11": 72,
+      "2026-11-10": 138,
       "2026-11-06": 44,
-      "2026-11-09": 133,
+      "2026-11-09": 132,
+      "2026-11-12": 34,
       "2026-11-05": 56
      },
      "invalid": {},
      "idDuplicates": {},
      "windowExcluded": {
-      "2026-11-11": 73
+      "2026-11-12": 34
      },
      "candidates": {
-      "2026-11-10": 146,
-      "2026-11-04": 84,
+      "2026-11-11": 72,
+      "2026-11-10": 138,
       "2026-11-06": 44,
-      "2026-11-09": 133,
+      "2026-11-09": 132,
       "2026-11-05": 56
      },
      "output": {
-      "2026-11-04": 27,
       "2026-11-05": 11,
       "2026-11-06": 44,
       "2026-11-09": 9,
-      "2026-11-10": 58
+      "2026-11-10": 58,
+      "2026-11-11": 27
      }
     },
     "mappingSources": {
-     "sidoPrefix": 533,
-     "sidoCode": 0,
-     "courtFallback": 3,
-     "unknown": 0
-    },
-    "exclusionsByReason": {
-     "missingIdentity": {
-      "count": 0,
-      "saleDates": {}
-     },
-     "missingPrice": {
-      "count": 0,
-      "saleDates": {}
-     },
-     "failCount": {
-      "count": 0,
-      "saleDates": {}
-     },
-     "priceContract": {
-      "count": 0,
-      "saleDates": {}
-     },
-     "missingSaleDate": {
-      "count": 0,
-      "saleDates": {}
-     },
-     "expiredSaleDate": {
-      "count": 0,
-      "saleDates": {}
-     },
-     "unmappedRegion": {
-      "count": 0,
-      "saleDates": {}
-     },
-     "missingDistrict": {
-      "count": 0,
-      "saleDates": {}
-     },
-     "missingCourt": {
-      "count": 0,
-      "saleDates": {}
-     },
-     "schemaInvalid": {
-      "count": 0,
-      "saleDates": {}
-     },
-     "duplicateId": {
-      "count": 0,
-      "saleDates": {}
-     },
-     "beforeOutputWindow": {
-      "count": 0,
-      "saleDates": {}
-     },
-     "afterOutputWindow": {
-      "count": 73,
-      "saleDates": {
-       "2026-11-11": 73
-      }
-     },
-     "scope": {
-      "count": 0,
-      "saleDates": {}
-     },
-     "limit": {
-      "count": 0,
-      "saleDates": {}
-     },
-     "cap": {
-      "count": 387,
-      "saleDates": {
-       "2026-11-11": 73,
-       "2026-11-10": 88,
-       "2026-11-04": 57,
-       "2026-11-09": 124,
-       "2026-11-05": 45
-      }
-     },
-     "other": {
-      "count": 0,
-      "saleDates": {}
-     }
-    }
-   },
-   "daegu": {
-    "stages": {
-     "receiveRaw": 214,
-     "dedup": 142,
-     "mapped": 141,
-     "invalid": 1,
-     "idDuplicates": 0,
-     "windowExcluded": 29,
-     "candidates": 112,
-     "output": 29
-    },
-    "saleDatesByStage": {
-     "receiveRaw": {
-      "2026-11-04": 23,
-      "2026-11-11": 53,
-      "2026-11-10": 90,
-      "2026-11-05": 48
-     },
-     "dedup": {
-      "2026-11-04": 15,
-      "2026-11-11": 29,
-      "2026-11-10": 66,
-      "2026-11-05": 32
-     },
-     "mapped": {
-      "2026-11-04": 14,
-      "2026-11-11": 29,
-      "2026-11-10": 66,
-      "2026-11-05": 32
-     },
-     "invalid": {
-      "2026-11-04": 1
-     },
-     "idDuplicates": {},
-     "windowExcluded": {
-      "2026-11-11": 29
-     },
-     "candidates": {
-      "2026-11-04": 14,
-      "2026-11-10": 66,
-      "2026-11-05": 32
-     },
-     "output": {
-      "2026-11-04": 6,
-      "2026-11-05": 12,
-      "2026-11-10": 11
-     }
-    },
-    "mappingSources": {
-     "sidoPrefix": 140,
+     "sidoPrefix": 474,
      "sidoCode": 0,
      "courtFallback": 2,
      "unknown": 0
@@ -613,10 +482,8 @@
       "saleDates": {}
      },
      "priceContract": {
-      "count": 1,
-      "saleDates": {
-       "2026-11-04": 1
-      }
+      "count": 0,
+      "saleDates": {}
      },
      "missingSaleDate": {
       "count": 0,
@@ -651,9 +518,9 @@
       "saleDates": {}
      },
      "afterOutputWindow": {
-      "count": 29,
+      "count": 34,
       "saleDates": {
-       "2026-11-11": 29
+       "2026-11-12": 34
       }
      },
      "scope": {
@@ -665,11 +532,142 @@
       "saleDates": {}
      },
      "cap": {
-      "count": 112,
+      "count": 327,
       "saleDates": {
-       "2026-11-04": 8,
-       "2026-11-11": 29,
+       "2026-11-11": 45,
+       "2026-11-10": 80,
+       "2026-11-09": 123,
+       "2026-11-12": 34,
+       "2026-11-05": 45
+      }
+     },
+     "other": {
+      "count": 0,
+      "saleDates": {}
+     }
+    }
+   },
+   "daegu": {
+    "stages": {
+     "receiveRaw": 309,
+     "dedup": 205,
+     "mapped": 205,
+     "invalid": 0,
+     "idDuplicates": 0,
+     "windowExcluded": 79,
+     "candidates": 126,
+     "output": 31
+    },
+    "saleDatesByStage": {
+     "receiveRaw": {
+      "2026-11-11": 53,
+      "2026-11-10": 90,
+      "2026-11-12": 120,
+      "2026-11-05": 46
+     },
+     "dedup": {
+      "2026-11-11": 29,
+      "2026-11-10": 66,
+      "2026-11-12": 79,
+      "2026-11-05": 31
+     },
+     "mapped": {
+      "2026-11-11": 29,
+      "2026-11-10": 66,
+      "2026-11-12": 79,
+      "2026-11-05": 31
+     },
+     "invalid": {},
+     "idDuplicates": {},
+     "windowExcluded": {
+      "2026-11-12": 79
+     },
+     "candidates": {
+      "2026-11-11": 29,
+      "2026-11-10": 66,
+      "2026-11-05": 31
+     },
+     "output": {
+      "2026-11-05": 11,
+      "2026-11-10": 11,
+      "2026-11-11": 9
+     }
+    },
+    "mappingSources": {
+     "sidoPrefix": 203,
+     "sidoCode": 0,
+     "courtFallback": 2,
+     "unknown": 0
+    },
+    "exclusionsByReason": {
+     "missingIdentity": {
+      "count": 0,
+      "saleDates": {}
+     },
+     "missingPrice": {
+      "count": 0,
+      "saleDates": {}
+     },
+     "failCount": {
+      "count": 0,
+      "saleDates": {}
+     },
+     "priceContract": {
+      "count": 0,
+      "saleDates": {}
+     },
+     "missingSaleDate": {
+      "count": 0,
+      "saleDates": {}
+     },
+     "expiredSaleDate": {
+      "count": 0,
+      "saleDates": {}
+     },
+     "unmappedRegion": {
+      "count": 0,
+      "saleDates": {}
+     },
+     "missingDistrict": {
+      "count": 0,
+      "saleDates": {}
+     },
+     "missingCourt": {
+      "count": 0,
+      "saleDates": {}
+     },
+     "schemaInvalid": {
+      "count": 0,
+      "saleDates": {}
+     },
+     "duplicateId": {
+      "count": 0,
+      "saleDates": {}
+     },
+     "beforeOutputWindow": {
+      "count": 0,
+      "saleDates": {}
+     },
+     "afterOutputWindow": {
+      "count": 79,
+      "saleDates": {
+       "2026-11-12": 79
+      }
+     },
+     "scope": {
+      "count": 0,
+      "saleDates": {}
+     },
+     "limit": {
+      "count": 0,
+      "saleDates": {}
+     },
+     "cap": {
+      "count": 174,
+      "saleDates": {
+       "2026-11-11": 20,
        "2026-11-10": 55,
+       "2026-11-12": 79,
        "2026-11-05": 20
       }
      },
@@ -681,67 +679,66 @@
    },
    "incheon": {
     "stages": {
-     "receiveRaw": 484,
-     "dedup": 399,
-     "mapped": 385,
-     "invalid": 14,
+     "receiveRaw": 495,
+     "dedup": 416,
+     "mapped": 403,
+     "invalid": 13,
      "idDuplicates": 0,
-     "windowExcluded": 51,
-     "candidates": 334,
-     "output": 67
+     "windowExcluded": 71,
+     "candidates": 332,
+     "output": 77
     },
     "saleDatesByStage": {
      "receiveRaw": {
-      "2026-11-09": 136,
-      "2026-11-04": 64,
-      "2026-11-05": 71,
+      "2026-11-09": 133,
+      "2026-11-12": 79,
+      "2026-11-05": 70,
       "2026-11-11": 96,
       "2026-11-06": 24,
       "2026-11-10": 93
      },
      "dedup": {
-      "2026-11-09": 117,
-      "2026-11-04": 52,
-      "2026-11-05": 60,
+      "2026-11-09": 116,
+      "2026-11-12": 71,
+      "2026-11-05": 59,
       "2026-11-11": 61,
       "2026-11-06": 21,
       "2026-11-10": 88
      },
      "mapped": {
-      "2026-11-09": 116,
-      "2026-11-04": 51,
-      "2026-11-05": 60,
+      "2026-11-09": 115,
+      "2026-11-12": 71,
+      "2026-11-05": 59,
       "2026-11-11": 51,
       "2026-11-06": 21,
       "2026-11-10": 86
      },
      "invalid": {
-      "2026-11-04": 1,
       "2026-11-09": 1,
       "2026-11-11": 10,
       "2026-11-10": 2
      },
      "idDuplicates": {},
      "windowExcluded": {
-      "2026-11-11": 51
+      "2026-11-12": 71
      },
      "candidates": {
-      "2026-11-09": 116,
-      "2026-11-04": 51,
-      "2026-11-05": 60,
+      "2026-11-09": 115,
+      "2026-11-05": 59,
+      "2026-11-11": 51,
       "2026-11-06": 21,
       "2026-11-10": 86
      },
      "output": {
-      "2026-11-04": 7,
       "2026-11-05": 19,
       "2026-11-06": 21,
       "2026-11-09": 12,
-      "2026-11-10": 8
+      "2026-11-10": 8,
+      "2026-11-11": 17
      }
     },
     "mappingSources": {
-     "sidoPrefix": 399,
+     "sidoPrefix": 416,
      "sidoCode": 0,
      "courtFallback": 0,
      "unknown": 0
@@ -760,9 +757,8 @@
       "saleDates": {}
      },
      "priceContract": {
-      "count": 14,
+      "count": 13,
       "saleDates": {
-       "2026-11-04": 1,
        "2026-11-09": 1,
        "2026-11-11": 10,
        "2026-11-10": 2
@@ -801,9 +797,9 @@
       "saleDates": {}
      },
      "afterOutputWindow": {
-      "count": 51,
+      "count": 71,
       "saleDates": {
-       "2026-11-11": 51
+       "2026-11-12": 71
       }
      },
      "scope": {
@@ -815,13 +811,13 @@
       "saleDates": {}
      },
      "cap": {
-      "count": 318,
+      "count": 326,
       "saleDates": {
-       "2026-11-04": 44,
-       "2026-11-11": 51,
-       "2026-11-05": 41,
-       "2026-11-09": 104,
-       "2026-11-10": 78
+       "2026-11-12": 71,
+       "2026-11-05": 40,
+       "2026-11-09": 103,
+       "2026-11-10": 78,
+       "2026-11-11": 34
       }
      },
      "other": {
@@ -832,49 +828,47 @@
    },
    "gwangju": {
     "stages": {
-     "receiveRaw": 131,
-     "dedup": 108,
-     "mapped": 107,
-     "invalid": 1,
+     "receiveRaw": 120,
+     "dedup": 97,
+     "mapped": 97,
+     "invalid": 0,
      "idDuplicates": 0,
-     "windowExcluded": 32,
-     "candidates": 75,
-     "output": 6
+     "windowExcluded": 20,
+     "candidates": 77,
+     "output": 13
     },
     "saleDatesByStage": {
      "receiveRaw": {
       "2026-11-11": 35,
-      "2026-11-10": 56,
-      "2026-11-04": 40
+      "2026-11-12": 29,
+      "2026-11-10": 56
      },
      "dedup": {
       "2026-11-11": 32,
-      "2026-11-10": 45,
-      "2026-11-04": 31
+      "2026-11-12": 20,
+      "2026-11-10": 45
      },
      "mapped": {
       "2026-11-11": 32,
-      "2026-11-10": 45,
-      "2026-11-04": 30
+      "2026-11-12": 20,
+      "2026-11-10": 45
      },
-     "invalid": {
-      "2026-11-04": 1
-     },
+     "invalid": {},
      "idDuplicates": {},
      "windowExcluded": {
-      "2026-11-11": 32
+      "2026-11-12": 20
      },
      "candidates": {
-      "2026-11-10": 45,
-      "2026-11-04": 30
+      "2026-11-11": 32,
+      "2026-11-10": 45
      },
      "output": {
-      "2026-11-04": 5,
-      "2026-11-10": 1
+      "2026-11-10": 1,
+      "2026-11-11": 12
      }
     },
     "mappingSources": {
-     "sidoPrefix": 108,
+     "sidoPrefix": 97,
      "sidoCode": 0,
      "courtFallback": 0,
      "unknown": 0
@@ -893,10 +887,8 @@
       "saleDates": {}
      },
      "priceContract": {
-      "count": 1,
-      "saleDates": {
-       "2026-11-04": 1
-      }
+      "count": 0,
+      "saleDates": {}
      },
      "missingSaleDate": {
       "count": 0,
@@ -931,9 +923,9 @@
       "saleDates": {}
      },
      "afterOutputWindow": {
-      "count": 32,
+      "count": 20,
       "saleDates": {
-       "2026-11-11": 32
+       "2026-11-12": 20
       }
      },
      "scope": {
@@ -945,11 +937,11 @@
       "saleDates": {}
      },
      "cap": {
-      "count": 101,
+      "count": 84,
       "saleDates": {
-       "2026-11-11": 32,
-       "2026-11-10": 44,
-       "2026-11-04": 25
+       "2026-11-11": 20,
+       "2026-11-12": 20,
+       "2026-11-10": 44
       }
      },
      "other": {
@@ -960,30 +952,27 @@
    },
    "daejeon": {
     "stages": {
-     "receiveRaw": 74,
-     "dedup": 50,
-     "mapped": 48,
+     "receiveRaw": 50,
+     "dedup": 33,
+     "mapped": 31,
      "invalid": 2,
      "idDuplicates": 0,
-     "windowExcluded": 9,
-     "candidates": 39,
-     "output": 14
+     "windowExcluded": 0,
+     "candidates": 31,
+     "output": 12
     },
     "saleDatesByStage": {
      "receiveRaw": {
-      "2026-11-04": 24,
       "2026-11-11": 17,
       "2026-11-05": 14,
       "2026-11-10": 19
      },
      "dedup": {
-      "2026-11-04": 17,
       "2026-11-11": 10,
       "2026-11-05": 10,
       "2026-11-10": 13
      },
      "mapped": {
-      "2026-11-04": 17,
       "2026-11-11": 9,
       "2026-11-05": 10,
       "2026-11-10": 12
@@ -993,22 +982,20 @@
       "2026-11-10": 1
      },
      "idDuplicates": {},
-     "windowExcluded": {
-      "2026-11-11": 9
-     },
+     "windowExcluded": {},
      "candidates": {
-      "2026-11-04": 17,
+      "2026-11-11": 9,
       "2026-11-05": 10,
       "2026-11-10": 12
      },
      "output": {
-      "2026-11-04": 6,
       "2026-11-05": 5,
-      "2026-11-10": 3
+      "2026-11-10": 3,
+      "2026-11-11": 4
      }
     },
     "mappingSources": {
-     "sidoPrefix": 50,
+     "sidoPrefix": 33,
      "sidoCode": 0,
      "courtFallback": 0,
      "unknown": 0
@@ -1066,10 +1053,8 @@
       "saleDates": {}
      },
      "afterOutputWindow": {
-      "count": 9,
-      "saleDates": {
-       "2026-11-11": 9
-      }
+      "count": 0,
+      "saleDates": {}
      },
      "scope": {
       "count": 0,
@@ -1080,11 +1065,10 @@
       "saleDates": {}
      },
      "cap": {
-      "count": 34,
+      "count": 19,
       "saleDates": {
-       "2026-11-04": 11,
-       "2026-11-11": 9,
        "2026-11-05": 5,
+       "2026-11-11": 5,
        "2026-11-10": 9
       }
      },
@@ -1096,42 +1080,47 @@
    },
    "ulsan": {
     "stages": {
-     "receiveRaw": 121,
-     "dedup": 88,
-     "mapped": 88,
+     "receiveRaw": 171,
+     "dedup": 120,
+     "mapped": 120,
      "invalid": 0,
      "idDuplicates": 0,
-     "windowExcluded": 49,
-     "candidates": 39,
-     "output": 17
+     "windowExcluded": 33,
+     "candidates": 87,
+     "output": 32
     },
     "saleDatesByStage": {
      "receiveRaw": {
-      "2026-11-05": 48,
+      "2026-11-12": 51,
+      "2026-11-05": 47,
       "2026-11-11": 73
      },
      "dedup": {
-      "2026-11-05": 39,
+      "2026-11-12": 33,
+      "2026-11-05": 38,
       "2026-11-11": 49
      },
      "mapped": {
-      "2026-11-05": 39,
+      "2026-11-12": 33,
+      "2026-11-05": 38,
       "2026-11-11": 49
      },
      "invalid": {},
      "idDuplicates": {},
      "windowExcluded": {
-      "2026-11-11": 49
+      "2026-11-12": 33
      },
      "candidates": {
-      "2026-11-05": 39
+      "2026-11-05": 38,
+      "2026-11-11": 49
      },
      "output": {
-      "2026-11-05": 17
+      "2026-11-05": 19,
+      "2026-11-11": 13
      }
     },
     "mappingSources": {
-     "sidoPrefix": 88,
+     "sidoPrefix": 120,
      "sidoCode": 0,
      "courtFallback": 0,
      "unknown": 0
@@ -1186,9 +1175,9 @@
       "saleDates": {}
      },
      "afterOutputWindow": {
-      "count": 49,
+      "count": 33,
       "saleDates": {
-       "2026-11-11": 49
+       "2026-11-12": 33
       }
      },
      "scope": {
@@ -1200,10 +1189,11 @@
       "saleDates": {}
      },
      "cap": {
-      "count": 71,
+      "count": 88,
       "saleDates": {
-       "2026-11-11": 49,
-       "2026-11-05": 22
+       "2026-11-12": 33,
+       "2026-11-11": 36,
+       "2026-11-05": 19
       }
      },
      "other": {
@@ -1214,52 +1204,47 @@
    },
    "sejong": {
     "stages": {
-     "receiveRaw": 200,
-     "dedup": 65,
-     "mapped": 65,
+     "receiveRaw": 76,
+     "dedup": 35,
+     "mapped": 35,
      "invalid": 0,
      "idDuplicates": 0,
-     "windowExcluded": 15,
-     "candidates": 50,
-     "output": 17
+     "windowExcluded": 0,
+     "candidates": 35,
+     "output": 13
     },
     "saleDatesByStage": {
      "receiveRaw": {
-      "2026-11-04": 119,
       "2026-11-11": 26,
-      "2026-11-05": 27,
+      "2026-11-05": 22,
       "2026-11-10": 28
      },
      "dedup": {
-      "2026-11-04": 28,
       "2026-11-11": 15,
-      "2026-11-05": 12,
+      "2026-11-05": 10,
       "2026-11-10": 10
      },
      "mapped": {
-      "2026-11-04": 28,
       "2026-11-11": 15,
-      "2026-11-05": 12,
+      "2026-11-05": 10,
       "2026-11-10": 10
      },
      "invalid": {},
      "idDuplicates": {},
-     "windowExcluded": {
-      "2026-11-11": 15
-     },
+     "windowExcluded": {},
      "candidates": {
-      "2026-11-04": 28,
-      "2026-11-05": 12,
+      "2026-11-11": 15,
+      "2026-11-05": 10,
       "2026-11-10": 10
      },
      "output": {
-      "2026-11-04": 11,
       "2026-11-05": 4,
-      "2026-11-10": 2
+      "2026-11-10": 2,
+      "2026-11-11": 7
      }
     },
     "mappingSources": {
-     "sidoPrefix": 65,
+     "sidoPrefix": 35,
      "sidoCode": 0,
      "courtFallback": 0,
      "unknown": 0
@@ -1314,10 +1299,8 @@
       "saleDates": {}
      },
      "afterOutputWindow": {
-      "count": 15,
-      "saleDates": {
-       "2026-11-11": 15
-      }
+      "count": 0,
+      "saleDates": {}
      },
      "scope": {
       "count": 0,
@@ -1328,12 +1311,11 @@
       "saleDates": {}
      },
      "cap": {
-      "count": 48,
+      "count": 22,
       "saleDates": {
-       "2026-11-04": 17,
-       "2026-11-11": 15,
        "2026-11-10": 8,
-       "2026-11-05": 8
+       "2026-11-11": 8,
+       "2026-11-05": 6
       }
      },
      "other": {
@@ -1344,70 +1326,72 @@
    },
    "gyeonggi": {
     "stages": {
-     "receiveRaw": 2326,
-     "dedup": 1419,
-     "mapped": 1414,
-     "invalid": 5,
-     "idDuplicates": 1,
-     "windowExcluded": 169,
-     "candidates": 1244,
-     "output": 273
+     "receiveRaw": 1779,
+     "dedup": 1167,
+     "mapped": 1161,
+     "invalid": 6,
+     "idDuplicates": 2,
+     "windowExcluded": 165,
+     "candidates": 994,
+     "output": 216
     },
     "saleDatesByStage": {
      "receiveRaw": {
-      "2026-11-04": 754,
-      "2026-11-05": 429,
-      "2026-11-10": 639,
+      "2026-11-05": 408,
+      "2026-11-10": 636,
+      "2026-11-12": 242,
       "2026-11-11": 281,
-      "2026-11-06": 55,
-      "2026-11-09": 168
+      "2026-11-06": 52,
+      "2026-11-09": 160
      },
      "dedup": {
-      "2026-11-04": 406,
-      "2026-11-05": 280,
-      "2026-11-10": 422,
+      "2026-11-05": 271,
+      "2026-11-10": 420,
+      "2026-11-12": 167,
       "2026-11-11": 169,
-      "2026-11-06": 38,
-      "2026-11-09": 104
+      "2026-11-06": 37,
+      "2026-11-09": 103
      },
      "mapped": {
-      "2026-11-04": 406,
-      "2026-11-05": 277,
-      "2026-11-10": 421,
+      "2026-11-05": 268,
+      "2026-11-10": 419,
+      "2026-11-12": 166,
       "2026-11-11": 169,
-      "2026-11-06": 38,
-      "2026-11-09": 103
+      "2026-11-06": 37,
+      "2026-11-09": 102
      },
      "invalid": {
       "2026-11-09": 1,
+      "2026-11-12": 1,
       "2026-11-10": 1,
       "2026-11-05": 3
      },
      "idDuplicates": {
-      "2026-11-05": 1
+      "2026-11-05": 1,
+      "2026-11-12": 1
      },
      "windowExcluded": {
-      "2026-11-11": 169
+      "2026-11-12": 165
      },
      "candidates": {
-      "2026-11-04": 406,
-      "2026-11-05": 276,
-      "2026-11-10": 421,
-      "2026-11-06": 38,
-      "2026-11-09": 103
+      "2026-11-05": 267,
+      "2026-11-10": 419,
+      "2026-11-11": 169,
+      "2026-11-06": 37,
+      "2026-11-09": 102
      },
      "output": {
-      "2026-11-04": 89,
-      "2026-11-05": 96,
-      "2026-11-06": 38,
+      "2026-11-05": 92,
+      "2026-11-06": 37,
       "2026-11-09": 14,
-      "2026-11-10": 36
+      "2026-11-10": 36,
+      "2026-11-11": 37
      }
     },
     "mappingSources": {
-     "sidoPrefix": 1410,
+     "sidoPrefix": 1159,
      "sidoCode": 0,
-     "courtFallback": 9,
+     "courtFallback": 8,
      "unknown": 0
     },
     "exclusionsByReason": {
@@ -1424,9 +1408,10 @@
       "saleDates": {}
      },
      "priceContract": {
-      "count": 5,
+      "count": 6,
       "saleDates": {
        "2026-11-09": 1,
+       "2026-11-12": 1,
        "2026-11-10": 1,
        "2026-11-05": 3
       }
@@ -1456,9 +1441,10 @@
       "saleDates": {}
      },
      "duplicateId": {
-      "count": 1,
+      "count": 2,
       "saleDates": {
-       "2026-11-05": 1
+       "2026-11-05": 1,
+       "2026-11-12": 1
       }
      },
      "beforeOutputWindow": {
@@ -1466,9 +1452,9 @@
       "saleDates": {}
      },
      "afterOutputWindow": {
-      "count": 169,
+      "count": 165,
       "saleDates": {
-       "2026-11-11": 169
+       "2026-11-12": 165
       }
      },
      "scope": {
@@ -1480,13 +1466,13 @@
       "saleDates": {}
      },
      "cap": {
-      "count": 1140,
+      "count": 943,
       "saleDates": {
-       "2026-11-04": 317,
-       "2026-11-05": 180,
-       "2026-11-10": 385,
-       "2026-11-11": 169,
-       "2026-11-09": 89
+       "2026-11-10": 383,
+       "2026-11-05": 175,
+       "2026-11-12": 165,
+       "2026-11-11": 132,
+       "2026-11-09": 88
       }
      },
      "other": {
@@ -1497,33 +1483,30 @@
    },
    "gangwon": {
     "stages": {
-     "receiveRaw": 478,
-     "dedup": 167,
-     "mapped": 165,
+     "receiveRaw": 402,
+     "dedup": 137,
+     "mapped": 135,
      "invalid": 2,
      "idDuplicates": 0,
-     "windowExcluded": 1,
-     "candidates": 164,
-     "output": 36
+     "windowExcluded": 0,
+     "candidates": 135,
+     "output": 31
     },
     "saleDatesByStage": {
      "receiveRaw": {
       "2026-11-05": 3,
-      "2026-11-04": 76,
       "2026-11-11": 1,
       "2026-11-09": 274,
       "2026-11-10": 124
      },
      "dedup": {
       "2026-11-05": 1,
-      "2026-11-04": 30,
       "2026-11-11": 1,
       "2026-11-09": 81,
       "2026-11-10": 54
      },
      "mapped": {
       "2026-11-05": 1,
-      "2026-11-04": 30,
       "2026-11-11": 1,
       "2026-11-09": 81,
       "2026-11-10": 52
@@ -1532,23 +1515,20 @@
       "2026-11-10": 2
      },
      "idDuplicates": {},
-     "windowExcluded": {
-      "2026-11-11": 1
-     },
+     "windowExcluded": {},
      "candidates": {
       "2026-11-05": 1,
-      "2026-11-04": 30,
+      "2026-11-11": 1,
       "2026-11-09": 81,
       "2026-11-10": 52
      },
      "output": {
-      "2026-11-04": 7,
       "2026-11-09": 23,
-      "2026-11-10": 6
+      "2026-11-10": 8
      }
     },
     "mappingSources": {
-     "sidoPrefix": 167,
+     "sidoPrefix": 137,
      "sidoCode": 0,
      "courtFallback": 0,
      "unknown": 0
@@ -1605,10 +1585,8 @@
       "saleDates": {}
      },
      "afterOutputWindow": {
-      "count": 1,
-      "saleDates": {
-       "2026-11-11": 1
-      }
+      "count": 0,
+      "saleDates": {}
      },
      "scope": {
       "count": 0,
@@ -1619,13 +1597,12 @@
       "saleDates": {}
      },
      "cap": {
-      "count": 129,
+      "count": 104,
       "saleDates": {
        "2026-11-05": 1,
-       "2026-11-04": 23,
        "2026-11-11": 1,
        "2026-11-09": 58,
-       "2026-11-10": 46
+       "2026-11-10": 44
       }
      },
      "other": {
@@ -1641,9 +1618,9 @@
      "mapped": 36,
      "invalid": 1,
      "idDuplicates": 0,
-     "windowExcluded": 35,
-     "candidates": 1,
-     "output": 0
+     "windowExcluded": 0,
+     "candidates": 36,
+     "output": 15
     },
     "saleDatesByStage": {
      "receiveRaw": {
@@ -1662,13 +1639,14 @@
       "2026-11-11": 1
      },
      "idDuplicates": {},
-     "windowExcluded": {
+     "windowExcluded": {},
+     "candidates": {
+      "2026-11-05": 1,
       "2026-11-11": 35
      },
-     "candidates": {
-      "2026-11-05": 1
-     },
-     "output": {}
+     "output": {
+      "2026-11-11": 15
+     }
     },
     "mappingSources": {
      "sidoPrefix": 37,
@@ -1728,10 +1706,8 @@
       "saleDates": {}
      },
      "afterOutputWindow": {
-      "count": 35,
-      "saleDates": {
-       "2026-11-11": 35
-      }
+      "count": 0,
+      "saleDates": {}
      },
      "scope": {
       "count": 0,
@@ -1742,10 +1718,10 @@
       "saleDates": {}
      },
      "cap": {
-      "count": 36,
+      "count": 21,
       "saleDates": {
        "2026-11-05": 1,
-       "2026-11-11": 35
+       "2026-11-11": 20
       }
      },
      "other": {
@@ -1756,34 +1732,31 @@
    },
    "chungnam": {
     "stages": {
-     "receiveRaw": 641,
-     "dedup": 289,
-     "mapped": 288,
+     "receiveRaw": 554,
+     "dedup": 257,
+     "mapped": 256,
      "invalid": 1,
      "idDuplicates": 0,
-     "windowExcluded": 75,
-     "candidates": 213,
-     "output": 50
+     "windowExcluded": 0,
+     "candidates": 256,
+     "output": 57
     },
     "saleDatesByStage": {
      "receiveRaw": {
       "2026-11-11": 172,
-      "2026-11-04": 71,
-      "2026-11-10": 300,
+      "2026-11-10": 284,
       "2026-11-05": 3,
       "2026-11-09": 95
      },
      "dedup": {
       "2026-11-11": 75,
-      "2026-11-04": 23,
-      "2026-11-10": 144,
+      "2026-11-10": 135,
       "2026-11-05": 3,
       "2026-11-09": 44
      },
      "mapped": {
       "2026-11-11": 75,
-      "2026-11-04": 23,
-      "2026-11-10": 143,
+      "2026-11-10": 134,
       "2026-11-05": 3,
       "2026-11-09": 44
      },
@@ -1791,23 +1764,21 @@
       "2026-11-10": 1
      },
      "idDuplicates": {},
-     "windowExcluded": {
-      "2026-11-11": 75
-     },
+     "windowExcluded": {},
      "candidates": {
-      "2026-11-04": 23,
-      "2026-11-10": 143,
+      "2026-11-11": 75,
+      "2026-11-10": 134,
       "2026-11-05": 3,
       "2026-11-09": 44
      },
      "output": {
-      "2026-11-04": 10,
       "2026-11-09": 10,
-      "2026-11-10": 30
+      "2026-11-10": 29,
+      "2026-11-11": 18
      }
     },
     "mappingSources": {
-     "sidoPrefix": 288,
+     "sidoPrefix": 256,
      "sidoCode": 0,
      "courtFallback": 1,
      "unknown": 0
@@ -1864,10 +1835,8 @@
       "saleDates": {}
      },
      "afterOutputWindow": {
-      "count": 75,
-      "saleDates": {
-       "2026-11-11": 75
-      }
+      "count": 0,
+      "saleDates": {}
      },
      "scope": {
       "count": 0,
@@ -1878,11 +1847,10 @@
       "saleDates": {}
      },
      "cap": {
-      "count": 238,
+      "count": 199,
       "saleDates": {
-       "2026-11-11": 75,
-       "2026-11-10": 113,
-       "2026-11-04": 13,
+       "2026-11-11": 57,
+       "2026-11-10": 105,
        "2026-11-05": 3,
        "2026-11-09": 34
       }
@@ -1900,8 +1868,8 @@
      "mapped": 108,
      "invalid": 0,
      "idDuplicates": 0,
-     "windowExcluded": 1,
-     "candidates": 107,
+     "windowExcluded": 0,
+     "candidates": 108,
      "output": 7
     },
     "saleDatesByStage": {
@@ -1919,10 +1887,9 @@
      },
      "invalid": {},
      "idDuplicates": {},
-     "windowExcluded": {
-      "2026-11-11": 1
-     },
+     "windowExcluded": {},
      "candidates": {
+      "2026-11-11": 1,
       "2026-11-09": 107
      },
      "output": {
@@ -1985,10 +1952,8 @@
       "saleDates": {}
      },
      "afterOutputWindow": {
-      "count": 1,
-      "saleDates": {
-       "2026-11-11": 1
-      }
+      "count": 0,
+      "saleDates": {}
      },
      "scope": {
       "count": 0,
@@ -2013,33 +1978,33 @@
    },
    "jeonnam": {
     "stages": {
-     "receiveRaw": 600,
-     "dedup": 317,
-     "mapped": 310,
+     "receiveRaw": 594,
+     "dedup": 321,
+     "mapped": 314,
      "invalid": 7,
      "idDuplicates": 2,
-     "windowExcluded": 25,
-     "candidates": 283,
-     "output": 31
+     "windowExcluded": 23,
+     "candidates": 289,
+     "output": 24
     },
     "saleDatesByStage": {
      "receiveRaw": {
-      "2026-11-04": 45,
       "2026-11-11": 53,
       "2026-11-10": 96,
-      "2026-11-09": 406
+      "2026-11-12": 33,
+      "2026-11-09": 412
      },
      "dedup": {
-      "2026-11-04": 20,
       "2026-11-11": 26,
       "2026-11-10": 42,
-      "2026-11-09": 229
+      "2026-11-12": 23,
+      "2026-11-09": 230
      },
      "mapped": {
-      "2026-11-04": 20,
       "2026-11-11": 25,
       "2026-11-10": 42,
-      "2026-11-09": 223
+      "2026-11-12": 23,
+      "2026-11-09": 224
      },
      "invalid": {
       "2026-11-11": 1,
@@ -2049,20 +2014,19 @@
       "2026-11-09": 2
      },
      "windowExcluded": {
-      "2026-11-11": 25
+      "2026-11-12": 23
      },
      "candidates": {
-      "2026-11-04": 20,
+      "2026-11-11": 25,
       "2026-11-10": 42,
-      "2026-11-09": 221
+      "2026-11-09": 222
      },
      "output": {
-      "2026-11-04": 7,
       "2026-11-09": 24
      }
     },
     "mappingSources": {
-     "sidoPrefix": 317,
+     "sidoPrefix": 321,
      "sidoCode": 0,
      "courtFallback": 0,
      "unknown": 0
@@ -2122,9 +2086,9 @@
       "saleDates": {}
      },
      "afterOutputWindow": {
-      "count": 25,
+      "count": 23,
       "saleDates": {
-       "2026-11-11": 25
+       "2026-11-12": 23
       }
      },
      "scope": {
@@ -2136,12 +2100,12 @@
       "saleDates": {}
      },
      "cap": {
-      "count": 277,
+      "count": 288,
       "saleDates": {
-       "2026-11-04": 13,
        "2026-11-11": 25,
        "2026-11-10": 42,
-       "2026-11-09": 197
+       "2026-11-12": 23,
+       "2026-11-09": 198
       }
      },
      "other": {
@@ -2152,35 +2116,35 @@
    },
    "gyeongbuk": {
     "stages": {
-     "receiveRaw": 853,
-     "dedup": 360,
-     "mapped": 358,
+     "receiveRaw": 833,
+     "dedup": 359,
+     "mapped": 357,
      "invalid": 2,
      "idDuplicates": 0,
-     "windowExcluded": 85,
-     "candidates": 273,
-     "output": 41
+     "windowExcluded": 33,
+     "candidates": 324,
+     "output": 75
     },
     "saleDatesByStage": {
      "receiveRaw": {
-      "2026-11-09": 192,
+      "2026-11-09": 191,
       "2026-11-11": 150,
-      "2026-11-04": 101,
-      "2026-11-05": 172,
+      "2026-11-05": 159,
+      "2026-11-12": 95,
       "2026-11-10": 238
      },
      "dedup": {
-      "2026-11-09": 105,
+      "2026-11-09": 104,
       "2026-11-11": 85,
-      "2026-11-04": 30,
-      "2026-11-05": 35,
+      "2026-11-05": 32,
+      "2026-11-12": 33,
       "2026-11-10": 105
      },
      "mapped": {
-      "2026-11-09": 103,
+      "2026-11-09": 102,
       "2026-11-11": 85,
-      "2026-11-04": 30,
-      "2026-11-05": 35,
+      "2026-11-05": 32,
+      "2026-11-12": 33,
       "2026-11-10": 105
      },
      "invalid": {
@@ -2188,23 +2152,23 @@
      },
      "idDuplicates": {},
      "windowExcluded": {
-      "2026-11-11": 85
+      "2026-11-12": 33
      },
      "candidates": {
-      "2026-11-09": 103,
-      "2026-11-04": 30,
-      "2026-11-05": 35,
+      "2026-11-09": 102,
+      "2026-11-11": 85,
+      "2026-11-05": 32,
       "2026-11-10": 105
      },
      "output": {
-      "2026-11-04": 4,
       "2026-11-05": 8,
-      "2026-11-09": 22,
-      "2026-11-10": 7
+      "2026-11-09": 23,
+      "2026-11-10": 7,
+      "2026-11-11": 37
      }
     },
     "mappingSources": {
-     "sidoPrefix": 360,
+     "sidoPrefix": 359,
      "sidoCode": 0,
      "courtFallback": 0,
      "unknown": 0
@@ -2261,9 +2225,9 @@
       "saleDates": {}
      },
      "afterOutputWindow": {
-      "count": 85,
+      "count": 33,
       "saleDates": {
-       "2026-11-11": 85
+       "2026-11-12": 33
       }
      },
      "scope": {
@@ -2275,13 +2239,13 @@
       "saleDates": {}
      },
      "cap": {
-      "count": 317,
+      "count": 282,
       "saleDates": {
-       "2026-11-09": 81,
-       "2026-11-11": 85,
-       "2026-11-04": 26,
-       "2026-11-05": 27,
-       "2026-11-10": 98
+       "2026-11-09": 79,
+       "2026-11-05": 24,
+       "2026-11-12": 33,
+       "2026-11-10": 98,
+       "2026-11-11": 48
       }
      },
      "other": {
@@ -2292,36 +2256,36 @@
    },
    "gyeongnam": {
     "stages": {
-     "receiveRaw": 1371,
-     "dedup": 558,
-     "mapped": 556,
+     "receiveRaw": 1416,
+     "dedup": 593,
+     "mapped": 591,
      "invalid": 2,
      "idDuplicates": 2,
-     "windowExcluded": 71,
-     "candidates": 483,
-     "output": 151
+     "windowExcluded": 85,
+     "candidates": 504,
+     "output": 158
     },
     "saleDatesByStage": {
      "receiveRaw": {
-      "2026-11-05": 160,
-      "2026-11-11": 108,
-      "2026-11-04": 65,
+      "2026-11-12": 137,
+      "2026-11-05": 150,
+      "2026-11-11": 105,
       "2026-11-10": 117,
-      "2026-11-09": 921
+      "2026-11-09": 907
      },
      "dedup": {
-      "2026-11-05": 73,
-      "2026-11-11": 71,
-      "2026-11-04": 40,
+      "2026-11-12": 85,
+      "2026-11-05": 71,
+      "2026-11-11": 69,
       "2026-11-10": 59,
-      "2026-11-09": 315
+      "2026-11-09": 309
      },
      "mapped": {
-      "2026-11-05": 73,
-      "2026-11-11": 71,
-      "2026-11-04": 40,
+      "2026-11-12": 85,
+      "2026-11-05": 71,
+      "2026-11-11": 69,
       "2026-11-10": 58,
-      "2026-11-09": 314
+      "2026-11-09": 308
      },
      "invalid": {
       "2026-11-10": 1,
@@ -2332,23 +2296,23 @@
       "2026-11-09": 1
      },
      "windowExcluded": {
-      "2026-11-11": 71
+      "2026-11-12": 85
      },
      "candidates": {
-      "2026-11-05": 73,
-      "2026-11-04": 40,
+      "2026-11-05": 71,
+      "2026-11-11": 69,
       "2026-11-10": 57,
-      "2026-11-09": 313
+      "2026-11-09": 307
      },
      "output": {
-      "2026-11-04": 13,
-      "2026-11-05": 40,
-      "2026-11-09": 91,
-      "2026-11-10": 7
+      "2026-11-05": 39,
+      "2026-11-09": 90,
+      "2026-11-10": 7,
+      "2026-11-11": 22
      }
     },
     "mappingSources": {
-     "sidoPrefix": 558,
+     "sidoPrefix": 593,
      "sidoCode": 0,
      "courtFallback": 0,
      "unknown": 0
@@ -2409,9 +2373,9 @@
       "saleDates": {}
      },
      "afterOutputWindow": {
-      "count": 71,
+      "count": 85,
       "saleDates": {
-       "2026-11-11": 71
+       "2026-11-12": 85
       }
      },
      "scope": {
@@ -2423,13 +2387,13 @@
       "saleDates": {}
      },
      "cap": {
-      "count": 403,
+      "count": 431,
       "saleDates": {
-       "2026-11-11": 71,
-       "2026-11-05": 33,
+       "2026-11-12": 85,
+       "2026-11-11": 47,
+       "2026-11-05": 32,
        "2026-11-10": 50,
-       "2026-11-04": 27,
-       "2026-11-09": 222
+       "2026-11-09": 217
       }
      },
      "other": {
@@ -2440,37 +2404,37 @@
    },
    "jeju": {
     "stages": {
-     "receiveRaw": 338,
-     "dedup": 176,
-     "mapped": 176,
+     "receiveRaw": 313,
+     "dedup": 162,
+     "mapped": 162,
      "invalid": 0,
      "idDuplicates": 0,
      "windowExcluded": 0,
-     "candidates": 176,
+     "candidates": 162,
      "output": 6
     },
     "saleDatesByStage": {
      "receiveRaw": {
-      "2026-11-10": 338
+      "2026-11-10": 313
      },
      "dedup": {
-      "2026-11-10": 176
+      "2026-11-10": 162
      },
      "mapped": {
-      "2026-11-10": 176
+      "2026-11-10": 162
      },
      "invalid": {},
      "idDuplicates": {},
      "windowExcluded": {},
      "candidates": {
-      "2026-11-10": 176
+      "2026-11-10": 162
      },
      "output": {
       "2026-11-10": 6
      }
     },
     "mappingSources": {
-     "sidoPrefix": 176,
+     "sidoPrefix": 162,
      "sidoCode": 0,
      "courtFallback": 0,
      "unknown": 0
@@ -2537,9 +2501,9 @@
       "saleDates": {}
      },
      "cap": {
-      "count": 170,
+      "count": 156,
       "saleDates": {
-       "2026-11-10": 170
+       "2026-11-10": 156
       }
      },
      "other": {
@@ -2550,10 +2514,10 @@
    },
    "unknown": {
     "stages": {
-     "receiveRaw": 13,
-     "dedup": 11,
+     "receiveRaw": 14,
+     "dedup": 12,
      "mapped": 0,
-     "invalid": 11,
+     "invalid": 12,
      "idDuplicates": 0,
      "windowExcluded": 0,
      "candidates": 0,
@@ -2563,12 +2527,14 @@
      "receiveRaw": {
       "2026-11-09": 9,
       "2026-11-11": 1,
+      "2026-11-12": 1,
       "2026-11-10": 2,
       "2026-11-05": 1
      },
      "dedup": {
       "2026-11-09": 8,
       "2026-11-11": 1,
+      "2026-11-12": 1,
       "2026-11-10": 1,
       "2026-11-05": 1
      },
@@ -2576,6 +2542,7 @@
      "invalid": {
       "2026-11-09": 8,
       "2026-11-11": 1,
+      "2026-11-12": 1,
       "2026-11-10": 1,
       "2026-11-05": 1
      },
@@ -2588,7 +2555,7 @@
      "sidoPrefix": 0,
      "sidoCode": 0,
      "courtFallback": 0,
-     "unknown": 11
+     "unknown": 12
     },
     "exclusionsByReason": {
      "missingIdentity": {
@@ -2616,10 +2583,11 @@
       "saleDates": {}
      },
      "unmappedRegion": {
-      "count": 11,
+      "count": 12,
       "saleDates": {
        "2026-11-09": 8,
        "2026-11-11": 1,
+       "2026-11-12": 1,
        "2026-11-10": 1,
        "2026-11-05": 1
       }
@@ -2670,9 +2638,9 @@
  },
  "collectionCompleteness": {
   "complete": true,
-  "totalCnt": 9536,
-  "received": 9536,
-  "pageCount": 239,
+  "totalCnt": 8711,
+  "received": 8711,
+  "pageCount": 218,
   "retries": 0,
   "rejectedRows": 0
  }

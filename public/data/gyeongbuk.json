@@ -1,236 +1,5 @@
 [
  {
-  "id": "gyeongbuk-2024타경11603-1",
-  "court": "대구지방법원",
-  "courtCode": "B000310",
-  "caseNo": "2024타경11603",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경상북도 영천시 북안면 상리 305",
-  "region": "경북",
-  "district": "영천시",
-  "appraisalPrice": 199521000,
-  "minPrice": 47906000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-04",
-  "saleTime": "10:00",
-  "courtRoom": "입찰법정",
-  "deposit": 4790600,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 3167,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-13",
-    "minPrice": 199521000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-17",
-    "minPrice": 199521000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-22",
-    "minPrice": 139665435,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-26",
-    "minPrice": 97766318,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-30",
-    "minPrice": 68436783,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "농지취득자격증명 제출 필요(사실조회회신 참조, 미제출 시 매수보증금 미반환). 지상 소재 소유자 미상의 이동 용이한 컨테이너 및 간이화장실 매각에서 제외"
- },
- {
-  "id": "gyeongbuk-2025타경5285-1",
-  "court": "대구지방법원",
-  "courtCode": "B000310",
-  "caseNo": "2025타경5285",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경상북도 청도군 화양읍 유등리 산2-2",
-  "region": "경북",
-  "district": "청도군",
-  "appraisalPrice": 460556000,
-  "minPrice": 54185000,
-  "priceRatio": 0.1177,
-  "failCount": 6,
-  "saleDate": "2026-11-04",
-  "saleTime": "10:00",
-  "courtRoom": "입찰법정",
-  "deposit": 5418500,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 2374,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-04",
-    "minPrice": 460556000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-08",
-    "minPrice": 460556000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-13",
-    "minPrice": 322390238,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-17",
-    "minPrice": 225673894,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-22",
-    "minPrice": 157972234,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-26",
-    "minPrice": 110580920,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-30",
-    "minPrice": 77406894,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "특별매각조건 매수신청보증금 최저매각가격의 20%. 건축허가부지이지만 공사중단상태임(추후 건축허가취소 여부는 해당 관청에 개별 확인 필요함)"
- },
- {
-  "id": "gyeongbuk-2025타경9607-1",
-  "court": "대구지방법원",
-  "courtCode": "B000310",
-  "caseNo": "2025타경9607",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경상북도 경산시 서상동 70-4",
-  "region": "경북",
-  "district": "경산시",
-  "appraisalPrice": 31533200,
-  "minPrice": 5301000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-04",
-  "saleTime": "10:00",
-  "courtRoom": "입찰법정",
-  "deposit": 530100,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 89,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-08",
-    "minPrice": 31533200,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-13",
-    "minPrice": 31533200,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-17",
-    "minPrice": 22074252,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-22",
-    "minPrice": 15452685,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-26",
-    "minPrice": 10817375,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-30",
-    "minPrice": 7572510,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "지분매각, 공유자 우선매수신고는 1회에 한하여 행사할 수 있음. 지상 소재 건물(화재로 상당부분 소실된 상태) 매각에서 제외"
- },
- {
-  "id": "gyeongbuk-2025타경9704-1",
-  "court": "대구지방법원",
-  "courtCode": "B000310",
-  "caseNo": "2025타경9704",
-  "itemNo": "1",
-  "category": "상가",
-  "address": "경상북도 경산시 중방동 888 중방동엘리트타워 1층110호",
-  "region": "경북",
-  "district": "경산시",
-  "appraisalPrice": 673000000,
-  "minPrice": 161588000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-04",
-  "saleTime": "10:00",
-  "courtRoom": "입찰법정",
-  "deposit": 16158800,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 51.24,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-13",
-    "minPrice": 673000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-17",
-    "minPrice": 673000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-22",
-    "minPrice": 471100510,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-26",
-    "minPrice": 329770714,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-30",
-    "minPrice": 230839750,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
   "id": "gyeongbuk-2024타경11191-1",
   "court": "대구지방법원",
   "courtCode": "B000310",
@@ -1172,65 +941,6 @@
   "specialNote": "현황:전 및 일부도로. 지분매각, 공유자 우** 제한 조건 있음. 농지취득자격증명 미제출시 보증금 몰수. 전용허가를 얻지 않고 토지현황이 변경된 경우로서 원상회복명령 가능성 있음."
  },
  {
-  "id": "gyeongbuk-2025타경100240-1",
-  "court": "안동지원",
-  "courtCode": "B000311",
-  "caseNo": "2025타경100240",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경상북도 안동시 풍산읍 상리리 산31-5",
-  "region": "경북",
-  "district": "안동시",
-  "appraisalPrice": 63680000,
-  "minPrice": 10702000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-09",
-  "saleTime": "10:00",
-  "courtRoom": "입찰법정",
-  "deposit": 1070200,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 995,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-13",
-    "minPrice": 63680000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-18",
-    "minPrice": 63680000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-22",
-    "minPrice": 44575419,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-27",
-    "minPrice": 31202386,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-31",
-    "minPrice": 21841386,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-05",
-    "minPrice": 15288771,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "분묘 소재, 분묘기지권 성립 여지 있음. 접도구역의 저촉 및 분묘 소재 감안 평가."
- },
- {
   "id": "gyeongbuk-2025타경100256-1",
   "court": "안동지원",
   "courtCode": "B000311",
@@ -1480,6 +1190,114 @@
   ],
   "historySource": "estimated",
   "specialNote": "일괄매각. 목록 2, 3 : 현황 잡종지, 지상 제시외 건물 매각 제외(감안평가), 제시외 건물을 위한 법정지상권 성립 여부 불명. 목록 2 : 지적도상 맹지."
+ },
+ {
+  "id": "gyeongbuk-2025타경100329-1",
+  "court": "안동지원",
+  "courtCode": "B000311",
+  "caseNo": "2025타경100329",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 안동시 서후면 교리 499-6",
+  "region": "경북",
+  "district": "안동시",
+  "appraisalPrice": 275866000,
+  "minPrice": 66235000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-09",
+  "saleTime": "10:00",
+  "courtRoom": "입찰법정",
+  "deposit": 6623500,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 971,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-18",
+    "minPrice": 275866000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-22",
+    "minPrice": 275866000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-27",
+    "minPrice": 193105889,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-31",
+    "minPrice": 135173905,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-05",
+    "minPrice": 94621581,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "일괄매각. 농지취득자격증명 요함(미제출시 매수신청보증금 미반환). 수목 포함."
+ },
+ {
+  "id": "gyeongbuk-2025타경100332-1",
+  "court": "안동지원",
+  "courtCode": "B000311",
+  "caseNo": "2025타경100332",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 안동시 풍산읍 신양리 741",
+  "region": "경북",
+  "district": "안동시",
+  "appraisalPrice": 113303000,
+  "minPrice": 27204000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-09",
+  "saleTime": "10:00",
+  "courtRoom": "입찰법정",
+  "deposit": 2720400,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 3907,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-18",
+    "minPrice": 113303000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-22",
+    "minPrice": 113303000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-27",
+    "minPrice": 79312063,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-31",
+    "minPrice": 55518419,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-05",
+    "minPrice": 38862875,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "지분매각, 공유자 우** 제한 조건 있음. 농지취득자격증명 요함(미제출시 매수신청보증금 미반환). 수목 및 비닐하우스 매각 제외. 지적도상 맹지."
  },
  {
   "id": "gyeongbuk-2025타경10204-1",
@@ -2637,5 +2455,2158 @@
   ],
   "historySource": "estimated",
   "specialNote": "농지취득자격증명원 필요(미제출시 보증금 미반환). 원상회복명령 가능성 있음. 지분매각(공유자우선매수에 관한 특별매각조건 있음). 연고미상의 분묘 1기가 소재하고, 최저매각가격은 분묘 소재로 인하여 제한받는 가격임."
+ },
+ {
+  "id": "gyeongbuk-2023타경8990-1",
+  "court": "대구지방법원",
+  "courtCode": "B000310",
+  "caseNo": "2023타경8990",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 청도군 청도읍 송읍리 산47",
+  "region": "경북",
+  "district": "청도군",
+  "appraisalPrice": 29259000,
+  "minPrice": 4918000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "신관지하2층입찰법정",
+  "deposit": 491800,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 992,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-15",
+    "minPrice": 29259000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-20",
+    "minPrice": 29259000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 20481666,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 14337423,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 10036376,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 7025589,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "- 일괄매각. 재매각임. 특별매각조건 매수신청보증금 최저매각가격의 20%. - 목록1. 지상에 자생중인 입목을 포함 평가. - 목록2. 농지취득자격증명 요함(미제출시 매수신청보증금 미반환)."
+ },
+ {
+  "id": "gyeongbuk-2024타경3236-1",
+  "court": "김천지원",
+  "courtCode": "B000313",
+  "caseNo": "2024타경3236",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "경상북도 김천시 농소면 월곡리 1133-1",
+  "region": "경북",
+  "district": "김천시",
+  "appraisalPrice": 4611769900,
+  "minPrice": 1107286000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "1층입찰법정",
+  "deposit": 110728600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 968,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-20",
+    "minPrice": 4611769900,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 4611769900,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 3228238964,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 2259767299,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 1581837126,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "일괄매각. 제시외 건물, 과수목, 조경석 및 조경수 매각 포함. 목록 3,4,5,7,8에 대하여 농지취득자격증명 제출 필요(매각결정기일까지 미제출시 보증금은 반환하지 않음) 및 원상회복명령이 발하여질 가능성 있음."
+ },
+ {
+  "id": "gyeongbuk-2025타경10161-1",
+  "court": "의성지원",
+  "courtCode": "B000315",
+  "caseNo": "2025타경10161",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 청송군 청송읍 월외리 483-11",
+  "region": "경북",
+  "district": "청송군",
+  "appraisalPrice": 17210000,
+  "minPrice": 1419000,
+  "priceRatio": 0.0825,
+  "failCount": 7,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "의성지원제1호법정",
+  "deposit": 141900,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 100,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-04",
+    "minPrice": 17210000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-11",
+    "minPrice": 17210000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-15",
+    "minPrice": 12049042,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-20",
+    "minPrice": 8435759,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 5906032,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 4134923,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 2894937,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 2026799,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "일괄매각. 농지취득자격증명 요함(미제출시 매수보증금 미반환). 목록1 현황 일부 도로. 목록2 현황 휴경지 및 일부 묘지, 지상에 분묘 소재함(분묘기지권 성립여부 불분명), 제시외 건물 매각 포함."
+ },
+ {
+  "id": "gyeongbuk-2025타경10189-1",
+  "court": "의성지원",
+  "courtCode": "B000315",
+  "caseNo": "2025타경10189",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 의성군 가음면 장리 1286",
+  "region": "경북",
+  "district": "의성군",
+  "appraisalPrice": 51374000,
+  "minPrice": 6046000,
+  "priceRatio": 0.1177,
+  "failCount": 6,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "의성지원제1호법정",
+  "deposit": 604600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 1511,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-11",
+    "minPrice": 51374000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-15",
+    "minPrice": 51374000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-20",
+    "minPrice": 35963684,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 25175898,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 17624052,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 12337483,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 8636690,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "농지취득자격증명 제출요(미제출시 보증금 미반환), 맹지임, 현황 휴경지 및 묘지, 연고미상의 분묘 소재함(분묘기지권 성립여부 불분명함), 추가분묘 소재할 가능성 있으므로 확인요함"
+ },
+ {
+  "id": "gyeongbuk-2025타경10227-1",
+  "court": "의성지원",
+  "courtCode": "B000315",
+  "caseNo": "2025타경10227",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 의성군 옥산면 오류리 438",
+  "region": "경북",
+  "district": "의성군",
+  "appraisalPrice": 8416000,
+  "minPrice": 992000,
+  "priceRatio": 0.1179,
+  "failCount": 6,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "의성지원제1호법정",
+  "deposit": 99200,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 159,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-11",
+    "minPrice": 8416000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-15",
+    "minPrice": 8416000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-20",
+    "minPrice": 5893049,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 4126429,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 2889407,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 2023220,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 1416698,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "농지취득자격증명 제출요(미제출시 보증금 미반환). 맹지이나 남측 인접지 경유하여 접근가능. 현황 전."
+ },
+ {
+  "id": "gyeongbuk-2025타경10227-2",
+  "court": "의성지원",
+  "courtCode": "B000315",
+  "caseNo": "2025타경10227",
+  "itemNo": "2",
+  "category": "토지",
+  "address": "경상북도 의성군 금성면 하리 464",
+  "region": "경북",
+  "district": "의성군",
+  "appraisalPrice": 5748000,
+  "minPrice": 677000,
+  "priceRatio": 0.1178,
+  "failCount": 6,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "의성지원제1호법정",
+  "deposit": 67700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 479,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-11",
+    "minPrice": 5748000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-15",
+    "minPrice": 5748000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-20",
+    "minPrice": 4024347,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 2817566,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 1972662,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 1381120,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 966963,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "농지취득자격증명 제출요(미제출시 보증금 미반환). 지분매각(공유자의 우선매수에 관한 특별매각조건이 있음). 맹지이나 서측 인접지 경유하여 접근가능."
+ },
+ {
+  "id": "gyeongbuk-2025타경10227-3",
+  "court": "의성지원",
+  "courtCode": "B000315",
+  "caseNo": "2025타경10227",
+  "itemNo": "3",
+  "category": "토지",
+  "address": "경상북도 의성군 옥산면 오류리 519",
+  "region": "경북",
+  "district": "의성군",
+  "appraisalPrice": 4441500,
+  "minPrice": 523000,
+  "priceRatio": 0.1178,
+  "failCount": 6,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "의성지원제1호법정",
+  "deposit": 52300,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 384,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-11",
+    "minPrice": 4441500,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-15",
+    "minPrice": 4441500,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-20",
+    "minPrice": 3109508,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 2176976,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 1524108,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 1067033,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 747033,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "농지취득자격증명 제출요(미제출시 보증금 미반환), 차량접근이 불가한 맹지임, 현황 임야화한 묵전."
+ },
+ {
+  "id": "gyeongbuk-2025타경10227-4",
+  "court": "의성지원",
+  "courtCode": "B000315",
+  "caseNo": "2025타경10227",
+  "itemNo": "4",
+  "category": "토지",
+  "address": "경상북도 의성군 옥산면 오류리 449",
+  "region": "경북",
+  "district": "의성군",
+  "appraisalPrice": 1381700,
+  "minPrice": 164000,
+  "priceRatio": 0.1187,
+  "failCount": 6,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "의성지원제1호법정",
+  "deposit": 16400,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 102,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-11",
+    "minPrice": 1381700,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-15",
+    "minPrice": 1381700,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-20",
+    "minPrice": 968617,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 679032,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 476024,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 333708,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 233941,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "농지취득자격증명 제출요(미제출시 보증금 미반환), 차량접근이 불가한 맹지임, 현황 임야화한 묵전."
+ },
+ {
+  "id": "gyeongbuk-2025타경10241-1",
+  "court": "의성지원",
+  "courtCode": "B000315",
+  "caseNo": "2025타경10241",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 청송군 현동면 창양리 340",
+  "region": "경북",
+  "district": "청송군",
+  "appraisalPrice": 8575000,
+  "minPrice": 2061000,
+  "priceRatio": 0.2403,
+  "failCount": 4,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "의성지원제1호법정",
+  "deposit": 206100,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 245,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-20",
+    "minPrice": 8575000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 8575000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 6004061,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 4203936,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 2943520,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "농지취득자격증명 필요함(미제출시 매수신청보증금 미반환). 지상에 매각에서 제외되는 이동이 용이한 컨테이너 수개 및 농산물 건조기 소재함. 휴경지로 현황은 잡종지임."
+ },
+ {
+  "id": "gyeongbuk-2025타경10255-1",
+  "court": "의성지원",
+  "courtCode": "B000315",
+  "caseNo": "2025타경10255",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 의성군 금성면 도경리 720-4",
+  "region": "경북",
+  "district": "의성군",
+  "appraisalPrice": 10472000,
+  "minPrice": 2516000,
+  "priceRatio": 0.2403,
+  "failCount": 4,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "의성지원제1호법정",
+  "deposit": 251600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 1309,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-20",
+    "minPrice": 10472000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 10472000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 7331619,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 5132987,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 3593688,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "농지취득자격증명 필요함(미제출시 매수신청보증금 미반환). 현황은 휴경지 및 유지. 자생수목은 토지에 포함평가. 맹지임."
+ },
+ {
+  "id": "gyeongbuk-2025타경1051-1",
+  "court": "대구지방법원",
+  "courtCode": "B000310",
+  "caseNo": "2025타경1051",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 칠곡군 가산면 학산리 산77-5",
+  "region": "경북",
+  "district": "칠곡군",
+  "appraisalPrice": 85254000,
+  "minPrice": 14329000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "신관지하2층입찰법정",
+  "deposit": 1432900,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 1093,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-15",
+    "minPrice": 85254000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-20",
+    "minPrice": 85254000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 59678100,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 41774880,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 29242563,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 20469897,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "- 지적도 및 실제 맹지임"
+ },
+ {
+  "id": "gyeongbuk-2025타경1051-2",
+  "court": "대구지방법원",
+  "courtCode": "B000310",
+  "caseNo": "2025타경1051",
+  "itemNo": "2",
+  "category": "토지",
+  "address": "경상북도 칠곡군 가산면 학산리 산77-11",
+  "region": "경북",
+  "district": "칠곡군",
+  "appraisalPrice": 85254000,
+  "minPrice": 20470000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "신관지하2층입찰법정",
+  "deposit": 2047000,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 1093,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-20",
+    "minPrice": 85254000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 85254000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 59678175,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 41774985,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 29242673,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "- 지적도 및 실제 맹지임"
+ },
+ {
+  "id": "gyeongbuk-2025타경10844-1",
+  "court": "김천지원",
+  "courtCode": "B000313",
+  "caseNo": "2025타경10844",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 김천시 감천면 용호리 383",
+  "region": "경북",
+  "district": "김천시",
+  "appraisalPrice": 16168000,
+  "minPrice": 1902000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "1층입찰법정",
+  "deposit": 190200,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 188,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-11",
+    "minPrice": 16168000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-15",
+    "minPrice": 16168000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-20",
+    "minPrice": 11317452,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 7922113,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 5545407,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 3881734,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 2717178,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "본건 토지에 일반건축물대장상 건물(미등기)이 등재되어 있음(감정평가서 참조)"
+ },
+ {
+  "id": "gyeongbuk-2025타경1085-1",
+  "court": "대구지방법원",
+  "courtCode": "B000310",
+  "caseNo": "2025타경1085",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 경산시 자인면 읍천리 172",
+  "region": "경북",
+  "district": "경산시",
+  "appraisalPrice": 9730000,
+  "minPrice": 2337000,
+  "priceRatio": 0.2402,
+  "failCount": 4,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "신관지하2층입찰법정",
+  "deposit": 233700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 139,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-20",
+    "minPrice": 9730000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 9730000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 6811603,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 4768544,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 3338276,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "- 농지취득자격증명 제출 요함(미제출시 매수보증금 미반환). - 지적도상 맹지임."
+ },
+ {
+  "id": "gyeongbuk-2025타경1085-2",
+  "court": "대구지방법원",
+  "courtCode": "B000310",
+  "caseNo": "2025타경1085",
+  "itemNo": "2",
+  "category": "토지",
+  "address": "경상북도 경산시 자인면 읍천리 산83",
+  "region": "경북",
+  "district": "경산시",
+  "appraisalPrice": 3722400,
+  "minPrice": 894000,
+  "priceRatio": 0.2402,
+  "failCount": 4,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "신관지하2층입찰법정",
+  "deposit": 89400,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 198,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-20",
+    "minPrice": 3722400,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 3722400,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 2605863,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 1824233,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 1277053,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "- 일괄매각. 수목 포함 평가. 목록2,3 지적도상 맹지임. - 임야의 특성상 분묘소재 여지 있으며, 그에 따른 분묘기지권 성립여지 있음."
+ },
+ {
+  "id": "gyeongbuk-2025타경1085-3",
+  "court": "대구지방법원",
+  "courtCode": "B000310",
+  "caseNo": "2025타경1085",
+  "itemNo": "3",
+  "category": "토지",
+  "address": "경상북도 경산시 자인면 읍천리 산94-7",
+  "region": "경북",
+  "district": "경산시",
+  "appraisalPrice": 10656000,
+  "minPrice": 2559000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "신관지하2층입찰법정",
+  "deposit": 255900,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 288,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-20",
+    "minPrice": 10656000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 10656000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 7459560,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 5221944,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 3655538,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "- 수목 포함 평가. 임야의 특성상 분묘소재 여지 있으며, 그에 따른 분묘기지권 성립여지 있음."
+ },
+ {
+  "id": "gyeongbuk-2025타경10913-1",
+  "court": "김천지원",
+  "courtCode": "B000313",
+  "caseNo": "2025타경10913",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 김천시 삼락동 891-171",
+  "region": "경북",
+  "district": "김천시",
+  "appraisalPrice": 284758000,
+  "minPrice": 47859000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "1층입찰법정",
+  "deposit": 4785900,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 1,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-15",
+    "minPrice": 284758000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-20",
+    "minPrice": 284758000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 199330369,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 139531097,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 97671655,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 68370079,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "일괄매각, 토지대장상 목록1 및 목록4는 목록3에 합필되어 감정평가시 목록3에 포함평가됨"
+ },
+ {
+  "id": "gyeongbuk-2025타경10929-1",
+  "court": "김천지원",
+  "courtCode": "B000313",
+  "caseNo": "2025타경10929",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 김천시 남면 봉천리 산32",
+  "region": "경북",
+  "district": "김천시",
+  "appraisalPrice": 38353500,
+  "minPrice": 6446000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "1층입찰법정",
+  "deposit": 644600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 7015,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-15",
+    "minPrice": 38353500,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-20",
+    "minPrice": 38353500,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 26847389,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 18793130,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 13155161,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 9208592,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "일괄매각. 목록2 과수목 매각 제외. 지분매각. 공유자 우선매수권 있음(공유자 우선매수권행사를 1회로 제한하는 특별매각조건 있음)."
+ },
+ {
+  "id": "gyeongbuk-2025타경10929-2",
+  "court": "김천지원",
+  "courtCode": "B000313",
+  "caseNo": "2025타경10929",
+  "itemNo": "2",
+  "category": "토지",
+  "address": "경상북도 김천시 남면 봉천리 산150",
+  "region": "경북",
+  "district": "김천시",
+  "appraisalPrice": 34273800,
+  "minPrice": 5760000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "1층입찰법정",
+  "deposit": 576000,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 12694,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-15",
+    "minPrice": 34273800,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-20",
+    "minPrice": 34273800,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 23991329,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 16793698,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 11755427,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 8228685,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeongbuk-2025타경1109-1",
+  "court": "대구지방법원",
+  "courtCode": "B000310",
+  "caseNo": "2025타경1109",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 영천시 서산동 555",
+  "region": "경북",
+  "district": "영천시",
+  "appraisalPrice": 113769000,
+  "minPrice": 27316000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "신관지하2층입찰법정",
+  "deposit": 2731600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 390,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-20",
+    "minPrice": 113769000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 113769000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 79638346,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 55746874,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 39022835,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "일괄매각. 농지취득자격증명 제출 요함(미제출시 매수보증금 미반환)(사실조회회신서 참조)."
+ },
+ {
+  "id": "gyeongbuk-2025타경11146-1",
+  "court": "김천지원",
+  "courtCode": "B000313",
+  "caseNo": "2025타경11146",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 김천시 남면 봉천리 1601-4",
+  "region": "경북",
+  "district": "김천시",
+  "appraisalPrice": 393192000,
+  "minPrice": 94406000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "1층입찰법정",
+  "deposit": 9440600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 246,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-20",
+    "minPrice": 393192000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 393192000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 275234838,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 192664693,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 134865500,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "일괄매각, 농지취득자격증명 제출 필요(매각결정기일까지 미제출시 보증금은 반환하지 않음)"
+ },
+ {
+  "id": "gyeongbuk-2025타경11215-1",
+  "court": "김천지원",
+  "courtCode": "B000313",
+  "caseNo": "2025타경11215",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 김천시 신음동 125-10",
+  "region": "경북",
+  "district": "김천시",
+  "appraisalPrice": 85512000,
+  "minPrice": 20532000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "1층입찰법정",
+  "deposit": 2053200,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 509,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-20",
+    "minPrice": 85512000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 85512000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 59858815,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 41901460,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 29331225,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "지상 건물 매각 제외"
+ },
+ {
+  "id": "gyeongbuk-2025타경11215-4",
+  "court": "김천지원",
+  "courtCode": "B000313",
+  "caseNo": "2025타경11215",
+  "itemNo": "4",
+  "category": "토지",
+  "address": "경상북도 김천시 신음동 125-12",
+  "region": "경북",
+  "district": "김천시",
+  "appraisalPrice": 97335000,
+  "minPrice": 23371000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "1층입찰법정",
+  "deposit": 2337100,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 945,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-20",
+    "minPrice": 97335000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 97335000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 68135132,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 47695034,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 33386833,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "맹지, 농지취득자격증명 제출 필요(매각결정기일까지 미제출시 보증금은 반환하지 않음), 원상회복명령이 발하여질 가능성 있음"
+ },
+ {
+  "id": "gyeongbuk-2025타경11276-1",
+  "court": "김천지원",
+  "courtCode": "B000313",
+  "caseNo": "2025타경11276",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 김천시 아포읍 국사리 777-24",
+  "region": "경북",
+  "district": "김천시",
+  "appraisalPrice": 229652820,
+  "minPrice": 55140000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "1층입찰법정",
+  "deposit": 5514000,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 4325,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-20",
+    "minPrice": 229652820,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 229652820,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 160757235,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 112530247,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 78771301,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "지분매각, 제시외 매각 제외, 농지취득자격증명 제출 필요(매각결정기일까지 미제출시 보증금은 반환하지 않음), 원상회복명령이 발하여질 가능성 있음"
+ },
+ {
+  "id": "gyeongbuk-2025타경11353-1",
+  "court": "김천지원",
+  "courtCode": "B000313",
+  "caseNo": "2025타경11353",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 김천시 봉산면 신암리 783",
+  "region": "경북",
+  "district": "김천시",
+  "appraisalPrice": 120695000,
+  "minPrice": 28979000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "1층입찰법정",
+  "deposit": 2897900,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 1302,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-20",
+    "minPrice": 120695000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 120695000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 84486595,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 59140683,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 41398525,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "과수목 및 비닐하우스 매각 제외, 현황 '과수원'임, 농지취득자격증명 제출 필요(매각결정기일까지 미제출시 보증금은 반환하지 않음)"
+ },
+ {
+  "id": "gyeongbuk-2025타경11357-1",
+  "court": "김천지원",
+  "courtCode": "B000313",
+  "caseNo": "2025타경11357",
+  "itemNo": "1",
+  "category": "아파트",
+  "address": "경상북도 구미시 상모동 77-1 신세계타운1단지 107동 18층 1803호",
+  "region": "경북",
+  "district": "구미시",
+  "appraisalPrice": 115000000,
+  "minPrice": 27612000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "1층입찰법정",
+  "deposit": 2761200,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 59.99,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-20",
+    "minPrice": 115000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 115000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 80500364,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 56350510,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 39445536,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeongbuk-2025타경179-1",
+  "court": "의성지원",
+  "courtCode": "B000315",
+  "caseNo": "2025타경179",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 청송군 부남면 대전리 산120",
+  "region": "경북",
+  "district": "청송군",
+  "appraisalPrice": 179590800,
+  "minPrice": 30184000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "의성지원제1호법정",
+  "deposit": 3018400,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 87998,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-15",
+    "minPrice": 179590800,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-20",
+    "minPrice": 179590800,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 125713705,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 87999695,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 61599858,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 43119950,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "일괄매각. 목록 1번 북측 일부에 자체도로 개설되어 부분적으로 개간된 상태이나 상세내용은 측량을 요함. 목록 2,3번 맹지. 목록1번 토지에 일부 걸쳐서 식재된 고로쇠나무(대전리 344, 344-1 경계), 자두나무, 살구나무(동소 343 경계), 사과나무(동소 337 경계) 등은 타인소유로 매각에서 제외함."
+ },
+ {
+  "id": "gyeongbuk-2025타경320-1",
+  "court": "김천지원",
+  "courtCode": "B000313",
+  "caseNo": "2025타경320",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "경상북도 김천시 양천동 산18",
+  "region": "경북",
+  "district": "김천시",
+  "appraisalPrice": 1508949800,
+  "minPrice": 177526000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "1층입찰법정",
+  "deposit": 17752600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 2,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-11",
+    "minPrice": 1508949800,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-15",
+    "minPrice": 1508949800,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-20",
+    "minPrice": 1056264429,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 739384798,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 517569147,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 362298255,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 253608675,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "일괄매각, 제시외 건물 매각 제외, 과수목 매각 포함, 목록3의 최저매각가격은 제시외 건물 소재로 인하여 제한받는 가격임, 목록4 일부도로 감안평가, 개시결정 이후 2025. 5. 15.자로 매각대상 목록4 부동산 중 전 104㎡가 경상북도 김천시 양천동 1377-2로 분할됨, 목록4,5,6,7,8,10에 대하여 농지취득자격증명 제출 필요(매각결정기일까지 미제출시 보증금은 반환하지 않음) 및 원상회복명령이 발하여질 가능성 있음"
+ },
+ {
+  "id": "gyeongbuk-2025타경354-1",
+  "court": "김천지원",
+  "courtCode": "B000313",
+  "caseNo": "2025타경354",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "경상북도 구미시 거의동 389-4",
+  "region": "경북",
+  "district": "구미시",
+  "appraisalPrice": 400922640,
+  "minPrice": 96261000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "1층입찰법정",
+  "deposit": 9626100,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 207,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-20",
+    "minPrice": 400922640,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 400922640,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 280645465,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 196451557,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 137515902,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "일괄매각"
+ },
+ {
+  "id": "gyeongbuk-2025타경424-1",
+  "court": "김천지원",
+  "courtCode": "B000313",
+  "caseNo": "2025타경424",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 김천시 부곡동 산58-1",
+  "region": "경북",
+  "district": "김천시",
+  "appraisalPrice": 567472000,
+  "minPrice": 95375000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "1층입찰법정",
+  "deposit": 9537500,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 126545,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-15",
+    "minPrice": 567472000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-20",
+    "minPrice": 567472000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 397230384,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 278061258,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 194642873,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 136250005,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "일괄매각, 목록1-분묘 수기 소재, 목록2-분묘 소재 불분명"
+ },
+ {
+  "id": "gyeongbuk-2025타경440-1",
+  "court": "김천지원",
+  "courtCode": "B000313",
+  "caseNo": "2025타경440",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 김천시 남면 송곡리 110",
+  "region": "경북",
+  "district": "김천시",
+  "appraisalPrice": 45823000,
+  "minPrice": 5391000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "1층입찰법정",
+  "deposit": 539100,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 373,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-11",
+    "minPrice": 45823000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-15",
+    "minPrice": 45823000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-20",
+    "minPrice": 32076070,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 22453228,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 15717245,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 11002061,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 7701436,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "토지의 일부가 도로로 사용중임, 본건 토지의 일부 지상에 매각대상 아닌 타인 소유의 건물일부가 소재함(감정평가서 참조), 최저매각가격은 타인점유감안 가격임"
+ },
+ {
+  "id": "gyeongbuk-2025타경475-2",
+  "court": "김천지원",
+  "courtCode": "B000313",
+  "caseNo": "2025타경475",
+  "itemNo": "2",
+  "category": "토지",
+  "address": "경상북도 구미시 해평면 송곡리 803-44",
+  "region": "경북",
+  "district": "구미시",
+  "appraisalPrice": 46359000,
+  "minPrice": 7792000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "1층입찰법정",
+  "deposit": 779200,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 909,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-15",
+    "minPrice": 46359000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-20",
+    "minPrice": 46359000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 32451669,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 22716426,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 15901679,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 11131302,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "농지취득자격증명 제출 필요(매각결정기일까지 미제출시 보증금은 반환하지 않음), 원상회복명령이 발하여질 가능성 있음"
+ },
+ {
+  "id": "gyeongbuk-2025타경475-3",
+  "court": "김천지원",
+  "courtCode": "B000313",
+  "caseNo": "2025타경475",
+  "itemNo": "3",
+  "category": "토지",
+  "address": "경상북도 구미시 해평면 창림리 201-2",
+  "region": "경북",
+  "district": "구미시",
+  "appraisalPrice": 10291000,
+  "minPrice": 1730000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "1층입찰법정",
+  "deposit": 173000,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 76,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-15",
+    "minPrice": 10291000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-20",
+    "minPrice": 10291000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 7204026,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 5043047,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 3530293,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 2471317,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "농지취득자격증명 제출 필요(매각결정기일까지 미제출시 보증금은 반환하지 않음), 원상회복명령이 발하여질 가능성 있음"
+ },
+ {
+  "id": "gyeongbuk-2025타경550-1",
+  "court": "김천지원",
+  "courtCode": "B000313",
+  "caseNo": "2025타경550",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "경상북도 김천시 율곡동 781 메타폴리스 2층225호",
+  "region": "경북",
+  "district": "김천시",
+  "appraisalPrice": 143000000,
+  "minPrice": 34334000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "1층입찰법정",
+  "deposit": 3433400,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 63.36,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-20",
+    "minPrice": 143000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 143000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 100099781,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 70069694,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 49048679,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeongbuk-2025타경8800-1",
+  "court": "대구지방법원",
+  "courtCode": "B000310",
+  "caseNo": "2025타경8800",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 영천시 임고면 사리 산20",
+  "region": "경북",
+  "district": "영천시",
+  "appraisalPrice": 52918400,
+  "minPrice": 8894000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "신관지하2층입찰법정",
+  "deposit": 889400,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 23008,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-15",
+    "minPrice": 52918400,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-20",
+    "minPrice": 52918400,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 37042884,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 25930021,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 18151017,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 12705713,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "자연림의 특성상 분묘소재 여지 있으며, 그에 따른 분묘기지권 성립여지 있음. 임야도상 맹지임."
+ },
+ {
+  "id": "gyeongbuk-2025타경9046-1",
+  "court": "대구지방법원",
+  "courtCode": "B000310",
+  "caseNo": "2025타경9046",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상북도 칠곡군 약목면 관호리 497-11",
+  "region": "경북",
+  "district": "칠곡군",
+  "appraisalPrice": 200981000,
+  "minPrice": 48256000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "신관지하2층입찰법정",
+  "deposit": 4825600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 1661,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-20",
+    "minPrice": 200981000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 200981000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 140687037,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 98481161,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 68936978,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "- 농지취득자격증명 제출 요함(미제출시 매수보증금 미반환). - 지적도상 맹지임. 지상 이동용이한 비닐하우스 매각제외."
+ },
+ {
+  "id": "gyeongbuk-2025타경973-1",
+  "court": "대구지방법원",
+  "courtCode": "B000310",
+  "caseNo": "2025타경973",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "경상북도 칠곡군 왜관읍 석전리 494-1 4층402호",
+  "region": "경북",
+  "district": "칠곡군",
+  "appraisalPrice": 59000000,
+  "minPrice": 6941000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-11-11",
+  "saleTime": "10:00",
+  "courtRoom": "신관지하2층입찰법정",
+  "deposit": 694100,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 56.49,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-11",
+    "minPrice": 59000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-15",
+    "minPrice": 59000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-20",
+    "minPrice": 41299711,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-24",
+    "minPrice": 28909596,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-29",
+    "minPrice": 20236576,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-02",
+    "minPrice": 14165504,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-07",
+    "minPrice": 9915784,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "2022. 5. 23.자 접수 제9901호 북대구신용협동조합 명의의 근저당권은 소멸됨."
  }
 ]
