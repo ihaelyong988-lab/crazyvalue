@@ -1,136 +1,86 @@
 [
  {
-  "id": "jeju-2023타경12618-1",
+  "id": "jeju-2024타경34530-1",
   "court": "제주지방법원",
   "courtCode": "B000530",
-  "caseNo": "2023타경12618",
+  "caseNo": "2024타경34530",
   "itemNo": "1",
-  "category": "오피스텔",
-  "address": "제주특별자치도 제주시 월광로 140 3층303호 (노형동,노형휴캐슬)",
+  "category": "토지",
+  "address": "제주특별자치도 제주시 오라이동 862-3",
   "region": "제주",
   "district": "제주시",
-  "appraisalPrice": 331000000,
-  "minPrice": 1100000,
-  "priceRatio": 0.0033,
-  "failCount": 16,
-  "saleDate": "2026-11-10",
+  "appraisalPrice": 6406920000,
+  "minPrice": 753768000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-11-17",
   "saleTime": "10:00",
-  "courtRoom": "제101호법정",
-  "deposit": 110000,
+  "courtRoom": "제주지법제101호법정",
+  "deposit": 75376800,
   "depositRate": 10,
   "depositSource": "estimated",
   "areaBuilding": null,
-  "areaLand": null,
+  "areaLand": 8658,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-03-25",
-    "minPrice": 331000000,
+    "date": "2026-03-17",
+    "minPrice": 6406920000,
     "result": "신건"
    },
    {
-    "date": "2025-04-29",
-    "minPrice": 331000000,
+    "date": "2026-04-21",
+    "minPrice": 6406920000,
     "result": "유찰"
    },
    {
-    "date": "2025-06-03",
-    "minPrice": 231699868,
+    "date": "2026-05-26",
+    "minPrice": 4484844267,
     "result": "유찰"
    },
    {
-    "date": "2025-07-08",
-    "minPrice": 162189816,
+    "date": "2026-06-30",
+    "minPrice": 3139391173,
     "result": "유찰"
    },
    {
-    "date": "2025-08-12",
-    "minPrice": 113532806,
+    "date": "2026-08-04",
+    "minPrice": 2197573952,
     "result": "유찰"
    },
    {
-    "date": "2025-09-16",
-    "minPrice": 79472919,
+    "date": "2026-09-08",
+    "minPrice": 1538301858,
     "result": "유찰"
    },
    {
-    "date": "2025-10-21",
-    "minPrice": 55631012,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-11-25",
-    "minPrice": 38941686,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-12-30",
-    "minPrice": 27259165,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-03",
-    "minPrice": 19081405,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-10",
-    "minPrice": 13356976,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-14",
-    "minPrice": 9349878,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-19",
-    "minPrice": 6544911,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-23",
-    "minPrice": 4581435,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-28",
-    "minPrice": 3207003,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-01",
-    "minPrice": 2244901,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-06",
-    "minPrice": 1571429,
+    "date": "2026-10-13",
+    "minPrice": 1076811365,
     "result": "유찰"
    }
   ],
   "historySource": "estimated",
-  "specialNote": "주거용 오피스텔로 이용중임."
+  "specialNote": "지상의 신축 중인 건물 등 매각에서 제외 일부토지(674㎡)에 대하여 농지취득자격증명 제출요함"
  },
  {
-  "id": "jeju-2024타경12158-1",
+  "id": "jeju-2024타경7828-1",
   "court": "제주지방법원",
   "courtCode": "B000530",
-  "caseNo": "2024타경12158",
+  "caseNo": "2024타경7828",
   "itemNo": "1",
-  "category": "다세대",
-  "address": "제주특별자치도 제주시 한경면 녹차분재로 609 105동 4층402호 (곶자왈아이파크)",
+  "category": "오피스텔",
+  "address": "제주특별자치도 서귀포시 서문로 42-1 3층327호 (서귀동,비스타케이올래)",
   "region": "제주",
-  "district": "제주시",
-  "appraisalPrice": 780000000,
-  "minPrice": 44966000,
-  "priceRatio": 0.0576,
-  "failCount": 9,
-  "saleDate": "2026-11-10",
+  "district": "서귀포시",
+  "appraisalPrice": 123000000,
+  "minPrice": 3474000,
+  "priceRatio": 0.0282,
+  "failCount": 10,
+  "saleDate": "2026-11-17",
   "saleTime": "10:00",
   "courtRoom": "제101호법정",
-  "deposit": 4496600,
+  "deposit": 347400,
   "depositRate": 10,
   "depositSource": "estimated",
   "areaBuilding": null,
@@ -139,53 +89,58 @@
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-11-25",
-    "minPrice": 780000000,
+    "date": "2025-10-28",
+    "minPrice": 123000000,
     "result": "신건"
    },
    {
-    "date": "2025-12-30",
-    "minPrice": 780000000,
+    "date": "2025-12-02",
+    "minPrice": 123000000,
     "result": "유찰"
    },
    {
-    "date": "2026-02-03",
-    "minPrice": 568073544,
+    "date": "2026-01-06",
+    "minPrice": 86098896,
     "result": "유찰"
    },
    {
-    "date": "2026-03-10",
-    "minPrice": 413727630,
+    "date": "2026-02-10",
+    "minPrice": 60268454,
     "result": "유찰"
    },
    {
-    "date": "2026-04-14",
-    "minPrice": 301317591,
+    "date": "2026-03-17",
+    "minPrice": 42187377,
     "result": "유찰"
    },
    {
-    "date": "2026-05-19",
-    "minPrice": 219449426,
+    "date": "2026-04-21",
+    "minPrice": 29530785,
     "result": "유찰"
    },
    {
-    "date": "2026-06-23",
-    "minPrice": 159824889,
+    "date": "2026-05-26",
+    "minPrice": 20671284,
     "result": "유찰"
    },
    {
-    "date": "2026-07-28",
-    "minPrice": 116400373,
+    "date": "2026-06-30",
+    "minPrice": 14469714,
     "result": "유찰"
    },
    {
-    "date": "2026-09-01",
-    "minPrice": 84774324,
+    "date": "2026-08-04",
+    "minPrice": 10128670,
     "result": "유찰"
    },
    {
-    "date": "2026-10-06",
-    "minPrice": 61741090,
+    "date": "2026-09-08",
+    "minPrice": 7089978,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-13",
+    "minPrice": 4962921,
     "result": "유찰"
    }
   ],
@@ -193,127 +148,68 @@
   "specialNote": null
  },
  {
-  "id": "jeju-2024타경8067-1",
+  "id": "jeju-2025타경8155-1",
   "court": "제주지방법원",
   "courtCode": "B000530",
-  "caseNo": "2024타경8067",
+  "caseNo": "2025타경8155",
   "itemNo": "1",
-  "category": "토지",
-  "address": "제주특별자치도 서귀포시 안덕면 사계리 2383-1",
+  "category": "기타",
+  "address": "제주특별자치도 서귀포시 서귀동 270-9 호텔캐니스토리 3층 306호",
   "region": "제주",
   "district": "서귀포시",
-  "appraisalPrice": 1238376000,
-  "minPrice": 145694000,
-  "priceRatio": 0.1176,
-  "failCount": 6,
-  "saleDate": "2026-11-10",
+  "appraisalPrice": 127000000,
+  "minPrice": 10459000,
+  "priceRatio": 0.0824,
+  "failCount": 7,
+  "saleDate": "2026-11-17",
   "saleTime": "10:00",
-  "courtRoom": "제101호법정",
-  "deposit": 14569400,
+  "courtRoom": "제주지법제101호법정",
+  "deposit": 1045900,
   "depositRate": 10,
   "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 2030,
+  "areaBuilding": 15.29,
+  "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-03-10",
-    "minPrice": 1238376000,
+    "date": "2026-02-10",
+    "minPrice": 127000000,
     "result": "신건"
    },
    {
-    "date": "2026-04-14",
-    "minPrice": 1238376000,
+    "date": "2026-03-17",
+    "minPrice": 127000000,
     "result": "유찰"
    },
    {
-    "date": "2026-05-19",
-    "minPrice": 866863499,
+    "date": "2026-04-21",
+    "minPrice": 88900005,
     "result": "유찰"
    },
    {
-    "date": "2026-06-23",
-    "minPrice": 606804659,
+    "date": "2026-05-26",
+    "minPrice": 62230007,
     "result": "유찰"
    },
    {
-    "date": "2026-07-28",
-    "minPrice": 424763408,
+    "date": "2026-06-30",
+    "minPrice": 43561007,
     "result": "유찰"
    },
    {
-    "date": "2026-09-01",
-    "minPrice": 297334488,
+    "date": "2026-08-04",
+    "minPrice": 30492706,
     "result": "유찰"
    },
    {
-    "date": "2026-10-06",
-    "minPrice": 208134214,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "일괄매각, 지분매각, 공유자우선매수신고 제한 있음, 농지취득자격증명 필요함(미제출시 매수신청보증금 미반환), 지상 소재 건물 매각 제외, 목록1 소재 이동식 컨테이너 매각 제외"
- },
- {
-  "id": "jeju-2025타경1202-3",
-  "court": "제주지방법원",
-  "courtCode": "B000530",
-  "caseNo": "2025타경1202",
-  "itemNo": "3",
-  "category": "토지",
-  "address": "제주특별자치도 서귀포시 하원동 728",
-  "region": "제주",
-  "district": "서귀포시",
-  "appraisalPrice": 108878000,
-  "minPrice": 12809000,
-  "priceRatio": 0.1176,
-  "failCount": 6,
-  "saleDate": "2026-11-10",
-  "saleTime": "10:00",
-  "courtRoom": "제101호법정",
-  "deposit": 1280900,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 1111,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-10",
-    "minPrice": 108878000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-14",
-    "minPrice": 108878000,
+    "date": "2026-09-08",
+    "minPrice": 21344896,
     "result": "유찰"
    },
    {
-    "date": "2026-05-19",
-    "minPrice": 76214215,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-23",
-    "minPrice": 53349682,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-28",
-    "minPrice": 37344589,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-01",
-    "minPrice": 26141080,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-06",
-    "minPrice": 18298664,
+    "date": "2026-10-13",
+    "minPrice": 14941428,
     "result": "유찰"
    }
   ],
@@ -321,63 +217,68 @@
   "specialNote": null
  },
  {
-  "id": "jeju-2025타경7863-1",
+  "id": "jeju-2025타경8164-1",
   "court": "제주지방법원",
   "courtCode": "B000530",
-  "caseNo": "2025타경7863",
+  "caseNo": "2025타경8164",
   "itemNo": "1",
-  "category": "오피스텔",
-  "address": "제주특별자치도 제주시 조천읍 함덕리 1424 쉬젠비아채아파트 제가동 제4층 제402호",
+  "category": "기타",
+  "address": "제주특별자치도 서귀포시 서귀동 270-9 호텔캐니스토리 5층 536호",
   "region": "제주",
-  "district": "제주시",
-  "appraisalPrice": 104000000,
-  "minPrice": 12235000,
-  "priceRatio": 0.1176,
-  "failCount": 6,
-  "saleDate": "2026-11-10",
+  "district": "서귀포시",
+  "appraisalPrice": 133000000,
+  "minPrice": 10953000,
+  "priceRatio": 0.0824,
+  "failCount": 7,
+  "saleDate": "2026-11-17",
   "saleTime": "10:00",
-  "courtRoom": "제101호법정",
-  "deposit": 1223500,
+  "courtRoom": "제주지법제101호법정",
+  "deposit": 1095300,
   "depositRate": 10,
   "depositSource": "estimated",
-  "areaBuilding": 39.71,
+  "areaBuilding": 16.04,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-03-10",
-    "minPrice": 104000000,
+    "date": "2026-02-10",
+    "minPrice": 133000000,
     "result": "신건"
    },
    {
-    "date": "2026-04-14",
-    "minPrice": 104000000,
+    "date": "2026-03-17",
+    "minPrice": 133000000,
     "result": "유찰"
    },
    {
-    "date": "2026-05-19",
-    "minPrice": 72799508,
+    "date": "2026-04-21",
+    "minPrice": 93099852,
     "result": "유찰"
    },
    {
-    "date": "2026-06-23",
-    "minPrice": 50959311,
+    "date": "2026-05-26",
+    "minPrice": 65169793,
     "result": "유찰"
    },
    {
-    "date": "2026-07-28",
-    "minPrice": 35671277,
+    "date": "2026-06-30",
+    "minPrice": 45618782,
     "result": "유찰"
    },
    {
-    "date": "2026-09-01",
-    "minPrice": 24969725,
+    "date": "2026-08-04",
+    "minPrice": 31933097,
     "result": "유찰"
    },
    {
-    "date": "2026-10-06",
-    "minPrice": 17478690,
+    "date": "2026-09-08",
+    "minPrice": 22353132,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-13",
+    "minPrice": 15647168,
     "result": "유찰"
    }
   ],
