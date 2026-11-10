@@ -1,506 +1,5 @@
 [
  {
-  "id": "chungnam-2025타경20326-1",
-  "court": "논산지원",
-  "courtCode": "B000282",
-  "caseNo": "2025타경20326",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "충청남도 부여군 장암면 지토리 산111-12",
-  "region": "충남",
-  "district": "부여군",
-  "appraisalPrice": 122576000,
-  "minPrice": 20601000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-09",
-  "saleTime": "10:00",
-  "courtRoom": "제2호법정",
-  "deposit": 2060100,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 13064,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-13",
-    "minPrice": 122576000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-18",
-    "minPrice": 122576000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-22",
-    "minPrice": 85802910,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-27",
-    "minPrice": 60061834,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-31",
-    "minPrice": 42043141,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-05",
-    "minPrice": 29430100,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "제시외수목(밤나무 50주) 매각 포함. 공부상 지목은 \"임야\"이나 일부가 \"답\"임. 지적도상 맹지임. 지상소재 분묘를 위한 분묘기지권 성립 여부는 불명"
- },
- {
-  "id": "chungnam-2025타경20337-1",
-  "court": "논산지원",
-  "courtCode": "B000282",
-  "caseNo": "2025타경20337",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "충청남도 논산시 벌곡면 한삼천리 395-7",
-  "region": "충남",
-  "district": "논산시",
-  "appraisalPrice": 523079400,
-  "minPrice": 87914000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-09",
-  "saleTime": "10:00",
-  "courtRoom": "제2호법정",
-  "deposit": 8791400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 36135,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-13",
-    "minPrice": 523079400,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-18",
-    "minPrice": 523079400,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-22",
-    "minPrice": 366155618,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-27",
-    "minPrice": 256308959,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-31",
-    "minPrice": 179416290,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-05",
-    "minPrice": 125591416,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "목록1,2 모두 지적도상 맹지이나 서측으로 임도에 접함(목록1) 및 일부 임도로 이용중.(목록2)"
- },
- {
-  "id": "chungnam-2025타경20337-2",
-  "court": "논산지원",
-  "courtCode": "B000282",
-  "caseNo": "2025타경20337",
-  "itemNo": "2",
-  "category": "토지",
-  "address": "충청남도 논산시 벌곡면 한삼천리 산30-1",
-  "region": "충남",
-  "district": "논산시",
-  "appraisalPrice": 407572800,
-  "minPrice": 68501000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-09",
-  "saleTime": "10:00",
-  "courtRoom": "제2호법정",
-  "deposit": 6850100,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 71504,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-13",
-    "minPrice": 407572800,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-18",
-    "minPrice": 407572800,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-22",
-    "minPrice": 285301160,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-27",
-    "minPrice": 199710951,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-31",
-    "minPrice": 139797764,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-05",
-    "minPrice": 97858503,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "지적도상 맹지이나 일부가 포장도로임."
- },
- {
-  "id": "chungnam-2025타경20463-1",
-  "court": "논산지원",
-  "courtCode": "B000282",
-  "caseNo": "2025타경20463",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "충청남도 논산시 상월면 숙진리 832-2",
-  "region": "충남",
-  "district": "논산시",
-  "appraisalPrice": 9502710,
-  "minPrice": 2281000,
-  "priceRatio": 0.24,
-  "failCount": 4,
-  "saleDate": "2026-11-09",
-  "saleTime": "10:00",
-  "courtRoom": "제2호법정",
-  "deposit": 228100,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 1541,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-18",
-    "minPrice": 9502710,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-22",
-    "minPrice": 9502710,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-27",
-    "minPrice": 6651459,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-31",
-    "minPrice": 4655715,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-05",
-    "minPrice": 3258786,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "-농지취득자격증명 요함(미제출시 매수신청보증금 몰수) -공유자 우선매수신고는 1회에 한하여 행사할 수 있음"
- },
- {
-  "id": "chungnam-2025타경20463-2",
-  "court": "논산지원",
-  "courtCode": "B000282",
-  "caseNo": "2025타경20463",
-  "itemNo": "2",
-  "category": "토지",
-  "address": "충청남도 논산시 상월면 숙진리 841-6",
-  "region": "충남",
-  "district": "논산시",
-  "appraisalPrice": 20707790,
-  "minPrice": 4972000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-09",
-  "saleTime": "10:00",
-  "courtRoom": "제2호법정",
-  "deposit": 497200,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 3358,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-18",
-    "minPrice": 20707790,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-22",
-    "minPrice": 20707790,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-27",
-    "minPrice": 14495496,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-31",
-    "minPrice": 10146878,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-05",
-    "minPrice": 7102836,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "-제시외 건물 매각 제외. 법정지상권 성립여부 불분명 -농지취득자격증명 요함(미제출시 매수신청보증금 몰수) -공유자 우선매수신고는 1회에 한하여 행사할 수 있음"
- },
- {
-  "id": "chungnam-2025타경20463-3",
-  "court": "논산지원",
-  "courtCode": "B000282",
-  "caseNo": "2025타경20463",
-  "itemNo": "3",
-  "category": "토지",
-  "address": "충청남도 논산시 상월면 숙진리 313",
-  "region": "충남",
-  "district": "논산시",
-  "appraisalPrice": 9029640,
-  "minPrice": 2168000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-09",
-  "saleTime": "10:00",
-  "courtRoom": "제2호법정",
-  "deposit": 216800,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 565,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-18",
-    "minPrice": 9029640,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-22",
-    "minPrice": 9029640,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-27",
-    "minPrice": 6320736,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-31",
-    "minPrice": 4424507,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-05",
-    "minPrice": 3097149,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "-일괄매각. 제시외 건물 포함 -공유자 우선매수신고는 1회에 한하여 행사할 수 있음 -목록4. 1층: 단독주택(공가), 화재로 훼손. 2층:창고"
- },
- {
-  "id": "chungnam-2025타경441-1",
-  "court": "논산지원",
-  "courtCode": "B000282",
-  "caseNo": "2025타경441",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "충청남도 논산시 벌곡면 조동리 176-2",
-  "region": "충남",
-  "district": "논산시",
-  "appraisalPrice": 12474000,
-  "minPrice": 2995000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-09",
-  "saleTime": "10:00",
-  "courtRoom": "제2호법정",
-  "deposit": 299500,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 189,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-18",
-    "minPrice": 12474000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-22",
-    "minPrice": 12474000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-27",
-    "minPrice": 8731795,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-31",
-    "minPrice": 6112252,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-05",
-    "minPrice": 4278574,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "-농지취득자격증명 필요(증명서 매각결정기일까지 미제출시 매수보증금 몰수) -지적도상 맹지 -재매각임. 매수신청보증금20%"
- },
- {
-  "id": "chungnam-2025타경454-1",
-  "court": "논산지원",
-  "courtCode": "B000282",
-  "caseNo": "2025타경454",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "충청남도 논산시 부창동 371",
-  "region": "충남",
-  "district": "논산시",
-  "appraisalPrice": 71490000,
-  "minPrice": 17165000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-09",
-  "saleTime": "10:00",
-  "courtRoom": "제2호법정",
-  "deposit": 1716500,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 370,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-18",
-    "minPrice": 71490000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-22",
-    "minPrice": 71490000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-27",
-    "minPrice": 50043183,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-31",
-    "minPrice": 35030356,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-05",
-    "minPrice": 24521339,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "-지적도상 맹지 -현황 일부 도로, 철도보호지구 저촉. -제시외 수목(대추나무 3주) 포함. -농지취득자격증명 요함(미제출시 매수보증금 미반환, 생산녹지지역부분 원상회복명령 발하여질 가능성 있음)."
- },
- {
-  "id": "chungnam-2025타경477-1",
-  "court": "논산지원",
-  "courtCode": "B000282",
-  "caseNo": "2025타경477",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "충청남도 부여군 초촌면 송국리 170-3",
-  "region": "충남",
-  "district": "부여군",
-  "appraisalPrice": 39260000,
-  "minPrice": 6613000,
-  "priceRatio": 0.1684,
-  "failCount": 4,
-  "saleDate": "2026-11-09",
-  "saleTime": "10:00",
-  "courtRoom": "제2호법정",
-  "deposit": 661300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 1260,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-18",
-    "minPrice": 39260000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-22",
-    "minPrice": 39260000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-27",
-    "minPrice": 25151411,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-31",
-    "minPrice": 16112926,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-05",
-    "minPrice": 10322537,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "-현황 \"묘지\". 분묘 다수 소재. 최저매각가격은 분묘소재로 제한받는 금액임. 지적도상 맹지임. -제시외 수목 포함. -농지취득자격증명 요함(미제출시 매수보증금 미반환, 불법형질 변경된 필지로 원상복구 가능성 있고 입찰 전에 발급가능여부 관련 행정기관확인 필요)"
- },
- {
   "id": "chungnam-2023타경1311-1",
   "court": "공주지원",
   "courtCode": "B000284",
@@ -755,164 +254,6 @@
   ],
   "historySource": "estimated",
   "specialNote": "근린생활시설(식당)로서 내부에 화장실이 소재함. 집합건물대장의 건축물 현황도상 도면은 다른 호의 도면이 등재된 상태인것으로 보이니 유의."
- },
- {
-  "id": "chungnam-2024타경116460-1",
-  "court": "천안지원",
-  "courtCode": "B000283",
-  "caseNo": "2024타경116460",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "충청남도 아산시 도고면 기곡로77번길 39 1층식당호 (토비스훼미리콘도미니엄)",
-  "region": "충남",
-  "district": "아산시",
-  "appraisalPrice": 76600000,
-  "minPrice": 3091000,
-  "priceRatio": 0.0404,
-  "failCount": 9,
-  "saleDate": "2026-11-10",
-  "saleTime": "10:00",
-  "courtRoom": "제101호법정(3번출입구)",
-  "deposit": 309100,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-11-25",
-    "minPrice": 76600000,
-    "result": "신건"
-   },
-   {
-    "date": "2025-12-30",
-    "minPrice": 76600000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-03",
-    "minPrice": 53619834,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-10",
-    "minPrice": 37533767,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-14",
-    "minPrice": 26273555,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-19",
-    "minPrice": 18391432,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-23",
-    "minPrice": 12873962,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-28",
-    "minPrice": 9011746,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-01",
-    "minPrice": 6308202,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-06",
-    "minPrice": 4415728,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "본건 도로명주소는 공부상 '충청남도 아산시 도고면 기곡로77번길 39'이나 현황상 '충청남도 아산시 도고면 기곡로77번길 41'이고, 건물의 명칭은 공부상 '토비스콘도미니엄'이나, 현황상 '토비스콘도 B동'으로 표기되어 있음. 공부상 용도는 '식당'이나 현황상 '로비, 프런트, 사무실' 등으로 사용중임. 임대차관계 미상의 전입자 있음."
- },
- {
-  "id": "chungnam-2024타경116460-2",
-  "court": "천안지원",
-  "courtCode": "B000283",
-  "caseNo": "2024타경116460",
-  "itemNo": "2",
-  "category": "기타",
-  "address": "충청남도 아산시 도고면 기곡로77번길 39 지하1층대회의실호 (토비스훼미리콘도미니엄)",
-  "region": "충남",
-  "district": "아산시",
-  "appraisalPrice": 114900000,
-  "minPrice": 4637000,
-  "priceRatio": 0.0404,
-  "failCount": 9,
-  "saleDate": "2026-11-10",
-  "saleTime": "10:00",
-  "courtRoom": "제101호법정(3번출입구)",
-  "deposit": 463700,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-11-25",
-    "minPrice": 114900000,
-    "result": "신건"
-   },
-   {
-    "date": "2025-12-30",
-    "minPrice": 114900000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-03",
-    "minPrice": 80430714,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-10",
-    "minPrice": 56302000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-14",
-    "minPrice": 39411750,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-19",
-    "minPrice": 27588470,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-23",
-    "minPrice": 19312100,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-28",
-    "minPrice": 13518590,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-01",
-    "minPrice": 9463097,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-06",
-    "minPrice": 6624227,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "본건 도로명주소는 공부상 '충청남도 아산시 도고면 기곡로77번길 39'이나 현황상 '충청남도 아산시 도고면 기곡로77번길 41'이고, 건물의 명칭은 공부상 '토비스콘도미니엄'이나, 현황상 '토비스콘도 B동'으로 표기되어 있음. 임대차관계 미상의 전입자 있음."
  },
  {
   "id": "chungnam-2024타경1349-1",
@@ -1934,65 +1275,6 @@
   "specialNote": "목록1~3,5,6 일괄매각. 지분매각. 공유자우선매수청구권행사 1회로 제한. 감정평가서상 제시외 관정(㉠,㉡) 각 매각제외. 목록1 지상에 타인소유 제시외 건물이 소재함. 육안으로는 분묘소재확인이 곤란하여 분묘소재여부 불확실하나 별도 확인되지 않은 분묘가 소재할 수 있음."
  },
  {
-  "id": "chungnam-2025타경51799-1",
-  "court": "서산지원",
-  "courtCode": "B000285",
-  "caseNo": "2025타경51799",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "충청남도 태안군 남면 신온리 300-71",
-  "region": "충남",
-  "district": "태안군",
-  "appraisalPrice": 46260000,
-  "minPrice": 7774000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-10",
-  "saleTime": "10:00",
-  "courtRoom": "제111호경매법정",
-  "deposit": 777400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 1542,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-14",
-    "minPrice": 46260000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-19",
-    "minPrice": 46260000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-23",
-    "minPrice": 32381235,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-28",
-    "minPrice": 22666329,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-01",
-    "minPrice": 15866056,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-06",
-    "minPrice": 11105977,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "육안으로 확인하지 못한 무연묘 등의 분묘가 소재할 수도 있음."
- },
- {
   "id": "chungnam-2025타경667-1",
   "court": "서산지원",
   "courtCode": "B000285",
@@ -2104,6 +1386,124 @@
    {
     "date": "2026-10-06",
     "minPrice": 17957178,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "chungnam-2025타경773-1",
+  "court": "서산지원",
+  "courtCode": "B000285",
+  "caseNo": "2025타경773",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청남도 당진시 송악읍 월곡리 380-6",
+  "region": "충남",
+  "district": "당진시",
+  "appraisalPrice": 694260000,
+  "minPrice": 116683000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "제111호경매법정",
+  "deposit": 11668300,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 9918,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-14",
+    "minPrice": 694260000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 694260000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 485980935,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 340185909,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 238129615,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 166690365,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "조사되지 아니한 연고 미상의 분묘 있을수 있음."
+ },
+ {
+  "id": "chungnam-2025타경79-1",
+  "court": "공주지원",
+  "courtCode": "B000284",
+  "caseNo": "2025타경79",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청남도 공주시 우성면 죽당리 산21",
+  "region": "충남",
+  "district": "공주시",
+  "appraisalPrice": 211923000,
+  "minPrice": 35618000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-10",
+  "saleTime": "10:00",
+  "courtRoom": "205호경매법정",
+  "deposit": 3561800,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 45090,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-14",
+    "minPrice": 211923000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-19",
+    "minPrice": 211923000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-23",
+    "minPrice": 148346184,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-28",
+    "minPrice": 103842388,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-01",
+    "minPrice": 72689713,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-06",
+    "minPrice": 50882828,
     "result": "유찰"
    }
   ],
@@ -3142,5 +2542,655 @@
   ],
   "historySource": "estimated",
   "specialNote": "재매각임. 매수보증금은 최저매각가격의 20%를 납부하여야 함."
+ },
+ {
+  "id": "chungnam-2022타경5979-1",
+  "court": "천안지원",
+  "courtCode": "B000283",
+  "caseNo": "2022타경5979",
+  "itemNo": "1",
+  "category": "단독다가구",
+  "address": "충청남도 천안시 동남구 병천면 관성3길 150-36",
+  "region": "충남",
+  "district": "천안시 동남구",
+  "appraisalPrice": 2097547670,
+  "minPrice": 246775000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-11-16",
+  "saleTime": "10:00",
+  "courtRoom": "신청사제101호법정(3번출입구)",
+  "deposit": 24677500,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-16",
+    "minPrice": 2097547670,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 2097547670,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-25",
+    "minPrice": 1468283978,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-29",
+    "minPrice": 1027799211,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-03",
+    "minPrice": 719459746,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-07",
+    "minPrice": 503622031,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-12",
+    "minPrice": 352535568,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "1. 일괄매각, 제시외 건물 및 수목 포함 2. 목록4 을구 순위 16번 지상권 설정등기(2019.8.8.접수번호 제73098호), 이에 대해 지상권자인 신청채권자의 말소동의서가 제출되어 있음 3. 목록1,2,3,4,5,6,7,8,9,10,11,12,17에 대하여 2023. 3. 31.자 정치용,정성영으로부터 공사대금에 관한 유치권신고서가 제출되었고, 2025. 9. 12. 유치권확인 청구의 소(대전지방법원 천안지원 2023가단105996)가 확정되어 180,761,160원을 피담보채권으로 하는 유치권이 있음 4. 임대차관계 미상의 임차인 있음"
+ },
+ {
+  "id": "chungnam-2024타경116163-1",
+  "court": "천안지원",
+  "courtCode": "B000283",
+  "caseNo": "2024타경116163",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "충청남도 천안시 서북구 성정6길 8-6 2층201호",
+  "region": "충남",
+  "district": "천안시 서북구",
+  "appraisalPrice": 75000000,
+  "minPrice": 727000,
+  "priceRatio": 0.0097,
+  "failCount": 13,
+  "saleDate": "2026-11-16",
+  "saleTime": "10:00",
+  "courtRoom": "신청사제101호법정(3번출입구)",
+  "deposit": 72700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-07-14",
+    "minPrice": 75000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-08-18",
+    "minPrice": 75000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-09-22",
+    "minPrice": 52501847,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-10-27",
+    "minPrice": 36752586,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-01",
+    "minPrice": 25727715,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-05",
+    "minPrice": 18010034,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-09",
+    "minPrice": 12607468,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-16",
+    "minPrice": 8825538,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 6178094,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-25",
+    "minPrice": 4324818,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-29",
+    "minPrice": 3027479,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-03",
+    "minPrice": 2119310,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-07",
+    "minPrice": 1483569,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-12",
+    "minPrice": 1038535,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "대항력 있는 임차권자 있음"
+ },
+ {
+  "id": "chungnam-2024타경22906-1",
+  "court": "논산지원",
+  "courtCode": "B000282",
+  "caseNo": "2024타경22906",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청남도 논산시 연산면 송정리 516-13",
+  "region": "충남",
+  "district": "논산시",
+  "appraisalPrice": 609940680,
+  "minPrice": 102513000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-16",
+  "saleTime": "10:00",
+  "courtRoom": "제2호법정",
+  "deposit": 10251300,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 310,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-20",
+    "minPrice": 609940680,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-25",
+    "minPrice": 609940680,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-29",
+    "minPrice": 426958701,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-03",
+    "minPrice": 298871248,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-07",
+    "minPrice": 209209984,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-12",
+    "minPrice": 146447066,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "- 일괄매각. 목록5. 제시외 분묘 소재함, 분묘를 위한 분묘기지권 성립 여부 불명. 목록5. 최저매각가격은 제시외 분묘를, 목록7.8.13. 최저매각가격은 일부 '도로'를 각 감안한 금액임. 목록1.3.5.9.~12. 맹지임."
+ },
+ {
+  "id": "chungnam-2025타경11313-1",
+  "court": "천안지원",
+  "courtCode": "B000283",
+  "caseNo": "2025타경11313",
+  "itemNo": "1",
+  "category": "아파트",
+  "address": "충청남도 천안시 동남구 신방동 874 성지새말아파트 208동 8층802호",
+  "region": "충남",
+  "district": "천안시 동남구",
+  "appraisalPrice": 148000000,
+  "minPrice": 12189000,
+  "priceRatio": 0.0824,
+  "failCount": 7,
+  "saleDate": "2026-11-16",
+  "saleTime": "10:00",
+  "courtRoom": "신청사제101호법정(3번출입구)",
+  "deposit": 1218900,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 59.97,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-09",
+    "minPrice": 148000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-16",
+    "minPrice": 148000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 103600684,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-25",
+    "minPrice": 72520958,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-29",
+    "minPrice": 50765006,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-03",
+    "minPrice": 35535739,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-07",
+    "minPrice": 24875182,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-12",
+    "minPrice": 17412742,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "- 주택도시보증공사(임차인 전**, 박화란)는 경매신청채권자로 임차인 전**, 박화란의 임차보증금반환채권 양수인임(대항력및우선변제권 승계) - 매수인에게 대항할 수 있는 을구 3번 임차권등기(임대차보증금 155,000,000원, 전입일자 2021.11.24. 확정일자 2021.11.24.)가 있으므로 배당에서 전액 변제되지 아니하면 잔액을 매수인이 인수함(또는 잔액은 매수인에게 인수될 수 있음)"
+ },
+ {
+  "id": "chungnam-2025타경20312-1",
+  "court": "논산지원",
+  "courtCode": "B000282",
+  "caseNo": "2025타경20312",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청남도 논산시 강경읍 염천리 47",
+  "region": "충남",
+  "district": "논산시",
+  "appraisalPrice": 291659000,
+  "minPrice": 49019000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-16",
+  "saleTime": "10:00",
+  "courtRoom": "제2호법정",
+  "deposit": 4901900,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 159,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-20",
+    "minPrice": 291659000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-25",
+    "minPrice": 291659000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-29",
+    "minPrice": 204161193,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-03",
+    "minPrice": 142912761,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-07",
+    "minPrice": 100038880,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-12",
+    "minPrice": 70027179,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "- 일괄매각, 제시외 건물 매각제외, 법정지상권 성립여부 불분명 - 최저매각가격은 제시외 건물의 제외로 인한 제한받는 금액임. - 목록 3. 현황 \"일부 도로\"로 이용중"
+ },
+ {
+  "id": "chungnam-2025타경20455-3",
+  "court": "논산지원",
+  "courtCode": "B000282",
+  "caseNo": "2025타경20455",
+  "itemNo": "3",
+  "category": "토지",
+  "address": "충청남도 부여군 양화면 암수리 376-4",
+  "region": "충남",
+  "district": "부여군",
+  "appraisalPrice": 7050000,
+  "minPrice": 1185000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-16",
+  "saleTime": "10:00",
+  "courtRoom": "제2호법정",
+  "deposit": 118500,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 150,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-20",
+    "minPrice": 7050000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-25",
+    "minPrice": 7050000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-29",
+    "minPrice": 4935089,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-03",
+    "minPrice": 3454624,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-07",
+    "minPrice": 2418280,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-12",
+    "minPrice": 1692827,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "- 농지취득자격증명 필요(증명서 매각결정기일까지 미제출시 매수보증금 몰수, 원상회복명령 가능성 있으므로 매수 신청 전 행정관서에 반드시 확인 필요) - 현황 '휴경지' 상태임"
+ },
+ {
+  "id": "chungnam-2025타경20488-1",
+  "court": "논산지원",
+  "courtCode": "B000282",
+  "caseNo": "2025타경20488",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청남도 부여군 부여읍 쌍북리 96-3",
+  "region": "충남",
+  "district": "부여군",
+  "appraisalPrice": 131680000,
+  "minPrice": 22131000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-16",
+  "saleTime": "10:00",
+  "courtRoom": "제2호법정",
+  "deposit": 2213100,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 823,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-20",
+    "minPrice": 131680000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-25",
+    "minPrice": 131680000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-29",
+    "minPrice": 92175619,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-03",
+    "minPrice": 64522666,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-07",
+    "minPrice": 45165680,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-12",
+    "minPrice": 31615845,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "- 농지취득자격증명 필요(증명서 매각결정기일까지 미제출시 매수보증금 몰수, 원상회복명령 가능성 있으므로 매수 신청 전 행정관서에 반드시 확인 필요) - 지적도상 맹지, 현황 잡종지(일부 휴경지 및 일부 자연생 수목 자생중) 상태"
+ },
+ {
+  "id": "chungnam-2025타경20493-3",
+  "court": "논산지원",
+  "courtCode": "B000282",
+  "caseNo": "2025타경20493",
+  "itemNo": "3",
+  "category": "토지",
+  "address": "충청남도 논산시 은진면 시묘리 718-4",
+  "region": "충남",
+  "district": "논산시",
+  "appraisalPrice": 29904000,
+  "minPrice": 6462000,
+  "priceRatio": 0.2161,
+  "failCount": 4,
+  "saleDate": "2026-11-16",
+  "saleTime": "10:00",
+  "courtRoom": "제2호법정",
+  "deposit": 646200,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 2848,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-25",
+    "minPrice": 29904000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-29",
+    "minPrice": 29904000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-03",
+    "minPrice": 20388661,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-07",
+    "minPrice": 13901066,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-12",
+    "minPrice": 9477800,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "- 제시외 건물, 관정 매각제외하고 제시외 건물을 위한 법정지상권 성립 여부 불명, 최저매각가격은 제시외 건물, 관정 제외로 인한 제한받는 금액임 - 지분매각, 공유자의 우선 매수권 행사 1회로 제한 - 농지취득자격증명 필요(증명서 매각결정기일까지 미제출시 매수보증금 몰수)"
+ },
+ {
+  "id": "chungnam-2025타경309-1",
+  "court": "논산지원",
+  "courtCode": "B000282",
+  "caseNo": "2025타경309",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청남도 논산시 부적면 덕평리 12",
+  "region": "충남",
+  "district": "논산시",
+  "appraisalPrice": 38012000,
+  "minPrice": 3130000,
+  "priceRatio": 0.0823,
+  "failCount": 7,
+  "saleDate": "2026-11-16",
+  "saleTime": "10:00",
+  "courtRoom": "제2호법정",
+  "deposit": 313000,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 731,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-09",
+    "minPrice": 38012000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-03-16",
+    "minPrice": 38012000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-20",
+    "minPrice": 26607852,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-25",
+    "minPrice": 18625112,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-29",
+    "minPrice": 13037310,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-03",
+    "minPrice": 9125929,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-07",
+    "minPrice": 6388018,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-12",
+    "minPrice": 4471521,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "지적도상 맹지. 농지취득자격증명 필요(미제출시 매수보증금 몰수)."
+ },
+ {
+  "id": "chungnam-2025타경473-1",
+  "court": "논산지원",
+  "courtCode": "B000282",
+  "caseNo": "2025타경473",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청남도 논산시 연산면 천호리 334-4",
+  "region": "충남",
+  "district": "논산시",
+  "appraisalPrice": 32016000,
+  "minPrice": 5381000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-16",
+  "saleTime": "10:00",
+  "courtRoom": "제2호법정",
+  "deposit": 538100,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 552,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-20",
+    "minPrice": 32016000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-25",
+    "minPrice": 32016000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-29",
+    "minPrice": 22411259,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-03",
+    "minPrice": 15687923,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-07",
+    "minPrice": 10981575,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-12",
+    "minPrice": 7687123,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "- 농지취득자격증명 필요(증명서 매각결정기일까지 미제출시 매수보증금 몰수) - 지적도상 맹지 - 현황 부정형의 답으로 인접 토지와 일단지로 이용 중임"
  }
 ]
