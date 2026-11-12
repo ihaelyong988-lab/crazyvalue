@@ -458,63 +458,58 @@
   "specialNote": "- 농지취득자격증명 필요(증명서 매각결정기일까지 미제출시 매수보증금 몰수, 원상회복명령 가능성 있으므로 매수 신청 전 행정관서에 반드시 확인 필요) - 현황 '휴경지' 상태임"
  },
  {
-  "id": "chungnam-2025타경20488-1",
+  "id": "chungnam-2025타경20461-3",
   "court": "논산지원",
   "courtCode": "B000282",
-  "caseNo": "2025타경20488",
-  "itemNo": "1",
+  "caseNo": "2025타경20461",
+  "itemNo": "3",
   "category": "토지",
-  "address": "충청남도 부여군 부여읍 쌍북리 96-3",
+  "address": "충청남도 논산시 연산면 신양리 108",
   "region": "충남",
-  "district": "부여군",
-  "appraisalPrice": 131680000,
-  "minPrice": 22131000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
+  "district": "논산시",
+  "appraisalPrice": 3442000,
+  "minPrice": 826000,
+  "priceRatio": 0.24,
+  "failCount": 4,
   "saleDate": "2026-11-16",
   "saleTime": "10:00",
   "courtRoom": "제2호법정",
-  "deposit": 2213100,
+  "deposit": 82600,
   "depositRate": 10,
   "depositSource": "estimated",
   "areaBuilding": null,
-  "areaLand": 823,
+  "areaLand": 820,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-04-20",
-    "minPrice": 131680000,
+    "date": "2026-05-25",
+    "minPrice": 3442000,
     "result": "신건"
    },
    {
-    "date": "2026-05-25",
-    "minPrice": 131680000,
-    "result": "유찰"
-   },
-   {
     "date": "2026-06-29",
-    "minPrice": 92175619,
+    "minPrice": 3442000,
     "result": "유찰"
    },
    {
     "date": "2026-08-03",
-    "minPrice": 64522666,
+    "minPrice": 2409091,
     "result": "유찰"
    },
    {
     "date": "2026-09-07",
-    "minPrice": 45165680,
+    "minPrice": 1686147,
     "result": "유찰"
    },
    {
     "date": "2026-10-12",
-    "minPrice": 31615845,
+    "minPrice": 1180151,
     "result": "유찰"
    }
   ],
   "historySource": "estimated",
-  "specialNote": "- 농지취득자격증명 필요(증명서 매각결정기일까지 미제출시 매수보증금 몰수, 원상회복명령 가능성 있으므로 매수 신청 전 행정관서에 반드시 확인 필요) - 지적도상 맹지, 현황 잡종지(일부 휴경지 및 일부 자연생 수목 자생중) 상태"
+  "specialNote": "- 일괄매각, 제시외 수목 매각제외하고 최저매각가격은 수목, 분묘소재로 제한받는 금액임 - 목록 5.은 분묘소재, 분묘를 위한 분묘기지권 성립 여부 불명 - 지분매각, 공유자의 우선 매수권 행사 1회로 제한 - 농지취득자격증명 필요(증명서 매각결정기일까지 미제출시 매수보증금 몰수) - 목록 5. 6.은 공부상 지목이 \"답\"이나 목록 5. 현황 \"전 및 일부묘지\", 목록6. 현황 \" 잡종지, 통행로 및 경사지\"로 이용중"
  },
  {
   "id": "chungnam-2025타경20493-3",
@@ -1942,5 +1937,59 @@
   ],
   "historySource": "estimated",
   "specialNote": "일괄매각 목록 4. 인접 필지 경계 부근에 분묘가 소재하는 것으로 목측됨 목록 3~5는 지적상 맹지이나 인접 필지를 통하여 출입 가능함 지분 매각으로 공유자우선매수청구권행사 1회로 제한 농지취득자격증명 요함(미제출시 매수보증금 반환하지 않음)(별지 사실조회회신서 참조)"
+ },
+ {
+  "id": "chungnam-2026타경600106-1",
+  "court": "대전지방법원",
+  "courtCode": "B000280",
+  "caseNo": "2026타경600106",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "충청남도 금산군 복수면 지량리 415",
+  "region": "충남",
+  "district": "금산군",
+  "appraisalPrice": 68150000,
+  "minPrice": 16362000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-19",
+  "saleTime": "10:00",
+  "courtRoom": "본관제106호법정",
+  "deposit": 1636200,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 1650,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-28",
+    "minPrice": 68150000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-02",
+    "minPrice": 68150000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-06",
+    "minPrice": 47704406,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-10",
+    "minPrice": 33392668,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-15",
+    "minPrice": 23374577,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "-농지취득자격증명 제출 요함(미제출시 매수보증금 미반환). -지상에 분묘 수기 소재하며, 분묘기지권 성립 여부는 불분명. -최저매각가격은 분묘 소재로 인하여 제한받는 가격임."
  }
 ]
