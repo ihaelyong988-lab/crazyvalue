@@ -1,703 +1,5 @@
 [
  {
-  "id": "ulsan-2024타경103269-2",
-  "court": "울산지방법원",
-  "courtCode": "B000411",
-  "caseNo": "2024타경103269",
-  "itemNo": "2",
-  "category": "토지",
-  "address": "울산광역시 남구 성암동 산19",
-  "region": "울산",
-  "district": "남구",
-  "appraisalPrice": 106302700,
-  "minPrice": 8754000,
-  "priceRatio": 0.0823,
-  "failCount": 7,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "경매법정",
-  "deposit": 875400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 1056,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-02-04",
-    "minPrice": 106302700,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-11",
-    "minPrice": 106302700,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-15",
-    "minPrice": 74411302,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-20",
-    "minPrice": 52087499,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 36460961,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 25522471,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 17865589,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 12505813,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1. 일괄매각임 2. 지분매각임. 공유자 우선매수권 있음. 단, 공유자 우선매수권(민사집행법 제140조)행사에 따른 매수신고가 매수보증금의 미납으로 실효되는 경우, 그 공유자는 해당 부동산의 다음매각기일에서는 우선매수청구권을 행사할 수 없음 3. 임야도상 맹지임. 지상 수목은 토지에 포함하여 평가함. 미확인 분묘 있을 수 있으므로 응찰시 확인요함. 지적상세 및 경계확인은 측량을 요함"
- },
- {
-  "id": "ulsan-2025타경11736-1",
-  "court": "울산지방법원",
-  "courtCode": "B000411",
-  "caseNo": "2025타경11736",
-  "itemNo": "1",
-  "category": "아파트",
-  "address": "울산광역시 동구 방어동 931-7 명성블루빌2차 3층302호",
-  "region": "울산",
-  "district": "동구",
-  "appraisalPrice": 210000000,
-  "minPrice": 24707000,
-  "priceRatio": 0.1177,
-  "failCount": 6,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "경매법정",
-  "deposit": 2470700,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 84.7968,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-11",
-    "minPrice": 210000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-15",
-    "minPrice": 210000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-20",
-    "minPrice": 147000704,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 102900986,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 72031035,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 50421966,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 35295545,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "ulsan-2025타경1174-1",
-  "court": "울산지방법원",
-  "courtCode": "B000411",
-  "caseNo": "2025타경1174",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "울산광역시 울주군 상북면 거리 241",
-  "region": "울산",
-  "district": "울주군",
-  "appraisalPrice": 415869000,
-  "minPrice": 69895000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "경매법정",
-  "deposit": 6989500,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 2069,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-15",
-    "minPrice": 415869000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-20",
-    "minPrice": 415869000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 291108214,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 203775690,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 142642941,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 99850029,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1.농지취득자격증명 필요함(매각결정기일까지 제출, 미제출시 입찰보증금 몰수). 첨부된 2025. 6. 19.자 상북면 사실조회회신 참조 2.본건 토지는 경작중인 답으로 서측으로 약2-3m 내외의 포장된 소폭의 농로와 접하고, 본건 토지 극히 일부가 현황 농로로 이용중인 것으로 판단되는 바 정확한 면적은 측량을 요함"
- },
- {
-  "id": "ulsan-2025타경1174-2",
-  "court": "울산지방법원",
-  "courtCode": "B000411",
-  "caseNo": "2025타경1174",
-  "itemNo": "2",
-  "category": "토지",
-  "address": "울산광역시 울주군 상북면 거리 251",
-  "region": "울산",
-  "district": "울주군",
-  "appraisalPrice": 566820000,
-  "minPrice": 95265000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "경매법정",
-  "deposit": 9526500,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 2820,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-15",
-    "minPrice": 566820000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-20",
-    "minPrice": 566820000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 396773636,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 277741290,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 194418724,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 136092982,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1.농지취득자격증명 필요함(매각결정기일까지 제출, 미제출시 입찰보증금 몰수). 첨부된 2025. 6. 19.자 상북면 사실조회회신 참조 2.본건 토지는 경작중인 답으로 서측으로 약2-3m 내외의 포장된 소폭의 농로와 접하고, 본건 토지 극히 일부가 현황 농로로 이용중인 것으로 판단되는 바 정확한 면적은 측량을 요함"
- },
- {
-  "id": "ulsan-2025타경12048-1",
-  "court": "울산지방법원",
-  "courtCode": "B000411",
-  "caseNo": "2025타경12048",
-  "itemNo": "1",
-  "category": "아파트",
-  "address": "울산광역시 남구 야음동 796-17 야음신선아파트 102동 9층904호",
-  "region": "울산",
-  "district": "남구",
-  "appraisalPrice": 138000000,
-  "minPrice": 33134000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "경매법정",
-  "deposit": 3313400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 46.53,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-20",
-    "minPrice": 138000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 138000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 96600146,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 67620204,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 47334214,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "ulsan-2025타경1205-1",
-  "court": "울산지방법원",
-  "courtCode": "B000411",
-  "caseNo": "2025타경1205",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "울산광역시 중구 다운동 425-4",
-  "region": "울산",
-  "district": "중구",
-  "appraisalPrice": 1744399000,
-  "minPrice": 418830000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "경매법정",
-  "deposit": 41883000,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 24569,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-20",
-    "minPrice": 1744399000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 1744399000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 1221079154,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 854755306,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 598328643,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1.울산광역시 중구의 사실조회회신 결과 이 사건 토지를 낙찰 받을 때 농지취득자격증명이 필요 없음. 첨부된 울산광역시 중구 사실조회회신 참조 2.본건 중 일부는 철탑부지 및 선하지로서 불리한 정도를 감안하여 평가하였고, 본건에 자생하는 입목은 토지에 포함하여 평가함 3.인접지와의 지적 및 경계확인이 명확하지 않으므로 정확한 지적경계는 측량을 요함 4.지목은 목장용지이나 현황은 자연림으로 미확인 분묘가 있을 수 있음"
- },
- {
-  "id": "ulsan-2025타경12072-1",
-  "court": "울산지방법원",
-  "courtCode": "B000411",
-  "caseNo": "2025타경12072",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "울산광역시 울주군 웅촌면 대복리 산41",
-  "region": "울산",
-  "district": "울주군",
-  "appraisalPrice": 306351000,
-  "minPrice": 73555000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "경매법정",
-  "deposit": 7355500,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 34039,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-20",
-    "minPrice": 306351000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 306351000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 214445791,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 150112117,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 105078527,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1.지분매각. 공유자 우선매수권(민사집행법 제140조)행사에 따른 매수신고가 매수보증금의 미납으로 실효되는 경우, 그 공유자는 해당 부동산의 다음 매각기일에서는 우선매수청구권을 행사할 수 없음 2.지상에 소재하는 자연생 임목 및 과수목 수그루(포도, 키위, 관상수) 등은 토지에 포함하여 평가함 3.미확인 분묘가 소재할 수 있음 4.본건은 자연림으로 토지 대장상 지목 '임야'에 해당되나 본건 서측 일부는 현황 포장도로로 이용 중이고, 일부는 인접지 답 소유자가 임대차 관계없이 점유하고 있음. 인접지와의 정확한 지적경계는 측량을 요함 5.본건은 둘 이상의 용도지역에 걸쳐있는 토지에 해당하나 보전관리지역 부분의 면적이 미미하여 주된 용도지역인 자연녹지지역을 기준으로 감정평가하였음 6.본건 남측 하단부 지상에 소유자 미상의 제시외 컨테이너박스 1동, 목조 목지붕 단층 창고 1동이 소재하나 매각에서 제외함"
- },
- {
-  "id": "ulsan-2025타경121-1",
-  "court": "울산지방법원",
-  "courtCode": "B000411",
-  "caseNo": "2025타경121",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "울산광역시 울주군 서생면 화정리 산17",
-  "region": "울산",
-  "district": "울주군",
-  "appraisalPrice": 1282494000,
-  "minPrice": 105619000,
-  "priceRatio": 0.0824,
-  "failCount": 7,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "경매법정",
-  "deposit": 10561900,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 24198,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-02-04",
-    "minPrice": 1282494000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-11",
-    "minPrice": 1282494000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-15",
-    "minPrice": 897745927,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-20",
-    "minPrice": 628422237,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 439895628,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 307926983,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 215548919,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 150884264,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1.본건 토지 일부가 현황 '도로'로 이용중인것으로 보이는바 이를 감안하여 감정평가 하였음 2.본건은 광평수 및 자연림 상태의 임야이며, 북동측으로 본건 일부를 포함한 비포장 임도와 접함 3.인접 토지와의 경계가 불분명하여 지적 경계 측량을 요함 4.목측으로 확인되지 않은 미확인 분묘가 소재할 수 있음"
- },
- {
-  "id": "ulsan-2025타경12115-1",
-  "court": "울산지방법원",
-  "courtCode": "B000411",
-  "caseNo": "2025타경12115",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "울산광역시 북구 매곡동 산18",
-  "region": "울산",
-  "district": "북구",
-  "appraisalPrice": 1230528000,
-  "minPrice": 295450000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "경매법정",
-  "deposit": 29545000,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 17851,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-20",
-    "minPrice": 1230528000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 1230528000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 861369766,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 602958952,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 422071347,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1.일괄매각 2.목록 1~3은 자연림 상태의 임야로 맹지임. 미확인 분묘가 있을수 있으며 면적 및 경계 구분은 지적측량을 요함 3.목록 3 지상에 제시외 컨테이너 박스 2동, 비닐하우스 1동, 천막구조물 1동이 소재하나 매각에서 제외함"
- },
- {
-  "id": "ulsan-2025타경1221-1",
-  "court": "울산지방법원",
-  "courtCode": "B000411",
-  "caseNo": "2025타경1221",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "울산광역시 북구 송정동 1232-5 어썸플레이스1 1동 1층110호",
-  "region": "울산",
-  "district": "북구",
-  "appraisalPrice": 946000000,
-  "minPrice": 227135000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "경매법정",
-  "deposit": 22713500,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 1,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-20",
-    "minPrice": 946000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 946000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 662200292,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 463540408,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 324478429,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1.일반건축물대장상 제1종근린생활시설(소매점)로서 약국 시설이 되어 있으나 현재는 영업중단 상태임"
- },
- {
-  "id": "ulsan-2025타경12233-1",
-  "court": "울산지방법원",
-  "courtCode": "B000411",
-  "caseNo": "2025타경12233",
-  "itemNo": "1",
-  "category": "아파트",
-  "address": "울산광역시 남구 신정동 181-4 그린뜰 14층1401호",
-  "region": "울산",
-  "district": "남구",
-  "appraisalPrice": 426000000,
-  "minPrice": 102283000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "경매법정",
-  "deposit": 10228300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 110.643,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-20",
-    "minPrice": 426000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 426000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 298200292,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 208740408,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 146118429,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "ulsan-2025타경1298-1",
-  "court": "울산지방법원",
-  "courtCode": "B000411",
-  "caseNo": "2025타경1298",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "울산광역시 울주군 상북면 등억알프스리 534-10",
-  "region": "울산",
-  "district": "울주군",
-  "appraisalPrice": 3215564280,
-  "minPrice": 772057000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "경매법정",
-  "deposit": 77205700,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 2250,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-20",
-    "minPrice": 3215564280,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 3215564280,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 2250895008,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 1575626514,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 1102938566,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1.일괄매각 2.1층,2층,3층 숙박시설로 이용중임"
- },
- {
   "id": "ulsan-2023타경100171-1",
   "court": "울산지방법원",
   "courtCode": "B000411",
@@ -1469,5 +771,182 @@
   ],
   "historySource": "estimated",
   "specialNote": null
+ },
+ {
+  "id": "ulsan-2025타경11107-1",
+  "court": "울산지방법원",
+  "courtCode": "B000411",
+  "caseNo": "2025타경11107",
+  "itemNo": "1",
+  "category": "상가",
+  "address": "울산광역시 울주군 서생면 명산리 640",
+  "region": "울산",
+  "district": "울주군",
+  "appraisalPrice": 549891200,
+  "minPrice": 92420000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-18",
+  "saleTime": "10:00",
+  "courtRoom": "133호입찰법정",
+  "deposit": 9242000,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 809,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-22",
+    "minPrice": 549891200,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-27",
+    "minPrice": 549891200,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-01",
+    "minPrice": 384923662,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-05",
+    "minPrice": 269446438,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-09",
+    "minPrice": 188612420,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-14",
+    "minPrice": 132028633,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "일괄매각"
+ },
+ {
+  "id": "ulsan-2025타경11107-2",
+  "court": "울산지방법원",
+  "courtCode": "B000411",
+  "caseNo": "2025타경11107",
+  "itemNo": "2",
+  "category": "기타",
+  "address": "울산광역시 울주군 서생면 명산리 641",
+  "region": "울산",
+  "district": "울주군",
+  "appraisalPrice": 308062000,
+  "minPrice": 51776000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-18",
+  "saleTime": "10:00",
+  "courtRoom": "133호입찰법정",
+  "deposit": 5177600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 610,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-22",
+    "minPrice": 308062000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-27",
+    "minPrice": 308062000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-01",
+    "minPrice": 215643416,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-05",
+    "minPrice": 150950403,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-09",
+    "minPrice": 105665290,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-14",
+    "minPrice": 73965709,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "일괄매각 제시외 물건 포함"
+ },
+ {
+  "id": "ulsan-2025타경11107-4",
+  "court": "울산지방법원",
+  "courtCode": "B000411",
+  "caseNo": "2025타경11107",
+  "itemNo": "4",
+  "category": "상가",
+  "address": "울산광역시 울주군 서생면 명산리 641-1",
+  "region": "울산",
+  "district": "울주군",
+  "appraisalPrice": 2551782000,
+  "minPrice": 428878000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-18",
+  "saleTime": "10:00",
+  "courtRoom": "133호입찰법정",
+  "deposit": 42887800,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 4272,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-22",
+    "minPrice": 2551782000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-27",
+    "minPrice": 2551782000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-01",
+    "minPrice": 1786247399,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-05",
+    "minPrice": 1250373179,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-09",
+    "minPrice": 875261225,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-14",
+    "minPrice": 612682857,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "일괄매각. 제시외 물건, 제시외 수목 포함"
  }
 ]

@@ -1,1309 +1,5 @@
 [
  {
-  "id": "gyeongnam-2024타경107159-1",
-  "court": "창원지방법원",
-  "courtCode": "B000420",
-  "caseNo": "2024타경107159",
-  "itemNo": "1",
-  "category": "상가",
-  "address": "경상남도 창원시 성산구 상남로 71 지하1층 112-2호 (상남동,창원코아)",
-  "region": "경남",
-  "district": "창원시 성산구",
-  "appraisalPrice": 166000000,
-  "minPrice": 4094000,
-  "priceRatio": 0.0247,
-  "failCount": 13,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "별관103호(입찰)배당법정",
-  "deposit": 409400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-07-09",
-    "minPrice": 166000000,
-    "result": "신건"
-   },
-   {
-    "date": "2025-08-13",
-    "minPrice": 166000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-09-17",
-    "minPrice": 124858708,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-10-22",
-    "minPrice": 93913838,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-11-26",
-    "minPrice": 70638316,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-12-31",
-    "minPrice": 53131379,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-04",
-    "minPrice": 39963346,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-11",
-    "minPrice": 30058866,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-15",
-    "minPrice": 22609103,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-20",
-    "minPrice": 17005683,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 12791010,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 9620898,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 7236463,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 5442984,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "대항력 있는 임차인 있** 수 있음. 공부상 위락시설(유흥음식점)으로 장기간 영업중단(골드노래주점) 상태임. 현황조사 당시(2024.6.25.) 관리비가 약 27,568,970원이 미납인 것으로 조사됨(입찰 전 관리사무소에 관리비 확인 요함)."
- },
- {
-  "id": "gyeongnam-2025타경11170-1",
-  "court": "창원지방법원",
-  "courtCode": "B000420",
-  "caseNo": "2025타경11170",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "경상남도 창원시 성산구 대원동 121 더시티세븐 시티세븐 13층 팔라조 1303호",
-  "region": "경남",
-  "district": "창원시 성산구",
-  "appraisalPrice": 541000000,
-  "minPrice": 63647000,
-  "priceRatio": 0.1176,
-  "failCount": 6,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "별관103호(입찰)배당법정",
-  "deposit": 6364700,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 233.3,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-11",
-    "minPrice": 541000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-15",
-    "minPrice": 541000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-20",
-    "minPrice": 378698900,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 265088460,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 185561383,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 129892591,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 90924550,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "숙박시설(호텔)(복층형)임. 공유지분 매각임. 공유자 우선매수권 행사 제한(공유자의 우선매수권 행사에 따른 매수신고가 매수보증금의 미납으로 실효되는 경우에는 그 공유자는 이후 매각절차에서 우선매수권을 행사할 수 없음). 갑구 4번 소유권이전청구권가등기(2014. 08.06. 제59749호)는 말소되지 않고 매수인이 인수함(단 가등기 권리자가 현재의 소유자임). 대지권의 목적인 토지에 말소되지 않고 인수되는 별도등기 있음(을구 1번 지상권설정 등기 2009.08.21.). 대항력 있는 임차인 있음(배당에서 보증금이 전액 변제되지 아니하면 잔액을 매수인이 인수함)."
- },
- {
-  "id": "gyeongnam-2025타경1139-1",
-  "court": "울산지방법원",
-  "courtCode": "B000411",
-  "caseNo": "2025타경1139",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "경상남도 양산시 물금읍 가촌리 1299-1 에코시티 5층502호",
-  "region": "경남",
-  "district": "양산시",
-  "appraisalPrice": 344000000,
-  "minPrice": 57816000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "경매법정",
-  "deposit": 5781600,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 121.6058,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-15",
-    "minPrice": 344000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-20",
-    "minPrice": 344000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 240799933,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 168559907,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 117991902,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 82594309,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1.위락시설로 이용중이며, 공실상태임"
- },
- {
-  "id": "gyeongnam-2025타경1139-2",
-  "court": "울산지방법원",
-  "courtCode": "B000411",
-  "caseNo": "2025타경1139",
-  "itemNo": "2",
-  "category": "오피스텔",
-  "address": "경상남도 양산시 물금읍 가촌리 1299-1 에코시티 5층503호",
-  "region": "경남",
-  "district": "양산시",
-  "appraisalPrice": 464000000,
-  "minPrice": 77984000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "경매법정",
-  "deposit": 7798400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 164.2274,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-15",
-    "minPrice": 464000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-20",
-    "minPrice": 464000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 324799600,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 227359440,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 159151412,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 111405851,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1.위락시설로 이용중이며, 공실상태임"
- },
- {
-  "id": "gyeongnam-2025타경11620-1",
-  "court": "창원지방법원",
-  "courtCode": "B000420",
-  "caseNo": "2025타경11620",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "경상남도 창원시 성산구 중앙동 97-6 캔버라타운 6층에이-623호",
-  "region": "경남",
-  "district": "창원시 성산구",
-  "appraisalPrice": 50000000,
-  "minPrice": 4117000,
-  "priceRatio": 0.0823,
-  "failCount": 7,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "별관103호(입찰)배당법정",
-  "deposit": 411700,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 28.2625,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-02-04",
-    "minPrice": 50000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-11",
-    "minPrice": 50000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-15",
-    "minPrice": 34999132,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-20",
-    "minPrice": 24498784,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 17148724,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 12003809,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 8402458,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 5881574,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "대항력 있는 임차인 있음(임대차보증금 55,000,000원, 전입일자 2018.02.27, 확정일자 2018.02.27.). 배당에서 보증금이 전액 변제되지 아니하면 잔액을 매수인이 인수함. 공부상 용도가 '업무시설(사무소)'이나 현황은 '주거용 오피스텔'로 공실 상태임. 현황조사 당시(2025.06.23.) 관리비가 약 71,800원이 미납된 것으로 조사됨(입찰 전 관리사무소에 관리비 확인 요함)."
- },
- {
-  "id": "gyeongnam-2025타경11764-1",
-  "court": "울산지방법원",
-  "courtCode": "B000411",
-  "caseNo": "2025타경11764",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경상남도 양산시 상북면 소석리 산46-4",
-  "region": "경남",
-  "district": "양산시",
-  "appraisalPrice": 309054900,
-  "minPrice": 36360000,
-  "priceRatio": 0.1176,
-  "failCount": 6,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "경매법정",
-  "deposit": 3636000,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 94813,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-11",
-    "minPrice": 309054900,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-15",
-    "minPrice": 309054900,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-20",
-    "minPrice": 216338430,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 151436901,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 106005831,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 74204082,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 51942857,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1.지분매각. 공유자 우선매수권(민사집행법 제140조)행사에 따른 매수신고가 매수보증금의 미납으로 실효되는 경우, 그 공유자는 해당 부동산의 다음 매각기일에서는 우선매수청구권을 행사할 수 없음 2.본건은 소나무, 잡목 자생하는 임야로 토지상에 분묘의 유무 또는 개수는 물리적으로 확인이 곤란함. 입찰시 유의 3.본건 토지 상에 자생하는 입목(자연림)은 토지에 포함하여 평가함 4.본건 토지의 북서측 일부가 도로부지로 이용 중이나 전체 토지면적 대비 그 부분의 면적 비율이 극히 미미하여 이를 별도로 고려하여 평가하지 아니함"
- },
- {
-  "id": "gyeongnam-2025타경11805-1",
-  "court": "창원지방법원",
-  "courtCode": "B000420",
-  "caseNo": "2025타경11805",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "경상남도 김해시 한림면 명동리 978-4",
-  "region": "경남",
-  "district": "김해시",
-  "appraisalPrice": 160937000,
-  "minPrice": 18933000,
-  "priceRatio": 0.1176,
-  "failCount": 6,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "별관103호(입찰)배당법정",
-  "deposit": 1893300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 581,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-11",
-    "minPrice": 160937000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-15",
-    "minPrice": 160937000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-20",
-    "minPrice": 112654832,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 78857635,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 55199821,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 38639508,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 27047399,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "농지취득자격증명 요함(미제출시 보증금 반환하지 않음). 공부상 지목이 '과수원'이나 현황 휴경지(선하지)이며 일부 지상에 송전탑이 소재함. 토지전용허가 및 토지현황 변경에 따른 원상회복명령 등은 주무관서에 문의바람."
- },
- {
-  "id": "gyeongnam-2025타경11841-1",
-  "court": "창원지방법원",
-  "courtCode": "B000420",
-  "caseNo": "2025타경11841",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경상남도 김해시 삼계동 산126",
-  "region": "경남",
-  "district": "김해시",
-  "appraisalPrice": 711407000,
-  "minPrice": 83694000,
-  "priceRatio": 0.1176,
-  "failCount": 6,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "별관103호(입찰)배당법정",
-  "deposit": 8369400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 8430,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-11",
-    "minPrice": 711407000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-15",
-    "minPrice": 711407000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-20",
-    "minPrice": 497982597,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 348586206,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 244009216,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 170805661,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 119563410,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "임야 및 일부 묘지로 이용중이며 분묘 4기 소재함. 최저매각가격은 분묘 소재로 인하여 제한받는 가격임. 지상 소재 분묘를 위한 분묘기지권성립 여부는 불명. 육안으로 식별되지 않는 분묘가 추가 소재할 가능성 있음."
- },
- {
-  "id": "gyeongnam-2025타경11967-1",
-  "court": "창원지방법원",
-  "courtCode": "B000420",
-  "caseNo": "2025타경11967",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "경상남도 창원시 진해구 경화동 1161-10",
-  "region": "경남",
-  "district": "창원시 진해구",
-  "appraisalPrice": 280820360,
-  "minPrice": 33037000,
-  "priceRatio": 0.1176,
-  "failCount": 6,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "별관103호(입찰)배당법정",
-  "deposit": 3303700,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 230,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-11",
-    "minPrice": 280820360,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-15",
-    "minPrice": 280820360,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-20",
-    "minPrice": 196573028,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 137600262,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 96319584,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 67423289,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 47196008,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "일괄매각. 제시외 건물 포함. 목록2. 건축물대장상 일부(87.31㎡) 증축 등재되어 있음."
- },
- {
-  "id": "gyeongnam-2025타경12022-1",
-  "court": "울산지방법원",
-  "courtCode": "B000411",
-  "caseNo": "2025타경12022",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경상남도 양산시 교동 283-8",
-  "region": "경남",
-  "district": "양산시",
-  "appraisalPrice": 99036000,
-  "minPrice": 23779000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "경매법정",
-  "deposit": 2377900,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 131,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-20",
-    "minPrice": 99036000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 99036000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 69325533,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 48528106,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 33969837,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1.제시외 시멘트벽돌조 스레트지붕 단층 주택 61.1㎡, 시멘트벽돌조 판넬지붕 화장실 및 창고 11.2㎡, 철파이프조 천막지붕 단층 근린생활시설(뒷고기집) 25.5㎡는 매각에서 제외 2.최저매각가격은 제시외 건물이 매각대상에서 제외되어 토지의 소유권행사가 제한 받은 경우를 감안한 금액임"
- },
- {
-  "id": "gyeongnam-2025타경12317-2",
-  "court": "창원지방법원",
-  "courtCode": "B000420",
-  "caseNo": "2025타경12317",
-  "itemNo": "2",
-  "category": "토지",
-  "address": "경상남도 김해시 진영읍 신용리 123",
-  "region": "경남",
-  "district": "김해시",
-  "appraisalPrice": 11376000,
-  "minPrice": 1911000,
-  "priceRatio": 0.168,
-  "failCount": 5,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "별관103호(입찰)배당법정",
-  "deposit": 191100,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 400,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-15",
-    "minPrice": 11376000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-20",
-    "minPrice": 11376000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 7962397,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 5573115,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 3900787,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 2730275,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "제시외 수목(감나무 등 2주)포함. 공유지분 매각임. 공유자 우선매수권 행사 제한(공유자의 우선매수권 행사에 따른 매수신고가 매수보증금의 미납으로 실효되는 경우에는 그 공유자는 이후 매각절차에서 우선매수권을 행사할 수 없음). 농지취득자격증명 필요함(미제출시 매수보증금 반환하지 않음)."
- },
- {
-  "id": "gyeongnam-2025타경12452-1",
-  "court": "창원지방법원",
-  "courtCode": "B000420",
-  "caseNo": "2025타경12452",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경상남도 김해시 진영읍 여래리 205-9",
-  "region": "경남",
-  "district": "김해시",
-  "appraisalPrice": 239910000,
-  "minPrice": 57601000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "별관103호(입찰)배당법정",
-  "deposit": 5760100,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 330,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-20",
-    "minPrice": 239910000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 239910000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 167935986,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 117554481,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 82287640,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "공부상 지목은 전 이나 현황 전 및 일부 주차장 등으로 이용 중임."
- },
- {
-  "id": "gyeongnam-2025타경12515-1",
-  "court": "창원지방법원",
-  "courtCode": "B000420",
-  "caseNo": "2025타경12515",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "경상남도 창원시 의창구 북면 무곡리 819-1",
-  "region": "경남",
-  "district": "창원시 의창구",
-  "appraisalPrice": 694413000,
-  "minPrice": 166728000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "별관103호(입찰)배당법정",
-  "deposit": 16672800,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 711,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-20",
-    "minPrice": 694413000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 694413000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 486088691,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 340261797,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 238183058,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "일괄매각. 제시외 수목(감나무, 측백나무 등 약 110주) 포함. 목록3.~5. 농지취득자격증명원 요함(미제출시 보증금 반환하지 않음). 목록 3. 공부상 지목이 '과수원'이나 현황 '진입도로'로 이용 중이며, 목록 4. 5. 공부상 지목 각 '전', '과수원'이나 현황 휴경지로 분묘가 소재할 가능성이 있음."
- },
- {
-  "id": "gyeongnam-2025타경361-1",
-  "court": "창원지방법원",
-  "courtCode": "B000420",
-  "caseNo": "2025타경361",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "경상남도 김해시 진영읍 좌곤리 58-3",
-  "region": "경남",
-  "district": "김해시",
-  "appraisalPrice": 109940000,
-  "minPrice": 9053000,
-  "priceRatio": 0.0823,
-  "failCount": 7,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "별관103호(입찰)배당법정",
-  "deposit": 905300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 740,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-02-04",
-    "minPrice": 109940000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-11",
-    "minPrice": 109940000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-15",
-    "minPrice": 76956747,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-20",
-    "minPrice": 53868846,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 37707578,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 26394875,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 18476112,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 12933068,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "제시외 수목(감나무 약 30주) 및 물건(농업용 모노레일 1식) 포함. 이동이 용이한 비닐하우스는 매각 제외함. 농지취득자격증명 요함(미제출시 보증금 반환하지 않음)."
- },
- {
-  "id": "gyeongnam-2025타경505-1",
-  "court": "창원지방법원",
-  "courtCode": "B000420",
-  "caseNo": "2025타경505",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "경상남도 김해시 상동면 여차리 1037-27",
-  "region": "경남",
-  "district": "김해시",
-  "appraisalPrice": 154818000,
-  "minPrice": 26019000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "별관103호(입찰)배당법정",
-  "deposit": 2601900,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 348,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-15",
-    "minPrice": 154818000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-20",
-    "minPrice": 154818000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 108371549,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 75859349,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 53101030,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 37170360,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "일괄매각. 토지조성공사 및 평탄작업이 진행된 나지상태이며 목록2.는 농지취득자격증명원 필요함(미제출시 매수보증금 반환하지 않음). 지상에 소재하는 이동이 용이한 컨테이너(2동)는 매각 제외."
- },
- {
-  "id": "gyeongnam-2025타경631-1",
-  "court": "창원지방법원",
-  "courtCode": "B000420",
-  "caseNo": "2025타경631",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경상남도 김해시 상동면 매리 산154-4",
-  "region": "경남",
-  "district": "김해시",
-  "appraisalPrice": 2255052800,
-  "minPrice": 541437000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "별관103호(입찰)배당법정",
-  "deposit": 54143700,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 63189,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-20",
-    "minPrice": 2255052800,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 2255052800,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 1578536102,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 1104974671,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 773481849,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "일괄매각. 매각대상 토지 위에 소재하는 수목(감나무, 인근토지 994-1번지 점유자 소유)은 매각에서 제외함(법정지상권 성립여부 불분명). 최저매각가격은 제시외 수목소재로 인하여 제한받는 가격임. 목록2. 공부상 지목 '임야'이나 현황 일부 '과수원'으로 이용 중임. 분묘가 소재할 가능성이 있음."
- },
- {
-  "id": "gyeongnam-2025타경652-12",
-  "court": "창원지방법원",
-  "courtCode": "B000420",
-  "caseNo": "2025타경652",
-  "itemNo": "12",
-  "category": "상가",
-  "address": "경상남도 김해시 외동 1428 쌍용더플래티넘김해 201동 지하1층206호",
-  "region": "경남",
-  "district": "김해시",
-  "appraisalPrice": 207000000,
-  "minPrice": 24353000,
-  "priceRatio": 0.1176,
-  "failCount": 6,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "별관103호(입찰)배당법정",
-  "deposit": 2435300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 54.06,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-11",
-    "minPrice": 207000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-15",
-    "minPrice": 207000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-20",
-    "minPrice": 144899660,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 101429524,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 71000500,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 49700233,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 34790082,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "사무실로 이용 중이며 공부상 지하1층이나 접면도로 대비 지상2층에 해당함."
- },
- {
-  "id": "gyeongnam-2025타경652-6",
-  "court": "창원지방법원",
-  "courtCode": "B000420",
-  "caseNo": "2025타경652",
-  "itemNo": "6",
-  "category": "상가",
-  "address": "경상남도 김해시 외동 1428 쌍용더플래티넘김해 201동 지하2층106호",
-  "region": "경남",
-  "district": "김해시",
-  "appraisalPrice": 715000000,
-  "minPrice": 84118000,
-  "priceRatio": 0.1176,
-  "failCount": 6,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "별관103호(입찰)배당법정",
-  "deposit": 8411800,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 65.28,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-11",
-    "minPrice": 715000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-15",
-    "minPrice": 715000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-20",
-    "minPrice": 500498974,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 350348563,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 245243491,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 171670092,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 120168818,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "사무실로 이용 중이며 공부상 지하2층이나 접면도로 대비 지상1층에 해당함."
- },
- {
-  "id": "gyeongnam-2025타경765-1",
-  "court": "창원지방법원",
-  "courtCode": "B000420",
-  "caseNo": "2025타경765",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경상남도 창원시 의창구 북면 무곡리 523",
-  "region": "경남",
-  "district": "창원시 의창구",
-  "appraisalPrice": 1156690000,
-  "minPrice": 194404000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "별관103호(입찰)배당법정",
-  "deposit": 19440400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 1250,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-15",
-    "minPrice": 1156690000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-20",
-    "minPrice": 1156690000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 809682260,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 566777064,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 396743582,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 277720254,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "일괄매각. 목록 1. 2. 공부상 지목은 답 이나 현황은 휴경지 , 전, 일부 휴경지 로 이용 중임."
- },
- {
-  "id": "gyeongnam-2025타경906-1",
-  "court": "창원지방법원",
-  "courtCode": "B000420",
-  "caseNo": "2025타경906",
-  "itemNo": "1",
-  "category": "아파트",
-  "address": "경상남도 김해시 삼계동 610 삼계이안아파트 106동 9층904호",
-  "region": "경남",
-  "district": "김해시",
-  "appraisalPrice": 273000000,
-  "minPrice": 65547000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "별관103호(입찰)배당법정",
-  "deposit": 6554700,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 84.9523,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-20",
-    "minPrice": 273000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 273000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 191099781,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 133769694,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 93638679,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "대항력 있는 임차인 있음(배당에서 보증금이 전액 변제되지 아니하면 잔액을 매수인이 인수할 수 있음)."
- },
- {
-  "id": "gyeongnam-2026타경10018-1",
-  "court": "창원지방법원",
-  "courtCode": "B000420",
-  "caseNo": "2026타경10018",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경상남도 김해시 한림면 가산리 208-3",
-  "region": "경남",
-  "district": "김해시",
-  "appraisalPrice": 201412000,
-  "minPrice": 48358000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-11",
-  "saleTime": "10:00",
-  "courtRoom": "별관103호(입찰)배당법정",
-  "deposit": 4835800,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 936,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-20",
-    "minPrice": 201412000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-24",
-    "minPrice": 201412000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-29",
-    "minPrice": 140987656,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-02",
-    "minPrice": 98690838,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-07",
-    "minPrice": 69083222,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "제시외 건물 포함. 농지취득자격증명 요함(미제출시 보증금 반환하지 않음). 공부상 지목 전이며 대부분 휴경지 상태임."
- },
- {
   "id": "gyeongnam-2024타경100608-1",
   "court": "마산지원",
   "courtCode": "B000431",
@@ -2476,70 +1172,6 @@
   ],
   "historySource": "estimated",
   "specialNote": "일괄매각. 제시외 건물 포함. 건물은 등기사항증명서상 면적(831.22㎡)과 일반건축물대장상 면적(831.21㎡)으로 상이함. 감정 평가시 건물은 평면도 부재 및 장기간 방치로 건축사용역을 통한 실측을 진행하였고, 실측면적과 인발건축물대장상 면적이 대체로 유사하여 일반건축물대장 면적을 기준으로 평가하였음. 내부에 누수(지하 침수), 마감재 탈락, 설비 파손, 부식 등 관리상태가 불량임. 10여 년 전부터 거주자나 점유자가 없는 것으로 조사되고 집기, 비품 등이 방치되어 있음. 본건 '창원시 마산합포구 오동동 18-6'번지는 도로명 주소가 '오동동5길 41-1', '오동동1길46'로 2개 처가 조사됨."
- },
- {
-  "id": "gyeongnam-2025타경20537-1",
-  "court": "마산지원",
-  "courtCode": "B000431",
-  "caseNo": "2025타경20537",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "경상남도 함안군 군북면 월촌리 2011",
-  "region": "경남",
-  "district": "함안군",
-  "appraisalPrice": 2174312000,
-  "minPrice": 381844000,
-  "priceRatio": 0.1756,
-  "failCount": 6,
-  "saleDate": "2026-11-12",
-  "saleTime": "10:00",
-  "courtRoom": "마산지원122호법정",
-  "deposit": 38184400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 3882.7,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-12",
-    "minPrice": 2174312000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-16",
-    "minPrice": 2174312000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-21",
-    "minPrice": 1627106128,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-25",
-    "minPrice": 1217614745,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-30",
-    "minPrice": 911179451,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-03",
-    "minPrice": 681864272,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-08",
-    "minPrice": 510260503,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "정방형 평지로서, 공업나지 상태임. 지상권자로부터 2018년 11월 28일 제20033호 지상권설정등기 말소동의서가 제출됨."
  },
  {
   "id": "gyeongnam-2025타경20769-1",
@@ -7363,65 +5995,6 @@
   "specialNote": "지분매각. 공유자 우**는 1회에 한함. 농지취득자격증명 요함(미제출시 보증금 몰수). 공부상 지목은 '답'이나 현황 '전' 상태임. 지적도상 맹지이나 북측으로 콘크리트 포장 도로와 연결된 진입로 소재함(감정평가서 참조)."
  },
  {
-  "id": "gyeongnam-2025타경1016-1",
-  "court": "진주지원",
-  "courtCode": "B000421",
-  "caseNo": "2025타경1016",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경상남도 남해군 창선면 당저리 220",
-  "region": "경남",
-  "district": "남해군",
-  "appraisalPrice": 353562000,
-  "minPrice": 59423000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-16",
-  "saleTime": "10:00",
-  "courtRoom": "제101호법정",
-  "deposit": 5942300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 1114,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-20",
-    "minPrice": 353562000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-25",
-    "minPrice": 353562000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-29",
-    "minPrice": 247493262,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-03",
-    "minPrice": 173245187,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-07",
-    "minPrice": 121271564,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-12",
-    "minPrice": 84890047,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "-일괄매각. -제시외수목[감정서상 'a'] 매각 포함. -목록[1]일부 지상에 소재하는 철파이프구조 방조망 평가제외. -목록[1,2]일부지상에 화분 등이 소재하나 이동식으로 평가제외. -농지취득자격증명원 제출 요함(미제출시 보증금 몰수)."
- },
- {
   "id": "gyeongnam-2025타경10244-1",
   "court": "밀양지원",
   "courtCode": "B000423",
@@ -10726,5 +9299,1388 @@
   ],
   "historySource": "estimated",
   "specialNote": "본건 건물 1-090호는 1-091호와 바닥 경계선이나 벽면 없이 일체의 판매시설(상호: codes combine)로 이용 중이며, 건축물현황도에 의해 건물의 위치 및 구획의 구분이 가능하므로 입찰시 참조 바람."
+ },
+ {
+  "id": "gyeongnam-2024타경112058-1",
+  "court": "울산지방법원",
+  "courtCode": "B000411",
+  "caseNo": "2024타경112058",
+  "itemNo": "1",
+  "category": "아파트",
+  "address": "경상남도 양산시 평산로 116 103동 5층501호 (평산동,양산천성산한일유앤아이아파트)",
+  "region": "경남",
+  "district": "양산시",
+  "appraisalPrice": 182000000,
+  "minPrice": 3599000,
+  "priceRatio": 0.0198,
+  "failCount": 11,
+  "saleDate": "2026-11-18",
+  "saleTime": "10:00",
+  "courtRoom": "133호입찰법정",
+  "deposit": 359900,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-09-24",
+    "minPrice": 182000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-10-29",
+    "minPrice": 182000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-03",
+    "minPrice": 127400854,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-07",
+    "minPrice": 89181195,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-11",
+    "minPrice": 62427255,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-18",
+    "minPrice": 43699372,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-22",
+    "minPrice": 30589765,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-27",
+    "minPrice": 21412979,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-01",
+    "minPrice": 14989186,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-05",
+    "minPrice": 10492500,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-09",
+    "minPrice": 7344800,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-14",
+    "minPrice": 5141394,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "재매각, 매수신청 보증금은 최저매각가격의 30%임"
+ },
+ {
+  "id": "gyeongnam-2024타경112724-1",
+  "court": "창원지방법원",
+  "courtCode": "B000420",
+  "caseNo": "2024타경112724",
+  "itemNo": "1",
+  "category": "아파트",
+  "address": "경상남도 김해시 부곡로 78 105동 5층 503호 (부곡동,월산마을부영아파트)",
+  "region": "경남",
+  "district": "김해시",
+  "appraisalPrice": 93000000,
+  "minPrice": 2745000,
+  "priceRatio": 0.0295,
+  "failCount": 11,
+  "saleDate": "2026-11-18",
+  "saleTime": "10:00",
+  "courtRoom": "별관103호입찰(배당)법정",
+  "deposit": 274500,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-09-24",
+    "minPrice": 93000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-10-29",
+    "minPrice": 93000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-03",
+    "minPrice": 67514560,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-07",
+    "minPrice": 49013073,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-11",
+    "minPrice": 35581678,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-18",
+    "minPrice": 25830982,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-22",
+    "minPrice": 18752337,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-27",
+    "minPrice": 13613503,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-01",
+    "minPrice": 9882900,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-05",
+    "minPrice": 7174620,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-09",
+    "minPrice": 5208508,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-14",
+    "minPrice": 3781184,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "대항력 있는 임차인 있** 수 있음."
+ },
+ {
+  "id": "gyeongnam-2024타경117088-1",
+  "court": "창원지방법원",
+  "courtCode": "B000420",
+  "caseNo": "2024타경117088",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상남도 김해시 대동면 주동리 577",
+  "region": "경남",
+  "district": "김해시",
+  "appraisalPrice": 142417000,
+  "minPrice": 23936000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-18",
+  "saleTime": "10:00",
+  "courtRoom": "별관103호입찰(배당)법정",
+  "deposit": 2393600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 1177,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-22",
+    "minPrice": 142417000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-27",
+    "minPrice": 142417000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-01",
+    "minPrice": 99691879,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-05",
+    "minPrice": 69784301,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-09",
+    "minPrice": 48849000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-14",
+    "minPrice": 34194293,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "- 농지취득자격증명 제출 요함(미제출시 매수보증금은 반환하지 않음). - 소유자 미상의 분묘 2기가 있으며, 추가로 분묘 소재할 가능성이 있음(지상 분묘에 대한 분묘기지권 성립여부 불분명). 최저매각가격은 분묘 소재로 인하여 제한받는 가격임."
+ },
+ {
+  "id": "gyeongnam-2024타경5266-1",
+  "court": "울산지방법원",
+  "courtCode": "B000411",
+  "caseNo": "2024타경5266",
+  "itemNo": "1",
+  "category": "상가",
+  "address": "경상남도 양산시 물금읍 증산역로 177 1층1-012호 (라피에스타양산)",
+  "region": "경남",
+  "district": "양산시",
+  "appraisalPrice": 966000000,
+  "minPrice": 55688000,
+  "priceRatio": 0.0576,
+  "failCount": 8,
+  "saleDate": "2026-11-18",
+  "saleTime": "10:00",
+  "courtRoom": "133호입찰법정",
+  "deposit": 5568800,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-01-07",
+    "minPrice": 966000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-11",
+    "minPrice": 966000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-18",
+    "minPrice": 676200034,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-22",
+    "minPrice": 473340047,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-27",
+    "minPrice": 331338050,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-01",
+    "minPrice": 231936647,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-05",
+    "minPrice": 162355661,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-09",
+    "minPrice": 113648968,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-14",
+    "minPrice": 79554282,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "인접 건물 \"1-013호\"와 경계벽체가 제거되어 일체로 이용중이나 집합건축물대장 평면도 및 상가 현황도면 등에 의해 위치, 형상 등이 특정되어 경계가 명확하고 건물의 구조, 규모, 용도 등을 고려할 때 위치 특정 및 경계 복원이 용이함"
+ },
+ {
+  "id": "gyeongnam-2024타경5266-2",
+  "court": "울산지방법원",
+  "courtCode": "B000411",
+  "caseNo": "2024타경5266",
+  "itemNo": "2",
+  "category": "상가",
+  "address": "경상남도 양산시 물금읍 증산역로 177 1층1-013호 (라피에스타양산)",
+  "region": "경남",
+  "district": "양산시",
+  "appraisalPrice": 966000000,
+  "minPrice": 55688000,
+  "priceRatio": 0.0576,
+  "failCount": 8,
+  "saleDate": "2026-11-18",
+  "saleTime": "10:00",
+  "courtRoom": "133호입찰법정",
+  "deposit": 5568800,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-01-07",
+    "minPrice": 966000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-11",
+    "minPrice": 966000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-18",
+    "minPrice": 676200034,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-22",
+    "minPrice": 473340047,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-27",
+    "minPrice": 331338050,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-01",
+    "minPrice": 231936647,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-05",
+    "minPrice": 162355661,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-09",
+    "minPrice": 113648968,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-14",
+    "minPrice": 79554282,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "인접 건물 \"1-012호\"와 경계벽체가 제거되어 일체로 이용중이나 집합건축물대장 평면도 및 상가 현황도면 등에 의해 위치, 형상 등이 특정되어 경계가 명확하고 건물의 구조, 규모, 용도 등을 고려할 때 위치 특정 및 경계 복원이 용이함"
+ },
+ {
+  "id": "gyeongnam-2024타경5266-4",
+  "court": "울산지방법원",
+  "courtCode": "B000411",
+  "caseNo": "2024타경5266",
+  "itemNo": "4",
+  "category": "상가",
+  "address": "경상남도 양산시 물금읍 증산역로 177 1층1-021호 (라피에스타양산)",
+  "region": "경남",
+  "district": "양산시",
+  "appraisalPrice": 700000000,
+  "minPrice": 40354000,
+  "priceRatio": 0.0576,
+  "failCount": 8,
+  "saleDate": "2026-11-18",
+  "saleTime": "10:00",
+  "courtRoom": "133호입찰법정",
+  "deposit": 4035400,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-01-07",
+    "minPrice": 700000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-11",
+    "minPrice": 700000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-18",
+    "minPrice": 490000597,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-22",
+    "minPrice": 343000835,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-27",
+    "minPrice": 240100877,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-01",
+    "minPrice": 168070818,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-05",
+    "minPrice": 117649716,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-09",
+    "minPrice": 82354902,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-14",
+    "minPrice": 57648501,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "인접 건물 \"1-022호\"와 경계벽체가 제거되어 일체로 이용중이나 집합건축물대장 평면도 및 상가 현황도면 등에 의해 위치, 형상 등이 특정되어 경계가 명확하고 건물의 구조, 규모, 용도 등을 고려할 때 위치 특정 및 경계 복원이 용이함"
+ },
+ {
+  "id": "gyeongnam-2024타경5266-5",
+  "court": "울산지방법원",
+  "courtCode": "B000411",
+  "caseNo": "2024타경5266",
+  "itemNo": "5",
+  "category": "상가",
+  "address": "경상남도 양산시 물금읍 증산역로 177 1층1-022호 (라피에스타양산)",
+  "region": "경남",
+  "district": "양산시",
+  "appraisalPrice": 994000000,
+  "minPrice": 57302000,
+  "priceRatio": 0.0576,
+  "failCount": 8,
+  "saleDate": "2026-11-18",
+  "saleTime": "10:00",
+  "courtRoom": "133호입찰법정",
+  "deposit": 5730200,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-01-07",
+    "minPrice": 994000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-11",
+    "minPrice": 994000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-03-18",
+    "minPrice": 695799815,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-22",
+    "minPrice": 487059741,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-27",
+    "minPrice": 340941728,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-01",
+    "minPrice": 238659146,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-05",
+    "minPrice": 167061358,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-09",
+    "minPrice": 116942919,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-14",
+    "minPrice": 81860022,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "인접 건물 \"1-021호\"와 경계벽체가 제거되어 일체로 이용중이나 집합건축물대장 평면도 및 상가 현황도면 등에 의해 위치, 형상 등이 특정되어 경계가 명확하고 건물의 구조, 규모, 용도 등을 고려할 때 위치 특정 및 경계 복원이 용이함"
+ },
+ {
+  "id": "gyeongnam-2024타경5307-2",
+  "court": "창원지방법원",
+  "courtCode": "B000420",
+  "caseNo": "2024타경5307",
+  "itemNo": "2",
+  "category": "토지",
+  "address": "경상남도 창원시 진해구 장천동 33",
+  "region": "경남",
+  "district": "창원시 진해구",
+  "appraisalPrice": 168656000,
+  "minPrice": 32395000,
+  "priceRatio": 0.1921,
+  "failCount": 5,
+  "saleDate": "2026-11-18",
+  "saleTime": "10:00",
+  "courtRoom": "별관103호입찰(배당)법정",
+  "deposit": 3239500,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 664,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-22",
+    "minPrice": 168656000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-27",
+    "minPrice": 168656000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-01",
+    "minPrice": 121254268,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-05",
+    "minPrice": 87175063,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-09",
+    "minPrice": 62674014,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-14",
+    "minPrice": 45059124,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "- 맹지임. - 농지취득자격증명 제출 필요(미제출시 매수보증금 반환하지 않음). 2024. 8. 19.자 창원시 진해구 풍호동의 사실조회 회신서에 의하면 원상회복이 되어야 농지취득자격증명서를 발급할 수 있다고 함. 농지취득자격증명 발급 관련 구체적 사항은 관할 관서에 확인 요함. - 지상의 석조물은 이동이 용이하므로 평가 및 매각에서 제외. - 지상의 조경수, 석축 등은 토지와 일체로 거래되는 관행에 따라 토지가격에 포함하여 평가함."
+ },
+ {
+  "id": "gyeongnam-2024타경5307-3",
+  "court": "창원지방법원",
+  "courtCode": "B000420",
+  "caseNo": "2024타경5307",
+  "itemNo": "3",
+  "category": "토지",
+  "address": "경상남도 창원시 진해구 장천동 35-2",
+  "region": "경남",
+  "district": "창원시 진해구",
+  "appraisalPrice": 72628000,
+  "minPrice": 13950000,
+  "priceRatio": 0.1921,
+  "failCount": 5,
+  "saleDate": "2026-11-18",
+  "saleTime": "10:00",
+  "courtRoom": "별관103호입찰(배당)법정",
+  "deposit": 1395000,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 271,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-22",
+    "minPrice": 72628000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-27",
+    "minPrice": 72628000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-01",
+    "minPrice": 52215340,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-05",
+    "minPrice": 37539816,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-09",
+    "minPrice": 26988961,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-14",
+    "minPrice": 19403505,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "- 맹지임. - 농지취득자격증명 제출 필요(미제출시 매수보증금 반환하지 않음). 2024. 8. 19.자 창원시 진해구 풍호동의 사실조회 회신서에 의하면 원상회복이 되어야 농지취득자격증명서를 발급할 수 있다고 함. 농지취득자격증명 발급 관련 구체적 사항은 관할 관서에 확인 요함. - 지상의 컨테이너는 이동이 용이하므로 평가 및 매각에서 제외. - 지상의 조경수, 석축 등은 토지와 일체로 거래되는 관행에 따라 토지가격에 포함하여 평가함."
+ },
+ {
+  "id": "gyeongnam-2025타경11288-1",
+  "court": "창원지방법원",
+  "courtCode": "B000420",
+  "caseNo": "2025타경11288",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상남도 김해시 대동면 예안리 316-14",
+  "region": "경남",
+  "district": "김해시",
+  "appraisalPrice": 994722000,
+  "minPrice": 238833000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-18",
+  "saleTime": "10:00",
+  "courtRoom": "별관103호입찰(배당)법정",
+  "deposit": 23883300,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 2577,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-27",
+    "minPrice": 994722000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-01",
+    "minPrice": 994722000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-05",
+    "minPrice": 696305581,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-09",
+    "minPrice": 487414033,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-14",
+    "minPrice": 341189911,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "농지취득자격증명 필요함(미제출시 매수보증금 반환하지 않음)."
+ },
+ {
+  "id": "gyeongnam-2025타경11321-1",
+  "court": "울산지방법원",
+  "courtCode": "B000411",
+  "caseNo": "2025타경11321",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "경상남도 양산시 상북면 대석리 821-14 9층901호",
+  "region": "경남",
+  "district": "양산시",
+  "appraisalPrice": 116000000,
+  "minPrice": 13647000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-11-18",
+  "saleTime": "10:00",
+  "courtRoom": "133호입찰법정",
+  "deposit": 1364700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 36.8487,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-18",
+    "minPrice": 116000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-22",
+    "minPrice": 116000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-27",
+    "minPrice": 81199718,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-01",
+    "minPrice": 56839606,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-05",
+    "minPrice": 39787586,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-09",
+    "minPrice": 27851214,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-14",
+    "minPrice": 19495782,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeongnam-2025타경11321-2",
+  "court": "울산지방법원",
+  "courtCode": "B000411",
+  "caseNo": "2025타경11321",
+  "itemNo": "2",
+  "category": "오피스텔",
+  "address": "경상남도 양산시 상북면 대석리 821-14 9층902호",
+  "region": "경남",
+  "district": "양산시",
+  "appraisalPrice": 116000000,
+  "minPrice": 13647000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-11-18",
+  "saleTime": "10:00",
+  "courtRoom": "133호입찰법정",
+  "deposit": 1364700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 36.8487,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-18",
+    "minPrice": 116000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-22",
+    "minPrice": 116000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-27",
+    "minPrice": 81199718,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-01",
+    "minPrice": 56839606,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-05",
+    "minPrice": 39787586,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-09",
+    "minPrice": 27851214,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-14",
+    "minPrice": 19495782,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeongnam-2025타경11321-3",
+  "court": "울산지방법원",
+  "courtCode": "B000411",
+  "caseNo": "2025타경11321",
+  "itemNo": "3",
+  "category": "오피스텔",
+  "address": "경상남도 양산시 상북면 대석리 821-14 9층903호",
+  "region": "경남",
+  "district": "양산시",
+  "appraisalPrice": 116000000,
+  "minPrice": 13647000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-11-18",
+  "saleTime": "10:00",
+  "courtRoom": "133호입찰법정",
+  "deposit": 1364700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 36.8487,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-03-18",
+    "minPrice": 116000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-22",
+    "minPrice": 116000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-27",
+    "minPrice": 81199718,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-01",
+    "minPrice": 56839606,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-05",
+    "minPrice": 39787586,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-09",
+    "minPrice": 27851214,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-14",
+    "minPrice": 19495782,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeongnam-2025타경11915-1",
+  "court": "창원지방법원",
+  "courtCode": "B000420",
+  "caseNo": "2025타경11915",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상남도 김해시 진영읍 여래리 523-11",
+  "region": "경남",
+  "district": "김해시",
+  "appraisalPrice": 206960000,
+  "minPrice": 49691000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-18",
+  "saleTime": "10:00",
+  "courtRoom": "별관103호입찰(배당)법정",
+  "deposit": 4969100,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 199,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-27",
+    "minPrice": 206960000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-01",
+    "minPrice": 206960000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-05",
+    "minPrice": 144871930,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-09",
+    "minPrice": 101410302,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-14",
+    "minPrice": 70987177,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "토지 현황이 농지가 아닌 부분에 대하여 전용허가가 이루어졌는지 여부, 전용허가를 득하지 않고 토지형질이 변경된 경우 원상회복명령 가능성 여부 등에 대하여는 관할 관청의 확인이 필요함."
+ },
+ {
+  "id": "gyeongnam-2025타경12014-1",
+  "court": "창원지방법원",
+  "courtCode": "B000420",
+  "caseNo": "2025타경12014",
+  "itemNo": "1",
+  "category": "아파트",
+  "address": "경상남도 창원시 성산구 사파동 93 사파동성아파트 113동 6층 602호",
+  "region": "경남",
+  "district": "창원시 성산구",
+  "appraisalPrice": 170000000,
+  "minPrice": 40817000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-18",
+  "saleTime": "10:00",
+  "courtRoom": "별관103호입찰(배당)법정",
+  "deposit": 4081700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 49.5,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-27",
+    "minPrice": 170000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-01",
+    "minPrice": 170000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-05",
+    "minPrice": 119000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-09",
+    "minPrice": 83300000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-14",
+    "minPrice": 58310000,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeongnam-2025타경12207-1",
+  "court": "울산지방법원",
+  "courtCode": "B000411",
+  "caseNo": "2025타경12207",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상남도 양산시 주남동 192-78",
+  "region": "경남",
+  "district": "양산시",
+  "appraisalPrice": 147764000,
+  "minPrice": 35479000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-18",
+  "saleTime": "10:00",
+  "courtRoom": "133호입찰법정",
+  "deposit": 3547900,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 2788,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-27",
+    "minPrice": 147764000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-01",
+    "minPrice": 147764000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-05",
+    "minPrice": 103435429,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-09",
+    "minPrice": 72405241,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-14",
+    "minPrice": 50683977,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "1. 미발견 분묘 있을 수 있음 - 분묘기지권 여부 불분명 2. 맹지임"
+ },
+ {
+  "id": "gyeongnam-2025타경12207-2",
+  "court": "울산지방법원",
+  "courtCode": "B000411",
+  "caseNo": "2025타경12207",
+  "itemNo": "2",
+  "category": "토지",
+  "address": "경상남도 양산시 주남동 192-77",
+  "region": "경남",
+  "district": "양산시",
+  "appraisalPrice": 126864000,
+  "minPrice": 30461000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-18",
+  "saleTime": "10:00",
+  "courtRoom": "133호입찰법정",
+  "deposit": 3046100,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 5286,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-27",
+    "minPrice": 126864000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-01",
+    "minPrice": 126864000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-05",
+    "minPrice": 88805495,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-09",
+    "minPrice": 62164333,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-14",
+    "minPrice": 43515374,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "1. 지분 매각임. 공유자 우선매수권(민사집행법 제140조)행사에 따른 매수신고가 매수보증금 미납으로 실효되는 경우, 그 공유자는 이후 매각절차에서 우선매수권 행사할 수 없음. 2. 감정서에 따르면 분묘 2기 있음. 현황조사서에 따르면 미발결 분묘가 추가로 있을 수 있음. - 분묘기지권 여부 불분명. 3. 맹지임."
+ },
+ {
+  "id": "gyeongnam-2025타경12207-3",
+  "court": "울산지방법원",
+  "courtCode": "B000411",
+  "caseNo": "2025타경12207",
+  "itemNo": "3",
+  "category": "토지",
+  "address": "경상남도 양산시 주남동 192-76",
+  "region": "경남",
+  "district": "양산시",
+  "appraisalPrice": 135916000,
+  "minPrice": 32633000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-18",
+  "saleTime": "10:00",
+  "courtRoom": "133호입찰법정",
+  "deposit": 3263300,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 3089,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-27",
+    "minPrice": 135916000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-01",
+    "minPrice": 135916000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-05",
+    "minPrice": 95140885,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-09",
+    "minPrice": 66598400,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-14",
+    "minPrice": 46618726,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "1. 미발견 분묘 있을 수 있음 - 분묘기지권 여부 불분명. 2. 맹지임."
+ },
+ {
+  "id": "gyeongnam-2025타경12231-1",
+  "court": "울산지방법원",
+  "courtCode": "B000411",
+  "caseNo": "2025타경12231",
+  "itemNo": "1",
+  "category": "상가",
+  "address": "경상남도 양산시 하북면 순지리 691-118 미소하우스와숲 1동 3층301호",
+  "region": "경남",
+  "district": "양산시",
+  "appraisalPrice": 397000000,
+  "minPrice": 95320000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-18",
+  "saleTime": "10:00",
+  "courtRoom": "133호입찰법정",
+  "deposit": 9532000,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 2,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-27",
+    "minPrice": 397000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-01",
+    "minPrice": 397000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-05",
+    "minPrice": 277900219,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-09",
+    "minPrice": 194530306,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-14",
+    "minPrice": 136171321,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeongnam-2025타경12231-2",
+  "court": "울산지방법원",
+  "courtCode": "B000411",
+  "caseNo": "2025타경12231",
+  "itemNo": "2",
+  "category": "상가",
+  "address": "경상남도 양산시 하북면 순지리 691-118 미소하우스와숲 1동 2층201호",
+  "region": "경남",
+  "district": "양산시",
+  "appraisalPrice": 431000000,
+  "minPrice": 103483000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-18",
+  "saleTime": "10:00",
+  "courtRoom": "133호입찰법정",
+  "deposit": 10348300,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 1,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-27",
+    "minPrice": 431000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-01",
+    "minPrice": 431000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-05",
+    "minPrice": 301699927,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-09",
+    "minPrice": 211189898,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-14",
+    "minPrice": 147832893,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeongnam-2025타경1240-1",
+  "court": "울산지방법원",
+  "courtCode": "B000411",
+  "caseNo": "2025타경1240",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상남도 양산시 원동면 화제리 555",
+  "region": "경남",
+  "district": "양산시",
+  "appraisalPrice": 484180860,
+  "minPrice": 116252000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-18",
+  "saleTime": "10:00",
+  "courtRoom": "133호입찰법정",
+  "deposit": 11625200,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 5630,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-27",
+    "minPrice": 484180860,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-01",
+    "minPrice": 484180860,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-05",
+    "minPrice": 338926730,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-09",
+    "minPrice": 237248800,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-14",
+    "minPrice": 166074223,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "1. 지분 매각 - 공유자 우선매수권(민사집행법 제140조)행사에 따른 매수신고가 매수보증금 미납으로 실효되는 경우, 그 공유자는 이후 매각절차에서 우선매수권 행사할 수 없음. 2. 농지취득자격증명 제출 요함. 미제출시 보증금 미반환. - 첨부문서 참조"
+ },
+ {
+  "id": "gyeongnam-2025타경1334-1",
+  "court": "울산지방법원",
+  "courtCode": "B000411",
+  "caseNo": "2025타경1334",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경상남도 양산시 명동 산23",
+  "region": "경남",
+  "district": "양산시",
+  "appraisalPrice": 202048000,
+  "minPrice": 48512000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-18",
+  "saleTime": "10:00",
+  "courtRoom": "133호입찰법정",
+  "deposit": 4851200,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 2296,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-27",
+    "minPrice": 202048000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-01",
+    "minPrice": 202048000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-05",
+    "minPrice": 141433801,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-09",
+    "minPrice": 99003801,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-14",
+    "minPrice": 69302759,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
  }
 ]
