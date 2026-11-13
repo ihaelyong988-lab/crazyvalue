@@ -1,54 +1,5 @@
 [
  {
-  "id": "daejeon-2026타경51075-1",
-  "court": "수원지방법원",
-  "courtCode": "B000250",
-  "caseNo": "2026타경51075",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "사용본거지 : 대전 중구 산서로 28, 201호(사정동, 프라임빌딩)",
-  "region": "대전",
-  "district": "중구",
-  "appraisalPrice": 39500000,
-  "minPrice": 13549000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-13",
-  "saleTime": "10:00",
-  "courtRoom": "제101호법정",
-  "deposit": 1354900,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-06-26",
-    "minPrice": 39500000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-31",
-    "minPrice": 39500000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-04",
-    "minPrice": 27650340,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-09",
-    "minPrice": 19355476,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "외판부(후방리어범퍼)에 손상된 부분이 육안으로 확인됨 재매각임. 매수보증금은 최저매각가격의 20%를 납부하여야 함."
- },
- {
   "id": "daejeon-2024타경10211-1",
   "court": "대전지방법원",
   "courtCode": "B000280",

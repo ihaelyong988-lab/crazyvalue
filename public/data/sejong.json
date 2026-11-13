@@ -387,5 +387,59 @@
   ],
   "historySource": "estimated",
   "specialNote": null
+ },
+ {
+  "id": "sejong-2025타경503821-1",
+  "court": "대전지방법원",
+  "courtCode": "B000280",
+  "caseNo": "2025타경503821",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "세종특별자치시 나성동 732 세종모닝시티2차 1층111호",
+  "region": "세종",
+  "district": "나성동",
+  "appraisalPrice": 588500000,
+  "minPrice": 141299000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-18",
+  "saleTime": "10:00",
+  "courtRoom": "본관제106호경매법정",
+  "deposit": 14129900,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 35.48,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-27",
+    "minPrice": 588500000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-01",
+    "minPrice": 588500000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-05",
+    "minPrice": 411950109,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-09",
+    "minPrice": 288365153,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-14",
+    "minPrice": 201855661,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "본건 목록과 인접호수 110호는 동일한 상호의 점유자가 벽체구분 없이 하나의 호수로 연결하여 사용중인 상태이나, 도면상 위치 등 특정이 가능하고 경계벽의 복원은 물리적 기능적으로 가능한 것으로 조사됨"
  }
 ]
