@@ -674,6 +674,60 @@
   "specialNote": "1. 일괄매각 2. 목록 1. 토지가 북서측 임도에 접하고 있어 이를 통하여 다른 목록 토지도 진입 가능."
  },
  {
+  "id": "ulsan-2025타경12162-2",
+  "court": "울산지방법원",
+  "courtCode": "B000411",
+  "caseNo": "2025타경12162",
+  "itemNo": "2",
+  "category": "토지",
+  "address": "울산광역시 울주군 서생면 화산리 산23-39",
+  "region": "울산",
+  "district": "울주군",
+  "appraisalPrice": 282692000,
+  "minPrice": 67874000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-18",
+  "saleTime": "10:00",
+  "courtRoom": "133호입찰법정",
+  "deposit": 6787400,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 282,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-27",
+    "minPrice": 282692000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-01",
+    "minPrice": 282692000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-05",
+    "minPrice": 197884145,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-09",
+    "minPrice": 138518724,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-14",
+    "minPrice": 96962982,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "1. 일괄매각. 2. 농지취득자격증명 제출 요함(목록 12, 13. 토지 부분 관련). 미제출시 보증금 미반환. - 첨부문서 참조. 3. 목록 10. 토지가 북서측 임도에 접하고 있어 이를 통하여 다른 목록 토지도 진입 가능."
+ },
+ {
   "id": "ulsan-2025타경12150-1",
   "court": "울산지방법원",
   "courtCode": "B000411",
