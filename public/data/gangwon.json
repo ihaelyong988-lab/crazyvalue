@@ -1,261 +1,5 @@
 [
  {
-  "id": "gangwon-2025타경71706-1",
-  "court": "의정부지방법원",
-  "courtCode": "B000214",
-  "caseNo": "2025타경71706",
-  "itemNo": "1",
-  "category": "아파트",
-  "address": "강원특별자치도 철원군 동송읍 이평리 838-8 비-401호",
-  "region": "강원",
-  "district": "철원군",
-  "appraisalPrice": 78000000,
-  "minPrice": 3148000,
-  "priceRatio": 0.0404,
-  "failCount": 9,
-  "saleDate": "2026-11-19",
-  "saleTime": "10:30",
-  "courtRoom": "경매입찰법정(제6호)",
-  "deposit": 314800,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 84.73,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-12-04",
-    "minPrice": 78000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-01-08",
-    "minPrice": 78000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-12",
-    "minPrice": 54600807,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-19",
-    "minPrice": 38221130,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-23",
-    "minPrice": 26755186,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-28",
-    "minPrice": 18728907,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-02",
-    "minPrice": 13110429,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-06",
-    "minPrice": 9177436,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-10",
-    "minPrice": 6424300,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-15",
-    "minPrice": 4497076,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "일괄매각(대지권 미등기이나 목록 2 토지가 매각목적물 및 평가에 포함됨)"
- },
- {
-  "id": "gangwon-2025타경72054-1",
-  "court": "의정부지방법원",
-  "courtCode": "B000214",
-  "caseNo": "2025타경72054",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "강원특별자치도 철원군 갈말읍 신철원리 973-9 1동 5층 501호",
-  "region": "강원",
-  "district": "철원군",
-  "appraisalPrice": 574000000,
-  "minPrice": 96472000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-19",
-  "saleTime": "10:30",
-  "courtRoom": "경매입찰법정(제6호)",
-  "deposit": 9647200,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 532.1,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-23",
-    "minPrice": 574000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-28",
-    "minPrice": 574000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-02",
-    "minPrice": 401799850,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-06",
-    "minPrice": 281259790,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-10",
-    "minPrice": 196881780,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-15",
-    "minPrice": 137817194,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gangwon-2025타경72054-2",
-  "court": "의정부지방법원",
-  "courtCode": "B000214",
-  "caseNo": "2025타경72054",
-  "itemNo": "2",
-  "category": "다세대",
-  "address": "강원특별자치도 철원군 갈말읍 신철원리 973-9 1동 6층 601호",
-  "region": "강원",
-  "district": "철원군",
-  "appraisalPrice": 105000000,
-  "minPrice": 17648000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-19",
-  "saleTime": "10:30",
-  "courtRoom": "경매입찰법정(제6호)",
-  "deposit": 1764800,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 97.4,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-23",
-    "minPrice": 105000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-28",
-    "minPrice": 105000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-02",
-    "minPrice": 73500541,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-06",
-    "minPrice": 51450758,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-10",
-    "minPrice": 36015796,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-15",
-    "minPrice": 25211243,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gangwon-2025타경72545-1",
-  "court": "의정부지방법원",
-  "courtCode": "B000214",
-  "caseNo": "2025타경72545",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "강원특별자치도 철원군 동송읍 상노리 355-4",
-  "region": "강원",
-  "district": "철원군",
-  "appraisalPrice": 14880000,
-  "minPrice": 2501000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-19",
-  "saleTime": "10:30",
-  "courtRoom": "경매입찰법정(제6호)",
-  "deposit": 250100,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 992,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-23",
-    "minPrice": 14880000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-28",
-    "minPrice": 14880000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-02",
-    "minPrice": 10416099,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-06",
-    "minPrice": 7291338,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-10",
-    "minPrice": 5103985,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-15",
-    "minPrice": 3572823,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "-지분매각이고, 공유자 우선매수신고는 1회에 한하여 행사할 수 있음 -농지취득자격증명 제출 필요(미제출 보증금 미반환) -분묘가 1기 소재(분묘기지권 성립여부 불분명)"
- },
- {
   "id": "gangwon-2024타경56183-1",
   "court": "춘천지방법원",
   "courtCode": "B000260",
@@ -1490,50 +1234,6 @@
   ],
   "historySource": "estimated",
   "specialNote": "-일괄매각 -지적경계불분명 -목록 1의 지상에 인접지상(사북리 산71-2)에 걸쳐 소재하는 제시외 건물(주택 1동과 부속건물)이 소재(매각에서 제외) -감정평가액(최저매각가격)은 위 제시외 건물로 인하여 제한받는 정도를 감안한 가격임 -농지취득자격증명 불필요(사북읍장 2026. 3. 26.자 정정회신)"
- },
- {
-  "id": "gangwon-2024타경793-2",
-  "court": "영월지원",
-  "courtCode": "B000264",
-  "caseNo": "2024타경793",
-  "itemNo": "2",
-  "category": "토지",
-  "address": "강원특별자치도 평창군 대관령면 횡계리 344-102",
-  "region": "강원",
-  "district": "평창군",
-  "appraisalPrice": 66348000,
-  "minPrice": 7806000,
-  "priceRatio": 0.1177,
-  "failCount": 2,
-  "saleDate": "2026-11-24",
-  "saleTime": "10:00",
-  "courtRoom": "영월지원경매법정",
-  "deposit": 780600,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 342,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-08-11",
-    "minPrice": 66348000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-09-15",
-    "minPrice": 66348000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-20",
-    "minPrice": 22757691,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "-지적경계불분명 -지적도상 맹지임 -농지취득자격증명 필요(미제출시 보증금 몰수, 입찰기일 전 농지취득자격증명 신청이 가능하므로 해당 관서에 미리 발급 문의 바람) -매각물건 1,2번의 일괄매각결정으로 인하여 기존 매각물건번호가 3번에서 2번으로 변동함"
  },
  {
   "id": "gangwon-2025타경158-2",
@@ -3201,5 +2901,123 @@
   ],
   "historySource": "estimated",
   "specialNote": "-건물명칭이 '호텔아트리움'에서 '더화이트호텔'로 변경된 상태임(건물 외벽에 '더화이트호텔'이라고 표기되어 있음)"
+ },
+ {
+  "id": "gangwon-2025타경3985-1",
+  "court": "의정부지방법원",
+  "courtCode": "B000214",
+  "caseNo": "2025타경3985",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "강원특별자치도 철원군 철원읍 사요리 472-6",
+  "region": "강원",
+  "district": "철원군",
+  "appraisalPrice": 7650000,
+  "minPrice": 1286000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-26",
+  "saleTime": "10:30",
+  "courtRoom": "제2별관1층제6호법정",
+  "deposit": 128600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 1351,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-30",
+    "minPrice": 7650000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-04",
+    "minPrice": 7650000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-09",
+    "minPrice": 5355220,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-13",
+    "minPrice": 3748808,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-17",
+    "minPrice": 2624274,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-22",
+    "minPrice": 1837067,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "1. 농지취득자격증명요함(미제출시 보증금 미반환) 2. 공유자의 우선매수신고는 1회에 한하여 행사할 수 있음"
+ },
+ {
+  "id": "gangwon-2025타경3985-2",
+  "court": "의정부지방법원",
+  "courtCode": "B000214",
+  "caseNo": "2025타경3985",
+  "itemNo": "2",
+  "category": "토지",
+  "address": "강원특별자치도 철원군 철원읍 외촌리 835",
+  "region": "강원",
+  "district": "철원군",
+  "appraisalPrice": 14687500,
+  "minPrice": 2469000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-11-26",
+  "saleTime": "10:30",
+  "courtRoom": "제2별관1층제6호법정",
+  "deposit": 246900,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 1396,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-30",
+    "minPrice": 14687500,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-04",
+    "minPrice": 14687500,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-09",
+    "minPrice": 10281643,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-13",
+    "minPrice": 7197425,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-17",
+    "minPrice": 5038390,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-22",
+    "minPrice": 3527008,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "1. 농지취득자격증명요함(미제출시 보증금 미반환) 2. 공유자의 우선매수신고는 1회에 한하여 행사할 수 있음"
  }
 ]
