@@ -671,65 +671,6 @@
   "specialNote": null
  },
  {
-  "id": "jeju-2025타경8346-1",
-  "court": "제주지방법원",
-  "courtCode": "B000530",
-  "caseNo": "2025타경8346",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "제주특별자치도 서귀포시 대정읍 무릉리 3602-1",
-  "region": "제주",
-  "district": "서귀포시",
-  "appraisalPrice": 1450919000,
-  "minPrice": 243856000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-24",
-  "saleTime": "10:00",
-  "courtRoom": "제101호법정",
-  "deposit": 24385600,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 3151,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-28",
-    "minPrice": 1450919000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-02",
-    "minPrice": 1450919000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-07",
-    "minPrice": 1015643336,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-11",
-    "minPrice": 710950361,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-15",
-    "minPrice": 497665270,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-20",
-    "minPrice": 348365702,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "일괄매각, 농지취득자격증명 제출요(미제출시 보증금 미반환)"
- },
- {
   "id": "jeju-2025타경8714-1",
   "court": "제주지방법원",
   "courtCode": "B000530",
