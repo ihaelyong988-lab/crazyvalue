@@ -18,39 +18,44 @@
   "courtRoom": "219호법정",
   "deposit": 4823600,
   "depositRate": 10,
-  "depositSource": "observed",
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-01-12",
+    "date": "2026-04-27",
+    "minPrice": 287000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-01",
     "minPrice": 287000000,
     "result": "유찰"
    },
    {
-    "date": "2026-02-12",
-    "minPrice": 200900000,
+    "date": "2026-07-06",
+    "minPrice": 200899925,
     "result": "유찰"
    },
    {
-    "date": "2026-03-27",
-    "minPrice": 140630000,
+    "date": "2026-08-10",
+    "minPrice": 140629895,
     "result": "유찰"
    },
    {
-    "date": "2026-04-28",
-    "minPrice": 98441000,
+    "date": "2026-09-14",
+    "minPrice": 98440890,
     "result": "유찰"
    },
    {
-    "date": "2026-10-21",
-    "minPrice": 68909000,
+    "date": "2026-10-19",
+    "minPrice": 68908597,
     "result": "유찰"
    }
   ],
-  "historySource": "observed",
+  "historySource": "estimated",
   "specialNote": null
  },
  {
@@ -72,54 +77,59 @@
   "courtRoom": "219호법정",
   "deposit": 432400,
   "depositRate": 10,
-  "depositSource": "observed",
+  "depositSource": "estimated",
   "areaBuilding": null,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2025-10-29",
+    "date": "2026-01-12",
+    "minPrice": 75000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-16",
     "minPrice": 75000000,
     "result": "유찰"
    },
    {
-    "date": "2025-11-28",
-    "minPrice": 52500000,
+    "date": "2026-03-23",
+    "minPrice": 52500606,
     "result": "유찰"
    },
    {
-    "date": "2026-01-12",
-    "minPrice": 36750000,
+    "date": "2026-04-27",
+    "minPrice": 36750848,
     "result": "유찰"
    },
    {
-    "date": "2026-02-12",
-    "minPrice": 25725000,
+    "date": "2026-06-01",
+    "minPrice": 25725891,
     "result": "유찰"
    },
    {
-    "date": "2026-03-27",
-    "minPrice": 18008000,
+    "date": "2026-07-06",
+    "minPrice": 18008331,
     "result": "유찰"
    },
    {
-    "date": "2026-04-28",
-    "minPrice": 12606000,
+    "date": "2026-08-10",
+    "minPrice": 12605977,
     "result": "유찰"
    },
    {
-    "date": "2026-06-02",
-    "minPrice": 8824000,
+    "date": "2026-09-14",
+    "minPrice": 8824286,
     "result": "유찰"
    },
    {
-    "date": "2026-07-07",
-    "minPrice": 6177000,
+    "date": "2026-10-19",
+    "minPrice": 6177072,
     "result": "유찰"
    }
   ],
-  "historySource": "observed",
+  "historySource": "estimated",
   "specialNote": null
  },
  {

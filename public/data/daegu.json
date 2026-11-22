@@ -16,51 +16,51 @@
   "saleDate": "2026-11-23",
   "saleTime": "10:00",
   "courtRoom": "신관지하2층입찰법정",
-  "deposit": 5835400,
-  "depositRate": 20,
-  "depositSource": "observed",
+  "deposit": 2917700,
+  "depositRate": 10,
+  "depositSource": "estimated",
   "areaBuilding": 37.3514,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-01-16",
+    "date": "2026-03-23",
+    "minPrice": 248000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-27",
     "minPrice": 248000000,
     "result": "유찰"
    },
    {
-    "date": "2026-03-17",
-    "minPrice": 173600000,
+    "date": "2026-06-01",
+    "minPrice": 173600048,
     "result": "유찰"
    },
    {
-    "date": "2026-04-14",
-    "minPrice": 121520000,
+    "date": "2026-07-06",
+    "minPrice": 121520067,
     "result": "유찰"
    },
    {
-    "date": "2026-05-19",
-    "minPrice": 85064000,
+    "date": "2026-08-10",
+    "minPrice": 85064070,
     "result": "유찰"
    },
    {
-    "date": "2026-06-19",
-    "minPrice": 59545000,
+    "date": "2026-09-14",
+    "minPrice": 59544865,
     "result": "유찰"
    },
    {
-    "date": "2026-07-21",
-    "minPrice": 41682000,
+    "date": "2026-10-19",
+    "minPrice": 41681417,
     "result": "유찰"
-   },
-   {
-    "date": "2026-08-25",
-    "minPrice": 29177000,
-    "result": "변경"
    }
   ],
-  "historySource": "observed",
+  "historySource": "estimated",
   "specialNote": "재매각, 특별매각조건 매수신청보증금 최저매각가격의 20%"
  },
  {
@@ -82,34 +82,39 @@
   "courtRoom": "신관지하2층입찰법정",
   "deposit": 14406000,
   "depositRate": 10,
-  "depositSource": "observed",
+  "depositSource": "estimated",
   "areaBuilding": 64.49,
   "areaLand": null,
   "photoUrl": null,
   "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
   "history": [
    {
-    "date": "2026-07-21",
+    "date": "2026-06-01",
+    "minPrice": 600000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-06",
     "minPrice": 600000000,
     "result": "유찰"
    },
    {
-    "date": "2026-08-25",
+    "date": "2026-08-10",
     "minPrice": 420000000,
     "result": "유찰"
    },
    {
-    "date": "2026-09-29",
+    "date": "2026-09-14",
     "minPrice": 294000000,
     "result": "유찰"
    },
    {
-    "date": "2026-10-23",
+    "date": "2026-10-19",
     "minPrice": 205800000,
     "result": "유찰"
    }
   ],
-  "historySource": "observed",
+  "historySource": "estimated",
   "specialNote": null
  },
  {
