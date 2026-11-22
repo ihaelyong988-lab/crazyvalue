@@ -18,7 +18,7 @@
   "courtRoom": "본관제106호경매법정",
   "deposit": 12965400,
   "depositRate": 10,
-  "depositSource": "estimated",
+  "depositSource": "observed",
   "areaBuilding": 43.32,
   "areaLand": null,
   "photoUrl": null,
@@ -27,30 +27,25 @@
    {
     "date": "2026-06-01",
     "minPrice": 540000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-06",
-    "minPrice": 540000000,
     "result": "유찰"
    },
    {
-    "date": "2026-08-10",
+    "date": "2026-07-06",
     "minPrice": 378000000,
     "result": "유찰"
    },
    {
-    "date": "2026-09-14",
+    "date": "2026-08-10",
     "minPrice": 264600000,
     "result": "유찰"
    },
    {
-    "date": "2026-10-19",
+    "date": "2026-09-14",
     "minPrice": 185220000,
     "result": "유찰"
    }
   ],
-  "historySource": "estimated",
+  "historySource": "observed",
   "specialNote": "-공부상 용도 '제1종근린생활시설(소매점)이고, 현황 '음식점(상호:교반)'으로 이용 중임"
  },
  {
