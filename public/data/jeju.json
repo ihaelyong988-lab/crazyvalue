@@ -94,60 +94,6 @@
   "specialNote": null
  },
  {
-  "id": "jeju-2025타경1148-1",
-  "court": "제주지방법원",
-  "courtCode": "B000530",
-  "caseNo": "2025타경1148",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "제주특별자치도 서귀포시 대포동 2178",
-  "region": "제주",
-  "district": "서귀포시",
-  "appraisalPrice": 3204465000,
-  "minPrice": 769392000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-12-01",
-  "saleTime": "10:00",
-  "courtRoom": "제101호법정",
-  "deposit": 76939200,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 527,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-06-09",
-    "minPrice": 3204465000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-14",
-    "minPrice": 3204465000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-18",
-    "minPrice": 2243125466,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-22",
-    "minPrice": 1570187803,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-27",
-    "minPrice": 1099131445,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "- 일괄매각, 농지취득자격증명서 제출 필요"
- },
- {
   "id": "jeju-2025타경1252-1",
   "court": "제주지방법원",
   "courtCode": "B000530",
