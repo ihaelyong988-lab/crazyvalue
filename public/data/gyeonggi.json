@@ -1,4493 +1,5 @@
 [
  {
-  "id": "gyeonggi-2024타경4860-1",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2024타경4860",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경기도 김포시 월곶면 갈산리 산88-6",
-  "region": "경기",
-  "district": "김포시",
-  "appraisalPrice": 440426000,
-  "minPrice": 36271000,
-  "priceRatio": 0.0824,
-  "failCount": 7,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 3627100,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 582,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-02-19",
-    "minPrice": 440426000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-26",
-    "minPrice": 440426000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-30",
-    "minPrice": 308298230,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 215808783,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 151066163,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 105746324,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 74022434,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 51815709,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1.일괄매각 2. 지적도상 맹지이며 인근 토지를 통하여 출입 가능함 3. 목록5.토지(일부)상에 소유자 미상의 분묘 2기가 소재하는 것으로 파악되나 인접 토지와의 경계가 불분명하여 정확한 위치는 측량을 요함, 지상 분묘에 대한 분묘기지권 성립여부 불분명 4.토지 상에 자생하는 입목은 그 경제적 가치가 미미하고 토지와 일괄로 거래되는 관행 등을 고려하여 본건 토지에 포함하여 평가하였음(기타 자세한 사항은 감정평가서 참조 요)"
- },
- {
-  "id": "gyeonggi-2024타경89784-1",
-  "court": "의정부지방법원",
-  "courtCode": "B000214",
-  "caseNo": "2024타경89784",
-  "itemNo": "1",
-  "category": "아파트",
-  "address": "경기도 연천군 전곡읍 전곡리 381-7 1층101호",
-  "region": "경기",
-  "district": "연천군",
-  "appraisalPrice": 53200000,
-  "minPrice": 4381000,
-  "priceRatio": 0.0823,
-  "failCount": 7,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "제2별관1층제6호법정",
-  "deposit": 438100,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-02-19",
-    "minPrice": 53200000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-26",
-    "minPrice": 53200000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-30",
-    "minPrice": 37239698,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 26067577,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 18247156,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 12772906,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 8940961,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 6258622,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "건축법상 사용승인 받지 않은 건물로 대지권 미등기 상태임. (최저매각가격은 건물만의 평가가격임)"
- },
- {
-  "id": "gyeonggi-2025타경269-1",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경269",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "경기도 안산시 상록구 석삼말로 175-1 1층101호",
-  "region": "경기",
-  "district": "안산시 상록구",
-  "appraisalPrice": 133000000,
-  "minPrice": 31933000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 3193300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-06-04",
-    "minPrice": 133000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 133000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 93099781,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 65169694,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 45618679,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2025타경2861-1",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2025타경2861",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "경기도 김포시 구래동 6883-7 성현프라자 3층 304호",
-  "region": "경기",
-  "district": "김포시",
-  "appraisalPrice": 310000000,
-  "minPrice": 52102000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 5210200,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 84.55,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-30",
-    "minPrice": 310000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 310000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 217000250,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 151900350,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 106330367,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 74431343,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "인접호실(305호)과 함께 유흥주점으로 일괄 이용중 임"
- },
- {
-  "id": "gyeonggi-2025타경30545-1",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2025타경30545",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "경기도 부천시 소사구 경인로274번길 38 5층 501호 (심곡본동, 황토에이스타운)",
-  "region": "경기",
-  "district": "부천시 소사구",
-  "appraisalPrice": 130000000,
-  "minPrice": 2570000,
-  "priceRatio": 0.0198,
-  "failCount": 11,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 257000,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-10-02",
-    "minPrice": 130000000,
-    "result": "신건"
-   },
-   {
-    "date": "2025-11-06",
-    "minPrice": 130000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-12-11",
-    "minPrice": 90998311,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-01-15",
-    "minPrice": 63697635,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-19",
-    "minPrice": 44587517,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-26",
-    "minPrice": 31210683,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-30",
-    "minPrice": 21847072,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 15292667,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 10704668,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 7493129,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 5245093,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 3671497,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1. 내부에서 출입하는 전용테라스가 소재, 고려하여 평가함 2. 건물 외부에 '바동'으로 표기되어 있음"
- },
- {
-  "id": "gyeonggi-2025타경32650-1",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2025타경32650",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "경기도 부천시 원미구 심곡동 448-8 쌍용씨동 2층 202호",
-  "region": "경기",
-  "district": "부천시 원미구",
-  "appraisalPrice": 134000000,
-  "minPrice": 22521000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 2252100,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 35.1,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-30",
-    "minPrice": 134000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 134000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 93799683,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 65659557,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 45961535,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 32172966,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "특별매각조건 매수신청보증금 최저매각가격의 20%"
- },
- {
-  "id": "gyeonggi-2025타경33502-1",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2025타경33502",
-  "itemNo": "1",
-  "category": "상가",
-  "address": "경기도 김포시 구래동 6881-9 태경프라자 2층202호",
-  "region": "경기",
-  "district": "김포시",
-  "appraisalPrice": 1443000000,
-  "minPrice": 494949000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 49494900,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 93.79,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 1443000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 1443000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 1010100000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 707070000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "-일괄매각 -목록 1,2,3 건축물대장상 용도는 일반음식점이나 현황은 미용실로 이용중 임 -목록1,2,3 호별 구분벽 없이 일체로 이용중 임 -인접호와 명확한 경계구분은 되지 않은 상태이나 일시적으로 독립성을 상실한 경우로서, 추후 집합건축물대장상 건축물현황도에 의거 각 위치상 경계벽의 설치 및 출입구 설치 등으로 복원이 가능할 것으로 판단되는 바 경매진행시 참고 바람"
- },
- {
-  "id": "gyeonggi-2025타경33744-1",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2025타경33744",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "경기도 부천시 소사구 괴안동 100-51 제니스빌16차 1동 3층 302호",
-  "region": "경기",
-  "district": "부천시 소사구",
-  "appraisalPrice": 198000000,
-  "minPrice": 16307000,
-  "priceRatio": 0.0824,
-  "failCount": 7,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 1630700,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 36.68,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-02-19",
-    "minPrice": 198000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-26",
-    "minPrice": 198000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-30",
-    "minPrice": 138601030,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 97021443,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 67915515,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 47541214,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 33279097,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 23295541,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2025타경33795-1",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2025타경33795",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "경기도 김포시 하성면 석탄리 150-5",
-  "region": "경기",
-  "district": "김포시",
-  "appraisalPrice": 1441642000,
-  "minPrice": 494483000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 49448300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 1630,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 1441642000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 1441642000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 1009149260,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 706404384,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "-일괄매각. 공장및광업재단저당법 제6조 기계및기구 포함, 제시외 건물 및 물건 포함(감정평가서 참조) -목록1.토지는 목록2. 건물 부지 및 주차장 등으로 사용, 목록3.토지는 목록1,2 부동산 출입도로로 사용되는 것으로 보임 -본건 지상에 컨테이너4동이 소재하나 이동이 용이하므로 매각 및 평가에서 제외 -기계기구(공장 및 광업재단 저당법 제6조 목록 제2021-16호) (수변전시설 10KW)는 저당권 설정 이후에95KW로 증설된 것으로 탐문되는 바, 현황 증설되어 설치된 수변전시설을 기준으로 평가하였음(기타 자세한 사항은 감정평가서 참조), 본건 기계기구는 공장의 부합물 내지 종물로서 채권자의 일괄매각 신청 있음. -각 부동산의 정확한 면적이나 인접토지와의 경계, 위치 등은 측량 등 별도의 확인 요"
- },
- {
-  "id": "gyeonggi-2025타경33863-1",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2025타경33863",
-  "itemNo": "1",
-  "category": "아파트",
-  "address": "경기도 부천시 원미구 심곡동 458-2 다온하브 11층 1130호",
-  "region": "경기",
-  "district": "부천시 원미구",
-  "appraisalPrice": 188000000,
-  "minPrice": 15483000,
-  "priceRatio": 0.0824,
-  "failCount": 7,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 1548300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 27.901,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-02-19",
-    "minPrice": 188000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-26",
-    "minPrice": 188000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-30",
-    "minPrice": 131600476,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 92120666,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 64484699,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 45139452,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 31597731,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 22118492,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2025타경33949-1",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2025타경33949",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "경기도 부천시 소사구 심곡본동 746-21 마리나뷰 1층101호",
-  "region": "경기",
-  "district": "부천시 소사구",
-  "appraisalPrice": 640000000,
-  "minPrice": 107565000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 10756500,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 62.45,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-30",
-    "minPrice": 640000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 640000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 448000167,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 313600233,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 219520245,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 153664229,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2025타경34499-1",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2025타경34499",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "경기도 부천시 원미구 원미동 174-57 뜨란채비 5층502호",
-  "region": "경기",
-  "district": "부천시 원미구",
-  "appraisalPrice": 265000000,
-  "minPrice": 44539000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 4453900,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 58.155,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-30",
-    "minPrice": 265000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 265000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 185500375,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 129850525,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 90895551,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 63627014,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2025타경34579-1",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2025타경34579",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "경기도 김포시 운양동 1307-4 그랜드타워 1층122호",
-  "region": "경기",
-  "district": "김포시",
-  "appraisalPrice": 738000000,
-  "minPrice": 124036000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 12403600,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 48,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-30",
-    "minPrice": 738000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 738000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 516600283,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 361620397,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 253134416,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 177194189,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "집합건축물대장상 용도는 일반음식점이나 현황 공실임"
- },
- {
-  "id": "gyeonggi-2025타경34612-1",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2025타경34612",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "경기도 부천시 오정구 오정동 568-8 거성맨션17차 2층201호",
-  "region": "경기",
-  "district": "부천시 오정구",
-  "appraisalPrice": 145000000,
-  "minPrice": 49735000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 4973500,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 33.79,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 145000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 145000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 101500000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 71050000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2025타경34718-1",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2025타경34718",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "경기도 김포시 구래동 6878-7 중일라크리움 14층1416호",
-  "region": "경기",
-  "district": "김포시",
-  "appraisalPrice": 121000000,
-  "minPrice": 41503000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 4150300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 21.273,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 121000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 121000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 84700000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 59290000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2025타경34828-1",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2025타경34828",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "경기도 부천시 원미구 도당동 67-9 베스트빌 1동 5층501호",
-  "region": "경기",
-  "district": "부천시 원미구",
-  "appraisalPrice": 204000000,
-  "minPrice": 34286000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 3428600,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 55.135,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-30",
-    "minPrice": 204000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 204000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 142799767,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 99959673,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 69971657,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 48980080,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "-베란다에 제시외 건물(판넬조 판넬지붕 다용도실 약 7㎡)이소재하는 바, 본건 건물에 포함하여 평가 경매진행시 참고 바람"
- },
- {
-  "id": "gyeonggi-2025타경34989-1",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2025타경34989",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "경기도 김포시 마산동 638-4 한강동일스위트더파크뷰1단지 근린생활시설에이동 1층126호",
-  "region": "경기",
-  "district": "김포시",
-  "appraisalPrice": 254000000,
-  "minPrice": 60985000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 6098500,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 27.2963,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-06-04",
-    "minPrice": 254000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 254000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 177799708,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 124459592,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 87121571,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2025타경35194-1",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2025타경35194",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "경기도 부천시 소사구 옥길동 795-1 광양프런티어밸리5차지식산업센터 1층124호",
-  "region": "경기",
-  "district": "부천시 소사구",
-  "appraisalPrice": 1030000000,
-  "minPrice": 247303000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 24730300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 59.29,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-06-04",
-    "minPrice": 1030000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 1030000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 721000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 504700000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 353290000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "-현황 '교회(상호:하안중앙교회)'로 이용중 임"
- },
- {
-  "id": "gyeonggi-2025타경35272-1",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2025타경35272",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "경기도 부천시 오정구 여월동 9-25 현대에스빌 2층203호",
-  "region": "경기",
-  "district": "부천시 오정구",
-  "appraisalPrice": 205000000,
-  "minPrice": 49221000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 4922100,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 39.945,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-06-04",
-    "minPrice": 205000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 205000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 143500364,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 100450510,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 70315536,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2025타경35298-1",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2025타경35298",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "경기도 김포시 구래동 6871-53 현대썬앤빌더킹 6층에이06-051호",
-  "region": "경기",
-  "district": "김포시",
-  "appraisalPrice": 138000000,
-  "minPrice": 47334000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 4733400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 25.8272,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 138000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 138000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 96600000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 67620000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2025타경35298-2",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2025타경35298",
-  "itemNo": "2",
-  "category": "오피스텔",
-  "address": "경기도 김포시 구래동 6871-53 현대썬앤빌더킹 7층에이07-051호",
-  "region": "경기",
-  "district": "김포시",
-  "appraisalPrice": 138000000,
-  "minPrice": 47334000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 4733400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 25.8272,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 138000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 138000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 96600000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 67620000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2025타경35298-3",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2025타경35298",
-  "itemNo": "3",
-  "category": "오피스텔",
-  "address": "경기도 김포시 구래동 6871-53 현대썬앤빌더킹 10층에이10-066호",
-  "region": "경기",
-  "district": "김포시",
-  "appraisalPrice": 118000000,
-  "minPrice": 40474000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 4047400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 22.019,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 118000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 118000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 82600000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 57820000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2025타경35318-1",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2025타경35318",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "경기도 부천시 원미구 중동 900-7 엘리타운 5층503호",
-  "region": "경기",
-  "district": "부천시 원미구",
-  "appraisalPrice": 291000000,
-  "minPrice": 99813000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 9981300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 49.38,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 291000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 291000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 203700000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 142590000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2025타경35382-1",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2025타경35382",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "경기도 부천시 소사구 심곡본동 566-56 신진엘니도하우스 107동 2층202호",
-  "region": "경기",
-  "district": "부천시 소사구",
-  "appraisalPrice": 190000000,
-  "minPrice": 65170000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 6517000,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 58.71,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 190000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 190000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 133000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 93100000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2025타경35474-1",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2025타경35474",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "경기도 부천시 소사구 괴안동 183-16 현대빌라 3층301호",
-  "region": "경기",
-  "district": "부천시 소사구",
-  "appraisalPrice": 171000000,
-  "minPrice": 58653000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 5865300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 43.32,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 171000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 171000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 119700000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 83790000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2025타경35572-1",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2025타경35572",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "경기도 부천시 원미구 중동 1143 신일아르디세 9층904호",
-  "region": "경기",
-  "district": "부천시 원미구",
-  "appraisalPrice": 345000000,
-  "minPrice": 118335000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 11833500,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 92.42,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 345000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 345000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 241500000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 169050000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2025타경3633-1",
-  "court": "의정부지방법원",
-  "courtCode": "B000214",
-  "caseNo": "2025타경3633",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "경기도 포천시 어룡동 195-10 엘리시아 104동 2층202호",
-  "region": "경기",
-  "district": "포천시",
-  "appraisalPrice": 132000000,
-  "minPrice": 31693000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "제2별관1층제6호법정",
-  "deposit": 3169300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 48.86,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-06-04",
-    "minPrice": 132000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 132000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 92399854,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 64679796,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 45275786,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "재매각(매수신청보증금 20%)"
- },
- {
-  "id": "gyeonggi-2025타경4300-1",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2025타경4300",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "경기도 김포시 운양동 1307-5 에이치씨티 1층113호",
-  "region": "경기",
-  "district": "김포시",
-  "appraisalPrice": 902000000,
-  "minPrice": 216570000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 21657000,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 58,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-06-04",
-    "minPrice": 902000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 902000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 631399854,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 441979796,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 309385786,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2025타경4919-1",
-  "court": "의정부지방법원",
-  "courtCode": "B000214",
-  "caseNo": "2025타경4919",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "경기도 포천시 일동면 수입리 202 가동",
-  "region": "경기",
-  "district": "포천시",
-  "appraisalPrice": 102889800,
-  "minPrice": 17293000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "제2별관1층제6호법정",
-  "deposit": 1729300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 89.28,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-30",
-    "minPrice": 102889800,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 102889800,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 72023119,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 50416365,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 35291583,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 24704197,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1.일괄매각 2.건물만의 경매임. 법정지상권 성립여부 불분명"
- },
- {
-  "id": "gyeonggi-2025타경51905-1",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경51905",
-  "itemNo": "1",
-  "category": "상가",
-  "address": "경기도 시흥시 배곧동 299-3 배곧로얄팰리스테크노1차 주건축물제1동 7층733호",
-  "region": "경기",
-  "district": "시흥시",
-  "appraisalPrice": 426000000,
-  "minPrice": 102283000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 10228300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 149.5,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-06-04",
-    "minPrice": 426000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 426000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 298200292,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 208740408,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 146118429,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1.재매각사건임(매수신청보증금은 최저매각가격의 20%임). 2.집합건출물대장상 용도는 일반공장임."
- },
- {
-  "id": "gyeonggi-2025타경51974-1",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경51974",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "경기도 시흥시 정왕동 2123-2 케이피유디에스벤처타운 101동 10층1001호",
-  "region": "경기",
-  "district": "시흥시",
-  "appraisalPrice": 90000000,
-  "minPrice": 30870000,
-  "priceRatio": 0.343,
-  "failCount": 9,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 3087000,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 28.58,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-12-11",
-    "minPrice": 90000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-01-15",
-    "minPrice": 90000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-19",
-    "minPrice": 79911360,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-26",
-    "minPrice": 70953616,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-30",
-    "minPrice": 63000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 55937952,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 49667532,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 44100000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 39156566,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 34767272,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "'주택도시보증공사'(양도전:임차인 천**)로부터 '임차보증금에 대하여 우선변제권만 주장하고 대항력은 포기하며, 배당금으로 임차보증금 반환채권 전액을 변제받지 못하더라도 임차권등기를 말소하는 것에 동의한다'는 확약서가 2026.06.10. 제출됨."
- },
- {
-  "id": "gyeonggi-2025타경52074-1",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경52074",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "경기도 안산시 상록구 부곡동 654-4 동산타워 나동 5층502호",
-  "region": "경기",
-  "district": "안산시 상록구",
-  "appraisalPrice": 169000000,
-  "minPrice": 57967000,
-  "priceRatio": 0.343,
-  "failCount": 9,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 5796700,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 55.345,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-12-11",
-    "minPrice": 169000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-01-15",
-    "minPrice": 169000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-19",
-    "minPrice": 150055776,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-26",
-    "minPrice": 133235124,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-30",
-    "minPrice": 118300000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 105039043,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 93264587,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 82810000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 73527330,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 65285211,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "'주택도시보증공사'(양도전:임차인 최** )로부터 '임차보증금에 대하여 우선변제권만 주장하고 대항력은 포기하며, 배당금으로 임차보증금 반환채권 전액을 변제받지 못하더라도 임차권등기를 말소하는 것에 동의한다'는 확약서가 2026.06.09. 제출됨."
- },
- {
-  "id": "gyeonggi-2025타경52101-1",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경52101",
-  "itemNo": "1",
-  "category": "상가",
-  "address": "경기도 안산시 단원구 성곡동 845-5 마리나아일랜드 1층101호",
-  "region": "경기",
-  "district": "안산시 단원구",
-  "appraisalPrice": 810000000,
-  "minPrice": 136136000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 13613600,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 1,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-30",
-    "minPrice": 810000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 810000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 566999417,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 396899184,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 277829143,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 194480200,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1. 공부상 근린생활시설로 이용중이고 현황 공실임(감정평가시 기준). 2. 대지권의 목적인 토지에 별도등기('공유수면 관리 및 매립에 관한 법률'에 따른 금지사항 부기등기) 존재."
- },
- {
-  "id": "gyeonggi-2025타경52101-2",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경52101",
-  "itemNo": "2",
-  "category": "상가",
-  "address": "경기도 안산시 단원구 성곡동 845-5 마리나아일랜드 1층102호",
-  "region": "경기",
-  "district": "안산시 단원구",
-  "appraisalPrice": 773000000,
-  "minPrice": 129917000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 12991700,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 1,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-30",
-    "minPrice": 773000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 773000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 541099075,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 378768706,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 265137641,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 185596031,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1. 공부상 근린생활시설로 이용중이고 현황 공실임(감정평가시 기준). 2. 대지권의 목적인 토지에 별도등기('공유수면 관리 및 매립에 관한 법률'에 따른 금지사항 부기등기) 존재."
- },
- {
-  "id": "gyeonggi-2025타경52101-3",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경52101",
-  "itemNo": "3",
-  "category": "상가",
-  "address": "경기도 안산시 단원구 성곡동 845-5 마리나아일랜드 1층104호",
-  "region": "경기",
-  "district": "안산시 단원구",
-  "appraisalPrice": 588000000,
-  "minPrice": 98824000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 9882400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 1,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-30",
-    "minPrice": 588000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 588000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 411599034,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 288118647,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 201682580,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 141177474,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1. 공부상 근린생활시설로 이용중이고 현황 공실임(감정평가시 기준). 2. 대지권의 목적인 토지에 별도등기('공유수면 관리 및 매립에 관한 법률'에 따른 금지사항 부기등기) 존재."
- },
- {
-  "id": "gyeonggi-2025타경52101-4",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경52101",
-  "itemNo": "4",
-  "category": "상가",
-  "address": "경기도 안산시 단원구 성곡동 845-5 마리나아일랜드 1층105호",
-  "region": "경기",
-  "district": "안산시 단원구",
-  "appraisalPrice": 713000000,
-  "minPrice": 119833000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 11983300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 1,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-30",
-    "minPrice": 713000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 713000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 499099242,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 349368939,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 244557886,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 171190260,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1. 공부상 근린생활시설로 이용중이고 현황 공실임(감정평가시 기준). 2. 대지권의 목적인 토지에 별도등기('공유수면 관리 및 매립에 관한 법률'에 따른 금지사항 부기등기) 존재."
- },
- {
-  "id": "gyeonggi-2025타경52296-1",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경52296",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "경기도 시흥시 거모동 1772-16 4층401호",
-  "region": "경기",
-  "district": "시흥시",
-  "appraisalPrice": 141000000,
-  "minPrice": 8127000,
-  "priceRatio": 0.0576,
-  "failCount": 8,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 812700,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 67.08,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-01-15",
-    "minPrice": 141000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-02-19",
-    "minPrice": 141000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-26",
-    "minPrice": 98697921,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-30",
-    "minPrice": 69087090,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 48359944,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 33851248,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 23695375,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 16586413,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 11610245,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "-현황 상 건물 외벽에 \"효경빌라\"로 표시되어 있음. -전세사기피해자 지원 및 주거안정에 관한 특별법 제20조 제1항에 의한 전세사기피해자의 우선매수권 있음."
- },
- {
-  "id": "gyeonggi-2025타경52706-1",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경52706",
-  "itemNo": "1",
-  "category": "상가",
-  "address": "경기도 광명시 소하동 1344 광명지타워 지1층지167호",
-  "region": "경기",
-  "district": "광명시",
-  "appraisalPrice": 805000000,
-  "minPrice": 94708000,
-  "priceRatio": 0.1176,
-  "failCount": 6,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 9470800,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 56.12,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-26",
-    "minPrice": 805000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-30",
-    "minPrice": 805000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 563500550,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 394450771,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 276115809,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 193281255,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 135297011,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "공부상 근린생활시설임."
- },
- {
-  "id": "gyeonggi-2025타경53140-1",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경53140",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "경기도 시흥시 배곧동 204 서영베니스스퀘어 1층에이-19호",
-  "region": "경기",
-  "district": "시흥시",
-  "appraisalPrice": 840000000,
-  "minPrice": 288120000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 28812000,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 48.85,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 840000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 840000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 588000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 411600000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "공실임(감정평가시 기준)."
- },
- {
-  "id": "gyeonggi-2025타경53140-2",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경53140",
-  "itemNo": "2",
-  "category": "기타",
-  "address": "경기도 시흥시 배곧동 204 서영베니스스퀘어 1층씨-36호",
-  "region": "경기",
-  "district": "시흥시",
-  "appraisalPrice": 550000000,
-  "minPrice": 188650000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 18865000,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 32.02,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 550000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 550000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 385000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 269500000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "공실임(감정평가시 기준)."
- },
- {
-  "id": "gyeonggi-2025타경53140-3",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경53140",
-  "itemNo": "3",
-  "category": "기타",
-  "address": "경기도 시흥시 배곧동 204 서영베니스스퀘어 1층씨-44호",
-  "region": "경기",
-  "district": "시흥시",
-  "appraisalPrice": 880000000,
-  "minPrice": 301840000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 30184000,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 49.35,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 880000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 880000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 616000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 431200000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "공실임(감정평가시 기준)."
- },
- {
-  "id": "gyeonggi-2025타경53205-1",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경53205",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경기도 안산시 단원구 대부남동 1050-7",
-  "region": "경기",
-  "district": "안산시 단원구",
-  "appraisalPrice": 699858000,
-  "minPrice": 117624000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 11762400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 3954,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-30",
-    "minPrice": 699858000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 699858000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 489899655,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 342929097,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 240049905,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 168034610,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1. 농경지 (답)으로 이용 중이고, 맹지임. 2. 특별매각조건 : 농지취득자격증명 제출 필요(매각결정기일까지 미제출시 보증금은 반환하지 않음)"
- },
- {
-  "id": "gyeonggi-2025타경5341-1",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2025타경5341",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "경기도 김포시 구래동 6871-60 샹보르영무파라드김포한강1동 4층 428호",
-  "region": "경기",
-  "district": "김포시",
-  "appraisalPrice": 148000000,
-  "minPrice": 50764000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 5076400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 36,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 148000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 148000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 103600000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 72520000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "공장(지식산업센터)임"
- },
- {
-  "id": "gyeonggi-2025타경5341-2",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2025타경5341",
-  "itemNo": "2",
-  "category": "기타",
-  "address": "경기도 김포시 구래동 6871-60 샹보르영무파라드김포한강1동 4층 429호",
-  "region": "경기",
-  "district": "김포시",
-  "appraisalPrice": 148000000,
-  "minPrice": 50764000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 5076400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 36,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 148000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 148000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 103600000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 72520000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "공장(지식산업센터)임"
- },
- {
-  "id": "gyeonggi-2025타경53431-1",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경53431",
-  "itemNo": "1",
-  "category": "상가",
-  "address": "경기도 안산시 단원구 신길동 1229 리드스마트스퀘어지식산업센터 1층씨에이-185호",
-  "region": "경기",
-  "district": "안산시 단원구",
-  "appraisalPrice": 434000000,
-  "minPrice": 104203000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 10420300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 29.67,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-06-04",
-    "minPrice": 434000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 434000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 303799708,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 212659592,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 148861571,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "음식점으로 이용 중임."
- },
- {
-  "id": "gyeonggi-2025타경53458-1",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경53458",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "경기도 안산시 상록구 사동 1323-6 3층301호",
-  "region": "경기",
-  "district": "안산시 상록구",
-  "appraisalPrice": 157000000,
-  "minPrice": 53851000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 5385100,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 76.03,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 157000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 157000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 109900000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 76930000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "다세대 주택으로 이용 중이고 현황상 공실임(감정평가시 기준)."
- },
- {
-  "id": "gyeonggi-2025타경5655-1",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2025타경5655",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "경기도 부천시 오정구 고강동 311-21 고려주택 씨동 3층1호",
-  "region": "경기",
-  "district": "부천시 오정구",
-  "appraisalPrice": 87000000,
-  "minPrice": 29841000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 2984100,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 28.05,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 87000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 87000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 60900000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 42630000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "부동산의 호수 표시는 '3층1호'이나 현관문에는 '301호'로 표시되어 있음"
- },
- {
-  "id": "gyeonggi-2025타경600-2",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경600",
-  "itemNo": "2",
-  "category": "상가",
-  "address": "경기도 시흥시 장현동 671-2 아띠프라자 2층205호",
-  "region": "경기",
-  "district": "시흥시",
-  "appraisalPrice": 492000000,
-  "minPrice": 118129000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 11812900,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 54.82,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-06-04",
-    "minPrice": 492000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 492000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 344399854,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 241079796,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 168755786,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1. 공부상 일반음식점이나 현황상 공실상태임(감정평가시기준). 2. 2024.08.~2025.05.까지의 관리비 1,656,370원이 미납된 상태임(감정평가서 참조). 매수신청일 현재까지의 관리비 등 연체 현황에 관하여는 해당 관리주체에게 문의 요함."
- },
- {
-  "id": "gyeonggi-2025타경600-3",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경600",
-  "itemNo": "3",
-  "category": "상가",
-  "address": "경기도 시흥시 장현동 671-2 아띠프라자 2층206호",
-  "region": "경기",
-  "district": "시흥시",
-  "appraisalPrice": 493000000,
-  "minPrice": 118369000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 11836900,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 54.98,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-06-04",
-    "minPrice": 493000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 493000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 345099781,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 241569694,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 169098679,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1. 공부상 일반음식점이나 현황상 공실상태임(감정평가시기준). 2. 2024.08.~2025.05.까지의 관리비 1,661,300원이 미납된 상태임(감정평가서 참조). 매수신청일 현재까지의 관리비 등 연체 현황에 관하여는 해당 관리주체에게 문의 요함."
- },
- {
-  "id": "gyeonggi-2025타경625-1",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경625",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "경기도 안산시 상록구 부곡동 647-15 제이앤빌 2층201호",
-  "region": "경기",
-  "district": "안산시 상록구",
-  "appraisalPrice": 122000000,
-  "minPrice": 41846000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 4184600,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 29.62,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 122000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 122000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 85400000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 59780000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "'전세사기피해자 지원 및 주거안정에 관한 특별법'에 의한 전세사기피해자의 우선매수권 있음."
- },
- {
-  "id": "gyeonggi-2025타경625-11",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경625",
-  "itemNo": "11",
-  "category": "다세대",
-  "address": "경기도 안산시 상록구 부곡동 647-15 제이앤빌 5층502호",
-  "region": "경기",
-  "district": "안산시 상록구",
-  "appraisalPrice": 103000000,
-  "minPrice": 35329000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 3532900,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 26.38,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 103000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 103000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 72100000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 50470000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "건축물대장 상 위법건축물로 등재됨. 향후 이행강제금이 부과될 수 있으므로 이 부분 사전에 확인 요함."
- },
- {
-  "id": "gyeonggi-2025타경625-2",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경625",
-  "itemNo": "2",
-  "category": "다세대",
-  "address": "경기도 안산시 상록구 부곡동 647-15 제이앤빌 2층202호",
-  "region": "경기",
-  "district": "안산시 상록구",
-  "appraisalPrice": 122000000,
-  "minPrice": 41846000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 4184600,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 29.7,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 122000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 122000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 85400000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 59780000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2025타경625-3",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경625",
-  "itemNo": "3",
-  "category": "다세대",
-  "address": "경기도 안산시 상록구 부곡동 647-15 제이앤빌 2층203호",
-  "region": "경기",
-  "district": "안산시 상록구",
-  "appraisalPrice": 122000000,
-  "minPrice": 41846000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 4184600,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 29.62,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 122000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 122000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 85400000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 59780000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2025타경625-4",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경625",
-  "itemNo": "4",
-  "category": "다세대",
-  "address": "경기도 안산시 상록구 부곡동 647-15 제이앤빌 3층301호",
-  "region": "경기",
-  "district": "안산시 상록구",
-  "appraisalPrice": 121000000,
-  "minPrice": 41503000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 4150300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 29.62,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 121000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 121000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 84700000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 59290000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2025타경625-5",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경625",
-  "itemNo": "5",
-  "category": "다세대",
-  "address": "경기도 안산시 상록구 부곡동 647-15 제이앤빌 3층302호",
-  "region": "경기",
-  "district": "안산시 상록구",
-  "appraisalPrice": 121000000,
-  "minPrice": 41503000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 4150300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 29.7,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 121000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 121000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 84700000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 59290000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2025타경625-6",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경625",
-  "itemNo": "6",
-  "category": "다세대",
-  "address": "경기도 안산시 상록구 부곡동 647-15 제이앤빌 3층303호",
-  "region": "경기",
-  "district": "안산시 상록구",
-  "appraisalPrice": 121000000,
-  "minPrice": 41503000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 4150300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 29.62,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 121000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 121000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 84700000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 59290000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "'전세사기피해자 지원 및 주거안정에 관한 특별법'에 의한 전세사기피해자의 우선매수권 있음."
- },
- {
-  "id": "gyeonggi-2025타경625-8",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경625",
-  "itemNo": "8",
-  "category": "다세대",
-  "address": "경기도 안산시 상록구 부곡동 647-15 제이앤빌 4층402호",
-  "region": "경기",
-  "district": "안산시 상록구",
-  "appraisalPrice": 103000000,
-  "minPrice": 35329000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 3532900,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 25.9,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 103000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 103000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 72100000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 50470000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "건축물대장 상 위법건축물로 등재됨. 향후 이행강제금이 부과될 수 있으므로 이 부분 사전에 확인 요함."
- },
- {
-  "id": "gyeonggi-2025타경625-9",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경625",
-  "itemNo": "9",
-  "category": "다세대",
-  "address": "경기도 안산시 상록구 부곡동 647-15 제이앤빌 4층403호",
-  "region": "경기",
-  "district": "안산시 상록구",
-  "appraisalPrice": 116000000,
-  "minPrice": 39788000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 3978800,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 28.93,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 116000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 116000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 81200000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 56840000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "건축물대장 상 위법건축물로 등재됨. 향후 이행강제금이 부과될 수 있으므로 이 부분 사전에 확인 요함."
- },
- {
-  "id": "gyeonggi-2025타경707-1",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경707",
-  "itemNo": "1",
-  "category": "상가",
-  "address": "경기도 시흥시 배곧동 18-7 로데오프라자 1층109호",
-  "region": "경기",
-  "district": "시흥시",
-  "appraisalPrice": 568000000,
-  "minPrice": 194824000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 19482400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 45.36,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 568000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 568000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 397600000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 278320000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "모닝스텔라 상호는 있으나 영업이 중단된 상태로 사무실 용도로 이용 중임."
- },
- {
-  "id": "gyeonggi-2025타경71776-1",
-  "court": "의정부지방법원",
-  "courtCode": "B000214",
-  "caseNo": "2025타경71776",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "경기도 동두천시 상봉암동 140-29",
-  "region": "경기",
-  "district": "동두천시",
-  "appraisalPrice": 3099799000,
-  "minPrice": 744262000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "제2별관1층제6호법정",
-  "deposit": 74426200,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 367.4,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-06-04",
-    "minPrice": 3099799000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 3099799000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 2169859490,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 1518901775,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 1063231336,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1. 일괄매각, 지분매각(목록 1,7~9) 2. 목록2~12 농지취득자격증명 요함(미제출시 보증금 미반환)"
- },
- {
-  "id": "gyeonggi-2025타경72312-1",
-  "court": "의정부지방법원",
-  "courtCode": "B000214",
-  "caseNo": "2025타경72312",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "경기도 포천시 군내면 용정리 479-1 포천웰플렉스용정산단 2층228호",
-  "region": "경기",
-  "district": "포천시",
-  "appraisalPrice": 217000000,
-  "minPrice": 36471000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "제2별관1층제6호법정",
-  "deposit": 3647100,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 48.93,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-30",
-    "minPrice": 217000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 217000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 151899842,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 106329778,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 74430767,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 52101483,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2025타경72312-2",
-  "court": "의정부지방법원",
-  "courtCode": "B000214",
-  "caseNo": "2025타경72312",
-  "itemNo": "2",
-  "category": "기타",
-  "address": "경기도 포천시 군내면 용정리 479-1 포천웰플렉스용정산단 8층805호",
-  "region": "경기",
-  "district": "포천시",
-  "appraisalPrice": 108000000,
-  "minPrice": 18152000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "제2별관1층제6호법정",
-  "deposit": 1815200,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 20.47,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-30",
-    "minPrice": 108000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 108000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 75600367,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 52920513,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 37044539,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 25931303,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2025타경72325-1",
-  "court": "의정부지방법원",
-  "courtCode": "B000214",
-  "caseNo": "2025타경72325",
-  "itemNo": "1",
-  "category": "아파트",
-  "address": "경기도 의정부시 의정부동 214-76 혜성루첸리 10층1005호",
-  "region": "경기",
-  "district": "의정부시",
-  "appraisalPrice": 150000000,
-  "minPrice": 51450000,
-  "priceRatio": 0.343,
-  "failCount": 6,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "제2별관1층제6호법정",
-  "deposit": 5145000,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 21.314,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-26",
-    "minPrice": 150000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-30",
-    "minPrice": 150000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 125499004,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 105000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 87849303,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 73500000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 61494512,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2025타경72983-1",
-  "court": "의정부지방법원",
-  "courtCode": "B000214",
-  "caseNo": "2025타경72983",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "경기도 양주시 옥정동 987-1 양주옥정듀클래스1 5층514호",
-  "region": "경기",
-  "district": "양주시",
-  "appraisalPrice": 424000000,
-  "minPrice": 71261000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "제2별관1층제6호법정",
-  "deposit": 7126100,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 109.8694,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-30",
-    "minPrice": 424000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 424000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 296799434,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 207759207,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 145431167,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 101801623,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2025타경73089-1",
-  "court": "의정부지방법원",
-  "courtCode": "B000214",
-  "caseNo": "2025타경73089",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경기도 연천군 백학면 노곡리 299-2",
-  "region": "경기",
-  "district": "연천군",
-  "appraisalPrice": 109864000,
-  "minPrice": 37684000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "제2별관1층제6호법정",
-  "deposit": 3768400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 1868,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 109864000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 109864000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 76905241,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 53833977,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1. 일괄매각 2. 농지취득자격증명요함(미제출시 보증금 미반환)"
- },
- {
-  "id": "gyeonggi-2025타경73089-2",
-  "court": "의정부지방법원",
-  "courtCode": "B000214",
-  "caseNo": "2025타경73089",
-  "itemNo": "2",
-  "category": "토지",
-  "address": "경기도 연천군 백학면 노곡리 303",
-  "region": "경기",
-  "district": "연천군",
-  "appraisalPrice": 170197000,
-  "minPrice": 58378000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "제2별관1층제6호법정",
-  "deposit": 5837800,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 2254,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 170197000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 170197000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 119138192,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 83396939,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1. 일괄매각, 제시외 건물 포함 2. 농지취득자격증명요함(미제출시 보증금 미반환)"
- },
- {
-  "id": "gyeonggi-2025타경73450-1",
-  "court": "의정부지방법원",
-  "courtCode": "B000214",
-  "caseNo": "2025타경73450",
-  "itemNo": "1",
-  "category": "단독다가구",
-  "address": "경기도 의정부시 의정부동 191-12",
-  "region": "경기",
-  "district": "의정부시",
-  "appraisalPrice": 879726760,
-  "minPrice": 147855000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "제2별관1층제6호법정",
-  "deposit": 14785500,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 2,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-30",
-    "minPrice": 879726760,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 879726760,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 615808168,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 431065323,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 301745450,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 211221622,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "일괄매각. 제시외 건물 포함"
- },
- {
-  "id": "gyeonggi-2025타경782-1",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경782",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "경기도 시흥시 배곧동 292-2 배곧시그니처타워 1층147호",
-  "region": "경기",
-  "district": "시흥시",
-  "appraisalPrice": 381000000,
-  "minPrice": 64034000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 6403400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 25.74,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-30",
-    "minPrice": 381000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 381000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 266699442,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 186689219,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 130682180,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 91477334,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "매각대상 호실은 인접한 148호실, 149호실과 벽체(호별) 구분 없이 일체로 골프연습장으로 이용 중임. 현재 각 전유부분의 위치와 면적을 특정할 수 있고, 독립성 상실은 일시적이며 그 복원은 용이한 것으로 조사되었으나 복원에 필요한 비용은 현재 정확히 산정할 수 없음. 매수 신고 시 이 부분은 사전에 검토 요망."
- },
- {
-  "id": "gyeonggi-2025타경782-2",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경782",
-  "itemNo": "2",
-  "category": "기타",
-  "address": "경기도 시흥시 배곧동 292-2 배곧시그니처타워 1층149호",
-  "region": "경기",
-  "district": "시흥시",
-  "appraisalPrice": 310000000,
-  "minPrice": 52101000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 5210100,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 25.74,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-30",
-    "minPrice": 310000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 310000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 216999417,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 151899184,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 106329143,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 74430200,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "매각대상 호실은 인접한 147호실, 148호실과 벽체(호별) 구분 없이 일체로 골프연습장으로 이용 중임. 현재 각 전유부분의 위치와 면적을 특정할 수 있고, 독립성 상실은 일시적이며 그 복원은 용이한 것으로 조사되었으나 복원에 필요한 비용은 현재 정확히 산정할 수 없음. 매수 신고 시 이 부분은 사전에 검토 요망."
- },
- {
-  "id": "gyeonggi-2025타경860-1",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경860",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "경기도 안산시 단원구 와동 713-14 지하층비103호",
-  "region": "경기",
-  "district": "안산시 단원구",
-  "appraisalPrice": 52000000,
-  "minPrice": 17836000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 1783600,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 40.32,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 52000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 52000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 36400000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 25480000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "다세대 주택을 이용 중임."
- },
- {
-  "id": "gyeonggi-2025타경868-1",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경868",
-  "itemNo": "1",
-  "category": "상가",
-  "address": "경기도 시흥시 배곧동 299-3 배곧로얄팰리스테크노1차 주건축물제1동 지1층비127호",
-  "region": "경기",
-  "district": "시흥시",
-  "appraisalPrice": 848000000,
-  "minPrice": 290864000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 29086400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 91.77,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 848000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 848000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 593600000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 415520000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "근린생활시설로 현황상 공실임."
- },
- {
-  "id": "gyeonggi-2025타경889-1",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경889",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "경기도 시흥시 장현동 671-2 아띠프라자 2층201호",
-  "region": "경기",
-  "district": "시흥시",
-  "appraisalPrice": 410000000,
-  "minPrice": 140630000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 14063000,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 43.63,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 410000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 410000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 287000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 200900000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "공부상 근린생활시설로 이용 중이고 공실임(감정평가시 기준)."
- },
- {
-  "id": "gyeonggi-2025타경889-2",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경889",
-  "itemNo": "2",
-  "category": "오피스텔",
-  "address": "경기도 시흥시 장현동 671-2 아띠프라자 2층202호",
-  "region": "경기",
-  "district": "시흥시",
-  "appraisalPrice": 352000000,
-  "minPrice": 120736000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 12073600,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 37.46,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 352000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 352000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 246400000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 172480000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "공부상 근린생활시설로 이용 중이고 공실임(감정평가시 기준)."
- },
- {
-  "id": "gyeonggi-2025타경889-3",
-  "court": "안산지원",
-  "courtCode": "B250826",
-  "caseNo": "2025타경889",
-  "itemNo": "3",
-  "category": "오피스텔",
-  "address": "경기도 시흥시 장현동 671-2 아띠프라자 2층203호",
-  "region": "경기",
-  "district": "시흥시",
-  "appraisalPrice": 362000000,
-  "minPrice": 124166000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "본관1층경매법정",
-  "deposit": 12416600,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 38.58,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 362000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 362000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 253400000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 177380000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "공부상 근린생활시설로 이용 중이고 공실임(감정평가시 기준)."
- },
- {
-  "id": "gyeonggi-2026타경30109-1",
-  "court": "부천지원",
-  "courtCode": "B000241",
-  "caseNo": "2026타경30109",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "경기도 김포시 장기동 2077-6 라베니체마치에비뉴6 2층214호",
-  "region": "경기",
-  "district": "김포시",
-  "appraisalPrice": 612000000,
-  "minPrice": 209916000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "별관122호법정",
-  "deposit": 20991600,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 47.92,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 612000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 612000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 428400000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 299880000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2026타경70124-1",
-  "court": "의정부지방법원",
-  "courtCode": "B000214",
-  "caseNo": "2026타경70124",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "경기도 포천시 어룡동 336-16 더스타일2차 1동 1층 102호",
-  "region": "경기",
-  "district": "포천시",
-  "appraisalPrice": 331500000,
-  "minPrice": 113705000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "제2별관1층제6호법정",
-  "deposit": 11370500,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 74.52,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 331500000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 331500000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 232050340,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 162435476,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "제시외 건물 포함"
- },
- {
-  "id": "gyeonggi-2026타경70268-1",
-  "court": "의정부지방법원",
-  "courtCode": "B000214",
-  "caseNo": "2026타경70268",
-  "itemNo": "1",
-  "category": "단독다가구",
-  "address": "경기도 연천군 연천읍 차탄리 228-15",
-  "region": "경기",
-  "district": "연천군",
-  "appraisalPrice": 265083870,
-  "minPrice": 86489000,
-  "priceRatio": 0.3263,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "제2별관1층제6호법정",
-  "deposit": 8648900,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 332,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 265083870,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 265083870,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 182491438,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 125632408,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1. 일괄매각, 제시외 건물 포함(목록 3.) 2. 목록 1. 지상위에 매각에서 제외되는 제시외 건물 소재 3. 목록 1. 제시외 건물로 인하여 소유권 등이 제한받는 경우 최저매각가격은 30,171,974원(536,200원/㎡)임"
- },
- {
-  "id": "gyeonggi-2026타경70280-1",
-  "court": "의정부지방법원",
-  "courtCode": "B000214",
-  "caseNo": "2026타경70280",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "경기도 의정부시 고산동 996-3 한강듀클래스의정부고산 비동 9층 909호",
-  "region": "경기",
-  "district": "의정부시",
-  "appraisalPrice": 298000000,
-  "minPrice": 102214000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "제2별관1층제6호법정",
-  "deposit": 10221400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 68.86,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 298000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 298000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 208600000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 146020000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2026타경70290-1",
-  "court": "의정부지방법원",
-  "courtCode": "B000214",
-  "caseNo": "2026타경70290",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "경기도 의정부시 가능동 590-27 스타파크빌 103동 4층 404호",
-  "region": "경기",
-  "district": "의정부시",
-  "appraisalPrice": 170000000,
-  "minPrice": 58310000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "제2별관1층제6호법정",
-  "deposit": 5831000,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 54.21,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 170000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 170000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 119000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 83300000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2026타경70336-1",
-  "court": "의정부지방법원",
-  "courtCode": "B000214",
-  "caseNo": "2026타경70336",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "경기도 의정부시 민락동 611-5 민락아크로빌(씨동) 7층701호",
-  "region": "경기",
-  "district": "의정부시",
-  "appraisalPrice": 253000000,
-  "minPrice": 86779000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "제2별관1층제6호법정",
-  "deposit": 8677900,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 53.28,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 253000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 253000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 177100000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 123970000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2026타경82-1",
-  "court": "의정부지방법원",
-  "courtCode": "B000214",
-  "caseNo": "2026타경82",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "경기도 의정부시 민락동 927-3 의정부더리브센텀스퀘어2 지식산업센터2동 3층312호",
-  "region": "경기",
-  "district": "의정부시",
-  "appraisalPrice": 428000000,
-  "minPrice": 146804000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "제2별관1층제6호법정",
-  "deposit": 14680400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 112.05,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 428000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 428000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 299600000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 209720000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "gyeonggi-2026타경82-2",
-  "court": "의정부지방법원",
-  "courtCode": "B000214",
-  "caseNo": "2026타경82",
-  "itemNo": "2",
-  "category": "기타",
-  "address": "경기도 의정부시 민락동 927-3 의정부더리브센텀스퀘어2 지식산업센터2동 3층313호",
-  "region": "경기",
-  "district": "의정부시",
-  "appraisalPrice": 563000000,
-  "minPrice": 193109000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:30",
-  "courtRoom": "제2별관1층제6호법정",
-  "deposit": 19310900,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 151.92,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-09",
-    "minPrice": 563000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 563000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 394100000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 275870000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
   "id": "gyeonggi-2024타경100359-1",
   "court": "수원지방법원",
   "courtCode": "B000250",
@@ -7740,114 +3252,6 @@
   "specialNote": "일괄매각, 매각에서 제외되는 제시외 건물 소재(컨테이너2동, 쇠파이프천막)"
  },
  {
-  "id": "gyeonggi-2024타경46072-1",
-  "court": "평택지원",
-  "courtCode": "B000253",
-  "caseNo": "2024타경46072",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "경기도 안성시 일죽면 월정리 802",
-  "region": "경기",
-  "district": "안성시",
-  "appraisalPrice": 9763444000,
-  "minPrice": 2344203000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-30",
-  "saleTime": "10:00",
-  "courtRoom": "1층경매법정",
-  "deposit": 234420300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 1934,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-06-08",
-    "minPrice": 9763444000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-13",
-    "minPrice": 9763444000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-17",
-    "minPrice": 6834410870,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-21",
-    "minPrice": 4784087658,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-26",
-    "minPrice": 3348861394,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "일괄매각. 농지취득자격증명 제출 필요(미제출시 보증금 미반환). 지상 소재 수목은 토지가액에 포함하여 매각."
- },
- {
-  "id": "gyeonggi-2024타경46072-2",
-  "court": "평택지원",
-  "courtCode": "B000253",
-  "caseNo": "2024타경46072",
-  "itemNo": "2",
-  "category": "토지",
-  "address": "경기도 안성시 일죽면 월정리 산84-4",
-  "region": "경기",
-  "district": "안성시",
-  "appraisalPrice": 1261272000,
-  "minPrice": 302831000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-11-30",
-  "saleTime": "10:00",
-  "courtRoom": "1층경매법정",
-  "deposit": 30283100,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 1096,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-06-08",
-    "minPrice": 1261272000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-13",
-    "minPrice": 1261272000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-17",
-    "minPrice": 882890103,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-21",
-    "minPrice": 618022864,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-26",
-    "minPrice": 432615860,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "일괄매각. 목록23.지상 소유자 미상의 간이식 가설물(판넬조 및 컨테이너 연결 판넬지붕 창고 등 약30㎡ 및 판넬조 판넬지붕 창고 약10㎡)은 평가 및 매각 제외. 지상 소재 수목은 토지가액에 포함하여 매각."
- },
- {
   "id": "gyeonggi-2024타경52909-1",
   "court": "평택지원",
   "courtCode": "B000253",
@@ -10482,6 +5886,168 @@
   "specialNote": "-사무실로 이용중임."
  },
  {
+  "id": "gyeonggi-2025타경678-2",
+  "court": "평택지원",
+  "courtCode": "B000253",
+  "caseNo": "2025타경678",
+  "itemNo": "2",
+  "category": "상가",
+  "address": "경기도 평택시 고덕동 1887-2 고덕로자벨2 8층809호",
+  "region": "경기",
+  "district": "평택시",
+  "appraisalPrice": 433000000,
+  "minPrice": 103963000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-30",
+  "saleTime": "10:00",
+  "courtRoom": "1층경매법정",
+  "deposit": 10396300,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 70.9,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-06-08",
+    "minPrice": 433000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 433000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 303099781,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-21",
+    "minPrice": 212169694,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-26",
+    "minPrice": 148518679,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "-공실상태임. -출입문에 퍼스트건물관리(주) 명의로 다년간의 관리비 체납에 따른 단전, 단수 안내문이 붙어있므로 관리비 상황 확인 후 입찰 요망."
+ },
+ {
+  "id": "gyeonggi-2025타경811-2",
+  "court": "평택지원",
+  "courtCode": "B000253",
+  "caseNo": "2025타경811",
+  "itemNo": "2",
+  "category": "토지",
+  "address": "경기도 안성시 공도읍 마정리 90-104",
+  "region": "경기",
+  "district": "안성시",
+  "appraisalPrice": 411155000,
+  "minPrice": 98718000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-30",
+  "saleTime": "10:00",
+  "courtRoom": "1층경매법정",
+  "deposit": 9871800,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 82,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-06-08",
+    "minPrice": 411155000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 411155000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 287808270,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-21",
+    "minPrice": 201465628,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-26",
+    "minPrice": 141025827,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "1. 일괄매각. 2. 목록2는 공부상 지목\"대\"이나 현황\"도로\"로 이용중인바, 이를 감안하여 평가함. 3. 목록3은 일부 시멘트로 평탄화작업한 흔적이 있음. 4. 목록2는 지분매각(공유자우선매수권 없음)."
+ },
+ {
+  "id": "gyeonggi-2025타경851-1",
+  "court": "평택지원",
+  "courtCode": "B000253",
+  "caseNo": "2025타경851",
+  "itemNo": "1",
+  "category": "단독다가구",
+  "address": "경기도 평택시 고덕면 두릉리 225-9",
+  "region": "경기",
+  "district": "평택시",
+  "appraisalPrice": 371414100,
+  "minPrice": 89177000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-11-30",
+  "saleTime": "10:00",
+  "courtRoom": "1층경매법정",
+  "deposit": 8917700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 2220,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-06-08",
+    "minPrice": 371414100,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-13",
+    "minPrice": 371414100,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-17",
+    "minPrice": 259990216,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-21",
+    "minPrice": 181993393,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-26",
+    "minPrice": 127395545,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "1.일괄매각. 2.목록1,2는 지분매각임(공유자 우선매수권 없음). 3.재매각임. 매수보증금은 최저매각가격의 20%를 납부하여야 함."
+ },
+ {
   "id": "gyeonggi-2025타경891-1",
   "court": "평택지원",
   "courtCode": "B000253",
@@ -10889,65 +6455,6 @@
   ],
   "historySource": "estimated",
   "specialNote": null
- },
- {
-  "id": "gyeonggi-2024타경109969-1",
-  "court": "안양지원",
-  "courtCode": "B000254",
-  "caseNo": "2024타경109969",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "경기도 안양시 동안구 경수대로 701 2층201호",
-  "region": "경기",
-  "district": "안양시 동안구",
-  "appraisalPrice": 2410000000,
-  "minPrice": 789709000,
-  "priceRatio": 0.3277,
-  "failCount": 5,
-  "saleDate": "2026-12-01",
-  "saleTime": "10:00",
-  "courtRoom": "제104호입찰법정",
-  "deposit": 78970900,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-05",
-    "minPrice": 2410000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-09",
-    "minPrice": 2410000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-14",
-    "minPrice": 1928000098,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-18",
-    "minPrice": 1542400156,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-22",
-    "minPrice": 1233920187,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-27",
-    "minPrice": 987136200,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "1.본건 공용포함 2층 전체이며 현황 대부분 원룸형 구분건물(오피스텔 유사) 형태로 29개호로 이용중임 2.본건은 집합건축물대장상의 용도가 근린생할시설(의원) 이나 원룸형 오피스텔 29개호로 이용중이므로 위반건축물로 등재되어 있음. 3.공부상용도는 근린생활시설(의원)이나 현황은 원룸형 구분건물 29개호임"
  },
  {
   "id": "gyeonggi-2024타경110679-1",
@@ -12589,144 +8096,6 @@
   ],
   "historySource": "estimated",
   "specialNote": null
- },
- {
-  "id": "gyeonggi-2025타경595-1",
-  "court": "안양지원",
-  "courtCode": "B000254",
-  "caseNo": "2025타경595",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "경기도 안양시 동안구 호계동 555-34 안양2차에스케이브이원센터 1층130호",
-  "region": "경기",
-  "district": "안양시 동안구",
-  "appraisalPrice": 650000000,
-  "minPrice": 136315000,
-  "priceRatio": 0.2097,
-  "failCount": 7,
-  "saleDate": "2026-12-01",
-  "saleTime": "10:00",
-  "courtRoom": "제104호입찰법정",
-  "deposit": 13631500,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 55.38,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-02-24",
-    "minPrice": 650000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-31",
-    "minPrice": 650000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-05",
-    "minPrice": 520000065,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-09",
-    "minPrice": 416000105,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-14",
-    "minPrice": 332800126,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-18",
-    "minPrice": 266240134,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-22",
-    "minPrice": 212992134,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-27",
-    "minPrice": 170393729,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "본건은 제시목록 및 등기사항전부증명서상 130호로 표시되어 있으나, 실제로는 C130으로 표지판이 부착되어 있음."
- },
- {
-  "id": "gyeonggi-2025타경595-2",
-  "court": "안양지원",
-  "courtCode": "B000254",
-  "caseNo": "2025타경595",
-  "itemNo": "2",
-  "category": "오피스텔",
-  "address": "경기도 안양시 동안구 호계동 555-34 안양2차에스케이브이원센터 1층131호",
-  "region": "경기",
-  "district": "안양시 동안구",
-  "appraisalPrice": 650000000,
-  "minPrice": 136315000,
-  "priceRatio": 0.2097,
-  "failCount": 7,
-  "saleDate": "2026-12-01",
-  "saleTime": "10:00",
-  "courtRoom": "제104호입찰법정",
-  "deposit": 13631500,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 55.38,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-02-24",
-    "minPrice": 650000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-03-31",
-    "minPrice": 650000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-05-05",
-    "minPrice": 520000065,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-09",
-    "minPrice": 416000105,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-14",
-    "minPrice": 332800126,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-18",
-    "minPrice": 266240134,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-22",
-    "minPrice": 212992134,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-27",
-    "minPrice": 170393729,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "본건은 제시목록 및 등기사항전부증명서상 131호로 표시되어 있으나, 실제로는 C131로 표지판이 부착되어 있음."
  },
  {
   "id": "gyeonggi-2025타경62762-3",
@@ -14802,6 +10171,202 @@
   "specialNote": "공부상 '대'이나, 현황은 일부는 '전', 일부는 '도로'로 이용중임."
  },
  {
+  "id": "gyeonggi-2024타경5412-1",
+  "court": "여주지원",
+  "courtCode": "B000252",
+  "caseNo": "2024타경5412",
+  "itemNo": "1",
+  "category": "토지",
+  "address": "경기도 양평군 강하면 동오리 801",
+  "region": "경기",
+  "district": "양평군",
+  "appraisalPrice": 39087000,
+  "minPrice": 13407000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-12-02",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(101호)",
+  "deposit": 1340700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 909,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-07-15",
+    "minPrice": 39087000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-08-19",
+    "minPrice": 39087000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-23",
+    "minPrice": 27361008,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-28",
+    "minPrice": 19152781,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "지적상 맹지로서 인접지를 통해 출입 가능함."
+ },
+ {
+  "id": "gyeonggi-2024타경5412-2",
+  "court": "여주지원",
+  "courtCode": "B000252",
+  "caseNo": "2024타경5412",
+  "itemNo": "2",
+  "category": "토지",
+  "address": "경기도 양평군 강하면 동오리 802-1",
+  "region": "경기",
+  "district": "양평군",
+  "appraisalPrice": 58351000,
+  "minPrice": 20014000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-12-02",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(101호)",
+  "deposit": 2001400,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": 1357,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-07-15",
+    "minPrice": 58351000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-08-19",
+    "minPrice": 58351000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-23",
+    "minPrice": 40845433,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-28",
+    "minPrice": 28591616,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "지적상 맹지로서 인접지를 통해 출입 가능함."
+ },
+ {
+  "id": "gyeonggi-2024타경5580-1",
+  "court": "여주지원",
+  "courtCode": "B000252",
+  "caseNo": "2024타경5580",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "경기도 이천시 신둔면 황무로517번길 59 1동 2층201호",
+  "region": "경기",
+  "district": "이천시",
+  "appraisalPrice": 310000000,
+  "minPrice": 106330000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-12-02",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(101호)",
+  "deposit": 10633000,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-07-15",
+    "minPrice": 310000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-08-19",
+    "minPrice": 310000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-23",
+    "minPrice": 217000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-28",
+    "minPrice": 151900000,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2024타경5580-2",
+  "court": "여주지원",
+  "courtCode": "B000252",
+  "caseNo": "2024타경5580",
+  "itemNo": "2",
+  "category": "다세대",
+  "address": "경기도 이천시 신둔면 황무로517번길 59 1동 3층301호",
+  "region": "경기",
+  "district": "이천시",
+  "appraisalPrice": 310000000,
+  "minPrice": 106330000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-12-02",
+  "saleTime": "10:00",
+  "courtRoom": "경매법정(101호)",
+  "deposit": 10633000,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-07-15",
+    "minPrice": 310000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-08-19",
+    "minPrice": 310000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-23",
+    "minPrice": 217000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-28",
+    "minPrice": 151900000,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
   "id": "gyeonggi-2024타경5603-1",
   "court": "여주지원",
   "courtCode": "B000252",
@@ -16187,70 +11752,6 @@
   ],
   "historySource": "estimated",
   "specialNote": "재매각 사건으로 매수신청보증금은 최저매각가격의 20%임"
- },
- {
-  "id": "gyeonggi-2025타경4117-1",
-  "court": "의정부지방법원",
-  "courtCode": "B000214",
-  "caseNo": "2025타경4117",
-  "itemNo": "1",
-  "category": "상가",
-  "address": "경기도 의정부시 민락동 927-1 의정부더리브센텀스퀘어1 지식산업센터1동 1층119호",
-  "region": "경기",
-  "district": "의정부시",
-  "appraisalPrice": 968000000,
-  "minPrice": 113884000,
-  "priceRatio": 0.1176,
-  "failCount": 6,
-  "saleDate": "2026-12-02",
-  "saleTime": "10:30",
-  "courtRoom": "제6호경매법정",
-  "deposit": 11388400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 48.55,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-01",
-    "minPrice": 968000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-05-06",
-    "minPrice": 968000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-10",
-    "minPrice": 677599770,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-15",
-    "minPrice": 474319678,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-19",
-    "minPrice": 332023662,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-23",
-    "minPrice": 232416484,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-28",
-    "minPrice": 162691484,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "일괄매각"
  },
  {
   "id": "gyeonggi-2025타경521-1",
@@ -18208,6 +13709,2533 @@
    {
     "date": "2026-10-28",
     "minPrice": 103585786,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2024타경45410-1",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2024타경45410",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "경기도 부천시 원미구 길주로 428 4층 제2동 403호 (춘의동, 에쓰제이로얄팰리스)",
+  "region": "경기",
+  "district": "부천시 원미구",
+  "appraisalPrice": 456000000,
+  "minPrice": 9017000,
+  "priceRatio": 0.0198,
+  "failCount": 11,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 901700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-10-09",
+    "minPrice": 456000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-13",
+    "minPrice": 456000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-18",
+    "minPrice": 319201255,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-22",
+    "minPrice": 223441757,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-26",
+    "minPrice": 156409845,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-02",
+    "minPrice": 109487322,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 76641427,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 53649210,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 37554595,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 26288320,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 18401896,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 12881378,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "특별매각조건 매수신청보증금 최저매각가격의 20%"
+ },
+ {
+  "id": "gyeonggi-2024타경6255-1",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2024타경6255",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "경기도 부천시 소사구 심곡로34번길 39 101동 6층602호 (송내동,아펠빌리지비)",
+  "region": "경기",
+  "district": "부천시 소사구",
+  "appraisalPrice": 268000000,
+  "minPrice": 7571000,
+  "priceRatio": 0.0283,
+  "failCount": 10,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 757100,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-11-13",
+    "minPrice": 268000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-18",
+    "minPrice": 268000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-22",
+    "minPrice": 187601644,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-26",
+    "minPrice": 131322301,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-02",
+    "minPrice": 91926416,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 64349055,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 45044733,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 31531590,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 22072306,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 15450750,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 10815620,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2024타경6729-1",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2024타경6729",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "경기도 부천시 원미구 평천로861번길 26-16 4층401호 (도당동,대원하이츠빌)",
+  "region": "경기",
+  "district": "부천시 원미구",
+  "appraisalPrice": 123000000,
+  "minPrice": 4963000,
+  "priceRatio": 0.0403,
+  "failCount": 9,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 496300,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-12-18",
+    "minPrice": 123000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-01-22",
+    "minPrice": 123000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-26",
+    "minPrice": 86099048,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-02",
+    "minPrice": 60268668,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 42187601,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 29530995,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 20671468,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 14469867,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 10128795,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 7090078,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "임차인 류**가 전세사기피해자지원및주거안정에관한특별법 제20조 제1항에 의한 우선매수신고서(2026.05.08.자)를 제출함."
+ },
+ {
+  "id": "gyeonggi-2025타경1196-1",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경1196",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "경기도 부천시 원미구 상동 243-13 파인캐슬 2층202호",
+  "region": "경기",
+  "district": "부천시 원미구",
+  "appraisalPrice": 206000000,
+  "minPrice": 34623000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 3462300,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 37.885,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-07",
+    "minPrice": 206000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 206000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 144200483,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 100940676,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 70658710,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 49461263,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "특별매각조건 매수신청보증금 최저매각가격의 20%"
+ },
+ {
+  "id": "gyeonggi-2025타경3239-1",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경3239",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "경기도 부천시 원미구 중동 1110 위브더스테이트 13층 502동 1305호",
+  "region": "경기",
+  "district": "부천시 원미구",
+  "appraisalPrice": 598000000,
+  "minPrice": 70354000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 7035400,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 115.25,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-02",
+    "minPrice": 598000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 598000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 418599899,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 293019858,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 205113851,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 143579661,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 100505739,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2025타경33177-1",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경33177",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "경기도 김포시 풍무동 92-55",
+  "region": "경기",
+  "district": "김포시",
+  "appraisalPrice": 1446606000,
+  "minPrice": 170192000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 17019200,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 3827,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-02",
+    "minPrice": 1446606000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 1446606000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 1012624449,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 708837288,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 496186223,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 347330442,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 243131369,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "1. 공부상 지목은 잡종지이나, 현황은 수종미상의 나무, 잡풀 등이 있는 자연림 상태의 임야로 본 토지상에 자생하는 입목은 포함하여 평가함. 본건 토지 일부는 역사문화환경보호지구에 속하는바 이를 감안하여 평가 2. 공장등 건물 및 도로와 인접한 부분은 경사가 가파른 지형으로 정확한 면적이나 인접토지와의 경계, 위치 등은 측량등을 통한 별도의 확인이 필요함."
+ },
+ {
+  "id": "gyeonggi-2025타경33429-1",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경33429",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "경기도 김포시 구래동 6871-12 디원시티 시그니처 지식산업센터 2층 217호",
+  "region": "경기",
+  "district": "김포시",
+  "appraisalPrice": 171000000,
+  "minPrice": 28740000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 2874000,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 40.74,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-07",
+    "minPrice": 171000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 171000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 119700025,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 83790035,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 58653037,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 41057134,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "공부상 공장(지식산업센터)임."
+ },
+ {
+  "id": "gyeonggi-2025타경33429-2",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경33429",
+  "itemNo": "2",
+  "category": "기타",
+  "address": "경기도 김포시 구래동 6871-12 디원시티 시그니처 지식산업센터 2층 218호",
+  "region": "경기",
+  "district": "김포시",
+  "appraisalPrice": 171000000,
+  "minPrice": 28740000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 2874000,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 40.74,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-07",
+    "minPrice": 171000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 171000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 119700025,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 83790035,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 58653037,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 41057134,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "공부상 공장(지식산업센터)임."
+ },
+ {
+  "id": "gyeonggi-2025타경33429-3",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경33429",
+  "itemNo": "3",
+  "category": "기타",
+  "address": "경기도 김포시 구래동 6871-12 디원시티 시그니처 지식산업센터 2층 219호",
+  "region": "경기",
+  "district": "김포시",
+  "appraisalPrice": 171000000,
+  "minPrice": 28740000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 2874000,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 40.74,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-07",
+    "minPrice": 171000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 171000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 119700025,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 83790035,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 58653037,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 41057134,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "공부상 공장(지식산업센터)임."
+ },
+ {
+  "id": "gyeonggi-2025타경33429-4",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경33429",
+  "itemNo": "4",
+  "category": "기타",
+  "address": "경기도 김포시 구래동 6871-12 디원시티 시그니처 지식산업센터 2층 220호",
+  "region": "경기",
+  "district": "김포시",
+  "appraisalPrice": 171000000,
+  "minPrice": 28740000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 2874000,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 40.74,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-07",
+    "minPrice": 171000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 171000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 119700025,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 83790035,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 58653037,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 41057134,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "공부상 공장(지식산업센터)임."
+ },
+ {
+  "id": "gyeonggi-2025타경33429-5",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경33429",
+  "itemNo": "5",
+  "category": "기타",
+  "address": "경기도 김포시 구래동 6871-12 디원시티 시그니처 지식산업센터 2층 221호",
+  "region": "경기",
+  "district": "김포시",
+  "appraisalPrice": 188000000,
+  "minPrice": 31597000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 3159700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 44.6864,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-07",
+    "minPrice": 188000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 188000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 131599867,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 92119813,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 64483804,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 45138617,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "공부상 공장(지식산업센터)임."
+ },
+ {
+  "id": "gyeonggi-2025타경33676-1",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경33676",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "경기도 부천시 소사구 소사본동 96-21 더원스테이트 11층 1103호",
+  "region": "경기",
+  "district": "부천시 소사구",
+  "appraisalPrice": 264000000,
+  "minPrice": 21741000,
+  "priceRatio": 0.0824,
+  "failCount": 7,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 2174100,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 63.74,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-26",
+    "minPrice": 264000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-02",
+    "minPrice": 264000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 184799350,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 129359090,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 90551045,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 63385508,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 44369700,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 31058681,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "업무시설(오피스텔)로 이용중"
+ },
+ {
+  "id": "gyeonggi-2025타경33800-1",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경33800",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "경기도 김포시 장기동 2008-3 테라비즈타워 지1층 비101호",
+  "region": "경기",
+  "district": "김포시",
+  "appraisalPrice": 141000000,
+  "minPrice": 33854000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 3385400,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 62.97,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-06-11",
+    "minPrice": 141000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 141000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 98699927,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 69089898,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 48362893,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2025타경33800-10",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경33800",
+  "itemNo": "10",
+  "category": "기타",
+  "address": "경기도 김포시 장기동 2008-3 테라비즈타워 1층 122호",
+  "region": "경기",
+  "district": "김포시",
+  "appraisalPrice": 836000000,
+  "minPrice": 200724000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 20072400,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 72.9,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-06-11",
+    "minPrice": 836000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 836000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 585200292,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 409640408,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 286748429,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2025타경33800-11",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경33800",
+  "itemNo": "11",
+  "category": "기타",
+  "address": "경기도 김포시 장기동 2008-3 테라비즈타워 1층 121호",
+  "region": "경기",
+  "district": "김포시",
+  "appraisalPrice": 836000000,
+  "minPrice": 200724000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 20072400,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 72.9,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-06-11",
+    "minPrice": 836000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 836000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 585200292,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 409640408,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 286748429,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2025타경33800-2",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경33800",
+  "itemNo": "2",
+  "category": "기타",
+  "address": "경기도 김포시 장기동 2008-3 테라비즈타워 6층 618호",
+  "region": "경기",
+  "district": "김포시",
+  "appraisalPrice": 127000000,
+  "minPrice": 43561000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 4356100,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 36,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-07-16",
+    "minPrice": 127000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 127000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 88900000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 62230000,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2025타경33800-4",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경33800",
+  "itemNo": "4",
+  "category": "기타",
+  "address": "경기도 김포시 장기동 2008-3 테라비즈타워 1층 147호",
+  "region": "경기",
+  "district": "김포시",
+  "appraisalPrice": 492000000,
+  "minPrice": 118129000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 11812900,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 37.83,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-06-11",
+    "minPrice": 492000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 492000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 344399854,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 241079796,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 168755786,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2025타경33800-5",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경33800",
+  "itemNo": "5",
+  "category": "기타",
+  "address": "경기도 김포시 장기동 2008-3 테라비즈타워 1층 146호",
+  "region": "경기",
+  "district": "김포시",
+  "appraisalPrice": 532000000,
+  "minPrice": 127733000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 12773300,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 40.9,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-06-11",
+    "minPrice": 532000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 532000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 372399854,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 260679796,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 182475786,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2025타경33800-6",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경33800",
+  "itemNo": "6",
+  "category": "기타",
+  "address": "경기도 김포시 장기동 2008-3 테라비즈타워 1층 145호",
+  "region": "경기",
+  "district": "김포시",
+  "appraisalPrice": 532000000,
+  "minPrice": 127733000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 12773300,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 40.9,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-06-11",
+    "minPrice": 532000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 532000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 372399854,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 260679796,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 182475786,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2025타경33800-7",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경33800",
+  "itemNo": "7",
+  "category": "기타",
+  "address": "경기도 김포시 장기동 2008-3 테라비즈타워 1층 144호",
+  "region": "경기",
+  "district": "김포시",
+  "appraisalPrice": 532000000,
+  "minPrice": 127733000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 12773300,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 40.9,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-06-11",
+    "minPrice": 532000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 532000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 372399854,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 260679796,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 182475786,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2025타경33800-8",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경33800",
+  "itemNo": "8",
+  "category": "기타",
+  "address": "경기도 김포시 장기동 2008-3 테라비즈타워 1층 143호",
+  "region": "경기",
+  "district": "김포시",
+  "appraisalPrice": 532000000,
+  "minPrice": 127733000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 12773300,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 40.9,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-06-11",
+    "minPrice": 532000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 532000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 372399854,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 260679796,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 182475786,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2025타경33800-9",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경33800",
+  "itemNo": "9",
+  "category": "기타",
+  "address": "경기도 김포시 장기동 2008-3 테라비즈타워 1층 142호",
+  "region": "경기",
+  "district": "김포시",
+  "appraisalPrice": 568000000,
+  "minPrice": 136377000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 13637700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 43.71,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-06-11",
+    "minPrice": 568000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 568000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 397600146,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 278320204,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 194824214,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2025타경33816-1",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경33816",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "경기도 부천시 원미구 도당동 50-1 대원하이츠빌 다동 2층 202호",
+  "region": "경기",
+  "district": "부천시 원미구",
+  "appraisalPrice": 160000000,
+  "minPrice": 13177000,
+  "priceRatio": 0.0824,
+  "failCount": 7,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 1317700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 45.97,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-26",
+    "minPrice": 160000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-02",
+    "minPrice": 160000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 112000379,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 78400530,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 54880557,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 38416520,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 26891655,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 18824222,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2025타경33913-1",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경33913",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "경기도 부천시 원미구 심곡동 349-3 노마즈하우스 8층809호",
+  "region": "경기",
+  "district": "부천시 원미구",
+  "appraisalPrice": 68000000,
+  "minPrice": 5600000,
+  "priceRatio": 0.0824,
+  "failCount": 7,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 560000,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 19.326,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-26",
+    "minPrice": 68000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-02",
+    "minPrice": 68000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 47599888,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 33319843,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 23323835,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 16326646,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 11428625,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 8000019,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "별도등기 토지 갑구 14번, 15번 신탁등기 있음."
+ },
+ {
+  "id": "gyeonggi-2025타경34252-1",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경34252",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "경기도 김포시 구래동 6878-7 중일라크리움 3층324호",
+  "region": "경기",
+  "district": "김포시",
+  "appraisalPrice": 104000000,
+  "minPrice": 12235000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 1223500,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 21.273,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-02",
+    "minPrice": 104000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 104000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 72799508,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 50959311,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 35671277,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 24969725,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 17478690,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2025타경34343-1",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경34343",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "경기도 부천시 원미구 중동 1148-2 중동대우마이빌2 14층1412호",
+  "region": "경기",
+  "district": "부천시 원미구",
+  "appraisalPrice": 125000000,
+  "minPrice": 14706000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 1470600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 32.08,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-02",
+    "minPrice": 125000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 125000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 87499876,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 61249826,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 42874818,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 30012330,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 21008601,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2025타경3451-1",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경3451",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "경기도 김포시 운양동 1296-3 더리버뷰 1층116호",
+  "region": "경기",
+  "district": "김포시",
+  "appraisalPrice": 850000000,
+  "minPrice": 100002000,
+  "priceRatio": 0.1176,
+  "failCount": 6,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 10000200,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 40.95,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-02",
+    "minPrice": 850000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 850000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 595000347,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 416500486,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 291550510,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 204085476,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 142859917,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2025타경34857-1",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경34857",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "경기도 부천시 원미구 심곡동 328-29 미림빌라 비동 4층401호",
+  "region": "경기",
+  "district": "부천시 원미구",
+  "appraisalPrice": 183000000,
+  "minPrice": 43938000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 4393800,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 44.29,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-06-11",
+    "minPrice": 183000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 183000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 128099781,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 89669694,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 62768679,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2025타경34960-1",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경34960",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "경기도 부천시 원미구 도당동 33-10 우리하이빌 5층504호",
+  "region": "경기",
+  "district": "부천시 원미구",
+  "appraisalPrice": 144000000,
+  "minPrice": 34574000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 3457400,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 37.05,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-06-11",
+    "minPrice": 144000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 144000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 100799708,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 70559592,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 49391571,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2025타경3543-1",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경3543",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "경기도 김포시 구래동 6871-16 리브타워 5층521호",
+  "region": "경기",
+  "district": "김포시",
+  "appraisalPrice": 183000000,
+  "minPrice": 30757000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 3075700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 36.35,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-07",
+    "minPrice": 183000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 183000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 128100158,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 89670222,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 62769233,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 43938517,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2025타경3543-2",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경3543",
+  "itemNo": "2",
+  "category": "기타",
+  "address": "경기도 김포시 구래동 6871-16 리브타워 5층522호",
+  "region": "경기",
+  "district": "김포시",
+  "appraisalPrice": 183000000,
+  "minPrice": 30757000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 3075700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 36.35,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-07",
+    "minPrice": 183000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 183000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 128100158,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 89670222,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 62769233,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 43938517,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2025타경4270-1",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경4270",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "경기도 김포시 구래동 6871-12 디원시티 시그니처 지식산업센터 5층550호",
+  "region": "경기",
+  "district": "김포시",
+  "appraisalPrice": 187000000,
+  "minPrice": 44899000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 4489900,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 50.3512,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-06-11",
+    "minPrice": 187000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 187000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 130900219,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 91630306,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 64141321,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2025타경4270-2",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경4270",
+  "itemNo": "2",
+  "category": "기타",
+  "address": "경기도 김포시 구래동 6871-12 디원시티 시그니처 지식산업센터 5층551호",
+  "region": "경기",
+  "district": "김포시",
+  "appraisalPrice": 170000000,
+  "minPrice": 40817000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 4081700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 45.99,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-06-11",
+    "minPrice": 170000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 170000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 119000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 83300000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 58310000,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2025타경4270-3",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경4270",
+  "itemNo": "3",
+  "category": "기타",
+  "address": "경기도 김포시 구래동 6871-12 디원시티 시그니처 지식산업센터 5층552호",
+  "region": "경기",
+  "district": "김포시",
+  "appraisalPrice": 170000000,
+  "minPrice": 40817000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 4081700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 45.99,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-06-11",
+    "minPrice": 170000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 170000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 119000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 83300000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 58310000,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2025타경4270-4",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경4270",
+  "itemNo": "4",
+  "category": "기타",
+  "address": "경기도 김포시 구래동 6871-12 디원시티 시그니처 지식산업센터 5층553호",
+  "region": "경기",
+  "district": "김포시",
+  "appraisalPrice": 170000000,
+  "minPrice": 40817000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 4081700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 45.99,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-06-11",
+    "minPrice": 170000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 170000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 119000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 83300000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 58310000,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2025타경4508-1",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경4508",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "경기도 김포시 구래동 6871-12 디원시티 시그니처 지식산업센터 5층513호",
+  "region": "경기",
+  "district": "김포시",
+  "appraisalPrice": 208000000,
+  "minPrice": 49941000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 4994100,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 55.9635,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-06-11",
+    "minPrice": 208000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 208000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 145600146,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 101920204,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 71344214,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2025타경514620-1",
+  "court": "인천지방법원",
+  "courtCode": "B000240",
+  "caseNo": "2025타경514620",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "소재지 : 경기도 남양주시 다산동 다산중앙로146번길 12-16, 202-43호 (다산동, 파크뷰타워)",
+  "region": "경기",
+  "district": "남양주시",
+  "appraisalPrice": 80000000,
+  "minPrice": 13446000,
+  "priceRatio": 0.1681,
+  "failCount": 5,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "219호법정",
+  "deposit": 1344600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-07",
+    "minPrice": 80000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 80000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 56000333,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 39200466,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 27440490,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 19208457,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "특별매각조건 매수신청보증금 최저매각가격의 20%"
+ },
+ {
+  "id": "gyeonggi-2025타경514992-1",
+  "court": "인천지방법원",
+  "courtCode": "B000240",
+  "caseNo": "2025타경514992",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "사용본거지 : 경기도 화성시 여울로4길 15 202호 (능동)",
+  "region": "경기",
+  "district": "화성시",
+  "appraisalPrice": 16000000,
+  "minPrice": 3842000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "219호법정",
+  "deposit": 384200,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-06-11",
+    "minPrice": 16000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 16000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 11200292,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 7840408,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 5488429,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "특별매각조건 매수신청보증금 최저매각가격의 20%"
+ },
+ {
+  "id": "gyeonggi-2025타경5334-1",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경5334",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "경기도 김포시 구래동 6871-60 샹보르영무파라드김포한강1동 6층 639호",
+  "region": "경기",
+  "district": "김포시",
+  "appraisalPrice": 152000000,
+  "minPrice": 52136000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 5213600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 37.6,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-07-16",
+    "minPrice": 152000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 152000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 106400000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 74480000,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2025타경5334-2",
+  "court": "부천지원",
+  "courtCode": "B000241",
+  "caseNo": "2025타경5334",
+  "itemNo": "2",
+  "category": "기타",
+  "address": "경기도 김포시 구래동 6871-60 샹보르영무파라드김포한강1동 2층 237호",
+  "region": "경기",
+  "district": "김포시",
+  "appraisalPrice": 146000000,
+  "minPrice": 50078000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "별관제122호법정",
+  "deposit": 5007800,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 36,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-07-16",
+    "minPrice": 146000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 146000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 102200000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 71540000,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2026타경501276-1",
+  "court": "인천지방법원",
+  "courtCode": "B000240",
+  "caseNo": "2026타경501276",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "소재지 : 경기도 광주시 경안안길 20-6 1층 (경안동)",
+  "region": "경기",
+  "district": "광주시",
+  "appraisalPrice": 90000000,
+  "minPrice": 21609000,
+  "priceRatio": 0.2401,
+  "failCount": 4,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "219호법정",
+  "deposit": 2160900,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-06-11",
+    "minPrice": 90000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 90000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 63000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 44100000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 30870000,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "앞 번호판 탈거 및 조수석 쪽 두번째 앞바퀴 펑크상태. 휴지등록되어 상당기간 운행 정지된 상태. (감정평가서 참조)"
+ },
+ {
+  "id": "gyeonggi-2026타경502539-1",
+  "court": "인천지방법원",
+  "courtCode": "B000240",
+  "caseNo": "2026타경502539",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "사용본거지 : 경기도 안양시 동안구 시민대로 361 505호 (관양동, 에이스평촌타워)",
+  "region": "경기",
+  "district": "안양시",
+  "appraisalPrice": 9000000,
+  "minPrice": 3087000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "219호법정",
+  "deposit": 308700,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-07-16",
+    "minPrice": 9000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 9000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 6300000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 4410000,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "gyeonggi-2026타경502860-1",
+  "court": "인천지방법원",
+  "courtCode": "B000240",
+  "caseNo": "2026타경502860",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "사용본거지 : 경기도 시흥시 뱀내장터로 12 (신천동)",
+  "region": "경기",
+  "district": "시흥시",
+  "appraisalPrice": 12000000,
+  "minPrice": 4116000,
+  "priceRatio": 0.343,
+  "failCount": 3,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "219호법정",
+  "deposit": 411600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-07-16",
+    "minPrice": 12000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 12000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 8400000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 5880000,
     "result": "유찰"
    }
   ],

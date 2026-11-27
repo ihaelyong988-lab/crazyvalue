@@ -1,1136 +1,5 @@
 [
  {
-  "id": "seoul-2023타경104819-1",
-  "court": "서울남부지방법원",
-  "courtCode": "B000212",
-  "caseNo": "2023타경104819",
-  "itemNo": "1",
-  "category": "상가",
-  "address": "서울특별시 금천구 시흥대로150길 11-9 제2층 제202호 (독산동, 엠에스 빌)",
-  "region": "서울",
-  "district": "금천구",
-  "appraisalPrice": 246000000,
-  "minPrice": 33017600,
-  "priceRatio": 0.1342,
-  "failCount": 24,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "제112호법정",
-  "deposit": 3301800,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2024-07-04",
-    "minPrice": 246000000,
-    "result": "신건"
-   },
-   {
-    "date": "2024-08-08",
-    "minPrice": 246000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2024-09-12",
-    "minPrice": 226252754,
-    "result": "유찰"
-   },
-   {
-    "date": "2024-10-17",
-    "minPrice": 208090685,
-    "result": "유찰"
-   },
-   {
-    "date": "2024-11-21",
-    "minPrice": 191386547,
-    "result": "유찰"
-   },
-   {
-    "date": "2024-12-26",
-    "minPrice": 176023306,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-01-30",
-    "minPrice": 161893324,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-03-06",
-    "minPrice": 148897603,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-04-10",
-    "minPrice": 136945092,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-05-15",
-    "minPrice": 125952049,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-06-19",
-    "minPrice": 115841455,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-07-24",
-    "minPrice": 106542473,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-08-28",
-    "minPrice": 97989950,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-10-02",
-    "minPrice": 90123968,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-11-06",
-    "minPrice": 82889414,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-12-11",
-    "minPrice": 76235603,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-01-15",
-    "minPrice": 70115915,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-19",
-    "minPrice": 64487475,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-26",
-    "minPrice": 59310848,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-30",
-    "minPrice": 54549767,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 50170874,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 46143490,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 42439397,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 39032644,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 35899362,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "seoul-2023타경5882-1",
-  "court": "서울남부지방법원",
-  "courtCode": "B000212",
-  "caseNo": "2023타경5882",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "서울특별시 구로구 고척로18길 59-9 제4층 제402호 (개봉동, 라움)",
-  "region": "서울",
-  "district": "구로구",
-  "appraisalPrice": 256000000,
-  "minPrice": 4612000,
-  "priceRatio": 0.018,
-  "failCount": 18,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "제112호법정",
-  "deposit": 461200,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-01-30",
-    "minPrice": 256000000,
-    "result": "신건"
-   },
-   {
-    "date": "2025-03-06",
-    "minPrice": 256000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-04-10",
-    "minPrice": 204800775,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-05-15",
-    "minPrice": 163841239,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-06-19",
-    "minPrice": 131073487,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-07-24",
-    "minPrice": 104859186,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-08-28",
-    "minPrice": 83887666,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-10-02",
-    "minPrice": 67110387,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-11-06",
-    "minPrice": 53688513,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-12-11",
-    "minPrice": 42950973,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-01-15",
-    "minPrice": 34360908,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-19",
-    "minPrice": 27488830,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-26",
-    "minPrice": 21991147,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-30",
-    "minPrice": 17592985,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 14074441,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 11259595,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 9007710,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 7206195,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 5764978,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "특별매각조건 매수신청보증금 최저매각가격의 20%"
- },
- {
-  "id": "seoul-2024타경116987-1",
-  "court": "서울남부지방법원",
-  "courtCode": "B000212",
-  "caseNo": "2024타경116987",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "서울특별시 금천구 독산로22길 64 제4층 제403호 (시흥동, 다음빌라)",
-  "region": "서울",
-  "district": "금천구",
-  "appraisalPrice": 235000000,
-  "minPrice": 8268348,
-  "priceRatio": 0.0352,
-  "failCount": 15,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "제112호법정",
-  "deposit": 826900,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-05-15",
-    "minPrice": 235000000,
-    "result": "신건"
-   },
-   {
-    "date": "2025-06-19",
-    "minPrice": 235000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-07-24",
-    "minPrice": 188000031,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-08-28",
-    "minPrice": 150400050,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-10-02",
-    "minPrice": 120320060,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-11-06",
-    "minPrice": 96256064,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-12-11",
-    "minPrice": 77004864,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-01-15",
-    "minPrice": 61603901,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-19",
-    "minPrice": 49283129,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-26",
-    "minPrice": 39426510,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-30",
-    "minPrice": 31541213,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 25232975,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 20186383,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 16149109,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 12919289,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 10335433,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "seoul-2024타경119832-1",
-  "court": "서울남부지방법원",
-  "courtCode": "B000212",
-  "caseNo": "2024타경119832",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "서울특별시 강서구 가로공원로76길 5 제4층 제403호 (화곡동, 아줄리움)",
-  "region": "서울",
-  "district": "강서구",
-  "appraisalPrice": 208000000,
-  "minPrice": 9147904,
-  "priceRatio": 0.044,
-  "failCount": 14,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "제112호법정",
-  "deposit": 914800,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-06-19",
-    "minPrice": 208000000,
-    "result": "신건"
-   },
-   {
-    "date": "2025-07-24",
-    "minPrice": 208000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-08-28",
-    "minPrice": 166399957,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-10-02",
-    "minPrice": 133119932,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-11-06",
-    "minPrice": 106495918,
-    "result": "유찰"
-   },
-   {
-    "date": "2025-12-11",
-    "minPrice": 85196713,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-01-15",
-    "minPrice": 68157353,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-19",
-    "minPrice": 54525868,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-26",
-    "minPrice": 43620684,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-30",
-    "minPrice": 34896538,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 27917223,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 22333773,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 17867014,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 14293607,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 11434883,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "seoul-2024타경5852-1",
-  "court": "서울중앙지방법원",
-  "courtCode": "B000210",
-  "caseNo": "2024타경5852",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "서울특별시 동작구 보라매로5길 43 지1층지106-2호 (신대방동,보라매삼성쉐르빌)",
-  "region": "서울",
-  "district": "동작구",
-  "appraisalPrice": 1750000000,
-  "minPrice": 573440000,
-  "priceRatio": 0.3277,
-  "failCount": 5,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "제4별관제211호법정(2층)",
-  "deposit": 57344000,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-30",
-    "minPrice": 1750000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 1750000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 1400000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 1120000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 896000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 716800000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "seoul-2025타경101641-1",
-  "court": "서울중앙지방법원",
-  "courtCode": "B000210",
-  "caseNo": "2025타경101641",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "서울특별시 종로구 난계로 257 8층806호 (숭인동,숭인한성아펠시티주건축물제1동)",
-  "region": "서울",
-  "district": "종로구",
-  "appraisalPrice": 282000000,
-  "minPrice": 30280000,
-  "priceRatio": 0.1074,
-  "failCount": 10,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "제4별관제211호법정(2층)",
-  "deposit": 3028000,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2025-11-06",
-    "minPrice": 282000000,
-    "result": "신건"
-   },
-   {
-    "date": "2025-12-11",
-    "minPrice": 282000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-01-15",
-    "minPrice": 225600358,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-02-19",
-    "minPrice": 180480573,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-03-26",
-    "minPrice": 144384687,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-04-30",
-    "minPrice": 115507933,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 92406493,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 73925312,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 59140343,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 47312350,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 37849940,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "seoul-2025타경102692-1",
-  "court": "서울중앙지방법원",
-  "courtCode": "B000210",
-  "caseNo": "2025타경102692",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "서울특별시 관악구 신림동 646-317 대림아트빌 3층303호",
-  "region": "서울",
-  "district": "관악구",
-  "appraisalPrice": 314000000,
-  "minPrice": 82313000,
-  "priceRatio": 0.2621,
-  "failCount": 6,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "제4별관제211호법정(2층)",
-  "deposit": 8231300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 37.77,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-26",
-    "minPrice": 314000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-30",
-    "minPrice": 314000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 251199890,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 200959824,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 160767789,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 128614175,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 102891295,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "seoul-2025타경11824-1",
-  "court": "서울남부지방법원",
-  "courtCode": "B000212",
-  "caseNo": "2025타경11824",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "서울특별시 영등포구 영등포동8가 51-1 메이준 제7층 제706호",
-  "region": "서울",
-  "district": "영등포구",
-  "appraisalPrice": 114000000,
-  "minPrice": 29884416,
-  "priceRatio": 0.2621,
-  "failCount": 6,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "제112호법정",
-  "deposit": 2988500,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 17.44,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-26",
-    "minPrice": 114000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-30",
-    "minPrice": 114000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 91200000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 72960000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 58368000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 46694400,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 37355520,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "seoul-2025타경12408-1",
-  "court": "서울남부지방법원",
-  "courtCode": "B000212",
-  "caseNo": "2025타경12408",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "서울특별시 강서구 마곡동 758-4 마곡럭스나인오피스텔 제5층 제507호",
-  "region": "서울",
-  "district": "강서구",
-  "appraisalPrice": 160000000,
-  "minPrice": 52428800,
-  "priceRatio": 0.3277,
-  "failCount": 5,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "제112호법정",
-  "deposit": 5242900,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 21.87,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-30",
-    "minPrice": 160000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 160000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 128000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 102400000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 81920000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 65536000,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "seoul-2025타경12682-1",
-  "court": "서울남부지방법원",
-  "courtCode": "B000212",
-  "caseNo": "2025타경12682",
-  "itemNo": "1",
-  "category": "다세대",
-  "address": "서울특별시 강서구 화곡동 1120-2 소담밸리 제102동 제5층 제503호",
-  "region": "서울",
-  "district": "강서구",
-  "appraisalPrice": 271000000,
-  "minPrice": 88801280,
-  "priceRatio": 0.3277,
-  "failCount": 5,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "제112호법정",
-  "deposit": 8880200,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 36.24,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-30",
-    "minPrice": 271000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 271000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 216800000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 173440000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 138752000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 111001600,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "seoul-2025타경12715-1",
-  "court": "서울남부지방법원",
-  "courtCode": "B000212",
-  "caseNo": "2025타경12715",
-  "itemNo": "1",
-  "category": "오피스텔",
-  "address": "서울특별시 금천구 가산동 776 가산대명벨리온 제8층 제831호",
-  "region": "서울",
-  "district": "금천구",
-  "appraisalPrice": 119000000,
-  "minPrice": 38993920,
-  "priceRatio": 0.3277,
-  "failCount": 5,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "제112호법정",
-  "deposit": 3899400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 16.28,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-04-30",
-    "minPrice": 119000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 119000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 95200000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 76160000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 60928000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 48742400,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "토지에 별도등기(지상권) 있음"
- },
- {
-  "id": "seoul-2025타경243-1",
-  "court": "서울중앙지방법원",
-  "courtCode": "B000210",
-  "caseNo": "2025타경243",
-  "itemNo": "1",
-  "category": "상가",
-  "address": "서울특별시 중구 청계천로 334 2층가-58호",
-  "region": "서울",
-  "district": "중구",
-  "appraisalPrice": 491000000,
-  "minPrice": 128713000,
-  "priceRatio": 0.2621,
-  "failCount": 6,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "제4별관제211호법정(2층)",
-  "deposit": 12871300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-26",
-    "minPrice": 491000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-30",
-    "minPrice": 491000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 392800151,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 314240241,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 251392289,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 201113908,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 160891188,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "seoul-2025타경243-2",
-  "court": "서울중앙지방법원",
-  "courtCode": "B000210",
-  "caseNo": "2025타경243",
-  "itemNo": "2",
-  "category": "상가",
-  "address": "서울특별시 중구 청계천로 334 2층가-59호",
-  "region": "서울",
-  "district": "중구",
-  "appraisalPrice": 547000000,
-  "minPrice": 143393000,
-  "priceRatio": 0.2621,
-  "failCount": 6,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "제4별관제211호법정(2층)",
-  "deposit": 14339300,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-26",
-    "minPrice": 547000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-30",
-    "minPrice": 547000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 437600118,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 350080189,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 280064227,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 224051442,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 179241202,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
-  "id": "seoul-2025타경700-1",
-  "court": "서울중앙지방법원",
-  "courtCode": "B000210",
-  "caseNo": "2025타경700",
-  "itemNo": "1",
-  "category": "상가",
-  "address": "서울특별시 중구 남창동 5",
-  "region": "서울",
-  "district": "중구",
-  "appraisalPrice": 114000000,
-  "minPrice": 29884000,
-  "priceRatio": 0.2621,
-  "failCount": 6,
-  "saleDate": "2026-11-26",
-  "saleTime": "10:00",
-  "courtRoom": "제4별관제211호법정(2층)",
-  "deposit": 2988400,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": 2438.6,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-03-26",
-    "minPrice": 114000000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-04-30",
-    "minPrice": 114000000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-06-04",
-    "minPrice": 91199788,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-09",
-    "minPrice": 72959661,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-13",
-    "minPrice": 58367594,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-17",
-    "minPrice": 46693967,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-22",
-    "minPrice": 37355087,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "일괄매각"
- },
- {
   "id": "seoul-2026타경53385-1",
   "court": "수원지방법원",
   "courtCode": "B000250",
@@ -6221,6 +5090,2048 @@
    {
     "date": "2026-10-28",
     "minPrice": 44040024,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "seoul-2023타경118641-1",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2023타경118641",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "서울특별시 강서구 가로공원로 236-15 제2층 제202호 (화곡동, 엘케이드림빌)",
+  "region": "서울",
+  "district": "강서구",
+  "appraisalPrice": 163000000,
+  "minPrice": 8962000,
+  "priceRatio": 0.055,
+  "failCount": 13,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 896200,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-07-31",
+    "minPrice": 163000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-09-04",
+    "minPrice": 163000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-10-09",
+    "minPrice": 130401097,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-11-13",
+    "minPrice": 104321756,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-18",
+    "minPrice": 83458107,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-22",
+    "minPrice": 66767047,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-26",
+    "minPrice": 53414087,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-02",
+    "minPrice": 42731629,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 34185591,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 27348703,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 21879146,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 17503464,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 14002889,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 11202406,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "seoul-2024타경127345-1",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2024타경127345",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "서울특별시 강서구 초록마을로16길 3 제3층 제302호 (화곡동, 화성빌라)",
+  "region": "서울",
+  "district": "강서구",
+  "appraisalPrice": 155000000,
+  "minPrice": 8521000,
+  "priceRatio": 0.055,
+  "failCount": 13,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 852100,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-07-31",
+    "minPrice": 155000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-09-04",
+    "minPrice": 155000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-10-09",
+    "minPrice": 123999759,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-11-13",
+    "minPrice": 99199615,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-18",
+    "minPrice": 79359538,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-22",
+    "minPrice": 63487507,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-26",
+    "minPrice": 50789907,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-02",
+    "minPrice": 40631847,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 32505414,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 26004281,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 20803384,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 16642675,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 13314114,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 10651271,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "집합건축물대장상 위반건축물 표기되어 있음."
+ },
+ {
+  "id": "seoul-2024타경128805-1",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2024타경128805",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "서울특별시 구로구 고척로 5 제5층 제503호 (오류동, 루체비스타)",
+  "region": "서울",
+  "district": "구로구",
+  "appraisalPrice": 265000000,
+  "minPrice": 14568000,
+  "priceRatio": 0.055,
+  "failCount": 13,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 1456800,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-07-31",
+    "minPrice": 265000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-09-04",
+    "minPrice": 265000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-10-09",
+    "minPrice": 211999408,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-11-13",
+    "minPrice": 169599052,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-18",
+    "minPrice": 135678863,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-22",
+    "minPrice": 108542787,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-26",
+    "minPrice": 86833987,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-02",
+    "minPrice": 69466996,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 55573441,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 44458629,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 35566804,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 28453363,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 22762627,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 18210051,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "seoul-2024타경130877-1",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2024타경130877",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "서울특별시 양천구 남부순환로60길 26-2 제2층 제201호 (신월동, 우진파크빌)",
+  "region": "서울",
+  "district": "양천구",
+  "appraisalPrice": 190000000,
+  "minPrice": 13058000,
+  "priceRatio": 0.0687,
+  "failCount": 12,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 1305800,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-09-04",
+    "minPrice": 190000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-10-09",
+    "minPrice": 190000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-11-13",
+    "minPrice": 152001261,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-18",
+    "minPrice": 121602017,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-22",
+    "minPrice": 97282420,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-26",
+    "minPrice": 77826582,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-02",
+    "minPrice": 62261782,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 49809838,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 39848201,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 31878825,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 25503272,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 20402787,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 16322365,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "seoul-2024타경135766-1",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2024타경135766",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "서울특별시 강서구 곰달래로 204 제2층 제204호 (화곡동, 제이와이펠리스)",
+  "region": "서울",
+  "district": "강서구",
+  "appraisalPrice": 220000000,
+  "minPrice": 18898000,
+  "priceRatio": 0.0859,
+  "failCount": 11,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 1889800,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-10-09",
+    "minPrice": 220000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-11-13",
+    "minPrice": 220000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-18",
+    "minPrice": 176000122,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-22",
+    "minPrice": 140800195,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-26",
+    "minPrice": 112640234,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-02",
+    "minPrice": 90112250,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 72089850,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 57671920,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 46137568,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 36910080,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 29528084,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 23622484,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "seoul-2024타경137274-1",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2024타경137274",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "서울특별시 영등포구 신길동 124-11 신길바른리움 제104동 제2층 203호",
+  "region": "서울",
+  "district": "영등포구",
+  "appraisalPrice": 265000000,
+  "minPrice": 28454000,
+  "priceRatio": 0.1074,
+  "failCount": 10,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 2845400,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-11-13",
+    "minPrice": 265000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-18",
+    "minPrice": 265000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-22",
+    "minPrice": 211999882,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-26",
+    "minPrice": 169599811,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-02",
+    "minPrice": 135679773,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 108543758,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 86834958,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 69467928,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 55574312,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 44459424,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 35567520,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "seoul-2024타경140331-1",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2024타경140331",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "서울특별시 금천구 독산로 335-2 제2층 제203호 (독산동, 엘린하우스)",
+  "region": "서울",
+  "district": "금천구",
+  "appraisalPrice": 255000000,
+  "minPrice": 27381000,
+  "priceRatio": 0.1074,
+  "failCount": 10,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 2738100,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 43.78,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-11-13",
+    "minPrice": 255000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-12-18",
+    "minPrice": 255000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-22",
+    "minPrice": 204000435,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-26",
+    "minPrice": 163200696,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-02",
+    "minPrice": 130560835,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 104448890,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 83559290,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 66847575,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 53478174,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 42782630,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 34226177,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "- 제시외건물 포함 매각"
+ },
+ {
+  "id": "seoul-2024타경4022-1",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2024타경4022",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "서울특별시 강서구 초록마을로22길 33 제3층 제302호",
+  "region": "서울",
+  "district": "강서구",
+  "appraisalPrice": 186000000,
+  "minPrice": 12782000,
+  "priceRatio": 0.0687,
+  "failCount": 12,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 1278200,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-09-04",
+    "minPrice": 186000000,
+    "result": "신건"
+   },
+   {
+    "date": "2025-10-09",
+    "minPrice": 186000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-11-13",
+    "minPrice": 148800172,
+    "result": "유찰"
+   },
+   {
+    "date": "2025-12-18",
+    "minPrice": 119040275,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-01-22",
+    "minPrice": 95232330,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-26",
+    "minPrice": 76185952,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-02",
+    "minPrice": 60948832,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 48759122,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 39007343,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 31205910,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 24964757,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 19971829,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 15977482,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "seoul-2025타경10015-1",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2025타경10015",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "서울특별시 강서구 화곡동 904-3 화곡팰리스 제6층 제604호",
+  "region": "서울",
+  "district": "강서구",
+  "appraisalPrice": 370000000,
+  "minPrice": 62076000,
+  "priceRatio": 0.1678,
+  "failCount": 8,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 6207600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 35.68,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-01-22",
+    "minPrice": 370000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-26",
+    "minPrice": 370000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-02",
+    "minPrice": 296000179,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 236800287,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 189440344,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 151552367,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 121241967,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 96993632,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 77594953,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "seoul-2025타경10332-1",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2025타경10332",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "서울특별시 강서구 화곡동 408-56 동화팰리스 제2층 제301호",
+  "region": "서울",
+  "district": "강서구",
+  "appraisalPrice": 241000000,
+  "minPrice": 50542000,
+  "priceRatio": 0.2097,
+  "failCount": 7,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 5054200,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 25.62,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-26",
+    "minPrice": 241000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-02",
+    "minPrice": 241000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 192800347,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 154240555,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 123392666,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 98714311,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 78971591,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 63177386,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "seoul-2025타경10864-1",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2025타경10864",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "서울특별시 강서구 등촌동 646-38 더시크릿등촌 제4층 제405호",
+  "region": "서울",
+  "district": "강서구",
+  "appraisalPrice": 310000000,
+  "minPrice": 65012000,
+  "priceRatio": 0.2097,
+  "failCount": 7,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 6501200,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 27.63,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-26",
+    "minPrice": 310000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-02",
+    "minPrice": 310000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 248000157,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 198400251,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 158720301,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 126976321,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 101581121,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 81264949,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "seoul-2025타경10947-1",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2025타경10947",
+  "itemNo": "1",
+  "category": "아파트",
+  "address": "서울특별시 구로구 오류동 6-63 루체비스타 제15층 제1502호",
+  "region": "서울",
+  "district": "구로구",
+  "appraisalPrice": 305000000,
+  "minPrice": 63963000,
+  "priceRatio": 0.2097,
+  "failCount": 7,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 6396300,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 29.98,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-02-26",
+    "minPrice": 305000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-04-02",
+    "minPrice": 305000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 243999926,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 195199881,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 156159858,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 124927848,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 99942248,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 79953774,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "seoul-2025타경11839-1",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2025타경11839",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "서울특별시 구로구 구로동 44-5 비즈트위트레인보우 제8층 제810호",
+  "region": "서울",
+  "district": "구로구",
+  "appraisalPrice": 137000000,
+  "minPrice": 35914000,
+  "priceRatio": 0.2621,
+  "failCount": 6,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 3591400,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 19.02,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-02",
+    "minPrice": 137000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 137000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 109600138,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 87680221,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 70144266,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 56115483,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 44892443,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "seoul-2025타경12393-1",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2025타경12393",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "서울특별시 영등포구 영등포동2가 28-152 라움빌 제4층 제403호",
+  "region": "서울",
+  "district": "영등포구",
+  "appraisalPrice": 149000000,
+  "minPrice": 39059000,
+  "priceRatio": 0.2621,
+  "failCount": 6,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 3905900,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 14.26,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-02",
+    "minPrice": 149000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 149000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 119199768,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 95359629,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 76287555,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 61029925,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 48823845,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "seoul-2025타경12424-1",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2025타경12424",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "서울특별시 강서구 화곡동 367-73 세담파크뷰(1동) 제7층 제701호",
+  "region": "서울",
+  "district": "강서구",
+  "appraisalPrice": 277000000,
+  "minPrice": 72614000,
+  "priceRatio": 0.2621,
+  "failCount": 6,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 7261400,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 28.78,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-02",
+    "minPrice": 277000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 277000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 221600057,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 177280091,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 141824109,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 113459317,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 90767477,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "seoul-2025타경12501-1",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2025타경12501",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "서울특별시 영등포구 영등포동1가 144 헤렌어반 제6층 제601호",
+  "region": "서울",
+  "district": "영등포구",
+  "appraisalPrice": 113000000,
+  "minPrice": 29622000,
+  "priceRatio": 0.2621,
+  "failCount": 6,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 2962200,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 13.216,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-04-02",
+    "minPrice": 113000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 113000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 90399862,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 72319779,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 57855734,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 46284517,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 37027557,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "seoul-2025타경13035-1",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2025타경13035",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "서울특별시 금천구 가산동 234-41 가산더블레스 제11층 제1106호",
+  "region": "서울",
+  "district": "금천구",
+  "appraisalPrice": 211000000,
+  "minPrice": 69141000,
+  "priceRatio": 0.3277,
+  "failCount": 5,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 6914100,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 17.72,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-07",
+    "minPrice": 211000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 211000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 168800254,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 135040406,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 108032487,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 86426120,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "seoul-2025타경13059-1",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2025타경13059",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "서울특별시 강서구 화곡동 346-81 정감타운 제5층 제502호",
+  "region": "서울",
+  "district": "강서구",
+  "appraisalPrice": 288000000,
+  "minPrice": 94372000,
+  "priceRatio": 0.3277,
+  "failCount": 5,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 9437200,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 33.81,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-07",
+    "minPrice": 288000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 288000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 230400078,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 184320125,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 147456150,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 117964960,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "seoul-2025타경13317-1",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2025타경13317",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "서울특별시 구로구 오류동 81-40 남광파크빌 제7층 제702호",
+  "region": "서울",
+  "district": "구로구",
+  "appraisalPrice": 134000000,
+  "minPrice": 43909000,
+  "priceRatio": 0.3277,
+  "failCount": 5,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 4390900,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 29.94,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-07",
+    "minPrice": 134000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 134000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 107199941,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 85759906,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 68607887,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 54886280,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "seoul-2025타경13568-1",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2025타경13568",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "서울특별시 금천구 가산동 60-46 더리즌밸리지식산업센터 제1동 제4층 제419호",
+  "region": "서울",
+  "district": "금천구",
+  "appraisalPrice": 235000000,
+  "minPrice": 77005000,
+  "priceRatio": 0.3277,
+  "failCount": 5,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 7700500,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 4,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-07",
+    "minPrice": 235000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 235000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 188000098,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 150400156,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 120320187,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 96256200,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "seoul-2025타경13796-1",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2025타경13796",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "서울특별시 강서구 등촌동 636-3 라움팰리스 제5층 제502호",
+  "region": "서울",
+  "district": "강서구",
+  "appraisalPrice": 297000000,
+  "minPrice": 97321000,
+  "priceRatio": 0.3277,
+  "failCount": 5,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 9732100,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 28.92,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-07",
+    "minPrice": 297000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 297000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 237600020,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 190080031,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 152064037,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 121651240,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "seoul-2025타경13831-1",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2025타경13831",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "서울특별시 구로구 개봉동 141-53 포유빌 제2층 제204호",
+  "region": "서울",
+  "district": "구로구",
+  "appraisalPrice": 283000000,
+  "minPrice": 92734000,
+  "priceRatio": 0.3277,
+  "failCount": 5,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 9273400,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 26.25,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-07",
+    "minPrice": 283000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 283000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 226400273,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 181120437,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 144896525,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 115917360,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "seoul-2025타경14134-1",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2025타경14134",
+  "itemNo": "1",
+  "category": "오피스텔",
+  "address": "서울특별시 강서구 화곡동 926-5 한양아이클래스 제3층 제309호",
+  "region": "서울",
+  "district": "강서구",
+  "appraisalPrice": 70000000,
+  "minPrice": 22938000,
+  "priceRatio": 0.3277,
+  "failCount": 5,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 2293800,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 16.73,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-07",
+    "minPrice": 70000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 70000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 56000195,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 44800312,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 35840375,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 28672400,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "seoul-2025타경4357-1",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2025타경4357",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "서울특별시 강서구 곰달래로19나길 15-19 제에이동 제6층 제602호 (화곡동, 정감타운)",
+  "region": "서울",
+  "district": "강서구",
+  "appraisalPrice": 307000000,
+  "minPrice": 41205000,
+  "priceRatio": 0.1342,
+  "failCount": 9,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 4120500,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-12-18",
+    "minPrice": 307000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-01-22",
+    "minPrice": 307000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-26",
+    "minPrice": 245600104,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-02",
+    "minPrice": 196480167,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 157184200,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 125747414,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 100597974,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 80478413,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 64382758,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 51506228,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "seoul-2025타경4371-1",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2025타경4371",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "서울특별시 강서구 화곡로42길 25-3 제3층 제304호 (화곡동, 더플러스)",
+  "region": "서울",
+  "district": "강서구",
+  "appraisalPrice": 233000000,
+  "minPrice": 31273000,
+  "priceRatio": 0.1342,
+  "failCount": 9,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 3127300,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": null,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2025-12-18",
+    "minPrice": 233000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-01-22",
+    "minPrice": 233000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-02-26",
+    "minPrice": 186400178,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-02",
+    "minPrice": 149120285,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 119296343,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 95437165,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 76349805,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 61079903,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 48863969,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 39091213,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": null
+ },
+ {
+  "id": "seoul-2025타경548-1",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2025타경548",
+  "itemNo": "1",
+  "category": "기타",
+  "address": "서울특별시 영등포구 양평동1가 182 메타벨리 제11층 제1101호",
+  "region": "서울",
+  "district": "영등포구",
+  "appraisalPrice": 2209000000,
+  "minPrice": 723845000,
+  "priceRatio": 0.3277,
+  "failCount": 5,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 72384500,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 13.86,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-07",
+    "minPrice": 2209000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 2209000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 1767199941,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 1413759906,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 1131007887,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 904806280,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "일괄매각"
+ },
+ {
+  "id": "seoul-2025타경548-2",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2025타경548",
+  "itemNo": "2",
+  "category": "기타",
+  "address": "서울특별시 영등포구 양평동1가 182 메타벨리 제12층 제1201호",
+  "region": "서울",
+  "district": "영등포구",
+  "appraisalPrice": 2209000000,
+  "minPrice": 723845000,
+  "priceRatio": 0.3277,
+  "failCount": 5,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 72384500,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 13.86,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-05-07",
+    "minPrice": 2209000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 2209000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 1767199941,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 1413759906,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 1131007887,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 904806280,
+    "result": "유찰"
+   }
+  ],
+  "historySource": "estimated",
+  "specialNote": "일괄매각"
+ },
+ {
+  "id": "seoul-2025타경9366-1",
+  "court": "서울남부지방법원",
+  "courtCode": "B000212",
+  "caseNo": "2025타경9366",
+  "itemNo": "1",
+  "category": "다세대",
+  "address": "서울특별시 구로구 개봉동 349-11 해오름 제2층 제202호",
+  "region": "서울",
+  "district": "구로구",
+  "appraisalPrice": 222000000,
+  "minPrice": 37246000,
+  "priceRatio": 0.1678,
+  "failCount": 8,
+  "saleDate": "2026-12-03",
+  "saleTime": "10:00",
+  "courtRoom": "제112호법정",
+  "deposit": 3724600,
+  "depositRate": 10,
+  "depositSource": "estimated",
+  "areaBuilding": 29.81,
+  "areaLand": null,
+  "photoUrl": null,
+  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
+  "history": [
+   {
+    "date": "2026-01-22",
+    "minPrice": 222000000,
+    "result": "신건"
+   },
+   {
+    "date": "2026-02-26",
+    "minPrice": 222000000,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-04-02",
+    "minPrice": 177600346,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-05-07",
+    "minPrice": 142080554,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-06-11",
+    "minPrice": 113664664,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-07-16",
+    "minPrice": 90931909,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-08-20",
+    "minPrice": 72745669,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-09-24",
+    "minPrice": 58196648,
+    "result": "유찰"
+   },
+   {
+    "date": "2026-10-29",
+    "minPrice": 46557409,
     "result": "유찰"
    }
   ],

@@ -320,60 +320,6 @@
   "specialNote": "일괄매각"
  },
  {
-  "id": "jeju-2025타경7771-1",
-  "court": "제주지방법원",
-  "courtCode": "B000530",
-  "caseNo": "2025타경7771",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "제주특별자치도 서귀포시 안덕면 서광리 913-3",
-  "region": "제주",
-  "district": "서귀포시",
-  "appraisalPrice": 394617000,
-  "minPrice": 94747000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-12-01",
-  "saleTime": "10:00",
-  "courtRoom": "제101호법정",
-  "deposit": 9474700,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 1983,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-06-09",
-    "minPrice": 394617000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-14",
-    "minPrice": 394617000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-18",
-    "minPrice": 276231505,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-22",
-    "minPrice": 193361777,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-27",
-    "minPrice": 135353051,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "농지취득자격증명 제출 필요(매각결정기일까지 미제출시 매수신청보증금 반환하지 아니함)"
- },
- {
   "id": "jeju-2025타경7804-1",
   "court": "제주지방법원",
   "courtCode": "B000530",
@@ -1281,60 +1227,6 @@
   ],
   "historySource": "estimated",
   "specialNote": null
- },
- {
-  "id": "jeju-2025타경8473-1",
-  "court": "제주지방법원",
-  "courtCode": "B000530",
-  "caseNo": "2025타경8473",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "제주특별자치도 서귀포시 표선면 하천리 1095-2",
-  "region": "제주",
-  "district": "서귀포시",
-  "appraisalPrice": 1222092000,
-  "minPrice": 293425000,
-  "priceRatio": 0.2401,
-  "failCount": 4,
-  "saleDate": "2026-12-01",
-  "saleTime": "10:00",
-  "courtRoom": "제101호법정",
-  "deposit": 29342500,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 95,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-06-09",
-    "minPrice": 1222092000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-07-14",
-    "minPrice": 1222092000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-18",
-    "minPrice": 855464918,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-22",
-    "minPrice": 598825805,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-27",
-    "minPrice": 419178318,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "일괄매각, 농지취득자격증명 제출 요함"
  },
  {
   "id": "jeju-2025타경8484-1",
