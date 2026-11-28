@@ -1308,55 +1308,6 @@
   "specialNote": "이 사건 부동산에 대하여 오시리아 스타테라스관리단의 가압류 기입등기가 경료된 것으로 보아 미납 관리비가 있는 것으로 보이므로 응찰시 위 관리단에 확인요함. 감정평가서에 따르면, 감정 당시 공실이었음."
  },
  {
-  "id": "busan-2024타경5184-1",
-  "court": "동부지원",
-  "courtCode": "B000412",
-  "caseNo": "2024타경5184",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "부산광역시 기장군 일광읍 이천리 584",
-  "region": "부산",
-  "district": "기장군",
-  "appraisalPrice": 1964837240,
-  "minPrice": 673939000,
-  "priceRatio": 0.343,
-  "failCount": 3,
-  "saleDate": "2026-12-01",
-  "saleTime": "10:00",
-  "courtRoom": "203호법정",
-  "deposit": 67393900,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 975,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-14",
-    "minPrice": 1964837240,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-18",
-    "minPrice": 1964837240,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-22",
-    "minPrice": 1375385950,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-27",
-    "minPrice": 962770083,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "-일괄매각. 목록2는 지분매각. -매수신청보증금은 최저매각가격의 20%임. -현황조사서에 따르면, 목록 2토지는 도로 인접부지로서 일광로 199-12 부동산을 통하는 통로가 되고 있음. -목록3. 건물은 민법 제365조 저당지상의 건물에 대한 경매청구권 행사에 의한 일괄매각 대상임."
- },
- {
   "id": "busan-2025타경5075-1",
   "court": "동부지원",
   "courtCode": "B000412",

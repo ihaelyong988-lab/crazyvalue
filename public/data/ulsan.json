@@ -1,54 +1,5 @@
 [
  {
-  "id": "ulsan-2026타경51014-1",
-  "court": "수원지방법원",
-  "courtCode": "B000250",
-  "caseNo": "2026타경51014",
-  "itemNo": "1",
-  "category": "기타",
-  "address": "사용본거지 : 울산 남구 왕생로172번길 5 3층 303호 (삼산동)",
-  "region": "울산",
-  "district": "남구",
-  "appraisalPrice": 9500000,
-  "minPrice": 3259000,
-  "priceRatio": 0.3431,
-  "failCount": 3,
-  "saleDate": "2026-11-27",
-  "saleTime": "10:00",
-  "courtRoom": "수원지방법원101호법정",
-  "deposit": 325900,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": null,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-07-10",
-    "minPrice": 9500000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-08-14",
-    "minPrice": 9500000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-18",
-    "minPrice": 6650340,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-23",
-    "minPrice": 4655476,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": null
- },
- {
   "id": "ulsan-2024타경119363-1",
   "court": "울산지방법원",
   "courtCode": "B000411",

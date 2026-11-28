@@ -1671,65 +1671,6 @@
   "specialNote": "일괄매각. 목록1,3,4,5. 농지취득자격증명서 제출 필요. 잡목 등 포함 평가."
  },
  {
-  "id": "jeju-2025타경8680-1",
-  "court": "제주지방법원",
-  "courtCode": "B000530",
-  "caseNo": "2025타경8680",
-  "itemNo": "1",
-  "category": "토지",
-  "address": "제주특별자치도 제주시 한경면 신창리 1352-6",
-  "region": "제주",
-  "district": "제주시",
-  "appraisalPrice": 938621000,
-  "minPrice": 157755000,
-  "priceRatio": 0.1681,
-  "failCount": 5,
-  "saleDate": "2026-12-01",
-  "saleTime": "10:00",
-  "courtRoom": "제101호법정",
-  "deposit": 15775500,
-  "depositRate": 10,
-  "depositSource": "estimated",
-  "areaBuilding": null,
-  "areaLand": 1479,
-  "photoUrl": null,
-  "detailUrl": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ159M00.xml",
-  "history": [
-   {
-    "date": "2026-05-05",
-    "minPrice": 938621000,
-    "result": "신건"
-   },
-   {
-    "date": "2026-06-09",
-    "minPrice": 938621000,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-07-14",
-    "minPrice": 657035507,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-08-18",
-    "minPrice": 459925419,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-09-22",
-    "minPrice": 321948189,
-    "result": "유찰"
-   },
-   {
-    "date": "2026-10-27",
-    "minPrice": 225364009,
-    "result": "유찰"
-   }
-  ],
-  "historySource": "estimated",
-  "specialNote": "일괄매각. 목록1. 농지취득자격증명서 제출 필요. 수목 포함 평가"
- },
- {
   "id": "jeju-2025타경8746-1",
   "court": "제주지방법원",
   "courtCode": "B000530",
